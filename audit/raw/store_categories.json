@@ -1,0 +1,212 @@
+[
+ {
+  "id": 247,
+  "name": "Akcesoria dla zwierząt",
+  "slug": "akcesoria-dla-zwierzat",
+  "description": "Butelka do karmienia zierząt.",
+  "parent": 245,
+  "count": 3,
+  "image": {
+   "id": 8291,
+   "src": "https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml-250x188.png",
+   "srcset": "https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml.png 1000w, https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml-100x100.png 100w, https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml-350x350.png 350w, https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml-150x150.png 150w, https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml-300x300.png 300w, https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml-768x768.png 768w, https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml-250x250.png 250w",
+   "sizes": "(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "Butelka_dla_zwierzat_120ml",
+   "alt": ""
+  },
+  "review_count": 0,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/akcesoria-dla-zwierzat/"
+ },
+ {
+  "id": 199,
+  "name": "Dermokosmetyki weterynaryjne",
+  "slug": "dermokosmetyki-weterynaryjne",
+  "description": "GRUPA PREPARATÓW UŁATWIAJĄCYCH UTRZYMANIE PRAWIDŁOWEGO STANU SKÓRY I SIERŚCI. STOSOWANE W PROFILAKTYCE I WSPOMAGAJĄCO PRZY LECZENIU SCHORZEŃ DERMATOLOGICZNYCH. ZESTAW UZUPEŁNIAJĄ PREPARATY PRZYSPIESZAJĄCE GOJENIE RAN ORAZ NAWILŻAJĄCE SKÓRĘ I SIERŚĆ.PRZEZNACZONE DLA PSÓW I KOTÓW ORAZ NOWYCH ZWIERZĄT TOWARZYSZĄCYCH.",
+  "parent": 245,
+  "count": 28,
+  "image": {
+   "id": 19260,
+   "src": "https://eurowet.pl/wp-content/uploads/2024/07/Opakowanie_zbiorcze_Hexoderm_psy_koty_20ml.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2024/07/Opakowanie_zbiorcze_Hexoderm_psy_koty_20ml-250x188.png",
+   "srcset": "https://eurowet.pl/wp-content/uploads/2024/07/Opakowanie_zbiorcze_Hexoderm_psy_koty_20ml.png 983w, https://eurowet.pl/wp-content/uploads/2024/07/Opakowanie_zbiorcze_Hexoderm_psy_koty_20ml-350x356.png 350w, https://eurowet.pl/wp-content/uploads/2024/07/Opakowanie_zbiorcze_Hexoderm_psy_koty_20ml-295x300.png 295w, https://eurowet.pl/wp-content/uploads/2024/07/Opakowanie_zbiorcze_Hexoderm_psy_koty_20ml-768x781.png 768w",
+   "sizes": "(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "Opakowanie_zbiorcze_Hexoderm_psy_koty_20ml",
+   "alt": ""
+  },
+  "review_count": 0,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/dermokosmetyki-weterynaryjne/"
+ },
+ {
+  "id": 206,
+  "name": "Higiena",
+  "slug": "higiena",
+  "description": "",
+  "parent": 245,
+  "count": 8,
+  "image": {
+   "id": 17912,
+   "src": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_1L.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_1L-250x188.png",
+   "srcset": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_1L.png 423w, https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_1L-350x827.png 350w, https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_1L-127x300.png 127w",
+   "sizes": "(max-width: 423px) 100vw, 423px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "Vetinet_higieniczny_plyn_myjacy_niebieski_1L",
+   "alt": ""
+  },
+  "review_count": 0,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/higiena/"
+ },
+ {
+  "id": 204,
+  "name": "Karmy uzupełniające",
+  "slug": "karmy-uzupelniajace",
+  "description": "",
+  "parent": 245,
+  "count": 27,
+  "image": {
+   "id": 14572,
+   "src": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_32g_100tab-2.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_32g_100tab-2-250x188.png",
+   "srcset": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_32g_100tab-2.png 716w, https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_32g_100tab-2-350x489.png 350w, https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_32g_100tab-2-215x300.png 215w",
+   "sizes": "(max-width: 716px) 100vw, 716px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "Wita-Vet_Pies_COMPLEX_3,2g_100tab",
+   "alt": ""
+  },
+  "review_count": 1,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/karmy-uzupelniajace/"
+ },
+ {
+  "id": 208,
+  "name": "Kolekcja Kolor &amp; Pielęgnacja",
+  "slug": "kolekcja-kolor-pielegnacja",
+  "description": "",
+  "parent": 245,
+  "count": 31,
+  "image": {
+   "id": 10859,
+   "src": "https://eurowet.pl/wp-content/uploads/2021/11/EUROWET_szampon_york_kolorpielegnacja_1000ml.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2021/11/EUROWET_szampon_york_kolorpielegnacja_1000ml-250x188.png",
+   "srcset": "https://eurowet.pl/wp-content/uploads/2021/11/EUROWET_szampon_york_kolorpielegnacja_1000ml.png 423w, https://eurowet.pl/wp-content/uploads/2021/11/EUROWET_szampon_york_kolorpielegnacja_1000ml-350x827.png 350w, https://eurowet.pl/wp-content/uploads/2021/11/EUROWET_szampon_york_kolorpielegnacja_1000ml-127x300.png 127w",
+   "sizes": "(max-width: 423px) 100vw, 423px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "EUROWET_szampon_york_kolor&#038;pielegnacja_1000ml",
+   "alt": ""
+  },
+  "review_count": 0,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/kolekcja-kolor-pielegnacja/"
+ },
+ {
+  "id": 207,
+  "name": "Pielęgnacja jamy ustnej i zębów",
+  "slug": "pielegnacja-jamy-ustnej-i-zebow",
+  "description": "",
+  "parent": 245,
+  "count": 7,
+  "image": {
+   "id": 1816,
+   "src": "https://eurowet.pl/wp-content/uploads/2018/07/Stoma-zel_50g-2.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2018/07/Stoma-zel_50g-2-250x188.png",
+   "srcset": "https://eurowet.pl/wp-content/uploads/2018/07/Stoma-zel_50g-2.png 716w, https://eurowet.pl/wp-content/uploads/2018/07/Stoma-zel_50g-2-350x489.png 350w, https://eurowet.pl/wp-content/uploads/2018/07/Stoma-zel_50g-2-215x300.png 215w",
+   "sizes": "(max-width: 716px) 100vw, 716px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "Stoma-zel_50g",
+   "alt": ""
+  },
+  "review_count": 0,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/pielegnacja-jamy-ustnej-i-zebow/"
+ },
+ {
+  "id": 205,
+  "name": "Pielęgnacja oczu i uszu",
+  "slug": "pielegnacja-oczu-i-uszu",
+  "description": "",
+  "parent": 245,
+  "count": 13,
+  "image": {
+   "id": 16294,
+   "src": "https://eurowet.pl/wp-content/uploads/2023/06/Optex_100ml-1.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2023/06/Optex_100ml-1-250x188.png",
+   "srcset": "",
+   "sizes": "(max-width: 315px) 100vw, 315px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "Optex_100ml",
+   "alt": ""
+  },
+  "review_count": 0,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/pielegnacja-oczu-i-uszu/"
+ },
+ {
+  "id": 210,
+  "name": "Preparaty ochronne przeciw pchłom i kleszczom",
+  "slug": "preparaty-odstraszajace-pchly-i-kleszcze",
+  "description": "",
+  "parent": 245,
+  "count": 5,
+  "image": {
+   "id": 18375,
+   "src": "https://eurowet.pl/wp-content/uploads/2024/02/Spray_odstraszajacy_pchly_kleszcze_100ml.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2024/02/Spray_odstraszajacy_pchly_kleszcze_100ml-250x188.png",
+   "srcset": "https://eurowet.pl/wp-content/uploads/2024/02/Spray_odstraszajacy_pchly_kleszcze_100ml.png 448w, https://eurowet.pl/wp-content/uploads/2024/02/Spray_odstraszajacy_pchly_kleszcze_100ml-350x758.png 350w, https://eurowet.pl/wp-content/uploads/2024/02/Spray_odstraszajacy_pchly_kleszcze_100ml-139x300.png 139w",
+   "sizes": "(max-width: 448px) 100vw, 448px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "Spray_odstraszajacy_pchly_kleszcze_100ml",
+   "alt": ""
+  },
+  "review_count": 0,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/preparaty-odstraszajace-pchly-i-kleszcze/"
+ },
+ {
+  "id": 203,
+  "name": "Preparaty wspomagające zdrowie",
+  "slug": "preparaty-wspomagajace-zdrowie",
+  "description": "UŁATWIAJĄ UTRZYMANIE DOBREGO STANU ZDROWIA ZWIERZĄT.STOSOWANE W ZABURZENIACH UKŁADU RUCHOWEGO I POKARMOWEGO ORAZ WĄTROBY, TRZUSTKI I NEREK. ZAWIERAJĄ WYCIĄGI ROŚLINNE.SĄ BEZPIECZNE DLA ZWIERZĄT I ŚRODOWISKA NATURALNEGO.",
+  "parent": 245,
+  "count": 18,
+  "image": {
+   "id": 1748,
+   "src": "https://eurowet.pl/wp-content/uploads/2018/07/Amylan_AD_30tab-2.png",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2018/07/Amylan_AD_30tab-2-250x188.png",
+   "srcset": "https://eurowet.pl/wp-content/uploads/2018/07/Amylan_AD_30tab-2.png 716w, https://eurowet.pl/wp-content/uploads/2018/07/Amylan_AD_30tab-2-350x489.png 350w, https://eurowet.pl/wp-content/uploads/2018/07/Amylan_AD_30tab-2-215x300.png 215w",
+   "sizes": "(max-width: 716px) 100vw, 716px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 250px) 100vw, 250px",
+   "name": "Amylan_AD_30tab",
+   "alt": ""
+  },
+  "review_count": 0,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/preparaty-wspomagajace-zdrowie/"
+ },
+ {
+  "id": 245,
+  "name": "Sklep",
+  "slug": "sklep",
+  "description": "Wszystkie produkty EUROWET",
+  "parent": 0,
+  "count": 133,
+  "image": {
+   "id": 8188,
+   "src": "https://eurowet.pl/wp-content/uploads/2020/03/EUROWET_logotyp.jpg",
+   "thumbnail": "https://eurowet.pl/wp-content/uploads/2020/03/EUROWET_logotyp.jpg",
+   "srcset": "",
+   "sizes": "(max-width: 200px) 100vw, 200px",
+   "thumbnail_srcset": "",
+   "thumbnail_sizes": "(max-width: 200px) 100vw, 200px",
+   "name": "EUROWET_logotyp",
+   "alt": ""
+  },
+  "review_count": 1,
+  "permalink": "https://eurowet.pl/kategoria-produktu/sklep/"
+ }
+]

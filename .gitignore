@@ -1,0 +1,13 @@
+# Local environment / build output
+node_modules/
+/tmp/
+*.log
+.DS_Store
+/tests/output/
+/tests/playwright-report/
+/tests/test-results/
+# Large raw REST dumps are stored gzipped (see audit/raw/*.json.gz)
+/audit/raw/media.json
+/audit/raw/pages.json
+/audit/raw/posts.json
+/audit/raw/html/

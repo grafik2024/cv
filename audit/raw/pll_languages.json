@@ -1,0 +1,72 @@
+[
+ {
+  "name": "Polski",
+  "slug": "pl",
+  "term_group": 0,
+  "term_id": 12,
+  "locale": "pl_PL",
+  "is_rtl": false,
+  "w3c": "pl-PL",
+  "facebook": "pl_PL",
+  "home_url": "https://eurowet.pl/",
+  "search_url": "https://eurowet.pl/",
+  "host": "",
+  "page_on_front": 645,
+  "page_for_posts": 653,
+  "flag_code": "pl",
+  "flag_url": "https://eurowet.pl/wp-content/plugins/polylang/flags/pl.png",
+  "flag": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAPFBMVEX/8fH67Ozz5ubt4OD+/v77+/v39/fo2Nj5AAD+jo79bW36X1/4T0/5QUHhAAD3MzP0Kir2ICDzERHtAACO5h0ZAAAAQUlEQVR4AQXBsRHDMAwAMTzNwvuvm5MVIECIZIEQZ4EQ7AAIGBABegsR+Z7VxChx7hCjhIwYJcTydcgQ1gv8Lhd/58kJTU6WtnIAAAAASUVORK5CYII=\" alt=\"Polski\" width=\"16\" height=\"11\" style=\"width: 16px; height: 11px;\" />",
+  "custom_flag_url": "",
+  "custom_flag": "",
+  "active": true,
+  "fallbacks": [],
+  "is_default": true,
+  "term_props": {
+   "language": {
+    "term_id": 12,
+    "term_taxonomy_id": 12,
+    "count": 2286
+   },
+   "term_language": {
+    "term_id": 13,
+    "term_taxonomy_id": 13,
+    "count": 132
+   }
+  }
+ },
+ {
+  "name": "English",
+  "slug": "en",
+  "term_group": 1,
+  "term_id": 15,
+  "locale": "en_US",
+  "is_rtl": false,
+  "w3c": "en-US",
+  "facebook": "en_US",
+  "home_url": "https://eurowet.pl/en/eurowet-eng/",
+  "search_url": "https://eurowet.pl/en/",
+  "host": "",
+  "page_on_front": 4031,
+  "page_for_posts": 4011,
+  "flag_code": "gb",
+  "flag_url": "https://eurowet.pl/wp-content/plugins/polylang/flags/gb.png",
+  "flag": "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==\" alt=\"English\" width=\"16\" height=\"11\" style=\"width: 16px; height: 11px;\" />",
+  "custom_flag_url": "",
+  "custom_flag": "",
+  "active": true,
+  "fallbacks": [],
+  "is_default": false,
+  "term_props": {
+   "language": {
+    "term_id": 15,
+    "term_taxonomy_id": 15,
+    "count": 582
+   },
+   "term_language": {
+    "term_id": 16,
+    "term_taxonomy_id": 16,
+    "count": 14
+   }
+  }
+ }
+]

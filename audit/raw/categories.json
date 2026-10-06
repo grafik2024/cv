@@ -1,0 +1,312 @@
+[
+ {
+  "id": 2,
+  "count": 324,
+  "description": "",
+  "link": "https://eurowet.pl/category/aktualnosci/",
+  "name": "Aktualności",
+  "slug": "aktualnosci",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.3 (Yoast SEO v28.6) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Aktualności - EUROWET</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://eurowet.pl/category/aktualnosci/\" />\n<meta property=\"og:locale\" content=\"pl_PL\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Archiwa Aktualności\" />\n<meta property=\"og:url\" content=\"https://eurowet.pl/category/aktualnosci/\" />\n<meta property=\"og:site_name\" content=\"EUROWET\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@EurowetFirma\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/eurowet.pl\\/category\\/aktualnosci\\/\",\"url\":\"https:\\/\\/eurowet.pl\\/category\\/aktualnosci\\/\",\"name\":\"Aktualności - EUROWET\",\"isPartOf\":{\"@id\":\"https:\\/\\/eurowet.pl\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/eurowet.pl\\/category\\/aktualnosci\\/#breadcrumb\"},\"inLanguage\":\"pl-PL\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/eurowet.pl\\/category\\/aktualnosci\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Strona główna\",\"item\":\"https:\\/\\/eurowet.pl\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Aktualności\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/eurowet.pl\\/#website\",\"url\":\"https:\\/\\/eurowet.pl\\/\",\"name\":\"Producent preparatów weterynaryjnych\",\"description\":\"Producent i dystrybutor preparatów dla zwierząt.\",\"publisher\":{\"@id\":\"https:\\/\\/eurowet.pl\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/eurowet.pl\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pl-PL\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/eurowet.pl\\/#organization\",\"name\":\"Eurowet Sp. z o.o.\",\"alternateName\":\"Eurowet Sp. z o.o.\",\"url\":\"https:\\/\\/eurowet.pl\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pl-PL\",\"@id\":\"https:\\/\\/eurowet.pl\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/eurowet.pl\\/wp-content\\/uploads\\/2023\\/10\\/EUROWET_logotyp.jpg\",\"contentUrl\":\"https:\\/\\/eurowet.pl\\/wp-content\\/uploads\\/2023\\/10\\/EUROWET_logotyp.jpg\",\"width\":188,\"height\":168,\"caption\":\"Eurowet Sp. z o.o.\"},\"image\":{\"@id\":\"https:\\/\\/eurowet.pl\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/Eurowet\\/\",\"https:\\/\\/x.com\\/EurowetFirma\",\"https:\\/\\/www.instagram.com\\/eurowet\\/\",\"https:\\/\\/www.tiktok.com\\/@eurowet\"],\"description\":\"Producent preparatów weterynaryjnych i higienicznych Producent i dystrybutor preparatów dla psów, kotów i nowych zwierząt towarzyszących. Oferujemy ponad 150 specjalistycznych produktów. Wszystkie preparaty oparte są na naturalnych składnikach i są produkowane przy zastosowaniu nowoczesnych technologii. Oferujemy również preparaty myjące i czyszczące do ogólnego stosowania, takie jak: żele do rąk, płyny myjące, spraye do powierzchni. Produkty są przeznaczone do stosowania w warunkach domowych oraz placówkach użytku publicznego. Współpracujemy z największymi dystrybutorami w Polsce. Dermokosmetyki weterynaryjne Grupa preparatów ułatwiających utrzymanie prawidłowego stanu skóry i sierści. Preparaty wspomagające zdrowie zwierząt Karmy uzupełniające Produkty do pielęgnacji oczu i uszu Preparaty do pielęgnacji jamy ustnej i zębów Kolekcje kosmetyków Kolor&Pielęgnacja, Amiwet Preparaty dla ptaków Produkty higieniczne\",\"email\":\"biuro@eurowet.pl\",\"telephone\":\"627530575\",\"legalName\":\"Eurowet sp. z o.o.\",\"vatID\":\"618-004-06-93\"}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+  "yoast_head_json": {
+   "title": "Aktualności - EUROWET",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://eurowet.pl/category/aktualnosci/",
+   "og_locale": "pl_PL",
+   "og_type": "article",
+   "og_title": "Archiwa Aktualności",
+   "og_url": "https://eurowet.pl/category/aktualnosci/",
+   "og_site_name": "EUROWET",
+   "twitter_card": "summary_large_image",
+   "twitter_site": "@EurowetFirma",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://eurowet.pl/category/aktualnosci/",
+      "url": "https://eurowet.pl/category/aktualnosci/",
+      "name": "Aktualności - EUROWET",
+      "isPartOf": {
+       "@id": "https://eurowet.pl/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://eurowet.pl/category/aktualnosci/#breadcrumb"
+      },
+      "inLanguage": "pl-PL"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://eurowet.pl/category/aktualnosci/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Strona główna",
+        "item": "https://eurowet.pl/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Aktualności"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://eurowet.pl/#website",
+      "url": "https://eurowet.pl/",
+      "name": "Producent preparatów weterynaryjnych",
+      "description": "Producent i dystrybutor preparatów dla zwierząt.",
+      "publisher": {
+       "@id": "https://eurowet.pl/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://eurowet.pl/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "pl-PL"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://eurowet.pl/#organization",
+      "name": "Eurowet Sp. z o.o.",
+      "alternateName": "Eurowet Sp. z o.o.",
+      "url": "https://eurowet.pl/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "pl-PL",
+       "@id": "https://eurowet.pl/#/schema/logo/image/",
+       "url": "https://eurowet.pl/wp-content/uploads/2023/10/EUROWET_logotyp.jpg",
+       "contentUrl": "https://eurowet.pl/wp-content/uploads/2023/10/EUROWET_logotyp.jpg",
+       "width": 188,
+       "height": 168,
+       "caption": "Eurowet Sp. z o.o."
+      },
+      "image": {
+       "@id": "https://eurowet.pl/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.facebook.com/Eurowet/",
+       "https://x.com/EurowetFirma",
+       "https://www.instagram.com/eurowet/",
+       "https://www.tiktok.com/@eurowet"
+      ],
+      "description": "Producent preparatów weterynaryjnych i higienicznych Producent i dystrybutor preparatów dla psów, kotów i nowych zwierząt towarzyszących. Oferujemy ponad 150 specjalistycznych produktów. Wszystkie preparaty oparte są na naturalnych składnikach i są produkowane przy zastosowaniu nowoczesnych technologii. Oferujemy również preparaty myjące i czyszczące do ogólnego stosowania, takie jak: żele do rąk, płyny myjące, spraye do powierzchni. Produkty są przeznaczone do stosowania w warunkach domowych oraz placówkach użytku publicznego. Współpracujemy z największymi dystrybutorami w Polsce. Dermokosmetyki weterynaryjne Grupa preparatów ułatwiających utrzymanie prawidłowego stanu skóry i sierści. Preparaty wspomagające zdrowie zwierząt Karmy uzupełniające Produkty do pielęgnacji oczu i uszu Preparaty do pielęgnacji jamy ustnej i zębów Kolekcje kosmetyków Kolor&Pielęgnacja, Amiwet Preparaty dla ptaków Produkty higieniczne",
+      "email": "biuro@eurowet.pl",
+      "telephone": "627530575",
+      "legalName": "Eurowet sp. z o.o.",
+      "vatID": "618-004-06-93"
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://eurowet.pl/wp-json/wp/v2/categories/2",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://eurowet.pl/wp-json/wp/v2/categories"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://eurowet.pl/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://eurowet.pl/wp-json/wp/v2/posts?categories=2"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 17,
+  "count": 32,
+  "description": "",
+  "link": "https://eurowet.pl/en/category/bez-kategorii-en/",
+  "name": "Bez kategorii",
+  "slug": "bez-kategorii-en",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.3 (Yoast SEO v28.6) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Bez kategorii - EUROWET</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://eurowet.pl/en/category/bez-kategorii-en/\" />\n<meta property=\"og:locale\" content=\"pl_PL\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Archiwa Bez kategorii\" />\n<meta property=\"og:url\" content=\"https://eurowet.pl/en/category/bez-kategorii-en/\" />\n<meta property=\"og:site_name\" content=\"EUROWET\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@EurowetFirma\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/eurowet.pl\\/en\\/category\\/bez-kategorii-en\\/\",\"url\":\"https:\\/\\/eurowet.pl\\/en\\/category\\/bez-kategorii-en\\/\",\"name\":\"Bez kategorii - EUROWET\",\"isPartOf\":{\"@id\":\"https:\\/\\/eurowet.pl\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/eurowet.pl\\/en\\/category\\/bez-kategorii-en\\/#breadcrumb\"},\"inLanguage\":\"pl-PL\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/eurowet.pl\\/en\\/category\\/bez-kategorii-en\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Strona główna\",\"item\":\"https:\\/\\/eurowet.pl\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Bez kategorii\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/eurowet.pl\\/#website\",\"url\":\"https:\\/\\/eurowet.pl\\/\",\"name\":\"Producent preparatów weterynaryjnych\",\"description\":\"Producent i dystrybutor preparatów dla zwierząt.\",\"publisher\":{\"@id\":\"https:\\/\\/eurowet.pl\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/eurowet.pl\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pl-PL\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/eurowet.pl\\/#organization\",\"name\":\"Eurowet Sp. z o.o.\",\"alternateName\":\"Eurowet Sp. z o.o.\",\"url\":\"https:\\/\\/eurowet.pl\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pl-PL\",\"@id\":\"https:\\/\\/eurowet.pl\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/eurowet.pl\\/wp-content\\/uploads\\/2023\\/10\\/EUROWET_logotyp.jpg\",\"contentUrl\":\"https:\\/\\/eurowet.pl\\/wp-content\\/uploads\\/2023\\/10\\/EUROWET_logotyp.jpg\",\"width\":188,\"height\":168,\"caption\":\"Eurowet Sp. z o.o.\"},\"image\":{\"@id\":\"https:\\/\\/eurowet.pl\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/Eurowet\\/\",\"https:\\/\\/x.com\\/EurowetFirma\",\"https:\\/\\/www.instagram.com\\/eurowet\\/\",\"https:\\/\\/www.tiktok.com\\/@eurowet\"],\"description\":\"Producent preparatów weterynaryjnych i higienicznych Producent i dystrybutor preparatów dla psów, kotów i nowych zwierząt towarzyszących. Oferujemy ponad 150 specjalistycznych produktów. Wszystkie preparaty oparte są na naturalnych składnikach i są produkowane przy zastosowaniu nowoczesnych technologii. Oferujemy również preparaty myjące i czyszczące do ogólnego stosowania, takie jak: żele do rąk, płyny myjące, spraye do powierzchni. Produkty są przeznaczone do stosowania w warunkach domowych oraz placówkach użytku publicznego. Współpracujemy z największymi dystrybutorami w Polsce. Dermokosmetyki weterynaryjne Grupa preparatów ułatwiających utrzymanie prawidłowego stanu skóry i sierści. Preparaty wspomagające zdrowie zwierząt Karmy uzupełniające Produkty do pielęgnacji oczu i uszu Preparaty do pielęgnacji jamy ustnej i zębów Kolekcje kosmetyków Kolor&Pielęgnacja, Amiwet Preparaty dla ptaków Produkty higieniczne\",\"email\":\"biuro@eurowet.pl\",\"telephone\":\"627530575\",\"legalName\":\"Eurowet sp. z o.o.\",\"vatID\":\"618-004-06-93\"}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+  "yoast_head_json": {
+   "title": "Bez kategorii - EUROWET",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://eurowet.pl/en/category/bez-kategorii-en/",
+   "og_locale": "pl_PL",
+   "og_type": "article",
+   "og_title": "Archiwa Bez kategorii",
+   "og_url": "https://eurowet.pl/en/category/bez-kategorii-en/",
+   "og_site_name": "EUROWET",
+   "twitter_card": "summary_large_image",
+   "twitter_site": "@EurowetFirma",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://eurowet.pl/en/category/bez-kategorii-en/",
+      "url": "https://eurowet.pl/en/category/bez-kategorii-en/",
+      "name": "Bez kategorii - EUROWET",
+      "isPartOf": {
+       "@id": "https://eurowet.pl/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://eurowet.pl/en/category/bez-kategorii-en/#breadcrumb"
+      },
+      "inLanguage": "pl-PL"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://eurowet.pl/en/category/bez-kategorii-en/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Strona główna",
+        "item": "https://eurowet.pl/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bez kategorii"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://eurowet.pl/#website",
+      "url": "https://eurowet.pl/",
+      "name": "Producent preparatów weterynaryjnych",
+      "description": "Producent i dystrybutor preparatów dla zwierząt.",
+      "publisher": {
+       "@id": "https://eurowet.pl/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://eurowet.pl/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "pl-PL"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://eurowet.pl/#organization",
+      "name": "Eurowet Sp. z o.o.",
+      "alternateName": "Eurowet Sp. z o.o.",
+      "url": "https://eurowet.pl/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "pl-PL",
+       "@id": "https://eurowet.pl/#/schema/logo/image/",
+       "url": "https://eurowet.pl/wp-content/uploads/2023/10/EUROWET_logotyp.jpg",
+       "contentUrl": "https://eurowet.pl/wp-content/uploads/2023/10/EUROWET_logotyp.jpg",
+       "width": 188,
+       "height": 168,
+       "caption": "Eurowet Sp. z o.o."
+      },
+      "image": {
+       "@id": "https://eurowet.pl/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.facebook.com/Eurowet/",
+       "https://x.com/EurowetFirma",
+       "https://www.instagram.com/eurowet/",
+       "https://www.tiktok.com/@eurowet"
+      ],
+      "description": "Producent preparatów weterynaryjnych i higienicznych Producent i dystrybutor preparatów dla psów, kotów i nowych zwierząt towarzyszących. Oferujemy ponad 150 specjalistycznych produktów. Wszystkie preparaty oparte są na naturalnych składnikach i są produkowane przy zastosowaniu nowoczesnych technologii. Oferujemy również preparaty myjące i czyszczące do ogólnego stosowania, takie jak: żele do rąk, płyny myjące, spraye do powierzchni. Produkty są przeznaczone do stosowania w warunkach domowych oraz placówkach użytku publicznego. Współpracujemy z największymi dystrybutorami w Polsce. Dermokosmetyki weterynaryjne Grupa preparatów ułatwiających utrzymanie prawidłowego stanu skóry i sierści. Preparaty wspomagające zdrowie zwierząt Karmy uzupełniające Produkty do pielęgnacji oczu i uszu Preparaty do pielęgnacji jamy ustnej i zębów Kolekcje kosmetyków Kolor&Pielęgnacja, Amiwet Preparaty dla ptaków Produkty higieniczne",
+      "email": "biuro@eurowet.pl",
+      "telephone": "627530575",
+      "legalName": "Eurowet sp. z o.o.",
+      "vatID": "618-004-06-93"
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://eurowet.pl/wp-json/wp/v2/categories/17",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://eurowet.pl/wp-json/wp/v2/categories"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://eurowet.pl/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://eurowet.pl/wp-json/wp/v2/posts?categories=17"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

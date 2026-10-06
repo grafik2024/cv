@@ -1,0 +1,155 @@
+```json
+{
+ "id": 8304,
+ "type": "pages",
+ "title": "MILVET 10 x 100g",
+ "path": "/en/products/complementary-foods/milvet-10-x-100g/",
+ "date": "2020-04-30T09:04:23",
+ "modified": "2026-06-09T11:22:03",
+ "parent": 4065,
+ "status": "publish",
+ "featured_media": 0,
+ "yoast": {
+  "title": "MILVET 10 x 100g - EUROWET",
+  "description": "Pełnoporcjowy preparat mlekozastępczy doskonale zastępuje naturalny pokarm matki. Dostarcza lekkostrawnego białka i łatwo przyswajalnego tłuszczu. Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka. Szczeniętom i kociętom dostarcza niezbędnej energii, witamin i budulca do rozwoju. Preparat zaspokaja potrzeby mineralne i witaminowe rosnących szczeniąt i kociąt. Jest bardzo dobrze przyswajany przez zwierzęta i może być podawany zaraz po urodzeniu.",
+  "canonical": "https://eurowet.pl/en/products/complementary-foods/milvet-10-x-100g/",
+  "robots": {
+   "index": "index",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "og_title": "MILVET 10 x 100g",
+  "og_description": "Pełnoporcjowy preparat mlekozastępczy doskonale zastępuje naturalny pokarm matki. Dostarcza lekkostrawnego białka i łatwo przyswajalnego tłuszczu. Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka. Szczeniętom i kociętom dostarcza niezbędnej energii, witamin i budulca do rozwoju. Preparat zaspokaja potrzeby mineralne i witaminowe rosnących szczeniąt i kociąt. Jest bardzo dobrze przyswajany przez zwierzęta i może być podawany zaraz po urodzeniu.",
+  "og_image": [
+   {
+    "width": 1000,
+    "height": 1000,
+    "url": "https://eurowet.pl/wp-content/uploads/2020/04/Milvet_100g-1.png",
+    "type": "image/png"
+   }
+  ]
+ },
+ "word_count": 510
+}
+```
+
+# MILVET 10 x 100g
+
+![](https://eurowet.pl/wp-content/uploads/2026/06/Milvet_100g.png)   <https://eurowet.pl/wp-content/uploads/2026/06/Milvet_100g.png>
+
+   ![](https://eurowet.pl/wp-content/uploads/2026/06/EUROWET_Milvet_karton_zbiorczy1.png)   <https://eurowet.pl/wp-content/uploads/2026/06/EUROWET_Milvet_karton_zbiorczy1.png>
+
+ 10 x 100g
+
+# MILVET
+
+## Complete milk replacer for puppies and kittens
+
+ ![](https://eurowet.pl/wp-content/uploads/2018/08/EUROWET_logotyp_znak.png)
+
+### REPLACES THE MOTHER'S MILK
+
+ ![](https://eurowet.pl/wp-content/uploads/2018/08/EUROWET_logotyp_znak.png)
+
+### CAN BE ADMINISTERED STRAIGHT AFTER BIRTH
+
+ ![](https://eurowet.pl/wp-content/uploads/2018/08/EUROWET_logotyp_znak.png)
+
+### SUPPLIES ENERGY, VITAMINS AND MINERALS
+
+ effective
+
+## purpose
+
+**MILVET** is a complete milk substitute, which perfectly replaces natural breast milk. It provides easily digestible protein and fat. Feeding milk replacer to nursing dogs and cats can increase production of their own milk. It provides puppies and kittens with necessary energy, vitamins and other nutrients. MILVET completely covers requirements for minerals and vitamins of growing animals. It is easy to digest and can be fed straight after birth. It is intended for puppies and kittens reared without mothers, in case of insufficient amount of milk produced by the mother, as a feed supplement during the weaning process, during the period of convalescence or increased effort (e.g. hunting).
+
+###   Use
+
+ Determine the portion of the preparation according to the table on the packaging. Pour one portion of the preparation into the bottle, then add two portions of boiled water at about 60 ° C - 1: 2 ratio. Mix vigorously. Cool to 37 ° C. For the first 15 days of life, feed through a teat and then switch to a bowl. After the 4th week of life, during the gradual transition to solid feed, add powder to the feed.
+
+   ![](https://eurowet.pl/wp-content/uploads/2018/08/EUROWET_MILVET_dawkowanie.png)   <https://eurowet.pl/wp-content/uploads/2018/08/EUROWET_MILVET_dawkowanie.png>
+
+###   Indications
+
+ Complete milk replacer for puppies and kittens.
+
+###   Notice
+
+ 1 level teaspoon or level measuring cup (5 ml) contains ca. 2g of the powder; level tablespoon or level measuring cup (15 ml) contains ca. 6 g of powder.
+
+###   Ingredients
+
+ Ingredients: Skimmed milk powder, milk fat, whey protein concentrate, whey powder, soy lecithin Analytical ingredients: Crude protein 30.0%, crude fiber 0.0%, crude fat 20.0%, crude ash 6.0% Additives per 1 kg: Nutritional: Vitamins: 3a672a vitamin A 25 000 IU, 3a671 vitamin D3 2 000 IU, 3a700 vitamin E 60 mg, 3a820 vitamin B1 20 mg, 3a vitamin B2 40 mg, 3a831 vitamin B6 15 mg, 3a vitamin B12 (cyanocobalamin) 0,08 mg, 3a841 calcium D-pantothenate 46 mg, 3a316 folic acid 0,8 mg, 3a314 niacin 25 mg, 3a890 choline chloride 1000 mg, 3a370 taurine 2000 mg. Trace elements: 3b108 iron(II) chelate of glycine hydrate100 mg, 3b201 potassium iodide 1,6 mg, 3b405 copper(II) sulphate pentahydrate 15 mg, 3b503 manganous sulphate monohydrate 66 mg, 3b603 zinc oxide 160 mg, 3b801 sodium selenite 0,25 mg. Amino acids: 3c301 DL-methionine 2000 mg.
+
+ also check
+
+## related products
+
+Effective products with complementary action.
+
+   ![](https://eurowet.pl/wp-content/uploads/2022/12/Wita-Vet_Pies_COMPLEX_1g_80tab.png)   <https://eurowet.pl/en/products/complementary-foods/wita-vet-junioradult-1g-80pcs-eng/>
+
+### Wita-Vet COMPLEX - Dog - 1g, 80 tab.
+
+Complementary food for dogs.
+
+Daily dose of vitamins and minerals. Growth | Work | Vitality | Pregnancy. Junior+ Adult, Ca/P 1.3.
+
+   ![](https://eurowet.pl/wp-content/uploads/2026/06/Milvet_300g.png)   </milvet-300g-eng>
+
+### Milvet 300g
+
+Complete milk replacer for puppies and kittens.
+
+   ![](https://eurowet.pl/wp-content/uploads/2026/06/Milvet_800g.png)   <https://eurowet.pl/en/products/complementary-foods/milvet-800g-eng/>
+
+### Milvet 800g
+
+Complete milk replacer for puppies and kittens.
+
+ HAVE YOU GOT ANY QUESTIONS?
+
+## CONTACT US
+
+We will be happy to offer you advice.
+
+  Name
+
+  Email
+
+  Telephone
+
+  Company
+
+  Message
+
+     Submit
+
+###   +48 62 753 05 75
+
+-      biuro@eurowet.pl  <mailto:%20biuro@eurowet.pl>
+
+Hours 08-16
+
+## [audit] internal links
+/en/products/complementary-foods/milvet-800g-eng/
+/en/products/complementary-foods/wita-vet-junioradult-1g-80pcs-eng/
+/milvet-300g-eng
+/wp-content/uploads/2018/08/EUROWET_MILVET_dawkowanie.png
+/wp-content/uploads/2026/06/EUROWET_Milvet_karton_zbiorczy1.png
+/wp-content/uploads/2026/06/Milvet_100g.png
+mailto:%20biuro@eurowet.pl
+
+## [audit] external links
+
+
+## [audit] images
+https://eurowet.pl/wp-content/uploads/2026/06/Milvet_100g.png | alt=
+https://eurowet.pl/wp-content/uploads/2026/06/EUROWET_Milvet_karton_zbiorczy1.png | alt=
+https://eurowet.pl/wp-content/uploads/2018/08/EUROWET_logotyp_znak.png | alt=
+https://eurowet.pl/wp-content/uploads/2018/08/EUROWET_MILVET_dawkowanie.png | alt=
+https://eurowet.pl/wp-content/uploads/2022/12/Wita-Vet_Pies_COMPLEX_1g_80tab.png | alt=
+https://eurowet.pl/wp-content/uploads/2026/06/Milvet_300g.png | alt=
+https://eurowet.pl/wp-content/uploads/2026/06/Milvet_800g.png | alt=
