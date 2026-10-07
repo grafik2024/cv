@@ -1,0 +1,40 @@
+[
+ {
+  "slug": "excellence-line-bathroom",
+  "background": "plate-bathroom.png",
+  "packshots": [
+   "hexoderm-excellence.png",
+   "peptoderm-excellence.png",
+   "alervet-excellence.png",
+   "sebovet-excellence.png"
+  ],
+  "method": "real packshot pixels, uniform scaling only, composited on AI-generated empty background",
+  "disclosure_pl": "Zdjęcie produktu oryginalne; tło wygenerowane z pomocą AI (Higgsfield).",
+  "files": {
+   "1600": {
+    "height": 893
+   },
+   "800": {
+    "height": 447
+   }
+  }
+ },
+ {
+  "slug": "hero-triaderm-ektovet",
+  "background": "plate-podium.png",
+  "packshots": [
+   "triaderm-excellence.png",
+   "ektovet.png"
+  ],
+  "method": "real packshot pixels, uniform scaling only, composited on AI-generated empty background",
+  "disclosure_pl": "Zdjęcie produktu oryginalne; tło wygenerowane z pomocą AI (Higgsfield).",
+  "files": {
+   "1600": {
+    "height": 893
+   },
+   "800": {
+    "height": 447
+   }
+  }
+ }
+]
