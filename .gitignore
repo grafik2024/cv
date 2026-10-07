@@ -11,3 +11,4 @@ node_modules/
 /audit/raw/pages.json
 /audit/raw/posts.json
 /audit/raw/html/
+tests/node_modules/

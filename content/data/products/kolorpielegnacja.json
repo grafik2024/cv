@@ -1,0 +1,2103 @@
+{
+ "group": "kolorpielegnacja",
+ "families": [
+  {
+   "family_slug": "kp-drop-and-go-krople",
+   "name": "Drop&Go",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat odstraszający",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja",
+    "preparaty-odstraszajace-pchly-i-kleszcze"
+   ],
+   "subtitle_verbatim": "Krople przeciw pchłom, kleszczom i innym owadom",
+   "badges_verbatim": [
+    "NATURALNY EKSTRAKT Z MIODLI INDYJSKIEJ (NEEM) O DZIAŁANIU REPELENCYJNYM, PRZECIWBAKTERYJNYM I PRZECIWZAPALNYM",
+    "WSPOMAGA OCHRONĘ PSÓW I KOTÓW PRZED PCHŁAMI, KLESZCZAMI I INNYMI PASOŻYTAMI, ŁAGODZI SWĘDZENIE PO UKĄSZENIACH",
+    "BEZPIECZNY PREPARAT DO STOSOWANIA MIEJSCOWEGO NA SKÓRĘ I SIERŚĆ",
+    "+ olejek Neem"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "pchły i kleszcze (odstraszanie)",
+     "evidence_verbatim": "WSPOMAGA OCHRONĘ PSÓW I KOTÓW PRZED PCHŁAMI, KLESZCZAMI I INNYMI PASOŻYTAMI",
+     "source_field": "badges"
+    },
+    {
+     "need": "pchły i kleszcze (odstraszanie)",
+     "evidence_verbatim": "Krople zapewniają dodatkową skuteczną ochronę przeciw pchłom i kleszczom.",
+     "source_field": "properties"
+    },
+    {
+     "need": "swędzenie po ukąszeniach owadów",
+     "evidence_verbatim": "ŁAGODZI SWĘDZENIE PO UKĄSZENIACH",
+     "source_field": "badges"
+    },
+    {
+     "need": "pielęgnacja sierści i skóry",
+     "evidence_verbatim": "Pielęgnacja sierści i skóry.",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek Neem (ekstrakt z liści miodli indyjskiej)",
+     "label_name": "Melia Azadirachta Leaf Extract",
+     "stated_function_verbatim": "NATURALNY EKSTRAKT Z MIODLI INDYJSKIEJ (NEEM) O DZIAŁANIU REPELENCYJNYM, PRZECIWBAKTERYJNYM I PRZECIWZAPALNYM"
+    }
+   ],
+   "properties_verbatim": "Krople zapewniają dodatkową skuteczną ochronę przeciw pchłom i kleszczom. Bezpieczne dla ciebie, twoich bliskich i środowiska! Bez alergii i podrażnień. Skutecznie dodatkowo chroni przed pchłami i kleszczami. OLEJEK NEEM Melia Azadirachta Leaf Extract to wyciąg z liści miodli indyjskiej, Melia azadirachta, Meliaceae. Wyciąg z liści miodli indyjskiej jest wyjątkowo bogaty we wtórne substancje roślinne i olejki eteryczne. Liście Neem mają właściwości przeciwzapalne, przeciwgorączkowe, antybakteryjne, antywirusowe, przeciwgrzybiczne, przeciwpasożytnicze. Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów: wodny ekstrakt z liści działa przeciwko składaniu jaj przez Anticaria gemmatalis, świeże liście działają mutagennie na komara Aedes aegypti, dihydronimocynol i 6-α-hydroksy-azadiradion okazały się być śmiertelne dla Anopheles stephensi (na czwartym etapie larwalnym), a salanina wydłuża etap larwalny, opóźnia etap kokonu, wywołuje śmiertelność wśród larw i poczwarek oraz redukuje wagę poczwarki Oxya fuscovittata. Niektóre pochodne limonoidu niekorzystnie wpływają na płodność muchy domowej Musca domestica. Azadirachtyna jest toksyczna względem pluskwiaków Rhodnius prolixus, hamuje proces odżywiania szarańczy Schistocerca gregaria i działa na ponad 200 gatunków insektów, przerywając ich wzrost i utrudniając odżywianie. W pewnym stopniu jest więc względem nich toksyczna natomiast wykazuje bardzo niską toksyczność względem ssaków i jest biodegradowalna. Najaktywniejszymi związkami miodli są azadirachtyna A, azadirachtyna B i salanina, które są rozpuszczalne w wodzie, dzięki czemu ekstrakt z miodli zachowuje ich właściwości repelencyjne. Dlatego ekstrakt z miodli zalecany jest w kosmetykach odstraszających owady.",
+   "usage_verbatim": "Przed otworzeniem pipety należy ją wstrząsnąć. Po odsunięciu sierści zawartość pipety nanieść na skórę w dwóch lub trzech miejscach ( w okolicy międzyłopatkowej lub lędźwiowej) Stosować w zależności od potrzeb. - psy i koty o m.c. 45 kg - 3 pipety",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Należy unikać kontaktu preparatu z oczami i umyć ręce po każdym użyciu. Do użytku zewnętrznego.",
+   "composition_verbatim": "Aqua, Glycerin, Melia Azadirachta Leaf Extract, Polysorbate 20, Phenoxyethanol, Ethylhexylglycerin, Sodium Benzoate, Potassium Sorbate",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Drop&Go krople ochronne przeciw pchłom i kleszczom i innym owadom 5x2ml",
+     "capacity": "5x2 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/dropgo-krople-ochronne-przeciw-pchlom-i-kleszczom-i-innym-owadom-5x2ml/",
+     "woo_id": 21843,
+     "woo_path": "/produkt/dropgo-krople-przeciwko-pchlom-kleszczom-i-innym-owadom/",
+     "price_pln": 49.9,
+     "regular_price_pln": 49.9,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/02/EUROWET_DropGo-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/dropgo-krople-ochronne-przeciw-pchlom-i-kleszczom-i-innym-owadom-5x2ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-spray-ochronny-przeciw-pchlom-i-kleszczom",
+    "kp-pianka-ochronna-przeciw-pchlom-i-kleszczom",
+    "kp-szampon-ochronny-przeciw-pchlom-i-kleszczom"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Product page header shows capacity label \"200ml\" although the product is 5x2 ml (Opakowanie: \"5x2 ml\").",
+    "Sposób stosowania on the product page is truncated: \"- psy i koty o m.c.  45 kg - 3 pipety\" (weight bands lost). Full dosing exists only on the Woo product /produkt/dropgo-krople-przeciwko-pchlom-kleszczom-i-innym-owadom/: \"– psy i koty o m.c. < 20 kg – 1 pipeta – psy o m.c. 20-45 kg – 2 pipety – psy o m.c. > 45 kg – 3 pipety\".",
+    "Page title grammar: \"krople ochronne przeciw pchłom i kleszczom i innym owadom\" (double \"i\"); Woo name uses \"krople przeciw pchłom, kleszczom i innym owadom\", Woo slug uses \"przeciwko\".",
+    "Absolute/unsubstantiated safety claims in Właściwości: \"Bezpieczne dla ciebie, twoich bliskich i środowiska! Bez alergii i podrażnień.\" (compliance risk for a cosmetic).",
+    "Related-product card for Pianka ochronna on this page reuses the spray description: \"Spray ochronny przeciw pchłom i kleszczom dla psów i kotów. Naturalnie bezpieczny.\"",
+    "Neem paragraph misspells the insect species \"Anticaria gemmatalis\" (Anticarsia gemmatalis).",
+    "Contact block phone on this page (+48 62 753 04 47) differs from the other product pages (+48 62 580 45 15).",
+    "EN page Yoast description is in Polish.",
+    "Środki ostrożności omit the age/pregnancy restrictions stated for the other Neem products of the line (spray/szampon ochronny: \"Nie przeznaczony dla psów i kotów poniżej 3 miesiąca życia oraz dla suk i kotek ciężarnych lub karmiących\"; pianka: \"Nie przeznaczona dla psów i kotów poniżej 1 roku życia\") — inconsistent across the Neem range; confirm with producer."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-dezodorant-neutralizator-zapachow",
+   "name": "Dezodorant - Neutralizator zapachów",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "odżywka/kosmetyk pielęgnacyjny",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Dezodorant - Neutralizator zapachów DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "Koniec nieprzyjemnych zapachów",
+    "Regulacja mikroflory skóry",
+    "+ Ekstrakt z komórek macierzystych owocu Noni, kompleks prebiotyczny"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść",
+    "okolice odbytu/gruczoły",
+    "uszy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "nieprzyjemny zapach skóry i sierści",
+     "evidence_verbatim": "Spray zapewnia skuteczną ochronę przeciwko powstawaniu nieprzyjemnych zapachów na skórze i sierści zwierząt, wokół gruczołów okołoodbytowych i w uszach.",
+     "source_field": "properties"
+    },
+    {
+     "need": "nieprzyjemny zapach skóry i sierści",
+     "evidence_verbatim": "Koniec nieprzyjemnych zapachów",
+     "source_field": "badges"
+    },
+    {
+     "need": "regulacja mikroflory skóry",
+     "evidence_verbatim": "Regulacja mikroflory skóry",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "ekstrakt z komórek macierzystych owocu Noni",
+     "label_name": "MORINDA CITRIFOLIA CALLUS CULTURE LYSATE",
+     "stated_function_verbatim": "Innowacyjny, naturalny skład oparty na ekstrakcie z komórek macierzystych owocu Noni oraz prebiotykach zapobiega powstawaniu nieprzyjemnych zapachów i wzrostowi nieprawidłowej mikroflory bakteryjnej."
+    },
+    {
+     "name_pl": "kompleks prebiotyczny",
+     "label_name": null,
+     "stated_function_verbatim": "Innowacyjny, naturalny skład oparty na ekstrakcie z komórek macierzystych owocu Noni oraz prebiotykach zapobiega powstawaniu nieprzyjemnych zapachów i wzrostowi nieprawidłowej mikroflory bakteryjnej."
+    }
+   ],
+   "properties_verbatim": "Spray zapewnia skuteczną ochronę przeciwko powstawaniu nieprzyjemnych zapachów na skórze i sierści zwierząt, wokół gruczołów okołoodbytowych i w uszach. Innowacyjny, naturalny skład oparty na ekstrakcie z komórek macierzystych owocu Noni oraz prebiotykach zapobiega powstawaniu nieprzyjemnych zapachów i wzrostowi nieprawidłowej mikroflory bakteryjnej. Jednocześnie nie upośledza naturalnych funkcji skóry i korzystnie wpływa na jej stan.",
+   "usage_verbatim": "Wyczesać sierść w kierunku przeciwnym do ułożenia włosa. Spryskiwać ją równomiernie z odległości 20 – 30 cm z jednoczesnym jej rozchylaniem i ponownie wyczesać. Stosować w zależności od potrzeb.",
+   "indications_verbatim": "Dezodorant w sprayu",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "W przypadku dostania się do oczu, spłukać letnią wodą.",
+   "composition_verbatim": "AQUA, POLYSORBATE 20, GLYCERIN, MORINDA CITRIFOLIA CALLUS CULTURE LYSATE, CITRIC ACID, MALTODEXTRIN, PARFUM, PHENOXYETHANOL, ETHYLHEXYLGLYCERIN",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja DEZODORANT – NEUTRALIZATOR ZAPACHÓW 100ml",
+     "capacity": "100 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-dezodorant-neutralizator-zapachow-100ml/",
+     "woo_id": 20856,
+     "woo_path": "/produkt/dezodorant-neutralizator-zapachow-100ml/",
+     "price_pln": 30.0,
+     "regular_price_pln": 30.0,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/05/KP_Dezodorant_100ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-dezodorant-neutralizator-zapachow-100ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja DEZODORANT – NEUTRALIZATOR ZAPACHÓW 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-dezodorant-neutralizator-zapachow-200ml/",
+     "woo_id": 10362,
+     "woo_path": "/produkt/dezodorant-neutralizator-zapachow-dla-psow-i-kotow/",
+     "price_pln": 42.18,
+     "regular_price_pln": 42.18,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/04/EUROWET_neutralizator_zapachow_kolorpielegnacja_200ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-dezodorant-neutralizator-zapachow-200ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-york-dlugi-wlos",
+    "kp-szampon-do-mycia-na-sucho",
+    "kp-szampon-dla-szczeniat"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Zastosowanie (indications) field holds the product form (\"Dezodorant w sprayu\") instead of an indication.",
+    "Kompleks prebiotyczny named in badges is not identifiable by name in the INCI list.",
+    "200ml page \"PRZEJDŹ DO SKLEPU\" links to /produkt/dezodorant-neutralizator-zapachow-200ml/, which is not the Woo slug (/produkt/dezodorant-neutralizator-zapachow-dla-psow-i-kotow/) and is absent from the product sitemap (404 or redirect).",
+    "EN 200ml page Yoast description is the Polish eye-cleanser text (\"Płyn łagodzi podrażnienia spojówek oraz ułatwia naturalne nawilżenie oczu i powiek...\") — wrong product; EN 100ml Yoast description is in Polish.",
+    "Woo descriptions end \"Stosować w zależności od potrzeb..\" (double period); Woo 200ml slug carries no capacity.",
+    "Related products on the page (szampon York, szampon na sucho, szampon dla szczeniąt) all link to 200ml/150ml legacy short URLs (/kolorpielegnacja-...) rather than canonical /produkty/kolekcja-kolorpielegnacja/... paths."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-emulsja-do-przemywania-uszu",
+   "name": "Emulsja do przemywania uszu",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat do pielęgnacji uszu",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja EMULSJA DO PRZEMYWANIA USZU DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "USUWA WOSKOWINĘ",
+    "ROZMIĘKCZA ZROGOWACIAŁY NASKÓREK",
+    "+ Olejek migdałowy"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "uszy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "Emulsja usuwa nadmiar woskowiny.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "Higiena uszu.",
+     "source_field": "indications"
+    },
+    {
+     "need": "zrogowaciały naskórek",
+     "evidence_verbatim": "ROZMIĘKCZA ZROGOWACIAŁY NASKÓREK",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek migdałowy",
+     "label_name": "Prunus Amygdalus Dulcis (Sweet Almond) Oil",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Emulsja usuwa nadmiar woskowiny. Rozmiękcza zrogowaciały naskórek. Wskazania: higiena zewnętrznego przewodu słuchowego i małżowiny usznej.",
+   "usage_verbatim": "Wprowadzić 5 - 30 kropli (zależnie od wielkości zwierzęcia) do przewodu słuchowego. Rozprowadzić masując podstawę ucha, następnie usunąć nadmiar emulsji przy pomocy wacika. Należy również oczyścić wewnętrzną stronę małżowiny usznej. Stosować w zależności od ilości wytwarzanej woskowiny 1 lub 2 razy w tygodniu.",
+   "indications_verbatim": "Higiena uszu.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Cetearyl Alcohol, Glyceryl Stearate, Ceteareth-20, Ceteareth-12, Cetyl Palmitate, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Glicerin, Benzalkonium Chloride, Parfum, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja EMULSJA DO PRZEMYWANIA USZU 100ml",
+     "capacity": "100 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-emulsja-do-przemywania-uszu-100ml/",
+     "woo_id": 5284,
+     "woo_path": "/produkt/kolor-pielegnacja-emulsja-do-uszu-100ml/",
+     "price_pln": 36.7,
+     "regular_price_pln": 36.7,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_emulsja_do_przemywania_uszu_kolor_pielegnacja_100ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-emulsja-do-przemywania-uszu-100ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-dla-kotow",
+    "kp-szampon-shih-tzu",
+    "kp-plyn-do-przemywania-oczu"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Właściwości mixes in an indications sentence (\"Wskazania: higiena zewnętrznego przewodu słuchowego i małżowiny usznej.\") while the Zastosowanie field says only \"Higiena uszu.\".",
+    "Woo product name is \"EMULSJA DO USZU\" vs page \"EMULSJA DO PRZEMYWANIA USZU\".",
+    "INCI typo: \"Glicerin\" (Glycerin).",
+    "No stated function for the highlighted ingredient (olejek migdałowy) on the page."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-gold-regenerator-siersci-i-skory",
+   "name": "Gold Regenerator sierści i skóry",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Mieszanka paszowa uzupełniająca. Kompleks witamin dla psów i kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "+ BIOTYNA, WIT. A, B6, KWAS NIKOTYNOWY"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra",
+    "ogólna kondycja/witalność"
+   ],
+   "needs_evidence": [
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Karma uzupełniająca dla psów i kotów do stosowania w celu poprawy jakości sierści.",
+     "source_field": "properties"
+    },
+    {
+     "need": "linienie",
+     "evidence_verbatim": "Szczególnie zaleca się ją podawać w okresie linienia.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    },
+    {
+     "need": "zdrowa skóra",
+     "evidence_verbatim": "Lśniąca sierść. Zdrowa skóra.",
+     "source_field": "indications"
+    },
+    {
+     "need": "niedobory żywieniowe / rekonwalescencja",
+     "evidence_verbatim": "Pomaga także uzupełnić niedobory żywieniowe oraz zaspokoić potrzeby zwierząt w okresie rekonwalescencji.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "biotyna",
+     "label_name": "3a880 biotyna 0,5 g",
+     "stated_function_verbatim": "Witaminy wpływają wspomagająco na procesy odpornościowe oraz przemiany metaboliczne organizmu."
+    },
+    {
+     "name_pl": "witamina A",
+     "label_name": "3a672a witamina A 2 g",
+     "stated_function_verbatim": "Witaminy wpływają wspomagająco na procesy odpornościowe oraz przemiany metaboliczne organizmu."
+    },
+    {
+     "name_pl": "witamina B6",
+     "label_name": "3a831 witamina B6 4 g",
+     "stated_function_verbatim": "Witaminy wpływają wspomagająco na procesy odpornościowe oraz przemiany metaboliczne organizmu."
+    },
+    {
+     "name_pl": "kwas nikotynowy (niacyna)",
+     "label_name": "3a314 niacyna 8 g",
+     "stated_function_verbatim": "Witaminy wpływają wspomagająco na procesy odpornościowe oraz przemiany metaboliczne organizmu."
+    },
+    {
+     "name_pl": "hydrolizat miazgi wątrobowej",
+     "label_name": null,
+     "stated_function_verbatim": "Dodatek hydrolizatu miazgi wątrobowej dostarcza szereg witamin z grupy B, w szczególności biorących udział w procesie tworzenia czerwonych ciałek."
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca dla psów i kotów do stosowania w celu poprawy jakości sierści. Szczególnie zaleca się ją podawać w okresie linienia. Pomaga także uzupełnić niedobory żywieniowe oraz zaspokoić potrzeby zwierząt w okresie rekonwalescencji. Dodatek hydrolizatu miazgi wątrobowej dostarcza szereg witamin z grupy B, w szczególności biorących udział w procesie tworzenia czerwonych ciałek. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina. Wpływa korzystnie na prawidłowe funkcjonowanie organizmu Hydrolizat wspomaga pracę wątroby. Witaminy wpływają wspomagająco na procesy odpornościowe oraz przemiany metaboliczne organizmu.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą: - psy i koty do 5 kg m.c 5 kropli / dzień - psy 5 – 15 kg m.c. 10 kropli / dzień - psy 15 – 30 kg m.c. 15 kropli / dzień - psy 30 – 45 kg m.c. 20 kropli / dzień - psy powyżej 45 kg m.c. 25 kropli / dzień 1 ml zawiera 20 kropli. Po otwarciu przechowywać w miejscu chłodnym i suchym",
+   "indications_verbatim": "Lśniąca sierść. Zdrowa skóra.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład (2): Glikol propylenowy, produkty pochodzenia zwierzęcego Dodatki w 1 kg (3): 3a672a witamina A 2 g, 3a880 biotyna 0,5 g, 3a831 witamina B6 4 g, 3a314 niacyna 8 g, 3a841 D-pantotenian wapnia 8 g, E6 glukonian cynku 0,3 g Składniki analityczne (4): białko surowe 0,3%, włókno surowe 0%, tłuszcz surowy 0,9%, popiół surowy 0,1%, wilgotność 87,4%.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Gold Regenerator sierści i skóry 25ml",
+     "capacity": "25 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-gold-regenerator-siersci-i-skory-25ml/",
+     "woo_id": 6224,
+     "woo_path": "/produkt/kolor-pielegnacja-gold-regenerator-siersci-i-skory-25ml/",
+     "price_pln": 46.18,
+     "regular_price_pln": 46.18,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/12/EUROWET_Gold_RSS_25ml-2.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-gold-skin-and-coat-regenerator-25ml/"
+    }
+   ],
+   "related_on_site": [
+    "kp-odzywka-do-siersci-i-wlosow",
+    "kp-szampon-do-mycia-na-sucho",
+    "kp-szampon-biala-siersc"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Inconsistent product type on the same page: subtitle \"Mieszanka paszowa uzupełniająca\" vs Właściwości \"Karma uzupełniająca\".",
+    "Page H1 is the generic word \"Skuteczny\"; product name appears only as an H2 (\"GOLD REGENERATOR SIERŚCI I SKÓRY\"); capacity \"25ml\" is rendered as a heading.",
+    "No \"Środki ostrożności\" section on the product page.",
+    "Product page omits feed-label statements present on the Woo product: \"Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.\" and \"W razie potrzeby ilość podawanych kropli można zwiększyć.\"",
+    "Hydrolizat miazgi wątrobowej (named in Właściwości) is not identifiable in Skład, which lists only \"produkty pochodzenia zwierzęcego\".",
+    "Broken sentence in Właściwości: \"Ze względu na zawartość aminokwasów, takich jak: ... walina. Wpływa korzystnie na prawidłowe funkcjonowanie organizmu Hydrolizat wspomaga pracę  wątroby.\" (fragment, missing period, double space).",
+    "Woo product text differs from page (\"czynników krwiotwórczych\", \"Hydrolizat wspomaga czynności komórek wątroby\" in Woo Yoast description); Woo og_description is the generic site slogan.",
+    "PL Yoast description is badges + Właściwości starting mid-paragraph (\"Pomaga także...\") and is far too long (~600 chars).",
+    "Related card \"Szampon biała sierść 200ml\" links to /szampon-biala-siersc-200ml (no such page; real page /produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-biala-siersc-200ml/) and shows the legacy Amiwet packshot amiwet_szampon_biala_siersc_200ml.png.",
+    "Nokaut.pl price-comparison link points to a different product (\"wita-vet-kot-siersc-regenerator-siersci-i-skory-24-tabletki\").",
+    "Product is not listed on the Kolekcja Kolor & Pielęgnacja category page (orphan); page last modified 2023-12-07, older layout (H1 \"Skuteczny\").",
+    "A complementary feed (vitamin drops) sits in a cosmetics collection; product_type should be reviewed for navigation (it also fits karmy-uzupelniajace)."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-odzywka-bez-splukiwania",
+   "name": "Odżywka bez spłukiwania",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "odżywka/kosmetyk pielęgnacyjny",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja ODŻYWKA BEZ SPŁUKIWANIA DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "UŁATWIA ROZCZESYWANIE SIERŚCI",
+    "+ Betaina, kompleks nawilżający"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "ułatwione rozczesywanie / kołtuny",
+     "evidence_verbatim": "Powoduje, że sierść lepiej się układa oraz zapobiega powstawaniu filców i kołtunów.",
+     "source_field": "properties"
+    },
+    {
+     "need": "ułatwione rozczesywanie / kołtuny",
+     "evidence_verbatim": "UŁATWIA ROZCZESYWANIE SIERŚCI",
+     "source_field": "badges"
+    },
+    {
+     "need": "elektryzująca się, pusząca sierść",
+     "evidence_verbatim": "Zalecana do sierści wymagającej wygładzenia, ułożenia, elektryzującej się i puszącej.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "betaina",
+     "label_name": "Betaine",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "kompleks nawilżający",
+     "label_name": null,
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Profesjonalna odżywka rewitalizująca bez spłukiwania dla psów i kotów. Ułatwia rozczesywanie, dodaje objętości sierści i poprawia strukturę włosa. Powoduje, że sierść lepiej się układa oraz zapobiega powstawaniu filców i kołtunów. Doskonała dla wszystkich rodzajów sierści i włosa. Zalecana do sierści wymagającej wygładzenia, ułożenia, elektryzującej się i puszącej. Zawiera substancje aktywne, które wbudowują się w strukturę włosa, zapewniając jego wygładzenie, nawilżenie i połysk.",
+   "usage_verbatim": "Spryskać sierść odżywką i wyczesać.",
+   "indications_verbatim": "Odżywka do siersci i włosa.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "W przypadku dostania się do oczu, spłukać letnią wodą.",
+   "composition_verbatim": "Aqua, Betaine, Silicone Quaternium-22, Polyglyceryl-3 Caprate, Dipropylene Glycol, Cocamidopropyl Betaine, Sodium Lactate, Sodium PCA, Glycine, Fructose, Urea, Niacinamide, Inositol, Sodium Benzoate, Lactic Acid, Polysorbate 20, Parfum, Phenoxyethanol, Ethylhexylglycerin",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja ODŻYWKA BEZ SPŁUKIWANIA 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-bez-splukiwania-200ml/",
+     "woo_id": 8487,
+     "woo_path": "/produkt/odzywka-bez-splukiwania-200ml/",
+     "price_pln": 42.29,
+     "regular_price_pln": 42.29,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/06/EUROWET_odzywka_bez_splukiwania_kolorpielegnacja_200ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-odzywka-bez-splukiwania-200ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja ODŻYWKA BEZ SPŁUKIWANIA 1000ml",
+     "capacity": "1000 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-bez-splukiwania-1000ml/",
+     "woo_id": 10832,
+     "woo_path": "/produkt/odzywka-bez-splukiwania-1000ml/",
+     "price_pln": 59.1,
+     "regular_price_pln": 59.1,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/10/EUROWET_odzywka_bez_splukiwania_kolorpielegnacja_1000ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-odzywka-bez-splukiwania-1000ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-york-dlugi-wlos",
+    "kp-szampon-do-mycia-na-sucho",
+    "kp-szampon-dla-szczeniat"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Woo short descriptions of both variants (8487, 10832) are copied from Szampon łagodzący: \"ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SKÓRY / OGRANICZA ZŁUSZCZANIE NASKÓRKA / + OLEJEK JAŁOWCOWY\" — wrong product claims in the shop.",
+    "Typo in Zastosowanie: \"Odżywka do siersci i włosa.\" (siersci → sierści); Woo version reads \"Pielęgnacja sierści i włosa.\"",
+    "Category page card says \"Odżywka dla psów.\" while the product page says \"dla psów i kotów\".",
+    "\"Kompleks nawilżający\" named in badges is not identifiable by name in the INCI list; no ingredient-level functions stated.",
+    "EN 200ml and 1000ml pages carry the Polish eye-cleanser Yoast description (\"Płyn łagodzi podrażnienia spojówek...\") — wrong product."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-odzywka-do-siersci-i-wlosow",
+   "name": "Odżywka do sierści i włosów",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "odżywka/kosmetyk pielęgnacyjny",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja ODŻYWKA DO SIERŚCI I WŁOSÓW dla psów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "UŁATWIA ROZCZESYWANIE SIERŚCI",
+    "+ Olejek z migdałowca"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "ułatwione rozczesywanie",
+     "evidence_verbatim": "Odżywka pozwala na łatwe rozczesywanie sierści po umyciu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Nadaje jej miękkość, połysk i jedwabistość.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek z migdałowca",
+     "label_name": "Prunus Amygdalus Dulcis (Sweet Almond) Oil",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Odżywka pozwala na łatwe rozczesywanie sierści po umyciu. Nadaje jej miękkość, połysk i jedwabistość.",
+   "usage_verbatim": "Po umyciu szamponem rozprowadzić odżywkę na całej sierści, łagodnie wcierając. Pozostawić przez 2-3 minuty, a następnie spłukać letnią wodą. W przypadku sierści trudnej do rozczesywania, czynności powtórzyć. Wysuszyć i wyszczotkować.",
+   "indications_verbatim": "Pielęgnacja sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Jeżeli produkt przypadkowo dostanie się do oczu, spłukać letnią wodą.",
+   "composition_verbatim": "Aqua, Cetyl Alcohol, Cetearyl Alcohol, Stearalkonium Chloride, PEG-20 Stearate, Silicone Quaternium-17, Laureth-9, Prunus Amygdalus Dulcis (Sweet Almond) Oil,Tocopheryl Acetate, Parfum, Citric Acids, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja ODŻYWKA DO SIERŚCI I WŁOSÓW 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-do-siersci-i-wlosow-200ml/",
+     "woo_id": 5282,
+     "woo_path": "/produkt/kolor-pielegnacja-odzywka-do-siersci-i-wlosow-200ml/",
+     "price_pln": 37.21,
+     "regular_price_pln": 37.21,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_odzywka_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-odzywka-do-siersci-i-wlosow-200ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-york-dlugi-wlos",
+    "kp-plyn-do-przemywania-oczu",
+    "kp-emulsja-do-przemywania-uszu"
+   ],
+   "documents": [],
+   "data_issues": [
+    "INCI typos: \"Silicone Quaterium-17\" (Quaternium), \"Citric Acids\"; Woo INCI uses \"PERFUM\" (Parfum).",
+    "EN page has an empty Yoast description.",
+    "No stated function for the highlighted ingredient (olejek z migdałowca)."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-pianka-ochronna-przeciw-pchlom-i-kleszczom",
+   "name": "Pianka ochronna przeciw pchłom i kleszczom",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat odstraszający",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja",
+    "preparaty-odstraszajace-pchly-i-kleszcze"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Pianka WSPOMAGAJĄCA OCHRONĘ PRZECIW PCHŁOM I KLESZCZOM",
+   "badges_verbatim": [
+    "ZAPEWNIA SKUTECZNĄ DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+    "BEZPIECZNa, skuteczna, naturalna",
+    "+ olejek Neem"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "pchły i kleszcze (odstraszanie)",
+     "evidence_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł, kleszczy i innych owadów na sierści oraz skórze psów i kotów.",
+     "source_field": "properties"
+    },
+    {
+     "need": "pchły i kleszcze (odstraszanie)",
+     "evidence_verbatim": "ZAPEWNIA SKUTECZNĄ DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+     "source_field": "badges"
+    },
+    {
+     "need": "pielęgnacja sierści i skóry",
+     "evidence_verbatim": "Pielęgnacja sierści i skóry.",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek Neem (ekstrakt z liści miodli indyjskiej)",
+     "label_name": "Melia Azadirachta Leaf Extract",
+     "stated_function_verbatim": "Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów"
+    }
+   ],
+   "properties_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł, kleszczy i innych owadów na sierści oraz skórze psów i kotów. OLEJEK NEEM Melia Azadirachta Leaf Extract to wyciąg z liści miodli indyjskiej, Melia azadirachta, Meliaceae. Wyciąg z liści miodli indyjskiej jest wyjątkowo bogaty we wtórne substancje roślinne i olejki eteryczne. Liście Neem mają właściwości przeciwzapalne, przeciwgorączkowe, antybakteryjne, antywirusowe, przeciwgrzybiczne, przeciwpasożytnicze. Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów: wodny ekstrakt z liści działa przeciwko składaniu jaj przez Anticaria gemmatalis, świeże liście działają mutagennie na komara Aedes aegypti, dihydronimocynol i 6-α-hydroksy-azadiradion okazały się być śmiertelne dla Anopheles stephensi (na czwartym etapie larwalnym), a salanina wydłuża etap larwalny, opóźnia etap kokonu, wywołuje śmiertelność wśród larw i poczwarek oraz redukuje wagę poczwarki Oxya fuscovittata. Niektóre pochodne limonoidu niekorzystnie wpływają na płodność muchy domowej Musca domestica. Azadirachtyna jest toksyczna względem pluskwiaków Rhodnius prolixus, hamuje proces odżywiania szarańczy Schistocerca gregaria i działa na ponad 200 gatunków insektów, przerywając ich wzrost i utrudniając odżywianie. W pewnym stopniu jest więc względem nich toksyczna natomiast wykazuje bardzo niską toksyczność względem ssaków i jest biodegradowalna. Najaktywniejszymi związkami miodli są azadirachtyna A, azadirachtyna B i salanina, które są rozpuszczalne w wodzie, dzięki czemu ekstrakt z miodli zachowuje ich właściwości repelencyjne. Dlatego ekstrakt z miodli zalecany jest w kosmetykach odstraszających owady.",
+   "usage_verbatim": "wyczesać sierść w kierunku przeciwnym do ułożenia włosa. Nałożyć na dłoń 1 lub 2 porcje pianki wielkości orzecha włoskiego, nanieść na sierść i wcierać w skórę w kierunku przeciwnym do ułożenia włosa. Czynność powtarzać aż do całkowitego pokrycia powierzchni ciała. Wysuszyć w sposób naturalny i wyczesać.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Należy unikać kontaktu pianki z oczami. Nie przeznaczona dla psów i kotów poniżej 1 roku życia. W celu uzyskania maksymalnego działania preparatu, po jego zastosowaniu, należy wyprowadzić psa na spacer. W celu zmniejszenia ryzyka obecności pcheł i kleszczy konieczna jest okresowa i regularna wymiana legowiska. Warunki przechowywania: W oryginalnym opakowaniu i z dala od dzieci.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, PEG 4 Rapeseedamide, Polysorbate 20, Glicerin, Melia Azadirachta Leaf Extract, Citric Acid, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinon",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Pianka ochronna przeciw pchłom i kleszczom 150ml",
+     "capacity": "150 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-pianka-ochronna-przeciw-pchlom-i-kleszczom-150ml/",
+     "woo_id": 18376,
+     "woo_path": "/produkt/pianka-wspomagajaca-ochrone-przeciw-pchlom-i-kleszczom-dla-psow-i-kotow-150ml/",
+     "price_pln": 43.0,
+     "regular_price_pln": 43.0,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/04/KP_pianka_odstraszajaca_pchly_kleszcze-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-pianka-ochronna-przeciw-pchlom-i-kleszczom-150ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "DRY&Clean 150ml",
+    "Fyto-derm 100ml",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Woo Yoast description names the wrong product: \"SPRAY OCHRONNY PRZECIW PCHŁOM I KLESZCZOM działa ochronnie...\" and states a stronger claim (\"działa ochronnie\") than the page (\"wspomaga działanie ochronne\").",
+    "Related/category cards (Drop&Go page, /produkty/kolekcja-kolorpielegnacja/, /produkty/preparaty-odstraszajace-pchly-i-kleszcze/) describe the foam as \"Spray ochronny przeciw pchłom i kleszczom dla psów i kotów.\"",
+    "Badge casing \"BEZPIECZNa, skuteczna, naturalna\"; Sposób stosowania starts lowercase (\"wyczesać\"); INCI typos \"Glicerin\", truncated \"Methylisothiazolinon\".",
+    "Ceneo link searches \"eurowet spray ochronny\" instead of the foam.",
+    "Neem paragraph misspells \"Anticaria gemmatalis\" (Anticarsia gemmatalis).",
+    "EN page Yoast description is in Polish."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-plyn-do-przemywania-oczu",
+   "name": "Płyn do przemywania oczu",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat do pielęgnacji oczu",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja PŁYN DO PRZEMYWANIA OCZU DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SPOJÓWEK",
+    "NAWILŻA OCZY I POWIEKI",
+    "+ Woda chabrowa"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "oczy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Pomaga usunąć zanieczyszczenia z worka spojówkowego.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Higiena oczu.",
+     "source_field": "indications"
+    },
+    {
+     "need": "podrażnienie spojówek",
+     "evidence_verbatim": "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SPOJÓWEK",
+     "source_field": "badges"
+    },
+    {
+     "need": "nawilżenie oczu i powiek",
+     "evidence_verbatim": "NAWILŻA OCZY I POWIEKI",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "woda chabrowa",
+     "label_name": "Centaurea Cyanus Floral Water",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Płyn łagodzi objawy związane z podrażnieniami spojówek poprzez naturalne nawilżenie oczu i powiek. Pomaga usunąć zanieczyszczenia z worka spojówkowego.",
+   "usage_verbatim": "Nawilżyć oko namoczonym kompresem lub wprowadzić kilka kropli płynu do worka spojówkowego. Następnie usunąć jego nadmiar i przemyć powieki. Stosować w zależności od potrzeb, nawet codziennie.",
+   "indications_verbatim": "Higiena oczu.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "W przypadku nietolerancji przerwać stosowanie.",
+   "composition_verbatim": "Aqua, Centaurea Cyanus Floral Water, Sodium Chloride, Benzalkonium Chloride, Sodium Methylparaben, Ortofosforic Acid, CI 42090",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja PŁYN DO PRZEMYWANIA OCZU 100ml",
+     "capacity": "100 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-plyn-do-przemywania-oczu-100ml/",
+     "woo_id": 5285,
+     "woo_path": "/produkt/kolor-pielegnacja-plyn-do-oczu-100ml/",
+     "price_pln": 42.47,
+     "regular_price_pln": 42.47,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/06/EUROWET_plyn_do_przemywania_oczu_100ml-3.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-plyn-do-przemywania-oczu-100ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-york-dlugi-wlos",
+    "kp-szampon-do-mycia-na-sucho",
+    "kp-szampon-dla-szczeniat"
+   ],
+   "documents": [],
+   "data_issues": [
+    "INCI typo: \"Ortofosforic Acid\" (Orthophosphoric Acid).",
+    "Woo product name \"PŁYN DO OCZU\" vs page \"PŁYN DO PRZEMYWANIA OCZU\".",
+    "Related-card packshot file is named \"EUROWET_emulsja_do_przemywania_oczu_kolor_pielegnacja_100ml.png\" (emulsja vs płyn) — media naming inconsistency.",
+    "No stated function for the highlighted ingredient (woda chabrowa)."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-spray-ochronny-na-opuszki-palcow",
+   "name": "Spray ochronny na opuszki palców",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja ochrona opuszek palców",
+   "badges_verbatim": [
+    "regenerujący",
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI",
+    "BEZ ŚLADÓW"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "łapy/opuszki",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "podrażnione/uszkodzone opuszki",
+     "evidence_verbatim": "Pielęgnacja i regeneracja skóry opuszek palców oraz łagodzenie objawów związanych z ich podrażnieniem.",
+     "source_field": "indications"
+    },
+    {
+     "need": "ochrona opuszek (sól, śnieg, twarde i gorące podłoże)",
+     "evidence_verbatim": "Dla wzmocnienia skóry opuszek palców psów pracujących lub psów narażonych na ich uszkodzenie np. w okresie polowań, wakacji (twarde i ostre podłoże, rozgrzany asfalt) i w zimie (ochrona przed szkodliwym działaniem soli, śniegu ...) - stosować 1 raz dziennie.",
+     "source_field": "usage"
+    },
+    {
+     "need": "regeneracja naskórka",
+     "evidence_verbatim": "wspomagającym i przyspieszającym odnowę naskórka",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "wąkrota azjatycka",
+     "label_name": "Centella Asiatica Extract",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "aloes",
+     "label_name": "Aloe Barbadensis Leaf Juice",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Dermokosmetyk weterynaryjny o działaniu pielęgnująco -ochronnym na opuszki palców uszkodzone przez kontakt z negatywnymi czynnikami występującymi w podłożu oraz wspomagającym i przyspieszającym odnowę naskórka. Jego składniki wspomagają utrzymanie prawidłowej mikroflory skóry oraz działają wysuszająco, ściągająco i kojąco.",
+   "usage_verbatim": "Po oczyszczeniu uszkodzonych opuszek palców spryskiwać lub tamponować nawilżoną gazą. Wysuszyć. Zabieg powtarzać 2 razy dziennie. U psów o wrażliwych opuszkach palców stosować w zależności od potrzeb - 2-3 razy w tygodniu. Dla wzmocnienia skóry opuszek palców psów pracujących lub psów narażonych na ich uszkodzenie np. w okresie polowań, wakacji (twarde i ostre podłoże, rozgrzany asfalt) i w zimie (ochrona przed szkodliwym działaniem soli, śniegu ...) - stosować 1 raz dziennie. Nie dopuszczać do wylizywania.",
+   "indications_verbatim": "Pielęgnacja i regeneracja skóry opuszek palców oraz łagodzenie objawów związanych z ich podrażnieniem.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Glicerin, Trichloroacetic acid, Propylene Glycol, Centella Asiatica Extract, Aloe Barbadensis Leaf Juice, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja SPRAY OCHRONNY NA OPUSZKI PALCÓW 90ml",
+     "capacity": "90 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-spray-ochronny-na-opuszki-palcow-90ml/",
+     "woo_id": 6226,
+     "woo_path": "/produkt/kolor-pielegnacja-spray-ochronny-na-opuszki-palcow-90ml/",
+     "price_pln": 45.94,
+     "regular_price_pln": 45.94,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/06/EUROWET_Spray_ochronny_90ml-3.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-protective-spray-for-pads-90ml/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-dla-kotow",
+    "kp-szampon-shih-tzu",
+    "kp-plyn-do-przemywania-oczu"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Key ingredients (aloes, wąkrota azjatycka) are named only in the Woo short description (\"+ ALOES, WĄKROTA AZJATYCKA\"), not on the product page; page states only a collective function (\"Jego składniki wspomagają utrzymanie prawidłowej mikroflory skóry oraz działają wysuszająco, ściągająco i kojąco.\").",
+    "Woo short description claims (\"IDEALNY NA: ŚNIEG, SÓL ROZGRZANA POWIERZCHNIA TWARDE PODŁOŻE\") differ from page badges (\"regenerujący\", \"BEZ ŚLADÓW\"); badge casing inconsistent (\"regenerujący\").",
+    "Spacing typo \"pielęgnująco -ochronnym na  opuszki\"; INCI typo \"Glicerin\".",
+    "Described as \"Dermokosmetyk weterynaryjny\" while placed in the Kolor & Pielęgnacja cosmetics collection."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-spray-ochronny-przeciw-pchlom-i-kleszczom",
+   "name": "Spray ochronny przeciw pchłom i kleszczom",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat odstraszający",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja",
+    "preparaty-odstraszajace-pchly-i-kleszcze"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja SPRAY WSPOMAGAJĄCY OCHRONĘ PRZECIW PCHŁOM, KLESZCZOM i innym owadom",
+   "badges_verbatim": [
+    "ZAPEWNIA SKUTECZNĄ DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+    "BEZPIECZNY, skuteczny, naturalny",
+    "+ olejek Neem"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "pchły i kleszcze (odstraszanie)",
+     "evidence_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł, kleszczy i innych owadów na sierści oraz skórze psów i kotów.",
+     "source_field": "properties"
+    },
+    {
+     "need": "pchły i kleszcze (odstraszanie)",
+     "evidence_verbatim": "ZAPEWNIA SKUTECZNĄ DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+     "source_field": "badges"
+    },
+    {
+     "need": "pielęgnacja sierści i skóry",
+     "evidence_verbatim": "Pielęgnacja sierści i skóry.",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek Neem (ekstrakt z liści miodli indyjskiej)",
+     "label_name": "Melia Azadirachta Leaf Extract",
+     "stated_function_verbatim": "Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów"
+    }
+   ],
+   "properties_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł, kleszczy i innych owadów na sierści oraz skórze psów i kotów. OLEJEK NEEM Melia Azadirachta Leaf Extract to wyciąg z liści miodli indyjskiej, Melia azadirachta, Meliaceae. Wyciąg z liści miodli indyjskiej jest wyjątkowo bogaty we wtórne substancje roślinne i olejki eteryczne. Liście Neem mają właściwości przeciwzapalne, przeciwgorączkowe, antybakteryjne, antywirusowe, przeciwgrzybiczne, przeciwpasożytnicze. Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów: wodny ekstrakt z liści działa przeciwko składaniu jaj przez Anticaria gemmatalis, świeże liście działają mutagennie na komara Aedes aegypti, dihydronimocynol i 6-α-hydroksy-azadiradion okazały się być śmiertelne dla Anopheles stephensi (na czwartym etapie larwalnym), a salanina wydłuża etap larwalny, opóźnia etap kokonu, wywołuje śmiertelność wśród larw i poczwarek oraz redukuje wagę poczwarki Oxya fuscovittata. Niektóre pochodne limonoidu niekorzystnie wpływają na płodność muchy domowej Musca domestica. Azadirachtyna jest toksyczna względem pluskwiaków Rhodnius prolixus, hamuje proces odżywiania szarańczy Schistocerca gregaria i działa na ponad 200 gatunków insektów, przerywając ich wzrost i utrudniając odżywianie. W pewnym stopniu jest więc względem nich toksyczna natomiast wykazuje bardzo niską toksyczność względem ssaków i jest biodegradowalna. Najaktywniejszymi związkami miodli są azadirachtyna A, azadirachtyna B i salanina, które są rozpuszczalne w wodzie, dzięki czemu ekstrakt z miodli zachowuje ich właściwości repelencyjne. Dlatego ekstrakt z miodli zalecany jest w kosmetykach odstraszających owady.",
+   "usage_verbatim": "Wyczesać sierść w kierunku przeciwnym do ułożenia włosa. Spryskiwać ją równomiernie z odległości 20 – 30 cm z jednoczesnym jej rozchylaniem, a następnie wmasować preparat w skórę i sierść. Stosować 1 raz w tygodniu lub w zależności od potrzeb.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Należy unikać kontaktu preparatu z oczami. Nie przeznaczony dla psów i kotów poniżej 3 miesiąca życia oraz dla suk i kotek ciężarnych lub karmiących. W celu zmniejszenia ryzyka obecności pcheł i kleszczy konieczna jest okresowa i regularna wymiana legowiska. Warunki przechowywania: W oryginalnym opakowaniu i z dala od dzieci.",
+   "composition_verbatim": "Aqua, Polysorbate 20, PEG 4 Rapeseedamide, Melia Azadirachta Leaf Extract, Phenoxyethanol, Ethylhexylglycerin, Sodium hydroxide",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Spray ochronny przeciw pchłom i kleszczom 100ml",
+     "capacity": "100 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-spray-ochronny-przeciw-pchlom-i-kleszczom-100ml/",
+     "woo_id": 18374,
+     "woo_path": "/produkt/spray-wspomagajacy-ochrone-przeciw-pchlom-i-kleszczom-100ml/",
+     "price_pln": 27.68,
+     "regular_price_pln": 27.68,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/04/KP_Spray_odstraszajacy_pchly_kleszcze_100ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-spray-ochronny-przeciw-pchlom-i-kleszczom-100ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja Spray ochronny przeciw pchłom i kleszczom 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-spray-ochronny-przeciw-pchlom-i-kleszczom-200ml/",
+     "woo_id": 6544,
+     "woo_path": "/produkt/spray-ochronny-przeciw-pchlom-i-kleszczom-200ml/",
+     "price_pln": 42.47,
+     "regular_price_pln": 42.47,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/04/KP_Spray_odstraszajacy_pchly_kleszcze_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-spray-ochronny-przeciw-pchlom-i-kleszczom-200ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "DRY&Clean 150ml",
+    "Fyto-derm 100ml",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [
+    "https://eurowet.pl/wp-content/uploads/katalog/EUROWET_produkty_odstraszajace_owady.pdf"
+   ],
+   "data_issues": [
+    "Leaflet PDF is linked only from the Woo products, with a double slash: \"https://eurowet.pl//wp-content/uploads/katalog/EUROWET_produkty_odstraszajace_owady.pdf\"; product pages have no documents.",
+    "Woo descriptions add claims absent from the product page (\"Bezzapachowy\", \"biodegradowalny\", \"Skuteczny przeciw pchłom, kleszczom i innym insektom\"); Woo Yoast says \"działa ochronnie\" vs page \"wspomaga działanie ochronne\".",
+    "PL Yoast description says \"NATURALNIE BEZPIECZNY\" while badges say \"BEZPIECZNY, skuteczny, naturalny\"; naming differs between page (\"Spray ochronny\") and Woo (\"SPRAY WSPOMAGAJĄCY OCHRONĘ\").",
+    "Neem paragraph misspells \"Anticaria gemmatalis\" (Anticarsia gemmatalis).",
+    "EN 100ml page Yoast description is in Polish."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-biala-siersc",
+   "name": "Szampon biała sierść",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon biała sierść dla psów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "ROZJAŚNIA KOLOR",
+    "+ Rumianek, Pokrzywa, Witamina E"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "kolor sierści",
+     "evidence_verbatim": "ROZJAŚNIA KOLOR",
+     "source_field": "badges"
+    },
+    {
+     "need": "kolor sierści",
+     "evidence_verbatim": "Pielęgnacja skóry i jasnej sierści.",
+     "source_field": "indications"
+    },
+    {
+     "need": "łupież",
+     "evidence_verbatim": "Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "wypadanie sierści",
+     "evidence_verbatim": "Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    },
+    {
+     "need": "ułatwione rozczesywanie",
+     "evidence_verbatim": "Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "rumianek",
+     "label_name": "Chamomilla Recutita Flower Extract",
+     "stated_function_verbatim": "Wyciąg z rumianku wzmacnia naturalny kolor włosa."
+    },
+    {
+     "name_pl": "pokrzywa",
+     "label_name": "Urtica Dioica Leaf Extract",
+     "stated_function_verbatim": "Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu."
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "Tocopherol Acetate",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Sierść staje się miękka i błyszcząca. Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu. Wyciąg z rumianku wzmacnia naturalny kolor włosa.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "indications_verbatim": "Pielęgnacja skóry i jasnej sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Propylene Glycol, PEG 4 Rapeseedamide, Glycerin, PEG-7 Glyceryl Cocate, Silicone Quaterium-17, Laureth-9, Chamomilla Recutita Flower Extract, Urtica Dioica Leaf Extract, Tocopherol Acetate, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon biała sierść 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-biala-siersc-200ml/",
+     "woo_id": 5274,
+     "woo_path": "/produkt/kolorpielegnacja-szampon-biala-siersc-200ml/",
+     "price_pln": 39.25,
+     "regular_price_pln": 39.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_szampon_biala_siersc_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-biala-siersc-200ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja Szampon biała sierść 1000ml",
+     "capacity": "1000 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-biala-siersc-1000ml/",
+     "woo_id": 10954,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-biala-siersc-dla-psow/",
+     "price_pln": 49.25,
+     "regular_price_pln": 49.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/11/EUROWET_szampon_biala_siersc_kolorpielegnacja_1000ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-biala-siersc-1000ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-odzywka-do-siersci-i-wlosow",
+    "kp-szampon-do-mycia-na-sucho"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Category page card for the 1000ml variant is titled \"Szampon biała sierść 200ml\".",
+    "1000ml page \"PRZEJDŹ DO SKLEPU\" links to /produkt/kolor-pielegnacja-szampon-biala-siersc-1000ml/, not the Woo slug /produkt/kolor-pielegnacja-szampon-biala-siersc-dla-psow/ (absent from product sitemap).",
+    "Woo slug pattern inconsistent: 200ml is /produkt/kolorpielegnacja-szampon-biala-siersc-200ml/ (other products use \"kolor-pielegnacja-\"); 1000ml slug has no capacity.",
+    "Text and INCI identical to Szampon dla maltańczyków (near-duplicate content).",
+    "INCI typos: \"Silicone Quaterium-17\", \"Tocopherol Acetate\" (Tocopheryl Acetate).",
+    "EN 1000ml page Yoast description is in Polish."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-bulldog",
+   "name": "Szampon bulldog",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla bulldogów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "NAWILŻA I UELASTYCZNIA SKÓRĘ",
+    "+ KOLAGEN, ELASTYNA"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "sucha skóra",
+     "evidence_verbatim": "NAWILŻA I UELASTYCZNIA SKÓRĘ",
+     "source_field": "badges"
+    },
+    {
+     "need": "podrażnienia skóry",
+     "evidence_verbatim": "Elastyna łagodzi objawy związane z podrażnieniami, wspomaga procesy regeneracji i odbudowy naskórka.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "kolagen",
+     "label_name": "Collagen",
+     "stated_function_verbatim": "Kolagen działa regenerująco, przywraca skórze sprężystość i nawilżenie."
+    },
+    {
+     "name_pl": "elastyna",
+     "label_name": "Hydrolyzed Elastin",
+     "stated_function_verbatim": "Elastyna łagodzi objawy związane z podrażnieniami, wspomaga procesy regeneracji i odbudowy naskórka."
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści. Sierść staje się miękka i błyszcząca. Kolagen działa regenerująco, przywraca skórze sprężystość i nawilżenie. Elastyna łagodzi objawy związane z podrażnieniami, wspomaga procesy regeneracji i odbudowy naskórka. Działa silnie nawilżająco.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Collagen, Hydrolyzed Elastin, PEG 4 Rapeseedamide, Allantoin, PEG-7 Glyceryl Cocate, Silicone Quaterium-17, Laureth-9, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinon, Citric Acid",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon bulldog 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-bulldog-200ml/",
+     "woo_id": 6547,
+     "woo_path": "/produkt/szampon-dla-bulldogow-200ml/",
+     "price_pln": 39.25,
+     "regular_price_pln": 39.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/03/EUROWET_szampon_bulldog_200ml-2.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-bulldog-200ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "DRY&Clean 150ml",
+    "Fyto-derm 100ml",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Naming inconsistent: page title \"Szampon bulldog\", subtitle \"Szampon dla bulldogów\", Woo \"SZAMPON DLA BULLDOGÓW 200ml\" (without the Kolor & Pielęgnacja prefix used by other Woo items).",
+    "Woo description lacks Przeznaczenie and Środki ostrożności present on the page; Woo usage differs (\"Starannie spłukać letnią wodą i wysuszyć.\").",
+    "INCI typos: \"Silicone Quaterium-17\", truncated \"Methylisothiazolinon\".",
+    "Related products (DRY&Clean, Fyto-derm) link to /dry&clean-150ml and /fytoderm-100ml; \"/dry&clean-150ml\" matches no page slug (real page /produkty/dermokosmetyki-weterynaryjne/dryclean-150ml/)."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-ciemna-siersc",
+   "name": "Szampon ciemna sierść",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon ciemna sierść dla psów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "INTENSYFIKUJE KOLOR",
+    "+ Henna, Algi, Alantoina"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "kolor sierści",
+     "evidence_verbatim": "INTENSYFIKUJE KOLOR",
+     "source_field": "badges"
+    },
+    {
+     "need": "kolor sierści",
+     "evidence_verbatim": "Pielęgnacja skóry i ciemnej sierści.",
+     "source_field": "indications"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    },
+    {
+     "need": "ułatwione rozczesywanie",
+     "evidence_verbatim": "Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "henna (wyciąg z krzewu hennowego)",
+     "label_name": "Lawsonia Inermis Leaf Extract",
+     "stated_function_verbatim": "Wyciąg z krzewu hennowego wzmacnia naturalny kolor włosa."
+    },
+    {
+     "name_pl": "algi",
+     "label_name": "Porphyra Umbilicalis Extract",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "alantoina",
+     "label_name": "Allantoin",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Sierść staje się miękka i błyszcząca. Składniki roślinne działają zmiękczająco i uelastyczniająco na naskórek. Wyciąg z krzewu hennowego wzmacnia naturalny kolor włosa.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "indications_verbatim": "Pielęgnacja skóry i ciemnej sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Glicerin, PEG-7 Glyceryl Cocate, Lawsonia Inermis Leaf Extract, Porphyra Umbilicalis Extract, Caesalpinia Spinosa Gum, Silicone Quaterium-17, Laureth-9, Polysorbate 20, Parfum, Allantoin, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon ciemna sierść 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ciemna-siersc-200ml/",
+     "woo_id": 5275,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-ciemna-siersc-200ml/",
+     "price_pln": 36.8,
+     "regular_price_pln": 36.8,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_szampon_ciemna_siersc_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-ciemna-siersc-200ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja Szampon ciemna sierść 1000ml",
+     "capacity": "1000 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ciemna-siersc-1000ml/",
+     "woo_id": 10831,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-ciemna-siersc-dla-psow/",
+     "price_pln": 48.02,
+     "regular_price_pln": 48.02,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/10/EUROWET_szampon_ciemna_siersc_kolorpielegnacja_1000ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-ciemna-siersc-1000ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "DRY&Clean 150ml",
+    "Fyto-derm 100ml",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [],
+   "data_issues": [
+    "1000ml page \"PRZEJDŹ DO SKLEPU\" links to /produkt/kolor-pielegnacja-szampon-ciemna-siersc-1000ml/, not the Woo slug /produkt/kolor-pielegnacja-szampon-ciemna-siersc-dla-psow/ (absent from product sitemap).",
+    "Woo 1000ml Yoast description repeats the same paragraph twice.",
+    "INCI typos: \"Glicerin\", \"Silicone Quaterium-17\".",
+    "EN 1000ml page Yoast description is in Polish.",
+    "Related link \"/dry&clean-150ml\" matches no page slug."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-dla-kotow",
+   "name": "Szampon dla kotów",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "DELIKATNIE MYJE",
+    "+ Witamina E, olejek z lawendy"
+   ],
+   "species": [
+    "kot"
+   ],
+   "species_evidence": "Dla kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "delikatne mycie",
+     "evidence_verbatim": "DELIKATNIE MYJE",
+     "source_field": "badges"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Sierść staje się miękka i błyszcząca.",
+     "source_field": "properties"
+    },
+    {
+     "need": "ułatwione rozczesywanie",
+     "evidence_verbatim": "Specjalna formuła szamponu pozwala na łatwe rozczesywanie włosa.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "witamina E",
+     "label_name": "Tocopherol",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "olejek z lawendy",
+     "label_name": "Lavandula Angustifolia Oil",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera łagodne związki powierzchniowo czynne wykazujące dobre właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie sierści i skóry. Ułatwia nawilżenie. Specjalna formuła szamponu pozwala na łatwe rozczesywanie włosa. Sierść staje się miękka i błyszcząca.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Glicerin, PEG 4 Rapeseedamide, Cocamidopropyl Betaine, Sodium Chloride, Parfum, Tocopherol, Silicone Quaterium-17, Laureth-9, Lavandula Angustifolia Oil, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acids",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon dla kotów 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-dla-kotow-200ml/",
+     "woo_id": 5281,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-dla-kotow-200ml/",
+     "price_pln": 37.21,
+     "regular_price_pln": 37.21,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_szampon_kot_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-dla-kotow-200ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "DRY&Clean 150ml",
+    "Fyto-derm 100ml",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [],
+   "data_issues": [
+    "INCI typos: \"Glicerin\", \"Silicone Quaterium-17\", \"Citric Acids\".",
+    "No stated functions for the highlighted ingredients (witamina E, olejek z lawendy).",
+    "Related link \"/dry&clean-150ml\" matches no page slug."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-lagodzacy-podraznienia",
+   "name": "Szampon łagodzący podrażnienia",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla psów i kotów",
+   "badges_verbatim": [
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SKÓRY",
+    "OGRANICZA ZŁUSZCZANIE NASKÓRKA",
+    "+ olejek jałowcowy"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "podrażnienia skóry",
+     "evidence_verbatim": "Obecność olejku jałowcowego powoduje, że szampon łagodzi objawy związane z podrażnieniami skóry oraz ogranicza złuszczanie się naskórka.",
+     "source_field": "properties"
+    },
+    {
+     "need": "złuszczanie naskórka",
+     "evidence_verbatim": "OGRANICZA ZŁUSZCZANIE NASKÓRKA",
+     "source_field": "badges"
+    },
+    {
+     "need": "pielęgnacja sierści i skóry",
+     "evidence_verbatim": "Pielęgnacja sierści i skóry.",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek jałowcowy",
+     "label_name": "Junipures Oxycedrus Wood Oil",
+     "stated_function_verbatim": "Obecność olejku jałowcowego powoduje, że szampon łagodzi objawy związane z podrażnieniami skóry oraz ogranicza złuszczanie się naskórka."
+    }
+   ],
+   "properties_verbatim": "Szampon ma bardzo dobre właściwości myjące i jest łatwy w spłukiwaniu. Obecność olejku jałowcowego powoduje, że szampon łagodzi objawy związane z podrażnieniami skóry oraz ogranicza złuszczanie się naskórka. Bez olejku Neem.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Urea, Propylene Glycol, Alcohol denat., Achillea Millefolium Flower Extract, Humulus Lupulus Extract, Melissa Officinalis Leaf Extract, Foeniculum Vulgare Fruit Extract, Chamomilla Recutita Flower Extract, Viscum Album Extract, Sodium Chloride, Polisorbate 20, Junipures Oxycedrus Wood Oil, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon łagodzący podrażnienia 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-lagodzacy-podraznienia-200ml/",
+     "woo_id": 6549,
+     "woo_path": "/produkt/szampon-lagodzacy-podraznienia-200ml/",
+     "price_pln": 41.83,
+     "regular_price_pln": 41.83,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/04/KP_szampon_na_podraznienia_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-lagodzacy-podraznienia-200ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "DRY&Clean 150ml",
+    "Fyto-derm 100ml",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Listed on the repellent category page /produkty/preparaty-odstraszajace-pchly-i-kleszcze/ although its own text says \"Bez olejku Neem.\" and makes no flea/tick claim.",
+    "Near-duplicate legacy page /produkty/szampon-lagodzacy-podraznienia-200ml/ (Amiwet packshot, different text) has an identical INCI list.",
+    "Naming inconsistent: title \"Szampon łagodzący podrażnienia\", H1 \"SZAMPON ŁAGODZĄCY OBJAWY PODRAŻNIEŃ SKÓRY\", Woo \"SZAMPON ŁAGODZĄCY OBJAWY PODRAŻNIENIA 200ml\".",
+    "Category cards add \"Nadaje połysk i jedwabistość.\" which is not in the product text.",
+    "INCI typos: \"Polisorbate 20\", \"Junipures Oxycedrus Wood Oil\" (Juniperus).",
+    "Related link \"/dry&clean-150ml\" matches no page slug."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-dla-maltanczykow",
+   "name": "Szampon dla maltańczyków",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon SZAMPON DLA psów rasy maltańczyk",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "ROZJAŚNIA KOLOR",
+    "+ Rumianek, Pokrzywa, Witamina E"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "pielęgnacja długiego włosa",
+     "evidence_verbatim": "Pielęgnacja długiego włosa.",
+     "source_field": "indications"
+    },
+    {
+     "need": "kolor sierści",
+     "evidence_verbatim": "ROZJAŚNIA KOLOR",
+     "source_field": "badges"
+    },
+    {
+     "need": "łupież",
+     "evidence_verbatim": "Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "wypadanie sierści",
+     "evidence_verbatim": "Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "rumianek",
+     "label_name": "Chamomilla Recutita Flower Extract",
+     "stated_function_verbatim": "Wyciąg z rumianku wzmacnia naturalny kolor włosa."
+    },
+    {
+     "name_pl": "pokrzywa",
+     "label_name": "Urtica Dioica Leaf Extract",
+     "stated_function_verbatim": "Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu."
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "Tocopherol Acetate",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Sierść staje się miękka i błyszcząca. Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu. Wyciąg z rumianku wzmacnia naturalny kolor włosa.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "indications_verbatim": "Pielęgnacja długiego włosa.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Propylene Glycol, PEG 4 Rapeseedamide, Glycerin, PEG-7 Glyceryl Cocate, Silicone Quaterium-17, Laureth-9, Chamomilla Recutita Flower Extract, Urtica Dioica Leaf Extract, Tocopherol Acetate, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon maltańczyk 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-maltanczyk-200ml/",
+     "woo_id": 5279,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-dla-maltanczykow-200ml/",
+     "price_pln": 39.25,
+     "regular_price_pln": 39.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_szampon_maltanczyk_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-maltanczyk-200ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja Szampon maltańczyk 1000ml",
+     "capacity": "1000 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-maltanczyk-1000ml/",
+     "woo_id": 22009,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-dla-maltanczykow-1000ml/",
+     "price_pln": 75.8,
+     "regular_price_pln": 75.8,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/03/EUROWET_szampon_maltanczyk_kolorpielegnacja_1000ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-maltanczyk-1000ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-nawilzajacy",
+    "kp-odzywka-do-siersci-i-wlosow",
+    "Hexoderm excellence 200ml"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Subtitle duplicates a word: \"Kolor&Pielęgnacja Szampon SZAMPON DLA psów rasy maltańczyk\" (same in Woo short description \"SZAMPON SZAMPON\").",
+    "Properties, usage and INCI are identical to Szampon biała sierść (near-duplicate content; breed-specific benefit not explained).",
+    "Price inconsistency: 1000ml costs 75.80 PLN (Woo 22009) vs 49.25 PLN for Szampon biała sierść 1000ml (Woo 10954) with an identical INCI list — verify pricing.",
+    "INCI typos: \"Silicone Quaterium-17\", \"Tocopherol Acetate\".",
+    "EN 1000ml page Yoast description is in Polish."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-do-mycia-na-sucho",
+   "name": "Szampon do mycia na sucho",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon DO MYCIA NA SUCHO DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "WYGODNY W UŻYCIU W DOMU I W PODRÓŻY",
+    "+ Łagodne substancje myjące i nawilżające"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "mycie bez wody",
+     "evidence_verbatim": "Szampon piankowy jest przeznaczony dla zwierząt, które nie lubią kąpieli.",
+     "source_field": "properties"
+    },
+    {
+     "need": "mycie w podróży / przed wystawą",
+     "evidence_verbatim": "Forma piankowa umożliwia stosowanie także w trakcie podróży lub przed wystawami.",
+     "source_field": "properties"
+    },
+    {
+     "need": "mycie w podróży / przed wystawą",
+     "evidence_verbatim": "WYGODNY W UŻYCIU W DOMU I W PODRÓŻY",
+     "source_field": "badges"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Sierść staje się miękka, błyszcząca i łatwa w rozczesywaniu.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "łagodne substancje myjące i nawilżające",
+     "label_name": null,
+     "stated_function_verbatim": "Zawarte składniki pozwalają na dokładne umycie sierści i skóry."
+    }
+   ],
+   "properties_verbatim": "Szampon piankowy jest przeznaczony dla zwierząt, które nie lubią kąpieli. Forma piankowa umożliwia stosowanie także w trakcie podróży lub przed wystawami. Zawarte składniki pozwalają na dokładne umycie sierści i skóry. Sierść staje się miękka, błyszcząca i łatwa w rozczesywaniu.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Nałożyć piankę na wilgotną rękawicę do mycia i łagodnie wcierać w sierść. Myć stopniowo miejsce po miejscu dodając regularnie szamponu, aż do umycia całej powierzchni ciała. Następnie wytrzeć ręcznikiem i wyszczotkować.",
+   "indications_verbatim": "Higiena sierści i skóry.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Jeżeli produkt przypadkowo dostanie się do oczu, spłukać letnią wodą.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Glicerin, Sodium Chloride, Polysorbate 20, Perfum, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acids",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon na sucho 150ml",
+     "capacity": "150 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-na-sucho-150ml/",
+     "woo_id": 5283,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-do-mycia-na-sucho-150ml/",
+     "price_pln": 42.96,
+     "regular_price_pln": 42.96,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_pianka_do_mycia_na_sucho_kolor_pielegnacja_150ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-na-sucho-150ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-shih-tzu",
+    "kp-szampon-nawilzajacy",
+    "kp-szampon-dla-szczeniat"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Naming inconsistent: title \"Szampon na sucho\", H1 \"SZAMPON DO MYCIA NA SUCHO\", packshot file \"pianka_do_mycia_na_sucho\".",
+    "INCI typos: \"Glicerin\", \"Perfum\" (Parfum), \"Citric Acids\"."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-nawilzajacy",
+   "name": "Szampon nawilżający",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon NAWILŻAJĄCY dla psów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "NAWILŻA I UELASTYCZNIA SKÓRĘ",
+    "+ Aloes, Proteiny, Sorbitol"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "sucha skóra",
+     "evidence_verbatim": "Pielęgnacja suchej skóry i sierści.",
+     "source_field": "indications"
+    },
+    {
+     "need": "sucha skóra",
+     "evidence_verbatim": "NAWILŻA I UELASTYCZNIA SKÓRĘ",
+     "source_field": "badges"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "aloes",
+     "label_name": "Aloe Barbadensis Leaf Juice",
+     "stated_function_verbatim": "Składniki roślinne oraz sorbitol działają nawilżająco i uelastyczniająco na naskórek."
+    },
+    {
+     "name_pl": "sorbitol",
+     "label_name": "Sorbitol",
+     "stated_function_verbatim": "Składniki roślinne oraz sorbitol działają nawilżająco i uelastyczniająco na naskórek."
+    },
+    {
+     "name_pl": "proteiny",
+     "label_name": "Hydrolyzed Wheat Gluten",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Sierść staje się miękka i błyszcząca. Składniki roślinne oraz sorbitol działają nawilżająco i uelastyczniająco na naskórek.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "indications_verbatim": "Pielęgnacja suchej skóry i sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Aloe Barbadensis Leaf Juice, Cocamidopropyl Betaine, Sorbitol, PEG 4 Rapeseedamide, Hydrolyzed Wheat Gluten, PEG-7 Glyceryl Cocate, Polyquaternium-7, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon nawilżający 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-nawilzajacy-200ml/",
+     "woo_id": 5277,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-nawilzajacy-200ml/",
+     "price_pln": 34.33,
+     "regular_price_pln": 34.33,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_szampon_nawilzajacy_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-nawilzajacy-200ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja Szampon nawilżający 1000ml",
+     "capacity": "1000 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-nawilzajacy-1000ml/",
+     "woo_id": 10830,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-nawilzajacy-1000ml/",
+     "price_pln": 46.17,
+     "regular_price_pln": 46.17,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/10/EUROWET_szampon_nawilzajacy_kolorpielegnacja_1000ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-nawilzajacy-1000ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-dla-szczeniat",
+    "kp-szampon-york-dlugi-wlos",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [],
+   "data_issues": [
+    "EN 1000ml page Yoast description is in Polish."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-ochronny-przeciw-pchlom-i-kleszczom",
+   "name": "Szampon ochronny przeciw pchłom i kleszczom",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja",
+    "preparaty-odstraszajace-pchly-i-kleszcze"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja SZAMPON WSPOMAGAJĄCY OCHRONĘ PRZECIW PCHŁOM, KLESZCZOM I INNYM OWADOM dla psów i kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "ZAPEWNIA DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+    "bezpieczny",
+    "+ olejek Neem"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "pchły i kleszcze (odstraszanie)",
+     "evidence_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł i kleszczy na sierści oraz skórze psów i kotów.",
+     "source_field": "properties"
+    },
+    {
+     "need": "pchły i kleszcze (odstraszanie)",
+     "evidence_verbatim": "ZAPEWNIA DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+     "source_field": "badges"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek Neem (ekstrakt z liści miodli indyjskiej)",
+     "label_name": "MELIA AZADIRACHTA LEAF EXTRACT",
+     "stated_function_verbatim": "Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów"
+    }
+   ],
+   "properties_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł i kleszczy na sierści oraz skórze psów i kotów. Posiada także bardzo dobre właściwości myjące. OLEJEK NEEM Melia Azadirachta Leaf Extract to wyciąg z liści miodli indyjskiej, Melia azadirachta, Meliaceae. Wyciąg z liści miodli indyjskiej jest wyjątkowo bogaty we wtórne substancje roślinne i olejki eteryczne. Liście Neem mają właściwości przeciwzapalne, przeciwgorączkowe, antybakteryjne, antywirusowe, przeciwgrzybiczne, przeciwpasożytnicze. Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów: wodny ekstrakt z liści działa przeciwko składaniu jaj przez Anticaria gemmatalis, świeże liście działają mutagennie na komara Aedes aegypti, dihydronimocynol i 6-α-hydroksy-azadiradion okazały się być śmiertelne dla Anopheles stephensi (na czwartym etapie larwalnym), a salanina wydłuża etap larwalny, opóźnia etap kokonu, wywołuje śmiertelność wśród larw i poczwarek oraz redukuje wagę poczwarki Oxya fuscovittata. Niektóre pochodne limonoidu niekorzystnie wpływają na płodność muchy domowej Musca domestica. Azadirachtyna jest toksyczna względem pluskwiaków Rhodnius prolixus, hamuje proces odżywiania szarańczy Schistocerca gregaria i działa na ponad 200 gatunków insektów, przerywając ich wzrost i utrudniając odżywianie. W pewnym stopniu jest więc względem nich toksyczna natomiast wykazuje bardzo niską toksyczność względem ssaków i jest biodegradowalna. Najaktywniejszymi związkami miodli są azadirachtyna A, azadirachtyna B i salanina, które są rozpuszczalne w wodzie, dzięki czemu ekstrakt z miodli zachowuje ich właściwości repelencyjne. Dlatego ekstrakt z miodli zalecany jest w kosmetykach odstraszających owady.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Należy unikać kontaktu szamponu z oczami. Nie przeznaczony dla psów i kotów poniżej 3 miesiąca życia oraz dla suk i kotek ciężarnych lub karmiących. W celu zmniejszenia ryzyka obecności pcheł i kleszczy konieczna jest okresowa i regularna wymiana legowiska. Warunki przechowywania: W oryginalnym opakowaniu i z dala od dzieci.",
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, PEG 4 RAPESEEDAMIDE, GLICERIN, MELIA AZADIRACHTA LEAF EXTRACT, SODIUM CHLORIDE, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, CITRIC ACID",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon ochronny 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ochronny-200ml/",
+     "woo_id": 6551,
+     "woo_path": "/produkt/szampon-ochronny-przeciw-pchlom-i-kleszczom-200ml/",
+     "price_pln": 27.46,
+     "regular_price_pln": 27.46,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/04/KP_szampon_odstraszajacy_pchly_kleszcze_200ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-ochronny-200ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "DRY&Clean 150ml",
+    "Fyto-derm 100ml",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [],
+   "data_issues": [
+    "PL Yoast description says \"NATURALNIE BEZPIECZNY\" while the badge says only \"bezpieczny\"; Woo Yoast says \"działa ochronnie\" vs page \"wspomaga działanie ochronne\".",
+    "Page slug/title \"Szampon ochronny\" omits what it protects against; Woo name \"SZAMPON WSPOMAGAJĄCY OCHRONĘ PRZECIW PCHŁOM I KLESZCZOM\".",
+    "Similar legacy page /produkty/szampon-odstraszajacy-pchly-i-kleszcze-200ml/ (Amiwet, Melia Azadirachta Seed Oil, different INCI) — risk of confusion/duplicate intent.",
+    "INCI typo: \"GLICERIN\"; Neem paragraph misspells \"Anticaria gemmatalis\".",
+    "Related link \"/dry&clean-150ml\" matches no page slug."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-shih-tzu",
+   "name": "Szampon SHIH TZU",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla psów rasy SHIH TZU",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "GŁĘBOKO ODŻYWIA",
+    "+Nori Complex, proteiny, olejek nabłyszczający"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "pielęgnacja długiego włosa",
+     "evidence_verbatim": "Pielęgnacja długiego włosa.",
+     "source_field": "indications"
+    },
+    {
+     "need": "przesuszona, łamliwa sierść",
+     "evidence_verbatim": "Idealny do pielęgnacji przesuszonych i łamliwych włosów.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Głęboko odżywia włos, nadaje mu jedwabistość i połysk.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "Nori Complex",
+     "label_name": "Porphyra Umbilicalis Extract",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "proteiny pszeniczne",
+     "label_name": "Hydrolyzed Wheat Gluten",
+     "stated_function_verbatim": "Proteiny pszeniczne są bardzo łatwo absorbowane przez włos i skórę."
+    },
+    {
+     "name_pl": "olejek nabłyszczający",
+     "label_name": null,
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Proteiny pszeniczne są bardzo łatwo absorbowane przez włos i skórę. Idealny do pielęgnacji przesuszonych i łamliwych włosów. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Głęboko odżywia włos, nadaje mu jedwabistość i połysk.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N. Uwaga: przed kąpielą rozczesz sierść aby usunąć martwe włosy, zanieczyszczenia oraz aby unikniąć splątania i zacieśnienia ewentualnych węzłów włosów pod wpływem wody.",
+   "indications_verbatim": "Pielęgnacja długiego włosa.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Peg 40 Hydrogenated Castor Oil, Hydrolyzed Wheat Gluten, Sodium Chloride, Glicerin, PEG-7 Glyceryl Cocate, Polysorbate 20, Parfum, Glycol Distearate, Mink Oil, Cocamide DEA, Cocamide MEA, Laureth-10, Porphyra Umbilicalis Extract, Caesalpinia Spinosa Gum, Sodium Hydroxide,, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon SHIH TZU 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-shih-tzu-200ml/",
+     "woo_id": 5280,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-shih-tzu-200ml/",
+     "price_pln": 39.25,
+     "regular_price_pln": 39.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_szampon_shih_tzu_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-shih-tzu-200ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja Szampon SHIH TZU 1000ml",
+     "capacity": "1000 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-shih-tzu-1000ml/",
+     "woo_id": 10829,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-shih-tzu-1000ml/",
+     "price_pln": 48.02,
+     "regular_price_pln": 48.02,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/10/EUROWET_szampon_shih_tzu_kolorpielegnacja_1000ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-shih-tzu-1000ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-nawilzajacy",
+    "kp-plyn-do-przemywania-oczu",
+    "Hexoderm excellence 200ml"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Usage typos: \"unikniąć\" (uniknąć), \"rozczesz\" (rozczesać).",
+    "INCI typos: double comma \"Sodium Hydroxide,,\", \"Glicerin\", \"Peg 40\".",
+    "\"Olejek nabłyszczający\" (badge) cannot be matched to a named INCI ingredient.",
+    "EN 1000ml page Yoast description is in Polish."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-dla-szczeniat",
+   "name": "Szampon dla szczeniąt",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon DLA SZCZENIĄT",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "DELIKATNIE MYJE",
+    "ŁAGODZI PODRAŻNIENIA",
+    "+ olejek z migdałowca, alantoina"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "species_evidence": "Dla psów. | Pielęgnacja skóry i sierści szczeniąt.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "kąpiel szczeniąt",
+     "evidence_verbatim": "Zawarty w szamponie olejek z migdałowca sprawia, że jest bardzo dobrze tolerowany przez szczenięta.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kąpiel szczeniąt",
+     "evidence_verbatim": "Pielęgnacja skóry i sierści szczeniąt.",
+     "source_field": "indications"
+    },
+    {
+     "need": "podrażnienia skóry",
+     "evidence_verbatim": "ŁAGODZI PODRAŻNIENIA",
+     "source_field": "badges"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "NADAJE POŁYSK I JEDWABISTOŚĆ",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek z migdałowca",
+     "label_name": "Sweet Almond Oil",
+     "stated_function_verbatim": "Zawarty w szamponie olejek z migdałowca sprawia, że jest bardzo dobrze tolerowany przez szczenięta."
+    },
+    {
+     "name_pl": "alantoina",
+     "label_name": "Allantoin",
+     "stated_function_verbatim": "Alantoina łagodzi objawy związane z podrażnieniami."
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Zawarty w szamponie olejek z migdałowca sprawia, że jest bardzo dobrze tolerowany przez szczenięta. Sierść staje się miękka i błyszcząca. Alantoina łagodzi objawy związane z podrażnieniami. Tworzy warstwę chroniącą skórę przed drobnymi zranieniami, uszkodzeniami, otarciami i promieniami słonecznymi",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "indications_verbatim": "Pielęgnacja skóry i sierści szczeniąt.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, PEG-40 Hydrogenated Castor Oil, Sweet Almond Oil, Allantoin, PEG-7 Glyceryl Cocate, Silicone Quaterium-17, Laureth-9, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide,, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon szczenięta 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-szczenieta-200ml/",
+     "woo_id": 5278,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-dla-szczeniat-200ml/",
+     "price_pln": 36.8,
+     "regular_price_pln": 36.8,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_szampon_szczenieta_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-szczenieta-200ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-nawilzajacy",
+    "kp-odzywka-do-siersci-i-wlosow",
+    "kp-szampon-york-dlugi-wlos"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Woo usage includes an extra note (\"Uwaga: przed kąpielą rozczesz sierść ...\") absent from the product page.",
+    "Properties last sentence lacks a final period; INCI double comma \"Sodium Hydroxide,,\", \"Silicone Quaterium-17\".",
+    "Similar legacy page /produkty/szampon-dla-szczeniat-200ml/ (Amiwet, different INCI) — risk of confusion."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "kp-szampon-york-dlugi-wlos",
+   "name": "Szampon YORK DŁUGI WŁOS",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon DLA psów rasy YORK",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "GŁĘBOKO ODŻYWIA",
+    "+Nori Complex, proteiny, olejek norkowy"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "pielęgnacja długiego włosa",
+     "evidence_verbatim": "Pielęgnacja długiego włosa.",
+     "source_field": "indications"
+    },
+    {
+     "need": "przesuszona, łamliwa sierść",
+     "evidence_verbatim": "Nadaje się doskonale do pielęgnacji psów o przesuszonym i łamliwym włosie.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Głęboko odżywia włos, nadaje mu jedwabistość i połysk.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "Nori Complex",
+     "label_name": "Porphyra Umbilicalis Extract",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "proteiny pszeniczne",
+     "label_name": "Hydrolyzed Wheat Gluten",
+     "stated_function_verbatim": "Proteiny pszeniczne są bardzo łatwo absorbowane przez włos i skórę."
+    },
+    {
+     "name_pl": "olejek norkowy",
+     "label_name": "Mink Oil",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Proteiny pszeniczne są bardzo łatwo absorbowane przez włos i skórę. Nadaje się doskonale do pielęgnacji psów o przesuszonym i łamliwym włosie. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Głęboko odżywia włos, nadaje mu jedwabistość i połysk.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N. Uwaga: przed kąpielą rozczesz sierść aby usunąć martwe włosy, zanieczyszczenia oraz aby unikniąć splątania i zacieśnienia ewentualnych węzłów włosów pod wpływem wody.",
+   "indications_verbatim": "Pielęgnacja długiego włosa.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Peg 40 Hydrogenated Castor Oil, Hydrolyzed Wheat Gluten, Sodium Chloride, Glicerin, PEG-7 Glyceryl Cocate, Polysorbate 20, Parfum, Glycol Distearate, Mink Oil, Cocamide DEA, Cocamide MEA, Laureth-10, Porphyra Umbilicalis Extract, Caesalpinia Spinosa Gum, Citric Acids, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Kolor&Pielęgnacja Szampon YORK DŁUGI WŁOS 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-york-dlugi-wlos-200ml/",
+     "woo_id": 5276,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-york-dlugi-wlos-200ml/",
+     "price_pln": 34.33,
+     "regular_price_pln": 34.33,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/EUROWET_szampon_york_kolorpielegnacja_200ml-1.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-york-dlugi-wlos-200ml-eng/"
+    },
+    {
+     "title": "Kolor&Pielęgnacja Szampon YORK DŁUGI WŁOS 1000ml",
+     "capacity": "1000 ml",
+     "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-york-dlugi-wlos-1000ml/",
+     "woo_id": 10823,
+     "woo_path": "/produkt/kolor-pielegnacja-szampon-york-dlugi-wlos-1000ml/",
+     "price_pln": 46.15,
+     "regular_price_pln": 46.15,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/10/EUROWET_szampon_york_kolorpielegnacja_1000ml.png",
+     "en_page_path": "/en/products/colour-and-care-line/kolorpielegnacja-szampon-york-dlugi-wlos-1000ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "Wita-tonyl 30ml",
+    "Fyto-derm 100ml",
+    "kp-odzywka-do-siersci-i-wlosow"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Usage typos: \"unikniąć\" (uniknąć), \"rozczesz\" (rozczesać).",
+    "INCI typos: \"Glicerin\", \"Citric Acids\", \"Peg 40\".",
+    "Related products include Wita-tonyl 30ml (a complementary feed for growth/pregnancy/convalescence) — weak relation to a shampoo.",
+    "EN 1000ml page Yoast description is in Polish."
+   ],
+   "vet_context_verbatim": null
+  }
+ ],
+ "unmatched_woo": []
+}

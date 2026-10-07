@@ -1,0 +1,14 @@
+{
+  "name": "eurowet-2026-tests",
+  "private": true,
+  "description": "End-to-end, accessibility and performance QA for the Eurowet 2026 WordPress build",
+  "scripts": {
+    "test": "playwright test",
+    "test:a11y": "playwright test a11y",
+    "test:finder": "playwright test finder"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.48.0"
+  }
+}
