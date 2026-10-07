@@ -622,6 +622,9 @@ body::before{
 .preview-cap{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:14px 16px;color:#fff;display:grid;gap:8px}
 .preview-cap b{font-family:var(--serif);font-size:1.08rem;font-weight:600;letter-spacing:-.01em}
 .preview-cap span{font-size:.7rem;color:rgba(255,255,255,.74);line-height:1.45}
+.preview-cap .pv-occ{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.86);
+  margin-bottom:-4px}
+.preview-cap .pv-occ[hidden]{display:none}
 .count-strip{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .count-strip i{width:11px;height:11px;border-radius:50%;display:block;
   box-shadow:inset 0 -2px 4px rgba(0,0,0,.35), inset 0 2px 3px rgba(255,255,255,.45)}
@@ -643,49 +646,21 @@ body::before{
   border-radius:100px;padding:5px 11px;font-size:.66rem;letter-spacing:.05em}
 @media (max-width:960px){.preview{aspect-ratio:1/.86}}
 
-/* ── Dodatki na podglądzie ──────────────────────────────────────────────────
-   .pv-fx ma ten sam transform co zdjęcie, więc warstwy trzymają się kopuły przy
-   każdej skali. .pv-sq odtwarza kwadratowy kadr zdjęcia przy object-fit:cover
-   (podgląd jest zawsze co najmniej tak szeroki jak wysoki), żeby procenty w nim
-   znaczyły to samo co na pliku 900×900. */
-.pv-fx{position:absolute;inset:0;z-index:1;pointer-events:none;
-  transform:scale(var(--pv-scale,1));transform-origin:50% 36%;
-  transition:transform .6s cubic-bezier(.2,.8,.3,1)}
-.pv-fx .fx-crown{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-  opacity:0;transition:opacity .45s ease;filter:drop-shadow(0 6px 5px rgba(40,8,20,.3))}
-.pv-sq{position:absolute;left:0;right:0;top:50%;aspect-ratio:1;transform:translateY(-50%)}
-.fx-led,.fx-glitter{position:absolute;left:19%;width:62%;top:22%;height:37%;opacity:0;
-  transition:opacity .5s ease;
-  -webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%, #000 62%, transparent 100%);
-  mask-image:radial-gradient(ellipse 50% 50% at 50% 50%, #000 62%, transparent 100%)}
-.fx-led{background:
-  radial-gradient(circle at 30% 40%, rgba(255,246,220,1) 0 4%, rgba(255,204,128,.5) 9%, rgba(255,170,70,0) 22%) 0 0/13% 17%,
-  radial-gradient(circle at 70% 20%, rgba(255,246,220,1) 0 3.5%, rgba(255,204,128,.45) 8%, rgba(255,170,70,0) 20%) 0 0/19% 14%,
-  radial-gradient(circle at 20% 75%, rgba(255,246,220,.95) 0 3%, rgba(255,204,128,.45) 7%, rgba(255,170,70,0) 18%) 0 0/23% 29%,
-  radial-gradient(circle at 80% 65%, rgba(255,246,220,.95) 0 3%, rgba(255,204,128,.4) 7%, rgba(255,170,70,0) 18%) 0 0/31% 23%,
-  radial-gradient(ellipse at 50% 60%, rgba(255,196,120,.3), rgba(255,170,80,0) 72%)}
-.fx-glitter{background:
-  radial-gradient(circle at 25% 35%, #fff 0 2.5%, rgba(255,255,255,0) 7%) 0 0/7% 9%,
-  radial-gradient(circle at 70% 60%, rgba(255,250,232,.95) 0 2%, rgba(255,255,255,0) 6%) 0 0/11% 8%,
-  radial-gradient(circle at 40% 80%, #fff 0 2.5%, rgba(255,255,255,0) 7.5%) 0 0/17% 13%,
-  radial-gradient(circle at 85% 15%, rgba(255,255,255,.9) 0 2%, rgba(255,255,255,0) 6%) 0 0/5% 7%}
-.fx-crown.on,.fx-led.on,.fx-glitter.on{opacity:1}
-.fx-led.on{animation:fxTwinkle 2.8s ease-in-out infinite}
-.fx-glitter.on{animation:fxShimmer 3.6s ease-in-out infinite}
-@keyframes fxTwinkle{0%,100%{opacity:1}50%{opacity:.68}}
-@keyframes fxShimmer{0%,100%{opacity:.95}45%{opacity:.55}70%{opacity:1}}
-@media (prefers-reduced-motion:reduce){.fx-led.on,.fx-glitter.on{animation:none}}
-/* Przy małych bukietach zdjęcie jest pomniejszane i widać by było jego krawędź.
-   Tło podglądu ma kolory studyjnego tła ze zdjęć (ściana u góry, jaśniejszy blat
-   niżej), a brzegi zdjęcia miękko w nie przechodzą. */
-.preview{background:linear-gradient(180deg,#b9b0a8 0%,#c1b7ae 50%,#d3cbc3 66%,#e2dbd3 100%)}
+/* ── Tło podglądu ────────────────────────────────────────────────────────────
+   Zdjęcia są kadrami jak z telefonu (ulica, ściana). Przy małych bukietach zdjęcie
+   jest pomniejszane — pod spodem leży ta sama klatka, rozmyta i powiększona, więc
+   zamiast ramki widać miękkie przedłużenie tła. Brzegi ostrego zdjęcia w nią
+   przechodzą. Dodatków nie dorysowuję na zdjęciu — warianty z koroną są osobnymi
+   zdjęciami, reszta dodatków to miniatury obok (`#pvAddons`). */
+.preview-blur{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:blur(22px) saturate(1.05) brightness(.92);transform:scale(1.18);opacity:0;
+  transition:opacity .45s ease}
+.preview-blur.on{opacity:1}
 .preview-stack img{
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(180deg,transparent,#000 8%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(180deg,transparent,#000 7%,#000 93%,transparent);
   -webkit-mask-composite:source-in;
-  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(180deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(180deg,transparent,#000 7%,#000 93%,transparent);
   mask-composite:intersect}
-/* W trybie obrotu warstwy chowam — nie obracają się razem z bukietem. */
-.preview.is-spin .pv-fx{opacity:0}
 
 .pv-addons{position:absolute;top:54px;right:10px;z-index:3;margin:0;padding:0;list-style:none;
   display:grid;grid-auto-flow:column;grid-template-rows:repeat(6,auto);gap:6px;direction:rtl}
@@ -742,15 +717,6 @@ body::before{
 .tile .mark svg{width:12px;height:12px}
 .tile:has(input:checked) .mark{opacity:1;transform:scale(1)}
 .tile.tile-icon figure{display:grid;place-items:center;background:var(--surface-2)}
-/* Zestawy: białe róże na zdjęciu + kanwa, na której te same róże są przebarwione na
-   kolor wybranej satyny (maska size-<n>-tint.webp). Dopóki kanwa się nie narysuje,
-   widać zwykłe zdjęcie. */
-.size-pic{position:relative;display:block;width:100%;height:100%;background:#fff}
-.size-pic img,.size-pic canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
-  transition:transform .5s cubic-bezier(.2,.8,.3,1)}
-.size-pic canvas{opacity:0;transition:opacity .3s ease, transform .5s cubic-bezier(.2,.8,.3,1)}
-.size-pic canvas.on{opacity:1}
-.tile:hover .size-pic canvas{transform:scale(1.05)}
 .tile.tile-icon svg{width:38%;height:38%;color:var(--ink-2);stroke-width:1.4}
 
 /* ── Kafelki bez zdjęcia ────────────────────────────────────────────────────
@@ -1228,16 +1194,12 @@ body::after{content:"";position:fixed;inset:0;z-index:3;pointer-events:none;opac
 
       <aside class="cfg-side">
         <div class="preview">
+          <!-- Rozmyta kopia bieżącego zdjęcia — tło widoczne przy pomniejszeniu. -->
+          <img class="preview-blur" id="pvBlur" alt="" aria-hidden="true" decoding="async">
           <div class="preview-stack" id="pvStack"></div>
-          <!-- Dodatki widoczne na bukiecie: korona jako osobna warstwa (zdjęcia bazowe są
-               bez korony), poświata LED i brokat rysowane z CSS. Skalują się razem ze
-               zdjęciem, więc zostają na kopule przy każdej liczbie róż. -->
-          <div class="pv-fx" id="pvFx" aria-hidden="true">
-            <img class="fx-crown" id="fxCrown" alt="" decoding="async">
-            <div class="pv-sq"><span class="fx-led" id="fxLed"></span><span class="fx-glitter" id="fxGlitter"></span></div>
-          </div>
-          <!-- Miniatury wszystkich zaznaczonych dodatków — także tych, których nie da się
-               uczciwie dorysować na zdjęciu (maskotka, pralinki, pudełko, ekspres…). -->
+          <!-- Miniatury wszystkich zaznaczonych dodatków. Na samym zdjęciu widać tylko
+               koronę (osobne zdjęcia z koroną); reszty nie dorysowuję, żeby podgląd
+               wyglądał jak prawdziwe zdjęcie, a nie kolaż. -->
           <ul class="pv-addons" id="pvAddons" aria-label="Dodatki w zestawie" data-tl="pv.addons" hidden></ul>
           <!-- Schemat dla kolorów bez fotografii: rysowany z CSS, więc nie wymaga
                dogrywania grafik i od razu widać, że to nie zdjęcie produktu. -->
@@ -1258,6 +1220,7 @@ body::after{content:"";position:fixed;inset:0;z-index:3;pointer-events:none;opac
             </button>
           </div>
           <div class="preview-cap">
+            <span class="pv-occ" id="pvOcc" hidden></span>
             <b id="pvTitle">—</b>
             <div class="count-strip" id="pvCount"></div>
             <span id="pvNote"></span>
@@ -1707,9 +1670,9 @@ var ROSE_TIERS = [
 var ROSE_MAX = 999;
 
 /* Gotowe zestawy — skrót do najczęściej zamawianych wielkości. `w` to szerokość w cm.
-   `img:1` oznacza, że w assets/cfg jest zdjęcie size-<n>.webp (białe róże na białym tle)
-   i maska size-<n>-tint.webp, przez którą kafelek barwi róże na kolor wybranej satyny.
-   Bez flagi kafelek rysuje schemat bukietu z CSS zamiast ładować nieistniejący plik. */
+   `img:1` oznacza, że w assets/cfg jest zdjęcie size-<n>.webp (bukiet w dłoni, dłoń
+   daje skalę). Bez flagi kafelek rysuje schemat bukietu z CSS zamiast ładować
+   nieistniejący plik. */
 var SIZES = [
   {n:7,   w:25, img:1, pl:"standardowy", en:"standard",    uk:"стандартний"},
   {n:19,  w:35, img:1, pl:"duży",        en:"large",       uk:"великий"},
@@ -1717,28 +1680,43 @@ var SIZES = [
   {n:101, w:65, img:1, pl:"premium",     en:"premium",     uk:"преміум"}
 ];
 
-/* `img:1` = jest komplet grafik: color-<id>.webp i po jednym podglądzie na każdą oprawę
-   z SLEEVE — preview-<id>-<oprawa>-900.webp. Kolor bez tej flagi pokazuje próbkę satyny
-   rysowaną z CSS i schemat zamiast zdjęcia podglądu. */
+/* `img:1` = jest komplet grafik: color-<id>.webp i dwa podglądy na każdą oprawę z SLEEVE —
+   preview-<id>-<oprawa>-900.webp oraz preview-<id>-<oprawa>-korona-900.webp. Kolor bez
+   tej flagi pokazuje próbkę satyny rysowaną z CSS i schemat zamiast zdjęcia podglądu.
+   `occ` = okazja, pod którą sfotografowano dany kolor (każdy kolor ma własną scenę i porę
+   roku). Pokazuje się nad nazwą bukietu w podglądzie; zmieniając scenę, zmień też ten opis. */
 var COLORS = [
-  {id:"czerwony",  img:1, pl:"Czerwony",     en:"Red",           uk:"Червоний",     base:"#C8102E", hi:"#F0475F", sh:"#78091C", add:0},
-  {id:"roz",       img:1, pl:"Róż",          en:"Pink",          uk:"Рожевий",      base:"#F2789F", hi:"#FFB3C9", sh:"#B94C71", add:0},
-  {id:"pudrowy",   img:1, pl:"Pudrowy róż",  en:"Powder pink",   uk:"Пудровий",     base:"#EFC2C5", hi:"#FDE6E7", sh:"#BF888C", add:0},
+  {id:"czerwony",  img:1, pl:"Czerwony",     en:"Red",           uk:"Червоний",     base:"#C8102E", hi:"#F0475F", sh:"#78091C", add:0,
+   occ:{pl:"Rocznica i randka · lato", en:"Anniversary & date night · summer", uk:"Річниця і побачення · літо"}},
+  {id:"roz",       img:1, pl:"Róż",          en:"Pink",          uk:"Рожевий",      base:"#F2789F", hi:"#FFB3C9", sh:"#B94C71", add:0,
+   occ:{pl:"Walentynki · luty", en:"Valentine's Day · February", uk:"День закоханих · лютий"}},
+  {id:"pudrowy",   img:1, pl:"Pudrowy róż",  en:"Powder pink",   uk:"Пудровий",     base:"#EFC2C5", hi:"#FDE6E7", sh:"#BF888C", add:0,
+   occ:{pl:"Dzień Matki · maj", en:"Mother's Day · May", uk:"День матері · травень"}},
   {id:"morelowy",  img:1, pl:"Morelowy",     en:"Apricot",       uk:"Абрикосовий",  base:"#F0A878", hi:"#FFD3B2", sh:"#B06E3E", add:0,
-   hpl:"jasny pomarańcz", hen:"light orange", huk:"світлий помаранчевий"},
-  {id:"zolty",     img:1, pl:"Żółty",        en:"Yellow",        uk:"Жовтий",       base:"#F3CE58", hi:"#FFECA8", sh:"#B2902C", add:0},
-  {id:"kremowy",   img:1, pl:"Kremowy",      en:"Cream",         uk:"Кремовий",     base:"#F1E3CE", hi:"#FFF8EC", sh:"#C2AC90", add:0},
-  {id:"bialy",     img:1, pl:"Biały",        en:"White",         uk:"Білий",        base:"#F7F5F3", hi:"#FFFFFF", sh:"#C7C1BD", add:0},
-  {id:"zielony",   img:1, pl:"Zielony",      en:"Green",         uk:"Зелений",      base:"#4F9060", hi:"#8AC79A", sh:"#2B5737", add:0},
-  {id:"blekit",    img:1, pl:"Błękit",       en:"Sky blue",      uk:"Блакитний",    base:"#7FC6E8", hi:"#BFE7F8", sh:"#3C83A6", add:0},
-  {id:"granat",    img:1, pl:"Granat",       en:"Navy",          uk:"Темно-синій",  base:"#1F3F91", hi:"#4A6FD1", sh:"#0D1E4C", add:0},
-  {id:"jasfiolet", img:1, pl:"Jasny fiolet", en:"Light purple",  uk:"Світло-фіолетовий", base:"#B79CDC", hi:"#E2D2F6", sh:"#7C62A4", add:0},
-  {id:"fiolet",    img:1, pl:"Fiolet",       en:"Purple",        uk:"Фіолетовий",   base:"#7A4A9E", hi:"#B383D6", sh:"#432557", add:0},
-  {id:"czarny",    img:1, pl:"Czarny",       en:"Black",         uk:"Чорний",       base:"#2A2429", hi:"#5C5259", sh:"#0F0B0E", add:0}
+   hpl:"jasny pomarańcz", hen:"light orange", huk:"світлий помаранчевий",
+   occ:{pl:"Dzień Nauczyciela · październik", en:"Teachers' Day · October", uk:"День вчителя · жовтень"}},
+  {id:"zolty",     img:1, pl:"Żółty",        en:"Yellow",        uk:"Жовтий",       base:"#F3CE58", hi:"#FFECA8", sh:"#B2902C", add:0,
+   occ:{pl:"Dzień Kobiet · marzec", en:"Women's Day · March", uk:"Жіночий день · березень"}},
+  {id:"kremowy",   img:1, pl:"Kremowy",      en:"Cream",         uk:"Кремовий",     base:"#F1E3CE", hi:"#FFF8EC", sh:"#C2AC90", add:0,
+   occ:{pl:"Ślub i zaręczyny · czerwiec", en:"Wedding & engagement · June", uk:"Весілля і заручини · червень"}},
+  {id:"bialy",     img:1, pl:"Biały",        en:"White",         uk:"Білий",        base:"#F7F5F3", hi:"#FFFFFF", sh:"#C7C1BD", add:0,
+   occ:{pl:"Boże Narodzenie · grudzień", en:"Christmas · December", uk:"Різдво · грудень"}},
+  {id:"zielony",   img:1, pl:"Zielony",      en:"Green",         uk:"Зелений",      base:"#4F9060", hi:"#8AC79A", sh:"#2B5737", add:0,
+   occ:{pl:"Dzień Babci i Dziadka · styczeń", en:"Grandparents' Day · January", uk:"День бабусі й дідуся · січень"}},
+  {id:"blekit",    img:1, pl:"Błękit",       en:"Sky blue",      uk:"Блакитний",    base:"#7FC6E8", hi:"#BFE7F8", sh:"#3C83A6", add:0,
+   occ:{pl:"Wakacyjna niespodzianka · sierpień", en:"Holiday surprise · August", uk:"Літній сюрприз · серпень"}},
+  {id:"granat",    img:1, pl:"Granat",       en:"Navy",          uk:"Темно-синій",  base:"#1F3F91", hi:"#4A6FD1", sh:"#0D1E4C", add:0,
+   occ:{pl:"Dzień Chłopaka · wrzesień", en:"Boyfriend's Day · September", uk:"День хлопця · вересень"}},
+  {id:"jasfiolet", img:1, pl:"Jasny fiolet", en:"Light purple",  uk:"Світло-фіолетовий", base:"#B79CDC", hi:"#E2D2F6", sh:"#7C62A4", add:0,
+   occ:{pl:"Urodziny · lipiec", en:"Birthday · July", uk:"День народження · липень"}},
+  {id:"fiolet",    img:1, pl:"Fiolet",       en:"Purple",        uk:"Фіолетовий",   base:"#7A4A9E", hi:"#B383D6", sh:"#432557", add:0,
+   occ:{pl:"Bez okazji · listopad", en:"Just because · November", uk:"Без приводу · листопад"}},
+  {id:"czarny",    img:1, pl:"Czarny",       en:"Black",         uk:"Чорний",       base:"#2A2429", hi:"#5C5259", sh:"#0F0B0E", add:0,
+   occ:{pl:"Halloween · 31 października", en:"Halloween · 31 October", uk:"Гелловін · 31 жовтня"}}
 ];
 
 /* Oprawa — otulina z organzy wokół samych kwiatów, pod opakowaniem zewnętrznym.
-   Każda pozycja ma własną wersję podglądu bukietu (preview-<kolor>-<id>-900.webp),
+   Każda pozycja ma własne zdjęcia podglądu (preview-<kolor>-<id>[-korona]-900.webp),
    więc podgląd zmienia się razem z wyborem organzy. `img:1` = kafelek pokazuje zdjęcie
    tkaniny sleeve-<id>.webp; bez flagi rysuje próbkę z CSS (`c` i `c2`). */
 var SLEEVE = [
@@ -2053,7 +2031,7 @@ en:{
 "cfg.l6":"Delivery","cfg.s6":"Delivery",
 "cfg.shipnote":"Delivery prices follow the Furgonetka / InPost tariff for individual senders (as of September 2026). Collection at the Furgonetka pick-up point, ul. Częstochowska 140 in Kalisz, is free.",
 "pv.badge":"AI visualisation","pv.shuffle":"Shuffle the options","pv.reset":"Start over",
-"pv.drag":"Drag to turn","pv.addons":"Extras included",
+"pv.drag":"Drag to turn","pv.addons":"Extras included","pv.occ":"Idea for",
 "sum.h":"Your bouquet",
 "sum.ack1":"I understand the bouquet is made to my individual order and that — under art. 38(1)(3) of the Polish Consumer Rights Act — <b>the 14-day right of withdrawal does not apply</b>. <button type=\"button\" data-doc=\"zwroty\" class=\"lnk\">What does that mean?</button>",
 "sum.ack2":"I accept the <button type=\"button\" data-doc=\"regulamin\" class=\"lnk\">terms</button> and the <button type=\"button\" data-doc=\"prywatnosc\" class=\"lnk\">privacy policy</button>.",
@@ -2211,7 +2189,7 @@ uk:{
 "cfg.l6":"Доставка","cfg.s6":"Доставка",
 "cfg.shipnote":"Ціни доставки за тарифом Furgonetka / InPost для приватного відправника (станом на вересень 2026). Самовивіз у пункті Furgonetka на вул. Częstochowska 140 у Каліші — безкоштовно.",
 "pv.badge":"AI-візуалізація","pv.shuffle":"Випадковий набір","pv.reset":"Почати спочатку",
-"pv.drag":"Потягніть, щоб обернути","pv.addons":"Додатки в наборі",
+"pv.drag":"Потягніть, щоб обернути","pv.addons":"Додатки в наборі","pv.occ":"Ідея на",
 "sum.h":"Ваш букет",
 "sum.ack1":"Розумію, що букет виготовляється на моє індивідуальне замовлення і що — згідно зі ст. 38 ч. 1 п. 3 польського закону про права споживача — <b>право на відмову протягом 14 днів не діє</b>. <button type=\"button\" data-doc=\"zwroty\" class=\"lnk\">Що це означає?</button>",
 "sum.ack2":"Приймаю <button type=\"button\" data-doc=\"regulamin\" class=\"lnk\">правила</button> і <button type=\"button\" data-doc=\"prywatnosc\" class=\"lnk\">політику конфіденційності</button>.",
@@ -2311,7 +2289,7 @@ var LANG = "pl";
 var PL_JS = {
 "js.roses":"róż","js.from":"od","js.gross":"brutto","js.included":"w cenie","js.total":"Razem brutto",
 "js.free":"bezpłatnie","js.freeFrom":"Darmowa dostawa od","js.freeNote":"gratis od","js.open":"Dopasuj",
-"js.copied":"Skopiowano ✓",
+"js.copied":"Skopiowano ✓","pv.occ":"Pomysł na",
 "js.guard":"<b style=\"color:var(--rose)\">Zaznacz oba pola powyżej</b> — bez potwierdzenia informacji o zamówieniu indywidualnym i akceptacji regulaminu nie mogę przyjąć zamówienia.",
 "js.bouquet":"Bukiet","js.color":"Kolor","js.wrap":"Opakowanie","js.zoom":"Powiększ:",
 "js.sleeve":"Oprawa","js.pc":"szt.","js.width":"szerokość","js.approx":"ok.","js.cm":"cm","js.custom":"własna liczba",
@@ -2480,6 +2458,12 @@ function renderPreview(){
   }
   Object.keys(pvCache).forEach(function(k){ pvCache[k].classList.toggle("on", k===src); });
   stack.style.setProperty("--pv-scale", pvScale(S.size));
+  /* Rozmyta kopia tego samego zdjęcia pod spodem — przy pomniejszeniu nie widać ramki. */
+  var blur = $("#pvBlur");
+  if(blur){
+    if(blur.getAttribute("src") !== src){ blur.classList.remove("on"); blur.onload = function(){ blur.classList.add("on"); }; blur.src = src; }
+    else blur.classList.add("on");
+  }
   stack.setAttribute("role","img");
   stack.setAttribute("aria-label", t("js.pvAlt")+": "+bouquetName(S));
 
@@ -2490,7 +2474,6 @@ function renderPreview(){
     var on  = !!set && set.state === "ready";
     cv.hidden = !on;
     if(hint) hint.hidden = !on;
-    cv.parentNode.classList.toggle("is-spin", on);
     /* Gdy kanwa przejmuje kadr, zdjęcie pod spodem przestaje być ogłaszane,
        żeby czytnik ekranu nie czytał tego samego dwa razy. */
     stack.setAttribute("aria-hidden", on ? "true" : "false");
@@ -2500,24 +2483,14 @@ function renderPreview(){
     }
     spinMaybeLoad();
   }
-  paintFx();
+  renderAddonChips();
   paintPreviewCaption(col, wr, sl);
 }
-/* Zdjęcie bazowe zależy od koloru róż i oprawy (organzy) — 13 × 5 plików. */
-function previewSrc(st){ return "assets/cfg/preview-"+st.color+"-"+st.sleeve+"-900.webp"; }
-/* Dodatki, które da się uczciwie pokazać na samym bukiecie: korona (osobna warstwa
-   wycięta ze zdjęcia), poświata LED i brokat. Pozostałe widać jako miniatury obok. */
-function paintFx(){
-  var has = function(id){ return S.addons.indexOf(id) > -1; };
-  var cr = $("#fxCrown"), led = $("#fxLed"), gl = $("#fxGlitter");
-  if(cr){
-    if(has("korona") && !cr.getAttribute("src")) cr.src = "assets/cfg/layer-korona-900.webp";
-    cr.classList.toggle("on", has("korona"));
-  }
-  if(led) led.classList.toggle("on", has("led"));
-  if(gl)  gl.classList.toggle("on", has("brokat"));
-  var fx = $("#pvFx"); if(fx) fx.style.setProperty("--pv-scale", pvScale(S.size));
-  renderAddonChips();
+/* Zdjęcie zależy od koloru róż, oprawy (organzy) i tego, czy jest korona —
+   13 × 5 × 2 plików. Pozostałe dodatki widać jako miniatury obok zdjęcia. */
+function hasCrown(st){ return (st.addons||[]).indexOf("korona") > -1; }
+function previewSrc(st){
+  return "assets/cfg/preview-"+st.color+"-"+st.sleeve+(hasCrown(st) ? "-korona" : "")+"-900.webp";
 }
 function renderAddonChips(){
   var ul = $("#pvAddons"); if(!ul) return;
@@ -2537,6 +2510,9 @@ function renderAddonChips(){
 /* Podpis pod podglądem jest ten sam niezależnie od tego, czy nad nim jest zdjęcie,
    czy schemat — stąd osobna funkcja zamiast dwóch kopii. */
 function paintPreviewCaption(col, wr, sl){
+  var occ = $("#pvOcc");
+  occ.hidden = !col.occ;
+  occ.textContent = col.occ ? t("pv.occ") + ": " + nm(col.occ) : "";
   $("#pvTitle").textContent = bouquetName(S);
   var extras = S.addons.length ? S.addons.map(function(i){return nm(byId(ADDONS,i));}).join(", ") : t("js.none");
   $("#pvNote").textContent = t("js.sleeve")+": "+nm(sl)+" · "+t("js.wrap")+": "+nm(wr)+" · "+t("js.addons")+": "+extras;
@@ -2607,7 +2583,7 @@ function renderForm(){
   var curCol = byId(COLORS, S.color);
   $("#sizeOpts").innerHTML = SIZES.map(function(z){
     return tile('<input type="radio" name="size" value="'+z.n+'"'+(S.size===z.n?" checked":"")+'>',
-      z.img ? sizePic(z.n) : domeHTML(z.n, curCol),
+      z.img ? pic("assets/cfg/size-"+z.n+".webp", z.n+" "+t("js.roses")) : domeHTML(z.n, curCol),
       z.n+" "+esc(t("js.roses")),
       '<span>'+esc(nm(z))+' · '+esc(t("js.approx"))+' '+z.w+'&nbsp;'+esc(t("js.cm"))+'</span>'+
       '<span class="plus">'+esc(t("js.from"))+' '+zl(rosesPrice(z.n))+'</span>',
@@ -2674,47 +2650,12 @@ function renderQty(){
 function syncSizeTiles(){
   $$('#sizeOpts input[name="size"]').forEach(function(r){ r.checked = (parseInt(r.value,10)===S.size); });
 }
-/* Kafelki zestawów są w kolorze wybranej satyny. Przy zmianie koloru przemalowuję
-   same kanwy (albo zmienną z gradientem w schemacie) zamiast przebudowywać formularz —
-   przebudowa zabrałaby fokus z właśnie klikniętego pola. */
+/* Schematy w kafelkach zestawów (gdy brak zdjęcia) są w kolorze wybranej satyny.
+   Przy zmianie koloru podmieniam samą zmienną z gradientem zamiast przebudowywać
+   formularz — przebudowa zabrałaby fokus z właśnie klikniętego pola. */
 function tintDomes(){
-  var col = byId(COLORS,S.color), fill = roseBG(col);
+  var fill = roseBG(byId(COLORS,S.color));
   $$("#sizeOpts .dome").forEach(function(d){ d.style.setProperty("--dome-fill", fill); });
-  $$("#sizeOpts .size-pic").forEach(function(el){
-    var cv = el.querySelector("canvas");
-    sizeAssets(parseInt(el.getAttribute("data-n"),10), function(a){ paintTint(cv, a, col.base); });
-  });
-}
-function sizePic(n){
-  return '<span class="size-pic" data-n="'+n+'"><img src="assets/cfg/size-'+n+'.webp" alt="" loading="lazy" decoding="async" width="400" height="400">'+
-    '<canvas width="400" height="400" aria-hidden="true"></canvas></span>';
-}
-/* Zdjęcie i maskę każdego zestawu wczytuję raz. Barwienie samym rysowaniem na kanwie
-   (multiply przez maskę), bez czytania pikseli — działa też przy otwarciu z dysku. */
-var sizeImgs = {};
-function sizeAssets(n, cb){
-  var a = sizeImgs[n];
-  if(a){ if(a.ok) cb(a); else if(!a.bad) a.wait.push(cb); return; }
-  a = sizeImgs[n] = {ok:false, bad:false, wait:[cb]};
-  var left = 2;
-  function done(){ if(--left) return; a.ok = true; a.wait.forEach(function(f){ f(a); }); a.wait = []; }
-  function fail(){ a.bad = true; a.wait = []; }
-  a.photo = new Image(); a.photo.onload = done; a.photo.onerror = fail; a.photo.src = "assets/cfg/size-"+n+".webp";
-  a.mask  = new Image(); a.mask.onload  = done; a.mask.onerror  = fail; a.mask.src  = "assets/cfg/size-"+n+"-tint.webp";
-}
-function paintTint(cv, a, color){
-  if(!cv || !cv.getContext) return;
-  var w = cv.width, h = cv.height, c = cv.getContext("2d");
-  var off = paintTint.off || (paintTint.off = document.createElement("canvas"));
-  off.width = w; off.height = h;
-  var o = off.getContext("2d");
-  o.globalCompositeOperation = "source-over"; o.clearRect(0,0,w,h);
-  o.fillStyle = color; o.fillRect(0,0,w,h);
-  o.globalCompositeOperation = "destination-in"; o.drawImage(a.mask,0,0,w,h);
-  c.globalCompositeOperation = "source-over"; c.clearRect(0,0,w,h); c.drawImage(a.photo,0,0,w,h);
-  c.globalCompositeOperation = "multiply"; c.drawImage(off,0,0);
-  c.globalCompositeOperation = "source-over";
-  cv.classList.add("on");
 }
 function setRoses(v){
   var k = Math.round(Number(v));
@@ -3851,28 +3792,23 @@ function wire(){
 
 /* ══════════════ OBRÓT 360° ══════════════ */
 /* ┌──────────────────────────────────────────────────────────────────────────┐
-   │  DODANIE OBROTU DLA KOLEJNEGO ZESTAWIENIA (kolor róż + oprawa)           │
-   │  1. wrzuć 24 pliki  assets/cfg/spin-{kolor}-{oprawa}-00.webp … -23.webp  │
-   │     np. spin-granat-org-czarna-00.webp (kwadratowe, klatki co 15°,       │
-   │     ten sam kadr i światło co preview-{kolor}-{oprawa}-900.webp)         │
-   │  2. dopisz "{kolor}-{oprawa}": {} do SPIN_SETS poniżej                   │
-   │  Tyle. Reszta kodu jest już na to gotowa. Procedura generowania:         │
-   │  tools/SPIN.md                                                           │
+   │  DODANIE OBROTU DLA ZESTAWIENIA                                           │
+   │  1. wrzuć 24 pliki  assets/cfg/spin-{klucz}-00.webp … -23.webp            │
+   │     klucz = {kolor}-{oprawa}  albo  {kolor}-{oprawa}-korona               │
+   │     np. spin-granat-org-czarna-korona-00.webp (kwadrat, klatki co 15°,    │
+   │     ten sam kadr i światło co preview-{klucz}-900.webp)                   │
+   │  2. dopisz "{klucz}": {} do SPIN_SETS poniżej                             │
+   │  Procedura generowania: tools/SPIN.md                                     │
    └──────────────────────────────────────────────────────────────────────────┘
    Zestawienia bez kompletu klatek zostają przy zwykłym zdjęciu — tak samo, jak zanim
    klatki się wczytają i jak wtedy, gdy pobieranie padnie. Nie ma stanu pustego.
-   W trybie obrotu warstwy dodatków (korona, LED, brokat) są schowane, bo się nie
-   obracają; miniatury dodatków zostają. To nadal wizualizacja — plakietka zostaje.
+   To nadal wizualizacja — plakietka zostaje. `prefix` w wpisie pozwala użyć innej
+   nazwy plików niż spin-{klucz}.
 
-   Opcje wpisu:
-     prefix — inna nazwa plików niż spin-{kolor}-{oprawa}
-     needs  — id dodatku, który jest „wtopiony" w klatki; bez niego obrót się nie
-              włącza, żeby nie pokazywać czegoś, czego klient nie wybrał.
-   Jedyny dotychczasowy obrót (czerwień) powstał ze starego zdjęcia z koroną i białą
-   organzą — stąd `needs:"korona"` i stare nazwy plików.                          */
-var SPIN_SETS = {
-  "czerwony-org-biala": {prefix:"spin-czerwony", needs:"korona"}
-};
+   Pusto celowo: stary obrót czerwieni (spin-czerwony-00..23) powstał ze studyjnego
+   renderu i nie pasuje do zdjęć „z telefonu”. Pliki zostały w repo. Nowe obroty
+   — dopiero po akceptacji podglądów przez właścicielkę. */
+var SPIN_SETS = {};
 var SPIN_COUNT  = 24;
 
 var spinSets = {};                 /* klucz zestawienia -> {state, frames} */
@@ -3881,10 +3817,8 @@ var SPIN = {};                     /* wypełnia initSpin() */
 
 /* Klucz obrotu dla stanu albo null, gdy dla tego zestawienia obrotu nie ma. */
 function spinKey(st){
-  var key = st.color + "-" + st.sleeve, cfg = SPIN_SETS[key];
-  if(!cfg) return null;
-  if(cfg.needs && st.addons.indexOf(cfg.needs) < 0) return null;
-  return key;
+  var key = st.color + "-" + st.sleeve + (hasCrown(st) ? "-korona" : "");
+  return SPIN_SETS[key] ? key : null;
 }
 function spinSet(key){
   if(!spinSets[key]) spinSets[key] = {state:"idle", frames:null};

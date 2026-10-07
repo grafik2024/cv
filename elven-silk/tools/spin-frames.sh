@@ -3,6 +3,7 @@
 #
 #   tools/spin-frames.sh orbita.mp4 <kolor> <oprawa> [klatek=24] [bok=760]
 #   np. tools/spin-frames.sh granat-czarna.mp4 granat org-czarna
+#   z koroną: tools/spin-frames.sh granat-korona.mp4 granat org-czarna-korona
 #
 # Wynik: assets/cfg/spin-<kolor>-<oprawa>-00.webp … -23.webp (kwadrat, środek kadru).
 # Klatki biorę co duration/N, od 0 do N-1 — ostatnia klatka filmu to zwykle ta sama

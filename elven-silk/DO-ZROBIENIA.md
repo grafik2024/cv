@@ -86,14 +86,20 @@ albo w Rzeczniku Konsumentów / urzędzie skarbowym.
 
 ## C. Zatwierdź grafiki
 
-18. **Nowe podglądy** — 65 plików `assets/cfg/preview-{kolor}-{oprawa}-900.webp`
-    (13 kolorów × 5 opraw), wszystkie bez korony; korona to osobna warstwa
-    `layer-korona-900.webp`. Do tego 4 próbki kolorów, 4 zdjęcia zestawów (7/19/37/101),
-    4 próbki organzy i 2 dodatki (imię na wstążce, ekspres). Jeśli coś się nie podoba —
-    wskaż plik; poprawka dotyczy tylko jego, reszta zostaje.
-19. **Obrót 360°** — strona jest gotowa na obrót dla każdego zestawienia, klatek jeszcze
-    nie wygenerowano. Procedura i koszty: `tools/SPIN.md` (ok. 90 kredytów za zestawienie,
-    pełna macierz ~5850). Zdecyduj, od których zestawień zacząć.
+18. **Nowe podglądy** — 130 plików `assets/cfg/preview-{kolor}-{oprawa}[-korona]-900.webp`.
+    Każdy kolor ma własną scenę i okazję w roku (lista: `tools/podglady/SCENES.md`), a na
+    stronie nad nazwą bukietu stoi „Pomysł na: …”. Sprawdź:
+    - czy okazje pasują do Twojej oferty (np. Halloween dla czarnych, Dzień Chłopaka dla
+      granatu) — opis zmienia się w polu `occ` koloru w `COLORS` (`page.html`), bez grafik;
+    - czy na czarnej organzie nadruk ma być jasny (tak jest teraz) — jeśli Twoja czarna
+      organza ma czarny druk albo nie ma go wcale, daj znać, zmiana to jedno polecenie;
+    - logo na zdjęciach to Twój plik `logo-lockup.png` nadrukowany na arkusze, nie rysunek AI.
+    Do tego 4 zdjęcia zestawów (7/19/37/101) w scenie wzorca. Jeśli coś się nie podoba —
+    wskaż plik; poprawka dotyczy tylko tej sceny, reszta zostaje.
+19. **Obrót 360°** — strona jest gotowa na obrót dla każdego zestawienia (także z koroną),
+    klatek jeszcze nie wygenerowano; stary obrót czerwieni jest wyłączony, bo był studyjny.
+    Procedura i koszty: `tools/SPIN.md` (ok. 90 kredytów za zestawienie, 13 kolorów z białą
+    organzą ~1170, pełna macierz z koroną ~11 700). Zdecyduj, od których zestawień zacząć.
 
 ---
 

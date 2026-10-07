@@ -8,8 +8,9 @@ Nie generuj ich ponownie — to jedyna rzecz w tym projekcie, która kosztuje kr
 
 > **Wyjątki (za zgodą właściciela):** ujęcie obrotowe 360° dla czerwieni
 > (`assets/cfg/spin-czerwony-00..23.webp`) oraz sesja z 7 października 2026, w której
-> na wyraźne polecenie powstał komplet podglądów kolor × oprawa (65 plików) i brakujące
-> kafelki — szczegóły w „Sesja z 7 października — grafiki z Higgsfield”. **Obrotów 360°
+> na wyraźne polecenie powstał komplet podglądów (130 plików: każdy kolor we własnej scenie,
+> 5 opraw, z koroną i bez) i brakujące kafelki — szczegóły w „Sesja z 7 października —
+> grafiki z Higgsfield” i w `tools/podglady/README.md`. **Obrotów 360°
 > dla kolejnych zestawień nie generuj bez osobnej zgody** — procedura i koszt w `tools/SPIN.md`.
 >
 > **Lista rzeczy do zrobienia po stronie właścicielki i przegląd prawny: `DO-ZROBIENIA.md`.**
@@ -27,8 +28,8 @@ z satynowych róż. Bez frameworków, bez build-stepu w produkcji, bez backendu.
 | Wersje językowe PL / EN / UA | gotowe, komplet kluczy |
 | Dokumenty prawne (6 sztuk × 3 języki) | gotowe, do uzupełnienia danych |
 | Wysyłka zamówień i zgłoszeń B2B na maila | gotowe, wymaga aktywacji FormSubmit |
-| Grafiki konfiguratora | gotowe: 65 podglądów (13 kolorów × 5 opraw), warstwa korony, kafelki zestawów, kolorów, organzy i dodatków |
-| Obrót 360° bukietu | stary obrót czerwieni (24 klatki); kod gotowy na każde zestawienie kolor × oprawa — klatki czekają na zgodę |
+| Grafiki konfiguratora | gotowe: 130 podglądów „jak z telefonu” — każdy kolor w innej scenie i okazji w roku, 5 opraw, z koroną i bez, nadruk prawdziwego logo; kafelki zestawów, kolorów, organzy i dodatków |
+| Obrót 360° bukietu | kod gotowy na każde zestawienie kolor × oprawa (± korona); stary obrót czerwieni wyłączony, nowe klatki czekają na zgodę |
 | Poradnik + pliki dla wyszukiwarek AI | gotowe, 4 artykuły × 3 języki |
 | Film w tle nagłówka + plakat | gotowe, wyczyszczony z cudzego logo |
 | Zdjęcie pudełka w kontakcie | gotowe, opisane jako wizualizacja |
@@ -80,10 +81,10 @@ Plik jest długi, ale ma sztywną kolejność. Szukaj po tych kotwicach:
 | `var DRAFT_MODE` | Przełącznik trybu roboczego |
 | `var ORDER_ENDPOINT` | Adres, na który lecą zamówienia |
 | `function pvScale` / `bouquetWidth` | Skala podglądu i szerokość bukietu wg liczby róż |
-| `function previewSrc` | Plik podglądu: `preview-{kolor}-{oprawa}-900.webp` |
-| `function paintFx` / `renderAddonChips` | Dodatki na podglądzie: warstwa korony, LED, brokat, miniatury |
-| `function sizeAssets` / `paintTint` | Barwienie zdjęć zestawów na kolor satyny (kanwa + maska) |
-| `var SPIN_SETS` | Zestawienia z obrotem 360° (klucz `kolor-oprawa`) |
+| `function previewSrc` | Plik podglądu: `preview-{kolor}-{oprawa}[-korona]-900.webp` |
+| `function renderAddonChips` | Miniatury zaznaczonych dodatków obok podglądu (korona jest na samym zdjęciu) |
+| `function paintPreviewCaption` | Podpis podglądu: okazja koloru (`occ`), nazwa, liczba róż, oprawa, dodatki |
+| `var SPIN_SETS` | Zestawienia z obrotem 360° (klucz `kolor-oprawa[-korona]`), na razie puste |
 | `var BIZ` | Dane sprzedawcy (działalność nierejestrowana — bez NIP i REGON) |
 | `var ROSE_TIERS` | **Jedyne źródło ceny róży.** Czyta je też `build.js` |
 | `var SIZES` | Cztery gotowe zestawy: liczba róż + szerokość. Bez kwot — te liczy `rosesPrice()` |
@@ -238,27 +239,13 @@ w rzędzie ściskały każdy opis do wąskiej szpalty; w pionie mają pełną sz
 siedzi na osi zamiast wisieć nad ramką. Nagłówek przykleja się dopiero od 901 px i nigdy
 przy systemowym „ogranicz animacje" — na telefonie zjadałby ekran.
 
-**Obrót 360° istnieje wyłącznie dla czerwieni i jest wizualizacją, nie fotografią.**
-`assets/cfg/spin-czerwony-00..23.webp` — 24 klatki co 15°, 760 px, razem ok. 620 kB.
-Kanwa `#pvSpin` przejmuje kadr dopiero, gdy **komplet** klatek się wczyta; do tego czasu
-i przy każdym innym kolorze widać zwykłe `preview-{kolor}-900.webp`, więc nie ma stanu
-pustego ani zepsutego. Pobieranie rusza dopiero, gdy podgląd wejdzie w pole widzenia.
-Plakietka „Wizualizacja" zostaje — obrót nie zmienia statusu tych obrazów.
-
-**Dodanie obrotu dla kolejnego koloru to wrzucenie plików i jedna linijka.**
-Wrzuć 24 pliki `assets/cfg/spin-{id}-00.webp … spin-{id}-23.webp` (kwadratowe, klatki
-co 15°, ten sam kadr i światło co zdjęcie) i dopisz `{id}` do `SPIN_COLORS` w `page.html`.
-Nic więcej — reszta kodu jest na to gotowa. Sprawdzone: kolor dopisany do `SPIN_COLORS`
-**bez** plików nie psuje niczego, tylko zostaje przy zwykłym zdjęciu. Brak choćby jednej
-klatki cofa cały kolor do zdjęcia — lepiej to niż obrót przeskakujący przez dziurę.
-Kąt jest wspólny dla kolorów: obróć bukiet tyłem, przełącz kolor, zostaniesz na tym ujęciu.
-
-*Jak to powstało, gdyby trzeba było powtórzyć:* `preview-czerwony-900.webp` poszło jako
-klatka startowa do Seedance 2.5 (`mode: omni_reference`, 10 s, 1080p, 1:1) z promptem
-opisującym **statyczny** bukiet i **wyłącznie** ruch kamery po pełnym okręgu. Kluczowe
-jest jedno ujęcie zamiast 24 osobnych generacji — niezależne generacje dają 24 różne
-bukiety. Z gotowego wideo klatki wycięte co `duration/24` i przeskalowane do 760 px.
-Koszt: 90 kredytów za ujęcie, wycinanie klatek bezpłatne.
+**Obrót 360° — kod gotowy, klatek na razie brak.** Stary obrót czerwieni
+(`spin-czerwony-00..23.webp`, render studyjny) jest wyrejestrowany, bo nie pasuje do zdjęć
+„z telefonu”; pliki zostały. Kanwa `#pvSpin` przejmuje kadr dopiero, gdy **komplet** klatek
+zestawienia się wczyta — do tego czasu i przy zestawieniach bez klatek widać zwykłe zdjęcie,
+więc nie ma stanu pustego. Dodanie obrotu: 24 pliki `spin-{kolor}-{oprawa}[-korona]-00..23.webp`
+i jeden wpis w `SPIN_SETS`. Procedura, prompt i koszt (ok. 90 kredytów za zestawienie):
+`tools/SPIN.md`. Plakietka „Wizualizacja AI” zostaje także w trybie obrotu.
 
 *Pułapki środowiska:* ffmpeg z Playwrighta obsługuje **tylko WebM/VP8** — nie otworzy
 MP4 i nie zapisze WebP. Chromium z Playwrighta nie ma H.264 ani HEVC, więc nie odtworzy
@@ -342,15 +329,16 @@ rejestracyjną, dwa z dominującymi wstążkami z logo Diora.
 - Nie generuj obrazów (Magnific / Nano Banana / Higgsfield) — komplet jest w `assets/`.
   **Wyjątek 1:** jeśli właścicielka przyniesie nowy materiał, sprawdź go najpierw pod kątem
   cudzych znaków towarowych i dopiero wtedy decyduj.
-  **Wyjątek 2:** ujęcie obrotowe dla czerwieni jest już zrobione. Rozszerzenie obrotu na
-  kolejne kolory to ok. 90 kredytów za kolor — tylko na wyraźne życzenie właścicielki.
+  **Wyjątek 2:** obroty 360° — ok. 90 kredytów za zestawienie, tylko na wyraźne życzenie
+  właścicielki (`tools/SPIN.md`). Nowe podglądy rób wg `tools/podglady/README.md`.
 - Nie scrapuj Instagrama ponownie (Apify) — dane są w tym dokumencie i w `GALLERY`.
 - Nie edytuj `index.html` — to plik generowany.
 - Nie instaluj `sharp` ani `playwright`, jeśli nie robisz nowych assetów albo zrzutów ekranu.
 
-Chcesz podmienić grafiki na własne zdjęcia studyjne? Zachowaj nazwy plików —
-`preview-{kolor}-900.webp`, `size-{liczba}.webp`, `wrap-{id}.webp`, `addon-{id}.webp`,
-`color-{kolor}.webp` — wtedy kod nie wymaga żadnej zmiany.
+Chcesz podmienić grafiki na prawdziwe zdjęcia? Zachowaj nazwy plików —
+`preview-{kolor}-{oprawa}[-korona]-900.webp`, `size-{liczba}.webp`, `sleeve-{id}.webp`,
+`wrap-{id}.webp`, `addon-{id}.webp`, `color-{kolor}.webp` — wtedy kod nie wymaga żadnej zmiany
+(poza polem `occ` koloru, jeśli zmienia się scena).
 
 ---
 
@@ -370,7 +358,8 @@ Chcesz podmienić grafiki na własne zdjęcia studyjne? Zachowaj nazwy plików �
   motylki, pralinki, balony foliowe, suszki i pampasy
 - Kolory w konfiguratorze (13): czerwony, róż, pudrowy róż, morelowy, żółty, kremowy, biały,
   zielony, błękit, granat, jasny fiolet, fiolet, czarny. **Wszystkie mają już grafiki**
-  (od 7 października): próbkę `color-<id>.webp` i pięć podglądów `preview-<id>-<oprawa>-900.webp`.
+  (od 7 października): próbkę `color-<id>.webp` i dziesięć podglądów
+  `preview-<id>-<oprawa>[-korona]-900.webp` we własnej scenie koloru.
 - Bordo i szampański **usunięte na życzenie właścicielki** (poprawki z 7 października).
   Ich pliki zostały w `assets/cfg` — gdyby miały wrócić, nie trzeba ich generować od nowa.
 
@@ -409,38 +398,37 @@ poświata za kursorem i pochylenia w ogóle się nie uruchomią i wyjdzie fałsz
 
 ## Sesja z 7 października — grafiki z Higgsfield, podgląd z organzą, przegląd prawny
 
-**Grafiki (Higgsfield, Nano Banana Pro 1k, ok. 170 kredytów).** Wzorcem było stare
-`preview-czerwony-900.webp`: najpierw usunięta korona, potem cztery warianty oprawy
-(bez organzy, czarna, różowa, jasnoniebieska — biała już była), potem każdy wariant
-przekolorowany na 12 pozostałych kolorów. Kadr jest identyczny we wszystkich 65 plikach,
-więc przełączanie koloru i oprawy nie przesuwa bukietu. Stare `preview-{kolor}-900/560.webp`
-(z koroną) zostały w repo, ale strona ich już nie używa — były źródłem starego obrotu czerwieni.
+**Grafiki — wersja ostateczna (runda 2, ok. 160 kredytów).** Pierwsza wersja (studyjne
+rendery + nakładki CSS: korona, LED, brokat, barwienie zestawów) została odrzucona — „wygląda
+jak nokturn”. Właścicielka chciała zdjęć, które wyglądają jak jej własne z telefonu,
+z widocznym logo, i różnych scen zamiast jednego kadru z podmienianym kolorem.
 
-**Korona to osobna warstwa** (`layer-korona-900.webp`, tiara z `addon-korona` wycięta
-z tła). Pokazuje się tylko, gdy korona jest zaznaczona — wcześniej była wtopiona we
-wszystkie zdjęcia i widać ją było nawet po odznaczeniu. LED i brokat rysuje CSS
-(`.fx-led`, `.fx-glitter`) na obszarze kopuły. Pozostałe dodatki widać jako okrągłe
-miniatury po prawej stronie podglądu (`#pvAddons`), imię z wstążki trafia do ich opisu.
-Warstwy mają ten sam `transform` co zdjęcie; `.pv-sq` odtwarza kwadratowy kadr przy
-`object-fit:cover`, więc procenty znaczą to samo co na pliku 900×900.
+- **Każdy kolor = własna scena i okazja w roku** (`tools/podglady/SCENES.md`): czerwień —
+  złota godzina (zatwierdzony wzorzec), róż — Walentynki nocą, pudrowy — jabłoń w maju,
+  żółty — Dzień Kobiet, kremowy — ślub, jasny fiolet — lawenda, błękit — Bałtyk, granat —
+  most o niebieskiej godzinie, morelowy — liście z góry, czarny — Halloween, fiolet —
+  listopadowa aleja, biały — jarmark w śniegu, zielony — zimowe osiedle. Ręka i kąt
+  ujęcia są za każdym razem inne. Okazja pokazuje się nad nazwą bukietu („Pomysł na:
+  Walentynki · luty”) — pole `occ` w `COLORS`, klucz `pv.occ` w trzech językach.
+- **„Nie tak AI-idealnie”**: prompt każe zrobić szybkie zdjęcie telefonem — kadr lekko
+  krzywy i przycięty, pogniecione arkusze, nierówne wstążki, zwykła obróbka telefonu.
+  Jako wzór stylu poszło prawdziwe zdjęcie właścicielki.
+- **Logo to nadruk prawdziwego pliku**, nie rysunek AI: `assets/logo-lockup.png` na co
+  drugim arkuszu (3–4 na zdjęcie), wzdłuż arkusza, nigdy w poprzek krawędzi; na czarnej
+  organzie jasną farbą; w wersji bez organzy na zawieszce. Każde logo obejrzane w powiększeniu.
+- **Korona to osobne zdjęcia** (`…-korona-900.webp`), nie nakładka. W obrębie sceny kadr jest
+  identyczny, więc koronę z jednego zdjęcia przenosi maska na pozostałe organzy.
+- **Zestawy 7/19/37/101** — cztery zdjęcia czerwieni w scenie wzorca, z logo. Maski
+  `size-*-tint.webp` i barwienie kanwą usunięte; kafelek pokazuje zdjęcie, a dla koloru
+  bez zdjęcia nadal rysuje się schemat z CSS.
+- Podgląd dostał rozmyte tło z tego samego zdjęcia (`#pvBlur`) zamiast beżowego gradientu
+  — przy małych bukietach brzeg pomniejszonego zdjęcia nie odcina się od tła.
 
-**Kafelki zestawów 7/19/37/101** to zdjęcia białych róż w jednej skali (szerokość
-proporcjonalna do 25/35/45/65 cm) i maski `size-<n>-tint.webp`. Kanwa barwi róże na kolor
-wybranej satyny rysowaniem (multiply przez maskę), bez czytania pikseli — działa też
-z `file://`. Najjaśniejsze fałdy maska celowo zostawia białe.
+Procedura, prompty, skrypty składania, współrzędne logo i job ID: `tools/podglady/`.
 
-**Organza w kafelkach kroku 3** — zdjęcia `sleeve-<id>.webp` zamiast próbek z CSS.
-**Dodatki „Imię na wstążce” i „Ekspres 48 h”** — zdjęcia zamiast ikon.
-
-**Skala podglądu liczy się od 36% wysokości** (było 46%), żeby korona nie uciekała
-z kadru przy dużych bukietach. Brzegi zdjęcia przechodzą miękko w tło podglądu
-w kolorach studia — przy małych bukietach nie widać już ramki pomniejszonego zdjęcia.
-
-**Obrót 360° uogólniony na zestawienia kolor × oprawa** (`SPIN_SETS`, klucz
-`kolor-oprawa`). Stary obrót czerwieni ma koronę wtopioną w klatki, więc jest wpisany
-z `needs:"korona"` i włącza się tylko z koroną. W trybie obrotu warstwy dodatków są
-schowane. Procedura, prompt, skrypt cięcia klatek i koszt: `tools/SPIN.md`,
-`tools/spin-frames.sh`.
+**Obrót 360°** uogólniony na zestawienia (`SPIN_SETS`, klucz `kolor-oprawa[-korona]`).
+Stary obrót czerwieni (render studyjny) jest wyrejestrowany — pliki zostały. Procedura
+i koszt: `tools/SPIN.md`, `tools/spin-frames.sh`.
 
 **Przegląd prawny** — szczegóły i lista dla właścicielki w `DO-ZROBIENIA.md`. Najważniejsze
 zmiany: akapit o wizualizacjach poglądowych w regulaminie §2 (PL/EN/UA), oznaczenie
@@ -450,10 +438,9 @@ o świadczeniu usług drogą elektroniczną, **fonty i GSAP z własnego serwera*
 Google Fonts i cdnjs łączyły się przed zgodą — nie wracaj do CDN-ów). Usunięty żółty
 tekst „DO ZROBIENIA” w sekcji opinii.
 
-Sprawdzone w Chromium (Playwright): 65 podglądów i wszystkie kafelki istnieją, podgląd
-zmienia się z kolorem i oprawą, warstwy i miniatury reagują na dodatki, kanwy zestawów
-się barwią, stary obrót włącza się i wyłącza z koroną, konsola czysta, żadnego 404,
-komplet kluczy PL/EN/UA.
+Sprawdzone w Chromium (Playwright): 130 podglądów i wszystkie kafelki istnieją, podgląd
+zmienia się z kolorem, oprawą i koroną, podpis okazji zmienia się z kolorem i językiem,
+miniatury reagują na dodatki, konsola czysta, żadnego 404, komplet kluczy PL/EN/UA.
 
 ## Próbowane i odrzucone
 

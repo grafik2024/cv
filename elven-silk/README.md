@@ -46,9 +46,12 @@ rosyjskojęzyczną przeglądarką; zapisany wybór (`es_lang`) zawsze wygrywa.
 
 ## Grafiki konfiguratora
 
-Kafelki i podgląd to **wizualizacje wygenerowane modelem Google Nano Banana** na podstawie
-prawdziwych zdjęć z profilu — dwa oryginalne kadry poszły jako referencja stylu, więc sposób
-zwijania róż, wachlarz organzy, kokardki i korona odpowiadają realnym bukietom.
+Kafelki i podgląd to **wizualizacje AI** (GPT Image 2.5 i Google Nano Banana 2 w Higgsfield)
+zrobione tak, żeby wyglądały jak zdjęcia właścicielki z telefonu: wzorcem produktu jest
+prawdziwe zdjęcie bukietu, wzorem stylu — jej zdjęcia z profilu. Sposób zwijania róż,
+wachlarz organzy, kokardki i korona odpowiadają realnym bukietom. **Logo nie jest
+rysowane przez AI** — to nadruk prawdziwego pliku `assets/logo-lockup.png` na co drugim
+arkuszu (albo na zawieszce w wersji bez organzy).
 
 **To ważne prawnie i etycznie:** podgląd jest opisany na stronie jako „Wizualizacja”, a lede
 sekcji mówi wprost, że gotowy bukiet szyty jest ręcznie i może się nieznacznie różnić.
@@ -58,15 +61,16 @@ nieuczciwa praktyka rynkowa. Prawdziwe fotografie są w galerii realizacji i tak
 Rozmiar w podglądzie oddaje skala zdjęcia (`pvScale()` w `page.html`) plus pasek z rzeczywistą
 liczbą róż — nie ma osobnego zdjęcia dla każdej kombinacji rozmiaru i koloru.
 
-Od 7 października 2026 podgląd zależy od **koloru róż i oprawy (organzy)** — 65 plików
-`preview-{kolor}-{oprawa}-900.webp`, wszystkie w tym samym kadrze i **bez korony**.
-Korona to osobna warstwa `layer-korona-900.webp`, pokazywana tylko z zaznaczonym dodatkiem;
-LED i brokat rysuje CSS, pozostałe dodatki widać jako miniatury obok bukietu. Plakietka
-mówi „Wizualizacja AI” — to wymóg art. 50 AI Act, nie usuwaj go.
+Podgląd zależy od **koloru róż, oprawy (organzy) i korony** — 130 plików
+`preview-{kolor}-{oprawa}[-korona]-900.webp`. **Każdy kolor ma własną scenę i okazję w roku**
+(np. róż — Walentynki nocą, biały — jarmark w śniegu), opisaną nad nazwą bukietu (`occ`
+w `COLORS`). W obrębie koloru kadr jest ten sam, więc zmiana oprawy i korony nie przesuwa
+bukietu. Pozostałe dodatki widać jako miniatury obok zdjęcia. Plakietka mówi
+„Wizualizacja AI” — to wymóg art. 50 AI Act, nie usuwaj go.
 
-Chcesz podmienić grafiki na własne zdjęcia studyjne? Zachowaj nazwy plików:
-`preview-{kolor}-{oprawa}-900.webp`, `size-{liczba}.webp` + `size-{liczba}-tint.webp`
-(maska barwienia), `sleeve-{id}.webp`, `wrap-{id}.webp`, `addon-{id}.webp`,
+Jak powstały i jak dorobić kolejne: `tools/podglady/README.md`. Chcesz podmienić grafiki na
+własne zdjęcia? Zachowaj nazwy plików: `preview-{kolor}-{oprawa}[-korona]-900.webp`,
+`size-{liczba}.webp`, `sleeve-{id}.webp`, `wrap-{id}.webp`, `addon-{id}.webp`,
 `color-{kolor}.webp` — kod nie wymaga wtedy żadnej zmiany. Obrót 360°: `tools/SPIN.md`.
 
 `tools/recolor-preview.js` został z poprzedniej wersji: przelicza odcień satyny na prawdziwym

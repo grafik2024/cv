@@ -12,3 +12,4 @@ node_modules/
 /audit/raw/posts.json
 /audit/raw/html/
 tests/node_modules/
+__pycache__/
