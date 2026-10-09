@@ -55,6 +55,13 @@ final class Renderer {
 			return;
 		}
 		self::$enqueued[ $name ] = true;
+		if ( ! isset( self::$enqueued['__all'] ) && is_readable( EW_CORE_DIR . 'assets/css/components.css' ) ) {
+			self::$enqueued['__all'] = true;
+			wp_enqueue_style( 'ew-components', EW_CORE_URL . 'assets/css/components.css', array(), (string) filemtime( EW_CORE_DIR . 'assets/css/components.css' ) );
+			if ( did_action( 'wp_head' ) && ! wp_style_is( 'ew-components', 'done' ) ) {
+				add_action( 'wp_footer', static fn() => wp_print_styles( 'ew-components' ), 1 );
+			}
+		}
 		$css = 'assets/css/components/' . $name . '.css';
 		if ( is_readable( EW_CORE_DIR . $css ) ) {
 			$handle = 'ew-c-' . $name;
@@ -66,6 +73,11 @@ final class Renderer {
 		}
 		$js = 'assets/js/components/' . $name . '.js';
 		if ( is_readable( EW_CORE_DIR . $js ) ) {
+			if ( did_action( 'wp_footer' ) ) {
+				self::printConfig();
+			} else {
+				add_action( 'wp_footer', array( self::class, 'printConfig' ), 1 );
+			}
 			self::enqueueModule( 'ew-c-' . $name, EW_CORE_URL . $js, (string) filemtime( EW_CORE_DIR . $js ) );
 		}
 	}
@@ -88,7 +100,7 @@ final class Renderer {
 	}
 
 	/**
-	 * Shared JS config (REST root, nonce, language) printed once as JSON for component modules.
+	 * Shared JS config (REST root, language; no nonce — public endpoints, pages may be cached) printed once as JSON for component modules.
 	 */
 	public static function printConfig(): void {
 		static $done = false;
@@ -98,7 +110,6 @@ final class Renderer {
 		$done   = true;
 		$config = array(
 			'rest'  => esc_url_raw( rest_url( 'eurowet/v1/' ) ),
-			'nonce' => wp_create_nonce( 'wp_rest' ),
 			'lang'  => \Eurowet\Core\I18n\Polylang::currentLang(),
 		);
 		printf( '<script id="ew-config" type="application/json">%s</script>' . "\n", wp_json_encode( $config ) );

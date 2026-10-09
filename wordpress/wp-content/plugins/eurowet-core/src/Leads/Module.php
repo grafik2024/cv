@@ -81,6 +81,19 @@ final class Module implements ModuleInterface {
 	public static function routes(): void {
 		register_rest_route(
 			'eurowet/v1',
+			'/lead/token',
+			array(
+				'methods'             => 'GET',
+				'permission_callback' => '__return_true',
+				'callback'            => static function () {
+					$r = new \WP_REST_Response( array( 'ts' => self::timestamp() ), 200 );
+					$r->header( 'Cache-Control', 'no-store' );
+					return $r;
+				},
+			)
+		);
+		register_rest_route(
+			'eurowet/v1',
 			'/lead',
 			array(
 				'methods'             => 'POST',
@@ -196,7 +209,7 @@ final class Module implements ModuleInterface {
 			return false;
 		}
 		$age = time() - (int) $t;
-		return $age >= 3 && $age <= DAY_IN_SECONDS;
+		return $age >= 3 && $age <= WEEK_IN_SECONDS; // pages may be served from full-page cache for days
 	}
 
 	public static function postHandler(): void {

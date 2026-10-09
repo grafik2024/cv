@@ -29,6 +29,8 @@ final class RestController {
 					'area'    => array( 'type' => 'string', 'default' => '', 'sanitize_callback' => 'sanitize_key' ),
 					'need'    => array( 'type' => 'string', 'default' => '', 'sanitize_callback' => 'sanitize_title' ),
 					'lang'    => array( 'type' => 'string', 'default' => '', 'sanitize_callback' => 'sanitize_key' ),
+					'format'  => array( 'type' => 'string', 'default' => 'json', 'enum' => array( 'json', 'html' ) ),
+					'log'     => array( 'type' => 'boolean', 'default' => true ),
 				),
 			)
 		);
@@ -71,8 +73,13 @@ final class RestController {
 				'area'    => (string) $r['area'],
 				'need'    => (string) $r['need'],
 				'source'  => 'finder',
+				'log'     => (bool) $r['log'],
 			)
 		);
+		if ( 'html' === $r['format'] ) {
+			// Same server-rendered markup as the no-JS page: one source of truth for the results UI.
+			$res = array( 'html' => ew_render( 'finder-results', array( 'result' => $res ) ), 'log_id' => $res['log_id'], 'match' => $res['match'] );
+		}
 		$resp = new \WP_REST_Response( $res, 200 );
 		$resp->header( 'Cache-Control', 'no-store' );
 		return $resp;
