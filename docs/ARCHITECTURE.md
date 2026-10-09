@@ -99,7 +99,7 @@ Typy: `str` (sanitize_text_field), `html` (wp_kses_post), `int`, `bool` ('1'/'')
 `_ew_reviewed` date (ostatnia weryfikacja) · `_ew_needs_review` bool · `_ew_review_note` str · `_ew_author_label` str (domyślnie „Zespół Eurowet”) ·
 `_ew_reviewer` str (TYLKO realna osoba zatwierdzona przez firmę; domyślnie pusty) · `_ew_sources` json<{title,url,publisher,year}[]> ·
 `_ew_faq` json<{q,a}[]> · `_ew_needs` ids · `_ew_products` ids · `_ew_related` ids (ew_guide) · `_ew_next` int (ew_guide, ręczny „następny”) ·
-`_ew_red_flag` bool (pokaż ramkę „kiedy do weterynarza”) · `_ew_legacy_path` str · `_ew_video` int · `_ew_source_key` str.
+`_ew_red_flag` bool (pokaż ramkę „kiedy do weterynarza”) · `_ew_red_flags` json<string[]> (punkty ramki) · `_ew_legacy_path` str · `_ew_video` int · `_ew_source_key` str.
 
 **ew_ingredient**: `_ew_inci` str · `_ew_aliases` json<string[]> · `_ew_summary` html · `_ew_function_quotes` json<{product_id,quote}[]> ·
 `_ew_sources` json · `_ew_guides` ids · `_ew_source_key` str. (Lista produktów = produkty z `_ew_key_ingredients` zawierającym ID.)

@@ -212,6 +212,15 @@ function ew_theme_company(): array {
 			}
 		}
 	}
+	// eurowet-core stores central contact data as contact_phone / contact_email / company_ids.
+	foreach ( array( 'phone' => 'contact_phone', 'phone_sales' => 'contact_phone_sales', 'email' => 'contact_email', 'ids' => 'company_ids' ) as $field => $opt ) {
+		if ( empty( $data[ $field ] ) ) {
+			$value = ew_theme_option( $opt );
+			if ( is_scalar( $value ) && '' !== trim( (string) $value ) ) {
+				$data[ $field ] = (string) $value;
+			}
+		}
+	}
 	$from_option = get_option( 'ew_company' );
 	if ( is_array( $from_option ) ) {
 		foreach ( $from_option as $field => $value ) {
@@ -270,6 +279,9 @@ function ew_theme_social_links(): array {
 		}
 	}
 
+	if ( is_string( $raw ) ) {
+		$raw = preg_split( '/\s+/', trim( $raw ) ) ?: array(); // newline/space separated URLs (plugin settings)
+	}
 	$links = array();
 	foreach ( (array) $raw as $key => $item ) {
 		$network = is_string( $key ) ? strtolower( $key ) : '';
@@ -285,6 +297,14 @@ function ew_theme_social_links(): array {
 		$url = esc_url_raw( $url );
 		if ( '' === $url ) {
 			continue;
+		}
+		if ( '' === $network ) {
+			foreach ( array_keys( $labels ) as $n ) {
+				if ( false !== stripos( (string) wp_parse_url( $url, PHP_URL_HOST ), $n ) ) {
+					$network = $n;
+					break;
+				}
+			}
 		}
 		if ( '' === $label ) {
 			$label = $labels[ $network ] ?? (string) wp_parse_url( $url, PHP_URL_HOST );

@@ -1,0 +1,21 @@
+/* Eurowet 2026 — static pages: B2B, private label, reps, about, contact, downloads, default pages. */
+@layer ew-templates {
+
+.ew-page .ew-prose { font-size: var(--ew-step-0); }
+.ew-split--form { align-items: start; }
+@media (min-width: 900px) { .ew-split--form { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); } }
+
+.ew-feature-list { display: grid; gap: var(--ew-space-3); grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr)); margin: var(--ew-space-4) 0 0; padding: 0; list-style: none; }
+.ew-feature-list li { display: flex; align-items: center; gap: .6rem; padding: var(--ew-space-4); border-radius: var(--ew-radius-l); background: var(--ew-color-surface); border: 1px solid var(--ew-color-border); font-weight: var(--ew-weight-semibold); }
+.ew-feature-list .ew-icon { color: var(--ew-color-accent-strong); }
+
+.ew-company-card { display: grid; gap: var(--ew-space-3); padding: var(--ew-space-5); border-radius: var(--ew-radius-xl); background: var(--ew-color-surface); border: 1px solid var(--ew-color-border); box-shadow: var(--ew-shadow-1); }
+.ew-company-card address { font-style: normal; }
+.ew-company-card__list { display: grid; gap: .4rem; }
+.ew-company-card__list li { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.ew-company-card__list .ew-icon { color: var(--ew-color-brand); }
+.ew-company-card__list span:not(.ew-icon) { color: var(--ew-color-text-muted); }
+
+/* Elementor-built pages get the full width; keep the site gutter for boxed sections */
+.elementor-page .ew-main > .elementor { width: 100%; }
+}

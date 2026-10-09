@@ -26,6 +26,17 @@ final class Module implements ModuleInterface {
 		add_filter( 'wpseo_sitemap_exclude_post_type', static fn( $exclude, $pt ) => in_array( $pt, array( 'ew_rep', 'ew_material', 'ew_lead' ), true ) ? true : $exclude, 10, 2 );
 		add_filter( 'wpseo_sitemap_exclude_taxonomy', static fn( $exclude, $tax ) => in_array( $tax, array( 'ew_family', 'ew_species', 'ew_area', 'ew_material_type' ), true ) ? true : $exclude, 10, 2 );
 		add_filter( 'wp_robots', array( self::class, 'robotsMeta' ) );
+		// Yoast prints its own robots tag: same rule through its filter.
+		add_filter(
+			'wpseo_robots_array',
+			static function ( $robots ) {
+				if ( is_array( $robots ) && self::isFilteredListing() ) {
+					$robots['index']  = 'noindex';
+					$robots['follow'] = 'follow';
+				}
+				return $robots;
+			}
+		);
 		add_action(
 			'ew_settings_sections',
 			static function (): void {
@@ -57,9 +68,13 @@ final class Module implements ModuleInterface {
 	}
 
 	/** Filtered/faceted listings: noindex,follow (canonical stays the unfiltered URL). */
-	public static function robotsMeta( array $robots ): array {
+	public static function isFilteredListing(): bool {
 		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
-		if ( isset( $_GET['ew_gatunek'] ) || isset( $_GET['ew_obszar'] ) || isset( $_GET['ew_linia'] ) || ( is_post_type_archive( 'ew_need' ) && isset( $_GET['q'] ) ) ) {
+		return isset( $_GET['ew_gatunek'] ) || isset( $_GET['ew_obszar'] ) || isset( $_GET['ew_linia'] ) || ( is_post_type_archive( 'ew_need' ) && ( isset( $_GET['q'] ) || isset( $_GET['gatunek'] ) || isset( $_GET['obszar'] ) ) );
+	}
+
+	public static function robotsMeta( array $robots ): array {
+		if ( self::isFilteredListing() ) {
 			$robots['noindex'] = true;
 			$robots['follow']  = true;
 			unset( $robots['index'] );

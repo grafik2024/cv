@@ -40,6 +40,22 @@ final class Hubs {
 		);
 	}
 
+	/** Main query of a hub archive (/porady/{hub}/): species hubs also list guides tagged with the species. */
+	public static function mainQuery( \WP_Query $q ): void {
+		if ( is_admin() || ! $q->is_main_query() || ! $q->is_tax( 'ew_hub' ) ) {
+			return;
+		}
+		$term = get_term_by( 'slug', (string) $q->get( 'ew_hub' ), 'ew_hub' );
+		if ( ! $term instanceof \WP_Term ) {
+			return;
+		}
+		$args = self::queryArgs( $term );
+		$q->set( 'post_type', 'ew_guide' );
+		$q->set( 'tax_query', $args['tax_query'] ); // phpcs:ignore WordPress.DB.SlowDBQuery
+		$q->set( 'orderby', $args['orderby'] );
+		$q->set( 'posts_per_page', 18 );
+	}
+
 	/** @return \WP_Term[] topic hubs ordered by term meta 'order' */
 	public static function topicHubs(): array {
 		return self::byType( 'topic' );

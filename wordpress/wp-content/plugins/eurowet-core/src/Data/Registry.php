@@ -114,6 +114,7 @@ final class Registry {
 			'_ew_related'      => 'ids',
 			'_ew_next'         => 'int',
 			'_ew_red_flag'     => 'bool',
+			'_ew_red_flags'    => 'json',
 			'_ew_legacy_path'  => 'str',
 			'_ew_video'        => 'int',
 			'_ew_source_key'   => 'str',
@@ -175,8 +176,9 @@ final class Registry {
 			'_ew_faq'       => 'faq',
 		),
 		'ew_guide'      => array(
-			'_ew_sources' => 'sources',
-			'_ew_faq'     => 'faq',
+			'_ew_sources'   => 'sources',
+			'_ew_faq'       => 'faq',
+			'_ew_red_flags' => 'strings',
 		),
 		'ew_ingredient' => array(
 			'_ew_aliases'         => 'strings',

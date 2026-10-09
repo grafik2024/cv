@@ -1,0 +1,78 @@
+/* Eurowet 2026 — homepage. Tokens only; motion respects prefers-reduced-motion and the a11y panel. */
+@layer ew-templates {
+
+/* 01 Hero */
+.ew-hero { position: relative; overflow: hidden; padding-block: var(--ew-space-6) var(--ew-space-7); background: radial-gradient(90% 120% at 85% 10%, var(--ew-color-brand-soft) 0%, transparent 60%), linear-gradient(180deg, var(--ew-color-surface-2) 0%, var(--ew-color-bg) 100%); }
+.ew-hero__grid { display: grid; gap: var(--ew-space-6); align-items: center; }
+@media (min-width: 900px) { .ew-hero__grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); } }
+.ew-hero__text { display: grid; gap: var(--ew-space-4); }
+.ew-hero__title { font-size: clamp(2.1rem, 1.4rem + 3.2vw, 4rem); line-height: 1.06; letter-spacing: var(--ew-tracking-tight); max-width: 18ch; margin: 0; }
+.ew-hero__lead { margin: 0; }
+.ew-hero__ctas { margin-top: var(--ew-space-2); }
+
+.ew-hero__stage { position: relative; margin: 0; display: grid; place-items: center; min-height: clamp(18rem, 42vw, 32rem); }
+.ew-hero__halo { position: absolute; inset: 8% 10%; border-radius: 50%; background: var(--ew-stage-gradient); box-shadow: inset 0 -30px 60px rgb(0 0 0 / .04); }
+.ew-hero__packshot { position: relative; display: block; }
+.ew-hero__packshot img { width: auto; height: clamp(15rem, 34vw, 27rem); filter: var(--ew-stage-shadow); }
+.ew-hero__canvas { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -52%); opacity: 0; transition: opacity var(--ew-duration-slow) var(--ew-ease); cursor: grab; touch-action: pan-y; }
+.ew-hero__canvas:active { cursor: grabbing; }
+.ew-hero__stage.is-3d .ew-hero__canvas { opacity: 1; }
+.ew-hero__stage.is-3d .ew-hero__packshot { visibility: hidden; }
+.ew-hero__caption { position: relative; z-index: 1; margin-top: var(--ew-space-3); text-align: center; }
+.ew-hero__caption a { display: inline-grid; gap: .1rem; padding: .5rem 1rem; border-radius: var(--ew-radius-l); background: color-mix(in srgb, var(--ew-color-surface) 88%, transparent); color: var(--ew-color-heading); text-decoration: none; box-shadow: var(--ew-shadow-1); }
+.ew-hero__caption a:hover { box-shadow: var(--ew-shadow-2); }
+.ew-hero__caption-name { font-weight: var(--ew-weight-bold); }
+.ew-hero__caption-sub { font-size: var(--ew-step--1); color: var(--ew-color-text-muted); max-width: 34ch; }
+.ew-hero__motion { position: absolute; right: 0; bottom: 0; z-index: 2; }
+@media (max-width: 899px) { .ew-hero__stage { min-height: 0; padding-block: var(--ew-space-4); } .ew-hero__halo { inset: 4% 18%; } }
+
+/* 02/03 Finder */
+.ew-home-finder { padding-block: var(--ew-space-7); }
+
+/* 04 Categories */
+.ew-cat-tiles { display: grid; gap: var(--ew-space-4); grid-template-columns: repeat(auto-fill, minmax(min(17rem, 100%), 1fr)); }
+.ew-cat-tile { position: relative; display: grid; grid-template-columns: 5rem 1fr; gap: var(--ew-space-4); align-items: center; padding: var(--ew-space-4); border: 1px solid var(--ew-color-border); border-radius: var(--ew-radius-l); background: var(--ew-color-surface); transition: box-shadow var(--ew-duration-fast) var(--ew-ease), border-color var(--ew-duration-fast); }
+.ew-cat-tile:hover { box-shadow: var(--ew-shadow-2); border-color: var(--ew-color-brand); }
+.ew-cat-tile:has(.ew-card__link:focus-visible) { outline: 3px solid var(--ew-color-focus); outline-offset: 2px; }
+.ew-cat-tile__media { display: grid; place-items: center; aspect-ratio: 1; border-radius: var(--ew-radius-m); background: var(--ew-stage-gradient); color: var(--ew-color-brand); overflow: hidden; }
+.ew-cat-tile__media img { width: 100%; height: 100%; object-fit: contain; }
+.ew-cat-tile__media .ew-icon svg { width: 2rem; height: 2rem; }
+.ew-cat-tile__title { font-size: var(--ew-step-1); margin: 0 0 .2rem; }
+.ew-cat-tile__title a { color: var(--ew-color-heading); text-decoration: none; }
+.ew-cat-tile__text { font-size: var(--ew-step--1); color: var(--ew-color-text-muted); margin: 0; }
+.ew-cat-tile__count { font-size: var(--ew-step--2); color: var(--ew-color-text-muted); margin: .3rem 0 0; font-weight: var(--ew-weight-semibold); }
+
+/* 05 Needs */
+.ew-home-needs .ew-need-tiles { margin-block: 0; }
+.ew-section__more { margin-top: var(--ew-space-5); }
+
+/* 06 Flagship */
+.ew-flagship__figure { margin: 0 0 var(--ew-space-5); }
+.ew-flagship__picture img { width: 100%; height: auto; aspect-ratio: 1600 / 893; object-fit: cover; border-radius: var(--ew-radius-xl); }
+.ew-home-flagship .ew-pgrid { margin-block: 0; }
+
+/* 07 Knowledge */
+.ew-home-knowledge .ew-ggrid { margin-block: var(--ew-space-5) 0; }
+
+/* 08 Ingredients */
+.ew-ing-tiles { display: grid; gap: var(--ew-space-3); grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr)); }
+.ew-ing-tile__link { display: grid; gap: .3rem; height: 100%; padding: var(--ew-space-4); border-radius: var(--ew-radius-l); border: 1px solid var(--ew-color-border); background: var(--ew-color-surface); color: var(--ew-color-text); text-decoration: none; transition: border-color var(--ew-duration-fast), box-shadow var(--ew-duration-fast); }
+.ew-ing-tile__link:hover { border-color: var(--ew-color-accent-strong); box-shadow: var(--ew-shadow-1); }
+.ew-ing-tile__name { font-weight: var(--ew-weight-bold); color: var(--ew-color-heading); }
+.ew-ing-tile__text { font-size: var(--ew-step--1); color: var(--ew-color-text-muted); }
+.ew-ing-tile__count { font-size: var(--ew-step--2); color: var(--ew-color-accent-strong); font-weight: var(--ew-weight-semibold); }
+
+/* 09–11 About, partners */
+.ew-home-about h2 { max-width: 24ch; }
+.ew-home-partners { padding-block: var(--ew-section-space); }
+.ew-partners { display: grid; gap: var(--ew-space-7); }
+@media (min-width: 900px) { .ew-partners { grid-template-columns: 1fr 1fr; } }
+.ew-partners__col { display: grid; gap: var(--ew-space-4); align-content: start; }
+.ew-partners__col h2 { color: #fff; }
+.ew-partners__list { display: grid; gap: .4rem; margin: 0; padding: 0; list-style: none; }
+.ew-partners__list li { display: flex; gap: .5rem; align-items: center; }
+.ew-partners__list .ew-icon { color: var(--ew-color-accent); }
+
+/* 12–13 Reps, contact */
+.ew-home-reps .ew-reps { margin: 0; }
+}

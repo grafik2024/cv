@@ -17,5 +17,6 @@ final class Module implements ModuleInterface {
 
 	public function register(): void {
 		Cache::register();
+		add_action( 'pre_get_posts', array( Hubs::class, 'mainQuery' ) );
 	}
 }

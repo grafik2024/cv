@@ -1,0 +1,32 @@
+{
+	"_source": "Copy based on the client's own texts from eurowet.pl (home, o firmie, marka własna, kontakt; 2026-10). Statements that could not be verified or contradict product data were left out (e.g. 'all preparations are based on natural ingredients'). Editable in Wygląd → Dostosuj → Strona główna Eurowet.",
+	"hero_eyebrow": "Eurowet · od 1992 r.",
+	"hero_title": "Preparaty dla psów, kotów i małych zwierząt — dobrane do potrzeby",
+	"hero_lead": "Jesteśmy producentem i dystrybutorem preparatów dla psów, kotów i nowych zwierząt towarzyszących. Opisz, co dzieje się z Twoim zwierzęciem, a pomożemy dobrać produkt i podpowiemy, jak o nie dbać.",
+	"finder_title": "Czego potrzebuje Twoje zwierzę?",
+	"finder_lead": "Napisz własnymi słowami, np. „pies ciągle się drapie” albo „kot ma brudne uszy”. Wyszukiwarka dopasuje potrzebę i pokaże tylko produkty, których przeznaczenie potwierdza opis producenta.",
+	"needs_title": "Najczęstsze potrzeby",
+	"categories_title": "Kategorie produktów",
+	"flagship_title": "Linia Excellence",
+	"flagship_lead": "Dermokosmetyki weterynaryjne Eurowet do pielęgnacji skóry i sierści psów i kotów.",
+	"knowledge_title": "Porady i wiedza",
+	"knowledge_lead": "Praktyczne porady o pielęgnacji skóry, sierści, oczu, uszu i zębów psów, kotów i małych zwierząt — z informacją, kiedy warto skonsultować się z lekarzem weterynarii.",
+	"ingredients_title": "Składniki i technologie",
+	"ingredients_lead": "Co zawierają nasze preparaty i jaką rolę pełnią poszczególne składniki — według opisów produktów Eurowet.",
+	"about_title": "Producent preparatów weterynaryjnych i higienicznych",
+	"about_text": "Eurowet Sp. z o.o. z Kalisza jest producentem i dystrybutorem preparatów dla psów, kotów i nowych zwierząt towarzyszących, obecnym na rynku polskim od 1992 r. Oferujemy ponad 150 specjalistycznych produktów. Oferujemy również preparaty myjące i czyszczące do ogólnego stosowania, takie jak żele do rąk, płyny myjące i spraye do powierzchni — do stosowania w warunkach domowych oraz w placówkach użytku publicznego.",
+	"b2b_title": "Współpraca B2B",
+	"b2b_text": "Współpracujemy z największymi dystrybutorami w Polsce. Jeśli prowadzisz hurtownię, gabinet weterynaryjny lub sklep zoologiczny, skontaktuj się z nami lub z przedstawicielem handlowym w Twoim województwie.",
+	"b2b_audiences": [
+		"Hurtownie i dystrybutorzy",
+		"Gabinety i kliniki weterynaryjne",
+		"Sklepy zoologiczne",
+		"Groomerzy i salony pielęgnacji",
+		"Partnerzy eksportowi"
+	],
+	"private_label_title": "Marka własna",
+	"private_label_text": "Preparaty pod marką klienta: od opracowania lub adaptacji receptury, przez dobór surowców i opakowań, testy kontroli jakości i dokumentację wyrobu, po konfekcjonowanie i wsparcie logistyczne. Produkujemy m.in. szampony, maści, balsamy, pianki, emulsje, mleczka, spraye, odżywki i kremy.",
+	"reps_title": "Znajdź przedstawiciela",
+	"reps_text": "Wybierz województwo, aby zobaczyć dane kontaktowe przedstawiciela handlowego lub koordynatora regionu.",
+	"contact_title": "Kontakt"
+}

@@ -10,7 +10,10 @@ require_once __DIR__ . '/_helpers.php';
 
 $level = 'urgent' === ( $args['level'] ?? '' ) ? 'urgent' : 'caution';
 $items = array_filter( array_map( 'strval', (array) ( $args['items'] ?? array() ) ) );
-$msg   = class_exists( \Eurowet\Core\Finder\Service::class ) ? \Eurowet\Core\Finder\Service::redFlagMessage( $level ) : '';
+$svc   = class_exists( \Eurowet\Core\Finder\Service::class );
+$msg   = $svc ? \Eurowet\Core\Finder\Service::redFlagMessage( $level ) : '';
+// The standard sentence (brief §27) is always shown; the urgent level adds the stronger message before it.
+$std   = $svc ? \Eurowet\Core\Finder\Service::redFlagMessage( 'caution' ) : '';
 $hid   = 'ew-vet-' . wp_unique_id();
 ?>
 <aside class="ew-alert <?php echo 'urgent' === $level ? 'ew-alert--danger' : 'ew-alert--warning'; ?> ew-vet" aria-labelledby="<?php echo esc_attr( $hid ); ?>" <?php echo 'urgent' === $level ? 'role="alert"' : ''; ?>>
@@ -22,5 +25,8 @@ $hid   = 'ew-vet-' . wp_unique_id();
 			<?php endforeach; ?>
 		</ul>
 	<?php endif; ?>
-	<p><?php echo esc_html( $msg ); ?></p>
+	<?php if ( 'urgent' === $level && $msg ) : ?>
+		<p><strong><?php echo esc_html( $msg ); ?></strong></p>
+	<?php endif; ?>
+	<p><?php echo esc_html( $std ); ?></p>
 </aside>

@@ -446,6 +446,10 @@ final class Importer {
 		}
 		update_post_meta( (int) $aid, '_wp_attachment_image_alt', sanitize_text_field( $alt ) );
 		update_post_meta( (int) $aid, '_ew_source_url', 'repo:' . basename( $file ) );
+		// Images from content/assets/higgsfield/ or composites/ are AI-assisted: flagged for the visible disclosure.
+		if ( preg_match( '#/assets/(higgsfield|composites)/#', $file ) ) {
+			update_post_meta( (int) $aid, '_ew_ai_generated', '1' );
+		}
 		return (int) $aid;
 	}
 
