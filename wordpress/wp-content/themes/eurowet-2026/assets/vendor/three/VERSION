@@ -1,0 +1,36 @@
+three.js r186 — npm three@0.186.1 (MIT, see LICENSE). Vendored 2026-10-07.
+
+Files (paths relative to this directory):
+  three.module.min.js                      upstream build/three.module.js + build/three.core.js bundled into ONE
+                                           ES module and minified with esbuild 0.25 (`--bundle --format=esm --minify`).
+                                           r179+ no longer ships *.min.js; code is unchanged, all 444 exports verified
+                                           against upstream (REVISION === "186").
+  addons/loaders/GLTFLoader.js             upstream examples/jsm/loaders/GLTFLoader.js
+  addons/utils/BufferGeometryUtils.js      upstream examples/jsm/utils/BufferGeometryUtils.js (imported by GLTFLoader)
+  addons/utils/SkeletonUtils.js            upstream examples/jsm/utils/SkeletonUtils.js (imported by GLTFLoader)
+  addons/environments/RoomEnvironment.js   upstream examples/jsm/environments/RoomEnvironment.js
+  The addons are verbatim except one line each: `} from 'three';` -> `} from '../../three.module.min.js';`.
+  The addons/ tree mirrors upstream `three/addons/...`, so the relative '../utils/*.js' imports are untouched.
+
+Usage (ES modules, no import map needed):
+  const base = '<theme-uri>/assets/vendor/three/';
+  const THREE = await import(base + 'three.module.min.js');
+  const { GLTFLoader } = await import(base + 'addons/loaders/GLTFLoader.js');
+  const { RoomEnvironment } = await import(base + 'addons/environments/RoomEnvironment.js');
+  RULE: import three.module.min.js by the exact same URL the addons resolve to (NO ?ver= query string),
+  otherwise the browser loads a second copy of three and `instanceof` checks across files break.
+  Cache busting: the directory is versioned by this file; bump by replacing files on upgrade.
+
+Not included: DRACOLoader / KTX2Loader / meshopt decoder. GLB files for `_ew_model3d` must be uncompressed
+(or add the decoder + wasm here). WebGPU / TSL builds are not vendored.
+
+Upgrade: npm pack three@<ver>; esbuild build/three.module.js --bundle --format=esm --minify --legal-comments=none;
+copy the four addon files, rewrite the bare 'three' import as above, update this file and the sha256 list.
+
+sha256:
+  6a5294f4c9a6d8855a6e4a5e4b85ba6edbb127ca1507aa48d9426380bf3f82ab  three.module.min.js
+  c1ed6222a6c85424ef408cd48bc5a897c363cbfd74680a44d87b80047cd651f5  addons/loaders/GLTFLoader.js
+  79296b36b2719bcc3129784e048495a6037768a96894e56aa926736a20f02589  addons/utils/BufferGeometryUtils.js
+  b9ce558a98772a46dc67816d27e629a9810e41d1fd968eb96bdbfc8dbfb959f2  addons/utils/SkeletonUtils.js
+  d4f5ea1f75b47c57c765e059478c817d12c165816a0b0ce7536ba1f5987a5ebb  addons/environments/RoomEnvironment.js
+  8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc  LICENSE

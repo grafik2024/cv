@@ -1,0 +1,116 @@
+/*
+ * Eurowet 2026 — accessibility preferences (panel "Dostępność").
+ * Attributes on <html> set by the inline head script from localStorage['ew-a11y']:
+ *   data-a11y-text="1|2|3"        text size 112.5 % | 125 % | 150 %
+ *   data-a11y-contrast="high"     high-contrast palette (black / white / yellow)
+ *   data-a11y-links="underline"   underline every link
+ *   data-a11y-spacing="wide"      WCAG 1.4.12 text spacing
+ *   data-a11y-motion="reduce"     stop animations and transitions
+ * Unlayered and loaded after base/shell CSS, so these preferences win.
+ */
+
+/* Text size — every size in the theme is rem-based. */
+html[data-a11y-text="1"] { font-size: 112.5%; }
+html[data-a11y-text="2"] { font-size: 125%; }
+html[data-a11y-text="3"] { font-size: 150%; }
+
+/* High contrast — overrides the colour tokens for both light and dark themes. */
+html:root[data-a11y-contrast="high"] {
+	color-scheme: dark;
+	--ew-color-brand: #FFE500;
+	--ew-color-brand-strong: #FFF27A;
+	--ew-color-brand-soft: #1F1F1F;
+	--ew-color-accent: #7CFF8A;
+	--ew-color-accent-strong: #7CFF8A;
+	--ew-color-accent-soft: #000000;
+	--ew-color-on-brand: #000000;
+	--ew-color-on-accent: #000000;
+	--ew-color-bg: #000000;
+	--ew-color-surface: #000000;
+	--ew-color-surface-2: #0D0D0D;
+	--ew-color-surface-3: #1F1F1F;
+	--ew-color-text: #FFFFFF;
+	--ew-color-text-muted: #F0F0F0;
+	--ew-color-heading: #FFFFFF;
+	--ew-color-border: #FFFFFF;
+	--ew-color-border-strong: #FFFFFF;
+	--ew-color-link: #FFE500;
+	--ew-color-link-hover: #FFFFFF;
+	--ew-color-focus: #FFE500;
+	--ew-color-focus-contrast: #000000;
+	--ew-color-selection: #FFE500;
+	--ew-color-overlay: rgb(0 0 0 / 0.85);
+	--ew-color-success: #7CFF8A;
+	--ew-color-success-bg: #000000;
+	--ew-color-warning: #FFE500;
+	--ew-color-warning-bg: #000000;
+	--ew-color-danger: #FF8080;
+	--ew-color-danger-bg: #000000;
+	--ew-color-info: #FFE500;
+	--ew-color-info-bg: #000000;
+	--ew-stage-bg: #141414;
+	--ew-stage-gradient: linear-gradient(#141414, #141414);
+	--ew-stage-shadow: none;
+	--ew-band-bg: #000000;
+	--ew-band-gradient: linear-gradient(#000000, #000000);
+	--ew-band-text: #FFFFFF;
+	--ew-band-muted: #F0F0F0;
+	--ew-band-link: #FFE500;
+	--ew-shadow-1: none;
+	--ew-shadow-2: none;
+	--ew-shadow-3: none;
+}
+html[data-a11y-contrast="high"] ::selection { color: #000000; }
+html[data-a11y-contrast="high"] :is(.ew-card, .ew-chip, .ew-alert, .ew-disclosure, .ew-btn--ghost, .ew-header, .ew-popover, .ew-dialog__panel) {
+	border-color: #FFFFFF;
+}
+html[data-a11y-contrast="high"] .ew-band,
+html[data-a11y-contrast="high"] .ew-footer { border-top: 2px solid #FFFFFF; }
+html[data-a11y-contrast="high"] :focus-visible { outline: 4px solid #FFE500 !important; outline-offset: 2px !important; }
+html[data-a11y-contrast="high"] .ew-logo__img--light { display: none !important; }
+html[data-a11y-contrast="high"] .ew-logo__img--dark { display: block !important; }
+
+/* Underline links */
+html[data-a11y-links="underline"] a[href] {
+	text-decoration-line: underline !important;
+	text-decoration-thickness: max(1px, 0.08em) !important;
+	text-underline-offset: 0.2em !important;
+}
+
+/* WCAG 1.4.12 text spacing */
+html[data-a11y-spacing="wide"] body,
+html[data-a11y-spacing="wide"] body *:not(svg, svg *) {
+	line-height: 1.6 !important;
+	letter-spacing: 0.12em !important;
+	word-spacing: 0.16em !important;
+}
+html[data-a11y-spacing="wide"] :is(p, li, dd, blockquote, figcaption) { margin-block-end: 2em !important; }
+html[data-a11y-spacing="wide"] :is(.ew-chip, .ew-btn, .ew-nav__link, .ew-nav__toggle) { height: auto !important; }
+
+/* Reduce motion — explicit choice, and the operating-system preference (always respected). */
+html[data-a11y-motion="reduce"] *,
+html[data-a11y-motion="reduce"] *::before,
+html[data-a11y-motion="reduce"] *::after {
+	animation-duration: 0.01ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.01ms !important;
+	transition-delay: 0s !important;
+	scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		transition-delay: 0s !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Windows high contrast / forced colours */
+@media (forced-colors: active) {
+	.ew-icon { forced-color-adjust: auto; }
+	.ew-btn, .ew-chip, .ew-card, .ew-header__tool { border: 1px solid ButtonText; }
+	:focus-visible { outline: 3px solid Highlight !important; }
+	.ew-card__media, .ew-stage { background: Canvas; }
+}

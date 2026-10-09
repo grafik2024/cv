@@ -1,0 +1,24 @@
+/*
+Theme Name:        Eurowet 2026
+Theme URI:         https://eurowet.pl/
+Description:       Motyw potomny Hello Elementor dla serwisu EUROWET: system projektowy (tokeny, typografia, komponenty bazowe), dostępna nawigacja, tryb ciemny, panel dostępności oraz szablony WooCommerce. Współpracuje z wtyczką eurowet-core.
+Author:            Eurowet
+Template:          hello-elementor
+Version:           1.0.0
+Requires at least: 6.6
+Tested up to:      7.1
+Requires PHP:      8.1
+License:           GNU General Public License v2 or later
+License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:       eurowet-2026
+Domain Path:       /languages
+*/
+
+/*
+ * This file only carries the theme header. Styles live in assets/css/:
+ *   tokens.css  design tokens (light + dark), the contract used by eurowet-core components
+ *   base.css    reset, typography, forms, buttons, layout utilities, prose, cards, alerts
+ *   shell.css   header, navigation, dialogs, footer
+ *   a11y.css    accessibility panel overrides (data-a11y-* on <html>)
+ *   templates/  per-template CSS loaded only where used
+ */

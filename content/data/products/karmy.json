@@ -1,0 +1,3077 @@
+{
+ "group": "karmy",
+ "families": [
+  {
+   "family_slug": "efaderm-e-plyn-pies",
+   "name": "EFADERM-E",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "sierść",
+    "skóra"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "stany zapalne skóry",
+     "evidence_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych",
+     "source_field": "properties"
+    },
+    {
+     "need": "nadmierne wypadanie sierści",
+     "evidence_verbatim": "nadmiernego wypadania sierści",
+     "source_field": "properties"
+    },
+    {
+     "need": "skóra wrażliwa/alergiczna",
+     "evidence_verbatim": "Wspomaganie funkcji regeneracyjnych skóry w przypadku jej nadwrażliwości",
+     "source_field": "indications"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Stosowanie karmy ułatwia utrzymanie w dobrej kondycji skóry oraz sierść.",
+     "source_field": "indications"
+    },
+    {
+     "need": "nadmierne przetłuszczanie/łojotok",
+     "evidence_verbatim": "łojotok, świąd: 2 ml / 5 kg m.c. / dzień przez 3-4 tygodnie",
+     "source_field": "usage"
+    },
+    {
+     "need": "świąd",
+     "evidence_verbatim": "łojotok, świąd: 2 ml / 5 kg m.c. / dzień przez 3-4 tygodnie",
+     "source_field": "usage"
+    },
+    {
+     "need": "rekonwalescencja",
+     "evidence_verbatim": "rekonwalescencja 1 ml / 5 kg m.c. / dzień przez 3-4 tygodnie",
+     "source_field": "usage"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olej z ryb",
+     "label_name": "olej z ryb",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "olej z ogórecznika",
+     "label_name": "olej z ogórecznika – Borago officinalis",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "olej z zarodków kukurydzy",
+     "label_name": "olej z zarodków kukurydzy – Zea mays",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina A",
+     "label_name": "3a672a witamina A",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "3a700 witamina E",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "usage_verbatim": "Podawać przez okres do 2 miesięcy. Podawać bezpośrednio lub po wymieszaniu z karmą:\nrekonwalescencja 1 ml / 5 kg m.c. / dzień przez 3-4 tygodnie\nłojotok, świąd: 2 ml / 5 kg m.c. / dzień przez 3-4 tygodnie\nPo otwarciu przechowywać w miejscu chłodnym i suchym.",
+   "indications_verbatim": "Wspomaganie funkcji regeneracyjnych skóry w przypadku jej nadwrażliwości i nadmiernego wypadania sierści. Stosowanie karmy ułatwia utrzymanie w dobrej kondycji skóry oraz sierść.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład (2): olej z ryb, oleje i tłuszcze roślinne (olej z ogórecznika – Borago officinalis i olej z zarodków kukurydzy – Zea mays). Dodatki w 1 kg (3): Technologiczne: Przeciwutleniacze: 1b306(i) ekstrakt naturalnych tokoferoli 1800 mg. Dietetyczne: Witaminy: 3a672a witamina A 165 000 IU, 3a700 witamina E 32 000 IU. Składniki analityczne (4): białko surowe 0,5%, włókno surowe 0%, tłuszcz surowy 99,0%, popiół surowy 0,2%.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "EFADERM-E 30ml pies",
+     "capacity": "30 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/efaderm-e-30ml-pies/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Efaderm-E_plyn_pies_30ml-1.png",
+     "en_page_path": "/en/products/complementary-foods/efaderm-e-30ml-pies-eng/"
+    }
+   ],
+   "related_on_site": [
+    "efaderm-e-kapsulki-pies",
+    "efaderm-e-plyn-kot"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/efaderm-e-30ml-pies, which is not a published WooCommerce product (no Woo product for Efaderm-E 30 ml in the REST dump) - the liquid cannot be bought on eurowet.pl.",
+    "Grammar error in 'Zastosowanie': \"ułatwia utrzymanie w dobrej kondycji skóry oraz sierść\" (should be 'sierści'); same sentence on the cat 30 ml page.",
+    "H2 lead ('Działanie') and H3 'Zastosowanie' texts are swapped compared with the cat 30 ml page (kot page has the lead under H2 'Zastosowanie').",
+    "Related-products box labels the cat and dog liquids 'Efaderm-E 30ml' / 'Efaderm-e 30ml' (inconsistent capitalisation, no species in label).",
+    "EN page /en/products/complementary-foods/efaderm-e-30ml-pies-eng/ last modified 2019-03-18 vs PL 2026-06-10 - translation likely outdated."
+   ],
+   "vet_context_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści."
+  },
+  {
+   "family_slug": "efaderm-e-plyn-kot",
+   "name": "EFADERM-E",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "sierść",
+    "skóra"
+   ],
+   "species": [
+    "kot"
+   ],
+   "species_evidence": "Dla kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "stany zapalne skóry",
+     "evidence_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych",
+     "source_field": "indications"
+    },
+    {
+     "need": "nadmierne wypadanie sierści",
+     "evidence_verbatim": "nadmiernego wypadania sierści",
+     "source_field": "indications"
+    },
+    {
+     "need": "skóra wrażliwa/alergiczna",
+     "evidence_verbatim": "Wspomaganie funkcji regeneracyjnych skóry w przypadku jej nadwrażliwości",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Stosowanie karmy ułatwia utrzymanie w dobrej kondycji skóry oraz sierść.",
+     "source_field": "properties"
+    },
+    {
+     "need": "nadmierne przetłuszczanie/łojotok",
+     "evidence_verbatim": "łojotok 1 ml / 5 kg m.c. /dzień przez 3-4 tygodnie",
+     "source_field": "usage"
+    },
+    {
+     "need": "świąd",
+     "evidence_verbatim": "świąd 2 ml / 5 kg m.c. / dzień przez 4 tygodnie",
+     "source_field": "usage"
+    },
+    {
+     "need": "rekonwalescencja",
+     "evidence_verbatim": "rekonwalescencja 1 ml / 5 kg m.c. / dzień, co 2 dni przez 3-4 tygodnie",
+     "source_field": "usage"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olej z ogórecznika",
+     "label_name": "olej z ogórecznika - Borago officinalis",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "olej z zarodków kukurydzy",
+     "label_name": "olej z zarodków kukurydzy – Zea mays",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "olej z ryb",
+     "label_name": "olej z ryb",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina A",
+     "label_name": "3a672a witamina A",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "3a700 witamina E",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Wspomaganie funkcji regeneracyjnych skóry w przypadku jej nadwrażliwości i nadmiernego wypadania sierści. Stosowanie karmy ułatwia utrzymanie w dobrej kondycji skóry oraz sierść.",
+   "usage_verbatim": "Podawać przez okres do 2 miesięcy\nPodawać bezpośrednio lub po wymieszaniu z karmą: rekonwalescencja 1 ml / 5 kg m.c. / dzień, co 2 dni przez 3-4 tygodnie\nłojotok 1 ml / 5 kg m.c. /dzień przez 3-4 tygodnie\nświąd 2 ml / 5 kg m.c. / dzień przez 4 tygodnie\nPrzechowywać w miejscu chłodnym i suchym, w temperaturze 15-25°C.",
+   "indications_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład (2): oleje i tłuszcze roślinne (olej z ogórecznika - Borago officinalis i olej z zarodków kukurydzy – Zea mays), olej z ryb. Dodatki w 1 kg (3): Technologiczne: Przeciwutleniacze: E306 ekstrakt naturalnych tokoferoli 1800 mg. Dietetyczne: Witaminy: 3a672a witamina A 124 800 IU, 3a700 witamina E 24 000 IU. Składniki analityczne (4): białko surowe 0,5%, włókno surowe 0%, tłuszcz surowy 99,0%, popiół surowy 0,2%.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "EFADERM-E 30ml kot",
+     "capacity": "30 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/efaderm-e-30ml-kot/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Efaderm-E_plyn_kot_30ml-1.png",
+     "en_page_path": "/en/products/complementary-foods/efaderm-e-30ml-kot-eng/"
+    }
+   ],
+   "related_on_site": [
+    "efaderm-e-kapsulki-pies",
+    "efaderm-e-plyn-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/efaderm-e-30ml-kot, which is not a published WooCommerce product (no Woo product for Efaderm-E 30 ml kot in the REST dump).",
+    "Page has two sections both titled 'Zastosowanie' (H2 lead and H3); the H2 lead holds the regeneration text while the dog 30 ml page uses 'Działanie' with the swapped texts.",
+    "Usage text missing a full stop: \"Podawać przez okres do 2 miesięcy Podawać bezpośrednio...\".",
+    "Grammar error: \"ułatwia utrzymanie w dobrej kondycji skóry oraz sierść\" (should be 'sierści').",
+    "Composition lists the antioxidant as 'E306' (old numbering) while the dog 30 ml page uses '1b306(i)'.",
+    "EN page title is just 'EFADERM-E' (no capacity/species), unlike other EN product titles."
+   ],
+   "vet_context_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści."
+  },
+  {
+   "family_slug": "efaderm-e-kapsulki-pies",
+   "name": "EFADERM-E",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "SIERŚĆ",
+    "SKÓRA"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "stany zapalne skóry",
+     "evidence_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych",
+     "source_field": "properties"
+    },
+    {
+     "need": "nadmierne wypadanie sierści",
+     "evidence_verbatim": "nadmiernego wypadania sierści",
+     "source_field": "properties"
+    },
+    {
+     "need": "skóra wrażliwa/alergiczna",
+     "evidence_verbatim": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olej z ryb",
+     "label_name": "olej z ryb",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "usage_verbatim": "Podawać bezpośrednio lub po wymieszaniu z karmą: 1 szt. / 10 kg m.c. / dzień. Podawać przez okres do 2 miesięcy.",
+   "indications_verbatim": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości i nadmiernego wypadania sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład (2): olej z ryb, żelatyna bydlęca, gliceryna Dodatki w 1 kg (3): Technologiczne: Przeciwutleniacze: 1b306(i) ekstrakt naturalnych tokoferoli 13420 mg. Składniki analityczne (4): białko surowe 18,6%, włókno surowe 0%, tłuszcz surowy 70,9%, popiół surowy 0%.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "EFADERM-E 60szt. psy",
+     "capacity": "60 kaps.",
+     "page_path": "/produkty/karmy-uzupelniajace/efaderm-e-60szt-psy/",
+     "woo_id": 5245,
+     "woo_path": "/produkt/efaderm-e-60szt-psy/",
+     "price_pln": 58.19,
+     "regular_price_pln": 58.19,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Efaderm-E_pies_60kaps-1.png",
+     "en_page_path": "/en/products/complementary-foods/efaderm-e-60pcs-psy-eng/"
+    }
+   ],
+   "related_on_site": [
+    "efaderm-e-plyn-kot",
+    "efaderm-e-plyn-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/efaderm-e-60kaps-psy, which is not a Woo product; the Woo product is ID 5245 'EFADERM-E 60 kaps. psy' at /produkt/efaderm-e-60szt-psy/.",
+    "Woo product 5245 description contains a typo: \"nadmiernego wypadania sierścii\".",
+    "EN page /en/products/complementary-foods/efaderm-e-60pcs-psy-eng/ shows the 30 ml liquid packshot (Efaderm-E_plyn_pies_30ml) and describes the 30 ml liquid (ml dosing, borage/maize-germ oil composition), not the 60-capsule product."
+   ],
+   "vet_context_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści."
+  },
+  {
+   "family_slug": "efaderm-e-kapsulki-kot",
+   "name": "EFADERM-E",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Dietetyczna karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "SIERŚĆ",
+    "SKÓRA"
+   ],
+   "species": [
+    "kot"
+   ],
+   "species_evidence": "Dla kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [
+    {
+     "need": "stany zapalne skóry",
+     "evidence_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych",
+     "source_field": "indications"
+    },
+    {
+     "need": "nadmierne wypadanie sierści",
+     "evidence_verbatim": "nadmiernego wypadania sierści",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olej z ryb",
+     "label_name": "olej z ryb",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "usage_verbatim": "Kapsułki podawać bezpośrednio lub po wymieszaniu z karmą: 1 kapsułka / 5 kg m.c. / dzień. Zalecany czas stosowania: do 2 miesięcy. Przed rozpoczęciem stosowania zaleca się konsultację z lekarzem weterynarii.",
+   "indications_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": "Przed rozpoczęciem stosowania zaleca się konsultację z lekarzem weterynarii.",
+   "composition_verbatim": "Skład: olej z ryb. Składniki kapsułki: żelatyna bydlęca i gliceryna. Składniki analityczne: aminokwasyoleje i tłuszcze surowe 70,9%, kwasy omega-3 ogółem 29,6% (w tym EPA + DHA 25,9%), białko surowe 24,1%, wilgotność 1,62%, popiół surowy 0%, włókno surowe 0%. Dodatki w 1 kg: przeciwutleniacze: E306 ekstrakt naturalnych tokoferoli 666 mg .",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "EFADERM-E 60szt. koty",
+     "capacity": "60 kaps.",
+     "page_path": "/produkty/karmy-uzupelniajace/efaderm-e-60szt-koty/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Efaderm-E_kot_60kaps-1.png",
+     "en_page_path": "/en/products/complementary-foods/efaderm-e-60pcs-koty-eng/"
+    }
+   ],
+   "related_on_site": [
+    "fyto-derm",
+    "Zn-A-B6 60tab.",
+    "sebovet-excellence"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Page not listed on the category page /produkty/karmy-uzupelniajace/ and last modified 2022-10-24; no Woo product exists - likely discontinued but still published and indexable.",
+    "Shop button links to /produkt/efaderm-e-60kaps, which is not a Woo product.",
+    "Composition typo: \"Składniki analityczne: aminokwasyoleje i tłuszcze surowe 70,9%\" and stray space before the final full stop (\"666 mg .\").",
+    "No OPAKOWANIE section (capacity only in H2 '60kaps.').",
+    "Subtitle 'Dietetyczna karma uzupełniająca dla kotów' differs from the 'Karma uzupełniająca' wording on the other Efaderm-E pages.",
+    "Related-products box links legacy root URLs /fytoderm-100ml, /zn-a-b6-60tab, /sebovet-excellence-200ml.",
+    "EN page /en/products/complementary-foods/efaderm-e-60pcs-koty-eng/ shows the 30 ml liquid packshot and describes the 30 ml liquid (30 ml, ml dosing), not the 60 capsules."
+   ],
+   "vet_context_verbatim": "Przed rozpoczęciem stosowania zaleca się konsultację z lekarzem weterynarii. | Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści."
+  },
+  {
+   "family_slug": "elektrolity",
+   "name": "Elektrolity",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "PRZYWRACA HOMEOSTAZĘ ORGANIZMU",
+    "DOSTARCZA ENERGIĘ",
+    "UZUPEŁNIA NIEDOBORY WIT. C",
+    "KOMPLEKS BCAA (LEUCYNA, IZOLEUCYNA, WALINA), L-GLUTAMINA",
+    "SMAK WĄTRÓBKI"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "układ pokarmowy",
+    "ogólna kondycja/witalność",
+    "inne"
+   ],
+   "needs_evidence": [
+    {
+     "need": "odwodnienie",
+     "evidence_verbatim": "odwodnienie",
+     "source_field": "indications"
+    },
+    {
+     "need": "równowaga wodno-elektrolitowa",
+     "evidence_verbatim": "regulująca równowagę wodno – elektrolitową organizmu",
+     "source_field": "properties"
+    },
+    {
+     "need": "zaburzenia trawienia",
+     "evidence_verbatim": "zaburzenia trawienia",
+     "source_field": "indications"
+    },
+    {
+     "need": "biegunka",
+     "evidence_verbatim": "biegunka",
+     "source_field": "indications"
+    },
+    {
+     "need": "wysiłek fizyczny",
+     "evidence_verbatim": "wysiłek fizyczny",
+     "source_field": "indications"
+    },
+    {
+     "need": "homeostaza organizmu",
+     "evidence_verbatim": "PRZYWRACA HOMEOSTAZĘ ORGANIZMU",
+     "source_field": "badges"
+    },
+    {
+     "need": "energia",
+     "evidence_verbatim": "DOSTARCZA ENERGIĘ",
+     "source_field": "badges"
+    },
+    {
+     "need": "niedobory witaminy C",
+     "evidence_verbatim": "UZUPEŁNIA NIEDOBORY WIT. C",
+     "source_field": "badges"
+    },
+    {
+     "need": "regeneracja mięśni",
+     "evidence_verbatim": "dostarczają aminokwasy niezbędne dla właściwej regeneracji i rozwoju mięśni",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "glukoza",
+     "label_name": "Glukoza",
+     "stated_function_verbatim": "Glukoza zwiększa absorpcję makro – elementów i wody oraz dostarcza łatwo przyswajalną energię."
+    },
+    {
+     "name_pl": "elektrolity (sole potasu, sodu, magnezu)",
+     "label_name": "chlorek potasu, chlorek sodu, mleczan magnezu",
+     "stated_function_verbatim": "Elektrolity zawierają sole dysocjujące na jony, ułatwiające przekazywanie impulsów nerwowych w organizmie."
+    },
+    {
+     "name_pl": "ekstrakt z owocu dzikiej róży",
+     "label_name": "ekstrakt z owocu dzikiej róży",
+     "stated_function_verbatim": "Ekstrakt owocu z dzikiej róży uzupełnia niedobory witaminy C."
+    },
+    {
+     "name_pl": "kompleks BCAA (leucyna, izoleucyna, walina)",
+     "label_name": "3c381 Izoleucyna, 3c382 L-leucyna, 3c370 Walina",
+     "stated_function_verbatim": "Kompleks BCAA (Leucyna, Izoleucyna, Walina), L-glutamina dostarczają aminokwasy niezbędne dla właściwej regeneracji i rozwoju mięśni."
+    },
+    {
+     "name_pl": "L-glutamina",
+     "label_name": "3c451 L-glutamina",
+     "stated_function_verbatim": "Kompleks BCAA (Leucyna, Izoleucyna, Walina), L-glutamina dostarczają aminokwasy niezbędne dla właściwej regeneracji i rozwoju mięśni."
+    },
+    {
+     "name_pl": "proszek wątrobowy (wątroba wołowa)",
+     "label_name": "wątroba wołowa suszona",
+     "stated_function_verbatim": "Dodatek proszku wątrobowego poprawia smak, który powoduje, że zwierzęta chętnie przyjmują preparat."
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca dla psów i kotów regulująca równowagę wodno – elektrolitową organizmu. Zmieszana z wodą tworzy roztwór izotoniczny.\nGlukoza zwiększa absorpcję makro – elementów i wody oraz dostarcza łatwo przyswajalną energię. Elektrolity zawierają sole dysocjujące na jony, ułatwiające przekazywanie impulsów nerwowych w organizmie. Ekstrakt owocu z dzikiej róży uzupełnia niedobory witaminy C. Kompleks BCAA (Leucyna, Izoleucyna, Walina), L-glutamina dostarczają aminokwasy niezbędne dla właściwej regeneracji i rozwoju mięśni. Dodatek proszku wątrobowego poprawia smak, który powoduje, że zwierzęta chętnie przyjmują preparat.",
+   "usage_verbatim": "1 saszetka (25 g) na 15 kg m.c. - Preparat rozpuścić w wodzie lub wymieszać z karmą. Produkt naturalnie mętny.",
+   "indications_verbatim": "· odwodnienie · zaburzenia trawienia · biegunka · wysiłek fizyczny · przywrócenie homeostazy organizmu",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Glukoza, wątroba wołowa suszona, chlorek potasu, chlorek sodu, mleczan magnezu, ekstrakt z owocu dzikiej róży. Dodatki w 1 kg: Aminokwasy: 3c381 Izoleucyna 25 g, 3c382 L-leucyna 50 g, 3c370 Walina 25 g, 3c451 L-glutamina 50 g. Składniki analityczne: Białko surowe 22,3 g, włókno surowe: 0,2 g, tłuszcz surowy: 2,3 g, popiół surowy 11,1 g, wapń 0,1 g, magnez 5,5 g, sód 0,2 g, potas 0,2 g.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "ELEKTROLITY pies, kot 10x25g",
+     "capacity": "10 x 25 g",
+     "page_path": "/produkty/karmy-uzupelniajace/elektrolity-pies-kot-10x25g/",
+     "woo_id": 15222,
+     "woo_path": "/produkt/elektrolity-pies-kot-10x25g/",
+     "price_pln": 99.74,
+     "regular_price_pln": 99.74,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/01/EUROWET_Elektrolity_25g_1.png",
+     "en_page_path": "/en/products/complementary-foods/elektrolity-pies-kot-10x25g-eng/"
+    }
+   ],
+   "related_on_site": [
+    "milvet",
+    "Karbowital 125ml"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Page is not linked from the category page /produkty/karmy-uzupelniajace/ although Woo product 15222 is in stock (reachable only via related boxes on Smoczki pages).",
+    "Yoast meta description is the full 'Właściwości' text (~600 characters) - far too long for a meta description.",
+    "Analytical constituents given in grams without a reference quantity (\"Białko surowe 22,3 g, włókno surowe: 0,2 g...\") - unclear whether per 100 g or per sachet.",
+    "Related-products box links legacy root URLs /milvet-300g and /karbowital-125ml."
+   ],
+   "vet_context_verbatim": "· odwodnienie · zaburzenia trawienia · biegunka · wysiłek fizyczny · przywrócenie homeostazy organizmu"
+  },
+  {
+   "family_slug": "milvet",
+   "name": "MILVET",
+   "line": null,
+   "product_type": "inny (pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt)",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt oraz dla psów i kotów dorosłych",
+   "badges_verbatim": [
+    "BUTELKA+SMOCZEK WEWNĄTRZ OPAKOWANIA",
+    "ZASTĘPUJE POKARM MATKI",
+    "MOŻE BYĆ PODAWANY ZARAZ PO URODZENIU",
+    "DOSTARCZA ENERGII, WITAMIN I MINERAŁÓW"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "szczenię",
+    "kocię"
+   ],
+   "species_evidence": "Pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt oraz dla psów i kotów dorosłych",
+   "body_areas": [
+    "rozród/ciąża",
+    "ogólna kondycja/witalność"
+   ],
+   "needs_evidence": [
+    {
+     "need": "zastępowanie mleka matki",
+     "evidence_verbatim": "ZASTĘPUJE POKARM MATKI",
+     "source_field": "badges"
+    },
+    {
+     "need": "niedostateczna ilość mleka matki",
+     "evidence_verbatim": "niedostatecznej ilości wydzielanego przez matkę mleka",
+     "source_field": "usage"
+    },
+    {
+     "need": "odchów szczeniąt i kociąt bez matki",
+     "evidence_verbatim": "odchowie szczeniąt i kociąt bez udziału matki",
+     "source_field": "usage"
+    },
+    {
+     "need": "odsadzanie",
+     "evidence_verbatim": "jako dodatek do karmy w trakcie odsadzania",
+     "source_field": "usage"
+    },
+    {
+     "need": "laktacja (produkcja mleka u suki/kotki)",
+     "evidence_verbatim": "Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka.",
+     "source_field": "properties"
+    },
+    {
+     "need": "wzrost i rozwój młodych",
+     "evidence_verbatim": "Szczeniętom i kociętom dostarcza niezbędnej energii, witamin i budulca do rozwoju.",
+     "source_field": "properties"
+    },
+    {
+     "need": "rekonwalescencja i wzmożony wysiłek",
+     "evidence_verbatim": "dla psów i kotów dorosłych w okresie rekonwalescencji i wzmożonego wysiłku",
+     "source_field": "usage"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "odtłuszczone mleko w proszku",
+     "label_name": "Odtłuszczone mleko w proszku",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "tłuszcz mleczny",
+     "label_name": "tłuszcz mleczny",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "koncentrat białek serwatkowych",
+     "label_name": "koncentrat białek serwatkowych",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "tauryna",
+     "label_name": "3a370 tauryna",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Pełnoporcjowy preparat mlekozastępczy doskonale zastępuje naturalny pokarm matki. Dostarcza lekkostrawnego białka i łatwo przyswajalnego tłuszczu. Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka. Szczeniętom i kociętom dostarcza niezbędnej energii, witamin i budulca do rozwoju. Preparat zaspokaja potrzeby mineralne i witaminowe rosnących szczeniąt i kociąt. Jest bardzo dobrze przyswajany przez zwierzęta i może być podawany zaraz po urodzeniu.",
+   "usage_verbatim": "Podawać przy:\n- niedostatecznej ilości wydzielanego przez matkę mleka\n- odchowie szczeniąt i kociąt bez udziału matki\n- jako dodatek do karmy w trakcie odsadzania\n- dla psów i kotów dorosłych w okresie rekonwalescencji i wzmożonego wysiłku\nUstalić porcję preparatu zgodnie z tabelą na opakowaniu. Do butelki wsypać jedną porcję preparatu, a następnie dodać dwie porcje przegotowanej wody o temperaturze ok. 60°C – proporcja 1:2. Energicznie wymieszać. Wystudzić do temperatury 37°C. Przygotowane mleko przechowywać pomiędzy posiłkami w temp.+2°C- +8°C. Po przygotowaniu przechowywać nie dłużej niż 24 godziny. Przez pierwsze 15 dni życia karmić przez smoczek, a następnie próbować podawać do picia z miseczki. Po 4 tygodniu życia, w trakcie stopniowego przechodzenia zwierząt na karmę stałą, dodawać proszek do karmy.",
+   "indications_verbatim": "Preparat mlekozastępczy dla szczeniąt i kociąt.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Odtłuszczone mleko w proszku, tłuszcz mleczny, koncentrat białek serwatkowych, serwatka w proszku, lecytyna sojowa. Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 25 000 IU, 3a671 witamina D3 2 000 IU, 3a700 witamina E 60 mg, 3a820 witamina B1 20 mg, 3a witamina B2 40 mg, 3a831 witamina B6 15 mg, 3a witamina B12 (cynkobalamina) 0,08 mg, 3a841 D-pantotenian wapnia 46 mg, 3a316 kwas foliowy 0,8 mg, 3a314 niacyna 25 mg, 3a890 chlorek choliny 1000 mg, 3a370 tauryna 2000 mg. Pierwiastki śladowe: 3b108 chelat żelazowy wodzianu glicyny 100 mg, 3b201 jodek potasu 1,6 mg, 3b405 siarczan miedzi(II) pięciowodny 15 mg, 3b503 siarczan manganu jednowodny 66 mg, 3b603 tlenek cynku 160 mg, 3b801 selenian sodu 0,25 mg. Aminokwasy: 3c301 DL-metionina 2000 mg. Składniki analityczne: Białko surowe 30,0%, włókno surowe 0,0%, tłuszcz surowy 20,0%, popiół surowy 6,0%",
+   "notes_verbatim": "Informacja\nPłaska łyżeczka do herbaty lub płaska miarka (5 ml) zawiera ok. 2 g preparatu, płaska łyżka stołowa lub płaska miarka (15 ml) zawiera ok. 6 g preparatu.\nInformacja\nDZIĘKI ZASTOSOWANIU TECHNIKI NAPEŁNIANIA OPAKOWAŃ W ATMOSFERZE AZOTU ZWIĄZKI TŁUSZCZOWE I WITAMINY ZAWARTE W PREPARACIE NIE ULEGAJĄ ROZKŁADOWI.",
+   "variants": [
+    {
+     "title": "MILVET 10 x 100g",
+     "capacity": "10 x 100 g",
+     "page_path": "/produkty/karmy-uzupelniajace/milvet-10-x-100g/",
+     "woo_id": 8295,
+     "woo_path": "/produkt/milvet-10-x-100g/",
+     "price_pln": 253.76,
+     "regular_price_pln": 253.76,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/06/Milvet_100g.png",
+     "en_page_path": "/en/products/complementary-foods/milvet-10-x-100g/"
+    },
+    {
+     "title": "MILVET 300g",
+     "capacity": "300 g",
+     "page_path": "/produkty/karmy-uzupelniajace/milvet-300g/",
+     "woo_id": 5248,
+     "woo_path": "/produkt/milvet-300g/",
+     "price_pln": 94.27,
+     "regular_price_pln": 94.27,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/06/Milvet_300g-1.png",
+     "en_page_path": "/en/products/complementary-foods/milvet-300g-eng/"
+    },
+    {
+     "title": "MILVET 800g",
+     "capacity": "800 g",
+     "page_path": "/produkty/karmy-uzupelniajace/milvet-800g/",
+     "woo_id": 8073,
+     "woo_path": "/produkt/milvet-800g/",
+     "price_pln": 152.34,
+     "regular_price_pln": 152.34,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/06/Milvet_800g.png",
+     "en_page_path": "/en/products/complementary-foods/milvet-800g-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-complex-3-2g",
+    "wita-vet-senior",
+    "olej-z-lososia",
+    "wita-vet-siersc-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Milvet 800g page: OPAKOWANIE says \"300g ilość netto\" (copied from the 300 g page).",
+    "Composition on all 3 pages (and Woo) reads \"witamina B12 (cynkobalamina)\" - typo for cyjanokobalamina.",
+    "Product is a 'Pełnoporcjowy' (complete) milk replacer but is listed in the category 'Karmy uzupełniające'.",
+    "Badge 'BUTELKA+SMOCZEK WEWNĄTRZ OPAKOWANIA' appears only on the 300 g and 800 g pages, not on 10 x 100 g.",
+    "Milvet 300g page is linked from the category page and related boxes only via the legacy short URL /milvet-300g.",
+    "Milvet 10 x 100g related box links old slug /produkty/karmy-uzupelniajace/wita-vet-junioradult-32g-30szt/ (current page: /produkty/karmy-uzupelniajace/wita-vet-complex-32g-30szt/).",
+    "The Milvet Yoast description is wrongly reused as meta description on both Smoczki pages."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "nutrikard",
+   "name": "NUTRIKARD",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Mieszanka paszowa uzupełniająca dla psów i kotów WSPOMAGAJĄCA UKŁAD SERCOWO-NACZYNIOWY",
+   "badges_verbatim": [
+    "Wspomaga funkcjonowanie układu Sercowo - naczyniowego",
+    "Dostarcza energię dla pracy serca",
+    "Działa ochronnie na układ krążenia",
+    "+ Tauryna, koenzym Q10, rdestowiEc ostrokończysty, liście drzewa oliwkowego"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "serce"
+   ],
+   "needs_evidence": [
+    {
+     "need": "wsparcie układu sercowo-naczyniowego",
+     "evidence_verbatim": "Wspomaga funkcjonowanie układu sercowo - naczyniowego",
+     "source_field": "indications"
+    },
+    {
+     "need": "energia dla pracy serca",
+     "evidence_verbatim": "Dostarcza energię dla pracy serca.",
+     "source_field": "indications"
+    },
+    {
+     "need": "ochrona układu krążenia",
+     "evidence_verbatim": "Działa ochronnie na układ krążenia",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "tauryna",
+     "label_name": "3a370 tauryna",
+     "stated_function_verbatim": "Tauryna jest transmiterem metabolicznym, działa odtruwająco na organizm oraz wpływa korzystnie na siłę skurczu mięśnia serca."
+    },
+    {
+     "name_pl": "koenzym Q10 (z drożdży Saccharomyces cerevisiae)",
+     "label_name": "drożdże piwne - martwe (z Saccharomyces cerevisiae)",
+     "stated_function_verbatim": "Koenzym Q10 z drożdży Saccharomyces cerevisiae wspomaga pracę serca dostarczając mu niezbędną energię oraz obniża stres oksydacyjny wynikający z aktywności wolnorodnikowej."
+    },
+    {
+     "name_pl": "trans-resweratrol (rdestowiec ostrokończysty)",
+     "label_name": "z korzenia rdestowca ostrokończystego (Polygonum cuspidatum)",
+     "stated_function_verbatim": "Pochodzący z rdestowca ostrokończystego trans-resweratrol wykazuje działanie antyoksydacyjne, polepsza mikrocyrkulację w układzie krwionośnym i bierze udział w profilaktyce powstawania zatorów w naczyniach krwionośnych."
+    },
+    {
+     "name_pl": "hydroksytyrozol (liście drzewa oliwkowego)",
+     "label_name": "z liści drzewa oliwkowego (Olea europea)",
+     "stated_function_verbatim": "Hydroksytyrozol zawarty w liściach drzewa oliwkowego działa antyagregacyjnie na płytki krwi, poprawia przepływ krwi w naczyniach wieńcowych serca oraz wpływa korzystnie na ciśnienie krwi."
+    }
+   ],
+   "properties_verbatim": "Składniki preparatu wpływają korzystnie na funkcjonowanie układu sercowo-naczyniowego. Tauryna jest transmiterem metabolicznym, działa odtruwająco na organizm oraz wpływa korzystnie na siłę skurczu mięśnia serca. Koenzym Q10 z drożdży Saccharomyces cerevisiae wspomaga pracę serca dostarczając mu niezbędną energię oraz obniża stres oksydacyjny wynikający z aktywności wolnorodnikowej. Pochodzący z rdestowca ostrokończystego trans-resweratrol wykazuje działanie antyoksydacyjne, polepsza mikrocyrkulację w układzie krwionośnym i bierze udział w profilaktyce powstawania zatorów w naczyniach krwionośnych. Hydroksytyrozol zawarty w liściach drzewa oliwkowego działa antyagregacyjnie na płytki krwi, poprawia przepływ krwi w naczyniach wieńcowych serca oraz wpływa korzystnie na ciśnienie krwi.",
+   "usage_verbatim": "Psy, koty | Dawkowanie\nDo 5kg | ½ tab. / dzień\nOd 5 kg do 10 kg | ½ tab. / 2 x dzień\nOd 11 do 20 kg | 1 tab. / 2 x dzień\nOd 21 do 30 kg | 1½ tab. / 2 x dzień\nOd 31 do 45 kg | 2 tab. / 2 x dzień\nPrzy przedłużonym stosowaniu preparatu należy skorzystać z porady lekarza weterynarii.",
+   "indications_verbatim": "Wspomaga funkcjonowanie układu sercowo - naczyniowego Dostarcza energię dla pracy serca. Działa ochronnie na układ krążenia",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Przy przedłużonym stosowaniu preparatu należy skorzystać z porady lekarza weterynarii.",
+   "composition_verbatim": "Skład: Węglan magnezu, przetworzone białko pochodzenia zwierzęcego (ze świń), maltodekstryna, drożdże piwne - martwe (z Saccharomyces cerevisiae), produkty przetwarzania roślin: z korzenia rdestowca ostrokończystego (Polygonum cuspidatum) oraz z liści drzewa oliwkowego (Olea europea). Dodatki w 1 kg: Dietetyczne: witaminy, prowitaminy i inne chemicznie dobrze zdefiniowane substancje o podobnym działaniu: 3a370 tauryna 283 g. Składniki analityczne: Białko surowe 31%, włókno surowe 20,5%, oleje i tłuszcze surowe 4,0%, popiół surowy 8,1%, fosfor 0,20%, sód 0,24%, potas 0,20%, magnez 3,0%.",
+   "notes_verbatim": "Składniki wyróżniające\nTauryna, koenzym Q10, rdestowiec ostrokończysty i liście drzewa oliwkowego.",
+   "variants": [
+    {
+     "title": "NUTRIKARD 40szt.",
+     "capacity": "40 tab.",
+     "page_path": "/produkty/karmy-uzupelniajace/nutrikard-40szt/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/07/Nutrikard_40tab.png",
+     "en_page_path": "/en/products/complementary-foods/nutrikard-40pcs-eng/"
+    }
+   ],
+   "related_on_site": [
+    "Amylan AD 30 tab.",
+    "hexoderm-excellence",
+    "wita-vet-complex-8g"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/nutrikard-40tab/, which is not a published Woo product (no Woo product for Nutrikard).",
+    "Page not listed on the category page /produkty/karmy-uzupelniajace/; last modified 2023-12-06.",
+    "Badge typos: \"rdestowiEc ostrokończysty\" and \"układu Sercowo - naczyniowego\".",
+    "'Zastosowanie' text lacks full stops: \"...układu sercowo - naczyniowego Dostarcza energię... Działa ochronnie na układ krążenia\".",
+    "Composition spells the olive species 'Olea europea' (correct: Olea europaea).",
+    "Subtitle uses 'Mieszanka paszowa uzupełniająca' while the rest of the category says 'Karma uzupełniająca'.",
+    "Text makes cardiovascular/medical-sounding claims for a feed (\"profilaktyce powstawania zatorów\", \"wpływa korzystnie na ciśnienie krwi\") - needs regulatory review before reuse.",
+    "Related box links old slug /produkty/karmy-uzupelniajace/wita-vet-junioradult-8g-80szt/ and legacy /hexoderm-excellence-200ml."
+   ],
+   "vet_context_verbatim": "Przy przedłużonym stosowaniu preparatu należy skorzystać z porady lekarza weterynarii."
+  },
+  {
+   "family_slug": "olej-z-lososia",
+   "name": "Olej z łososia",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WYSOKA ZAWARTOŚĆ KWASÓW OMEGA 3 I 6",
+    "ŹRÓDŁO EPA I DHA",
+    "WSPIERA SKÓRĘ, SIERŚĆ I ODPORNOŚĆ"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść",
+    "odporność",
+    "rozród/ciąża"
+   ],
+   "needs_evidence": [
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Łamliwość, matowienie sierści",
+     "source_field": "indications"
+    },
+    {
+     "need": "nadmierna utrata sierści",
+     "evidence_verbatim": "utrata włosa",
+     "source_field": "indications"
+    },
+    {
+     "need": "łupież",
+     "evidence_verbatim": "łupież",
+     "source_field": "indications"
+    },
+    {
+     "need": "sucha skóra",
+     "evidence_verbatim": "suchość skóry",
+     "source_field": "indications"
+    },
+    {
+     "need": "podrażnienia skóry",
+     "evidence_verbatim": "Podrażnienia skóry",
+     "source_field": "indications"
+    },
+    {
+     "need": "skóra wrażliwa/alergiczna",
+     "evidence_verbatim": "uczulenia, egzemy",
+     "source_field": "indications"
+    },
+    {
+     "need": "odporność",
+     "evidence_verbatim": "Zaburzenia systemu odpornościowego",
+     "source_field": "indications"
+    },
+    {
+     "need": "rozród",
+     "evidence_verbatim": "reprodukcja",
+     "source_field": "indications"
+    },
+    {
+     "need": "lśniąca, gęsta sierść",
+     "evidence_verbatim": "sierść Twojego psa lub kota staje się gęsta, sprężysta i lśniąca",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olej z łososia atlantyckiego",
+     "label_name": "OLEJ Z ŁOSOSIA ATLANTYCKIEGO",
+     "stated_function_verbatim": "Olej z łososia stanowi źródło kwasów tłuszczowych omega-3 (EPA i DHA), korzystnie wpływających na wiele procesów metabolicznych w organizmie psa i kota."
+    },
+    {
+     "name_pl": "kwas EPA",
+     "label_name": null,
+     "stated_function_verbatim": "Kwas EPA wspiera naturalne procesy zachodzące w organizmie psów i kotów"
+    },
+    {
+     "name_pl": "kwas DHA",
+     "label_name": null,
+     "stated_function_verbatim": "kwas DHA jest ważnym składnikiem błon komórkowych mózgu i siatkówki oka"
+    },
+    {
+     "name_pl": "alfa-tokoferol",
+     "label_name": "alfa-tokoferol (1b307)",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Olej z łososia stanowi źródło kwasów tłuszczowych omega-3 (EPA i DHA), korzystnie wpływających na wiele procesów metabolicznych w organizmie psa i kota. Kwas EPA wspiera naturalne procesy zachodzące w organizmie psów i kotów, natomiast kwas DHA jest ważnym składnikiem błon komórkowych mózgu i siatkówki oka. Olej z łososia wpływa na równowagę między kwasami tłuszczowymi omega-3 i omega-6 oraz znacząco obniża poziom cholesterolu we krwi. Regularne stosowanie preparatu powoduje, że sierść Twojego psa lub kota staje się gęsta, sprężysta i lśniąca. Olej z łososia jest polecany przy łamliwości i matowieniu sierści, nadmiernej utracie włosa, łupieżu, suchości skóry. Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "usage_verbatim": "Psy i koty: poniżej 5 kg: 2,5 ml / dziennie od 5 do 15kg: 5 ml / dziennie od 15 do 30 kg: 10 ml / dziennie powyżej 30 kg: 15 ml / dziennie. Jedno pełne naciśnięcie pompki dozuje 1,25 ml preparatu.\nPo otwarciu przechowywać w lodówce, w oryginalnym opakowaniu.",
+   "indications_verbatim": "Łamliwość, matowienie sierści, utrata włosa, łupież, suchość skóry. Podrażnienia skóry, uczulenia, egzemy. Zaburzenia systemu odpornościowego, reprodukcja.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: OLEJ Z ŁOSOSIA ATLANTYCKIEGO. Dodatki w 1 kg: Dodatki technologiczne – Przeciwutleniacze: alfa-tokoferol (1b307) 500 mg. Składniki analityczne: Białko surowe 0%, włókno surowe 0%, oleje i tłuszcze surowe 99%, popiół surowy 0%.",
+   "notes_verbatim": "Profil kwasów tłuszczowych\nNasycone kwasy tłuszczowe – 13,7% w tym kwas palmitynowy – 8,9% Jednonienasycone kwasy tłuszczowe – 52,7% w tym kwas oleinowy – 43,2% Wielonienasycone kwasy tłuszczowe – 33,5% w tym kwasy omega-3 – 14,5% w tym kwasy omega-6 – 17,1% w tym kwas linolowy – 14,8%",
+   "variants": [
+    {
+     "title": "Olej  łososia 200 ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/olej-z-lososia/",
+     "woo_id": 10520,
+     "woo_path": "/produkt/olej-z-lososia-200ml/",
+     "price_pln": 44.65,
+     "regular_price_pln": 44.65,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/06/Olej_z_lososia_200ml-3.png",
+     "en_page_path": "/en/products/complementary-foods/olej-z-lososia-eng/"
+    },
+    {
+     "title": "Olej  łososia 500 ml",
+     "capacity": "500 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/olej-lososia-500-ml/",
+     "woo_id": 24065,
+     "woo_path": "/produkt/olej-z-lososia-500-ml/",
+     "price_pln": 65.18,
+     "regular_price_pln": 65.18,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/06/Olej_z_lososia_500ml-5.png",
+     "en_page_path": "/en/products/complementary-foods/olej-z-lososia-500-ml/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-senior",
+    "wita-vet-siersc-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Page titles 'Olej  łososia 200 ml' / 'Olej  łososia 500 ml' are missing 'z' (double space); the 500 ml slug /olej-lososia-500-ml/ also lacks 'z' and the 200 ml slug /olej-z-lososia/ has no capacity.",
+    "Yoast meta descriptions (both pages) use older wording with stronger claims than the page: \"Kwas EPA działa przeciwzapalnie\", \"obniża poziom cholesterolu w krwi\" (page: \"Kwas EPA wspiera naturalne procesy...\").",
+    "No OPAKOWANIE section on either page (capacity only in title/H2).",
+    "Page text claims \"znacząco obniża poziom cholesterolu we krwi\" - health claim for a feed; needs regulatory review before reuse."
+   ],
+   "vet_context_verbatim": "Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną."
+  },
+  {
+   "family_slug": "wita-tonyl-gryzonie",
+   "name": "WITA-TONYL",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla królików, żółwi, kawii, chomików, myszy",
+   "badges_verbatim": [
+    "WITALNOŚĆ",
+    "WZROST",
+    "CIĄŻA"
+   ],
+   "species": [
+    "gryzonie/małe ssaki",
+    "żółwie"
+   ],
+   "species_evidence": "Dla królików, żółwi, kawii, chomików, myszy.",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża",
+    "odporność"
+   ],
+   "needs_evidence": [
+    {
+     "need": "wzrost",
+     "evidence_verbatim": "Wzrost.",
+     "source_field": "indications"
+    },
+    {
+     "need": "ciąża",
+     "evidence_verbatim": "Ciąża.",
+     "source_field": "indications"
+    },
+    {
+     "need": "laktacja",
+     "evidence_verbatim": "Laktacja.",
+     "source_field": "indications"
+    },
+    {
+     "need": "rekonwalescencja",
+     "evidence_verbatim": "Rekonwalescencja.",
+     "source_field": "indications"
+    },
+    {
+     "need": "zwierzęta starsze/przemęczone",
+     "evidence_verbatim": "Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "osłabiony apetyt",
+     "evidence_verbatim": "osłabionego apetytu",
+     "source_field": "properties"
+    },
+    {
+     "need": "witalność",
+     "evidence_verbatim": "WITALNOŚĆ",
+     "source_field": "badges"
+    },
+    {
+     "need": "odporność",
+     "evidence_verbatim": "wspomagają procesy odpornościowe w organizmie",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "hydrolizat miazgi wątrobowej",
+     "label_name": "przetworzone białko zwierzęce",
+     "stated_function_verbatim": "Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi."
+    },
+    {
+     "name_pl": "witaminy (A, D3, E, z grupy B, niacyna)",
+     "label_name": "3a672a witamina A, 3a670a witamina D3, 3a700 witamina E, 3a820 witamina B1, 3a witamina B2 (ryboflawina), 3a841 D-pantotenian wapnia, witamina B6, 3a witamina B12 (cyjanokobalamina), 3a314 niacyna",
+     "stated_function_verbatim": "Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej."
+    },
+    {
+     "name_pl": "aminokwasy (izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina)",
+     "label_name": null,
+     "stated_function_verbatim": "Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu"
+    }
+   ],
+   "properties_verbatim": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt. Jest przeznaczona do stosowania w okresie wzrostu, ciąży, laktacji. Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu. Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu. Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- króliki 3-5 kropli / dzień\n- kawie i chomiki 2 kropli / dzień\n- żółwie 1 kropla / tydzień / 100 g m.c.\n1 ml zawiera 20 kropli.\nZawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Rekonwalescencja.",
+   "intended_for_verbatim": "Dla królików, żółwi, kawii, chomików, myszy.",
+   "precautions_verbatim": "Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "composition_verbatim": "Skład (2): glikol propylenowy, przetworzone białko zwierzęce Dodatki w 1 kg (3): Dietetyczne: Witaminy: 3a672a witamina A 10 000 000 IU, 3a670a witamina D3 1 000 000 IU, 3a700 witamina E 30 000 IU, 3a820 witamina B1 1 800 mg, 3a witamina B2 (ryboflawina) 2 000 mg, 3a841 D-pantotenian wapnia 6 000 mg, E3a831 witamina B6 6 000 mg, 3a witamina B12 (cyjanokobalamina) 30 mg, 3a314 niacyna 30 000 mg. Technologiczne: Emulgatory: E484 Gliceryl polietyleno-glikol rycynolanowy 135 g. Konserwanty: E200 kwas sorbowy 1,5 g, E330 kwas cytrynowy 0,5 g. Składniki analityczne (4): białko surowe 5,6%, włókno surowe 0%, tłuszcz surowy 6,2%, popiół surowy 0,3%, wilgotność 71,6%.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-TONYL gryzonie 30ml",
+     "capacity": "30 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-tonyl-gryzonie-30ml/",
+     "woo_id": 5250,
+     "woo_path": "/produkt/wita-tonyl-30ml-gryzonie/",
+     "price_pln": 72.04,
+     "regular_price_pln": 72.04,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Wita-Tonyl_kroliki_zolwie_kawie_chomiki_myszy_30ml-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-tonyl-gryzonie-30ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-senior",
+    "olej-z-lososia",
+    "wita-vet-siersc-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "'Przeznaczenie' and subtitle list myszy, but 'stosowanie' gives no dose for mice (only króliki, kawie i chomiki, żółwie).",
+    "Grammar in dosing: \"kawie i chomiki 2 kropli / dzień\" (should be '2 krople').",
+    "Composition additive code malformed: \"E3a831 witamina B6\" (should be 3a831).",
+    "Linked from the category page and related boxes only via legacy short URL /wita-tonyl-gryzonie-30ml.",
+    "Yoast description uses older wording (\"w szczególności czynników krwiotwórczych\") than the on-page text."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-tonyl-psy-koty",
+   "name": "WITA-TONYL",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów, kotów",
+   "badges_verbatim": [
+    "WITALNOŚĆ",
+    "WZROST",
+    "CIĄŻA"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów, kotów.",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża",
+    "odporność"
+   ],
+   "needs_evidence": [
+    {
+     "need": "wzrost",
+     "evidence_verbatim": "Wzrost.",
+     "source_field": "indications"
+    },
+    {
+     "need": "ciąża",
+     "evidence_verbatim": "Ciąża.",
+     "source_field": "indications"
+    },
+    {
+     "need": "laktacja",
+     "evidence_verbatim": "Laktacja.",
+     "source_field": "indications"
+    },
+    {
+     "need": "rekonwalescencja",
+     "evidence_verbatim": "Rekonwalescencja.",
+     "source_field": "indications"
+    },
+    {
+     "need": "zwierzęta starsze/przemęczone",
+     "evidence_verbatim": "Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "osłabiony apetyt",
+     "evidence_verbatim": "osłabionego apetytu",
+     "source_field": "properties"
+    },
+    {
+     "need": "witalność",
+     "evidence_verbatim": "WITALNOŚĆ",
+     "source_field": "badges"
+    },
+    {
+     "need": "odporność",
+     "evidence_verbatim": "wspomagają procesy odpornościowe w organizmie",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "hydrolizat miazgi wątrobowej (wyciąg wątrobowy)",
+     "label_name": "przetworzone białko zwierzęce (wyciąg wątrobowy)",
+     "stated_function_verbatim": "Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi."
+    },
+    {
+     "name_pl": "witaminy (A, D3, E, z grupy B, niacyna)",
+     "label_name": "3a672a witamina A, 3a670a witamina D3, 3a700 witamina E, 3a820 witamina B1, 3a witamina B2 (ryboflawina), 3a841 D-pantotenian wapnia, witamina B6, 3a witamina B12 (cyjanokobalamina), 3a314 niacyna",
+     "stated_function_verbatim": "Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej."
+    },
+    {
+     "name_pl": "aminokwasy (izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina)",
+     "label_name": null,
+     "stated_function_verbatim": "Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu"
+    }
+   ],
+   "properties_verbatim": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt. Jest przeznaczona do stosowania w okresie wzrostu, ciąży, laktacji. Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu. Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu.. Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.\nZawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Rekonwalescencja.",
+   "intended_for_verbatim": "Dla psów, kotów.",
+   "precautions_verbatim": "Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "composition_verbatim": "Skład (2): glikol propylenowy, przetworzone białko zwierzęce (wyciąg wątrobowy). Dodatki w 1 kg (3): Dietetyczne: Witaminy: 3a672a witamina A 10 000 000 IU, 3a670a witamina D3 1 000 000 IU, 3a700 witamina E 30 000 IU, 3a820 witamina B1 1 800 mg, 3a witamina B2 (ryboflawina) 2 000 mg, 3a841 D-pantotenian wapnia 6 000 mg, E3a831 witamina B6 6 000 mg, 3a witamina B12 (cyjanokobalamina) 30 mg, 3a314 niacyna 30 000. Technologiczne: Emulgatory: E484 Gliceryl polietyleno-glikol rycynolanowy 135 g. Konserwanty: E200 kwas sorbowy 1,5 g, E330 kwas cytrynowy 0,5 g. Składniki analityczne (4): białko surowe 5,6%, włókno surowe 0%, tłuszcz surowy 6,2%, popiół surowy 0,3%, wilgotność 71,6%.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-TONYL psy,koty 30ml",
+     "capacity": "30 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-tonyl-psykoty-30ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Wita-Tonyl_psy_koty_30ml-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-tonyl-psykoty-30ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-complex-1g",
+    "wita-tonyl-gryzonie",
+    "wita-vet-complex-3-2g"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/wita-tonyl-30-ml-psy-koty, which is not a published Woo product (no Woo product for the dog/cat version).",
+    "Page not listed on the category page /produkty/karmy-uzupelniajace/; last modified 2023-12-06.",
+    "'Właściwości' text on the dog/cat product says \"potrzeb żywieniowych małych zwierząt\" (copied from the rodent version).",
+    "Double full stop \"funkcjonowanie organizmu..\" (page and Yoast).",
+    "Composition: \"3a314 niacyna 30 000\" has no unit; malformed code \"E3a831 witamina B6\".",
+    "Related box links old slugs /produkty/karmy-uzupelniajace/wita-vet-junioradult-1g-400szt/ and /wita-vet-junioradult-32g-30szt/ plus legacy /wita-tonyl-gryzonie-30ml."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-complex-1g",
+   "name": "WITA-VET Complex 1g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "Dzienna dawka witamin i minerałów",
+    "Wzrost | Praca | Witalność | Ciąża",
+    "Junior+ Adult, Ca/P 1,3"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "species_evidence": "dla psów wszystkich ras, szczeniąt i psów dorosłych",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "needs_evidence": [
+    {
+     "need": "dzienna dawka witamin i minerałów",
+     "evidence_verbatim": "Dzienna dawka witamin i minerałów",
+     "source_field": "badges"
+    },
+    {
+     "need": "wzrost",
+     "evidence_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+     "source_field": "indications"
+    },
+    {
+     "need": "witalność/kondycja",
+     "evidence_verbatim": "Zwiększa witalność i poprawia kondycję.",
+     "source_field": "properties"
+    },
+    {
+     "need": "ciąża i laktacja",
+     "evidence_verbatim": "Zalecana dla suk ciężarnych i karmiących",
+     "source_field": "properties"
+    },
+    {
+     "need": "rekonwalescencja",
+     "evidence_verbatim": "dla psów w okresie rekonwalescencji",
+     "source_field": "properties"
+    },
+    {
+     "need": "psy hodowlane/pracujące",
+     "evidence_verbatim": "psów hodowlanych, pracujących",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "fosforan dwuwapniowy",
+     "label_name": "Fosforan dwuwapniowy",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "wątroba wołowa",
+     "label_name": "przetworzone białko zwierzęce (wątroba wołowa)",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "drożdże piwne",
+     "label_name": "drożdże piwne - martwe (z Saccharomyces cerevisiae)",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "L-lizyna",
+     "label_name": "3c322 L-lizyna HCl",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "L-arginina",
+     "label_name": "3c361 L-arginina",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta 1 tab. / do 10 kg m.c. / 1 raz dziennie.\nPsy dorosłe 1 tab. / do 10 kg m.c. / 1 raz dziennie.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), tlenek magnezu. Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 2000 mg, 3a671 witamina D3 0,125 mg, 3a700 witamina E 2500 mg, 3a300 witamina C 10000 mg, 3a314 niacyna 1500 mg, 3a841 kwas pantotenowy 7500 mg, 3a820 witamina B1 750 mg, 3a witamina B2 (ryboflawina) 750 mg, 3a831 witamina B6 100 mg, 3a890 chlorek choliny 3000 mg, 3a880 D-biotyna 50 mg, 3a316 kwas foliowy 40 mg, 3a witamina B12 (cyjanokobalamina) 40,15 mg. Aminokwasy: 3c322 L-lizyna HCl 2000 mg, 3c361 L-arginina 2000 mg. Pierwiastki śladowe: 3b104 siarczan żelaza siedmiowodny 4743 mg, 3b405 siarczan miedzi pięciowodny 500 mg, 3b201 jodek potasu 4560 mg, 3b605 siarczan cynku jednowodny 250 mg, 3b502 tlenek manganu 130 mg. Składniki analityczne: Wapń 13,3 %, sód 0,2 %, fosfor 9,2 %.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET Complex 1g 80szt.",
+     "capacity": "80 tab. (1 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-1g-80szt/",
+     "woo_id": 5251,
+     "woo_path": "/produkt/wita-vet-junior-adult-1g-80szt/",
+     "price_pln": 41.96,
+     "regular_price_pln": 41.96,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_1g_80tab-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-1g-80pcs-eng/"
+    },
+    {
+     "title": "WITA-VET Complex 1g 400szt.",
+     "capacity": "400 tab. (1 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-1g-400szt/",
+     "woo_id": 5252,
+     "woo_path": "/produkt/wita-vet-junior-adult-1g-400szt/",
+     "price_pln": 136.35,
+     "regular_price_pln": 136.35,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_1g_400tab-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-1g-400pcs-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-stawy-pies",
+    "wita-tonyl-psy-koty",
+    "wita-tonyl-gryzonie"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop buttons link to /produkt/wita-vet-junior-adult-1g-80tab and /produkt/wita-vet-junior-adult-1g-400tab, which are not Woo paths (Woo 5251 /produkt/wita-vet-junior-adult-1g-80szt/, 5252 /produkt/wita-vet-junior-adult-1g-400szt/).",
+    "Woo slugs and EN page titles still use the old name 'WITA-VET junior+adult 1g' while PL pages and Woo titles say 'Complex'.",
+    "Badge formatting differs from the 3,2 g / 8 g Complex pages (mixed-case 'Junior+ Adult, Ca/P 1,3' vs upper-case 'JUNIOR + ADULT | CA/P 2').",
+    "400 tab page related box links old slug /produkty/karmy-uzupelniajace/wita-vet-junioradult-1g-80szt/ and legacy /wita-tonyl-* URLs.",
+    "Per-kg additive values differ by orders of magnitude between tablet sizes (e.g. witamina B12: 40,15 mg in 1 g, 670 mg in 3,2 g, 5000 mg in 8 g; witamina D3: 0,125 mg / 318,8 mg / 12,5 mg) - verify against the labels."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-complex-3-2g",
+   "name": "WITA-VET Complex 3,2g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+    "JUNIOR + ADULT | CA/P 2"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "species_evidence": "dla psów wszystkich ras, szczeniąt i psów dorosłych",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "needs_evidence": [
+    {
+     "need": "dzienna dawka witamin i minerałów",
+     "evidence_verbatim": "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+     "source_field": "badges"
+    },
+    {
+     "need": "wzrost",
+     "evidence_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+     "source_field": "indications"
+    },
+    {
+     "need": "witalność/kondycja",
+     "evidence_verbatim": "Zwiększa witalność i poprawia kondycję.",
+     "source_field": "properties"
+    },
+    {
+     "need": "ciąża i laktacja",
+     "evidence_verbatim": "Zalecana dla suk ciężarnych i karmiących",
+     "source_field": "properties"
+    },
+    {
+     "need": "rekonwalescencja",
+     "evidence_verbatim": "dla psów w okresie rekonwalescencji",
+     "source_field": "properties"
+    },
+    {
+     "need": "psy hodowlane/pracujące",
+     "evidence_verbatim": "psów hodowlanych, pracujących",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "fosforan dwuwapniowy",
+     "label_name": "Fosforan dwuwapniowy",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "fosforan trójwapniowy",
+     "label_name": "fosforan trójwapniowy",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "wątroba wołowa",
+     "label_name": "przetworzone białko zwierzęce (wątroba wołowa)",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "DL-metionina",
+     "label_name": "3c361 DL-metionina",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "L-lizyna",
+     "label_name": "3c322 L-lizyna HCl",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina K3",
+     "label_name": "3a710 witamina K3",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta 1 tab. / do 15-20 kg m.c. / 1 raz dziennie.\nPsy dorosłe 1 tab. / do 15-20 kg m.c. / 1 raz dziennie.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, fosforan trójwapniowy, przetworzone białko zwierzęce (wątroba wołowa), tlenek magnezu, węglan wapnia, sole kwasów tłuszczowych, sole magnezowe kwasów organicznych (stearynian magnezu). Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 831,3 mg, 3a671 witamina D3 318,8 mg, 3a700 witamina E 3080 mg, 3a710 witamina K3 1000 mg, 3a300 witamina C 1530 mg, 3a314 niacyna 1520 mg, 3a841 D-pantotenian wapnia 670 mg, 3a890 chlorek choliny 870 mg, 3a820 witamina B1 246,9 mg, 3a witamina B2 185 mg, 3a831 witamina B6 50 mg, 3a880 biotyna 13,1 mg, 3a witamina B12 670 mg. Aminokwasy: 3c361 DL-metionina 6500 mg, 3c322 L-lizyna HCl 1080 mg. Pierwiastki śladowe: 3b103 siarczan żelaza jednowodny 408,8 mg, 3b405 siarczan miedzi pięciowodny 12,5 mg, 3b201 jodan potasu 32,8 mg, 3b605 siarczan cynku jednowodny 77,2 mg, 3b502 tlenek manganu 40 mg. Składniki analityczne: Wapń 28,1 %, sód 0,1 %, fosfor 9,9 %.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET Complex 3,2g 30szt.",
+     "capacity": "30 tab. (3,2 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-32g-30szt/",
+     "woo_id": 5254,
+     "woo_path": "/produkt/wita-vet-complex-3g-30-tab-witaminy-dla-psow/",
+     "price_pln": 41.94,
+     "regular_price_pln": 41.94,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/11/Wita-Vet_Pies_COMPLEX_32g_30tab-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-32g-30pcs-eng/"
+    },
+    {
+     "title": "WITA-VET Complex 3,2g 100szt.",
+     "capacity": "100 tab. (3,2 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-32g-100szt/",
+     "woo_id": 5255,
+     "woo_path": "/produkt/wita-vet-junior-adult-32g-100szt-witaminy-dla-psow/",
+     "price_pln": 105.96,
+     "regular_price_pln": 105.96,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/11/Wita-Vet_Pies_COMPLEX_32g_100tab-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-32g-100pcs-eng/"
+    }
+   ],
+   "related_on_site": [
+    "milvet",
+    "wita-vet-stawy-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "3,2g 100 tab page: OPAKOWANIE says \"Opakowanie zawiera: 30 tab. Masa netto: 96g.\" (copied from the 30 tab page).",
+    "Composition lists \"3c361 DL-metionina\" - 3c361 is the code used for L-arginina on the other Wita-Vet pages (DL-metionina is 3c301 elsewhere).",
+    "Shop buttons link to /produkt/wita-vet-junior-adult-32g-30tab and -32g-100tab, which are not Woo paths (Woo 5254 /produkt/wita-vet-complex-3g-30-tab-witaminy-dla-psow/, 5255 /produkt/wita-vet-junior-adult-32g-100szt-witaminy-dla-psow/).",
+    "Woo slug for 30 tab says '3g' (/produkt/wita-vet-complex-3g-30-tab-...) instead of 3,2 g.",
+    "Several other pages link this product via old slugs /produkty/karmy-uzupelniajace/wita-vet-junioradult-32g-30szt/ and -32g-100szt/.",
+    "Per-kg additive values differ by orders of magnitude between tablet sizes (e.g. witamina B12: 40,15 mg in 1 g, 670 mg in 3,2 g, 5000 mg in 8 g; witamina D3: 0,125 mg / 318,8 mg / 12,5 mg) - verify against the labels."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-complex-8g",
+   "name": "WITA-VET Complex 8g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+    "JUNIOR + ADULT | CA/P 2"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "species_evidence": "dla psów wszystkich ras, szczeniąt i psów dorosłych",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "needs_evidence": [
+    {
+     "need": "dzienna dawka witamin i minerałów",
+     "evidence_verbatim": "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+     "source_field": "badges"
+    },
+    {
+     "need": "wzrost",
+     "evidence_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+     "source_field": "indications"
+    },
+    {
+     "need": "witalność/kondycja",
+     "evidence_verbatim": "Zwiększa witalność i poprawia kondycję.",
+     "source_field": "properties"
+    },
+    {
+     "need": "ciąża i laktacja",
+     "evidence_verbatim": "Zalecana dla suk ciężarnych i karmiących",
+     "source_field": "properties"
+    },
+    {
+     "need": "rekonwalescencja",
+     "evidence_verbatim": "dla psów w okresie rekonwalescencji",
+     "source_field": "properties"
+    },
+    {
+     "need": "psy hodowlane/pracujące",
+     "evidence_verbatim": "psów hodowlanych, pracujących",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "fosforan dwuwapniowy",
+     "label_name": "fosforan dwuwapniowy",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "wątroba wołowa",
+     "label_name": "przetworzone białko zwierzęce (wątroba wołowa)",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "drożdże piwne",
+     "label_name": "drożdże piwne - martwe (z Saccharomyces cerevisiae)",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "L-lizyna",
+     "label_name": "3c322 L-lizyna HCl",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "L-arginina",
+     "label_name": "3c361 L-arginina",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta: 1 tab./do 20kg m.c./1 raz dziennie.\nPsy dorosłe: 1 tab./ 40kg m.c./1 raz dziennie",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: fosforan dwuwapniowy, przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), węglan wapnia, tlenek magnezu. Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 68,8 mg, 3a671 witamina D3 12,5 mg, 3a700 witamina E 2500 mg, 3a300 witamina C 2000 mg, 3a314 niacyna 1500 mg, 3a841 kwas pantotenowy 1000 mg, 3a820 witamina B1 150 mg, 3a witamina B2 (ryboflawina) 150 mg, 3a831 witamina B6 20 mg, 3a890 chlorek choliny 600 mg, 3a880 D-biotyna 10 mg, 3a316 kwas foliowy 8 mg, 3a witamina B12 (cyjanokobalamina) 5000 mg. Aminokwasy: 3c322 L-lizyna HCl 400 mg, 3c361 L-arginina 400 mg. Pierwiastki śladowe: 3b104 siarczan żelaza siedmiowodny 327 mg, 3b405 siarczan miedzi pięciowodny 50 mg, 3b201 jodek potasu 10,6 mg, 3b605 siarczan cynku jednowodny 20 mg, 3b502 tlenek manganu 18 mg. Składniki analityczne: Wapń 21,0 %, sód 0,1 %, fosfor 10,7 %.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET Complex 8g 30szt.",
+     "capacity": "30 tab. (8 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-8g-30szt/",
+     "woo_id": 5256,
+     "woo_path": "/produkt/wita-vet-complex-8g-30-tab-witaminy-dla-psow/",
+     "price_pln": 63.75,
+     "regular_price_pln": 63.75,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_8g_30tab-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-8g-30pcs-eng/"
+    },
+    {
+     "title": "WITA-VET Complex 8g 80szt.",
+     "capacity": "80 tab. (8 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-8g-80szt/",
+     "woo_id": 5257,
+     "woo_path": "/produkt/wita-vet-complex-8g-80-tab-witaminy-dla-psow/",
+     "price_pln": 119.75,
+     "regular_price_pln": 119.75,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_COMPLEX_8g_80tab-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-8g-80pcs-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-senior",
+    "wita-vet-siersc-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Dosing line for adults is missing 'do': \"Psy dorosłe: 1 tab./ 40kg m.c./1 raz dziennie\" (puppies: 'do 20kg').",
+    "Page says 'dla psów wszystkich ras' but related-product cards elsewhere describe it as 'Karma uzupełniająca dla psów dużych ras'.",
+    "Shop buttons link to /produkt/wita-vet-junior-adult-8g-30tab and -8g-80tab, which are not Woo paths (Woo 5256 /produkt/wita-vet-complex-8g-30-tab-witaminy-dla-psow/, 5257 /produkt/wita-vet-complex-8g-80-tab-witaminy-dla-psow/).",
+    "Other pages link this product via old slugs /produkty/karmy-uzupelniajace/wita-vet-junioradult-8g-30szt/ and -8g-80szt/.",
+    "Per-kg additive values differ by orders of magnitude between tablet sizes (e.g. witamina B12: 40,15 mg in 1 g, 670 mg in 3,2 g, 5000 mg in 8 g; witamina D3: 0,125 mg / 318,8 mg / 12,5 mg) - verify against the labels."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-energia-kot",
+   "name": "WITA-VET ENERGIA",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST",
+    "WITALNOŚĆ",
+    "CIĄŻA",
+    "LAKTACJA"
+   ],
+   "species": [
+    "kot",
+    "kocię"
+   ],
+   "species_evidence": "Karma uzupełniająca przeznaczona dla kociąt, kotek ciężarnych i karmiących, kotów dorosłych",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "needs_evidence": [
+    {
+     "need": "dzienna dawka witamin i minerałów",
+     "evidence_verbatim": "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+     "source_field": "badges"
+    },
+    {
+     "need": "wzrost kociąt",
+     "evidence_verbatim": "WZROST | WITALNOŚĆ | CIĄŻA | LAKTACJA",
+     "source_field": "indications"
+    },
+    {
+     "need": "ciąża i laktacja",
+     "evidence_verbatim": "kotek ciężarnych i karmiących",
+     "source_field": "properties"
+    },
+    {
+     "need": "spadek formy",
+     "evidence_verbatim": "kotów dorosłych wykazujących spadek formy",
+     "source_field": "properties"
+    },
+    {
+     "need": "osłabiony apetyt",
+     "evidence_verbatim": "osłabienie apetytu",
+     "source_field": "properties"
+    },
+    {
+     "need": "nieodpowiednie żywienie",
+     "evidence_verbatim": "żywionych nieodpowiednią karmą",
+     "source_field": "properties"
+    },
+    {
+     "need": "witalność/kondycja",
+     "evidence_verbatim": "Zwiększa witalność i poprawia kondycję.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "tauryna",
+     "label_name": "3a370 tauryna",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "wątroba wołowa",
+     "label_name": "przetworzone białko zwierzęce (wątroba wołowa)",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "drożdże piwne",
+     "label_name": "drożdże piwne - martwe (z Saccharomyces cerevisiae)",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "L-lizyna",
+     "label_name": "3c322 L-lizyna HCl",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "L-arginina",
+     "label_name": "3c361 L-arginina",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla kociąt, kotek ciężarnych i karmiących, kotów dorosłych wykazujących spadek formy, osłabienie apetytu lub żywionych nieodpowiednią karmą. Zwiększa witalność i poprawia kondycję. Korzystnie wpływa na przemiany energetyczne, mineralizację kości Produkt wyjątkowo smaczny, chętnie przyjmowany przez zwierzęta.",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą.\nKocięta | Do 3 miesiąca | 1 tab./dzień\nDo 10 miesiąca | 2 tab./dzień\nKotki ciężarne lub w okresie laktacji | 2 tab./dzień\nKoty dorosłe (m.c. poniżej 4 kg) | 1 tab. / dzień\nKoty dorosłe (m.c. powyżej 4 kg) | 2 tab. / dzień",
+   "indications_verbatim": "WZROST | WITALNOŚĆ | CIĄŻA | LAKTACJA",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), tlenek magnezu. Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 1846 mg, 3a671 witamina D3 0,1281 mg, 3a700 witamina E 2308 mg, 3a300 witamina C 9230,8 mg, 3a315 niacynamid 0,0069 mg, 3a841 kwas pantotenowy 4615 mg, 3a820 witamina B1 692 mg, 3a825iii witamina B2 (ryboflawina) 692 mg, 3a831 witamina B6 923 mg, 3a890 chlorek choliny 2769 mg, 3a880 D-biotyna 46 mg, 3a316 kwas foliowy 36,9 mg, 3a835 witamina B12 (cyjanokobalamina) 15,3 g, 3a370 tauryna 77 g. Aminokwasy: 3c322 L-lizyna HCl 1846 mg, 3c361 L-arginina 1846 mg. Pierwiastki śladowe: 3b103 siarczan żelaza jednowodny 960 mg, 3b405 siarczan miedzi pięciowodny 220 mg, 3b202 jodan wapnia 120,7 mg, 3b605 siarczan cynku jednowodny 90 mg, 3b502 tlenek manganu 80 mg. Składniki analityczne: Białko surowe 31,0 %, włókno surowe 3,5 %, tłuszcz surowy 3,0 %, popiół surowy 34,0 %.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET KOT junior+adult energia 0,195g 30szt.",
+     "capacity": "30 tab. (0,195 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-kot-junioradult-energia-0195g-30szt/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-vet_Kot_ENERGIA_195mg_30tab_op-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-kot-junioradult-energia-0195g-30pcs-eng/"
+    },
+    {
+     "title": "WITA-VET junior+adult kot ENERGIA 24szt.",
+     "capacity": "30 tab. (tytuł strony: 24szt.)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-junioradult-kot-energia-24szt/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/06/Wita-Vet_kot_energia_30tab-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-kot-energia-24pcs-eng/"
+    },
+    {
+     "title": "WITA-VET ENERGIA Kot 60 tab. 5 blistrów",
+     "capacity": "60 tab. (5 blistrów, 0,195 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-energia-kot-60-tab-5-blistrow/",
+     "woo_id": 16715,
+     "woo_path": "/produkt/wita-vet-energia-kot-60-tab-5-blistrow-witaminy-dla-kotow/",
+     "price_pln": 53.73,
+     "regular_price_pln": 53.73,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/09/Wita-Vet_energia_5_blistrow_bcblister.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-energia-kot-60-tab-5-blistrow-eng/"
+    },
+    {
+     "title": "WITA-VET ENERGIA Kot 120 tab. 10 blistrów",
+     "capacity": "120 tab. (10 blistrów, 0,195 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-energia-kot-120-tab-10-blistrow/",
+     "woo_id": 16718,
+     "woo_path": "/produkt/wita-vet-energia-kot-120-tab-10-blistrow-witaminy-dla-kotow/",
+     "price_pln": 66.25,
+     "regular_price_pln": 66.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/09/Wita-Vet_energia_10_blistrow_bcblister.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-energia-kot-120-tab-10-blistrow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-siersc-kot",
+    "wita-vet-stawy-kot",
+    "kp-szampon-dla-kotow",
+    "wita-vet-siersc-krople",
+    "wita-tonyl-psy-koty"
+   ],
+   "documents": [],
+   "data_issues": [
+    "60 tab page composition has malformed additive codes (\"3.2.3 L-lizyna HCl\", \"3c3.6.1 L-arginina\", \"E4 siarczan miedzi\") while the 120 tab page uses 3c322 / 3c361 / 3b405.",
+    "120 tab page: \"Masa netto całościowa: 23.4 g\" (decimal point instead of comma).",
+    "'Właściwości' text missing a full stop: \"mineralizację kości Produkt wyjątkowo smaczny\" (all versions).",
+    "Shop buttons link to /produkt/wita-vet-energia-kot-60-tab-5-blistrow/ and /produkt/wita-vet-energia-kot-120-tab-10-blistrow/, which differ from the Woo paths (16715 .../wita-vet-energia-kot-60-tab-5-blistrow-witaminy-dla-kotow/, 16718 .../wita-vet-energia-kot-120-tab-10-blistrow-witaminy-dla-kotow/).",
+    "Two legacy pages still published but not listed on the category page: 'WITA-VET KOT junior+adult energia 0,195g 30szt.' (2022) and 'WITA-VET junior+adult kot ENERGIA 24szt.' (2020); both shop buttons point to /produkt/wita-vet-junior-adult-energia-30tab/, which is not a Woo product.",
+    "Legacy 24szt page: title says 24szt but H2 and OPAKOWANIE say 30; it calls the product 'Mieszanka paszowa uzupełniająca' and gives different dosing (\"Kotki ciężarne: 1 szt. rano i wieczorem (z wyjątkiem ostatniego tyg. ciąży)\", \"Kotki karmiące w okresie laktacji: 2 szt. rano i wieczorem\", adults \"przez 7-14 dni w miesiącu\") - conflicts with the current daily dosing.",
+    "Legacy 0,195g 30szt page Yoast description is for a dog product (\"WITA-VET Ca/P=1,3 jest karmą uzupełniającą, przeznaczoną dla psów...\")."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-siersc-kot",
+   "name": "WITA-VET SIERŚĆ",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "OGRANICZA LINIENIE",
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "species": [
+    "kot"
+   ],
+   "species_evidence": "Dla kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "linienie",
+     "evidence_verbatim": "do stosowania w okresie linienia",
+     "source_field": "properties"
+    },
+    {
+     "need": "sucha/uszkodzona sierść",
+     "evidence_verbatim": "przy sierści suchej i uszkodzonej",
+     "source_field": "properties"
+    },
+    {
+     "need": "przygotowanie do wystaw",
+     "evidence_verbatim": "podczas przygotowywania zwierząt do wystaw",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Składniki karmy przywracają elastyczność skóry, połysk, barwę i sprężystość sierści.",
+     "source_field": "properties"
+    },
+    {
+     "need": "regulacja pracy gruczołów łojowych",
+     "evidence_verbatim": "Regulują pracę gruczołów łojowych",
+     "source_field": "properties"
+    },
+    {
+     "need": "sucha skóra",
+     "evidence_verbatim": "ułatwiają utrzymanie nawilżenia skóry",
+     "source_field": "properties"
+    },
+    {
+     "need": "ograniczenie linienia / lśniąca sierść / zdrowa skóra",
+     "evidence_verbatim": "OGRANICZA LINIENIE | LŚNIĄCA SIERŚĆ | ZDROWA SKÓRA",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "biotyna",
+     "label_name": "3a880 biotyna",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "siarczan cynku",
+     "label_name": "3b605 siarczan cynku jednowodny",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "tauryna",
+     "label_name": "3a370 tauryna",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "DL-metionina",
+     "label_name": "3c301 DL-metionina",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "3a700 witamina E",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "lecytyna sojowa",
+     "label_name": "lecytyna surowa (sojowa)",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla kotów do stosowania w okresie linienia, przy sierści suchej i uszkodzonej oraz podczas przygotowywania zwierząt do wystaw. Składniki karmy przywracają elastyczność skóry, połysk, barwę i sprężystość sierści. Regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. Produkt wyjątkowo smaczny, chętnie przyjmowany przez zwierzęta",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą.\nKoty o m.c. do 4kg – 1 tabl. / 1 raz dziennie.\nKoty o m.c. powyżej 4kg – 2 tab. / 1 raz dziennie.\nPodczas przygotowywania kotów do wystaw rozpocząć stosowanie na 3 tyg. przed planowanym pokazem. Stosować aż do uzyskania prawidłowego stanu sierści i skóry. Podawać bezpośrednio lub wymieszać z karmą.",
+   "indications_verbatim": "OGRANICZA LINIENIE | LŚNIĄCA SIERŚĆ | ZDROWA SKÓRA",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), lecytyna surowa (sojowa). Dodatki w 1 kg: Witaminy: 3a672a witamina A 103 mg, 3a700 witamina E 30 g, 3a825iii witamina B2 3 g, 3a841 D-pantotenian wapnia 3 g, 3a315 niacynamid 30 g, 3a831 witamina B6 3,6 g, 3a880 biotyna 77 mg, 3a370 tauryna 12,5 g. Aminokwasy: 3c301 DL-metionina 50 mg. Pierwiastki śladowe: 3b605 siarczan cynku jednowodny 27,6 g, 3b201 jodek potasu 277 mg, 3b405 siarczan miedzi(II) pięciowodny 2,7 g. Technologiczne: spoiwo - krzemionka Składniki analityczne: Białko surowe 34,0 %, włókno surowe 1,0 %, tłuszcz surowy 11,0 %, popiół surowy 9,0 %.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET kot SIERŚĆ 30szt.",
+     "capacity": "30 tab. (OPAKOWANIE: 24 tab.)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-kot-siersc-30szt/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-vet_Kot_SIERSC_195mg_30tab_op-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-kot-siersc-30pcs-eng/"
+    },
+    {
+     "title": "WITA-VET junior+adult kot SIERŚĆ 24szt.",
+     "capacity": "30 szt. (tytuł strony: 24szt.)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-junioradult-kot-siersc-24szt/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/06/Wita-Vet_kot_siersc_30tab-3.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-kot-siersc-24pcs-eng/"
+    },
+    {
+     "title": "WITA-VET SIERŚĆ Kot 60 tab. 5 blistrów",
+     "capacity": "60 tab. (5 blistrów, 0,195 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-kot-60-tab-5-blistrow/",
+     "woo_id": 16722,
+     "woo_path": "/produkt/wita-vet-siersc-kot-60-tab-5-blistrow-witaminy-na-siersc-dla-kotow/",
+     "price_pln": 53.73,
+     "regular_price_pln": 53.73,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/09/Wita-Vet_siersc_5_blistrow_bcblister-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-siersc-kot-60-tab-5-blistrow-eng/"
+    },
+    {
+     "title": "WITA-VET SIERŚĆ Kot 120 tab. 10 blistrów",
+     "capacity": "120 tab. (10 blistrów, 0,195 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-kot-120-tab-10-blistrow/",
+     "woo_id": 16719,
+     "woo_path": "/produkt/wita-vet-siersc-kot-120-tab-10-blistrow/",
+     "price_pln": 66.25,
+     "regular_price_pln": 66.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/09/Wita-Vet_siersc_10_blistrow_bcblister-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-siersc-kot-120-tab-10-blistrow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-energia-kot",
+    "wita-vet-stawy-kot",
+    "kp-szampon-dla-kotow",
+    "wita-tonyl-psy-koty",
+    "efaderm-e-kapsulki-kot"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Current composition (60/120 tab) differs from the legacy 30szt/24szt pages (e.g. 'witamina E 30 g' vs '15000 IU', 'DL-metionina 50 mg' vs '50000 mg', 'jodek potasu 277 mg' vs 'jodan wapnia 308 mg') - verify which values are on the current label.",
+    "Composition missing a full stop: \"spoiwo - krzemionka Składniki analityczne\"; 'Właściwości' text ends without a full stop.",
+    "60 tab page shop button links to /produkt/wita-vet-siersc-kot-60-tab-5-blistrow/, which differs from the Woo path (16722 /produkt/wita-vet-siersc-kot-60-tab-5-blistrow-witaminy-na-siersc-dla-kotow/).",
+    "Legacy page 'WITA-VET kot SIERŚĆ 30szt.' (2022): title and H2 say 30 tab. but OPAKOWANIE says 24 tab.",
+    "Legacy page 'WITA-VET junior+adult kot SIERŚĆ 24szt.' (2020): title says 24szt but H2/OPAKOWANIE say 30 szt.; badge typo 'ZDROWA SKRÓRA'; 'Mieszanka paszowa uzupełniająca'; dosing 'przez 8-10 dni w miesiącu' conflicts with current daily dosing.",
+    "Both legacy pages are not listed on the category page and their shop buttons point to /produkt/wita-vet-siersc-30tab/, which is not a Woo product."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-siersc-pies",
+   "name": "WITA-VET sierść 2g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "OGRANICZA LINIENIE",
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "species_evidence": "dla psów wszystkich ras, szczeniąt i psów dorosłych",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "linienie",
+     "evidence_verbatim": "Ogranicza linienie.",
+     "source_field": "properties"
+    },
+    {
+     "need": "sucha/matowa/uszkodzona sierść",
+     "evidence_verbatim": "Zalecana w przypadku sierści suchej, matowej i uszkodzonej.",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Składniki karmy ułatwiają przywrócenie jędrności skóry, połysku, barwy i sprężystości sierści.",
+     "source_field": "properties"
+    },
+    {
+     "need": "regulacja pracy gruczołów łojowych",
+     "evidence_verbatim": "Regulują pracę gruczołów łojowych",
+     "source_field": "properties"
+    },
+    {
+     "need": "sucha skóra",
+     "evidence_verbatim": "ułatwiają utrzymanie nawilżenia skóry",
+     "source_field": "properties"
+    },
+    {
+     "need": "przygotowanie do wystaw",
+     "evidence_verbatim": "Podczas przygotowywania psów do wystaw należy rozpocząć stosowanie preparatu na 3 tygodnie przed pokazem.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "L-cystyna",
+     "label_name": "3c391 L-cystyna",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "biotyna",
+     "label_name": "3a880 D-biotyna",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "siarczan cynku",
+     "label_name": "3b605 siarczan cynku jednowodny",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "3a700 witamina E",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "lecytyna sojowa",
+     "label_name": "lecytyna sojowa",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca – mineralna polecana do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Ogranicza linienie. Zalecana w przypadku sierści suchej, matowej i uszkodzonej. Składniki karmy ułatwiają przywrócenie jędrności skóry, połysku, barwy i sprężystości sierści. Regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. Podczas przygotowywania psów do wystaw należy rozpocząć stosowanie preparatu na 3 tygodnie przed pokazem.",
+   "usage_verbatim": "1 tab./ do 10kg m.c. / 1 raz dziennie",
+   "indications_verbatim": "OGRANICZA LINIENIE | LŚNIĄCA SIERŚĆ | ZDROWA SKÓRA",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, przetworzone białko zwierzęce (sproszkowana wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), lecytyna sojowa, sole magnezowe kwasów organicznych (stearynian magnezu). Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 1040 mg, 3a700 witamina E 19180 mg, 3a314 niacyna 5230 mg, 3a841 D-pantotenian wapnia 4795 mg, 3a witamina B2 (ryboflawina) 520 mg, 3a831 witamina B6 260 mg, 3a880 D-biotyna 218 mg, Aminokwasy: 3c391 L-cystyna 29000 mg. Pierwiastki śladowe: 3b405 siarczan miedzi pięciowodny 50 mg, 3b201 jodek potasu 47 mg, 3b605 siarczan cynku jednowodny 5300 mg. Składniki analityczne: Wapń 14,5 %, sód 0,1 %, fosfor 10,9 %.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET sierść 2g 30szt.",
+     "capacity": "30 tab. (2 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-2g-30szt/",
+     "woo_id": 8059,
+     "woo_path": "/produkt/wita-vet-siersc-2g-30szt-witaminy-dla-psow/",
+     "price_pln": 38.74,
+     "regular_price_pln": 38.74,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_SIERSC_2g_30tab-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-fur-2g-30pcs/"
+    },
+    {
+     "title": "WITA-VET sierść 2g 100szt.",
+     "capacity": "100 tab. (2 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-2g-100szt/",
+     "woo_id": 8060,
+     "woo_path": "/produkt/wita-vet-siersc-2g-100szt-witaminy-dla-psow/",
+     "price_pln": 74.18,
+     "regular_price_pln": 74.18,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_SIERSC_2g_100tab-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-fur-2g-100pcs-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-complex-3-2g",
+    "wita-vet-complex-8g"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop buttons link to /produkt/wita-vet-siersc-2g-30tab/ and /produkt/wita-vet-siersc-2g-100tab/, which are not Woo paths (Woo 8059 /produkt/wita-vet-siersc-2g-30szt-witaminy-dla-psow/, 8060 /produkt/wita-vet-siersc-2g-100szt-witaminy-dla-psow/).",
+    "Woo 8059 and 8060 Yoast descriptions start with a typo: \"KDZIENNA DAWKA WITAMIN I MINERAŁÓW\".",
+    "Composition punctuation: \"3a880 D-biotyna 218 mg, Aminokwasy:\" (comma instead of full stop).",
+    "Related boxes link old slugs /produkty/karmy-uzupelniajace/wita-vet-junioradult-32g-100szt/, -8g-30szt/, -8g-80szt/.",
+    "EN slug inconsistency: /wita-vet-fur-2g-30pcs/ (no '-eng') vs /wita-vet-fur-2g-100pcs-eng/."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-siersc-krople",
+   "name": "WITA-VET sierść",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [
+    {
+     "need": "sucha/matowa/uszkodzona sierść",
+     "evidence_verbatim": "polecana jest w przypadku sierści suchej, matowej i uszkodzonej",
+     "source_field": "properties"
+    },
+    {
+     "need": "linienie",
+     "evidence_verbatim": "w czasie linienia",
+     "source_field": "properties"
+    },
+    {
+     "need": "przygotowanie do wystaw",
+     "evidence_verbatim": "przygotowywania zwierząt do wystaw",
+     "source_field": "properties"
+    },
+    {
+     "need": "kondycja sierści",
+     "evidence_verbatim": "Składniki karmy ułatwiają przywrócenie sprężystości skóry, połysku i barwy sierści",
+     "source_field": "properties"
+    },
+    {
+     "need": "regulacja pracy gruczołów łojowych",
+     "evidence_verbatim": "regulują pracę gruczołów łojowych",
+     "source_field": "properties"
+    },
+    {
+     "need": "sucha skóra",
+     "evidence_verbatim": "ułatwiają utrzymanie nawilżenia skóry",
+     "source_field": "properties"
+    },
+    {
+     "need": "wypadanie sierści",
+     "evidence_verbatim": "spowalnia jej wypadanie",
+     "source_field": "properties"
+    },
+    {
+     "need": "kolor sierści",
+     "evidence_verbatim": "Miedź bierze udział w produkcji melaniny – pigmentu, który odpowiada za kolor sierści i skóry.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "witamina E",
+     "label_name": "3a700 witamina E",
+     "stated_function_verbatim": "Witamina E posiada właściwości antyoksydacyjne, które chronią sierść przed zniszczeniem i niekorzystnym działaniem czynników zewnętrznych."
+    },
+    {
+     "name_pl": "miedź",
+     "label_name": "3b401 dioctan miedzi(II) jednowodny",
+     "stated_function_verbatim": "Miedź bierze udział w produkcji melaniny – pigmentu, który odpowiada za kolor sierści i skóry."
+    },
+    {
+     "name_pl": "biotyna",
+     "label_name": "3a880 biotyna",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "octan cynku",
+     "label_name": "3b601 octan cynku dwuwodny",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "niacynamid",
+     "label_name": "3a315 niacynamid",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "WITA-VET sierść polecana jest w przypadku sierści suchej, matowej i uszkodzonej, w czasie linienia oraz przygotowywania zwierząt do wystaw. Składniki karmy ułatwiają przywrócenie sprężystości skóry, połysku i barwy sierści, regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. sprawdzony skład wzbogacony teraz w Witaminę E i Miedź. Witamina E posiada właściwości antyoksydacyjne, które chronią sierść przed zniszczeniem i niekorzystnym działaniem czynników zewnętrznych. Główny składnik tej witaminy, tokoferol, wzmacnia również naczynia krwionośne, poprawiając w ten sposób ukrwienie skóry. Przyspiesza to wchłanianie substancji odżywczych do mieszków włosowych, tworząc idealne warunki do szybkiego wzrostu sierści, a także spowalnia jej wypadanie. Miedź bierze udział w produkcji melaniny – pigmentu, który odpowiada za kolor sierści i skóry. Dzięki miedzi nie dochodzi do przedwczesnego siwienia. odpowiedni poziom miedzi w organizmie jest potrzebny do Prawidłowego formowania się łodygi włosa. Dzięki temu sierść jest sprężysta i mocna. Niedobór miedzi prowadzi do osłabienia i rozdwajania się końcówek włosa.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.",
+   "indications_verbatim": "Lśniąca sierść. Zdrowa skóra.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Woda, glikol propylenowy, gliceryna. Dodatki w 1 kg: Witaminy: 3a672b witamina A 800 000 UI, 3a700 witamina E 20 g, 3a481 D-pantotenian wapnia 8 g, 3a831 witamina B6 4 g, 3a880 biotyna 500 mg, 3a315 niacynamid 8 g. Pierwiastki śladowe: 3b401 dioctan miedzi(II) jednowodny 100 mg, 3b601 octan cynku dwuwodny 3000 mg. Składniki analityczne: białko surowe 1,7 %, włókno surowe 0 %, tłuszcz surowy 2,7 %, popiół surowy 0,4 %, wilgotność 87 %.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET sierść krople 25ml",
+     "capacity": "25 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-krople-25ml/",
+     "woo_id": 5259,
+     "woo_path": "/produkt/wita-vet-siersc-25ml-witaminy-dla-psow-i-kotow/",
+     "price_pln": 37.34,
+     "regular_price_pln": 37.34,
+     "in_stock": false,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Wita-Vet_Siersc_krople_25ml-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-siersc-krople-25ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "efaderm-e-kapsulki-pies",
+    "efaderm-e-plyn-kot",
+    "efaderm-e-plyn-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Woo product 5259 'WITA-VET SIERŚĆ 25ml' is out of stock ('Brak w magazynie').",
+    "Shop button links to /produkt/wita-vet-siersc-25ml, which is not the Woo path (5259 /produkt/wita-vet-siersc-25ml-witaminy-dla-psow-i-kotow/).",
+    "'Właściwości' text has sentences starting lowercase (\"sprawdzony skład...\", \"odpowiedni poziom miedzi...\") and a mid-sentence capital (\"do Prawidłowego formowania\"); the same errors are copied into the Yoast description.",
+    "Composition: additive code '3a481 D-pantotenian wapnia' (elsewhere 3a841) and unit 'UI' instead of 'IU'.",
+    "Text claims vitamin E 'wzmacnia również naczynia krwionośne' and copper prevents 'przedwczesnego siwienia' - claims to review before reuse."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-junior-adult-krople",
+   "name": "WITA-VET junior + adult",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WZROST",
+    "CIĄŻA",
+    "LAKTACJA",
+    "WITALNOŚĆ"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "szczenię"
+   ],
+   "species_evidence": "Dla psów i kotów. | Karma uzupełniająca dla szczeniąt, suk i kotek ciężarnych, karmiących",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "needs_evidence": [
+    {
+     "need": "wzrost",
+     "evidence_verbatim": "Wzrost.",
+     "source_field": "indications"
+    },
+    {
+     "need": "ciąża",
+     "evidence_verbatim": "Ciąża.",
+     "source_field": "indications"
+    },
+    {
+     "need": "laktacja",
+     "evidence_verbatim": "Laktacja.",
+     "source_field": "indications"
+    },
+    {
+     "need": "witalność",
+     "evidence_verbatim": "Witalność.",
+     "source_field": "indications"
+    },
+    {
+     "need": "rekonwalescencja",
+     "evidence_verbatim": "dla psów w okresie rekonwalescencji",
+     "source_field": "properties"
+    },
+    {
+     "need": "psy hodowlane/wystawowe",
+     "evidence_verbatim": "psów hodowlanych, wystawowych",
+     "source_field": "properties"
+    },
+    {
+     "need": "wysiłek fizyczny",
+     "evidence_verbatim": "dla zwierząt narażonych na wysiłek fizyczny",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "acetylometionina",
+     "label_name": "acetylometionina",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "glukonian magnezu",
+     "label_name": "glukonian magnezu",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina B1",
+     "label_name": "3a820 witamina B1",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina B12",
+     "label_name": "3a835 witamina B12",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "witamina C",
+     "label_name": "3a300 witamina C",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca dla szczeniąt, suk i kotek ciężarnych, karmiących, dla psów w okresie rekonwalescencji, psów hodowlanych, wystawowych oraz dla zwierząt narażonych na wysiłek fizyczny.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Witalność.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: glikol propylenowy, acetylometionina, glukonian magnezu, chlorek sodu, Dodatki w 1 kg: Witaminy: 3a672a witamina A 270 mg , 3a671 witamina D3 50 mg , 3a700 witamina E 10 mg, 3a820 witamina B1 3,7 g, 3a witamina B2 350 mg, 3a831 witamina B6 2,4 g, 3a835 witamina B12 50 mg, 3a314 niacyna 6 g, 3a710 witamina K3 3 g, 3a880 biotyna 10 mg, 3a841 D-pantotenian wapnia 10,3 mg, 3a300 witamina C 2,5 g, 3a890 chlorek choliny 6 g Pierwiastki śladowe: 3b102 żelazo (chlorek żelaza) 125 mg, 3b403 miedź (chlorek miedziowy) 140 mg, 3b501 mangan (chlorek manganowy ) 123 mg Składniki analityczne: białko surowe 1,4 %, włókno surowe 0, 0 %, tłuszcz surowy 0,0%, popiół surowy 0,2 %, wilgotność 86 %",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET junior+adult krople 25ml",
+     "capacity": "25 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-junioradult-krople-25ml/",
+     "woo_id": 5253,
+     "woo_path": "/produkt/wita-vet-junior-adult-25ml/",
+     "price_pln": 32.28,
+     "regular_price_pln": 32.28,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Wita-Vet_Junior_Adult_krople_25ml-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-junioradult-krople-25ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "olej-z-lososia",
+    "wita-tonyl-gryzonie",
+    "wita-vet-complex-1g"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Composition punctuation/typos: \"chlorek sodu, Dodatki w 1 kg\", missing full stops before 'Pierwiastki śladowe' and 'Składniki analityczne', \"włókno surowe 0, 0 %\".",
+    "Related box links old slug /produkty/karmy-uzupelniajace/wita-vet-junioradult-1g-80szt/ and legacy /wita-tonyl-gryzonie-30ml.",
+    "Category-page card label is 'Wita-Vet junior+adult 25ml' while the page H1 is 'WITA-VET junior + adult' and Woo is 'WITA-VET JUNIOR + ADULT 25ml' (naming inconsistent with the 'Complex' rename of the tablets)."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-senior",
+   "name": "WITA-VET senior",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "ODPORNOŚĆ",
+    "WITALNOŚĆ",
+    "WZROK",
+    "SMAKOŁYK"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Karma uzupełniająca przeznaczona dla psów powyżej 8 roku życia.",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "odporność",
+    "oczy",
+    "serce"
+   ],
+   "needs_evidence": [
+    {
+     "need": "pies senior (powyżej 8 roku życia)",
+     "evidence_verbatim": "przeznaczona dla psów powyżej 8 roku życia",
+     "source_field": "properties"
+    },
+    {
+     "need": "osłabienie / witalność",
+     "evidence_verbatim": "Korzystnie wpływa na zwierzęta w stanach osłabienia oraz na poprawę witalności.",
+     "source_field": "properties"
+    },
+    {
+     "need": "odporność",
+     "evidence_verbatim": "ODPORNOŚĆ",
+     "source_field": "badges"
+    },
+    {
+     "need": "wzrok",
+     "evidence_verbatim": "Luteina utrzymuje wzrok w dobrym stanie.",
+     "source_field": "properties"
+    },
+    {
+     "need": "praca serca",
+     "evidence_verbatim": "Koenzym Q10 stymuluje odporność i wzmacnia pracę serca.",
+     "source_field": "properties"
+    },
+    {
+     "need": "ochrona przed wolnymi rodnikami",
+     "evidence_verbatim": "chronią organizm przed wolnymi rodnikami",
+     "source_field": "properties"
+    },
+    {
+     "need": "dzienna dawka witamin i minerałów",
+     "evidence_verbatim": "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "luteina (Tagetes erecta)",
+     "label_name": "luteina (pochodzenia roślinnego Tagetes erecta L)",
+     "stated_function_verbatim": "Luteina utrzymuje wzrok w dobrym stanie."
+    },
+    {
+     "name_pl": "koenzym Q10",
+     "label_name": "koenzym (Q10)",
+     "stated_function_verbatim": "Koenzym Q10 stymuluje odporność i wzmacnia pracę serca."
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "3a700 witamina E",
+     "stated_function_verbatim": "Witamina E bierze udział w metabolizmie nienasyconych kwasów tłuszczowych zapobiegając tworzeniu się wolnych rodników."
+    },
+    {
+     "name_pl": "witamina C",
+     "label_name": "3a300 witamina C (kwas L-askorbowy)",
+     "stated_function_verbatim": "Witamina C chroni komórki przed działaniem szkodliwych produktów przemiany materii. Bierze udział w syntezie hormonów."
+    },
+    {
+     "name_pl": "L-arginina",
+     "label_name": "3c361 L-arginina",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "selen",
+     "label_name": "3b801 selenin sodu",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla psów powyżej 8 roku życia. Korzystnie wpływa na zwierzęta w stanach osłabienia oraz na poprawę witalności. Zawiera związki mineralne, witaminy, które dodają energii, podtrzymują witalność i chronią organizm przed wolnymi rodnikami.\nLuteina utrzymuje wzrok w dobrym stanie.\nKoenzym Q10 stymuluje odporność i wzmacnia pracę serca.\nWitamina E bierze udział w metabolizmie nienasyconych kwasów tłuszczowych zapobiegając tworzeniu się wolnych rodników.\nWitamina C chroni komórki przed działaniem szkodliwych produktów przemiany materii. Bierze udział w syntezie hormonów.",
+   "usage_verbatim": "1 tab./ do 10 kg m.c./ 1 raz dziennie",
+   "indications_verbatim": "Dzienna dawka witamin i minerałów . Odporność. Witalność. Wzrok. Smakołyk.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, przetworzone białko zwierzęce (wątroba wołowa), maltodekstryna, luteina (pochodzenia roślinnego Tagetes erecta L), koenzym (Q10). Dodatki w 1 kg: Dietetyczne: 3a700 witamina E 108 g, 3a300 witamina C (kwas L-askorbowy) 73 g. Aminokwasy: 3c361 L-arginina 41 g. Pierwiastki śladowe: 3b801 selenin sodu 18 mg. Technologiczne: celuloza 100 g. Składniki analityczne: Białko surowe 18,2 g, włókno surowe 24,1 g, tłuszcz surowy 7,8 g, popiół surowy 10,4 g, wapń 8,61 g, fosfor 6,4 g.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET senior 80szt.",
+     "capacity": "80 tab. (1 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-senior-80szt/",
+     "woo_id": 5258,
+     "woo_path": "/produkt/wita-vet-senior-80-tab-witaminy-dla-psow/",
+     "price_pln": 58.89,
+     "regular_price_pln": 58.89,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_SENIOR_1g_80tab-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-senior-80pcs-eng/"
+    }
+   ],
+   "related_on_site": [
+    "witazium",
+    "olej-z-lososia",
+    "wita-vet-siersc-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/wita-vet-senior-80tab, which is not the Woo path (5258 /produkt/wita-vet-senior-80-tab-witaminy-dla-psow/).",
+    "'Zastosowanie' has a stray space: \"Dzienna dawka witamin i minerałów . Odporność.\"",
+    "Yoast description lacks spaces after full stops (\"w dobrym stanie.Koenzym Q10...\").",
+    "Composition labels coenzyme Q10 as \"koenzym (Q10)\"."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-sport",
+   "name": "WITA-VET SPORT",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "ENERGIA",
+    "WITALNOŚĆ",
+    "SMAKOŁYK"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "inne"
+   ],
+   "needs_evidence": [
+    {
+     "need": "psy sportowe/pracujące/myśliwskie",
+     "evidence_verbatim": "Karma uzupełniająca polecana dla psów sportowych, aktywnych, pracujących, psów myśliwskich.",
+     "source_field": "indications"
+    },
+    {
+     "need": "sprawność, energia i kondycja",
+     "evidence_verbatim": "Składniki zawarte w preparacie zapewniają sprawność, energię i doskonałą kondycję",
+     "source_field": "properties"
+    },
+    {
+     "need": "aparat ruchu",
+     "evidence_verbatim": "wspierają prawidłowe funkcjonowanie aparatu ruchu",
+     "source_field": "properties"
+    },
+    {
+     "need": "regeneracja mięśni",
+     "evidence_verbatim": "Przyspiesza regenerację mięśni.",
+     "source_field": "properties"
+    },
+    {
+     "need": "energia",
+     "evidence_verbatim": "ENERGIA",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "HMB-Ca (β-hydroksy-β-metylomaślan wapnia)",
+     "label_name": "HMB-Ca (β-hydroksy-β-metylomaślan wapnia)",
+     "stated_function_verbatim": "HMB-Ca – podtrzymuje sprawność i siłę mięśni, podnosi zdolność wysiłkową organizmu. Przyspiesza regenerację mięśni."
+    },
+    {
+     "name_pl": "BCAA (leucyna, izoleucyna, walina)",
+     "label_name": "3c382 L-leucyna, 3c381 L-izoleucyna, 3c370 L-walina",
+     "stated_function_verbatim": "BCAA (Leucyna, Izoleucyna, Walina) – dostarcza łatwo przyswajalne aminokwasy niezbędne dla właściwej regeneracji i rozwoju mięśni."
+    },
+    {
+     "name_pl": "L-karnityna",
+     "label_name": "3a911 L-winian-L- karnityny",
+     "stated_function_verbatim": "L-karnityna – transportuje wolne kwasy tłuszczowe oraz wspiera procesy ograniczające gromadzenie tłuszczu w komórkach tłuszczowych."
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca polecana dla psów sportowych, aktywnych, pracujących, psów myśliwskich. Składniki zawarte w preparacie zapewniają sprawność, energię i doskonałą kondycję oraz wspierają prawidłowe funkcjonowanie aparatu ruchu.\nHMB-Ca – podtrzymuje sprawność i siłę mięśni, podnosi zdolność wysiłkową organizmu. Przyspiesza regenerację mięśni.\nBCAA (Leucyna, Izoleucyna, Walina) – dostarcza łatwo przyswajalne aminokwasy niezbędne dla właściwej regeneracji i rozwoju mięśni.\nL-karnityna – transportuje wolne kwasy tłuszczowe oraz wspiera procesy ograniczające gromadzenie tłuszczu w komórkach tłuszczowych.",
+   "usage_verbatim": "1 tab./ do 20 kg m.c./ 1 raz dziennie",
+   "indications_verbatim": "Karma uzupełniająca polecana dla psów sportowych, aktywnych, pracujących, psów myśliwskich.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Olej sojowy, HMB-Ca (β-hydroksy-β-metylomaślan wapnia), przetworzone białko zwierzęce (wątroba wołowa), stearynian magnezu. Dodatki w 1 kg: Dietetyczne: Witaminy i Pro-witaminy: 3a911 L-winian-L- karnityny 83,3 g. Aminokwasy i ich sole: 3c382 L-leucyna 83,3 g, 3c381 L-izoleucyna 41,7 g, 3c370 L-walina 41,7 g. Technologiczne: E 460 Celuloza mikrokrystaliczna 450g. Składniki analityczne: Białko surowe 19,8 g, włókno surowe 31,9 g, tłuszcz surowy 13,8 g, popiół surowy 3,5 g.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET SPORT 1,2g 30 tab. dla psów",
+     "capacity": "30 tab. (1,2 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-sport-12g-30-tab-dla-psow/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_SPORT_12g_30tab-2.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-sport-12g-30-tab-dla-psow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-tonyl-psy-koty",
+    "wita-tonyl-gryzonie",
+    "wita-vet-complex-1g"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/wita-vet-sport-12g-30tab-dla-psow/, which is not a published Woo product (no Woo product for Wita-Vet Sport).",
+    "Page not listed on the category page /produkty/karmy-uzupelniajace/; last modified 2023-12-06.",
+    "OPAKOWANIE says 'Masa netto ilościowa: 36 g' (elsewhere 'całościowa').",
+    "Yoast description differs from page and is promotional (\"dla 1 do 20 kg psów, 1 tab./raz dziennie. Witaminy dla psa!\").",
+    "Composition spacing typo \"L-winian-L- karnityny\".",
+    "Related box links legacy /wita-tonyl-* URLs and old slug /produkty/karmy-uzupelniajace/wita-vet-junioradult-1g-80szt/."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "wita-vet-stawy-kot",
+   "name": "WITA-VET STAWY",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZMOCNIENIE STAWÓW",
+    "WITALNOŚĆ"
+   ],
+   "species": [
+    "kot"
+   ],
+   "species_evidence": "Dla kotów.",
+   "body_areas": [
+    "stawy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "wsparcie funkcjonowania stawów",
+     "evidence_verbatim": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów.",
+     "source_field": "properties"
+    },
+    {
+     "need": "problemy kostno-stawowe",
+     "evidence_verbatim": "Polecana dla kotów z problemami kostno – stawowymi takimi jak dysplazja, zmiany zwyrodnieniowe, uszkodzenia po przebytym urazie.",
+     "source_field": "properties"
+    },
+    {
+     "need": "ruchliwość i elastyczność stawów",
+     "evidence_verbatim": "wspomagają ich ruchliwość oraz elastyczność",
+     "source_field": "properties"
+    },
+    {
+     "need": "wzmocnienie stawów",
+     "evidence_verbatim": "WZMOCNIENIE STAWÓW",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "chondroityna",
+     "label_name": "Siarczan chondroityny",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość oraz elastyczność."
+    },
+    {
+     "name_pl": "glukozamina",
+     "label_name": "siarczan glukozaminy",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość oraz elastyczność."
+    },
+    {
+     "name_pl": "kolagen rybi",
+     "label_name": "kolagen rybi",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość oraz elastyczność."
+    },
+    {
+     "name_pl": "czarci pazur",
+     "label_name": "ekstrakt z czarciego pazura",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość oraz elastyczność."
+    },
+    {
+     "name_pl": "MSM (metylosulfonylometan)",
+     "label_name": "metylosulfonylometan (MSM)",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość oraz elastyczność."
+    },
+    {
+     "name_pl": "kwas hialuronowy",
+     "label_name": "kwas hialuronowy",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość oraz elastyczność."
+    },
+    {
+     "name_pl": "ekstrakt z owocu dzikiej róży (witamina C)",
+     "label_name": "ekstrakt z owocu dzikiej róży",
+     "stated_function_verbatim": "Ekstrakt owocu dzikiej róży dostarcza witaminę C, która bierze udział w syntezie kolagenu chrząstki stawowej."
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów. Polecana dla kotów z problemami kostno – stawowymi takimi jak dysplazja, zmiany zwyrodnieniowe, uszkodzenia po przebytym urazie. Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość oraz elastyczność. Ekstrakt owocu dzikiej róży dostarcza witaminę C, która bierze udział w syntezie kolagenu chrząstki stawowej.",
+   "usage_verbatim": "1 tab. / do 4 kg m.c. / 1 raz dziennie.",
+   "indications_verbatim": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów.",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Siarczan chondroityny, siarczan glukozaminy, kolagen rybi, ekstrakt z czarciego pazura, celuloza, metylosulfonylometan (MSM), fosforan dwuwapniowy, ekstrakt z owocu dzikiej róży, przetworzone białko zwierzęce (wątroba wołowa), kwas hialuronowy, stearynian magnezu. Dodatki w 1 kg: Technologiczne: Krzemionka 10 g. Składniki analityczne: Białko surowe 24,2 g, włókno surowe 8,5 g, tłuszcz surowy 1,3 g, popiół surowy 11 g.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "WITA-VET STAWY 0,195g 30 tab. dla kotów",
+     "capacity": "30 tab. (0,195 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-stawy-0195g-30-tab-dla-kotow/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita_vet_Pies_STAWY_560mg_30kaps_op-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-stawy-0195g-30-tab-dla-kotow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "kp-szampon-dla-kotow",
+    "wita-tonyl-psy-koty",
+    "efaderm-e-kapsulki-kot"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/wita-vet-stawy-0195g-30-tab-dla-kotow/, which is not a published Woo product (no Woo product for the cat version).",
+    "Page not listed on the category page /produkty/karmy-uzupelniajace/; last modified 2023-12-05.",
+    "Packshot file name 'Wita_vet_Pies_STAWY_560mg_30kaps_op-1.png' refers to a dog / 560 mg capsule product while the page is for cat 0,195 g tablets - verify the image.",
+    "Unlike the dog page, no per-tablet active-ingredient amounts are given.",
+    "Text names conditions (\"dysplazja, zmiany zwyrodnieniowe, uszkodzenia po przebytym urazie\") for a feed - needs vet-context framing/regulatory review.",
+    "Related box links legacy /kolorpielegnacja-szampon-dla-kotow-200ml."
+   ],
+   "vet_context_verbatim": "Polecana dla kotów z problemami kostno – stawowymi takimi jak dysplazja, zmiany zwyrodnieniowe, uszkodzenia po przebytym urazie."
+  },
+  {
+   "family_slug": "wita-vet-stawy-pies",
+   "name": "WITA-VET stawy",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZMOCNIENIE STAWÓW",
+    "SMAKOŁYK"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "stawy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "wsparcie funkcjonowania stawów",
+     "evidence_verbatim": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów.",
+     "source_field": "properties"
+    },
+    {
+     "need": "problemy z poruszaniem",
+     "evidence_verbatim": "Polecana dla psów z problemami poruszania.",
+     "source_field": "properties"
+    },
+    {
+     "need": "młode psy w okresie intensywnego wzrostu",
+     "evidence_verbatim": "Można podawać młodym psom w okresie intensywnego wzrostu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "problemy kostno-stawowe",
+     "evidence_verbatim": "zalecana jest dla psów dorosłych z problemami kostno-stawowymi",
+     "source_field": "indications"
+    },
+    {
+     "need": "ruchliwość i elastyczność stawów",
+     "evidence_verbatim": "wspomagają ich ruchliwość i elastyczność",
+     "source_field": "properties"
+    },
+    {
+     "need": "wzmocnienie stawów",
+     "evidence_verbatim": "WZMOCNIENIE STAWÓW",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "chondroityna",
+     "label_name": "Siarczan chondroityny",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność."
+    },
+    {
+     "name_pl": "glukozamina",
+     "label_name": "siarczan glukozaminy",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność."
+    },
+    {
+     "name_pl": "kolagen rybi",
+     "label_name": "kolagen rybi",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność."
+    },
+    {
+     "name_pl": "czarci pazur",
+     "label_name": "ekstrakt z czarciego pazura",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność."
+    },
+    {
+     "name_pl": "MSM (metylosulfonylometan)",
+     "label_name": "metylosulfonylometan (MSM)",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność."
+    },
+    {
+     "name_pl": "kwas hialuronowy",
+     "label_name": "kwas hialuronowy",
+     "stated_function_verbatim": "Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność."
+    },
+    {
+     "name_pl": "ekstrakt z owocu dzikiej róży (witamina C)",
+     "label_name": "ekstrakt z owocu dzikiej róży",
+     "stated_function_verbatim": "Ekstrakt owocu dzikiej róży dostarcza witaminę C, która bierze udział w syntezie kolagenu chrząstki stawowej."
+    }
+   ],
+   "properties_verbatim": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów. Polecana dla psów z problemami poruszania. Można podawać młodym psom w okresie intensywnego wzrostu. Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność. Ekstrakt owocu dzikiej róży dostarcza witaminę C, która bierze udział w syntezie kolagenu chrząstki stawowej.",
+   "usage_verbatim": "1 tabletka dziennie na 40kg masy",
+   "indications_verbatim": "Karma uzupełniająca, zalecana jest dla psów dorosłych z problemami kostno-stawowymi.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Siarczan chondroityny, siarczan glukozaminy, kolagen rybi, ekstrakt z czarciego pazura, celuloza, metylosulfonylometan (MSM), fosforan dwuwapniowy, ekstrakt z owocu dzikiej róży, przetworzone białko zwierzęce (wątroba wołowa), kwas hialuronowy, stearynian magnezu. Dodatki w 1 kg: Technologiczne: krzemionka 10 g. Składniki analityczne: Białko surowe 24,2 g, włókno surowe 8,5 g, tłuszcz surowy 1,3 g, popiół surowy 11 g.",
+   "notes_verbatim": "Składniki aktywne w 1 tabletce na 40 kg:\nKolagen rybi 565 mg, czarci pazur 565 mg, siarczan glukozaminy 750 mg, siarczan chondroityny 750 mg, msm (Methyl - Sulfonyl - Methan) 280 mg, ekstrakt z dzikiej roży (witamina c) 170 mg (120 mg), kwas hialuronowy 50 mg.",
+   "variants": [
+    {
+     "title": "WITA-VET STAWY 4 g 30 tab. dla psów",
+     "capacity": "30 tab. (4 g)",
+     "page_path": "/produkty/karmy-uzupelniajace/wita-vet-stawy-4-g-30-tab-dla-psow/",
+     "woo_id": 13924,
+     "woo_path": "/produkt/wita-vet-stawy-4g-30-tab-dla-psow-chondroityna-glukozamina-czarci-pazur-kolagen-rybi-msm-witamina-c/",
+     "price_pln": 65.99,
+     "regular_price_pln": 65.99,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/10/Wita-Vet_Pies_STAWY_4g_30tab-1.png",
+     "en_page_path": "/en/products/complementary-foods/wita-vet-stawy-4-g-30-tab-dla-psow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "milvet"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/wita-vet-stawy-4-g-30-tab-dla-psow/, which is not the Woo path (13924 /produkt/wita-vet-stawy-4g-30-tab-dla-psow-chondroityna-glukozamina-czarci-pazur-kolagen-rybi-msm-witamina-c/ - keyword-stuffed slug).",
+    "Target group inconsistent: 'Właściwości' says \"Można podawać młodym psom w okresie intensywnego wzrostu\" while 'Zastosowanie' says \"zalecana jest dla psów dorosłych z problemami kostno-stawowymi\".",
+    "Dosing given only as \"1 tabletka dziennie na 40kg masy\" - no guidance for dogs under 40 kg.",
+    "Typos in active-ingredient list: \"ekstrakt z dzikiej roży\", \"(witamina c)\", \"msm (Methyl - Sulfonyl - Methan)\"."
+   ],
+   "vet_context_verbatim": "Karma uzupełniająca, zalecana jest dla psów dorosłych z problemami kostno-stawowymi."
+  },
+  {
+   "family_slug": "witazium",
+   "name": "WITAZIUM",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów wspomagająca wzrok",
+   "badges_verbatim": [
+    "opóźnia zmętnienie soczewki",
+    "chroni narząd wzroku",
+    "utrzymuje sprawne funkcjonowanie siatkówki"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "oczy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "ochrona wzroku",
+     "evidence_verbatim": "Chroni narząd wzroku.",
+     "source_field": "indications"
+    },
+    {
+     "need": "zmętnienie soczewki",
+     "evidence_verbatim": "Opóźnia zmętnienie soczewki.",
+     "source_field": "indications"
+    },
+    {
+     "need": "funkcjonowanie siatkówki",
+     "evidence_verbatim": "Utrzymuje sprawne funkcjonowanie siatkówki.",
+     "source_field": "indications"
+    },
+    {
+     "need": "zdolność widzenia",
+     "evidence_verbatim": "Karotenoidy (luteina i zeaksantyna) wpływają na utrzymanie i poprawę zdolności widzenia.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "tauryna",
+     "label_name": "3a370 Tauryna",
+     "stated_function_verbatim": "Tauryna znajduje się w dużych ilościach w soczewce i siatkówce oka. Chroni wzrok przed szkodliwym działaniem promieni ultrafioletowych."
+    },
+    {
+     "name_pl": "luteina i zeaksantyna (Tagetes erecta)",
+     "label_name": "produkty przetwarzania roślin – z Tagetes erecta",
+     "stated_function_verbatim": "Tagetes erecta zawiera luteinę, zeaksantynę, które należą do naturalnych przeciwutleniaczy. Są obecne w dużych ilościach w siatkówce i soczewce oka. Absorbują światło niebieskie, które jest najbardziej szkodliwe dla wzroku. Luteina usprawnia zdolność widzenia."
+    },
+    {
+     "name_pl": "dysmutaza ponadtlenkowa (skoncentrowany sok z melona)",
+     "label_name": "sok z melona",
+     "stated_function_verbatim": "Skoncentrowany sok z melona naturalnie bogaty w dysmutazę ponadtlenkową wspomagającą naturalne procesy hamujące wytwarzanie wolnych rodników. Aktywuje substancje, które wstrzymują lub spowalniają procesy utleniania."
+    },
+    {
+     "name_pl": "kurkuma",
+     "label_name": "produkty przetwarzania ziół - kurkuma",
+     "stated_function_verbatim": "Kurkuma zawiera polifenol, który chroni narząd wzroku poprzez wielokierunkowe działanie przeciwzapalne. Redukuje wytwarzanie wolnych rodników za pomocą reakcji antyoksydacyjnych."
+    },
+    {
+     "name_pl": "witamina C",
+     "label_name": "3a300 Witamina C",
+     "stated_function_verbatim": "Witamina C chroni komórki przed działaniem szkodliwych produktów przemiany materii. Bierze udział w syntezie hormonów."
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "3a700 Witamina E",
+     "stated_function_verbatim": "Witamina E bierze udział w metabolizmie nienasyconych kwasów tłuszczowych zapobiegając tworzeniu się wolnych rodników."
+    },
+    {
+     "name_pl": "cynk",
+     "label_name": "3B603 Tlenek cynku",
+     "stated_function_verbatim": "Cynk uczestniczy w przemianach witaminy A w barwnik pochłaniający światło."
+    },
+    {
+     "name_pl": "selen",
+     "label_name": "3b813 Selenometionina",
+     "stated_function_verbatim": "Selen jest niezbędny dla prawidłowej aktywności enzymatycznej przy eliminacji toksycznych produktów powstających w organizmie."
+    }
+   ],
+   "properties_verbatim": "WITAZIUM zawiera taurynę, która wspomaga sprawne funkcjonowanie soczewki i siatkówki oka. Wyciąg z kurkumy chroni narząd wzroku poprzez działanie przeciwzapalne. Karotenoidy (luteina i zeaksantyna) wpływają na utrzymanie i poprawę zdolności widzenia. Dysmutaza ponadtlenkowa uaktywnia naturalne procesy chroniące narząd wzroku. Witamina E i C oraz oligo-elemeny (cynk, selen) usprawniają procesy metaboliczne zachodzące w oku.\nTauryna znajduje się w dużych ilościach w soczewce i siatkówce oka. Chroni wzrok przed szkodliwym działaniem promieni ultrafioletowych.\nTagetes erecta zawiera luteinę, zeaksantynę, które należą do naturalnych przeciwutleniaczy. Są obecne w dużych ilościach w siatkówce i soczewce oka. Absorbują światło niebieskie, które jest najbardziej szkodliwe dla wzroku. Luteina usprawnia zdolność widzenia.\nSkoncentrowany sok z melona naturalnie bogaty w dysmutazę ponadtlenkową wspomagającą naturalne procesy hamujące wytwarzanie wolnych rodników. Aktywuje substancje, które wstrzymują lub spowalniają procesy utleniania.\nKurkuma zawiera polifenol, który chroni narząd wzroku poprzez wielokierunkowe działanie przeciwzapalne. Redukuje wytwarzanie wolnych rodników za pomocą reakcji antyoksydacyjnych.\nWitamina C chroni komórki przed działaniem szkodliwych produktów przemiany materii. Bierze udział w syntezie hormonów.\nWitamina E bierze udział w metabolizmie nienasyconych kwasów tłuszczowych zapobiegając tworzeniu się wolnych rodników.\nCynk uczestniczy w przemianach witaminy A w barwnik pochłaniający światło.\nSelen jest niezbędny dla prawidłowej aktywności enzymatycznej przy eliminacji toksycznych produktów powstających w organizmie.",
+   "usage_verbatim": "Psy, koty | Dawkowanie\nPoniżej 5 kg | ½ tab. / co 2-gi dzień\nOd 5 kg do 10 kg | ½ tab. / dzień\nOd 11 do 18 kg | 1 tab. / dzień\nOd 19 do 25 kg | 1½ tab. / dzień\nOd 26 do 35 kg | 2 tab. / dzień\nPowyżej 36 kg | 2½ tab. / dzień",
+   "indications_verbatim": "Chroni narząd wzroku. Opóźnia zmętnienie soczewki. Utrzymuje sprawne funkcjonowanie siatkówki.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne – martwe (z Saccharomyces cerevisiae), węglan wapnia, produkty przetwarzania ziół - kurkuma, lecytyna surowa, oleje i tłuszcze roślinne - olej sojowy, produkty przetwarzania roślin – z Tagetes erecta, pulpa cytrusowa, suszona – sok z melona, algi suszone. Dodatki w 1 kg: Witaminy: 3a700 Witamina E 128,2 g, 3a370 Tauryna 145,3 g, 3a300 Witamina C 48,4 g. Pierwiastki śladowe: 3B603 Tlenek cynku 4,6 g, 3b813 Selenometionina 1,1 mg. Technologiczne: Celuloza mikrokrystaliczna 230,8 g. Składniki analityczne w 100 g produktu: Białko surowe 26,1 g, włókno surowe 24,8 g, oleje i tłuszcze surowe 10,2 g, popiół surowy 15,2 g, wapń 3,3 g, fosfor 0,4 g.\nSkład w 1 tabletce: Tauryna 121,8 mg, wyciąg z kurkumy 40,6 mg, witamina C 40,6 mg, witamina E 96,8 mg, dysmutaza ponadtlenkowa 3,6 mg, Cynk (tlenek) 4,3 mg, selen (selenometionina) 1 µg, luteina 8,7 mg, zeaksantyna 0,43 mg.",
+   "notes_verbatim": "Notatka\nNiska zawartość fosforu, potasu i sodu pozwala na stosowanie preparatu u zwierząt z niewydolnością serca lub nerek.",
+   "variants": [
+    {
+     "title": "WITAZIUM 40szt.",
+     "capacity": "40 tab.",
+     "page_path": "/produkty/karmy-uzupelniajace/witazium-40szt/",
+     "woo_id": 5264,
+     "woo_path": "/produkt/witazium-40szt/",
+     "price_pln": 90.0,
+     "regular_price_pln": 90.0,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/06/WITAZIUM_40tab_front1-1.png",
+     "en_page_path": "/en/products/complementary-foods/witazium-40pcs-eng/"
+    }
+   ],
+   "related_on_site": [
+    "wita-vet-senior",
+    "wita-vet-siersc-pies"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button links to /produkt/wyzium-40szt/ (typo) - the Woo product is 5264 at /produkt/witazium-40szt/.",
+    "Typo \"oligo-elemeny\" (should be 'oligoelementy') on page and in Yoast description.",
+    "Two sections both titled 'Skład' (per kg and per tablet).",
+    "Claims \"Opóźnia zmętnienie soczewki\" and use in animals with \"niewydolnością serca lub nerek\" - needs vet-context framing/regulatory review before reuse."
+   ],
+   "vet_context_verbatim": "Niska zawartość fosforu, potasu i sodu pozwala na stosowanie preparatu u zwierząt z niewydolnością serca lub nerek."
+  },
+  {
+   "family_slug": "smoczki-do-karmienia-kotow",
+   "name": "Smoczki do karmienia kotów",
+   "line": null,
+   "product_type": "akcesorium",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE"
+   ],
+   "species": [
+    "kot",
+    "kocię"
+   ],
+   "species_evidence": "Dla kotów. | Smoczek silikonowy dla kociąt.",
+   "body_areas": [],
+   "needs_evidence": [
+    {
+     "need": "karmienie kociąt z butelki",
+     "evidence_verbatim": "Smoczki do butelki do karmienia zwierząt.",
+     "source_field": "indications"
+    },
+    {
+     "need": "odporność na gryzienie",
+     "evidence_verbatim": "WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [],
+   "properties_verbatim": "Smoczek silikonowy dla kociąt.\nPrzezroczysty bez smaku i zapachu. Zachowuje swój kształt nawet po dłuższym czasie użytkowania.\npasuje do butelki",
+   "usage_verbatim": null,
+   "indications_verbatim": "Smoczki do butelki do karmienia zwierząt.",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": null,
+   "notes_verbatim": "Informacja\nWYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE.",
+   "variants": [
+    {
+     "title": "2 X SMOCZKI DO KARMIENIA KOTÓW",
+     "capacity": "2 szt.",
+     "page_path": "/produkty/karmy-uzupelniajace/2-x-smoczki-do-karmienia-kotow/",
+     "woo_id": 16819,
+     "woo_path": "/produkt/smoczki-do-karmienia-kotow/",
+     "price_pln": 25.0,
+     "regular_price_pln": 25.0,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/09/EUROWET_Smoczki_dla_kotow-1.png",
+     "en_page_path": "/en/products/complementary-foods/2-x-smoczki-do-karmienia-kotow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "butelka-do-karmienia-zwierzat",
+    "elektrolity",
+    "milvet"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Yoast meta description is the Milvet milk-replacer text (wrong product).",
+    "No subtitle on page; H1 'SMOCZKI DO KARMIENIA kotów' has inconsistent capitalisation.",
+    "Accessory is published under /produkty/karmy-uzupelniajace/ while its Woo category is 'akcesoria-dla-zwierzat'; page is not listed on the category page.",
+    "Stray lowercase fragment \"pasuje do butelki\" inside the description.",
+    "Related box links legacy /milvet-300g.",
+    "EN page is an untranslated copy title '2 X SMOCZKI DO KARMIENIA KOTÓW ENG'."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "smoczki-do-karmienia-psow",
+   "name": "Smoczki do karmienia psów",
+   "line": null,
+   "product_type": "akcesorium",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "species_evidence": "Dla psów. | Smoczek kauczukowy dla szczeniąt",
+   "body_areas": [],
+   "needs_evidence": [
+    {
+     "need": "karmienie szczeniąt z butelki",
+     "evidence_verbatim": "Smoczki do butelki do karmienia zwierząt.",
+     "source_field": "indications"
+    },
+    {
+     "need": "odporność na gryzienie",
+     "evidence_verbatim": "WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [],
+   "properties_verbatim": "Smoczek kauczukowy dla szczeniąt\nElastyczny o brązowym zabarwieniu, odporny na gryzienie.",
+   "usage_verbatim": null,
+   "indications_verbatim": "Smoczki do butelki do karmienia zwierząt.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": null,
+   "notes_verbatim": "Informacja\nWYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE.",
+   "variants": [
+    {
+     "title": "2 X SMOCZKI DO KARMIENIA PSÓW",
+     "capacity": "2 szt.",
+     "page_path": "/produkty/karmy-uzupelniajace/2-x-smoczki-do-karmienia-psow/",
+     "woo_id": 16816,
+     "woo_path": "/produkt/smoczki-do-karmienia-psow/",
+     "price_pln": 22.5,
+     "regular_price_pln": 22.5,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/09/EUROWET_Smoczki_dla_psow-1.png",
+     "en_page_path": "/en/products/complementary-foods/2-x-smoczki-do-karmienia-psow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "butelka-do-karmienia-zwierzat",
+    "elektrolity",
+    "milvet"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Yoast meta description is the Milvet milk-replacer text (wrong product).",
+    "'pasuje do butelki' is marked up as an H1 heading.",
+    "Accessory is published under /produkty/karmy-uzupelniajace/ while its Woo category is 'akcesoria-dla-zwierzat'; page is not listed on the category page.",
+    "Related box links legacy /milvet-300g.",
+    "EN page title is untranslated ('2 X SMOCZKI DO KARMIENIA PSÓW ENG')."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "butelka-do-karmienia-zwierzat",
+   "name": "Butelka do karmienia zwierząt",
+   "line": null,
+   "product_type": "akcesorium",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "subtitle_verbatim": "Do karmienia zwierząt. Dwa smoczki.",
+   "badges_verbatim": [
+    "BEZPIECZNA Z ŻYWNOŚCIĄ - BEZ BISFENOLU A (BPA).",
+    "BUTELKA ODPORNA NA USZKODZENIA.",
+    "2 SMOCZKI DLA KOCIĄT I SZCZENIĄT. WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE."
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "szczenię",
+    "kocię"
+   ],
+   "species_evidence": "Dla psów, kotów. | 2 SMOCZKI DLA KOCIĄT I SZCZENIĄT.",
+   "body_areas": [],
+   "needs_evidence": [
+    {
+     "need": "karmienie z butelki",
+     "evidence_verbatim": "Butelka do karmienia zwierząt. Dwa smoczki.",
+     "source_field": "properties"
+    },
+    {
+     "need": "bezpieczny materiał (bez BPA)",
+     "evidence_verbatim": "Bez szkodliwego Bisfenolu A (BPA), bezpieczna w kontakcie z żywnością.",
+     "source_field": "properties"
+    },
+    {
+     "need": "odporność na uszkodzenia",
+     "evidence_verbatim": "BUTELKA ODPORNA NA USZKODZENIA.",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [],
+   "properties_verbatim": "Butelka do karmienia zwierząt. Dwa smoczki. Butelka odporna na uszkodzenia. Bez szkodliwego Bisfenolu A (BPA), bezpieczna w kontakcie z żywnością. Smoczek silikonowy dla kociąt. Przezroczysty bez smaku i zapachu. Zachowuje swój kształt nawet po dłuższym czasie użytkowania. Smoczek kauczukowy dla szczeniąt. Elastyczny o brązowym zabarwieniu, odporny na gryzienie.",
+   "usage_verbatim": null,
+   "indications_verbatim": "Butelka do karmienia zwierząt.",
+   "intended_for_verbatim": "Dla psów, kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": null,
+   "notes_verbatim": "Informacja\nBEZPIECZNA Z ŻYWNOŚCIĄ - BEZ BISFENOLU A (BPA). BUTELKA ODPORNA NA USZKODZENIA. 2 SMOCZKI DLA KOCIĄT I SZCZENIĄT. WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE.",
+   "variants": [
+    {
+     "title": "BUTELKA DO KARMIENIA ZWIERZĄT",
+     "capacity": "120 ml",
+     "page_path": "/produkty/karmy-uzupelniajace/butelka-do-karmienia-zwierzat/",
+     "woo_id": 8292,
+     "woo_path": "/produkt/butelka-do-karmienia-zwierzat-dwa-smoczki/",
+     "price_pln": 25.4,
+     "regular_price_pln": 25.4,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/04/Butelka_dla_zwierzat_120ml.png",
+     "en_page_path": "/en/products/complementary-foods/animal-feeding-bottle/"
+    }
+   ],
+   "related_on_site": [
+    "efaderm-e-plyn-pies",
+    "milvet"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Accessory is published under /produkty/karmy-uzupelniajace/ while its Woo category is 'akcesoria-dla-zwierzat'; page is not listed on the category page.",
+    "Related box describes Efaderm-e 30ml as 'Mieszanka paszowa uzupełniająca dla psów' (page itself says 'Karma uzupełniająca') and links legacy /efaderm-e-30ml-pies and /milvet-300g."
+   ],
+   "vet_context_verbatim": null
+  }
+ ],
+ "unmatched_woo": []
+}

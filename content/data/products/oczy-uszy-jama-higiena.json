@@ -1,0 +1,1872 @@
+{
+ "group": "oczy-uszy-jama-higiena",
+ "families": [
+  {
+   "family_slug": "akaryl-zel",
+   "name": "AKARYL-ŻEL",
+   "line": null,
+   "product_type": "preparat do pielęgnacji uszu",
+   "category_slugs": [
+    "produkty-do-pielegnacji-oczu-i-uszu"
+   ],
+   "subtitle_verbatim": "Emulsja do pielęgnacji uszu dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGA ZWALCZAĆ PASOŻYTY PRZEWODU SŁUCHOWEGO ZEWNĘTRZNEGO",
+    "KETOKONAZOL, OLEJEK MIGDAŁOWY"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "uszy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "Higiena uszu.",
+     "source_field": "indications"
+    },
+    {
+     "need": "podrażnienia przewodu słuchowego i małżowiny usznej",
+     "evidence_verbatim": "Emulsja łagodzi objawy związane z podrażnieniami przewodu słuchowego zewnętrznego i małżowiny usznej.",
+     "source_field": "properties"
+    },
+    {
+     "need": "pasożyty przewodu słuchowego (wspomaganie zwalczania)",
+     "evidence_verbatim": "WSPOMAGA ZWALCZAĆ PASOŻYTY PRZEWODU SŁUCHOWEGO ZEWNĘTRZNEGO",
+     "source_field": "badges"
+    },
+    {
+     "need": "pasożyty przewodu słuchowego (wspomaganie zwalczania)",
+     "evidence_verbatim": "Pomaga zwalczać pasożyty przewodu słuchowego zewnętrznego.",
+     "source_field": "properties"
+    },
+    {
+     "need": "odnowa naskórka",
+     "evidence_verbatim": "Ułatwia naturalną odnowę naskórka.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "ketokonazol",
+     "label_name": "Ketoconazole",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "olejek migdałowy",
+     "label_name": "Prunus Amygdalus Dulcis (Sweet Almond) Oil",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Emulsja łagodzi objawy związane z podrażnieniami przewodu słuchowego zewnętrznego i małżowiny usznej. Ułatwia naturalną odnowę naskórka. Pomaga zwalczać pasożyty przewodu słuchowego zewnętrznego.",
+   "usage_verbatim": "Wprowadzić kilka kropli emulsji do przewodu słuchowego zewnętrznego i małżowiny usznej. Delikatnie masować podstawę ucha. Usunąć nadmiar emulsji i ponownie przemyć ucho poprzez delikatne masowanie.",
+   "indications_verbatim": "Higiena uszu.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "W przypadku nietolerancji przerwać stosowanie.",
+   "composition_verbatim": "Aqua, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Glicerin, Cetearyl Alcohol, Glyceryl Stearate, Ceteareth-20, Ceteareth-12, Cetyl Palmitate, Allantoin, Juniperus Communis Fruit Oil, Lavandula Angustifolia Oil, Origanum (Thymus Capitatus) Essential Oil, Chamomilla Recututa Flowers Oil, Mentha Piperita Oil, Eucalyptus Radiata Essential Oil, Thymus Vulgaris Flower/Leaf Oil, Rosmarinus Officinalis Leaf Oil , DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Ketoconazole.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "AKARYL-ŻEL 15ml",
+     "capacity": "25 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/akaryl-zel-15ml/",
+     "woo_id": 5268,
+     "woo_path": "/produkt/akaryl-zel-25ml/",
+     "price_pln": 61.5,
+     "regular_price_pln": 61.5,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/08/Akaryl-zel_ketokonazol_25ml.png",
+     "en_page_path": "/en/products/eye-and-ear-care/akaryl-zel-15ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "otiseptol",
+    "vetaseptol",
+    "WITAZIUM 40 tab."
+   ],
+   "documents": [],
+   "data_issues": [
+    "Capacity conflict: page title, H1 and slug say \"15ml\" (/produkty/produkty-do-pielegnacji-oczu-i-uszu/akaryl-zel-15ml/), but OPAKOWANIE says \"25 mil ilość netto\", the packshot file is Akaryl-zel_ketokonazol_25ml.png and the only Woo product is 5268 \"AKARYL-ŻEL 25ml\"; variant recorded as 25 ml. EN page /en/products/eye-and-ear-care/akaryl-zel-15ml-eng/ repeats the 15ml title.",
+    "OPAKOWANIE typo \"25 mil ilość netto\" (should be \"25 ml\").",
+    "Shop button links to /produkt/akaryl-zel-25ml (no trailing slash, relies on redirect), so Woo 5268 was not mapped in products.base.json (it sat in woo_without_product_page); mapped here.",
+    "Yoast/OG description says \"Emulsja łagodzi podrażnienia\" and \"Wspomaga zwalczać pasożyty\" while the page text says \"łagodzi objawy związane z podrażnieniami\" and \"Pomaga zwalczać pasożyty\"; Woo 5268 og:description is the generic \"Od 1992 producent i dystrybutor preparatów dla zwierząt. +150 produktów.\".",
+    "INCI typos in Skład: \"Glicerin\" (Glycerin), \"Chamomilla Recututa\" (Recutita).",
+    "Composition contains Ketoconazole (an antifungal active substance) while the product is presented as a care emulsion with a parasite claim (\"Pomaga zwalczać pasożyty przewodu słuchowego zewnętrznego\") - regulatory classification/claim wording should be verified.",
+    "Stray widget text \"Skuteczny\" above \"Właściwości\" (template leftover; base parser picked it up on other pages as display_name).",
+    "Related-product cards and category tile use root-relative short links (/otiseptol-100ml, /vetaseptol-10ml, /akaryl-zel-15ml) that rely on redirects instead of canonical /produkty/... URLs."
+   ],
+   "vet_context_verbatim": "Pomaga zwalczać pasożyty przewodu słuchowego zewnętrznego."
+  },
+  {
+   "family_slug": "ektozin",
+   "name": "Ektozin",
+   "line": null,
+   "product_type": "preparat do pielęgnacji oczu",
+   "category_slugs": [
+    "produkty-do-pielegnacji-oczu-i-uszu"
+   ],
+   "subtitle_verbatim": "Płyn do oczu i powiek dla zwierząt domowych",
+   "badges_verbatim": [
+    "Łagodzi objawy związane z zapaleniem spojówek",
+    "Nawilża powierzchnię oka oraz łagodzi stan zapalany",
+    "Zapewnia ochronę komórek nabłonkowych",
+    "Z EKTOINĄ I WODĄ CHABROWĄ"
+   ],
+   "species": [
+    "zwierzęta domowe"
+   ],
+   "species_evidence": "Dla zwierząt domowych.",
+   "body_areas": [
+    "oczy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Higiena oczu i powiek.",
+     "source_field": "indications"
+    },
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Pomaga usunąć zanieczyszczenia z worka spojówkowego.",
+     "source_field": "properties"
+    },
+    {
+     "need": "podrażnienia spojówek",
+     "evidence_verbatim": "łagodzi objawy związane z podrażnieniami spojówek",
+     "source_field": "properties"
+    },
+    {
+     "need": "zapalenie spojówek (łagodzenie objawów)",
+     "evidence_verbatim": "Łagodzi objawy związane z zapaleniem spojówek",
+     "source_field": "badges"
+    },
+    {
+     "need": "nawilżenie oczu i powiek",
+     "evidence_verbatim": "ułatwia naturalne nawilżenie oczu i powiek",
+     "source_field": "properties"
+    },
+    {
+     "need": "ochrona komórek nabłonkowych oka",
+     "evidence_verbatim": "Zapewnia ochronę komórek nabłonkowych",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "ektoina",
+     "label_name": "Ectoin",
+     "stated_function_verbatim": "Zawarta w produkcie ektoina jest substancją naturalnie występującą w przyrodzie. Ma za zadanie chronić komórki przed szkodliwym działaniem czynników zewnętrznych, łagodzi stany zapalne, zapewnia ochronę komórek nabłonkowych."
+    },
+    {
+     "name_pl": "woda chabrowa",
+     "label_name": "Centaurea Cyanus Floral Water",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Ektozin jest dermokosmetykiem weterynaryjnym, który łagodzi objawy związane z podrażnieniami spojówek oraz ułatwia naturalne nawilżenie oczu i powiek. Pomaga usunąć zanieczyszczenia z worka spojówkowego. Zawarta w produkcie ektoina jest substancją naturalnie występującą w przyrodzie. Ma za zadanie chronić komórki przed szkodliwym działaniem czynników zewnętrznych, łagodzi stany zapalne, zapewnia ochronę komórek nabłonkowych.",
+   "usage_verbatim": "Nawilżyć oko namoczonym kompresem lub wprowadzić kilka kropli płynu za pomocą aplikatora do worka spojówkowego. Następnie usunąć jego nadmiar. Przemyć również powieki. Stosować w zależności od potrzeb, nawet codziennie.",
+   "indications_verbatim": "Higiena oczu i powiek.",
+   "intended_for_verbatim": "Dla zwierząt domowych.",
+   "precautions_verbatim": "W przypadku nietolerancji przerwać stosowanie.",
+   "composition_verbatim": "Aqua, Centaurea Cyanus Floral Water, Ectoin, Sodium Chloride, Benzalkonium Chloride, Sodium Methylparaben, Phosphoric Acid",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "EKTOZIN 25ml",
+     "capacity": "25 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/ektozin-25ml/",
+     "woo_id": 20416,
+     "woo_path": "/produkt/ektozin-25ml/",
+     "price_pln": 41.25,
+     "regular_price_pln": 41.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/03/Ektozin_25ml-1.png",
+     "en_page_path": "/en/products/eye-and-ear-care/ektozin-25ml-eng/"
+    },
+    {
+     "title": "EKTOZIN 50ml",
+     "capacity": "50 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/ektozin-50ml/",
+     "woo_id": 19290,
+     "woo_path": "/produkt/ektozin-50ml/",
+     "price_pln": 68.75,
+     "regular_price_pln": 68.75,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2024/07/Ektozin_50ml.png",
+     "en_page_path": "/en/products/eye-and-ear-care/ektozin-50ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "optex",
+    "vetaseptol",
+    "WITAZIUM 40 tab."
+   ],
+   "documents": [],
+   "data_issues": [
+    "Yoast/OG description on both PL pages is the Optex text (\"Płyn do przemywania oczu i powiek dla psów i kotów. Łagodzi podrażnienia spojówek. Nawilża oczy i powieki. Z wodą chabrową.\") - no mention of ektoina and states \"dla psów i kotów\" while the page says \"Dla zwierząt domowych.\"; both EN pages carry the same Polish description.",
+    "Species inconsistency: page Przeznaczenie and Woo say \"Dla zwierząt domowych.\" / \"Zwierząt domowych\", but Yoast and the related-product cards on Optex/Otolan pages say \"dla psów i kotów\"; species kept as on-page.",
+    "Badge typo \"Nawilża powierzchnię oka oraz łagodzi stan zapalany\" (\"zapalny\"); also in Woo short descriptions 20416/19290.",
+    "Disease wording on a product described as \"dermokosmetyk weterynaryjny\": badges \"Łagodzi objawy związane z zapaleniem spojówek\", \"łagodzi stan zapalany\"; related card on Optex/Otolan pages goes further: \"Łagodzi zapalenie spojówek\".",
+    "Środki ostrożności missing on the PL pages; \"W przypadku nietolerancji przerwać stosowanie.\" exists only in Woo 20416/19290 (used here for precautions_verbatim).",
+    "Composition inconsistency: PL pages list \"Phosphoric Acid\", Woo 19290 (50ml) lists \"Ortofosforic Acid\".",
+    "products.base.json display_name is lowercase \"ektozin\" (H1 rendered from lowercase text)."
+   ],
+   "vet_context_verbatim": "Łagodzi objawy związane z zapaleniem spojówek"
+  },
+  {
+   "family_slug": "krople-hialuronowe-do-oczu-i-nosa",
+   "name": "KROPLE HIALURONOWE DO OCZU I NOSA",
+   "line": null,
+   "product_type": "preparat do pielęgnacji oczu",
+   "category_slugs": [
+    "produkty-do-pielegnacji-oczu-i-uszu"
+   ],
+   "subtitle_verbatim": "Krople do oczu i nosa z kwasem hialuronowym dla psów i kotów",
+   "badges_verbatim": [
+    "DŁUGOTRWALE NAWILŻAJĄ OCZY I NOS",
+    "ŁAGODZĄ PODRAŻNIENIA I OBJAWY SUCHEGO OKA",
+    "WSPIERAJĄ REGENERACJĘ I OCHRONĘ ŚLUZÓWKI",
+    "Z kwasem hialuronowym i chlorheksydyną"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Krople do oczu i nosa z kwasem hialuronowym dla psów i kotów | Krople nawilżające do oczu i nosa przeznaczone dla psów i kotów.",
+   "body_areas": [
+    "oczy",
+    "inne"
+   ],
+   "needs_evidence": [
+    {
+     "need": "suche oko",
+     "evidence_verbatim": "Krople łagodzą objawy zespołu suchego oka wywołane przez zmniejszoną ilość lub brak łez.",
+     "source_field": "properties"
+    },
+    {
+     "need": "suche oko",
+     "evidence_verbatim": "ŁAGODZĄ PODRAŻNIENIA I OBJAWY SUCHEGO OKA",
+     "source_field": "badges"
+    },
+    {
+     "need": "podrażnienia oczu (wiatr, słońce, kurz)",
+     "evidence_verbatim": "Łagodzą skutki podrażnień wywołane czynnikami zewnętrznymi (np. wiatr, słońce, kurz itp.).",
+     "source_field": "properties"
+    },
+    {
+     "need": "podrażnienia oczu (pieczenie, swędzenie, łzawienie)",
+     "evidence_verbatim": "Stosować w przypadku mechanicznych podrażnień (np. pieczenie, swędzenie, łzawienie) spowodowanych czynnikami zewnętrznymi",
+     "source_field": "usage"
+    },
+    {
+     "need": "nawilżenie oczu i nosa",
+     "evidence_verbatim": "DŁUGOTRWALE NAWILŻAJĄ OCZY I NOS",
+     "source_field": "badges"
+    },
+    {
+     "need": "wysuszenie śluzówki nosa",
+     "evidence_verbatim": "Chronią śluzówkę nosa przed wysuszeniem, wspomagają gojenie i przywracają naturalne nawilżenie.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena oczu i nosa",
+     "evidence_verbatim": "Higiena oczu i nosa.",
+     "source_field": "indications"
+    },
+    {
+     "need": "wsparcie oka przy farmakoterapii",
+     "evidence_verbatim": "Wspierają regenerację oka przy farmakoterapii.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "kwas hialuronowy",
+     "label_name": "HYALURONIC ACID",
+     "stated_function_verbatim": "Kwas hialuronowy (oko)– zapewnia ochronę oka przed podrażnieniami, wysychaniem oraz jest istotnym czynnikiem wpływającym na długotrwałe nawilżenie powierzchni oka. Dzięki zawartości kwasu hialuronowego preparat wspomaga tworzenie filmu łzowego, stabilizuje środowisko rogówki i wspiera jej regenerację.\nKwas hialuronowy (nos)- wiążąc wodę tworzy ochronną warstwę na śluzówce. Chroni przed wysuszaniem śluzówki spowodowanym przez ogrzewanie czy suche powietrze. Wspomaga gojenie i przywraca naturalne nawilżenie."
+    },
+    {
+     "name_pl": "chlorheksydyna",
+     "label_name": "CHLORHEXIDINE DIGLUCONATE",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Krople nawilżające do oczu i nosa przeznaczone dla psów i kotów.\nKrople łagodzą objawy zespołu suchego oka wywołane przez zmniejszoną ilość lub brak łez. Łagodzą skutki podrażnień wywołane czynnikami zewnętrznymi (np. wiatr, słońce, kurz itp.). Chronią śluzówkę nosa przed wysuszeniem, wspomagają gojenie i przywracają naturalne nawilżenie. Zostały opracowane z myślą o ochronie i nawilżeniu oczu i nosa. Wspierają regenerację oka przy farmakoterapii.\nKwas hialuronowy (oko)– zapewnia ochronę oka przed podrażnieniami, wysychaniem oraz jest istotnym czynnikiem wpływającym na długotrwałe nawilżenie powierzchni oka. Dzięki zawartości kwasu hialuronowego preparat wspomaga tworzenie filmu łzowego, stabilizuje środowisko rogówki i wspiera jej regenerację.\nKwas hialuronowy (nos)- wiążąc wodę tworzy ochronną warstwę na śluzówce. Chroni przed wysuszaniem śluzówki spowodowanym przez ogrzewanie czy suche powietrze. Wspomaga gojenie i przywraca naturalne nawilżenie.",
+   "usage_verbatim": "Zakraplać do worka spojówkowego lub nosa po 1-2 kropli od 4 do 6 razy dziennie.\nStosować w przypadku mechanicznych podrażnień (np. pieczenie, swędzenie, łzawienie) spowodowanych czynnikami zewnętrznymi tj. wiatr, słońce, farmakoterapia oraz w codziennej pielęgnacji.",
+   "indications_verbatim": "Higiena oczu i nosa.",
+   "intended_for_verbatim": "Dla zwierząt domowych.",
+   "precautions_verbatim": "W przypadku nietolerancji przerwać stosowanie.",
+   "composition_verbatim": "AQUA, HYALURONIC ACID, GLICERIN, BENZALKONIUM CHLORIDE, SODIUM CHLORIDE, SODIUM METHYLOPARABEN, CHLORHEXIDINE DIGLUCONATE, DISODIUM EDTA",
+   "notes_verbatim": "Przechowywać w temperaturze +1 oC do +25oC",
+   "variants": [
+    {
+     "title": "KROPLE HIALURONOWE DO OCZU I NOSA 15 ml",
+     "capacity": "15 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/ektozin-50mlkrople-hialuronowe-do-oczu-i-nosa-15-ml/",
+     "woo_id": 21831,
+     "woo_path": "/produkt/krople-hialuronowe-15ml-do-oczu-i-nosa-dla-psow-i-kotow/",
+     "price_pln": 43.7,
+     "regular_price_pln": 43.7,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/03/EUROWET_Krople_hialuronowe_butelka_15ml.png",
+     "en_page_path": "/en/products/eye-and-ear-care/krople-hialuronowe-do-oczu-i-nosa-15-ml-eng/"
+    },
+    {
+     "title": "KROPLE HIALURONOWE DO OCZU I NOSA 30 ml",
+     "capacity": "30 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/krople-hialuronowe-do-oczu-i-nosa-30-ml/",
+     "woo_id": 21841,
+     "woo_path": "/produkt/krople-hialuronowe-do-oczu-i-nosa-30-ml/",
+     "price_pln": 62.45,
+     "regular_price_pln": 62.45,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/03/EUROWET_Krople_hialuronowe_butelka_30ml.png",
+     "en_page_path": "/en/products/eye-and-ear-care/krople-hialuronowe-do-oczu-i-nosa-30-ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "optex",
+    "vetaseptol"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Wrong Yoast/OG description on both PL pages (and both EN pages): copied Optex/Ektozin text \"Płyn do przemywania oczu i powiek dla psów i kotów. Łagodzi podrażnienia spojówek. Nawilża oczy i powieki. Z wodą chabrową.\" - the product contains no cornflower water.",
+    "15 ml page slug is a copy artefact: /produkty/produkty-do-pielegnacji-oczu-i-uszu/ektozin-50mlkrople-hialuronowe-do-oczu-i-nosa-15-ml/.",
+    "PL \"Sposób stosowania\" contains only indication-type text (\"Stosować w przypadku mechanicznych podrażnień...\") without dosing; dosing \"Zakraplać do worka spojówkowego lub nosa po 1-2 kropli od 4 do 6 razy dziennie.\" exists only in Woo 21831/21841 (field labelled \"Zastosowanie\"; \"1-2 kropli\" should read \"1-2 krople\"). usage_verbatim combines both.",
+    "Środki ostrożności (\"W przypadku nietolerancji przerwać stosowanie.\") and storage (\"Przechowywać w temperaturze +1 oC do +25oC\") appear only in Woo, not on the PL pages; \"oC\" should be \"°C\".",
+    "Species inconsistency: Przeznaczenie \"Dla zwierząt domowych.\" vs subtitle/properties/Woo \"dla psów i kotów\".",
+    "INCI typos: \"GLICERIN\" (GLYCERIN), \"SODIUM METHYLOPARABEN\" (SODIUM METHYLPARABEN).",
+    "Packshot alt text on PL pages is the whole hyaluronic-acid paragraph (alt attribute misused)."
+   ],
+   "vet_context_verbatim": "Wspierają regenerację oka przy farmakoterapii."
+  },
+  {
+   "family_slug": "optex",
+   "name": "OPTEX",
+   "line": "Optex",
+   "product_type": "preparat do pielęgnacji oczu",
+   "category_slugs": [
+    "produkty-do-pielegnacji-oczu-i-uszu"
+   ],
+   "subtitle_verbatim": "Płyn do przemywania oczu i powiek dla psów i kotów",
+   "badges_verbatim": [
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SPOJÓWEK",
+    "NAWILŻA OCZY I POWIEKI",
+    "Z WODĄ CHABROWĄ"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "oczy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Higiena oczu i powiek.",
+     "source_field": "indications"
+    },
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Pomaga usunąć zanieczyszczenia z worka spojówkowego.",
+     "source_field": "properties"
+    },
+    {
+     "need": "podrażnienia spojówek",
+     "evidence_verbatim": "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SPOJÓWEK",
+     "source_field": "badges"
+    },
+    {
+     "need": "nawilżenie oczu i powiek",
+     "evidence_verbatim": "NAWILŻA OCZY I POWIEKI",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "woda chabrowa",
+     "label_name": "Centaurea Cyanus Floral Water",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Optex jest dermokosmetykiem weterynaryjnym, który łagodzi objawy związane z podrażnieniami spojówek oraz ułatwia naturalne nawilżenie oczu i powiek. Pomaga usunąć zanieczyszczenia z worka spojówkowego.",
+   "usage_verbatim": "Nawilżyć oko namoczonym kompresem lub wprowadzić kilka kropli płynu do worka spojówkowego. Następnie usunąć jego nadmiar. Przemyć również powieki. Stosować w zależności od potrzeb, nawet codziennie.",
+   "indications_verbatim": "Higiena oczu i powiek.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Aqua, Centaurea Cyanus Floral Water, Sodium Chloride, Benzalkonium Chloride, Sodium Methylparaben, Ortofosforic Acid, CI 42090",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "OPTEX 100ml",
+     "capacity": "100 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/optex-100ml/",
+     "woo_id": 5265,
+     "woo_path": "/produkt/optex-100ml/",
+     "price_pln": 49.12,
+     "regular_price_pln": 49.12,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/04/Optex_EUROWET-1.png",
+     "en_page_path": "/en/products/eye-and-ear-care/optex-100ml-eng/"
+    },
+    {
+     "title": "OPTEX 50ml",
+     "capacity": "50 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/optex-50ml/",
+     "woo_id": 20411,
+     "woo_path": "/produkt/optex-50ml/",
+     "price_pln": 35.89,
+     "regular_price_pln": 35.89,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/03/Optex_50ml-1.png",
+     "en_page_path": "/en/products/eye-and-ear-care/optex-50ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "ektozin",
+    "vetaseptol",
+    "WITAZIUM 40 tab."
+   ],
+   "documents": [],
+   "data_issues": [
+    "Inconsistent capacities: 100 ml page subtitle \"Płyn do przemywania oczu i powiek dla psów i kotów\" and Przeznaczenie \"Dla psów i kotów.\"; 50 ml page subtitle \"Płyn do przemywania oczu i powiek\" and Przeznaczenie \"Dla zwierząt.\" (Woo 20411 says \"Dla psów i kotów.\").",
+    "Shop button on the 100 ml page links to /produkt/optex-100ml (no trailing slash), so Woo 5265 \"OPTEX 100ml\" was left in woo_without_product_page; mapped here.",
+    "Yoast/OG descriptions (\"Łagodzi podrażnienia spojówek\", Woo: \"łagodzi podrażnienia spojówek\") are stronger than the on-page \"łagodzi objawy związane z podrażnieniami spojówek\"; the same PL description is reused on Ektozin, Optex HA, Krople hialuronowe and the EN 50 ml page.",
+    "INCI typo \"Ortofosforic Acid\" (Phosphoric/Orthophosphoric Acid).",
+    "Woo 5265 still uses the 2018 packshot (2018/08/Optex_100ml-1-scaled.png) while the page shows 2025/04/Optex_EUROWET-1.png.",
+    "Related card for Ektozin on these pages claims \"Łagodzi zapalenie spojówek\" (disease claim, stronger than the Ektozin page); Vetaseptol card uses root-relative /vetaseptol-10ml.",
+    "No Środki ostrożności section on page or in Woo."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "optex-ha",
+   "name": "OPTEX HA",
+   "line": "Optex",
+   "product_type": "preparat do pielęgnacji oczu",
+   "category_slugs": [
+    "produkty-do-pielegnacji-oczu-i-uszu"
+   ],
+   "subtitle_verbatim": "Płyn do przemywania oczu i powiek",
+   "badges_verbatim": [
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SPOJÓWEK",
+    "NAWILŻA OCZY I POWIEKI",
+    "Z kwasem hialuronowym, WODĄ CHABROWĄ"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "oczy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Higiena oczu i powiek.",
+     "source_field": "indications"
+    },
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Pomaga usunąć zanieczyszczenia z worka spojówkowego.",
+     "source_field": "properties"
+    },
+    {
+     "need": "podrażnienia spojówek",
+     "evidence_verbatim": "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SPOJÓWEK",
+     "source_field": "badges"
+    },
+    {
+     "need": "nawilżenie oczu i powiek",
+     "evidence_verbatim": "NAWILŻA OCZY I POWIEKI",
+     "source_field": "badges"
+    },
+    {
+     "need": "suchość oczu",
+     "evidence_verbatim": "kwas hialuronowy nawilża rogówkę, łagodzi suchość i ból oczu",
+     "source_field": "properties"
+    },
+    {
+     "need": "regeneracja oka po zabiegach",
+     "evidence_verbatim": "wspomaga regenerację powierzchniowych struktur oka po zabiegach operacyjnych",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "kwas hialuronowy",
+     "label_name": "Hydrolyzed Hyaluronic Acid",
+     "stated_function_verbatim": "Zawarty w produkcie kwas hialuronowy nawilża rogówkę, łagodzi suchość i ból oczu, wspomaga regenerację powierzchniowych struktur oka po zabiegach operacyjnych"
+    },
+    {
+     "name_pl": "woda chabrowa",
+     "label_name": "Centaurea Cyanus Floral Water",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Optex z kwasem hialuronowym jest dermokosmetykiem weterynaryjnym, który łagodzi objawy związane z podrażnieniami spojówek oraz ułatwia naturalne nawilżenie oczu i powiek. Pomaga usunąć zanieczyszczenia z worka spojówkowego. Zawarty w produkcie kwas hialuronowy nawilża rogówkę, łagodzi suchość i ból oczu, wspomaga regenerację powierzchniowych struktur oka po zabiegach operacyjnych",
+   "usage_verbatim": "Nawilżyć oko namoczonym kompresem lub wprowadzić kilka kropli płynu do worka spojówkowego. Następnie usunąć jego nadmiar. Przemyć również powieki. Stosować w zależności od potrzeb, nawet codziennie.",
+   "indications_verbatim": "Higiena oczu i powiek.",
+   "intended_for_verbatim": "Dla zwierząt.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Aqua, Centaurea Cyanus Floral Water, Sodium Chloride, Benzalkonium Chloride, Hydrolyzed Hyaluronic Acid, Sodium Methylparaben, Ortofosforic Acid, CI 42090",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "OPTEX HA 50ml",
+     "capacity": "50 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/optex-ha-50ml/",
+     "woo_id": 21066,
+     "woo_path": "/produkt/optex-ha-50ml/",
+     "price_pln": 46.0,
+     "regular_price_pln": 46.0,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/07/EUROWET_Optex_HA_50ml-1.png",
+     "en_page_path": "/en/products/eye-and-ear-care/optex-ha-50-ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "ektozin",
+    "vetaseptol",
+    "WITAZIUM 40 tab."
+   ],
+   "documents": [],
+   "data_issues": [
+    "Species: PL page Przeznaczenie says only \"Dla zwierząt.\" and the subtitle names no species; \"Dla psów i kotów.\" (species_evidence) comes from Woo 21066 /produkt/optex-ha-50ml/ (PRZEZNACZENIE and short description \"PŁYN DO PRZEMYWANIA OCZU I POWIEK DLA PSÓW I KOTÓW\").",
+    "Yoast/OG description is the generic Optex text ending \"Z wodą chabrową.\" - no mention of hyaluronic acid (HA) that differentiates the product; Woo Yoast identical to Optex.",
+    "Properties paragraph lacks the final full stop on the PL page; Woo version ends with \". .\" (double full stop).",
+    "Claims \"łagodzi suchość i ból oczu\" and \"po zabiegach operacyjnych\" go beyond care wording for a \"dermokosmetyk weterynaryjny\" - verify.",
+    "INCI typo \"Ortofosforic Acid\".",
+    "EN page slug pattern differs (/optex-ha-50-ml-eng/ vs PL /optex-ha-50ml/) and carries the Polish Yoast description."
+   ],
+   "vet_context_verbatim": "wspomaga regenerację powierzchniowych struktur oka po zabiegach operacyjnych"
+  },
+  {
+   "family_slug": "otiseptol",
+   "name": "OTISEPTOL",
+   "line": null,
+   "product_type": "preparat do pielęgnacji uszu",
+   "category_slugs": [
+    "produkty-do-pielegnacji-oczu-i-uszu"
+   ],
+   "subtitle_verbatim": "Emulsja do przemywania uszu dla psów i kotów",
+   "badges_verbatim": [
+    "USUWA WOSKOWINĘ",
+    "ROZMIĘKCZA ZROGOWACIAŁY NASKÓREK",
+    "Z OLEJKIEM MIGDAŁOWYM"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "uszy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "Otiseptol ułatwia usunięcie woskowiny.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "USUWA WOSKOWINĘ",
+     "source_field": "badges"
+    },
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "Higiena przewodu słuchowego zewnętrznego i małżowiny usznej.",
+     "source_field": "indications"
+    },
+    {
+     "need": "zrogowaciały naskórek w uchu",
+     "evidence_verbatim": "Rozmiękcza nadmiernie zrogowaciały naskórek, ułatwia jego usunięcie i wspomaga szybką regenerację.",
+     "source_field": "properties"
+    },
+    {
+     "need": "nieprzyjemny zapach z uszu",
+     "evidence_verbatim": "Likwiduje nieprzyjemny zapach w przypadku infekcji przewodu słuchowego zewnętrznego i małżowiny usznej.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olejek migdałowy",
+     "label_name": "Prunus Amygdalus Dulcis (Sweet Almond) Oil",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Otiseptol ułatwia usunięcie woskowiny. Rozmiękcza nadmiernie zrogowaciały naskórek, ułatwia jego usunięcie i wspomaga szybką regenerację. Likwiduje nieprzyjemny zapach w przypadku infekcji przewodu słuchowego zewnętrznego i małżowiny usznej.",
+   "usage_verbatim": "Wprowadzić od 5 do 30 kropli (zależnie od wielkości zwierzęcia) emulsji do przewodu słuchowego. Rozprowadzić masując podstawę ucha, a następnie usunąć jej nadmiar przy pomocy wacika. Jednocześnie należy oczyścić wewnętrzną stronę małżowiny usznej. Zabieg należy powtarzać aż do całkowitego oczyszczenia ucha. Stosować w zależności od ilości wytwarzanej woskowiny 1 lub 2 razy w tygodniu.",
+   "indications_verbatim": "Higiena przewodu słuchowego zewnętrznego i małżowiny usznej.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Cetearyl Alcohol, Glyceryl Stearate, Ceteareth-20, Ceteareth-12, Cetyl Palmitate, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Glicerin, Benzalkonium Chloride, Parfum, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "OTISEPTOL 100ml",
+     "capacity": "100 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/otiseptol-100ml/",
+     "woo_id": 5267,
+     "woo_path": "/produkt/otiseptol-100ml/",
+     "price_pln": 49.37,
+     "regular_price_pln": 49.37,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/06/Otiseptol.png",
+     "en_page_path": "/en/products/eye-and-ear-care/otiseptol-100ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "akaryl-zel",
+    "vetaseptol",
+    "otiseptol"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Woo 5267 short description headline is wrong: \"KROPLE OCZYSZCZAJĄCE DO OCZU I NOSA DLA PSÓW I KOTÓW\" (copied from Vetaseptol) - product is an ear emulsion.",
+    "Shop button links to /produkt/otiseptol-100ml (no trailing slash), so Woo 5267 was left in woo_without_product_page; mapped here.",
+    "Related-products block on the Otiseptol page links to itself (/otiseptol-100ml) plus root-relative /akaryl-zel-15ml and /vetaseptol-10ml.",
+    "Yoast/OG description says \"ułatwia jego usunięcie i szybką regenerację\" while the page says \"wspomaga szybką regenerację\".",
+    "Images inconsistent: page packshot 2026/06/Otiseptol.png, og:image 2019/03/Otiseptol_100ml-3.png, Woo image 2018/08/Otiseptol_100ml_EUROWET.png.",
+    "INCI typo \"Glicerin\".",
+    "Properties mention \"infekcji przewodu słuchowego\" (disease context) on a care product."
+   ],
+   "vet_context_verbatim": "Likwiduje nieprzyjemny zapach w przypadku infekcji przewodu słuchowego zewnętrznego i małżowiny usznej."
+  },
+  {
+   "family_slug": "otolan",
+   "name": "OTOLAN",
+   "line": null,
+   "product_type": "preparat do pielęgnacji uszu",
+   "category_slugs": [
+    "produkty-do-pielegnacji-oczu-i-uszu"
+   ],
+   "subtitle_verbatim": "PŁYN DO USUWANIA WOSKOWINY Z MAŁŻOWINY USZNEJ I PRZEWODU SŁUCHOWEGO ZEWNĘTRZNEGO U PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "ROZPUSZCZA WOSKOWINĘ",
+    "USUWA NIEPOŻĄDANY ZAPACH",
+    "ŁATWE STOSOWANIE",
+    "NATURALNY SKŁAD"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "uszy"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "ROZPUSZCZA WOSKOWINĘ",
+     "source_field": "badges"
+    },
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "Dzięki specjalnie dobranym składnikom doskonale usuwa zalegającą woskowinę uszną.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena uszu/woskowina",
+     "evidence_verbatim": "Higiena przewodu słuchowego zewnętrznego i małżowiny usznej.",
+     "source_field": "indications"
+    },
+    {
+     "need": "nieprzyjemny zapach z uszu",
+     "evidence_verbatim": "USUWA NIEPOŻĄDANY ZAPACH",
+     "source_field": "badges"
+    },
+    {
+     "need": "niepożądana flora bakteryjna ucha",
+     "evidence_verbatim": "Zapobiega rozwojowi niepożądanej flory bakteryjnej w małżowinie usznej i kanale słuchowym.",
+     "source_field": "properties"
+    },
+    {
+     "need": "podrażnienia ucha",
+     "evidence_verbatim": "Łagodzi podrażnienia i stany zapalne.",
+     "source_field": "properties"
+    },
+    {
+     "need": "nawilżenie ucha",
+     "evidence_verbatim": "Działa nawilżająco i łagodząco na małżowinę uszną oraz przewód słuchowy zewnętrzny.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "olej jojoba",
+     "label_name": "SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+     "stated_function_verbatim": "Nawilża i chroni małżowinę uszną oraz przewód słuchowy zewnętrzny przed działaniem niekorzystnych czynników."
+    },
+    {
+     "name_pl": "olej ze słodkich migdałów",
+     "label_name": "PRUNUS AMYGDALUS DULCIS (SWEET ALMOND) OIL",
+     "stated_function_verbatim": "Działa jako naturalny emolient dzięki obecności nienasyconych kwasów tłuszczowych. Wspomaga usuwanie odkładającej się woskowiny usznej."
+    },
+    {
+     "name_pl": "skwalan",
+     "label_name": "SQUALANE",
+     "stated_function_verbatim": "Łagodzi podrażnienia i stany zapalne. Ułatwia naturalną odnowę naskórka przewodu słuchowego i małżowiny usznej. Wspomaga usuwanie zalegającej woskowiny."
+    },
+    {
+     "name_pl": "olejek z pestek brzoskwini",
+     "label_name": "PRUNUS PERSICA (PEACH) KERNEL OIL",
+     "stated_function_verbatim": "Posiada dużą zawartość kwasów tłuszczowych takich jak kwas omega-6 i omega-9. Działa nawilżająco i łagodząco na małżowinę uszną oraz przewód słuchowy zewnętrzny."
+    },
+    {
+     "name_pl": "witamina E",
+     "label_name": "TOCOPHEROL ACETATE",
+     "stated_function_verbatim": "Wspomaga regenerację naskórka małżowiny usznej i przewodu słuchowego zewnętrznego."
+    }
+   ],
+   "properties_verbatim": "OTOLAN Płyn do usuwania woskowiny z małżowiny usznej i przewodu słuchowego zewnętrznego u psów i kotów. Dzięki specjalnie dobranym składnikom doskonale usuwa zalegającą woskowinę uszną. Zapobiega rozwojowi niepożądanej flory bakteryjnej w małżowinie usznej i kanale słuchowym.\nOlej Jojoba\nNawilża i chroni małżowinę uszną oraz przewód słuchowy zewnętrzny przed działaniem niekorzystnych czynników.\nOlej ze słodkich migdałów\nDziała jako naturalny emolient dzięki obecności nienasyconych kwasów tłuszczowych. Wspomaga usuwanie odkładającej się woskowiny usznej.\nSkwalan\nŁagodzi podrażnienia i stany zapalne. Ułatwia naturalną odnowę naskórka przewodu słuchowego i małżowiny usznej. Wspomaga usuwanie zalegającej woskowiny.\nOlejek z pestek brzoskwini\nPosiada dużą zawartość kwasów tłuszczowych takich jak kwas omega-6 i omega-9. Działa nawilżająco i łagodząco na małżowinę uszną oraz przewód słuchowy zewnętrzny.\nWitamina E\nWspomaga regenerację naskórka małżowiny usznej i przewodu słuchowego zewnętrznego.",
+   "usage_verbatim": "Wprowadzić od 5 do 30 kropli (zależnie od wielkości zwierzęcia) preparatu do przewodu słuchowego. Rozprowadzić masując podstawę ucha, a następnie usunąć jej nadmiar przy pomocy wacika. Jednocześnie należy oczyścić wewnętrzną stronę małżowiny usznej. Nadmiar preparatu usunąć wacikiem.",
+   "indications_verbatim": "Higiena przewodu słuchowego zewnętrznego i małżowiny usznej.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Unikać kontaktu z oczami. Nie używać patyczków kosmetycznych.",
+   "composition_verbatim": "PARAFFINUM LIQUIDUM, PRUNUS AMYGDALUS DULCIS (SWEET ALMOND) OIL, SQUALANE, SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL, PRUNUS PERSICA (PEACH) KERNEL OIL, TOCOPHEROL ACETATE.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "OTOLAN 100ml",
+     "capacity": "100 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/otolan-100ml/",
+     "woo_id": 14292,
+     "woo_path": "/produkt/otolan-100ml/",
+     "price_pln": 64.07,
+     "regular_price_pln": 64.07,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/07/Otolan_100ml.png",
+     "en_page_path": "/en/products/eye-and-ear-care/otolan-100ml-eng/"
+    },
+    {
+     "title": "OTOLAN 50ml",
+     "capacity": "50 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/otolan-50ml/",
+     "woo_id": 20413,
+     "woo_path": "/produkt/otolan-50ml/",
+     "price_pln": 38.9,
+     "regular_price_pln": 38.9,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/03/Otolan_50ml-1.png",
+     "en_page_path": "/en/products/eye-and-ear-care/otolan-50ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "ektozin",
+    "optex",
+    "vetaseptol",
+    "WITAZIUM 40 tab."
+   ],
+   "documents": [],
+   "data_issues": [
+    "Yoast/OG description on PL pages is the pipe-joined badge list plus the full first paragraph (too long); Woo 14292/20413 Yoast concatenates ingredient headings without spaces (\"...Olej JojobaNawilża...\").",
+    "EN 100 ml page /en/products/eye-and-ear-care/otolan-100ml-eng/ has the Polish Otiseptol description (\"Otiseptol ułatwia usunięcie woskowiny...\"); EN 50 ml has the Polish Otolan badge list.",
+    "Badge \"NATURALNY SKŁAD\" while the first INCI ingredient is PARAFFINUM LIQUIDUM (mineral oil) - claim is questionable.",
+    "Sposób stosowania copied from Otiseptol: \"usunąć jej nadmiar\" (\"jej\" refers to an emulsion) and then repeats \"Nadmiar preparatu usunąć wacikiem.\".",
+    "Related card for Ektozin claims \"Łagodzi zapalenie spojówek\" (unrelated to ear care and stronger than the Ektozin page)."
+   ],
+   "vet_context_verbatim": "Łagodzi podrażnienia i stany zapalne."
+  },
+  {
+   "family_slug": "vetaseptol",
+   "name": "VETASEPTOL",
+   "line": null,
+   "product_type": "preparat do pielęgnacji oczu",
+   "category_slugs": [
+    "produkty-do-pielegnacji-oczu-i-uszu"
+   ],
+   "subtitle_verbatim": "Krople oczyszczające do oczu i nosa dla psów i kotów",
+   "badges_verbatim": [
+    "HIGIENA OCZU I NOSA",
+    "USUWANIE ZANIECZYSZCZEŃ Z WORKA SPOJÓWKOWEGO",
+    "ŁAGODZENIE OBJAWÓW ZWIĄZANYCH Z PODRAŻNIENIAMI SPOJÓWEK ORAZ BŁON ŚLUZOWYCH NOSA"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "oczy",
+    "inne"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "Pomagają usunąć zanieczyszczenia z worka spojówkowego.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena oczu/wydzielina",
+     "evidence_verbatim": "USUWANIE ZANIECZYSZCZEŃ Z WORKA SPOJÓWKOWEGO",
+     "source_field": "badges"
+    },
+    {
+     "need": "higiena oczu i nosa",
+     "evidence_verbatim": "Higiena oczu i nosa.",
+     "source_field": "indications"
+    },
+    {
+     "need": "podrażnienia spojówek i błon śluzowych nosa",
+     "evidence_verbatim": "ŁAGODZENIE OBJAWÓW ZWIĄZANYCH Z PODRAŻNIENIAMI SPOJÓWEK ORAZ BŁON ŚLUZOWYCH NOSA",
+     "source_field": "badges"
+    },
+    {
+     "need": "wyciek z nosa, obrzęk powiek",
+     "evidence_verbatim": "ograniczają wyciek z nosa i obrzęk powiek",
+     "source_field": "properties"
+    },
+    {
+     "need": "nawilżenie oczu i powiek",
+     "evidence_verbatim": "Ułatwiają naturalne nawilżenie oczu i powiek.",
+     "source_field": "properties"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "kwas hialuronowy",
+     "label_name": "HYALURONIC ACID",
+     "stated_function_verbatim": "Nos – Kwas hialuronowy zawarty w produkcie do nosa chroni i oczyszcza nos, nawilża i tworzy odpowiednie środowisko dla regeneracji błony śluzowej nosa."
+    }
+   ],
+   "properties_verbatim": "Krople łagodzą objawy związane z podrażnieniami spojówek oraz ograniczają wyciek z nosa i obrzęk powiek. Ułatwiają naturalne nawilżenie oczu i powiek. Pomagają usunąć zanieczyszczenia z worka spojówkowego.\nOczy – Działa nawilżająco, zapobiega zbyt szybkiemu odparowywaniu łez z oka, ma właściwości zatrzymywania wody, co jest istotnym czynnikiem regulującym nawilżenie tkanek gałki ocznej. Spełnia szereg funkcji między innymi wspomaga regenerację nabłonka rogówki.\nNos – Kwas hialuronowy zawarty w produkcie do nosa chroni i oczyszcza nos, nawilża i tworzy odpowiednie środowisko dla regeneracji błony śluzowej nosa.",
+   "usage_verbatim": "Zakraplać do worka spojówkowego lub nosa po 1-2 krople, od 4 do 6 razy dziennie.",
+   "indications_verbatim": "Higiena oczu i nosa.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, POTASSIUM GLUCONATE, MANNITOL, HYALURONIC ACID, CHLORHEXIDINE DIGLUCONATE, DISODIUM EDTA",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "VETASEPTOL 10ml",
+     "capacity": "10 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/vetaseptol-10ml/",
+     "woo_id": 5266,
+     "woo_path": "/produkt/vetaseptol-krople-10ml/",
+     "price_pln": 56.25,
+     "regular_price_pln": 56.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/03/EUROWET_Vetaseptol_10ml_opbutelka.png",
+     "en_page_path": "/en/products/eye-and-ear-care/vetaseptol-10ml-eng/"
+    },
+    {
+     "title": "VETASEPTOL 15ml",
+     "capacity": "15 ml",
+     "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/vetaseptol-krople-15ml/",
+     "woo_id": 22123,
+     "woo_path": "/produkt/vetaseptol-krople-15ml/",
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/03/EUROWET_Vetaseptol_15ml_opbutelka.png",
+     "en_page_path": "/en/products/eye-and-ear-care/vetaseptol-krople-15ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "optex",
+    "WITAZIUM 40 tab.",
+    "Stresnal 125ml"
+   ],
+   "documents": [],
+   "data_issues": [
+    "10 ml shop button points to /produkt/vetaseptol-10ml/ which is not a Woo product; the real Woo product is 5266 /produkt/vetaseptol-krople-10ml/ (left in woo_without_product_page; mapped here).",
+    "Woo 22123 \"VETASEPTOL 15ml\" has price 0 and is_purchasable=false although in stock - price missing (price_pln set to null).",
+    "Yoast/OG description \"Krople łagodzą podrażnienia spojówek...\" drops \"objawy związane z\" used on the page.",
+    "Properties bullet \"Oczy – Działa nawilżająco...\" does not name the ingredient it describes (only the \"Nos\" bullet names kwas hialuronowy); double space after \"z oka,\".",
+    "Category page tile for Vetaseptol 15ml carries an extra link to non-existent /produkty/produkty-do-pielegnacji-oczu-i-uszu/vetaseptol-15ml/ and an http:// link; Vetaseptol tiles elsewhere use root-relative /vetaseptol-10ml.",
+    "Related products on both pages include Stresnal 125ml (calming feed) - unrelated cross-sell; links /optex-100ml and /stresnal-125ml are root-relative.",
+    "Woo 5266 images are 2018 packshots (2018/08/EUROWET_Vetaseptol_10ml_op.png) while the page shows 2026/03/EUROWET_Vetaseptol_10ml_opbutelka.png.",
+    "EN 15 ml page has the Polish Yoast description."
+   ],
+   "vet_context_verbatim": "Krople łagodzą objawy związane z podrażnieniami spojówek oraz ograniczają wyciek z nosa i obrzęk powiek."
+  },
+  {
+   "family_slug": "vetinet-higieniczny-plyn-myjacy-niebieski",
+   "name": "VETINET higieniczny płyn myjący – niebieski",
+   "line": "Vetinet",
+   "product_type": "preparat higieniczny",
+   "category_slugs": [
+    "higiena"
+   ],
+   "subtitle_verbatim": "higieniczny płyn myjący",
+   "badges_verbatim": [
+    "z chlorheksydyną i olejkiem eukaliptusowym",
+    "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI",
+    "HIGIENA GABINETU I SPRZĘTU WETERYNARYJNEGO",
+    "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE SKUTECZNIE ZWALCZAJĄ DROBNOUSTROJE",
+    "PRZYJEMNY ZAPACH"
+   ],
+   "species": [],
+   "species_evidence": "Płyn myjący ogólnego zastosowania.",
+   "body_areas": [
+    "skóra",
+    "inne"
+   ],
+   "needs_evidence": [
+    {
+     "need": "mycie zwierząt przed zabiegiem",
+     "evidence_verbatim": "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI",
+     "source_field": "badges"
+    },
+    {
+     "need": "mycie przed i po kontakcie ze zwierzętami",
+     "evidence_verbatim": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością.",
+     "source_field": "indications"
+    },
+    {
+     "need": "higiena gabinetu i sprzętu weterynaryjnego",
+     "evidence_verbatim": "Higiena gabinetu weterynaryjnego i sprzętu.",
+     "source_field": "indications"
+    },
+    {
+     "need": "higiena powierzchni",
+     "evidence_verbatim": "Zalecany do powierzchni i ogólnego zastosowania.",
+     "source_field": "properties"
+    },
+    {
+     "need": "usuwanie zanieczyszczeń biologicznych",
+     "evidence_verbatim": "Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne.",
+     "source_field": "properties"
+    },
+    {
+     "need": "zwalczanie drobnoustrojów",
+     "evidence_verbatim": "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE SKUTECZNIE ZWALCZAJĄ DROBNOUSTROJE",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "chlorheksydyna",
+     "label_name": "CHLORHEXIDINE DIGLUCONATE",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "olejek eukaliptusowy",
+     "label_name": "EUCALYPTUS RADIATA ESSENTIAL OIL",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Bez podrażnień skóry, błon śluzowych i ran. Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne. Posiada bardzo dobre właściwości myjące. Zalecany do powierzchni i ogólnego zastosowania.",
+   "usage_verbatim": "Na miejsce przeznaczone do mycia nanieść niewielką ilość płynu i rozprowadzić. Umyć i spłukać wodą. Czynność powtórzyć.",
+   "indications_verbatim": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością. Higiena gabinetu weterynaryjnego i sprzętu.",
+   "intended_for_verbatim": "Płyn myjący ogólnego zastosowania.",
+   "precautions_verbatim": "Unikać kontaktu z oczami. Przy nadwrażliwości na chlorheksydynę może wywołać alergiczne odczyny skórne.",
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, CHLORHEXIDINE DIGLUCONATE, PEG 4 RAPESEEDAMIDE, GLICERIN, SILICONE QUATERIUM-17, LAURETH-9, POLYSORBATE 20, EUCALYPTUS RADIATA ESSENTIAL OIL, CITRIC ACID, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, CI42090",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "VETINET higieniczny płyn myjący – niebieski – 1L",
+     "capacity": "1 L",
+     "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-niebieski-1l/",
+     "woo_id": 9603,
+     "woo_path": "/produkt/vetinet-higieniczny-plyn-myjacy-1l/",
+     "price_pln": 81.72,
+     "regular_price_pln": 81.72,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_1L-1.png",
+     "en_page_path": "/en/products/hygiene/vetinet-higieniczny-plyn-myjacy-niebieski-1l-eng/"
+    },
+    {
+     "title": "VETINET higieniczny płyn myjący – niebieski – 5L",
+     "capacity": "5 L",
+     "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-niebieski-5l/",
+     "woo_id": 9604,
+     "woo_path": "/produkt/vetinet-higieniczny-plyn-myjacy-5l/",
+     "price_pln": 220.02,
+     "regular_price_pln": 220.02,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_5l-3.png",
+     "en_page_path": "/en/products/hygiene/vetinet-higieniczny-plyn-myjacy-niebieski-5l-eng/"
+    },
+    {
+     "title": "VETINET 1L",
+     "capacity": "1 L",
+     "page_path": "/produkty/higiena/vetinet-1l/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_1L.png",
+     "en_page_path": "/en/products/hygiene/vetinet-1l-eng/"
+    },
+    {
+     "title": "VETINET 5L",
+     "capacity": "5 L",
+     "page_path": "/produkty/higiena/vetinet-5l/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_niebieski_5l.png",
+     "en_page_path": "/en/products/hygiene/vetinet-5l-eng/"
+    }
+   ],
+   "related_on_site": [
+    "vetinet-plyn-do-powierzchni-zielony",
+    "dry-clean",
+    "alu-derm"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Legacy duplicate pages /produkty/higiena/vetinet-1l/ (3463) and /produkty/higiena/vetinet-5l/ (3467), last modified 2024-02-16: same text and packshots as the \"niebieski\" pages, old template (stray H1 \"Skuteczny\" - base parser took it as display_name), Skąpiec/Nokaut price links, shop buttons /produkt/vetinet-1l and /produkt/vetinet-5l that match no Woo product, related tiles DRY&Clean/Aluderm via root-relative links, no inbound links and not in the category listing - should be 301-redirected to the niebieski pages.",
+    "Badge \"SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE SKUTECZNIE ZWALCZAJĄ DROBNOUSTROJE\" and properties \"Bez podrażnień skóry, błon śluzowych i ran.\" are biocidal/skin-safety claims - verify BPR status and substantiation.",
+    "Woo names omit the colour (\"VETINET higieniczny płyn myjący 1L\"/\"5L\") while pages say \"– niebieski –\"; category page shows two different products both as \"Vetinet 1 L\"/\"Vetinet 5L\".",
+    "INCI typo \"GLICERIN\".",
+    "Related tile images use old brand file names \"Vetiimed_...\"/\"Vetimed_...\" (2020/11, 2024/02).",
+    "EN pages keep Polish titles with \"eng/ENG\" suffix."
+   ],
+   "vet_context_verbatim": "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI | HIGIENA GABINETU I SPRZĘTU WETERYNARYJNEGO"
+  },
+  {
+   "family_slug": "vetinet-higieniczny-plyn-myjacy-fiolet",
+   "name": "VETINET higieniczny płyn myjący – fiolet",
+   "line": "Vetinet",
+   "product_type": "preparat higieniczny",
+   "category_slugs": [
+    "higiena"
+   ],
+   "subtitle_verbatim": "higieniczny płyn myjący",
+   "badges_verbatim": [
+    "z chlorheksydyną i olejkiem z lawendy",
+    "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI",
+    "HIGIENA GABINETU I SPRZĘTU WETERYNARYJNEGO",
+    "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE SKUTECZNIE ZWALCZAJĄ DROBNOUSTROJE",
+    "PRZYJEMNY ZAPACH"
+   ],
+   "species": [],
+   "species_evidence": "Płyn myjący ogólnego zastosowania.",
+   "body_areas": [
+    "skóra",
+    "inne"
+   ],
+   "needs_evidence": [
+    {
+     "need": "mycie zwierząt przed zabiegiem",
+     "evidence_verbatim": "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI",
+     "source_field": "badges"
+    },
+    {
+     "need": "mycie przed i po kontakcie ze zwierzętami",
+     "evidence_verbatim": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością.",
+     "source_field": "indications"
+    },
+    {
+     "need": "higiena gabinetu i sprzętu weterynaryjnego",
+     "evidence_verbatim": "Higiena gabinetu weterynaryjnego i sprzętu.",
+     "source_field": "indications"
+    },
+    {
+     "need": "higiena powierzchni",
+     "evidence_verbatim": "Zalecany do powierzchni i ogólnego zastosowania.",
+     "source_field": "properties"
+    },
+    {
+     "need": "usuwanie zanieczyszczeń biologicznych",
+     "evidence_verbatim": "Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne.",
+     "source_field": "properties"
+    },
+    {
+     "need": "zwalczanie drobnoustrojów",
+     "evidence_verbatim": "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE SKUTECZNIE ZWALCZAJĄ DROBNOUSTROJE",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "chlorheksydyna",
+     "label_name": "CHLORHEXIDINE DIGLUCONATE",
+     "stated_function_verbatim": null
+    },
+    {
+     "name_pl": "olejek lawendowy",
+     "label_name": "LAVANDULA ANGUSTIFOLIA (LAVENDER) OIL",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "Bez podrażnień skóry, błon śluzowych i ran. Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne. Posiada bardzo dobre właściwości myjące. Zalecany do powierzchni i ogólnego zastosowania.",
+   "usage_verbatim": "Na miejsce przeznaczone do mycia nanieść niewielką ilość płynu i rozprowadzić. Umyć i spłukać wodą. Czynność powtórzyć.",
+   "indications_verbatim": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością. Higiena gabinetu weterynaryjnego i sprzętu.",
+   "intended_for_verbatim": "Płyn myjący ogólnego zastosowania.",
+   "precautions_verbatim": "Unikać kontaktu z oczami. Przy nadwrażliwości na chlorheksydynę może wywołać alergiczne odczyny skórne.",
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, CHLORHEXIDINE DIGLUCONATE, PEG 4 RAPESEEDAMIDE, GLICERIN, SILICONE QUATERIUM-17, LAURETH-9, POLYSORBATE 20, LAVANDULA ANGUSTIFOLIA (LAVENDER) OIL, PERFUM, CITRIC ACID, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, LINALOOL, CI42090, CI16255",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "VETINET higieniczny płyn myjący – fiolet – 1L",
+     "capacity": "1 L",
+     "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-fiolet-1l/",
+     "woo_id": 9606,
+     "woo_path": "/produkt/vetinet-higieniczny-plyn-myjacy-1l-lawendowy/",
+     "price_pln": 92.37,
+     "regular_price_pln": 92.37,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_fiolet_1L.png",
+     "en_page_path": "/en/products/hygiene/vetinet-higieniczny-plyn-myjacy-fiolet-1l-eng/"
+    },
+    {
+     "title": "VETINET higieniczny płyn myjący – fiolet – 5L",
+     "capacity": "5 L",
+     "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-fiolet-5l/",
+     "woo_id": 9607,
+     "woo_path": "/produkt/vetinet-higieniczny-plyn-myjacy-5l-lawendowy/",
+     "price_pln": 220.85,
+     "regular_price_pln": 220.85,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2024/02/Vetinet_higieniczny_plyn_myjacy_fiolet_5l-3.png",
+     "en_page_path": "/en/products/hygiene/vetinet-higieniczny-plyn-myjacy-fiolet-5l-eng/"
+    }
+   ],
+   "related_on_site": [
+    "vetinet-higieniczny-plyn-myjacy-niebieski"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Woo 9606/9607 (lavender) short description and \"Argumenty sprzedażowe\" say \"Z CHLORHEKSYDYNĄ I OLEJKIEM EUKALIPTUSOWYM\" - wrong oil; page badge says \"z chlorheksydyną i olejkiem z lawendy\" and INCI lists LAVANDULA ANGUSTIFOLIA (LAVENDER) OIL.",
+    "Colour/variant naming inconsistent: pages \"– fiolet –\", Woo \"– lawendowy\"; category tiles call it just \"Vetinet 1 L\"/\"Vetinet 5L\" (same as the blue variant).",
+    "Yoast/OG description identical to the blue variant (no mention of lavender).",
+    "INCI typos \"PERFUM\" (PARFUM) and \"GLICERIN\".",
+    "Biocidal claim badge \"SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE SKUTECZNIE ZWALCZAJĄ DROBNOUSTROJE\" - verify BPR status.",
+    "Related products on violet pages only point to the blue variant pages (with \"Vetiimed_\" image file names)."
+   ],
+   "vet_context_verbatim": "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI | HIGIENA GABINETU I SPRZĘTU WETERYNARYJNEGO"
+  },
+  {
+   "family_slug": "vetinet-plyn-do-powierzchni-zielony",
+   "name": "VETINET higieniczny płyn myjący do powierzchni codziennego użytku – zielony",
+   "line": "Vetinet",
+   "product_type": "preparat higieniczny",
+   "category_slugs": [
+    "higiena"
+   ],
+   "subtitle_verbatim": "higieniczny płyn myjący do powierzchni codziennego użytku",
+   "badges_verbatim": [
+    "z chlorheksydyną i olejkiem eukaliptusowym",
+    "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE pomagają ZWALCZAć DROBNOUSTROJE",
+    "skuteczny i łatwy w użyciu",
+    "PRZYJEMNY ZAPACH",
+    "BEZ ROZCIEŃCZANIA"
+   ],
+   "species": [],
+   "species_evidence": "Higieniczny płyn myjący do powierzchni.",
+   "body_areas": [
+    "inne"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena powierzchni",
+     "evidence_verbatim": "Polecany do higieny powierzchni.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena powierzchni",
+     "evidence_verbatim": "Higieniczny płyn myjący do powierzchni.",
+     "source_field": "indications"
+    },
+    {
+     "need": "eliminacja nieprzyjemnych zapachów",
+     "evidence_verbatim": "VETINET doskonale eliminuje nieprzyjemne zapachy.",
+     "source_field": "properties"
+    },
+    {
+     "need": "usuwanie zanieczyszczeń biologicznych",
+     "evidence_verbatim": "Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne.",
+     "source_field": "properties"
+    },
+    {
+     "need": "zwalczanie drobnoustrojów",
+     "evidence_verbatim": "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE pomagają ZWALCZAć DROBNOUSTROJE",
+     "source_field": "badges"
+    },
+    {
+     "need": "stosowanie bez rozcieńczania",
+     "evidence_verbatim": "BEZ ROZCIEŃCZANIA",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "chlorheksydyna",
+     "label_name": "CHLORHEXIDINE DIGLUCONATE",
+     "stated_function_verbatim": "CHLORHEKSYDYNA WYKAZUJE DZIAŁANIE BAKTERIOBÓJCZE I BAKTERIOSTATYCZNE. POSIADA TAKŻE WŁAŚCIWOŚCI GRZYBOBÓJCZE WOBEC WIĘKSZOŚCI GRZYBÓW I DROŻDŻY CHOROBOTWÓRCZYCH."
+    },
+    {
+     "name_pl": "olejek eukaliptusowy",
+     "label_name": "EUCALYPTUS RADIATA ESSENTIAL OIL",
+     "stated_function_verbatim": null
+    }
+   ],
+   "properties_verbatim": "VETINET doskonale eliminuje nieprzyjemne zapachy. Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne. Posiada bardzo dobre właściwości czyszczące. Polecany do higieny powierzchni.",
+   "usage_verbatim": "Spryskać preparatem miejsce przeznaczone do umycia. Nanieść preparat na miejsce przeznaczone do umycia. Pozostawić działaniu przez kilka minut. Przetrzeć wilgotną szmatką i osuszyć. W razie potrzeby czynność powtórzyć.",
+   "indications_verbatim": "Higieniczny płyn myjący do powierzchni.",
+   "intended_for_verbatim": null,
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, PEG 4 RAPESEEDAMIDE, CHLORHEXIDINE DIGLUCONATE, POLYSORBATE 20, EUCALYPTUS RADIATA ESSENTIAL OIL, CITRIC ACID, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, CI19140, CI42090",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "VETINET higieniczny płyn myjący do powierzchni codziennego użytku – zielony – 500ml",
+     "capacity": "500 ml",
+     "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-do-powierzchni-codziennego-uzytku-zielony-500ml/",
+     "woo_id": 9608,
+     "woo_path": "/produkt/vetinet-higieniczny-spray-myjacy-do-powierzchni-codziennego-uzytku-500ml-eukaliptusowy/",
+     "price_pln": 43.48,
+     "regular_price_pln": 43.48,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/11/Vetinet_spray_zielony_500ml.png",
+     "en_page_path": "/en/products/hygiene/vetinet-higieniczny-plyn-myjacy-do-powierzchni-codziennego-uzytku-zielony-500ml-eng/"
+    },
+    {
+     "title": "VETINET higieniczny płyn myjący do powierzchni codziennego użytku – zielony – 5L",
+     "capacity": "5 L",
+     "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-do-powierzchni-codziennego-uzytku-zielony-5l/",
+     "woo_id": 9609,
+     "woo_path": "/produkt/vetinet-higieniczny-plyn-myjacy-5l-eukaliptusowy/",
+     "price_pln": 173.94,
+     "regular_price_pln": 173.94,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/11/Vetinet_higieniczny_plyn_myjacy_zielony_5L.png",
+     "en_page_path": "/en/products/hygiene/vetinet-higieniczny-plyn-myjacy-do-powierzchni-codziennego-uzytku-zielony-5l-eng/"
+    }
+   ],
+   "related_on_site": [
+    "vetinet-higieniczny-plyn-myjacy-niebieski"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Chlorhexidine function quote (\"CHLORHEKSYDYNA WYKAZUJE DZIAŁANIE BAKTERIOBÓJCZE I BAKTERIOSTATYCZNE. POSIADA TAKŻE WŁAŚCIWOŚCI GRZYBOBÓJCZE...\") exists only in Woo 9608/9609 and their Yoast descriptions, not on the PL pages; it is a biocidal claim - verify BPR authorisation before reuse.",
+    "PL \"Sposób stosowania\" merges the spray (500 ml) and pour (5 L) instructions without labels (\"Spryskać preparatem miejsce przeznaczone do umycia. Nanieść preparat na miejsce przeznaczone do umycia.\"); Woo text marks them \"(500 ml)/(5 l)\".",
+    "Badge sets differ: 500 ml page has \"PRZYJEMNY ZAPACH\", 5 L page has \"BEZ ROZCIEŃCZANIA\" instead; Yoast description on both pages lists \"BEZ ROZCIEŃCZANIA\".",
+    "Badge casing typo \"pomagają ZWALCZAć\".",
+    "No Przeznaczenie section on the pages.",
+    "Woo 9608 is named \"higieniczny spray myjący 500ml – eukaliptusowy\" while the page says \"płyn myjący ... – zielony – 500ml\" (colour vs scent naming).",
+    "Composition identical to \"VETINET płyn do mycia kuwet, klatek\" - two product lines with the same INCI.",
+    "EN pages have a Polish Yoast description from an unrelated product (\"Płyn wpływa regulująco na mikroflorę skóry. Ma dobre właściwości myjące, nie powoduje podr...\")."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "vetinet-plyn-do-mycia-kuwet-klatek",
+   "name": "VETINET płyn do mycia kuwet, klatek",
+   "line": "Vetinet",
+   "product_type": "preparat higieniczny",
+   "category_slugs": [
+    "higiena"
+   ],
+   "subtitle_verbatim": "Higieniczny płyn do mycia kuwet, klatek, transporterów",
+   "badges_verbatim": [
+    "eliminuje nieprzyjemne zapachy",
+    "usuwa zanieczyszczenia biologiczne i mechaniczne",
+    "bardzo dobre właściwości myjące"
+   ],
+   "species": [],
+   "species_evidence": "Higieniczny płyn do mycia kuwet, klatek i innych akcesoriów przeznaczonych dla zwierząt.",
+   "body_areas": [
+    "inne"
+   ],
+   "needs_evidence": [
+    {
+     "need": "higiena kuwet, klatek i transporterów",
+     "evidence_verbatim": "Polecany do mycia kuwet, klatek, kojców, transporterów i pozostałych akcesoriów używanych przez zwierzęta.",
+     "source_field": "indications"
+    },
+    {
+     "need": "eliminacja nieprzyjemnych zapachów",
+     "evidence_verbatim": "eliminuje nieprzyjemne zapachy",
+     "source_field": "badges"
+    },
+    {
+     "need": "usuwanie zanieczyszczeń biologicznych",
+     "evidence_verbatim": "usuwa zanieczyszczenia biologiczne i mechaniczne",
+     "source_field": "badges"
+    }
+   ],
+   "key_ingredients": [],
+   "properties_verbatim": "VETINET doskonale eliminuje nieprzyjemne zapachy. Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne. Posiada bardzo dobre właściwości myjące. Polecany do mycia kuwet, klatek, kojców, transporterów i pozostałych akcesoriów używanych przez zwierzęta.",
+   "usage_verbatim": "Opróżnić i oczyścić zabrudzone powierzchnie. Spryskać preparatem całą powierzchnie. Pozostawić działaniu przez kilka minut. Przetrzeć powierzchnie wilgotną szmatką i osuszyć. W razie konieczności czynność powtórzyć.",
+   "indications_verbatim": "Polecany do mycia kuwet, klatek, kojców, transporterów i pozostałych akcesoriów używanych przez zwierzęta.",
+   "intended_for_verbatim": "Higieniczny płyn do mycia kuwet, klatek i innych akcesoriów przeznaczonych dla zwierząt.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Chlorhexidine Digluconate, Polysorbate 20, Eucalyptus Radiata Essential Oil, Citric Acid, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, CI19140, CI42090",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "VETINET płyn do mycia kuwet, klatek 500ml",
+     "capacity": "500 ml",
+     "page_path": "/produkty/higiena/vetinet-plyn-do-mycia-kuwet-klatek-500ml/",
+     "woo_id": 8488,
+     "woo_path": "/produkt/vetinet-plyn-do-mycia-kuwet-klatek-500ml/",
+     "price_pln": 42.31,
+     "regular_price_pln": 42.31,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/06/Vetinet_plyn_do_kuwet_500ml.png",
+     "en_page_path": "/en/products/hygiene/vetinet-plyn-do-mycia-kuwet-klatek-500ml-eng/"
+    },
+    {
+     "title": "VETINET płyn do mycia kuwet, klatek 5L",
+     "capacity": "5 L",
+     "page_path": "/produkty/higiena/vetinet-plyn-do-mycia-kuwet-klatek-5l/",
+     "woo_id": 9969,
+     "woo_path": "/produkt/vetinet-plyn-do-mycia-kuwet-klatek-5l/",
+     "price_pln": 173.94,
+     "regular_price_pln": 173.94,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/01/Vetinet_plyn_do_kuwet_5L.png",
+     "en_page_path": "/en/products/hygiene/vetinet-plyn-do-mycia-kuwet-klatek-5l-eng/"
+    }
+   ],
+   "related_on_site": [
+    "vetinet-higieniczny-plyn-myjacy-niebieski"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Yoast/OG description typo on both pages: \"ELIMINUJE NIEPRZYJEMNE ZAPACHYU | SUWA ZANIECZYSZCZENIA...\" (misplaced \"U\").",
+    "Usage typo \"Spryskać preparatem całą powierzchnie\" / \"Przetrzeć powierzchnie\" (should be \"powierzchnię\"); spray instruction also used for the 5 L canister.",
+    "Woo 9969 (5 L) image is 2021/01/Vetinet_eukaliptus_5L.jpg while the page packshot is 2021/01/Vetinet_plyn_do_kuwet_5L.png - verify the shop image shows the litter-box product.",
+    "Composition identical to the green surface cleaner (VETINET ... do powierzchni codziennego użytku).",
+    "Related products point only to the blue general-purpose VETINET pages.",
+    "EN pages have a Polish Yoast description from an unrelated product (\"Płyn wpływa regulująco na mikroflorę skóry...\")."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "stoma-zel",
+   "name": "STOMA-ŻEL",
+   "line": "Stoma-żel",
+   "product_type": "preparat do higieny jamy ustnej",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "subtitle_verbatim": "Pasta do pielęgnacji uzębienia dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH",
+    "SZCZOTECZKA DO MYCIA ZĘBÓW WEWNĄTRZ OPAKOWANIA",
+    "aromat miętowy"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "needs_evidence": [
+    {
+     "need": "nieświeży oddech",
+     "evidence_verbatim": "ŚWIEŻY ODDECH",
+     "source_field": "badges"
+    },
+    {
+     "need": "nieświeży oddech",
+     "evidence_verbatim": "usuwa nieprzyjemny zapach",
+     "source_field": "properties"
+    },
+    {
+     "need": "płytka/kamień nazębny",
+     "evidence_verbatim": "Środki czyszczące zapobiegają powstawaniu kamienia nazębnego",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena zębów i dziąseł",
+     "evidence_verbatim": "utrzymuje higienę zębów i dziąseł",
+     "source_field": "properties"
+    },
+    {
+     "need": "niepożądana mikroflora jamy ustnej",
+     "evidence_verbatim": "Dodatek chlorheksydyny do pasty wpływa na ograniczenie rozwoju niepożądanej mikroflory w jamie ustnej",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena jamy ustnej",
+     "evidence_verbatim": "Higiena jamy ustnej i uzębienia",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "chlorheksydyna",
+     "label_name": "CHLORHEXIDINE DIGLUCONATE",
+     "stated_function_verbatim": "Dodatek chlorheksydyny do pasty wpływa na ograniczenie rozwoju niepożądanej mikroflory w jamie ustnej, usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł."
+    }
+   ],
+   "properties_verbatim": "Stoma – żel jest kosmetykiem weterynaryjnym przeznaczonym do pielęgnacji jamy ustnej. Dodatek chlorheksydyny do pasty wpływa na ograniczenie rozwoju niepożądanej mikroflory w jamie ustnej, usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł. Dodatek smakowo-zapachowy sprawia, że zwierzęta łatwo akceptują stosowanie pasty. Środki czyszczące zapobiegają powstawaniu kamienia nazębnego oraz wytwarzają emulsję z drobinami pokarmu pozwalającą na jego usuwanie z powierzchni zębów.",
+   "usage_verbatim": "1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia. Pastę nakładać za pomocą szczoteczki do zębów, palca lub kawałka gazy. Łagodnie wcierać. Nie wypłukiwać.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, CALCIUM CARBONATE, CETEARETH-33, ALUMINUM SILICATE, CHLORHEXIDINE DIGLUCONATE, TITANIUM DIOXIDE, PARFUM",
+   "notes_verbatim": "Szczoteczka do mycia zębów wewnątrz opakowania.",
+   "variants": [
+    {
+     "title": "STOMA-ŻEL 50g w tubce + szczoteczka do zębów",
+     "capacity": "50 g + szczoteczka",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-w-tubce-50g-szczoteczka-do-zebow/",
+     "woo_id": 21107,
+     "woo_path": "/produkt/stoma-zel-w-tubce-50g-szczoteczka/",
+     "price_pln": 61.25,
+     "regular_price_pln": 61.25,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/07/EUROWET_Stoma-zel_mietowy.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/stoma-zel-50g-w-tubce-szczoteczka-do-zebow-eng/"
+    },
+    {
+     "title": "STOMA-ŻEL 50g w tubce aromat miętowy opakowanie zbiorcze",
+     "capacity": "10 x 50 g",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-w-tubce-aromat-mietowy-opakowanie-zbiorcze/",
+     "woo_id": 21852,
+     "woo_path": "/produkt/stoma-zel-zapach-mietowy-10x50g-w-tubce-karton-zbiorczy/",
+     "price_pln": 384.0,
+     "regular_price_pln": 384.0,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/02/EUROWET_Stoma-zel_karton_zbiorczy_mietowy-1.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/stoma-zel-50g-w-tubce-aromat-mietowy-opakowanie-zbiorcze-eng/"
+    },
+    {
+     "title": "STOMA-ŻEL 50g",
+     "capacity": "50 g",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/03/Stoma-zel_50g.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/stoma-zel-50g-eng/"
+    },
+    {
+     "title": "STOMA-ŻEL 50g + szczoteczka do zębów",
+     "capacity": "50 g + szczoteczka",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-szczoteczka-do-zebow/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/04/Stoma_zel_opakowanie-1.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/stoma-zel-50g-szczoteczka-do-zebow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "plyn-do-higieny-jamy-ustnej",
+    "spray-do-higieny-jamy-ustnej",
+    "szczoteczki-do-pielegnacji-uzebienia"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Shop button on /produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-w-tubce-50g-szczoteczka-do-zebow/ points to /produkt/stoma-zel-50g-szczoteczka/ (no such Woo product); the matching Woo product is 21107 /produkt/stoma-zel-w-tubce-50g-szczoteczka/ (left in woo_without_product_page; mapped here).",
+    "Legacy pages /produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g/ (3470, modified 2025-07-30, 2019 packshot) and /stoma-zel-50g-szczoteczka-do-zebow/ (10378, modified 2024-02-26, 2021 packshot): old template (H1 \"Skuteczny\", Skąpiec/Nokaut links), shop buttons /produkt/stoma-zel-50g and /produkt/stoma-zel-50g-szczoteczka/ match no Woo product, not in the category listing; 10378 is a near-duplicate of 21108 and is still linked from 3470, article /pielegnacja-2/jak-czyscic-zeby/ and post stoma-zel-ze-szczoteczka-do-zebow-nowosc; root-relative /stoma-zel-50g is linked from several pages.",
+    "Woo 21852 (mint 10x50g) description uses the newer beef-style text with therapeutic claims (\"Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł... chroni przed bakteriami przez 8-12 godzin\") that the PL page 21917 does not contain.",
+    "Woo 21852 Yoast description ends with \"Szczoteczka do mycia zębów wewnątrz opakowania.\" although the 10x50g carton contains no toothbrush.",
+    "Flavour not stated on pages 3470/10378/21108 although the 21108 packshot is EUROWET_Stoma-zel_mietowy.png; only the carton page says \"aromat miętowy\".",
+    "Product name spelled inconsistently: \"STOMA-ŻEL\", \"Stoma – żel\", \"Stoma-żel\", \"Stoma- żel\", \"Stoma-Żel\".",
+    "Category page shows four different products all titled \"Stoma-żel 50g\"; related tile typo \"2 szczoteczki do pielęgnacji uzębnienia\".",
+    "Yoast description identical generic text on all Stoma pages; EN pages keep Polish Yoast descriptions."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "stoma-zel-zapach-wolowiny",
+   "name": "STOMA-ŻEL zapach wołowiny",
+   "line": "Stoma-żel",
+   "product_type": "preparat do higieny jamy ustnej",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "subtitle_verbatim": "Pasta do pielęgnacji uzębienia dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH",
+    "SZCZOTECZKA DO MYCIA ZĘBÓW WEWNĄTRZ OPAKOWANIA",
+    "Zapach wołowiny",
+    "aromat wołowiny"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "needs_evidence": [
+    {
+     "need": "nieświeży oddech",
+     "evidence_verbatim": "ŚWIEŻY ODDECH",
+     "source_field": "badges"
+    },
+    {
+     "need": "nieświeży oddech",
+     "evidence_verbatim": "usuwa nieprzyjemny zapach",
+     "source_field": "properties"
+    },
+    {
+     "need": "płytka/kamień nazębny",
+     "evidence_verbatim": "Hamuje osadzanie się płytki nazębnej.",
+     "source_field": "properties"
+    },
+    {
+     "need": "płytka/kamień nazębny",
+     "evidence_verbatim": "Środki czyszczące zapobiegają powstawaniu kamienia nazębnego",
+     "source_field": "properties"
+    },
+    {
+     "need": "stany zapalne dziąseł (wspomaganie)",
+     "evidence_verbatim": "Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł.",
+     "source_field": "properties"
+    },
+    {
+     "need": "akceptacja pasty przez zwierzę",
+     "evidence_verbatim": "Dodatek zapachowy sprawia, że zwierzęta chętnie akceptują aplikację pasty.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena jamy ustnej",
+     "evidence_verbatim": "Higiena jamy ustnej i uzębienia",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "chlorheksydyna",
+     "label_name": "CHLORHEXIDINE DIGLUCONATE",
+     "stated_function_verbatim": "Zawarta w paście chlorheksydyna wpływa hamująco na rozwój niepożądanej mikroflory w jamie ustnej, usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł. Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł."
+    }
+   ],
+   "properties_verbatim": "Stoma-żel pasta do zębów dla psów i kotów z zapachem wołowiny. Dodatek zapachowy sprawia, że zwierzęta chętnie akceptują aplikację pasty. Zawarta w paście chlorheksydyna wpływa hamująco na rozwój niepożądanej mikroflory w jamie ustnej, usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł. Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł. Hamuje osadzanie się płytki nazębnej. chroni przed bakteriami przez 8-12 godzin. Środki czyszczące zapobiegają powstawaniu kamienia nazębnego oraz wytwarzają emulsję, która z drobinami pokarmu pozwala na usuwanie zanieczyszczeń z powierzchni zębów i dziąseł.\nDodatek zbalansowanego aromatu wołowiny sprawia, że aplikacja pasty staje się dla zwierząt pozytywnym doświadczeniem. Zapach nie tylko ułatwia akceptację pasty, ale również tworzy przyjemne doznanie dla zwierzęcia podczas codziennej pielęgnacji. Zwierzęta z chęcią poddają się zabiegowi, co przekłada się na regularność stosowania pasty Stoma-Żel i utrzymanie zdrowej jamy ustnej.",
+   "usage_verbatim": "1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia. Pastę nakładać za pomocą szczoteczki do zębów, palca lub kawałka gazy. Łagodnie wcierać. Nie wypłukiwać.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, CALCIUM CARBONATE, CETEARETH-33, ALUMINUM SILICATE, CHLORHEXIDINE DIGLUCONATE, TITANIUM DIOXIDE, PARFUM",
+   "notes_verbatim": "Szczoteczka do pielęgnacji uzębienia dla psów i kotów wewnątrz opakowania.",
+   "variants": [
+    {
+     "title": "STOMA-ŻEL 50g zapach wołowiny + szczoteczka do zębów",
+     "capacity": "50 g + szczoteczka",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-zapach-wolowiny-szczoteczka-do-zebow/",
+     "woo_id": 18371,
+     "woo_path": "/produkt/stoma-zel-50g-zapach-wolowiny-szczoteczka/",
+     "price_pln": 67.4,
+     "regular_price_pln": 67.4,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/12/EUROWET_Stoma-zel_miesny.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/stoma-zel-50g-zapach-wolowiny-szczoteczka-do-zebow-eng/"
+    },
+    {
+     "title": "STOMA-ŻEL 50g w tubce aromat wołowiny opakowanie zbiorcze",
+     "capacity": "10 x 50 g",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-w-tubce-aromat-wolowiny-opakowanie-zbiorcze/",
+     "woo_id": 21847,
+     "woo_path": "/produkt/stoma-zel-zapach-wolowiny-10x50g-w-tubce-karton-zbiorczy/",
+     "price_pln": 444.0,
+     "regular_price_pln": 444.0,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/02/EUROWET_Stoma-zel_karton_zbiorczy_miesny.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/stoma-zel-50g-w-tubce-aromat-wolowiny-opakowanie-zbiorcze-eng/"
+    }
+   ],
+   "related_on_site": [
+    "plyn-do-higieny-jamy-ustnej",
+    "spray-do-higieny-jamy-ustnej",
+    "szczoteczki-do-pielegnacji-uzebienia"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Composition differs between capacities: 50 g + szczoteczka page/Woo 18371 \"AQUA, CALCIUM CARBONATE, CETEARETH-33, ALUMINUM SILICATE, CHLORHEXIDINE DIGLUCONATE, TITANIUM DIOXIDE, PARFUM\" vs 10x50g page/Woo 21847 \"Aqua, Calcium Carbonate, Cetyl Alcohol, Pumice, Titanium Dioxide, Parfum, Chlorhexidine Digluconate\" - verify which formula is current (composition_verbatim holds the 50 g version).",
+    "Therapeutic claims on a cosmetic paste: \"Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł.\" and \"chroni przed bakteriami przez 8-12 godzin\" - need substantiation/compliance check; sentence \"chroni przed bakteriami...\" starts lowercase.",
+    "Badge naming differs: \"Zapach wołowiny\" (50 g kit) vs \"aromat wołowiny\" (10x50g carton); double space \"z zapachem  wołowiny\" on the carton page.",
+    "Woo 21847 Yoast description is the generic mint text ending \"Szczoteczka do mycia zębów wewnątrz opakowania.\" (carton has no brush, not mint).",
+    "Woo 18371 title spacing \"zapach wołowiny+ szczoteczka\"; EN title for 18378 ends with a non-breaking space.",
+    "Yoast description identical generic text on all Stoma pages; EN pages keep Polish Yoast descriptions."
+   ],
+   "vet_context_verbatim": "Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł."
+  },
+  {
+   "family_slug": "szczoteczki-do-pielegnacji-uzebienia",
+   "name": "Szczoteczki do pielęgnacji uzębienia",
+   "line": null,
+   "product_type": "akcesorium",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "subtitle_verbatim": "Dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "needs_evidence": [
+    {
+     "need": "płytka/kamień nazębny",
+     "evidence_verbatim": "Elastyczne włosie skutecznie usuwa płytkę nazębną, resztki jedzenia.",
+     "source_field": "properties"
+    },
+    {
+     "need": "nieświeży oddech",
+     "evidence_verbatim": "Skuteczne czyszczenie zębów przyczynia się do utrzymania świeżego oddechu.",
+     "source_field": "properties"
+    },
+    {
+     "need": "nieświeży oddech",
+     "evidence_verbatim": "ŚWIEŻY ODDECH",
+     "source_field": "badges"
+    },
+    {
+     "need": "masaż dziąseł",
+     "evidence_verbatim": "szczoteczki pomagają w stymulowaniu krążenia krwi i zachowaniu zdrowych dziąseł zwierząt.",
+     "source_field": "properties"
+    },
+    {
+     "need": "higiena jamy ustnej",
+     "evidence_verbatim": "Higiena jamy ustnej i uzębienia",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [],
+   "properties_verbatim": "Delikatne i przyjemne: Gumowe szczoteczki na palec są miękkie i delikatne dla dziąseł i zębów psów i kotów.\nMasowanie dziąseł: szczoteczki pomagają w stymulowaniu krążenia krwi i zachowaniu zdrowych dziąseł zwierząt.\nUsuwanie płytki nazębnej: Elastyczne włosie skutecznie usuwa płytkę nazębną, resztki jedzenia.\nZapobieganie chorobom jamy ustnej: zapobiegają chorobom związanym z jamą ustną, takim jak kamień nazębny, zapalenie dziąseł czy infekcje.\nŚwieży oddech: Skuteczne czyszczenie zębów przyczynia się do utrzymania świeżego oddechu.\nErgonomiczny design: Gumowe szczoteczki na palec są łatwe do trzymania, kontrolowania, co ułatwia właścicielowi skupienie się na dokładnym czyszczeniu zębów.\nZintegrowana ochrona zdrowia: Dbając o zdrowie zębów i dziąseł swojego zwierzęcia, możesz wpłynąć na ogólną kondycję zdrowotną, eliminując potencjalne problemy związane z jamą ustną.",
+   "usage_verbatim": "Szczoteczkę nakładamy na palec. Nakładamy pastę. Delikatnie myjemy zęby zwierzęcia 1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": null,
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "2 szczoteczki do pielęgnacji uzębienia dla psów i kotów",
+     "capacity": "2 szt.",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/2-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/",
+     "woo_id": 16820,
+     "woo_path": "/produkt/stoma-zel-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/",
+     "price_pln": 23.75,
+     "regular_price_pln": 23.75,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/10/EUROWET_Szczoteczki1.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/2-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow-eng/"
+    }
+   ],
+   "related_on_site": [
+    "stoma-zel",
+    "plyn-do-higieny-jamy-ustnej",
+    "spray-do-higieny-jamy-ustnej"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Skład section shows the STOMA-ŻEL paste INCI (\"AQUA, CALCIUM CARBONATE, CETEARETH-33, ALUMINUM SILICATE, CHLORHEXIDINE DIGLUCONATE, TITANIUM DIOXIDE, PARFUM\") - copy-paste error for a rubber finger toothbrush; composition_verbatim left null.",
+    "Shop button points to /produkt/stoma-zel-50g-szczoteczka-kopia-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/ (\"kopia\" slug, not a Woo product); real Woo product is 16820 /produkt/stoma-zel-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/ (left in woo_without_product_page; mapped here). Woo slug itself starts with \"stoma-zel-\".",
+    "Disease-prevention claim \"zapobiegają chorobom związanym z jamą ustną, takim jak kamień nazębny, zapalenie dziąseł czy infekcje\" for a toothbrush.",
+    "Typos: cross-sell line under properties \"Sprawdż z pastą Stoma- żel\" (Sprawdź, Stoma-żel); related/category tiles \"uzębnienia\".",
+    "Yoast description (page and Woo) is the entire properties text (~1000 chars) with missing spaces after full stops.",
+    "Related-products block on the page links to itself; cross-sell link to the paste is root-relative /stoma-zel-50g (legacy page).",
+    "\"Elastyczne włosie\" vs \"Gumowe szczoteczki na palec\" - description of bristles vs rubber is inconsistent."
+   ],
+   "vet_context_verbatim": "zapobiegają chorobom związanym z jamą ustną, takim jak kamień nazębny, zapalenie dziąseł czy infekcje."
+  },
+  {
+   "family_slug": "plyn-do-higieny-jamy-ustnej",
+   "name": "Płyn do higieny jamy ustnej dla psów i kotów",
+   "line": null,
+   "product_type": "preparat do higieny jamy ustnej",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "subtitle_verbatim": "Czyste zęby. świeży oddech.",
+   "badges_verbatim": [
+    "POMAGA ZACHOWAĆ PRAWIDŁOWĄ MIKROFLORĘ BAKTERYJNĄ W JAMIE USTNEJ",
+    "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ",
+    "ZAPEWNIA ŚWIEŻY ODDECH"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "needs_evidence": [
+    {
+     "need": "nieświeży oddech",
+     "evidence_verbatim": "ZAPEWNIA ŚWIEŻY ODDECH",
+     "source_field": "badges"
+    },
+    {
+     "need": "mikroflora jamy ustnej",
+     "evidence_verbatim": "POMAGA ZACHOWAĆ PRAWIDŁOWĄ MIKROFLORĘ BAKTERYJNĄ W JAMIE USTNEJ",
+     "source_field": "badges"
+    },
+    {
+     "need": "higiena zębów i dziąseł",
+     "evidence_verbatim": "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ",
+     "source_field": "badges"
+    },
+    {
+     "need": "higiena jamy ustnej",
+     "evidence_verbatim": "Higiena jamy ustnej i uzębienia",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "ekstrakt z czystka",
+     "label_name": "ekstrakt z czystka",
+     "stated_function_verbatim": "Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech."
+    },
+    {
+     "name_pl": "ekstrakt z mięty pieprzowej",
+     "label_name": "ekstrakt z mięty pieprzowej",
+     "stated_function_verbatim": "Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech."
+    }
+   ],
+   "properties_verbatim": "Płyn dla psów i kotów do stosowania w celu utrzymania prawidłowej higieny jamy ustnej i zębów. Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech.",
+   "usage_verbatim": "Wstrząśnij butelką przed użyciem. Codziennie rozpuszczać 5 ml płynu w 250 ml wody do picia zwierzęcia. Codziennie wymieniać wodę w misce.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Woda, sorbitol, glicerol, ekstrakt z mięty pieprzowej, ekstrakt z czystka. Dodatki: Dodatki technologiczne w 1 kg: konserwanty (E211, E202), barwnik (E133). Składniki analityczne w 100 g produktu: Białko surowe 0,1 g, Włókno surowe 0,1 g, Oleje i tłuszcze surowe 0,3 g, Popiół surowy 0,1 g, Wilgotność 99,4 g.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Płyn do higieny jamy ustnej dla psów i kotów 250ml",
+     "capacity": "250 ml",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/plyn-do-higieny-jamy-ustnej-dla-psow-i-kotow-250ml/",
+     "woo_id": 13926,
+     "woo_path": "/produkt/plyn-do-higieny-jamy-ustnej-psow-i-kotow-250ml/",
+     "price_pln": 51.82,
+     "regular_price_pln": 51.82,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/05/EUROWET_Plyn_do_higieny_jamy_ustnej.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/plyn-do-higieny-jamy-ustnej-dla-psow-i-kotow-250ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "spray-do-higieny-jamy-ustnej",
+    "szczoteczki-do-pielegnacji-uzebienia"
+   ],
+   "documents": [],
+   "data_issues": [
+    "OPAKOWANIE says \"250g ilość netto\" while title and Woo say \"250ml\" (mass vs volume unit).",
+    "Skład is in feed-label format (\"Dodatki technologiczne w 1 kg\", \"Składniki analityczne w 100 g produktu\") but the page never states the legal product category (e.g. karma uzupełniająca / mieszanka paszowa uzupełniająca / kosmetyk) - classification and mandatory feed-label particulars should be verified.",
+    "Composition text starts with a duplicated label (\"Skład\" heading followed by \"Skład: Woda, ...\").",
+    "Płyn (250 ml) and Spray (100 ml) have identical composition and identical properties wording apart from \"Płyn/Spray\".",
+    "Subtitle \"Czyste zęby. świeży oddech.\" - lowercase after full stop.",
+    "Related-products block includes the page itself.",
+    "Woo Yoast description concatenates title and text without space (\"...dla psów i kotów 250mlPłyn ...\"); EN page Yoast description is the Polish STOMA-ŻEL paste text (\"Pasta do pielęgnacji uzębienia...\")."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "spray-do-higieny-jamy-ustnej",
+   "name": "Spray do higieny jamy ustnej dla psów i kotów",
+   "line": null,
+   "product_type": "preparat do higieny jamy ustnej",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "subtitle_verbatim": "Czyste zęby. świeży oddech.",
+   "badges_verbatim": [
+    "POMAGA ZACHOWAĆ PRAWIDŁOWĄ MIKROFLORĘ BAKTERYJNĄ W JAMIE USTNEJ",
+    "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ",
+    "ZAPEWNIA ŚWIEŻY ODDECH"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "needs_evidence": [
+    {
+     "need": "nieświeży oddech",
+     "evidence_verbatim": "ZAPEWNIA ŚWIEŻY ODDECH",
+     "source_field": "badges"
+    },
+    {
+     "need": "mikroflora jamy ustnej",
+     "evidence_verbatim": "POMAGA ZACHOWAĆ PRAWIDŁOWĄ MIKROFLORĘ BAKTERYJNĄ W JAMIE USTNEJ",
+     "source_field": "badges"
+    },
+    {
+     "need": "higiena zębów i dziąseł",
+     "evidence_verbatim": "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ",
+     "source_field": "badges"
+    },
+    {
+     "need": "higiena jamy ustnej",
+     "evidence_verbatim": "Higiena jamy ustnej i uzębienia",
+     "source_field": "indications"
+    }
+   ],
+   "key_ingredients": [
+    {
+     "name_pl": "ekstrakt z czystka",
+     "label_name": "ekstrakt z czystka",
+     "stated_function_verbatim": "Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech."
+    },
+    {
+     "name_pl": "ekstrakt z mięty pieprzowej",
+     "label_name": "ekstrakt z mięty pieprzowej",
+     "stated_function_verbatim": "Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech."
+    }
+   ],
+   "properties_verbatim": "Spray dla psów i kotów do stosowania w celu utrzymania prawidłowej higieny jamy ustnej i zębów. Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech.",
+   "usage_verbatim": "Wstrząśnij butelką przed użyciem. Spryskaj zęby i dziąsła zwierzęcia. Można również czyścić zęby gazikiem zwilżonym preparatem.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Woda, sorbitol, glicerol, ekstrakt z mięty pieprzowej, ekstrakt z czystka. Dodatki: Dodatki technologiczne w 1 kg: konserwanty (E211, E202), barwnik (E133). Składniki analityczne w 100 g produktu: Białko surowe 0,1 g, Włókno surowe 0,1 g, Oleje i tłuszcze surowe 0,3 g, Popiół surowy 0,1 g, Wilgotność 99,4 g.",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "Spray do higieny jamy ustnej dla psów i kotów 100ml",
+     "capacity": "100 ml",
+     "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/spray-do-higieny-jamy-ustnej-dla-psow-i-kotow-100ml/",
+     "woo_id": 13929,
+     "woo_path": "/produkt/spray-do-higieny-jamy-ustnej-dla-psow-i-kotow-100ml/",
+     "price_pln": 44.12,
+     "regular_price_pln": 44.12,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/11/EUROWET_Spray_do_higieny_jamy_ustnej-3.png",
+     "en_page_path": "/en/products/treatment-of-oral-cavity-and-teeth/spray-do-higieny-jamy-ustnej-dla-psow-i-kotow-100ml-eng/"
+    }
+   ],
+   "related_on_site": [
+    "plyn-do-higieny-jamy-ustnej",
+    "szczoteczki-do-pielegnacji-uzebienia"
+   ],
+   "documents": [],
+   "data_issues": [
+    "OPAKOWANIE says \"100g ilość netto\" while title and Woo say \"100ml\" (mass vs volume unit).",
+    "Skład is in feed-label format (\"Dodatki technologiczne w 1 kg\", \"Składniki analityczne w 100 g produktu\") but the page never states the legal product category (e.g. karma uzupełniająca / mieszanka paszowa uzupełniająca / kosmetyk) - classification and mandatory feed-label particulars should be verified.",
+    "Composition text starts with a duplicated label (\"Skład\" heading followed by \"Skład: Woda, ...\").",
+    "Płyn (250 ml) and Spray (100 ml) have identical composition and identical properties wording apart from \"Płyn/Spray\".",
+    "Subtitle \"Czyste zęby. świeży oddech.\" - lowercase after full stop.",
+    "Related-products block includes the page itself.",
+    "Woo Yoast description concatenates title and text without space (\"...dla psów i kotów 100mlSpray ...\"); EN page Yoast description is the Polish STOMA-ŻEL paste text (\"Pasta do pielęgnacji uzębienia...\")."
+   ],
+   "vet_context_verbatim": null
+  }
+ ],
+ "unmatched_woo": []
+}
