@@ -9,7 +9,7 @@
 #   - Z3 is only published as GitHub release assets, so Ghidra's optional SymbolicSummaryZ3
 #     extension is left out of the build.
 #
-# Usage: tools/rea/install.sh [--no-ghidra]   (Ghidra build: ~20-40 min on 4 cores)
+# Usage: tools/rea/install.sh [--no-ghidra]   (Ghidra build: ~20-25 min on 4 cores)
 set -euo pipefail
 
 REA_VERSION=6.2.0

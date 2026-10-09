@@ -44,7 +44,7 @@ Kontener chmurowy jest tymczasowy. Żeby providerzy byli gotowi od startu sesji,
 **Setup script** środowiska (menu środowiska → Edit):
 
 ```bash
-bash tools/rea/install.sh            # pełna instalacja, ~30–40 min (głównie Ghidra)
+bash tools/rea/install.sh            # pełna instalacja, ~25 min na 4 rdzeniach (głównie build Ghidry)
 bash tools/rea/install.sh --no-ghidra  # bez Ghidry, kilka minut
 ```
 
