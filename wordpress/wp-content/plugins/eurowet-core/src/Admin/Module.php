@@ -26,6 +26,7 @@ final class Module implements ModuleInterface {
 			return;
 		}
 		MetaBoxes::register();
+		ContentAudit::register();
 		add_action( 'admin_init', array( Settings::class, 'register' ) );
 		add_action( 'admin_menu', array( self::class, 'menu' ) );
 		add_filter( 'custom_menu_order', '__return_true' );
