@@ -1,0 +1,250 @@
+{
+ "stopwords": [
+  "le",
+  "la",
+  "les",
+  "un",
+  "une",
+  "des",
+  "de",
+  "du",
+  "d",
+  "mon",
+  "ma",
+  "mes",
+  "son",
+  "sa",
+  "ses",
+  "est",
+  "a",
+  "au",
+  "aux",
+  "et",
+  "ou",
+  "pour",
+  "avec",
+  "sur",
+  "dans",
+  "que",
+  "qui",
+  "quoi",
+  "ce",
+  "cet",
+  "cette",
+  "il",
+  "elle",
+  "tres",
+  "toujours",
+  "tout",
+  "temps",
+  "ne",
+  "pas",
+  "se",
+  "s"
+ ],
+ "intent_words": [
+  "meilleur",
+  "bon",
+  "produit",
+  "remede",
+  "traitement",
+  "utiliser",
+  "conseil",
+  "conseillez",
+  "aide",
+  "quel",
+  "quelle",
+  "quels",
+  "comment"
+ ],
+ "species": {
+  "pies": [
+   "chien",
+   "chiens",
+   "chiot",
+   "chiots",
+   "chienne"
+  ],
+  "kot": [
+   "chat",
+   "chats",
+   "chaton",
+   "chatons",
+   "chatte"
+  ],
+  "male-ssaki": [
+   "lapin",
+   "lapins",
+   "cobaye",
+   "cochon",
+   "inde",
+   "hamster",
+   "chinchilla",
+   "rat",
+   "rongeur",
+   "rongeurs"
+  ],
+  "fretka": [
+   "furet",
+   "furets"
+  ],
+  "ptaki-ozdobne": [
+   "perroquet",
+   "perruche",
+   "perruches",
+   "canari",
+   "canaris",
+   "oiseau",
+   "oiseaux",
+   "calopsitte"
+  ],
+  "golebie": [
+   "pigeon",
+   "pigeons"
+  ],
+  "kon": [
+   "cheval",
+   "chevaux",
+   "poney",
+   "poulain"
+  ],
+  "zwierzeta-gospodarskie": [
+   "vache",
+   "bovins",
+   "porc",
+   "mouton",
+   "chevre",
+   "volaille"
+  ]
+ },
+ "areas": {
+  "uszy": [
+   "oreille",
+   "oreilles",
+   "cerumen",
+   "conduit",
+   "auditif"
+  ],
+  "oczy": [
+   "oeil",
+   "yeux",
+   "paupiere",
+   "paupieres",
+   "larmes",
+   "larmoiement",
+   "coulures",
+   "ecoulement"
+  ],
+  "jama-ustna-i-zeby": [
+   "dent",
+   "dents",
+   "tartre",
+   "plaque",
+   "gencives",
+   "haleine",
+   "bouche",
+   "buccale",
+   "dentaire"
+  ],
+  "skora": [
+   "peau",
+   "demangeaisons",
+   "demange",
+   "gratte",
+   "grattage",
+   "pellicules",
+   "seche",
+   "allergie",
+   "allergique",
+   "sensible",
+   "irritee",
+   "irritation",
+   "rougeurs",
+   "grasse",
+   "seborrhee"
+  ],
+  "siersc": [
+   "pelage",
+   "poil",
+   "poils",
+   "mue",
+   "noeuds",
+   "brillance",
+   "terne",
+   "couleur"
+  ],
+  "lapy-i-pazury": [
+   "patte",
+   "pattes",
+   "coussinets",
+   "griffes",
+   "ongles"
+  ],
+  "stawy": [
+   "articulation",
+   "articulations",
+   "mobilite",
+   "raideur"
+  ],
+  "uklad-pokarmowy": [
+   "digestion",
+   "estomac",
+   "intestin",
+   "diarrhee"
+  ],
+  "kondycja": [
+   "vitamines",
+   "vitalite",
+   "energie",
+   "forme"
+  ],
+  "stres-i-zachowanie": [
+   "stress",
+   "anxiete",
+   "peur"
+  ]
+ },
+ "red_flags": {
+  "urgent": [
+   "sang",
+   "saigne*",
+   "convulsion*",
+   "respire mal",
+   "ne respire pas",
+   "empoisonn*",
+   "intoxi*",
+   "ne mange plus depuis",
+   "inconscient*",
+   "effondr*",
+   "blessure a l oeil",
+   "forte fievre",
+   "fievre",
+   "douleur intense",
+   "paralys*"
+  ],
+  "caution": [
+   "pus",
+   "ecoulement",
+   "plaie*",
+   "croute*",
+   "ulcere*",
+   "perte de poils",
+   "plaques sans poils",
+   "oreille qui sent",
+   "mauvaise odeur oreille",
+   "tete penchee",
+   "secoue la tete",
+   "oeil plisse",
+   "oeil trouble",
+   "oeil rouge",
+   "gonfl*",
+   "boite*",
+   "perte de poids",
+   "diarrhee",
+   "vomi*",
+   "abattu*",
+   "grosseur*",
+   "douleur"
+  ]
+ }
+}

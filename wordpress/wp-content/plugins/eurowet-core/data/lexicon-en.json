@@ -1,0 +1,249 @@
+{
+ "stopwords": [
+  "a",
+  "an",
+  "the",
+  "my",
+  "is",
+  "are",
+  "has",
+  "have",
+  "it",
+  "its",
+  "to",
+  "of",
+  "for",
+  "in",
+  "on",
+  "with",
+  "and",
+  "or",
+  "what",
+  "which",
+  "how",
+  "do",
+  "does",
+  "can",
+  "should",
+  "very",
+  "always",
+  "all",
+  "time",
+  "keeps"
+ ],
+ "intent_words": [
+  "best",
+  "good",
+  "product",
+  "remedy",
+  "treatment",
+  "use",
+  "recommend",
+  "help",
+  "helps"
+ ],
+ "species": {
+  "pies": [
+   "dog",
+   "dogs",
+   "puppy",
+   "puppies",
+   "pup",
+   "doggy"
+  ],
+  "kot": [
+   "cat",
+   "cats",
+   "kitten",
+   "kittens",
+   "kitty"
+  ],
+  "male-ssaki": [
+   "rabbit",
+   "rabbits",
+   "guinea",
+   "pig",
+   "pigs",
+   "hamster",
+   "chinchilla",
+   "rat",
+   "rodent",
+   "rodents"
+  ],
+  "fretka": [
+   "ferret",
+   "ferrets"
+  ],
+  "ptaki-ozdobne": [
+   "parrot",
+   "parrots",
+   "budgie",
+   "budgies",
+   "canary",
+   "canaries",
+   "bird",
+   "birds",
+   "cockatiel"
+  ],
+  "golebie": [
+   "pigeon",
+   "pigeons"
+  ],
+  "kon": [
+   "horse",
+   "horses",
+   "pony",
+   "foal"
+  ],
+  "zwierzeta-gospodarskie": [
+   "cow",
+   "cattle",
+   "pig",
+   "sheep",
+   "goat",
+   "poultry"
+  ]
+ },
+ "areas": {
+  "uszy": [
+   "ear",
+   "ears",
+   "earwax",
+   "wax",
+   "canal"
+  ],
+  "oczy": [
+   "eye",
+   "eyes",
+   "eyelid",
+   "eyelids",
+   "tear",
+   "tears",
+   "tearing",
+   "stains",
+   "discharge"
+  ],
+  "jama-ustna-i-zeby": [
+   "teeth",
+   "tooth",
+   "tartar",
+   "plaque",
+   "gums",
+   "breath",
+   "mouth",
+   "oral",
+   "dental"
+  ],
+  "skora": [
+   "skin",
+   "itch",
+   "itching",
+   "itchy",
+   "scratching",
+   "scratches",
+   "dandruff",
+   "flaky",
+   "dry",
+   "allergy",
+   "allergic",
+   "sensitive",
+   "irritated",
+   "irritation",
+   "redness",
+   "rash",
+   "oily",
+   "greasy",
+   "seborrhea"
+  ],
+  "siersc": [
+   "coat",
+   "fur",
+   "hair",
+   "shedding",
+   "matted",
+   "mats",
+   "shine",
+   "dull",
+   "colour",
+   "color"
+  ],
+  "lapy-i-pazury": [
+   "paw",
+   "paws",
+   "pads",
+   "claw",
+   "claws",
+   "nails"
+  ],
+  "stawy": [
+   "joint",
+   "joints",
+   "mobility",
+   "stiffness"
+  ],
+  "uklad-pokarmowy": [
+   "digestion",
+   "stomach",
+   "gut",
+   "diarrhoea",
+   "diarrhea"
+  ],
+  "kondycja": [
+   "vitamins",
+   "vitality",
+   "energy",
+   "condition"
+  ],
+  "stres-i-zachowanie": [
+   "stress",
+   "anxiety",
+   "anxious",
+   "fear"
+  ]
+ },
+ "red_flags": {
+  "urgent": [
+   "blood",
+   "bleed*",
+   "seizure*",
+   "convuls*",
+   "can t breathe",
+   "cannot breathe",
+   "breathing difficult*",
+   "poison*",
+   "not eating for",
+   "unconscious",
+   "collapse*",
+   "eye injury",
+   "high fever",
+   "fever",
+   "severe pain",
+   "paralys*",
+   "bloated"
+  ],
+  "caution": [
+   "pus",
+   "discharge",
+   "wound*",
+   "sore*",
+   "ulcer*",
+   "hair loss",
+   "bald patch*",
+   "smelly ear",
+   "bad smell from ear",
+   "head tilt",
+   "shaking head",
+   "squint*",
+   "cloudy eye",
+   "red eye",
+   "swollen",
+   "limp*",
+   "weight loss",
+   "diarrh*",
+   "vomit*",
+   "letharg*",
+   "lump*",
+   "pain"
+  ]
+ }
+}
