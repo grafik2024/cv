@@ -1,0 +1,381 @@
+{
+ "group": "amiwet",
+ "families": [
+  {
+   "family_slug": "amiwet-szampon-dla-szczeniat",
+   "name": "Amiwet Szampon dla szczeniąt",
+   "line": "Amiwet",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "dokładnie myje sierśc i skórę",
+    "bez podrażnień",
+    "Z olejkiem z migdałowca"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Szampon ma bardzo dobre właściwości myjące i jest łatwy w spłukiwaniu. Zawarty w szamponie olejek z migdałowca sprawia, że jest bardzo dobrze tolerowany przez szczenięta, a sierść staje się miękka i błyszcząca.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Zmoczyć sierść i skórę ciepłą wodą, polać szamponem, rozprowadzić, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "indications_verbatim": "Higiena skóry i sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, PEG-4 RAPESEEDAMIDE, COCAMIDOPROPYL-BETAINE, PRUNUS AMYGDALUS DULCIS OIL, PARFUM, CITRIC ACID, POLYSORBATE-20, METHYLISOTHIAZOLINONE, METHYLCHLOROISOTHIAZOLINONE, DMDM HYDANTOIN",
+   "notes_verbatim": "200 ml",
+   "variants": [
+    {
+     "title": "Szampon dla szczeniąt 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/szampon-dla-szczeniat-200ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/12/amiwet_szampon_szczenieta_200ml-3.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Amiwet page is published directly under /produkty/ (no category page lists it) and has no shop link; badge typo 'sierśc'."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "amiwet-szampon-dluga-siersc",
+   "name": "Amiwet Szampon długa sierść",
+   "line": "Amiwet",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "dokładnie myje sierśc i skórę",
+    "Ułatwia rozczesywanie",
+    "Z olejkiem z pestek moreli"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Szampon dzięki zawartości związków powierzchniowo czynnych ma bardzo dobre właściwości myjące i jest łatwy w spłukiwaniu. Zawarty w szamponie olejek z pestek moreli ułatwia rozczesywanie sierści, która staje się miękka i błyszcząca.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Zmoczyć sierść i skórę ciepłą wodą, polać szamponem, rozprowadzić, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "indications_verbatim": "Higiena skóry i sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, PEG-4 RAPESEEDAMIDE, COCAMIDOPROPYL BETAINE, APRICOT KERNEL OIL, PARFUM, CITRIC ACID, POLYSORBATE-20, METHYLISOTHIAZOLINONE, METHYLCHLOROISOTHIAZOLINONE, DMDM HYDANTOIN, CI 19140, CI 42090",
+   "notes_verbatim": "200 ml",
+   "variants": [
+    {
+     "title": "Szampon długa sierść 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/szampon-dluga-siersc-200ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/12/amiwet_szampon_dluga_siersc_200ml-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Amiwet page is published directly under /produkty/ (no category page lists it) and has no shop link; badge typo 'sierśc'."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "amiwet-szampon-krotka-siersc",
+   "name": "Amiwet Szampon krótka sierść",
+   "line": "Amiwet",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "dokładnie myje sierśc i skórę",
+    "miękka i błyszcząca sierść",
+    "Z olejkiem z jojoby"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Szampon pielęgnacyjny ma bardzo dobre właściwości myjące i jest łatwy w spłukiwaniu. Zawarty w szamponie olejek z jojoby sprawia, że sierść staje się miękka i błyszcząca.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Zmoczyć sierść i skórę ciepłą wodą, polać szamponem, rozprowadzić, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "indications_verbatim": "Higiena skóry i sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, PEG-4 RAPESEEDAMIDE, COCAMIDOPROPYL BETAINE, SIMMONDSIA CHINENSIS SEED OIL, PARFUM, CITRIC ACID, POLYSORBATE-20, METHYLISOTHIAZOLINONE, METHYLCHLOROISOTHIAZOLINONE, DMDM HYDANTOIN,CI 19140",
+   "notes_verbatim": "200 ml",
+   "variants": [
+    {
+     "title": "Szampon krótka sierść 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/szampon-krotka-siersc-200ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/12/amiwet_szampon_krotka_siersc_200ml-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Amiwet page is published directly under /produkty/ (no category page lists it) and has no shop link; badge typo 'sierśc'."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "amiwet-szampon-lagodzacy-podraznienia",
+   "name": "Amiwet Szampon łagodzący podrażnienia",
+   "line": "Amiwet",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "dokładnie myje sierśc i skórę",
+    "łagodzi podrażnienia",
+    "Z olejkiem jołowcowym"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Szampon ma bardzo dobre właściwości myjące i jest łatwy w spłukiwaniu. Obecność olejku jałowcowego powoduje, że szampon łagodzi objawy związane z podrażnieniami skóry oraz ogranicza złuszczanie się naskórka.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Zmoczyć sierść i skórę ciepłą wodą, polać szamponem, rozprowadzić, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez 5-10 minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "indications_verbatim": "Higiena skóry i sierści.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, PEG 4 RAPESEEDAMIDE, UREA, PROPYLENE GLYCOL, ALCOHOL DENAT., ACHILLEA MILLEFOLIUM FLOWER EXTRACT, HUMULUS LUPULUS EXTRACT, MELISSA OFFICINALIS LEAF EXTRACT, FOENICULUM VULGARE FRUIT EXTRACT, CHAMOMILLA RECUTITA FLOWER EXTRACT, VISCUM ALBUM EXTRACT, SODIUM CHLORIDE, POLISORBATE 20, JUNIPURES OXYCEDRUS WOOD OIL, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, CITRIC ACID",
+   "notes_verbatim": "200 ml",
+   "variants": [
+    {
+     "title": "Szampon łagodzący podrażnienia 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/szampon-lagodzacy-podraznienia-200ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/12/amiwet_szampon_lagodzacy_podraznienia_200ml-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Amiwet page is published directly under /produkty/ (no category page lists it) and has no shop link; badge typo 'sierśc'."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "amiwet-szampon-norkowy",
+   "name": "Amiwet Szampon norkowy",
+   "line": "Amiwet",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "dokładnie myje sierśc i skórę",
+    "Wzmacnia i regeneruje",
+    "Z olejkiem z musteli"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Szampon norkowy ma bardzo dobre właściwości myjące i jest łatwy w spłukiwaniu. Olejek norkowy odżywia skórę oraz odbudowuje naturalną powłokę ochronną włosa. Wzmacnia go i regeneruje włos na całej jego długości, zapewniając jednocześnie sierści wyjątkowy połysk, miękkość i jedwabistość.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Zmoczyć sierść i skórę ciepłą wodą, polać szamponem, rozprowadzić, umyć i spłukać. Czynności powtórzyć pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "indications_verbatim": "Higiena skóry i sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, PEG-4 RAPESEEDAMIDE, COCAMIDOPROPYL BETAINE, MINK OIL, SODIUM LAURETH SULFATE (AND) GLYCOL DISTEARATE (AND) COCAMIDE MEA (AND) LAURETH-10, PARFUM, CITRIC ACID, POLYSORBATE-20,METHYLISOTHIAZOLINONE, METHYLCHLOROISOTHIAZOLINONE, DMDM HYDANTOIN",
+   "notes_verbatim": "200 ml",
+   "variants": [
+    {
+     "title": "Szampon norkowy 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/szampon-norkowy-200ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/12/amiwet_szampon_norkowy_200ml-2.png",
+     "en_page_path": null
+    },
+    {
+     "title": "Szampon norkowy Groomer 5L",
+     "capacity": "5 l",
+     "page_path": "/produkty/szampon-norkowy-groomer-5l/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/amiwet_groomer_norkowy_5l-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Amiwet page is published directly under /produkty/ (no category page lists it) and has no shop link; badge typo 'sierśc'."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "amiwet-szampon-norkowy-male-rasy",
+   "name": "Amiwet Szampon norkowy małe rasy",
+   "line": "Amiwet",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "dokładnie myje sierśc i skórę",
+    "Wzmacnia i regeneruje",
+    "Z algami morskimi i keratyną"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "sierść"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Szampon norkowy ma bardzo dobre właściwości myjące i jest łatwy w spłukiwaniu. Olejek norkowy odżywia skórę oraz odbudowuje naturalną powłokę ochronną włosa. Wzmacnia go i regeneruje włos na całej jego długości, zapewniając jednocześnie sierści wyjątkowy połysk, miękkość i jedwabistość.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Zmoczyć sierść i skórę ciepłą wodą, polać szamponem, rozprowadzić, umyć i spłukać. Czynności powtórzyć pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "indications_verbatim": "Higiena skóry i sierści.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, PEG-4 RAPESEEDAMIDE, COCAMIDOPROPYL BETAINE, GLYCERIN, PORPHYRA UMBILICALIS EXTRACT, CAESALPINIA SPINOSA GUM, KERATIN, MINK OIL, SILICONE QUATERNIUM-17, SODIUM LAURETH SULFATE GLYCOL DISTEARATE COCAMIDE MEA LAURETH-10, PARFUM, CITRIC ACID, POLYSORBATE-20, METHYLISOTHIAZOLINONE, METHYLCHLOROISOTHIAZOLINONE, DMDM HYDANTOIN",
+   "notes_verbatim": "200 ml",
+   "variants": [
+    {
+     "title": "Szampon norkowy małe rasy 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/szampon-norkowy-male-rasy-200ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/12/amiwet_szampon_male_rasy_200ml-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Amiwet page is published directly under /produkty/ (no category page lists it) and has no shop link; badge typo 'sierśc'."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "amiwet-szampon-odstraszajacy-pchly-i-kleszcze",
+   "name": "Amiwet Szampon odstraszający pchły i kleszcze",
+   "line": "Amiwet",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "dokładnie myje sierśc i skórę",
+    "Wzmacnia i regeneruje",
+    "Z olejkiem Neem"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Preparat wspomaga ochronę psów i kotów przed obecnością pcheł i kleszczy na sierści i skórze. Posiada także bardzo dobre właściwości myjące.",
+   "usage_verbatim": "Przed zastosowaniem szamponu należy wstrząsnąć butelkę. Wyczesać sierść w kierunku przeciwnym do ułożenia włosa i zmoczyć letnią wodą. Rozprowadzić odpowiednią ilość szamponu w zależności od wielkości zwierzęcia i rodzaju sierści. Myć aż do uzyskania jednorodnej piany. Spłukać. Czynność powtórzyć pozostawiając szampon na sierści i skórze przez kilka minut, a następnie wytrzeć go ręcznikiem. Uwaga: w celu zmniejszenia ryzyka obecności pcheł i kleszczy konieczna jest okresowa i regularna wymiana legowiska. Przechowywać w miejscu niedostępnym dla dzieci. Uwaga: w celu zmniejszenia ryzyka obecności pcheł i kleszczy konieczna jest okresowa i regularna wymiana legowiska. Przechowywać z dala od dzieci.",
+   "indications_verbatim": "Higiena skóry i sierści.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": "Należy unikać kontaktu szamponu z oczami. Podczas jego stosowania używać ochronnych rękawiczek. Nie przeznaczony dla psów i kotów poniżej 3 miesiąca życia oraz dla suk i kotek ciężarnych lub karmiących.",
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, PEG-4 RAPESEEDAMIDE, COCAMIDOPROPYLBETAINE, MELIA AZADIRACHTA SEED OIL, PARFUM, CITRIC ACID, POLYSORBATE-20,METHYLISOTHIAZOLINONE, METHYLCHLOROISOTHIAZOLINONE, DMDM HYDANTOIN",
+   "notes_verbatim": "200 ml",
+   "variants": [
+    {
+     "title": "Szampon odstraszający pchły i kleszcze 200ml",
+     "capacity": "200 ml",
+     "page_path": "/produkty/szampon-odstraszajacy-pchly-i-kleszcze-200ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/12/amiwet_szampon_ochronny_przeciw_pchlom_kleszczom_200ml.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Amiwet page is published directly under /produkty/ (no category page lists it) and has no shop link; badge typo 'sierśc'."
+   ],
+   "vet_context_verbatim": null
+  }
+ ],
+ "unmatched_woo": []
+}

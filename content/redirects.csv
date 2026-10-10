@@ -1,0 +1,177 @@
+old_path,new_path,status,note
+/kategoria-produktu/sklep/,/produkty/,301,WooCommerce shop root category
+/kategoria-produktu/sklep/akcesoria-dla-zwierzat/,/produkty/,301,accessories category (products shown in their content categories)
+/kategoria-produktu/sklep/dermokosmetyki-weterynaryjne/,/produkty/dermokosmetyki-weterynaryjne/,301,WooCommerce category archive
+/kategoria-produktu/sklep/higiena/,/produkty/higiena/,301,WooCommerce category archive
+/kategoria-produktu/sklep/karmy-uzupelniajace/,/produkty/karmy-uzupelniajace/,301,WooCommerce category archive
+/kategoria-produktu/sklep/kolekcja-kolor-pielegnacja/,/produkty/kolekcja-kolorpielegnacja/,301,WooCommerce category archive
+/kategoria-produktu/sklep/pielegnacja-jamy-ustnej-i-zebow/,/produkty/pielegnacja-jamy-ustnej-i-zebow/,301,WooCommerce category archive
+/kategoria-produktu/sklep/pielegnacja-oczu-i-uszu/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/,301,WooCommerce category archive
+/kategoria-produktu/sklep/preparaty-odstraszajace-pchly-i-kleszcze/,/produkty/preparaty-odstraszajace-pchly-i-kleszcze/,301,WooCommerce category archive
+/kategoria-produktu/sklep/preparaty-wspomagajace-zdrowie/,/produkty/preparaty-wspomagajace-zdrowie/,301,WooCommerce category archive
+/pielegnacja-2/,/porady/,301,old guides index
+/pobierz/katalog/,/pobierz/,301,catalogues now on the downloads page
+/pomoc-znajdz-rozwiazanie-dla-swojego-pupila/,/potrzeby/,301,old help page → Product Finder
+/produkt/akaryl-zel-25ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/akaryl-zel-15ml/,301,WooCommerce product URL (akaryl-zel)
+/produkt/alervet-200ml/,/produkty/dermokosmetyki-weterynaryjne/alervet-200ml/,301,WooCommerce product URL (alervet)
+/produkt/alervet-20ml/,/produkty/dermokosmetyki-weterynaryjne/alervet-20ml/,301,WooCommerce product URL (alervet)
+/produkt/alervet-500ml/,/produkty/dermokosmetyki-weterynaryjne/alervet-500ml/,301,WooCommerce product URL (alervet)
+/produkt/alervet-excellence-200ml/,/produkty/dermokosmetyki-weterynaryjne/alervet-excellence-200ml/,301,WooCommerce product URL (alervet-excellence)
+/produkt/amylan-ad-30szt/,/produkty/preparaty-wspomagajace-zdrowie/amylan-30szt/,301,WooCommerce product URL (amylan-ad)
+/produkt/butelka-do-karmienia-zwierzat-dwa-smoczki/,/produkty/karmy-uzupelniajace/butelka-do-karmienia-zwierzat/,301,WooCommerce product URL (butelka-do-karmienia-zwierzat)
+/produkt/dezodorant-neutralizator-zapachow-100ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-dezodorant-neutralizator-zapachow-100ml/,301,WooCommerce product URL (kp-dezodorant-neutralizator-zapachow)
+/produkt/dezodorant-neutralizator-zapachow-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-dezodorant-neutralizator-zapachow-200ml/,301,old shop-button slug on the product page
+/produkt/dezodorant-neutralizator-zapachow-dla-psow-i-kotow/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-dezodorant-neutralizator-zapachow-200ml/,301,WooCommerce product URL (kp-dezodorant-neutralizator-zapachow)
+/produkt/diarsed-30-tab-zaburzenia-zoladkowo-jelitowe-dla-psow-i-kotow/,/produkty/preparaty-wspomagajace-zdrowie/diarsed-30szt/,301,WooCommerce product URL (diarsed)
+/produkt/diarsed-30-tab/,/produkty/preparaty-wspomagajace-zdrowie/diarsed-30szt/,301,old shop-button slug on the product page
+/produkt/dropgo-krople-przeciwko-pchlom-kleszczom-i-innym-owadom/,/produkty/kolekcja-kolorpielegnacja/dropgo-krople-ochronne-przeciw-pchlom-i-kleszczom-i-innym-owadom-5x2ml/,301,WooCommerce product URL (kp-drop-and-go-krople)
+/produkt/dryclean-150ml/,/produkty/dermokosmetyki-weterynaryjne/dryclean-150ml/,301,WooCommerce product URL (dry-clean)
+/produkt/efaderm-e-60szt-psy/,/produkty/karmy-uzupelniajace/efaderm-e-60szt-psy/,301,WooCommerce product URL (efaderm-e-kapsulki-pies)
+/produkt/ektovet-200ml/,/produkty/dermokosmetyki-weterynaryjne/ektovet-200ml/,301,WooCommerce product URL (ektovet)
+/produkt/ektozin-25ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/ektozin-25ml/,301,WooCommerce product URL (ektozin)
+/produkt/ektozin-50ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/ektozin-50ml/,301,WooCommerce product URL (ektozin)
+/produkt/elektrolity-pies-kot-10x25g/,/produkty/karmy-uzupelniajace/elektrolity-pies-kot-10x25g/,301,WooCommerce product URL (elektrolity)
+/produkt/fyto-derm-100ml/,/produkty/dermokosmetyki-weterynaryjne/fytoderm-100ml/,301,WooCommerce product URL (fyto-derm)
+/produkt/fyto-derm-30ml/,/produkty/dermokosmetyki-weterynaryjne/fytoderm-30-ml/,301,WooCommerce product URL (fyto-derm)
+/produkt/hepachol-125ml/,/produkty/preparaty-wspomagajace-zdrowie/hepachol-125ml/,301,WooCommerce product URL (hepachol)
+/produkt/hepachol-1l/,/produkty/preparaty-wspomagajace-zdrowie/hepachol-1l/,301,WooCommerce product URL (hepachol-zwierzeta-gospodarskie)
+/produkt/hepachol-30ml/,/produkty/preparaty-wspomagajace-zdrowie/hepachol-30ml/,301,WooCommerce product URL (hepachol)
+/produkt/hexoderm-200ml/,/produkty/dermokosmetyki-weterynaryjne/hexoderm-200ml/,301,WooCommerce product URL (hexoderm)
+/produkt/hexoderm-20x20ml-gryzonie/,/produkty/dermokosmetyki-weterynaryjne/hexoderm-gryzonie-20ml/,301,WooCommerce product URL (hexoderm-gryzonie)
+/produkt/hexoderm-20x20ml/,/produkty/dermokosmetyki-weterynaryjne/hexoderm-20ml/,301,WooCommerce product URL (hexoderm)
+/produkt/hexoderm-500ml/,/produkty/dermokosmetyki-weterynaryjne/hexoderm-500ml/,301,WooCommerce product URL (hexoderm)
+/produkt/hexoderm-excellence-200ml/,/produkty/dermokosmetyki-weterynaryjne/hexoderm-excellence-200ml/,301,WooCommerce product URL (hexoderm-excellence)
+/produkt/hexoderm-k-200ml/,/produkty/dermokosmetyki-weterynaryjne/hexoderm-k-200ml/,301,WooCommerce product URL (hexoderm-k)
+/produkt/hexoderm-k-20ml/,/produkty/dermokosmetyki-weterynaryjne/hexoderm-k-20ml/,301,WooCommerce product URL (hexoderm-k)
+/produkt/hexoderm-k-500ml/,/produkty/dermokosmetyki-weterynaryjne/hexoderm-k-500ml/,301,WooCommerce product URL (hexoderm-k)
+/produkt/hydra-derm-n-200ml/,/produkty/dermokosmetyki-weterynaryjne/hydra-derm-n-200ml/,301,WooCommerce product URL (hydra-derm-n)
+/produkt/hydra-derm-spray-200ml/,/produkty/dermokosmetyki-weterynaryjne/hydra-derm-spray-200ml/,301,WooCommerce product URL (hydra-derm-spray)
+/produkt/karbowital-125ml/,/produkty/preparaty-wspomagajace-zdrowie/karbowital-125ml/,301,WooCommerce product URL (karbowital)
+/produkt/karbowital-1l/,/produkty/preparaty-wspomagajace-zdrowie/karbowital-1l/,301,WooCommerce product URL (karbowital-zwierzeta-gospodarskie)
+/produkt/karbowital-30-tab/,/produkty/preparaty-wspomagajace-zdrowie/karbowital-30-tab/,301,old shop-button slug on the product page
+/produkt/karbowital-wegiel-dla-psow-i-kotow/,/produkty/preparaty-wspomagajace-zdrowie/karbowital-30-tab/,301,WooCommerce product URL (karbowital)
+/produkt/kolor-pielegnacja-emulsja-do-uszu-100ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-emulsja-do-przemywania-uszu-100ml/,301,WooCommerce product URL (kp-emulsja-do-przemywania-uszu)
+/produkt/kolor-pielegnacja-gold-regenerator-siersci-i-skory-25ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-gold-regenerator-siersci-i-skory-25ml/,301,WooCommerce product URL (kp-gold-regenerator-siersci-i-skory)
+/produkt/kolor-pielegnacja-odzywka-do-siersci-i-wlosow-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-do-siersci-i-wlosow-200ml/,301,WooCommerce product URL (kp-odzywka-do-siersci-i-wlosow)
+/produkt/kolor-pielegnacja-plyn-do-oczu-100ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-plyn-do-przemywania-oczu-100ml/,301,WooCommerce product URL (kp-plyn-do-przemywania-oczu)
+/produkt/kolor-pielegnacja-spray-ochronny-na-opuszki-palcow-90ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-spray-ochronny-na-opuszki-palcow-90ml/,301,WooCommerce product URL (kp-spray-ochronny-na-opuszki-palcow)
+/produkt/kolor-pielegnacja-szampon-biala-siersc-1000ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-biala-siersc-1000ml/,301,old shop-button slug on the product page
+/produkt/kolor-pielegnacja-szampon-biala-siersc-dla-psow/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-biala-siersc-1000ml/,301,WooCommerce product URL (kp-szampon-biala-siersc)
+/produkt/kolor-pielegnacja-szampon-ciemna-siersc-1000ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ciemna-siersc-1000ml/,301,old shop-button slug on the product page
+/produkt/kolor-pielegnacja-szampon-ciemna-siersc-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ciemna-siersc-200ml/,301,WooCommerce product URL (kp-szampon-ciemna-siersc)
+/produkt/kolor-pielegnacja-szampon-ciemna-siersc-dla-psow/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ciemna-siersc-1000ml/,301,WooCommerce product URL (kp-szampon-ciemna-siersc)
+/produkt/kolor-pielegnacja-szampon-dla-kotow-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-dla-kotow-200ml/,301,WooCommerce product URL (kp-szampon-dla-kotow)
+/produkt/kolor-pielegnacja-szampon-dla-maltanczykow-1000ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-maltanczyk-1000ml/,301,WooCommerce product URL (kp-szampon-dla-maltanczykow)
+/produkt/kolor-pielegnacja-szampon-dla-maltanczykow-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-maltanczyk-200ml/,301,WooCommerce product URL (kp-szampon-dla-maltanczykow)
+/produkt/kolor-pielegnacja-szampon-dla-szczeniat-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-szczenieta-200ml/,301,WooCommerce product URL (kp-szampon-dla-szczeniat)
+/produkt/kolor-pielegnacja-szampon-do-mycia-na-sucho-150ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-na-sucho-150ml/,301,WooCommerce product URL (kp-szampon-do-mycia-na-sucho)
+/produkt/kolor-pielegnacja-szampon-nawilzajacy-1000ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-nawilzajacy-1000ml/,301,WooCommerce product URL (kp-szampon-nawilzajacy)
+/produkt/kolor-pielegnacja-szampon-nawilzajacy-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-nawilzajacy-200ml/,301,WooCommerce product URL (kp-szampon-nawilzajacy)
+/produkt/kolor-pielegnacja-szampon-shih-tzu-1000ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-shih-tzu-1000ml/,301,WooCommerce product URL (kp-szampon-shih-tzu)
+/produkt/kolor-pielegnacja-szampon-shih-tzu-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-shih-tzu-200ml/,301,WooCommerce product URL (kp-szampon-shih-tzu)
+/produkt/kolor-pielegnacja-szampon-york-dlugi-wlos-1000ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-york-dlugi-wlos-1000ml/,301,WooCommerce product URL (kp-szampon-york-dlugi-wlos)
+/produkt/kolor-pielegnacja-szampon-york-dlugi-wlos-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-york-dlugi-wlos-200ml/,301,WooCommerce product URL (kp-szampon-york-dlugi-wlos)
+/produkt/kolorpielegnacja-szampon-biala-siersc-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-biala-siersc-200ml/,301,WooCommerce product URL (kp-szampon-biala-siersc)
+/produkt/krople-hialuronowe-15ml-do-oczu-i-nosa-dla-psow-i-kotow/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/ektozin-50mlkrople-hialuronowe-do-oczu-i-nosa-15-ml/,301,WooCommerce product URL (krople-hialuronowe-do-oczu-i-nosa)
+/produkt/krople-hialuronowe-do-oczu-i-nosa-30-ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/krople-hialuronowe-do-oczu-i-nosa-30-ml/,301,WooCommerce product URL (krople-hialuronowe-do-oczu-i-nosa)
+/produkt/lespewet-125ml/,/produkty/preparaty-wspomagajace-zdrowie/lespewet-125ml/,301,WooCommerce product URL (lespewet)
+/produkt/lespewet-30szt/,/produkty/preparaty-wspomagajace-zdrowie/lespewet-30szt/,301,WooCommerce product URL (lespewet-pies)
+/produkt/lespewet-dla-kotow-60-tab-5-blistrow/,/produkty/preparaty-wspomagajace-zdrowie/lespewet-dla-kotow-60-tab-5-blistrow/,301,WooCommerce product URL (lespewet-kot)
+/produkt/metadiar-50g-saszetki/,/produkty/preparaty-wspomagajace-zdrowie/metadiar-50g/,301,WooCommerce product URL (metadiar)
+/produkt/milvet-10-x-100g/,/produkty/karmy-uzupelniajace/milvet-10-x-100g/,301,WooCommerce product URL (milvet)
+/produkt/milvet-300g/,/produkty/karmy-uzupelniajace/milvet-300g/,301,WooCommerce product URL (milvet)
+/produkt/milvet-800g/,/produkty/karmy-uzupelniajace/milvet-800g/,301,WooCommerce product URL (milvet)
+/produkt/nutrikard-40tab/,/produkty/karmy-uzupelniajace/nutrikard-40szt/,301,old shop-button slug on the product page
+/produkt/odzywka-bez-splukiwania-1000ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-bez-splukiwania-1000ml/,301,WooCommerce product URL (kp-odzywka-bez-splukiwania)
+/produkt/odzywka-bez-splukiwania-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-bez-splukiwania-200ml/,301,WooCommerce product URL (kp-odzywka-bez-splukiwania)
+/produkt/olej-z-lososia-200ml/,/produkty/karmy-uzupelniajace/olej-z-lososia/,301,WooCommerce product URL (olej-z-lososia)
+/produkt/olej-z-lososia-500-ml/,/produkty/karmy-uzupelniajace/olej-lososia-500-ml/,301,WooCommerce product URL (olej-z-lososia)
+/produkt/optex-100ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/optex-100ml/,301,WooCommerce product URL (optex)
+/produkt/optex-50ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/optex-50ml/,301,WooCommerce product URL (optex)
+/produkt/optex-ha-50ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/optex-ha-50ml/,301,WooCommerce product URL (optex-ha)
+/produkt/otiseptol-100ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/otiseptol-100ml/,301,WooCommerce product URL (otiseptol)
+/produkt/otolan-100ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/otolan-100ml/,301,WooCommerce product URL (otolan)
+/produkt/otolan-50ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/otolan-50ml/,301,WooCommerce product URL (otolan)
+/produkt/peptoderm-excellence-200ml/,/produkty/dermokosmetyki-weterynaryjne/peptoderm-excellence-200ml/,301,WooCommerce product URL (peptoderm-excellence)
+/produkt/peroxyvet-200ml/,/produkty/dermokosmetyki-weterynaryjne/peroxyvet-200ml/,301,WooCommerce product URL (peroxyvet)
+/produkt/peroxyvet-20ml/,/produkty/dermokosmetyki-weterynaryjne/peroxyvet-20ml/,301,WooCommerce product URL (peroxyvet)
+/produkt/pianka-wspomagajaca-ochrone-przeciw-pchlom-i-kleszczom-dla-psow-i-kotow-150ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-pianka-ochronna-przeciw-pchlom-i-kleszczom-150ml/,301,WooCommerce product URL (kp-pianka-ochronna-przeciw-pchlom-i-kleszczom)
+/produkt/plyn-do-higieny-jamy-ustnej-psow-i-kotow-250ml/,/produkty/pielegnacja-jamy-ustnej-i-zebow/plyn-do-higieny-jamy-ustnej-dla-psow-i-kotow-250ml/,301,WooCommerce product URL (plyn-do-higieny-jamy-ustnej)
+/produkt/probiotyk-kot-15-saszetek/,/produkty/preparaty-wspomagajace-zdrowie/probiotyk-15-saszetek-kot/,301,WooCommerce product URL (probiotyk-kot)
+/produkt/probiotyk-pies-15-saszetek/,/produkty/preparaty-wspomagajace-zdrowie/probiotyk-15-saszetek-pies/,301,WooCommerce product URL (probiotyk-pies)
+/produkt/sebostop-spot-on-5x2ml/,/produkty/dermokosmetyki-weterynaryjne/sebostop-spot-on-5x2ml/,301,WooCommerce product URL (sebostop-spot-on)
+/produkt/sebovet-clean-200ml/,/produkty/dermokosmetyki-weterynaryjne/sebovet-clean-200ml/,301,WooCommerce product URL (sebovet-clean)
+/produkt/sebovet-dry-200ml/,/produkty/dermokosmetyki-weterynaryjne/sebovet-dry-200ml/,301,WooCommerce product URL (sebovet-dry)
+/produkt/sebovet-excellence-200ml/,/produkty/dermokosmetyki-weterynaryjne/sebovet-excellence-200ml/,301,WooCommerce product URL (sebovet-excellence)
+/produkt/smoczki-do-karmienia-kotow/,/produkty/karmy-uzupelniajace/2-x-smoczki-do-karmienia-kotow/,301,WooCommerce product URL (smoczki-do-karmienia-kotow)
+/produkt/smoczki-do-karmienia-psow/,/produkty/karmy-uzupelniajace/2-x-smoczki-do-karmienia-psow/,301,WooCommerce product URL (smoczki-do-karmienia-psow)
+/produkt/spray-do-higieny-jamy-ustnej-dla-psow-i-kotow-100ml/,/produkty/pielegnacja-jamy-ustnej-i-zebow/spray-do-higieny-jamy-ustnej-dla-psow-i-kotow-100ml/,301,WooCommerce product URL (spray-do-higieny-jamy-ustnej)
+/produkt/spray-ochronny-przeciw-pchlom-i-kleszczom-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-spray-ochronny-przeciw-pchlom-i-kleszczom-200ml/,301,WooCommerce product URL (kp-spray-ochronny-przeciw-pchlom-i-kleszczom)
+/produkt/spray-wspomagajacy-ochrone-przeciw-pchlom-i-kleszczom-100ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-spray-ochronny-przeciw-pchlom-i-kleszczom-100ml/,301,WooCommerce product URL (kp-spray-ochronny-przeciw-pchlom-i-kleszczom)
+/produkt/stoma-zel-50g-szczoteczka-kopia-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/,/produkty/pielegnacja-jamy-ustnej-i-zebow/2-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/,301,old shop-button slug on the product page
+/produkt/stoma-zel-50g-zapach-wolowiny-szczoteczka/,/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-zapach-wolowiny-szczoteczka-do-zebow/,301,WooCommerce product URL (stoma-zel-zapach-wolowiny)
+/produkt/stoma-zel-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/,/produkty/pielegnacja-jamy-ustnej-i-zebow/2-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/,301,WooCommerce product URL (szczoteczki-do-pielegnacji-uzebienia)
+/produkt/stoma-zel-w-tubce-50g-szczoteczka/,/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-w-tubce-50g-szczoteczka-do-zebow/,301,WooCommerce product URL (stoma-zel)
+/produkt/stoma-zel-zapach-mietowy-10x50g-w-tubce-karton-zbiorczy/,/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-w-tubce-aromat-mietowy-opakowanie-zbiorcze/,301,WooCommerce product URL (stoma-zel)
+/produkt/stoma-zel-zapach-wolowiny-10x50g-w-tubce-karton-zbiorczy/,/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-w-tubce-aromat-wolowiny-opakowanie-zbiorcze/,301,WooCommerce product URL (stoma-zel-zapach-wolowiny)
+/produkt/stresnal-125ml/,/produkty/preparaty-wspomagajace-zdrowie/stresnal-125ml/,301,WooCommerce product URL (stresnal)
+/produkt/stresnal-30ml/,/produkty/preparaty-wspomagajace-zdrowie/stresnal-30ml/,301,WooCommerce product URL (stresnal)
+/produkt/szampon-dla-bulldogow-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-bulldog-200ml/,301,WooCommerce product URL (kp-szampon-bulldog)
+/produkt/szampon-lagodzacy-podraznienia-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-lagodzacy-podraznienia-200ml/,301,WooCommerce product URL (kp-szampon-lagodzacy-podraznienia)
+/produkt/szampon-ochronny-przeciw-pchlom-i-kleszczom-200ml/,/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ochronny-200ml/,301,WooCommerce product URL (kp-szampon-ochronny-przeciw-pchlom-i-kleszczom)
+/produkt/tanaderm-90ml/,/produkty/dermokosmetyki-weterynaryjne/tanaderm-90ml/,301,WooCommerce product URL (tanaderm)
+/produkt/triaderm-excellence-200ml/,/produkty/dermokosmetyki-weterynaryjne/triaderm-excellence-200ml/,301,WooCommerce product URL (triaderm-excellence)
+/produkt/uromil-30szt/,/produkty/preparaty-wspomagajace-zdrowie/uromil-30szt/,301,WooCommerce product URL (uromil)
+/produkt/vetaseptol-10ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/vetaseptol-10ml/,301,old shop-button slug on the product page
+/produkt/vetaseptol-krople-10ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/vetaseptol-10ml/,301,WooCommerce product URL (vetaseptol)
+/produkt/vetaseptol-krople-15ml/,/produkty/produkty-do-pielegnacji-oczu-i-uszu/vetaseptol-krople-15ml/,301,WooCommerce product URL (vetaseptol)
+/produkt/vetinet-higieniczny-plyn-myjacy-1l-lawendowy/,/produkty/higiena/vetinet-higieniczny-plyn-myjacy-fiolet-1l/,301,WooCommerce product URL (vetinet-higieniczny-plyn-myjacy-fiolet)
+/produkt/vetinet-higieniczny-plyn-myjacy-1l/,/produkty/higiena/vetinet-higieniczny-plyn-myjacy-niebieski-1l/,301,WooCommerce product URL (vetinet-higieniczny-plyn-myjacy-niebieski)
+/produkt/vetinet-higieniczny-plyn-myjacy-5l-eukaliptusowy/,/produkty/higiena/vetinet-higieniczny-plyn-myjacy-do-powierzchni-codziennego-uzytku-zielony-5l/,301,WooCommerce product URL (vetinet-plyn-do-powierzchni-zielony)
+/produkt/vetinet-higieniczny-plyn-myjacy-5l-lawendowy/,/produkty/higiena/vetinet-higieniczny-plyn-myjacy-fiolet-5l/,301,WooCommerce product URL (vetinet-higieniczny-plyn-myjacy-fiolet)
+/produkt/vetinet-higieniczny-plyn-myjacy-5l/,/produkty/higiena/vetinet-higieniczny-plyn-myjacy-niebieski-5l/,301,WooCommerce product URL (vetinet-higieniczny-plyn-myjacy-niebieski)
+/produkt/vetinet-higieniczny-spray-myjacy-do-powierzchni-codziennego-uzytku-500ml-eukaliptusowy/,/produkty/higiena/vetinet-higieniczny-plyn-myjacy-do-powierzchni-codziennego-uzytku-zielony-500ml/,301,WooCommerce product URL (vetinet-plyn-do-powierzchni-zielony)
+/produkt/vetinet-plyn-do-mycia-kuwet-klatek-500ml/,/produkty/higiena/vetinet-plyn-do-mycia-kuwet-klatek-500ml/,301,WooCommerce product URL (vetinet-plyn-do-mycia-kuwet-klatek)
+/produkt/vetinet-plyn-do-mycia-kuwet-klatek-5l/,/produkty/higiena/vetinet-plyn-do-mycia-kuwet-klatek-5l/,301,WooCommerce product URL (vetinet-plyn-do-mycia-kuwet-klatek)
+/produkt/wita-tonyl-30ml-gryzonie/,/produkty/karmy-uzupelniajace/wita-tonyl-gryzonie-30ml/,301,WooCommerce product URL (wita-tonyl-gryzonie)
+/produkt/wita-vet-complex-3g-30-tab-witaminy-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-complex-32g-30szt/,301,WooCommerce product URL (wita-vet-complex-3-2g)
+/produkt/wita-vet-complex-8g-30-tab-witaminy-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-complex-8g-30szt/,301,WooCommerce product URL (wita-vet-complex-8g)
+/produkt/wita-vet-complex-8g-80-tab-witaminy-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-complex-8g-80szt/,301,WooCommerce product URL (wita-vet-complex-8g)
+/produkt/wita-vet-energia-kot-120-tab-10-blistrow-witaminy-dla-kotow/,/produkty/karmy-uzupelniajace/wita-vet-energia-kot-120-tab-10-blistrow/,301,WooCommerce product URL (wita-vet-energia-kot)
+/produkt/wita-vet-energia-kot-120-tab-10-blistrow/,/produkty/karmy-uzupelniajace/wita-vet-energia-kot-120-tab-10-blistrow/,301,old shop-button slug on the product page
+/produkt/wita-vet-energia-kot-60-tab-5-blistrow-witaminy-dla-kotow/,/produkty/karmy-uzupelniajace/wita-vet-energia-kot-60-tab-5-blistrow/,301,WooCommerce product URL (wita-vet-energia-kot)
+/produkt/wita-vet-energia-kot-60-tab-5-blistrow/,/produkty/karmy-uzupelniajace/wita-vet-energia-kot-60-tab-5-blistrow/,301,old shop-button slug on the product page
+/produkt/wita-vet-junior-adult-1g-400szt/,/produkty/karmy-uzupelniajace/wita-vet-complex-1g-400szt/,301,WooCommerce product URL (wita-vet-complex-1g)
+/produkt/wita-vet-junior-adult-1g-80szt/,/produkty/karmy-uzupelniajace/wita-vet-complex-1g-80szt/,301,WooCommerce product URL (wita-vet-complex-1g)
+/produkt/wita-vet-junior-adult-25ml/,/produkty/karmy-uzupelniajace/wita-vet-junioradult-krople-25ml/,301,WooCommerce product URL (wita-vet-junior-adult-krople)
+/produkt/wita-vet-junior-adult-32g-100szt-witaminy-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-complex-32g-100szt/,301,WooCommerce product URL (wita-vet-complex-3-2g)
+/produkt/wita-vet-senior-80-tab-witaminy-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-senior-80szt/,301,WooCommerce product URL (wita-vet-senior)
+/produkt/wita-vet-siersc-25ml-witaminy-dla-psow-i-kotow/,/produkty/karmy-uzupelniajace/wita-vet-siersc-krople-25ml/,301,WooCommerce product URL (wita-vet-siersc-krople)
+/produkt/wita-vet-siersc-2g-100szt-witaminy-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-siersc-2g-100szt/,301,WooCommerce product URL (wita-vet-siersc-pies)
+/produkt/wita-vet-siersc-2g-100tab/,/produkty/karmy-uzupelniajace/wita-vet-siersc-2g-100szt/,301,old shop-button slug on the product page
+/produkt/wita-vet-siersc-2g-30szt-witaminy-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-siersc-2g-30szt/,301,WooCommerce product URL (wita-vet-siersc-pies)
+/produkt/wita-vet-siersc-2g-30tab/,/produkty/karmy-uzupelniajace/wita-vet-siersc-2g-30szt/,301,old shop-button slug on the product page
+/produkt/wita-vet-siersc-kot-120-tab-10-blistrow/,/produkty/karmy-uzupelniajace/wita-vet-siersc-kot-120-tab-10-blistrow/,301,WooCommerce product URL (wita-vet-siersc-kot)
+/produkt/wita-vet-siersc-kot-60-tab-5-blistrow-witaminy-na-siersc-dla-kotow/,/produkty/karmy-uzupelniajace/wita-vet-siersc-kot-60-tab-5-blistrow/,301,WooCommerce product URL (wita-vet-siersc-kot)
+/produkt/wita-vet-siersc-kot-60-tab-5-blistrow/,/produkty/karmy-uzupelniajace/wita-vet-siersc-kot-60-tab-5-blistrow/,301,old shop-button slug on the product page
+/produkt/wita-vet-sport-12g-30tab-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-sport-12g-30-tab-dla-psow/,301,old shop-button slug on the product page
+/produkt/wita-vet-stawy-0195g-30-tab-dla-kotow/,/produkty/karmy-uzupelniajace/wita-vet-stawy-0195g-30-tab-dla-kotow/,301,old shop-button slug on the product page
+/produkt/wita-vet-stawy-4-g-30-tab-dla-psow/,/produkty/karmy-uzupelniajace/wita-vet-stawy-4-g-30-tab-dla-psow/,301,old shop-button slug on the product page
+/produkt/wita-vet-stawy-4g-30-tab-dla-psow-chondroityna-glukozamina-czarci-pazur-kolagen-rybi-msm-witamina-c/,/produkty/karmy-uzupelniajace/wita-vet-stawy-4-g-30-tab-dla-psow/,301,WooCommerce product URL (wita-vet-stawy-pies)
+/produkt/witamina-b12-50szt/,/produkty/preparaty-wspomagajace-zdrowie/witamina-b12/,301,WooCommerce product URL (witamina-b12)
+/produkt/witazium-40szt/,/produkty/karmy-uzupelniajace/witazium-40szt/,301,WooCommerce product URL (witazium)
+/produkt/wyzium-40szt/,/produkty/karmy-uzupelniajace/witazium-40szt/,301,old shop-button slug on the product page
+/produkt/zn-cynk_60szt/,/produkty/preparaty-wspomagajace-zdrowie/zn-cynk-60szt/,301,WooCommerce product URL (zn-cynk)
+/produkt/zn-cynk_60tab/,/produkty/preparaty-wspomagajace-zdrowie/zn-cynk-60szt/,301,old shop-button slug on the product page
+/produkty-higieniczne/,/produkty/higiena/,301,old hygiene products page
+/produkty/dermokosmetyki-weterynaryjne/peroxyvet-20ml-2/,/produkty/dermokosmetyki-weterynaryjne/peroxyvet-20ml/,301,duplicate/orphan product page
+/produkty/szampon-dla-szczeniat-200ml/,/produkty/kolekcja-kolorpielegnacja/szampon-dla-szczeniat-200ml/,301,product page category changed (amiwet-szampon-dla-szczeniat)
+/produkty/szampon-dluga-siersc-200ml/,/produkty/kolekcja-kolorpielegnacja/szampon-dluga-siersc-200ml/,301,product page category changed (amiwet-szampon-dluga-siersc)
+/produkty/szampon-krotka-siersc-200ml/,/produkty/kolekcja-kolorpielegnacja/szampon-krotka-siersc-200ml/,301,product page category changed (amiwet-szampon-krotka-siersc)
+/produkty/szampon-lagodzacy-podraznienia-200ml/,/produkty/kolekcja-kolorpielegnacja/szampon-lagodzacy-podraznienia-200ml/,301,product page category changed (amiwet-szampon-lagodzacy-podraznienia)
+/produkty/szampon-norkowy-200ml/,/produkty/kolekcja-kolorpielegnacja/szampon-norkowy-200ml/,301,product page category changed (amiwet-szampon-norkowy)
+/produkty/szampon-norkowy-groomer-5l/,/produkty/kolekcja-kolorpielegnacja/szampon-norkowy-groomer-5l/,301,product page category changed (amiwet-szampon-norkowy)
+/produkty/szampon-norkowy-male-rasy-200ml/,/produkty/kolekcja-kolorpielegnacja/szampon-norkowy-male-rasy-200ml/,301,product page category changed (amiwet-szampon-norkowy-male-rasy)
+/produkty/szampon-odstraszajacy-pchly-i-kleszcze-200ml/,/produkty/kolekcja-kolorpielegnacja/szampon-odstraszajacy-pchly-i-kleszcze-200ml/,301,product page category changed (amiwet-szampon-odstraszajacy-pchly-i-kleszcze)
+/sklep/,/produkty/,301,shop page
+/ulotki/,/pobierz/,301,leaflets now on the downloads page

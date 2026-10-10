@@ -81,7 +81,10 @@ final class Command {
 	 * ## OPTIONS
 	 *
 	 * <what>
-	 * : taxonomy | products | needs | guides | ingredients | pages | reps | materials | company | redirects | all
+	 * : taxonomy | products | product-translations | needs | guides | ingredients | pages | reps | materials | company | redirects | all
+	 *
+	 * [--lang=<lang>]
+	 * : For product-translations: en | fr | ua (default: all three).
 	 *
 	 * [--root=<path>]
 	 * : Repository root.
@@ -98,7 +101,7 @@ final class Command {
 	public function import( $args, $assoc ): void {
 		$what = $args[0] ?? 'all';
 		$imp  = new Importer( $this->root( $assoc ), isset( $assoc['production'] ), isset( $assoc['dry-run'] ), (bool) \WP_CLI\Utils\get_flag_value( $assoc, 'images', true ) );
-		$all  = array( 'taxonomy', 'company', 'products', 'ingredients', 'guides', 'needs', 'pages', 'reps', 'materials', 'redirects' );
+		$all  = array( 'taxonomy', 'company', 'products', 'product-translations', 'ingredients', 'guides', 'needs', 'pages', 'reps', 'materials', 'redirects' );
 		$list = 'all' === $what ? $all : array( $what );
 		foreach ( $list as $w ) {
 			switch ( $w ) {
@@ -122,6 +125,9 @@ final class Command {
 					break;
 				case 'company':
 					$imp->company();
+					break;
+				case 'product-translations':
+					$imp->productTranslations( (string) ( $assoc['lang'] ?? '' ) );
 					break;
 				case 'redirects':
 					$imp->redirects();

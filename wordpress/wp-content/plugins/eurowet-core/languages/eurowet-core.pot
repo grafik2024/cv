@@ -1,0 +1,3257 @@
+# Copyright (C) 2026 Eurowet
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Eurowet Core 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/eurowet-core\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-10T19:07:38+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: eurowet-core\n"
+
+#. Plugin Name of the plugin
+#: eurowet-core.php
+msgid "Eurowet Core"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: eurowet-core.php
+msgid "https://eurowet.pl/"
+msgstr ""
+
+#. Description of the plugin
+#: eurowet-core.php
+msgid "Rdzeń serwisu Eurowet: typy treści (potrzeby, porady, składniki, przedstawiciele, materiały, leady B2B), relacje produktów, wyszukiwarka potrzeb, SEO, ustawienia i narzędzia redakcyjne."
+msgstr ""
+
+#. Author of the plugin
+#: eurowet-core.php
+msgid "Eurowet"
+msgstr ""
+
+#. translators: 1: required PHP version, 2: current PHP version.
+#: eurowet-core.php:39
+#, php-format
+msgid "Wtyczka Eurowet Core wymaga PHP w wersji %1$s lub nowszej (obecnie: %2$s). Wtyczka nie została uruchomiona."
+msgstr ""
+
+#: src/Admin/ContentAudit.php:25
+#: src/Admin/ContentAudit.php:171
+msgid "Audyt treści"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:53
+msgid "oznaczona do sprawdzenia"
+msgstr ""
+
+#. translators: %s date
+#: src/Admin/ContentAudit.php:53
+#, php-format
+msgid "ostatnia weryfikacja: %s"
+msgstr ""
+
+#. translators: %s date
+#: src/Admin/ContentAudit.php:53
+#: src/Admin/MetaBoxes.php:177
+#: src/I18n/Extended.php:162
+msgid "brak"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:79
+msgid "brak w magazynie"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:89
+msgid "brak powiązań z potrzebami i innymi poradami"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:158
+#: src/Admin/ContentAudit.php:189
+#: src/Admin/Settings.php:99
+#: src/Finder/Analytics.php:52
+#: src/Finder/Analytics.php:123
+#: src/I18n/Extended.php:184
+#: src/I18n/Extended.php:195
+#: src/Seo/Redirects.php:142
+#: src/Seo/Redirects.php:183
+#: src/Seo/Redirects.php:194
+#: src/Seo/Redirects.php:210
+msgid "Brak uprawnień."
+msgstr ""
+
+#: src/Admin/ContentAudit.php:161
+msgid "Porady wymagające weryfikacji"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:162
+msgid "Potrzeby bez produktu głównego"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:163
+msgid "Produkty w relacjach — niedostępne/wycofane"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:164
+msgid "Produkty bez przypisanej potrzeby"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:165
+msgid "Porady bez powiązań (sieroty)"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:166
+msgid "Niedziałające linki wewnętrzne"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:167
+msgid "Brakujące tłumaczenia"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:168
+msgid "Zdjęcia produktów bez tekstu alternatywnego"
+msgstr ""
+
+#: src/Admin/ContentAudit.php:171
+msgid "Raport generowany co tydzień (i przy każdym otwarciu tej strony). Nic nie jest zmieniane automatycznie."
+msgstr ""
+
+#: src/Admin/ContentAudit.php:175
+msgid "Brak problemów."
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:26
+msgid "Podtytuł / przeznaczenie w jednym zdaniu"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:27
+msgid "Korzyści (badge) — jedna w linii"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:28
+msgid "Właściwości"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:29
+msgid "Sposób stosowania"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:30
+msgid "Zastosowanie"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:31
+msgid "Przeznaczenie"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:32
+msgid "Środki ostrożności"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:33
+msgid "Skład / INCI"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:34
+msgid "Składniki analityczne / dodatki"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:35
+msgid "Uwagi"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:36
+#: templates/components/family-switcher.php:17
+msgid "Pojemność / opakowanie"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:37
+msgid "Typ produktu"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:38
+msgid "Produkt katalogowy (bez sprzedaży online — CTA „Zapytaj o dostępność”)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:39
+msgid "Gdzie kupić (linki)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:40
+msgid "Dokumenty (PDF)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:41
+msgid "Film"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:42
+msgid "Transkrypcja / opis filmu"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:43
+msgid "Zdjęcia 360° (kolejne klatki)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:44
+msgid "Model 3D (GLB) — tylko zgodny z oryginalnym opakowaniem"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:45
+msgid "Podobne produkty (ręcznie — mają pierwszeństwo)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:46
+msgid "Produkty uzupełniające (ręcznie — mają pierwszeństwo)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:47
+#: templates/components/ingredient-list.php:18
+msgid "Kluczowe składniki"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:48
+msgid "Uzasadnienia zastosowań (cytaty z tekstu produktu)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:49
+msgid "W skrócie (2–4 zdania)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:50
+msgid "Synonimy i sformułowania użytkowników — jedno w linii"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:51
+msgid "Pytania użytkowników — jedno w linii"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:52
+msgid "Produkty dla tej potrzeby (tylko potwierdzone tekstem produktu)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:53
+#: src/Admin/Module.php:67
+#: src/Data/Labels.php:65
+#: src/Data/Labels.php:67
+#: templates/components/guide-grid.php:26
+msgid "Porady"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:54
+msgid "Czerwone flagi — objawy wymagające weterynarza (jedna w linii)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:55
+msgid "Poziom ostrzeżenia"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:56
+msgid "Priorytet (0–100)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:57
+msgid "Aktywna (widoczna w wyszukiwarce)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:58
+msgid "FAQ"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:59
+msgid "Co można zrobić pielęgnacyjnie"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:60
+msgid "Czego unikać"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:61
+msgid "W skrócie (odpowiedź na główne pytanie)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:62
+msgid "Etap ścieżki użytkownika"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:63
+msgid "Data ostatniej weryfikacji merytorycznej"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:64
+msgid "Wymaga ponownego sprawdzenia"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:65
+msgid "Notatka redakcyjna"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:66
+msgid "Autor / redakcja (bez wymyślonych osób)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:67
+msgid "Weryfikacja merytoryczna (tylko realna, zatwierdzona osoba)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:68
+#: templates/components/sources.php:17
+msgid "Źródła"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:69
+msgid "Powiązane potrzeby / problemy"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:70
+msgid "Powiązane porady (ręcznie)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:71
+msgid "Następna porada (ręcznie)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:72
+msgid "Pokaż ramkę „kiedy do weterynarza”"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:73
+msgid "Stary adres URL (migracja)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:74
+msgid "Nazwa INCI / w składzie"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:75
+msgid "Inne nazwy — jedna w linii"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:76
+msgid "Czym jest (ogólnie, ze źródłem)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:77
+msgid "Funkcja w produktach Eurowet (cytaty)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:78
+msgid "Imię"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:79
+msgid "Nazwisko"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:80
+msgid "Stanowisko"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:81
+#: templates/components/lead-form.php:56
+msgid "Telefon"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:82
+#: templates/components/lead-form.php:55
+msgid "E-mail"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:83
+#: src/Admin/MetaBoxes.php:218
+#: src/Admin/Module.php:87
+msgid "Województwa"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:84
+msgid "Obsługiwane segmenty — jeden w linii"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:85
+msgid "Kolejność"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:86
+msgid "Plik"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:87
+msgid "Język materiału"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:88
+msgid "Adres źródłowy"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:102
+msgid "Eurowet — dane produktu, relacje i wiedza"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:102
+msgid "Dane i relacje"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:122
+#: src/Admin/MetaBoxes.php:246
+msgid "Szukaj…"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:123
+#: src/Admin/MetaBoxes.php:260
+#: src/Seo/Redirects.php:175
+msgid "Usuń"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:124
+msgid "Dodaj"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:125
+#: src/Admin/MetaBoxes.php:260
+msgid "W górę"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:126
+msgid "Brak wyników"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:127
+msgid "Wybierz plik"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:155
+msgid "Wybierz z biblioteki"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:155
+msgid "Wyczyść"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:162
+msgid "Szukaj i dodaj…"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:177
+msgid "ostrożność — pokaż zalecenie konsultacji"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:177
+msgid "pilne — bez rekomendacji produktu"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:178
+msgid "zrozum problem"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:178
+msgid "jak pielęgnować"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:178
+msgid "dobór produktu"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:232
+msgid "Pytanie"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:232
+msgid "Odpowiedź"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:232
+msgid "Tytuł"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:232
+msgid "Wydawca"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:232
+msgid "Rok"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:233
+msgid "Nazwa"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:233
+#: src/Finder/Analytics.php:86
+msgid "Produkt"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:233
+msgid "Rola"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:233
+msgid "Dlaczego pasuje"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:233
+msgid "Cytat z tekstu produktu"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:234
+#: src/Data/Labels.php:29
+#: src/Data/Labels.php:31
+#: src/Finder/Analytics.php:78
+msgid "Potrzeba"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:234
+msgid "Cytat"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:234
+msgid "Pole źródłowe"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:234
+msgid "Produkt (rodzina)"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:236
+msgid "główny"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:236
+msgid "podobny"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:236
+msgid "uzupełniający"
+msgstr ""
+
+#: src/Admin/MetaBoxes.php:270
+msgid "Dodaj wiersz"
+msgstr ""
+
+#: src/Admin/Module.php:43
+msgid "Przegląd"
+msgstr ""
+
+#: src/Admin/Module.php:45
+#: templates/components/consent-banner.php:22
+msgid "Ustawienia"
+msgstr ""
+
+#: src/Admin/Module.php:56
+#: src/Admin/Module.php:57
+#: src/Data/Labels.php:250
+#: src/Data/Labels.php:252
+msgid "Aktualności"
+msgstr ""
+
+#: src/Admin/Module.php:58
+#: src/Data/Labels.php:263
+msgid "Wszystkie aktualności"
+msgstr ""
+
+#: src/Admin/Module.php:59
+#: src/Data/Labels.php:251
+#: src/Data/Labels.php:253
+msgid "Aktualność"
+msgstr ""
+
+#: src/Admin/Module.php:60
+#: src/Data/Labels.php:254
+msgid "Dodaj aktualność"
+msgstr ""
+
+#: src/Admin/Module.php:65
+msgid "Eurowet — przegląd systemu"
+msgstr ""
+
+#: src/Admin/Module.php:67
+#: src/Admin/Module.php:79
+#: templates/components/breadcrumbs.php:20
+#: templates/components/product-grid.php:34
+msgid "Produkty"
+msgstr ""
+
+#: src/Admin/Module.php:67
+msgid "Potrzeby / problemy"
+msgstr ""
+
+#: src/Admin/Module.php:67
+#: src/Data/Labels.php:102
+#: src/Data/Labels.php:104
+#: templates/components/breadcrumbs.php:20
+msgid "Składniki"
+msgstr ""
+
+#: src/Admin/Module.php:67
+#: src/Data/Labels.php:139
+#: src/Data/Labels.php:141
+msgid "Przedstawiciele"
+msgstr ""
+
+#: src/Admin/Module.php:67
+#: src/Data/Labels.php:176
+#: src/Data/Labels.php:178
+msgid "Materiały"
+msgstr ""
+
+#: src/Admin/Module.php:67
+#: src/Data/Labels.php:213
+msgid "Leady B2B"
+msgstr ""
+
+#: src/Admin/Module.php:71
+msgid "Moduły"
+msgstr ""
+
+#: src/Admin/Module.php:79
+#: src/Data/Labels.php:352
+#: src/Data/Labels.php:354
+msgid "Gatunki"
+msgstr ""
+
+#: src/Admin/Module.php:79
+msgid "Priorytet"
+msgstr ""
+
+#: src/Admin/Module.php:79
+msgid "Aktywna"
+msgstr ""
+
+#: src/Admin/Module.php:83
+msgid "Hub"
+msgstr ""
+
+#: src/Admin/Module.php:83
+msgid "Weryfikacja"
+msgstr ""
+
+#: src/Admin/Module.php:87
+msgid "Aktywny"
+msgstr ""
+
+#: src/Admin/Module.php:91
+msgid "Formularz"
+msgstr ""
+
+#: src/Admin/Module.php:91
+#: templates/components/lead-form.php:54
+msgid "Firma"
+msgstr ""
+
+#: src/Admin/Module.php:91
+#: src/Leads/Module.php:246
+msgid "Status"
+msgstr ""
+
+#: src/Admin/Module.php:113
+msgid "Wymaga sprawdzenia"
+msgstr ""
+
+#: src/Admin/Settings.php:105
+msgid "Eurowet — ustawienia"
+msgstr ""
+
+#: src/Admin/Settings.php:136
+msgid "•••••• (zapisany — wpisz, aby zmienić)"
+msgstr ""
+
+#: src/Consent/Module.php:31
+msgid "Zgody i analityka"
+msgstr ""
+
+#: src/Consent/Module.php:33
+msgid "Google Analytics 4 — identyfikator (G-…)"
+msgstr ""
+
+#: src/Consent/Module.php:33
+msgid "Ładowany dopiero po zgodzie na analitykę."
+msgstr ""
+
+#: src/Consent/Module.php:34
+msgid "Google Tag Manager — identyfikator (GTM-…)"
+msgstr ""
+
+#: src/Consent/Module.php:34
+msgid "Ładowany dopiero po zgodzie (analityka lub marketing)."
+msgstr ""
+
+#: src/Consent/Module.php:35
+msgid "Meta Pixel — identyfikator"
+msgstr ""
+
+#: src/Consent/Module.php:35
+msgid "Ładowany dopiero po zgodzie marketingowej."
+msgstr ""
+
+#: src/Data/Labels.php:28
+#: src/Data/Labels.php:30
+msgid "Potrzeby / Problemy"
+msgstr ""
+
+#: src/Data/Labels.php:32
+msgid "Dodaj potrzebę"
+msgstr ""
+
+#: src/Data/Labels.php:33
+msgid "Dodaj nową potrzebę"
+msgstr ""
+
+#: src/Data/Labels.php:34
+msgid "Edytuj potrzebę"
+msgstr ""
+
+#: src/Data/Labels.php:35
+#: src/Finder/Analytics.php:111
+msgid "Nowa potrzeba"
+msgstr ""
+
+#: src/Data/Labels.php:36
+msgid "Zobacz potrzebę"
+msgstr ""
+
+#: src/Data/Labels.php:37
+msgid "Zobacz potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:38
+msgid "Szukaj potrzeb"
+msgstr ""
+
+#: src/Data/Labels.php:39
+msgid "Nie znaleziono potrzeb."
+msgstr ""
+
+#: src/Data/Labels.php:40
+msgid "Brak potrzeb w koszu."
+msgstr ""
+
+#: src/Data/Labels.php:41
+msgid "Wszystkie potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:42
+msgid "Archiwum potrzeb"
+msgstr ""
+
+#: src/Data/Labels.php:43
+msgid "Atrybuty potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:44
+msgid "Wstaw do potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:45
+msgid "Przesłane do tej potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:46
+msgid "Obrazek potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:47
+msgid "Ustaw obrazek potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:48
+msgid "Usuń obrazek potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:49
+msgid "Użyj jako obrazka potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:50
+msgid "Filtruj listę potrzeb"
+msgstr ""
+
+#: src/Data/Labels.php:51
+#: src/Data/Labels.php:88
+#: src/Data/Labels.php:125
+#: src/Data/Labels.php:162
+#: src/Data/Labels.php:199
+#: src/Data/Labels.php:236
+#: src/Data/Labels.php:273
+msgid "Filtruj według daty"
+msgstr ""
+
+#: src/Data/Labels.php:52
+msgid "Nawigacja listy potrzeb"
+msgstr ""
+
+#: src/Data/Labels.php:53
+msgid "Lista potrzeb"
+msgstr ""
+
+#: src/Data/Labels.php:54
+msgid "Potrzeba została opublikowana."
+msgstr ""
+
+#: src/Data/Labels.php:55
+msgid "Potrzeba została opublikowana jako prywatna."
+msgstr ""
+
+#: src/Data/Labels.php:56
+msgid "Potrzeba została przywrócona do szkicu."
+msgstr ""
+
+#: src/Data/Labels.php:57
+msgid "Potrzeba została przeniesiona do kosza."
+msgstr ""
+
+#: src/Data/Labels.php:58
+msgid "Publikacja potrzeby została zaplanowana."
+msgstr ""
+
+#: src/Data/Labels.php:59
+msgid "Potrzeba została zaktualizowana."
+msgstr ""
+
+#: src/Data/Labels.php:60
+msgid "Odnośnik do potrzeby"
+msgstr ""
+
+#: src/Data/Labels.php:61
+msgid "Odnośnik do potrzeby."
+msgstr ""
+
+#: src/Data/Labels.php:66
+#: src/Data/Labels.php:68
+msgid "Porada"
+msgstr ""
+
+#: src/Data/Labels.php:69
+msgid "Dodaj poradę"
+msgstr ""
+
+#: src/Data/Labels.php:70
+msgid "Dodaj nową poradę"
+msgstr ""
+
+#: src/Data/Labels.php:71
+msgid "Edytuj poradę"
+msgstr ""
+
+#: src/Data/Labels.php:72
+msgid "Nowa porada"
+msgstr ""
+
+#: src/Data/Labels.php:73
+msgid "Zobacz poradę"
+msgstr ""
+
+#: src/Data/Labels.php:74
+msgid "Zobacz porady"
+msgstr ""
+
+#: src/Data/Labels.php:75
+msgid "Szukaj porad"
+msgstr ""
+
+#: src/Data/Labels.php:76
+msgid "Nie znaleziono porad."
+msgstr ""
+
+#: src/Data/Labels.php:77
+msgid "Brak porad w koszu."
+msgstr ""
+
+#: src/Data/Labels.php:78
+msgid "Wszystkie porady"
+msgstr ""
+
+#: src/Data/Labels.php:79
+msgid "Centrum wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:80
+msgid "Atrybuty porady"
+msgstr ""
+
+#: src/Data/Labels.php:81
+msgid "Wstaw do porady"
+msgstr ""
+
+#: src/Data/Labels.php:82
+msgid "Przesłane do tej porady"
+msgstr ""
+
+#: src/Data/Labels.php:83
+msgid "Obrazek porady"
+msgstr ""
+
+#: src/Data/Labels.php:84
+msgid "Ustaw obrazek porady"
+msgstr ""
+
+#: src/Data/Labels.php:85
+msgid "Usuń obrazek porady"
+msgstr ""
+
+#: src/Data/Labels.php:86
+msgid "Użyj jako obrazka porady"
+msgstr ""
+
+#: src/Data/Labels.php:87
+msgid "Filtruj listę porad"
+msgstr ""
+
+#: src/Data/Labels.php:89
+msgid "Nawigacja listy porad"
+msgstr ""
+
+#: src/Data/Labels.php:90
+msgid "Lista porad"
+msgstr ""
+
+#: src/Data/Labels.php:91
+msgid "Porada została opublikowana."
+msgstr ""
+
+#: src/Data/Labels.php:92
+msgid "Porada została opublikowana jako prywatna."
+msgstr ""
+
+#: src/Data/Labels.php:93
+msgid "Porada została przywrócona do szkicu."
+msgstr ""
+
+#: src/Data/Labels.php:94
+msgid "Porada została przeniesiona do kosza."
+msgstr ""
+
+#: src/Data/Labels.php:95
+msgid "Publikacja porady została zaplanowana."
+msgstr ""
+
+#: src/Data/Labels.php:96
+msgid "Porada została zaktualizowana."
+msgstr ""
+
+#: src/Data/Labels.php:97
+msgid "Odnośnik do porady"
+msgstr ""
+
+#: src/Data/Labels.php:98
+msgid "Odnośnik do porady."
+msgstr ""
+
+#: src/Data/Labels.php:103
+#: src/Data/Labels.php:105
+msgid "Składnik"
+msgstr ""
+
+#: src/Data/Labels.php:106
+msgid "Dodaj składnik"
+msgstr ""
+
+#: src/Data/Labels.php:107
+msgid "Dodaj nowy składnik"
+msgstr ""
+
+#: src/Data/Labels.php:108
+msgid "Edytuj składnik"
+msgstr ""
+
+#: src/Data/Labels.php:109
+msgid "Nowy składnik"
+msgstr ""
+
+#: src/Data/Labels.php:110
+msgid "Zobacz składnik"
+msgstr ""
+
+#: src/Data/Labels.php:111
+msgid "Zobacz składniki"
+msgstr ""
+
+#: src/Data/Labels.php:112
+msgid "Szukaj składników"
+msgstr ""
+
+#: src/Data/Labels.php:113
+msgid "Nie znaleziono składników."
+msgstr ""
+
+#: src/Data/Labels.php:114
+msgid "Brak składników w koszu."
+msgstr ""
+
+#: src/Data/Labels.php:115
+msgid "Wszystkie składniki"
+msgstr ""
+
+#: src/Data/Labels.php:116
+msgid "Archiwum składników"
+msgstr ""
+
+#: src/Data/Labels.php:117
+msgid "Atrybuty składnika"
+msgstr ""
+
+#: src/Data/Labels.php:118
+msgid "Wstaw do składnika"
+msgstr ""
+
+#: src/Data/Labels.php:119
+msgid "Przesłane do tego składnika"
+msgstr ""
+
+#: src/Data/Labels.php:120
+msgid "Obrazek składnika"
+msgstr ""
+
+#: src/Data/Labels.php:121
+msgid "Ustaw obrazek składnika"
+msgstr ""
+
+#: src/Data/Labels.php:122
+msgid "Usuń obrazek składnika"
+msgstr ""
+
+#: src/Data/Labels.php:123
+msgid "Użyj jako obrazka składnika"
+msgstr ""
+
+#: src/Data/Labels.php:124
+msgid "Filtruj listę składników"
+msgstr ""
+
+#: src/Data/Labels.php:126
+msgid "Nawigacja listy składników"
+msgstr ""
+
+#: src/Data/Labels.php:127
+msgid "Lista składników"
+msgstr ""
+
+#: src/Data/Labels.php:128
+msgid "Składnik został opublikowany."
+msgstr ""
+
+#: src/Data/Labels.php:129
+msgid "Składnik został opublikowany jako prywatny."
+msgstr ""
+
+#: src/Data/Labels.php:130
+msgid "Składnik został przywrócony do szkicu."
+msgstr ""
+
+#: src/Data/Labels.php:131
+msgid "Składnik został przeniesiony do kosza."
+msgstr ""
+
+#: src/Data/Labels.php:132
+msgid "Publikacja składnika została zaplanowana."
+msgstr ""
+
+#: src/Data/Labels.php:133
+msgid "Składnik został zaktualizowany."
+msgstr ""
+
+#: src/Data/Labels.php:134
+msgid "Odnośnik do składnika"
+msgstr ""
+
+#: src/Data/Labels.php:135
+msgid "Odnośnik do składnika."
+msgstr ""
+
+#: src/Data/Labels.php:140
+#: src/Data/Labels.php:142
+msgid "Przedstawiciel"
+msgstr ""
+
+#: src/Data/Labels.php:143
+msgid "Dodaj przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:144
+msgid "Dodaj nowego przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:145
+msgid "Edytuj przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:146
+msgid "Nowy przedstawiciel"
+msgstr ""
+
+#: src/Data/Labels.php:147
+msgid "Zobacz przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:148
+msgid "Zobacz przedstawicieli"
+msgstr ""
+
+#: src/Data/Labels.php:149
+msgid "Szukaj przedstawicieli"
+msgstr ""
+
+#: src/Data/Labels.php:150
+msgid "Nie znaleziono przedstawicieli."
+msgstr ""
+
+#: src/Data/Labels.php:151
+msgid "Brak przedstawicieli w koszu."
+msgstr ""
+
+#: src/Data/Labels.php:152
+msgid "Wszyscy przedstawiciele"
+msgstr ""
+
+#: src/Data/Labels.php:153
+#: src/Data/Labels.php:164
+msgid "Lista przedstawicieli"
+msgstr ""
+
+#: src/Data/Labels.php:154
+msgid "Atrybuty przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:155
+msgid "Wstaw do wpisu przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:156
+msgid "Przesłane do tego przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:157
+msgid "Zdjęcie przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:158
+msgid "Ustaw zdjęcie przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:159
+msgid "Usuń zdjęcie przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:160
+msgid "Użyj jako zdjęcia przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:161
+msgid "Filtruj listę przedstawicieli"
+msgstr ""
+
+#: src/Data/Labels.php:163
+msgid "Nawigacja listy przedstawicieli"
+msgstr ""
+
+#: src/Data/Labels.php:165
+msgid "Dane przedstawiciela zostały opublikowane."
+msgstr ""
+
+#: src/Data/Labels.php:166
+msgid "Dane przedstawiciela zostały zapisane jako prywatne."
+msgstr ""
+
+#: src/Data/Labels.php:167
+msgid "Dane przedstawiciela zostały przywrócone do szkicu."
+msgstr ""
+
+#: src/Data/Labels.php:168
+msgid "Przedstawiciel został przeniesiony do kosza."
+msgstr ""
+
+#: src/Data/Labels.php:169
+msgid "Publikacja danych przedstawiciela została zaplanowana."
+msgstr ""
+
+#: src/Data/Labels.php:170
+msgid "Dane przedstawiciela zostały zaktualizowane."
+msgstr ""
+
+#: src/Data/Labels.php:171
+msgid "Odnośnik do przedstawiciela"
+msgstr ""
+
+#: src/Data/Labels.php:172
+msgid "Odnośnik do przedstawiciela."
+msgstr ""
+
+#: src/Data/Labels.php:177
+#: src/Data/Labels.php:179
+msgid "Materiał"
+msgstr ""
+
+#: src/Data/Labels.php:180
+msgid "Dodaj materiał"
+msgstr ""
+
+#: src/Data/Labels.php:181
+msgid "Dodaj nowy materiał"
+msgstr ""
+
+#: src/Data/Labels.php:182
+msgid "Edytuj materiał"
+msgstr ""
+
+#: src/Data/Labels.php:183
+msgid "Nowy materiał"
+msgstr ""
+
+#: src/Data/Labels.php:184
+msgid "Zobacz materiał"
+msgstr ""
+
+#: src/Data/Labels.php:185
+msgid "Zobacz materiały"
+msgstr ""
+
+#: src/Data/Labels.php:186
+msgid "Szukaj materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:187
+msgid "Nie znaleziono materiałów."
+msgstr ""
+
+#: src/Data/Labels.php:188
+msgid "Brak materiałów w koszu."
+msgstr ""
+
+#: src/Data/Labels.php:189
+msgid "Wszystkie materiały"
+msgstr ""
+
+#: src/Data/Labels.php:190
+msgid "Archiwum materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:191
+msgid "Atrybuty materiału"
+msgstr ""
+
+#: src/Data/Labels.php:192
+msgid "Wstaw do materiału"
+msgstr ""
+
+#: src/Data/Labels.php:193
+msgid "Przesłane do tego materiału"
+msgstr ""
+
+#: src/Data/Labels.php:194
+msgid "Okładka materiału"
+msgstr ""
+
+#: src/Data/Labels.php:195
+msgid "Ustaw okładkę materiału"
+msgstr ""
+
+#: src/Data/Labels.php:196
+msgid "Usuń okładkę materiału"
+msgstr ""
+
+#: src/Data/Labels.php:197
+msgid "Użyj jako okładki materiału"
+msgstr ""
+
+#: src/Data/Labels.php:198
+msgid "Filtruj listę materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:200
+msgid "Nawigacja listy materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:201
+msgid "Lista materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:202
+msgid "Materiał został opublikowany."
+msgstr ""
+
+#: src/Data/Labels.php:203
+msgid "Materiał został opublikowany jako prywatny."
+msgstr ""
+
+#: src/Data/Labels.php:204
+msgid "Materiał został przywrócony do szkicu."
+msgstr ""
+
+#: src/Data/Labels.php:205
+msgid "Materiał został przeniesiony do kosza."
+msgstr ""
+
+#: src/Data/Labels.php:206
+msgid "Publikacja materiału została zaplanowana."
+msgstr ""
+
+#: src/Data/Labels.php:207
+msgid "Materiał został zaktualizowany."
+msgstr ""
+
+#: src/Data/Labels.php:208
+msgid "Odnośnik do materiału"
+msgstr ""
+
+#: src/Data/Labels.php:209
+msgid "Odnośnik do materiału."
+msgstr ""
+
+#: src/Data/Labels.php:214
+#: src/Data/Labels.php:216
+msgid "Lead B2B"
+msgstr ""
+
+#: src/Data/Labels.php:215
+msgid "B2B Leads"
+msgstr ""
+
+#: src/Data/Labels.php:217
+msgid "Dodaj lead"
+msgstr ""
+
+#: src/Data/Labels.php:218
+msgid "Dodaj nowy lead"
+msgstr ""
+
+#: src/Data/Labels.php:219
+msgid "Szczegóły leada"
+msgstr ""
+
+#: src/Data/Labels.php:220
+msgid "Nowy lead"
+msgstr ""
+
+#: src/Data/Labels.php:221
+msgid "Zobacz lead"
+msgstr ""
+
+#: src/Data/Labels.php:222
+msgid "Zobacz leady"
+msgstr ""
+
+#: src/Data/Labels.php:223
+msgid "Szukaj leadów"
+msgstr ""
+
+#: src/Data/Labels.php:224
+msgid "Nie znaleziono leadów."
+msgstr ""
+
+#: src/Data/Labels.php:225
+msgid "Brak leadów w koszu."
+msgstr ""
+
+#: src/Data/Labels.php:226
+msgid "Wszystkie leady"
+msgstr ""
+
+#: src/Data/Labels.php:227
+msgid "Archiwum leadów"
+msgstr ""
+
+#: src/Data/Labels.php:228
+msgid "Atrybuty leada"
+msgstr ""
+
+#: src/Data/Labels.php:229
+msgid "Wstaw do leada"
+msgstr ""
+
+#: src/Data/Labels.php:230
+msgid "Przesłane do tego leada"
+msgstr ""
+
+#: src/Data/Labels.php:231
+msgid "Obrazek leada"
+msgstr ""
+
+#: src/Data/Labels.php:232
+msgid "Ustaw obrazek leada"
+msgstr ""
+
+#: src/Data/Labels.php:233
+msgid "Usuń obrazek leada"
+msgstr ""
+
+#: src/Data/Labels.php:234
+msgid "Użyj jako obrazka leada"
+msgstr ""
+
+#: src/Data/Labels.php:235
+msgid "Filtruj listę leadów"
+msgstr ""
+
+#: src/Data/Labels.php:237
+msgid "Nawigacja listy leadów"
+msgstr ""
+
+#: src/Data/Labels.php:238
+msgid "Lista leadów"
+msgstr ""
+
+#: src/Data/Labels.php:239
+msgid "Lead został zapisany."
+msgstr ""
+
+#: src/Data/Labels.php:240
+msgid "Lead został zapisany jako prywatny."
+msgstr ""
+
+#: src/Data/Labels.php:241
+msgid "Lead został przywrócony do szkicu."
+msgstr ""
+
+#: src/Data/Labels.php:242
+msgid "Lead został przeniesiony do kosza."
+msgstr ""
+
+#: src/Data/Labels.php:243
+msgid "Zapis leada został zaplanowany."
+msgstr ""
+
+#: src/Data/Labels.php:244
+msgid "Lead został zaktualizowany."
+msgstr ""
+
+#: src/Data/Labels.php:245
+msgid "Odnośnik do leada"
+msgstr ""
+
+#: src/Data/Labels.php:246
+msgid "Odnośnik do leada."
+msgstr ""
+
+#: src/Data/Labels.php:255
+msgid "Dodaj nową aktualność"
+msgstr ""
+
+#: src/Data/Labels.php:256
+msgid "Edytuj aktualność"
+msgstr ""
+
+#: src/Data/Labels.php:257
+msgid "Nowa aktualność"
+msgstr ""
+
+#: src/Data/Labels.php:258
+msgid "Zobacz aktualność"
+msgstr ""
+
+#: src/Data/Labels.php:259
+msgid "Zobacz aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:260
+msgid "Szukaj aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:261
+msgid "Nie znaleziono aktualności."
+msgstr ""
+
+#: src/Data/Labels.php:262
+msgid "Brak aktualności w koszu."
+msgstr ""
+
+#: src/Data/Labels.php:264
+msgid "Archiwum aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:265
+msgid "Atrybuty aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:266
+msgid "Wstaw do aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:267
+msgid "Przesłane do tej aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:268
+msgid "Obrazek wyróżniający"
+msgstr ""
+
+#: src/Data/Labels.php:269
+msgid "Ustaw obrazek wyróżniający"
+msgstr ""
+
+#: src/Data/Labels.php:270
+msgid "Usuń obrazek wyróżniający"
+msgstr ""
+
+#: src/Data/Labels.php:271
+msgid "Użyj jako obrazka wyróżniającego"
+msgstr ""
+
+#: src/Data/Labels.php:272
+msgid "Filtruj listę aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:274
+msgid "Nawigacja listy aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:275
+msgid "Lista aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:276
+msgid "Aktualność została opublikowana."
+msgstr ""
+
+#: src/Data/Labels.php:277
+msgid "Aktualność została opublikowana jako prywatna."
+msgstr ""
+
+#: src/Data/Labels.php:278
+msgid "Aktualność została przywrócona do szkicu."
+msgstr ""
+
+#: src/Data/Labels.php:279
+msgid "Aktualność została przeniesiona do kosza."
+msgstr ""
+
+#: src/Data/Labels.php:280
+msgid "Publikacja aktualności została zaplanowana."
+msgstr ""
+
+#: src/Data/Labels.php:281
+msgid "Aktualność została zaktualizowana."
+msgstr ""
+
+#: src/Data/Labels.php:282
+msgid "Odnośnik do aktualności"
+msgstr ""
+
+#: src/Data/Labels.php:283
+msgid "Odnośnik do aktualności."
+msgstr ""
+
+#: src/Data/Labels.php:298
+#: src/Data/Labels.php:300
+msgid "Linie produktowe"
+msgstr ""
+
+#: src/Data/Labels.php:299
+msgid "Linia produktowa"
+msgstr ""
+
+#: src/Data/Labels.php:301
+msgid "Szukaj linii produktowych"
+msgstr ""
+
+#: src/Data/Labels.php:302
+msgid "Popularne linie produktowe"
+msgstr ""
+
+#: src/Data/Labels.php:303
+msgid "Wszystkie linie produktowe"
+msgstr ""
+
+#: src/Data/Labels.php:304
+msgid "Linia nadrzędna"
+msgstr ""
+
+#: src/Data/Labels.php:305
+msgid "Linia nadrzędna:"
+msgstr ""
+
+#: src/Data/Labels.php:306
+msgid "Edytuj linię produktową"
+msgstr ""
+
+#: src/Data/Labels.php:307
+msgid "Zobacz linię produktową"
+msgstr ""
+
+#: src/Data/Labels.php:308
+msgid "Zaktualizuj linię produktową"
+msgstr ""
+
+#: src/Data/Labels.php:309
+msgid "Dodaj nową linię produktową"
+msgstr ""
+
+#: src/Data/Labels.php:310
+msgid "Nazwa nowej linii produktowej"
+msgstr ""
+
+#: src/Data/Labels.php:311
+msgid "Oddziel linie przecinkami"
+msgstr ""
+
+#: src/Data/Labels.php:312
+msgid "Dodaj lub usuń linie produktowe"
+msgstr ""
+
+#: src/Data/Labels.php:313
+msgid "Wybierz spośród najczęściej używanych linii"
+msgstr ""
+
+#: src/Data/Labels.php:314
+msgid "Nie znaleziono linii produktowych."
+msgstr ""
+
+#: src/Data/Labels.php:315
+msgid "Brak linii produktowych"
+msgstr ""
+
+#: src/Data/Labels.php:316
+msgid "Filtruj według linii produktowej"
+msgstr ""
+
+#: src/Data/Labels.php:317
+msgid "Nawigacja listy linii produktowych"
+msgstr ""
+
+#: src/Data/Labels.php:318
+msgid "Lista linii produktowych"
+msgstr ""
+
+#: src/Data/Labels.php:319
+msgid "&larr; Wróć do linii produktowych"
+msgstr ""
+
+#: src/Data/Labels.php:320
+msgid "Odnośnik do linii produktowej"
+msgstr ""
+
+#: src/Data/Labels.php:321
+msgid "Odnośnik do linii produktowej."
+msgstr ""
+
+#: src/Data/Labels.php:325
+msgid "Rodziny produktów"
+msgstr ""
+
+#: src/Data/Labels.php:326
+msgid "Rodzina produktu"
+msgstr ""
+
+#: src/Data/Labels.php:327
+msgid "Rodziny (pojemności)"
+msgstr ""
+
+#: src/Data/Labels.php:328
+msgid "Szukaj rodzin produktów"
+msgstr ""
+
+#: src/Data/Labels.php:329
+msgid "Popularne rodziny produktów"
+msgstr ""
+
+#: src/Data/Labels.php:330
+msgid "Wszystkie rodziny produktów"
+msgstr ""
+
+#: src/Data/Labels.php:331
+msgid "Rodzina nadrzędna"
+msgstr ""
+
+#: src/Data/Labels.php:332
+msgid "Rodzina nadrzędna:"
+msgstr ""
+
+#: src/Data/Labels.php:333
+msgid "Edytuj rodzinę produktu"
+msgstr ""
+
+#: src/Data/Labels.php:334
+msgid "Zobacz rodzinę produktu"
+msgstr ""
+
+#: src/Data/Labels.php:335
+msgid "Zaktualizuj rodzinę produktu"
+msgstr ""
+
+#: src/Data/Labels.php:336
+msgid "Dodaj nową rodzinę produktu"
+msgstr ""
+
+#: src/Data/Labels.php:337
+msgid "Nazwa nowej rodziny produktu"
+msgstr ""
+
+#: src/Data/Labels.php:338
+msgid "Oddziel rodziny przecinkami"
+msgstr ""
+
+#: src/Data/Labels.php:339
+msgid "Dodaj lub usuń rodziny produktów"
+msgstr ""
+
+#: src/Data/Labels.php:340
+msgid "Wybierz spośród najczęściej używanych rodzin"
+msgstr ""
+
+#: src/Data/Labels.php:341
+msgid "Nie znaleziono rodzin produktów."
+msgstr ""
+
+#: src/Data/Labels.php:342
+msgid "Brak rodzin produktów"
+msgstr ""
+
+#: src/Data/Labels.php:343
+msgid "Filtruj według rodziny produktu"
+msgstr ""
+
+#: src/Data/Labels.php:344
+msgid "Nawigacja listy rodzin produktów"
+msgstr ""
+
+#: src/Data/Labels.php:345
+msgid "Lista rodzin produktów"
+msgstr ""
+
+#: src/Data/Labels.php:346
+msgid "&larr; Wróć do rodzin produktów"
+msgstr ""
+
+#: src/Data/Labels.php:347
+msgid "Odnośnik do rodziny produktu"
+msgstr ""
+
+#: src/Data/Labels.php:348
+msgid "Odnośnik do rodziny produktu."
+msgstr ""
+
+#: src/Data/Labels.php:353
+msgid "Gatunek"
+msgstr ""
+
+#: src/Data/Labels.php:355
+msgid "Szukaj gatunków"
+msgstr ""
+
+#: src/Data/Labels.php:356
+msgid "Popularne gatunki"
+msgstr ""
+
+#: src/Data/Labels.php:357
+msgid "Wszystkie gatunki"
+msgstr ""
+
+#: src/Data/Labels.php:358
+msgid "Gatunek nadrzędny"
+msgstr ""
+
+#: src/Data/Labels.php:359
+msgid "Gatunek nadrzędny:"
+msgstr ""
+
+#: src/Data/Labels.php:360
+msgid "Edytuj gatunek"
+msgstr ""
+
+#: src/Data/Labels.php:361
+msgid "Zobacz gatunek"
+msgstr ""
+
+#: src/Data/Labels.php:362
+msgid "Zaktualizuj gatunek"
+msgstr ""
+
+#: src/Data/Labels.php:363
+msgid "Dodaj nowy gatunek"
+msgstr ""
+
+#: src/Data/Labels.php:364
+msgid "Nazwa nowego gatunku"
+msgstr ""
+
+#: src/Data/Labels.php:365
+msgid "Oddziel gatunki przecinkami"
+msgstr ""
+
+#: src/Data/Labels.php:366
+msgid "Dodaj lub usuń gatunki"
+msgstr ""
+
+#: src/Data/Labels.php:367
+msgid "Wybierz spośród najczęściej używanych gatunków"
+msgstr ""
+
+#: src/Data/Labels.php:368
+msgid "Nie znaleziono gatunków."
+msgstr ""
+
+#: src/Data/Labels.php:369
+msgid "Brak gatunków"
+msgstr ""
+
+#: src/Data/Labels.php:370
+msgid "Filtruj według gatunku"
+msgstr ""
+
+#: src/Data/Labels.php:371
+msgid "Nawigacja listy gatunków"
+msgstr ""
+
+#: src/Data/Labels.php:372
+msgid "Lista gatunków"
+msgstr ""
+
+#: src/Data/Labels.php:373
+msgid "&larr; Wróć do gatunków"
+msgstr ""
+
+#: src/Data/Labels.php:374
+msgid "Odnośnik do gatunku"
+msgstr ""
+
+#: src/Data/Labels.php:375
+msgid "Odnośnik do gatunku."
+msgstr ""
+
+#: src/Data/Labels.php:379
+#: src/Data/Labels.php:381
+msgid "Obszary ciała"
+msgstr ""
+
+#: src/Data/Labels.php:380
+msgid "Obszar ciała"
+msgstr ""
+
+#: src/Data/Labels.php:382
+msgid "Szukaj obszarów ciała"
+msgstr ""
+
+#: src/Data/Labels.php:383
+msgid "Popularne obszary ciała"
+msgstr ""
+
+#: src/Data/Labels.php:384
+msgid "Wszystkie obszary ciała"
+msgstr ""
+
+#: src/Data/Labels.php:385
+msgid "Obszar nadrzędny"
+msgstr ""
+
+#: src/Data/Labels.php:386
+msgid "Obszar nadrzędny:"
+msgstr ""
+
+#: src/Data/Labels.php:387
+msgid "Edytuj obszar ciała"
+msgstr ""
+
+#: src/Data/Labels.php:388
+msgid "Zobacz obszar ciała"
+msgstr ""
+
+#: src/Data/Labels.php:389
+msgid "Zaktualizuj obszar ciała"
+msgstr ""
+
+#: src/Data/Labels.php:390
+msgid "Dodaj nowy obszar ciała"
+msgstr ""
+
+#: src/Data/Labels.php:391
+msgid "Nazwa nowego obszaru ciała"
+msgstr ""
+
+#: src/Data/Labels.php:392
+msgid "Oddziel obszary przecinkami"
+msgstr ""
+
+#: src/Data/Labels.php:393
+msgid "Dodaj lub usuń obszary ciała"
+msgstr ""
+
+#: src/Data/Labels.php:394
+msgid "Wybierz spośród najczęściej używanych obszarów"
+msgstr ""
+
+#: src/Data/Labels.php:395
+msgid "Nie znaleziono obszarów ciała."
+msgstr ""
+
+#: src/Data/Labels.php:396
+msgid "Brak obszarów ciała"
+msgstr ""
+
+#: src/Data/Labels.php:397
+msgid "Filtruj według obszaru ciała"
+msgstr ""
+
+#: src/Data/Labels.php:398
+msgid "Nawigacja listy obszarów ciała"
+msgstr ""
+
+#: src/Data/Labels.php:399
+msgid "Lista obszarów ciała"
+msgstr ""
+
+#: src/Data/Labels.php:400
+msgid "&larr; Wróć do obszarów ciała"
+msgstr ""
+
+#: src/Data/Labels.php:401
+msgid "Odnośnik do obszaru ciała"
+msgstr ""
+
+#: src/Data/Labels.php:402
+msgid "Odnośnik do obszaru ciała."
+msgstr ""
+
+#: src/Data/Labels.php:406
+#: src/Data/Labels.php:408
+msgid "Huby wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:407
+msgid "Hub wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:409
+msgid "Szukaj hubów wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:410
+msgid "Popularne huby wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:411
+msgid "Wszystkie huby wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:412
+msgid "Hub nadrzędny"
+msgstr ""
+
+#: src/Data/Labels.php:413
+msgid "Hub nadrzędny:"
+msgstr ""
+
+#: src/Data/Labels.php:414
+msgid "Edytuj hub wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:415
+msgid "Zobacz hub wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:416
+msgid "Zaktualizuj hub wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:417
+msgid "Dodaj nowy hub wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:418
+msgid "Nazwa nowego hubu wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:419
+msgid "Oddziel huby przecinkami"
+msgstr ""
+
+#: src/Data/Labels.php:420
+msgid "Dodaj lub usuń huby wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:421
+msgid "Wybierz spośród najczęściej używanych hubów"
+msgstr ""
+
+#: src/Data/Labels.php:422
+msgid "Nie znaleziono hubów wiedzy."
+msgstr ""
+
+#: src/Data/Labels.php:423
+msgid "Brak hubów wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:424
+msgid "Filtruj według hubu wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:425
+msgid "Nawigacja listy hubów wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:426
+msgid "Lista hubów wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:427
+msgid "&larr; Wróć do hubów wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:428
+msgid "Odnośnik do hubu wiedzy"
+msgstr ""
+
+#: src/Data/Labels.php:429
+msgid "Odnośnik do hubu wiedzy."
+msgstr ""
+
+#: src/Data/Labels.php:433
+#: src/Data/Labels.php:435
+msgid "Typy materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:434
+msgid "Typ materiału"
+msgstr ""
+
+#: src/Data/Labels.php:436
+msgid "Szukaj typów materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:437
+msgid "Popularne typy materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:438
+msgid "Wszystkie typy materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:439
+msgid "Typ nadrzędny"
+msgstr ""
+
+#: src/Data/Labels.php:440
+msgid "Typ nadrzędny:"
+msgstr ""
+
+#: src/Data/Labels.php:441
+msgid "Edytuj typ materiału"
+msgstr ""
+
+#: src/Data/Labels.php:442
+msgid "Zobacz typ materiału"
+msgstr ""
+
+#: src/Data/Labels.php:443
+msgid "Zaktualizuj typ materiału"
+msgstr ""
+
+#: src/Data/Labels.php:444
+msgid "Dodaj nowy typ materiału"
+msgstr ""
+
+#: src/Data/Labels.php:445
+msgid "Nazwa nowego typu materiału"
+msgstr ""
+
+#: src/Data/Labels.php:446
+msgid "Oddziel typy przecinkami"
+msgstr ""
+
+#: src/Data/Labels.php:447
+msgid "Dodaj lub usuń typy materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:448
+msgid "Wybierz spośród najczęściej używanych typów"
+msgstr ""
+
+#: src/Data/Labels.php:449
+msgid "Nie znaleziono typów materiałów."
+msgstr ""
+
+#: src/Data/Labels.php:450
+msgid "Brak typów materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:451
+msgid "Filtruj według typu materiału"
+msgstr ""
+
+#: src/Data/Labels.php:452
+msgid "Nawigacja listy typów materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:453
+msgid "Lista typów materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:454
+msgid "&larr; Wróć do typów materiałów"
+msgstr ""
+
+#: src/Data/Labels.php:455
+msgid "Odnośnik do typu materiału"
+msgstr ""
+
+#: src/Data/Labels.php:456
+msgid "Odnośnik do typu materiału."
+msgstr ""
+
+#: src/Data/Registry.php:440
+msgid "Potrzeby i problemy opiekunów zwierząt powiązane z produktami i poradami."
+msgstr ""
+
+#: src/Data/Registry.php:461
+msgid "Porady eksperckie Eurowet (centrum wiedzy)."
+msgstr ""
+
+#: src/Data/Registry.php:482
+msgid "Składniki występujące w produktach Eurowet."
+msgstr ""
+
+#: src/Data/Registry.php:503
+msgid "Przedstawiciele handlowi (dane publikowane w wyszukiwarce przedstawicieli)."
+msgstr ""
+
+#: src/Data/Registry.php:511
+msgid "Materiały do pobrania: katalogi, ulotki, dokumenty."
+msgstr ""
+
+#: src/Data/Registry.php:525
+msgid "Zgłoszenia z formularzy B2B, marki własnej i kontaktu z przedstawicielem."
+msgstr ""
+
+#: src/Data/Registry.php:582
+msgid "Linie produktowe Eurowet."
+msgstr ""
+
+#: src/Data/Registry.php:595
+msgid "Huby wiedzy grupujące porady (tematyczne i gatunkowe)."
+msgstr ""
+
+#: src/Data/Registry.php:609
+msgid "Rodzina wariantów pojemności tego samego produktu (przełącznik pojemności)."
+msgstr ""
+
+#: src/Data/Registry.php:616
+msgid "Gatunki zwierząt."
+msgstr ""
+
+#: src/Data/Registry.php:619
+msgid "Obszary ciała i układy."
+msgstr ""
+
+#: src/Data/Registry.php:623
+msgid "Rodzaje materiałów do pobrania."
+msgstr ""
+
+#: src/Data/Registry.php:851
+#: templates/components/article-meta.php:14
+msgid "Zespół Eurowet"
+msgstr ""
+
+#: src/Data/Registry.php:864
+msgid "Pies"
+msgstr ""
+
+#: src/Data/Registry.php:865
+msgid "Kot"
+msgstr ""
+
+#: src/Data/Registry.php:866
+msgid "Małe ssaki"
+msgstr ""
+
+#: src/Data/Registry.php:867
+msgid "Fretka"
+msgstr ""
+
+#: src/Data/Registry.php:868
+msgid "Ptaki ozdobne"
+msgstr ""
+
+#: src/Data/Registry.php:869
+msgid "Gołębie"
+msgstr ""
+
+#: src/Data/Registry.php:870
+msgid "Koń"
+msgstr ""
+
+#: src/Data/Registry.php:871
+msgid "Zwierzęta gospodarskie"
+msgstr ""
+
+#: src/Data/Registry.php:874
+msgid "Skóra"
+msgstr ""
+
+#: src/Data/Registry.php:875
+msgid "Sierść"
+msgstr ""
+
+#: src/Data/Registry.php:876
+msgid "Uszy"
+msgstr ""
+
+#: src/Data/Registry.php:877
+msgid "Oczy"
+msgstr ""
+
+#: src/Data/Registry.php:878
+msgid "Jama ustna i zęby"
+msgstr ""
+
+#: src/Data/Registry.php:879
+msgid "Łapy i pazury"
+msgstr ""
+
+#: src/Data/Registry.php:880
+msgid "Stawy"
+msgstr ""
+
+#: src/Data/Registry.php:881
+msgid "Układ pokarmowy"
+msgstr ""
+
+#: src/Data/Registry.php:882
+msgid "Wątroba"
+msgstr ""
+
+#: src/Data/Registry.php:883
+msgid "Układ moczowy"
+msgstr ""
+
+#: src/Data/Registry.php:884
+msgid "Serce"
+msgstr ""
+
+#: src/Data/Registry.php:885
+msgid "Odporność"
+msgstr ""
+
+#: src/Data/Registry.php:886
+msgid "Kondycja"
+msgstr ""
+
+#: src/Data/Registry.php:887
+msgid "Stres i zachowanie"
+msgstr ""
+
+#: src/Data/Registry.php:888
+msgid "Rozród"
+msgstr ""
+
+#: src/Data/Registry.php:889
+#: src/Leads/Module.php:37
+msgid "Inne"
+msgstr ""
+
+#: src/Finder/Analytics.php:20
+msgid "Analityka wyszukiwarki"
+msgstr ""
+
+#: src/Finder/Analytics.php:56
+msgid "Analityka wyszukiwarki (Product Finder)"
+msgstr ""
+
+#: src/Finder/Analytics.php:57
+msgid "Dane są anonimowe: bez adresów IP, cookies i identyfikatorów użytkowników. Zapytania z danymi kontaktowymi są maskowane."
+msgstr ""
+
+#: src/Finder/Analytics.php:60
+msgid "Od"
+msgstr ""
+
+#: src/Finder/Analytics.php:62
+msgid "Do"
+msgstr ""
+
+#: src/Finder/Analytics.php:64
+msgid "Pokaż"
+msgstr ""
+
+#: src/Finder/Analytics.php:66
+msgid "Eksport CSV (zapytania bez wyniku)"
+msgstr ""
+
+#: src/Finder/Analytics.php:68
+msgid "Zapytania bez dopasowania — kandydaci na nowe treści"
+msgstr ""
+
+#: src/Finder/Analytics.php:68
+#: src/Finder/Analytics.php:69
+#: src/Leads/Module.php:236
+msgid "Zapytanie"
+msgstr ""
+
+#: src/Finder/Analytics.php:68
+#: src/Finder/Analytics.php:69
+msgid "Liczba"
+msgstr ""
+
+#: src/Finder/Analytics.php:68
+msgid "Czerwona flaga"
+msgstr ""
+
+#: src/Finder/Analytics.php:69
+msgid "Najczęstsze zapytania"
+msgstr ""
+
+#: src/Finder/Analytics.php:69
+msgid "% dopasowanych"
+msgstr ""
+
+#: src/Finder/Analytics.php:78
+msgid "Najpopularniejsze potrzeby i przejścia do produktu"
+msgstr ""
+
+#: src/Finder/Analytics.php:78
+msgid "Wyszukania"
+msgstr ""
+
+#: src/Finder/Analytics.php:78
+msgid "Kliknięcia produktu"
+msgstr ""
+
+#: src/Finder/Analytics.php:86
+msgid "Przejścia z porad do produktów"
+msgstr ""
+
+#: src/Finder/Analytics.php:86
+msgid "Kliknięcia"
+msgstr ""
+
+#: src/Finder/Analytics.php:93
+msgid "Brak danych w wybranym okresie."
+msgstr ""
+
+#: src/Finder/Analytics.php:100
+msgid "Akcja"
+msgstr ""
+
+#: src/Finder/Analytics.php:113
+msgid "Nowa porada (szkic)"
+msgstr ""
+
+#: src/Finder/Module.php:38
+msgid "Product Finder"
+msgstr ""
+
+#: src/Finder/Module.php:40
+msgid "Próg pewności dopasowania (0–1)"
+msgstr ""
+
+#: src/Finder/Module.php:40
+msgid "Poniżej progu wyszukiwarka nie pokazuje produktu, tylko propozycje potrzeb."
+msgstr ""
+
+#: src/Finder/Module.php:41
+msgid "Zapisuj anonimowe statystyki wyszukiwań"
+msgstr ""
+
+#: src/Finder/Module.php:42
+msgid "Przechowywanie statystyk (miesiące)"
+msgstr ""
+
+#: src/Finder/Module.php:43
+msgid "Interpretacja AI zapytań o niskiej pewności (Claude API)"
+msgstr ""
+
+#: src/Finder/Module.php:43
+msgid "AI wybiera wyłącznie jedną z istniejących potrzeb albo „brak”. Nie wybiera produktów."
+msgstr ""
+
+#: src/Finder/Module.php:44
+msgid "Klucz API Anthropic"
+msgstr ""
+
+#: src/Finder/Module.php:45
+msgid "Model"
+msgstr ""
+
+#: src/Finder/RestController.php:64
+msgid "Zbyt wiele zapytań. Spróbuj za chwilę."
+msgstr ""
+
+#: src/Finder/Service.php:214
+msgid "Opisane objawy mogą oznaczać stan wymagający pilnej pomocy. Skontaktuj się niezwłocznie z lekarzem weterynarii — w takiej sytuacji nie polecamy samodzielnej pielęgnacji zamiast wizyty."
+msgstr ""
+
+#: src/Finder/Service.php:217
+msgid "Jeśli objawy są nasilone, utrzymują się lub stan zwierzęcia budzi niepokój, skonsultuj się z lekarzem weterynarii."
+msgstr ""
+
+#: src/Graph/GuideRanker.php:121
+msgid "Kolejny krok w tym temacie"
+msgstr ""
+
+#: src/Graph/GuideRanker.php:128
+msgid "Następny etap: od zrozumienia problemu do właściwej pielęgnacji"
+msgstr ""
+
+#: src/Graph/GuideRanker.php:141
+#: src/Graph/GuideRanker.php:147
+msgid "Produkt dopasowany do tej potrzeby"
+msgstr ""
+
+#: src/Graph/GuideRanker.php:145
+msgid "Powiązany temat"
+msgstr ""
+
+#: src/I18n/Extended.php:79
+msgid "Tłumaczenie na ten język nie jest jeszcze dostępne. Wyświetlamy wersję polską."
+msgstr ""
+
+#: src/I18n/Extended.php:81
+msgid "Tłumaczenie automatyczne — może zawierać nieścisłości."
+msgstr ""
+
+#: src/I18n/Extended.php:156
+msgid "Dodatkowe języki (tłumaczenie → weryfikacja)"
+msgstr ""
+
+#: src/I18n/Extended.php:168
+msgid "Przetłumacz"
+msgstr ""
+
+#: src/I18n/Extended.php:169
+msgid "Oznacz jako zweryfikowane"
+msgstr ""
+
+#: src/I18n/Module.php:44
+msgid "Języki"
+msgstr ""
+
+#: src/I18n/Module.php:46
+msgid "Dodatkowe języki (kody, przecinek)"
+msgstr ""
+
+#: src/I18n/Module.php:46
+msgid "Pokazywane w wyszukiwalnym wyborze „Inne języki”. Tłumaczenie maszynowe jest tworzone z panelu (nie przy wizycie), a do czasu weryfikacji strona ma noindex."
+msgstr ""
+
+#: src/I18n/Module.php:47
+msgid "Klucz API tłumaczeń (Anthropic)"
+msgstr ""
+
+#: src/I18n/Module.php:48
+msgid "Model tłumaczeń"
+msgstr ""
+
+#: src/Leads/Module.php:29
+msgid "Hurtownia / dystrybutor"
+msgstr ""
+
+#: src/Leads/Module.php:30
+msgid "Sklep zoologiczny"
+msgstr ""
+
+#: src/Leads/Module.php:31
+msgid "Sklep internetowy / e-commerce"
+msgstr ""
+
+#: src/Leads/Module.php:32
+msgid "Lecznica / gabinet weterynaryjny"
+msgstr ""
+
+#: src/Leads/Module.php:33
+msgid "Groomer / salon pielęgnacji"
+msgstr ""
+
+#: src/Leads/Module.php:34
+msgid "Hodowla"
+msgstr ""
+
+#: src/Leads/Module.php:35
+msgid "Sieć handlowa"
+msgstr ""
+
+#: src/Leads/Module.php:36
+msgid "Importer / partner zagraniczny"
+msgstr ""
+
+#. translators: %s: privacy policy URL
+#: src/Leads/Module.php:44
+#, php-format
+msgid "Wyrażam zgodę na przetwarzanie moich danych przez Eurowet w celu odpowiedzi na zapytanie. Szczegóły w <a href=\"%s\">polityce prywatności</a>."
+msgstr ""
+
+#: src/Leads/Module.php:62
+msgid "Kontakt i formularze"
+msgstr ""
+
+#: src/Leads/Module.php:64
+msgid "Telefon (biuro)"
+msgstr ""
+
+#: src/Leads/Module.php:65
+msgid "Telefon (sprzedaż)"
+msgstr ""
+
+#: src/Leads/Module.php:66
+msgid "E-mail kontaktowy"
+msgstr ""
+
+#: src/Leads/Module.php:67
+msgid "Nazwa firmy"
+msgstr ""
+
+#: src/Leads/Module.php:68
+msgid "Adres"
+msgstr ""
+
+#: src/Leads/Module.php:69
+msgid "NIP / REGON / KRS"
+msgstr ""
+
+#: src/Leads/Module.php:70
+msgid "Profile społecznościowe (URL, jeden w linii)"
+msgstr ""
+
+#: src/Leads/Module.php:71
+msgid "Odbiorca zapytań B2B"
+msgstr ""
+
+#: src/Leads/Module.php:72
+msgid "Odbiorca zapytań — marka własna"
+msgstr ""
+
+#: src/Leads/Module.php:73
+msgid "Wysyłaj automatyczne potwierdzenie do nadawcy"
+msgstr ""
+
+#: src/Leads/Module.php:74
+msgid "Przechowywanie zapytań (miesiące)"
+msgstr ""
+
+#: src/Leads/Module.php:117
+msgid "Dziękujemy. Odezwiemy się wkrótce."
+msgstr ""
+
+#: src/Leads/Module.php:121
+msgid "Formularz został wysłany zbyt szybko lub wygasł. Odśwież stronę i spróbuj ponownie."
+msgstr ""
+
+#: src/Leads/Module.php:124
+msgid "Zbyt wiele wysłanych formularzy. Spróbuj później lub zadzwoń do nas."
+msgstr ""
+
+#: src/Leads/Module.php:138
+msgid "Podaj imię i nazwisko."
+msgstr ""
+
+#: src/Leads/Module.php:141
+msgid "Podaj poprawny adres e-mail."
+msgstr ""
+
+#: src/Leads/Module.php:144
+msgid "Podaj nazwę firmy."
+msgstr ""
+
+#: src/Leads/Module.php:147
+msgid "Opisz krótko, w czym możemy pomóc (min. 10 znaków)."
+msgstr ""
+
+#: src/Leads/Module.php:150
+msgid "Wybierz województwo z listy."
+msgstr ""
+
+#: src/Leads/Module.php:156
+msgid "Zgoda jest wymagana, abyśmy mogli odpowiedzieć na zapytanie."
+msgstr ""
+
+#: src/Leads/Module.php:159
+msgid "Popraw zaznaczone pola."
+msgstr ""
+
+#: src/Leads/Module.php:170
+msgid "Nie udało się zapisać zapytania. Zadzwoń do nas."
+msgstr ""
+
+#: src/Leads/Module.php:181
+msgid "Dziękujemy! Zapytanie zostało wysłane — odpowiemy najszybciej, jak to możliwe."
+msgstr ""
+
+#: src/Leads/Module.php:186
+msgid "Marka własna"
+msgstr ""
+
+#: src/Leads/Module.php:186
+msgid "Kontakt z przedstawicielem"
+msgstr ""
+
+#: src/Leads/Module.php:186
+#: templates/components/rep-finder.php:82
+msgid "Kontakt"
+msgstr ""
+
+#: src/Leads/Module.php:197
+msgid "Eurowet — potwierdzenie otrzymania zapytania"
+msgstr ""
+
+#: src/Leads/Module.php:197
+msgid ""
+"Dziękujemy za wiadomość. Otrzymaliśmy Twoje zapytanie i odpowiemy najszybciej, jak to możliwe.\n"
+"\n"
+"Zespół Eurowet"
+msgstr ""
+
+#: src/Leads/Module.php:244
+msgid "Zgoda"
+msgstr ""
+
+#: src/Leads/Module.php:247
+msgid "nowe"
+msgstr ""
+
+#: src/Leads/Module.php:247
+msgid "w realizacji"
+msgstr ""
+
+#: src/Leads/Module.php:247
+msgid "zamknięte"
+msgstr ""
+
+#: src/Plugin.php:178
+msgid "Polylang — tłumaczenie typów treści i relacji"
+msgstr ""
+
+#: src/Plugin.php:179
+msgid "Routing adresów /porady/ i /produkty/"
+msgstr ""
+
+#: src/Plugin.php:180
+msgid "Dane: typy treści, taksonomie, pola"
+msgstr ""
+
+#: src/Plugin.php:181
+msgid "Bezpieczeństwo"
+msgstr ""
+
+#: src/Plugin.php:182
+msgid "Języki rozszerzone (EN, FR, UA)"
+msgstr ""
+
+#: src/Plugin.php:183
+msgid "Graf powiązań (produkty, potrzeby, porady)"
+msgstr ""
+
+#: src/Plugin.php:184
+msgid "Wyszukiwarka potrzeb (Product Finder)"
+msgstr ""
+
+#: src/Plugin.php:185
+msgid "SEO / GEO (schema, llms.txt, przekierowania)"
+msgstr ""
+
+#: src/Plugin.php:186
+msgid "Przedstawiciele handlowi"
+msgstr ""
+
+#: src/Plugin.php:187
+msgid "Formularze i leady B2B"
+msgstr ""
+
+#: src/Plugin.php:188
+#: templates/components/material-list.php:18
+msgid "Materiały do pobrania"
+msgstr ""
+
+#: src/Plugin.php:189
+msgid "Zgody cookies (Consent Mode v2)"
+msgstr ""
+
+#: src/Plugin.php:190
+msgid "Integracja z Elementorem"
+msgstr ""
+
+#: src/Plugin.php:191
+msgid "Panel administracyjny"
+msgstr ""
+
+#: src/Plugin.php:192
+msgid "Komendy WP-CLI"
+msgstr ""
+
+#: src/Reps/Directory.php:84
+msgid "Biuro Eurowet"
+msgstr ""
+
+#: src/Reps/Module.php:32
+msgid "Nieznane województwo."
+msgstr ""
+
+#: src/Reps/Voivodeships.php:43
+msgctxt "voivodeship"
+msgid "dolnośląskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:44
+msgctxt "voivodeship"
+msgid "kujawsko-pomorskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:45
+msgctxt "voivodeship"
+msgid "lubelskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:46
+msgctxt "voivodeship"
+msgid "lubuskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:47
+msgctxt "voivodeship"
+msgid "łódzkie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:48
+msgctxt "voivodeship"
+msgid "małopolskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:49
+msgctxt "voivodeship"
+msgid "mazowieckie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:50
+msgctxt "voivodeship"
+msgid "opolskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:51
+msgctxt "voivodeship"
+msgid "podkarpackie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:52
+msgctxt "voivodeship"
+msgid "podlaskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:53
+msgctxt "voivodeship"
+msgid "pomorskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:54
+msgctxt "voivodeship"
+msgid "śląskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:55
+msgctxt "voivodeship"
+msgid "świętokrzyskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:56
+msgctxt "voivodeship"
+msgid "warmińsko-mazurskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:57
+msgctxt "voivodeship"
+msgid "wielkopolskie"
+msgstr ""
+
+#: src/Reps/Voivodeships.php:58
+msgctxt "voivodeship"
+msgid "zachodniopomorskie"
+msgstr ""
+
+#: src/Seo/Module.php:45
+msgid "SEO / GEO"
+msgstr ""
+
+#: src/Seo/Module.php:47
+msgid "Udostępniaj /llms.txt"
+msgstr ""
+
+#: src/Seo/Module.php:48
+msgid "Boty trenujące modele AI"
+msgstr ""
+
+#: src/Seo/Module.php:48
+msgid "zezwalaj"
+msgstr ""
+
+#: src/Seo/Module.php:48
+msgid "blokuj (GPTBot, ClaudeBot, Google-Extended…)"
+msgstr ""
+
+#: src/Seo/Module.php:48
+msgid "Boty wyszukiwarek i wyszukiwania AI (Googlebot, Bingbot, OAI-SearchBot, PerplexityBot) nigdy nie są blokowane."
+msgstr ""
+
+#: src/Seo/Module.php:49
+msgid "Opis firmy (llms.txt, schema)"
+msgstr ""
+
+#: src/Seo/Module.php:50
+msgid "Po ilu miesiącach porada wymaga weryfikacji"
+msgstr ""
+
+#: src/Seo/Redirects.php:136
+#: src/Seo/Redirects.php:151
+msgid "Przekierowania 301"
+msgstr ""
+
+#: src/Seo/Redirects.php:136
+msgid "Przekierowania"
+msgstr ""
+
+#. translators: %d: count
+#: src/Seo/Redirects.php:152
+#, php-format
+msgid "Liczba przekierowań: %d. Obsługiwane przed wyświetleniem strony 404."
+msgstr ""
+
+#: src/Seo/Redirects.php:155
+msgid "Import CSV (old_path,new_path,status,reason)"
+msgstr ""
+
+#: src/Seo/Redirects.php:156
+msgid "Importuj"
+msgstr ""
+
+#: src/Seo/Redirects.php:157
+msgid "Eksport CSV"
+msgstr ""
+
+#: src/Seo/Redirects.php:158
+msgid "Szukaj przekierowań"
+msgstr ""
+
+#: src/Seo/Redirects.php:158
+#: templates/components/finder.php:36
+msgid "Szukaj"
+msgstr ""
+
+#: src/Seo/Redirects.php:161
+msgid "Wykryto łańcuchy przekierowań:"
+msgstr ""
+
+#: src/Seo/Redirects.php:163
+msgid "Stary adres"
+msgstr ""
+
+#: src/Seo/Redirects.php:163
+msgid "Cel"
+msgstr ""
+
+#: src/Seo/Redirects.php:163
+msgid "Kod"
+msgstr ""
+
+#: src/Seo/Redirects.php:163
+msgid "Wejścia"
+msgstr ""
+
+#: src/Seo/Redirects.php:163
+msgid "Ostatnio"
+msgstr ""
+
+#: src/Seo/Redirects.php:174
+msgid "Usunąć przekierowanie?"
+msgstr ""
+
+#: src/Seo/Robots.php:92
+msgid "Uwaga: witryna produkcyjna ma włączone „Proś wyszukiwarki o nieindeksowanie” (Ustawienia → Czytanie)."
+msgstr ""
+
+#: src/Seo/Schema.php:92
+msgid "Produkty dopasowane do potrzeby"
+msgstr ""
+
+#: templates/components/article-meta.php:20
+msgid "Autor"
+msgstr ""
+
+#: templates/components/article-meta.php:21
+msgid "Opublikowano"
+msgstr ""
+
+#: templates/components/article-meta.php:23
+msgid "Zaktualizowano"
+msgstr ""
+
+#: templates/components/article-meta.php:26
+msgid "Zweryfikowano"
+msgstr ""
+
+#: templates/components/breadcrumbs.php:11
+#: templates/components/breadcrumbs.php:38
+msgid "Ścieżka nawigacji"
+msgstr ""
+
+#: templates/components/breadcrumbs.php:17
+msgid "Strona główna"
+msgstr ""
+
+#: templates/components/breadcrumbs.php:20
+msgid "Porady i wiedza"
+msgstr ""
+
+#: templates/components/breadcrumbs.php:20
+msgid "Dobierz produkt"
+msgstr ""
+
+#: templates/components/consent-banner.php:13
+msgid "Zgoda na pliki cookies"
+msgstr ""
+
+#: templates/components/consent-banner.php:16
+msgid "Szanujemy Twoją prywatność."
+msgstr ""
+
+#: templates/components/consent-banner.php:17
+msgid "Niezbędne pliki cookies zapewniają działanie sklepu. Za Twoją zgodą użyjemy też analitycznych (statystyki odwiedzin) i marketingowych. Możesz zmienić decyzję w każdej chwili."
+msgstr ""
+
+#: templates/components/consent-banner.php:18
+msgid "Polityka prywatności"
+msgstr ""
+
+#: templates/components/consent-banner.php:21
+msgid "Odrzuć"
+msgstr ""
+
+#: templates/components/consent-banner.php:23
+msgid "Akceptuj"
+msgstr ""
+
+#: templates/components/consent-banner.php:29
+msgid "Ustawienia plików cookies"
+msgstr ""
+
+#: templates/components/consent-banner.php:31
+msgid "Kategorie"
+msgstr ""
+
+#: templates/components/consent-banner.php:32
+msgid "Niezbędne"
+msgstr ""
+
+#: templates/components/consent-banner.php:32
+msgid "koszyk, logowanie, bezpieczeństwo, zapamiętanie tej decyzji."
+msgstr ""
+
+#: templates/components/consent-banner.php:33
+msgid "Analityczne"
+msgstr ""
+
+#: templates/components/consent-banner.php:33
+msgid "anonimowe statystyki odwiedzin, które pomagają ulepszać stronę."
+msgstr ""
+
+#: templates/components/consent-banner.php:34
+msgid "Marketingowe"
+msgstr ""
+
+#: templates/components/consent-banner.php:34
+msgid "dopasowanie reklam w innych serwisach."
+msgstr ""
+
+#: templates/components/consent-banner.php:37
+msgid "Odrzuć wszystkie"
+msgstr ""
+
+#: templates/components/consent-banner.php:38
+msgid "Zapisz wybór"
+msgstr ""
+
+#: templates/components/consent-banner.php:39
+msgid "Akceptuj wszystkie"
+msgstr ""
+
+#: templates/components/family-switcher.php:22
+msgid "ten wariant"
+msgstr ""
+
+#: templates/components/family-switcher.php:24
+msgid "inny wariant"
+msgstr ""
+
+#: templates/components/family-switcher.php:24
+msgid "chwilowo niedostępny"
+msgstr ""
+
+#: templates/components/faq.php:17
+msgid "Najczęstsze pytania"
+msgstr ""
+
+#: templates/components/finder-results.php:27
+msgid "Potwierdzone przeznaczenie:"
+msgstr ""
+
+#: templates/components/finder-results.php:31
+msgid "Dlaczego pasuje:"
+msgstr ""
+
+#: templates/components/finder-results.php:32
+msgid "z opisu produktu"
+msgstr ""
+
+#: templates/components/finder-results.php:38
+msgid "Zobacz produkt"
+msgstr ""
+
+#: templates/components/finder-results.php:41
+msgid "Kup produkt"
+msgstr ""
+
+#: templates/components/finder-results.php:43
+msgid "Zapytaj o dostępność"
+msgstr ""
+
+#. translators: %s: corrected query
+#: templates/components/finder-results.php:54
+#, php-format
+msgid "Szukaliśmy: %s"
+msgstr ""
+
+#: templates/components/finder-results.php:62
+msgid "Rozpoznana potrzeba"
+msgstr ""
+
+#: templates/components/finder-results.php:68
+msgid "Najlepiej dopasowany produkt"
+msgstr ""
+
+#: templates/components/finder-results.php:72
+msgid "Dla tej potrzeby nie mamy produktu, którego opis potwierdzałby takie zastosowanie. Zobacz porady poniżej lub skontaktuj się z nami."
+msgstr ""
+
+#: templates/components/finder-results.php:76
+#: templates/components/related-products.php:15
+msgid "Produkty uzupełniające"
+msgstr ""
+
+#: templates/components/finder-results.php:88
+msgid "Przeczytaj również"
+msgstr ""
+
+#: templates/components/finder-results.php:99
+msgid "Nie znaleźliśmy pewnego dopasowania"
+msgstr ""
+
+#: templates/components/finder-results.php:100
+msgid "Nie chcemy zgadywać — pokazujemy produkt tylko wtedy, gdy jego opis potwierdza zastosowanie. Spróbuj opisać problem inaczej albo wybierz jedną z potrzeb."
+msgstr ""
+
+#: templates/components/finder-results.php:107
+msgid "Może chodzi Ci o"
+msgstr ""
+
+#: templates/components/finder-results.php:107
+msgid "Wybierz potrzebę"
+msgstr ""
+
+#. translators: %s: contact URL
+#: templates/components/finder-results.php:116
+#, php-format
+msgid "Masz pytanie o dobór produktu? <a href=\"%s\">Napisz lub zadzwoń do nas</a>."
+msgstr ""
+
+#: templates/components/finder.php:17
+msgid "pies cały czas się drapie"
+msgstr ""
+
+#: templates/components/finder.php:17
+msgid "czym czyścić psu uszy"
+msgstr ""
+
+#: templates/components/finder.php:17
+msgid "co na suchą skórę"
+msgstr ""
+
+#: templates/components/finder.php:17
+msgid "kot ma brudne uszy"
+msgstr ""
+
+#: templates/components/finder.php:17
+msgid "higiena zębów kota"
+msgstr ""
+
+#: templates/components/finder.php:28
+msgid "Dobierz produkt do potrzeby"
+msgstr ""
+
+#: templates/components/finder.php:29
+msgid "Opisz, czego potrzebuje Twoje zwierzę"
+msgstr ""
+
+#: templates/components/finder.php:32
+msgid "np. pies się drapie, czym czyścić uszy kotu…"
+msgstr ""
+
+#: templates/components/finder.php:38
+msgid "Dopasowujemy wyłącznie produkty, których przeznaczenie potwierdza ich opis. Porady nie zastępują wizyty u lekarza weterynarii."
+msgstr ""
+
+#: templates/components/finder.php:43
+msgid "Albo zacznij od gatunku:"
+msgstr ""
+
+#: templates/components/finder.php:50
+msgid "Przykładowe pytania:"
+msgstr ""
+
+#. translators: %d: minutes
+#: templates/components/guide-card.php:36
+#, php-format
+msgid "%d min czytania"
+msgid_plural "%d min czytania"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/components/guides-for-product.php:14
+msgid "Wiedza związana z produktem"
+msgstr ""
+
+#: templates/components/ingredient-list.php:18
+msgid "Składniki i technologie"
+msgstr ""
+
+#: templates/components/language-picker.php:27
+msgid "Język:"
+msgstr ""
+
+#: templates/components/language-picker.php:37
+msgid "Inne języki"
+msgstr ""
+
+#: templates/components/language-picker.php:38
+msgid "Szukaj języka"
+msgstr ""
+
+#: templates/components/language-picker.php:39
+msgid "Szukaj języka…"
+msgstr ""
+
+#: templates/components/language-picker.php:45
+msgid "Tłumaczenia automatyczne — weryfikowane stopniowo."
+msgstr ""
+
+#: templates/components/lead-form.php:20
+msgid "Zapytanie o współpracę B2B"
+msgstr ""
+
+#: templates/components/lead-form.php:20
+msgid "Zapytanie o markę własną"
+msgstr ""
+
+#: templates/components/lead-form.php:20
+msgid "Poproś o kontakt przedstawiciela"
+msgstr ""
+
+#: templates/components/lead-form.php:20
+msgid "Napisz do nas"
+msgstr ""
+
+#: templates/components/lead-form.php:26
+msgid "(opcjonalnie)"
+msgstr ""
+
+#: templates/components/lead-form.php:50
+msgid "Nie wypełniaj tego pola"
+msgstr ""
+
+#: templates/components/lead-form.php:53
+msgid "Imię i nazwisko"
+msgstr ""
+
+#: templates/components/lead-form.php:60
+msgid "Rodzaj działalności"
+msgstr ""
+
+#: templates/components/lead-form.php:62
+#: templates/components/lead-form.php:71
+#: templates/components/rep-finder.php:59
+msgid "— wybierz —"
+msgstr ""
+
+#: templates/components/lead-form.php:69
+msgid "Województwo"
+msgstr ""
+
+#: templates/components/lead-form.php:79
+msgid "Wiadomość"
+msgstr ""
+
+#: templates/components/lead-form.php:85
+msgid "pole wymagane"
+msgstr ""
+
+#: templates/components/lead-form.php:86
+msgid "Wyślij zapytanie"
+msgstr ""
+
+#: templates/components/need-tiles.php:31
+msgid "Potrzeby"
+msgstr ""
+
+#: templates/components/next-guide.php:18
+msgid "Czytaj dalej"
+msgstr ""
+
+#: templates/components/next-guide.php:27
+msgid "Produkt dopasowany do tej potrzeby:"
+msgstr ""
+
+#: templates/components/product-card.php:44
+msgid "Dla:"
+msgstr ""
+
+#: templates/components/product-card.php:49
+msgid "Dostępny u partnerów handlowych"
+msgstr ""
+
+#: templates/components/related-products.php:16
+msgid "Podobne produkty"
+msgstr ""
+
+#: templates/components/related-products.php:17
+msgid "Dla tej samej potrzeby"
+msgstr ""
+
+#: templates/components/related-products.php:18
+msgid "Z tej samej linii"
+msgstr ""
+
+#: templates/components/related-products.php:19
+msgid "Z tej samej kategorii"
+msgstr ""
+
+#: templates/components/rep-finder.php:36
+msgid "Obsługuje:"
+msgstr ""
+
+#: templates/components/rep-finder.php:43
+msgid "Znajdź swojego opiekuna handlowego"
+msgstr ""
+
+#: templates/components/rep-finder.php:47
+msgid "Mapa województw — wybierz województwo"
+msgstr ""
+
+#. translators: %s voivodeship
+#: templates/components/rep-finder.php:49
+#, php-format
+msgid "Województwo %s"
+msgstr ""
+
+#: templates/components/rep-finder.php:57
+msgid "Wybierz województwo"
+msgstr ""
+
+#: templates/components/rep-finder.php:79
+msgid "W tym województwie skontaktuj się bezpośrednio z biurem Eurowet:"
+msgstr ""
+
+#: templates/components/sources.php:22
+msgid "(otwiera się w nowej karcie)"
+msgstr ""
+
+#: templates/components/tldr.php:17
+msgid "W skrócie"
+msgstr ""
+
+#: templates/components/vet-notice.php:20
+msgid "Kiedy skontaktować się z lekarzem weterynarii"
+msgstr ""

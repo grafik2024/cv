@@ -134,8 +134,9 @@ function ew_theme_tr_id( int $post_id ): int {
  */
 function ew_theme_url( string $key ): string {
 	static $cache = array();
-	if ( isset( $cache[ $key ] ) ) {
-		return $cache[ $key ];
+	$ck = $key . '|' . ( function_exists( 'pll_current_language' ) ? (string) pll_current_language( 'slug' ) : '' );
+	if ( isset( $cache[ $ck ] ) ) {
+		return $cache[ $ck ];
 	}
 
 	$paths = array(
@@ -155,8 +156,12 @@ function ew_theme_url( string $key ): string {
 		'ingredients' => 'ew_ingredient',
 	);
 
-	$url = '';
-	if ( 'products' === $key && ew_theme_has_woo() ) {
+	$url  = '';
+	$lang = function_exists( 'pll_current_language' ) ? (string) pll_current_language( 'slug' ) : '';
+	$cpt  = array( 'products' => 'product', 'needs' => 'ew_need', 'guides' => 'ew_guide', 'ingredients' => 'ew_ingredient' );
+	if ( '' !== $lang && 'pl' !== $lang && isset( $cpt[ $key ] ) && function_exists( 'ew_archive_url' ) ) {
+		$url = ew_archive_url( $cpt[ $key ], $lang ); // localized bases: /en/products/, /fr/conseils/, …
+	} elseif ( 'products' === $key && ew_theme_has_woo() ) {
 		$shop_id = (int) wc_get_page_id( 'shop' );
 		if ( $shop_id > 0 ) {
 			$url = (string) get_permalink( ew_theme_tr_id( $shop_id ) );
@@ -181,8 +186,8 @@ function ew_theme_url( string $key ): string {
 	 * @param string $url URL.
 	 * @param string $key Key (products, needs, guides, ingredients, b2b, private_label, reps, contact, downloads).
 	 */
-	$cache[ $key ] = (string) apply_filters( 'ew_theme_url', $url, $key );
-	return $cache[ $key ];
+	$cache[ $ck ] = (string) apply_filters( 'ew_theme_url', $url, $key );
+	return $cache[ $ck ];
 }
 
 /**

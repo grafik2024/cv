@@ -90,7 +90,7 @@ async function start() {
 		btn.addEventListener( 'click', () => {
 			playing = ! playing;
 			btn.setAttribute( 'aria-pressed', String( ! playing ) );
-			if ( label ) label.textContent = playing ? 'Zatrzymaj obrót' : 'Wznów obrót';
+			if ( label ) label.textContent = playing ? ( btn.dataset.labelPause || 'Zatrzymaj obrót' ) : ( btn.dataset.labelPlay || 'Wznów obrót' );
 			resume();
 		} );
 	}

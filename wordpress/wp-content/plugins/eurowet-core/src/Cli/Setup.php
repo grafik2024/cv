@@ -96,6 +96,7 @@ final class Setup {
 				update_option( 'woocommerce_store_pages_only', 'no' );
 			}
 			$log[] = 'WooCommerce site visibility: ' . ( 'yes' === get_option( 'woocommerce_coming_soon' ) ? 'COMING SOON (check before launch)' : 'live' );
+			$log   = array_merge( $log, self::normalizeProductCategories() );
 			$log[] = 'WooCommerce permalinks: /produkty/%product_cat%/';
 		}
 
@@ -104,6 +105,40 @@ final class Setup {
 		}
 		$log = array_merge( $log, self::yoast(), self::menus( $root ), self::elementorKit() );
 		flush_rewrite_rules( false );
+		return $log;
+	}
+
+	/**
+	 * Production catalogue uses a parent category "sklep" (/kategoria-produktu/sklep/{kategoria}/) and two slugs that
+	 * differ from the old content pages. With product URLs /produkty/%product_cat%/{produkt}/ the parent would leak into
+	 * every URL (/produkty/sklep/…), so: re-parent children of "sklep" to the top level, detach "sklep" from products and
+	 * align the two slugs with the old /produkty/{kategoria}/ pages. Idempotent; old URLs are covered by the 301 map.
+	 *
+	 * @return string[]
+	 */
+	private static function normalizeProductCategories(): array {
+		$log  = array();
+		$shop = get_term_by( 'slug', 'sklep', 'product_cat' );
+		if ( $shop instanceof \WP_Term ) {
+			foreach ( (array) get_terms( array( 'taxonomy' => 'product_cat', 'parent' => $shop->term_id, 'hide_empty' => false ) ) as $child ) {
+				if ( $child instanceof \WP_Term ) {
+					wp_update_term( $child->term_id, 'product_cat', array( 'parent' => 0 ) );
+					$log[] = 'Category re-parented to top level: ' . $child->slug;
+				}
+			}
+			$ids = get_objects_in_term( $shop->term_id, 'product_cat' );
+			foreach ( is_array( $ids ) ? $ids : array() as $pid ) {
+				wp_remove_object_terms( (int) $pid, $shop->term_id, 'product_cat' );
+			}
+			$log[] = sprintf( 'Category "sklep" detached from %d products (term kept, empty).', is_array( $ids ) ? count( $ids ) : 0 );
+		}
+		foreach ( Importer::WOO_CAT_MAP as $old => $canonical ) {
+			$t = get_term_by( 'slug', $old, 'product_cat' );
+			if ( $t instanceof \WP_Term && ! get_term_by( 'slug', $canonical, 'product_cat' ) ) {
+				wp_update_term( $t->term_id, 'product_cat', array( 'slug' => $canonical ) );
+				$log[] = "Category slug {$old} → {$canonical}";
+			}
+		}
 		return $log;
 	}
 

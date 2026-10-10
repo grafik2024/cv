@@ -10,6 +10,7 @@ defined( 'ABSPATH' ) || exit;
 add_action(
 	'after_setup_theme',
 	static function (): void {
+		load_theme_textdomain( 'eurowet-2026', EW_THEME_DIR . '/languages' );
 		load_child_theme_textdomain( 'eurowet-2026', EW_THEME_DIR . '/languages' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );

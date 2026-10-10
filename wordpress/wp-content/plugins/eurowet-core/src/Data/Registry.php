@@ -83,6 +83,7 @@ final class Registry {
 			'_ew_need_ids'          => 'ids',
 			'_ew_source_path'       => 'str',
 			'_ew_source_key'        => 'str',
+			'_ew_i18n_of'           => 'int', // translated catalogue page → Polish product (sells it)
 		),
 		'ew_need'       => array(
 			'_ew_short_answer'   => 'html',

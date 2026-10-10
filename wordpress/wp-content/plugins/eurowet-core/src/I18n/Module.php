@@ -35,6 +35,7 @@ final class Module implements ModuleInterface {
 
 	public function register(): void {
 		Extended::register();
+		Slugs::register();
 		add_action(
 			'ew_settings_sections',
 			static function (): void {

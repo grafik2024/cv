@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Product group "zdrowie-ptaki-inne": preparaty wspomagające zdrowie (23 pages) + preparaty dla ptaków ozdobnych (10 pages).
+"""Product groups "zdrowie-ptaki-inne" (preparaty wspomagające zdrowie, 23 pages; preparaty dla ptaków ozdobnych, 10 pages)
+and "amiwet" (8 Amiwet shampoo pages published directly under /produkty/).
 Every text field is copied verbatim from the product page sections in content/data/products.base.json (extracted from
 eurowet.pl); WooCommerce id/price/stock come from audit/extracted/products/*.md. Families group pages of the same
 product (capacities / pack sizes for the same target animals). Output: content/data/products/zdrowie-ptaki-inne.json
@@ -44,7 +45,21 @@ FAMILIES = {
     "floratonyl": ("Floratonyl", None, "mieszanka paszowa uzupełniająca", [(B + "floratonyl-15ml/", "15 ml", None)], ["ptaki ozdobne"], ["ogólna kondycja/witalność", "odporność"]),
     "floratransit": ("Floratransit", None, "mieszanka paszowa uzupełniająca", [(B + "floratransit-10g/", "10 g", None)], ["ptaki ozdobne"], ["układ pokarmowy"]),
 }
-CATEGORY = {H: "preparaty-wspomagajace-zdrowie", B: "preparaty-dla-ptakow-ozdobnych"}
+A = "/produkty/"
+# Amiwet line (pages directly under /produkty/{slug}/, not sold online). Category: the client's homepage lists
+# "Kolekcje kosmetyków Kolor&Pielęgnacja, Amiwet" as one category → kolekcja-kolorpielegnacja.
+AMIWET = {
+    "amiwet-szampon-dla-szczeniat": ("Amiwet Szampon dla szczeniąt", [(A + "szampon-dla-szczeniat-200ml/", "200 ml")], ["pies", "szczenię"], ["sierść", "skóra"]),
+    "amiwet-szampon-dluga-siersc": ("Amiwet Szampon długa sierść", [(A + "szampon-dluga-siersc-200ml/", "200 ml")], ["pies"], ["sierść"]),
+    "amiwet-szampon-krotka-siersc": ("Amiwet Szampon krótka sierść", [(A + "szampon-krotka-siersc-200ml/", "200 ml")], ["pies"], ["sierść"]),
+    "amiwet-szampon-lagodzacy-podraznienia": ("Amiwet Szampon łagodzący podrażnienia", [(A + "szampon-lagodzacy-podraznienia-200ml/", "200 ml")], ["pies", "kot"], ["skóra", "sierść"]),
+    "amiwet-szampon-norkowy": ("Amiwet Szampon norkowy", [(A + "szampon-norkowy-200ml/", "200 ml"), (A + "szampon-norkowy-groomer-5l/", "5 l")], ["pies"], ["sierść"]),
+    "amiwet-szampon-norkowy-male-rasy": ("Amiwet Szampon norkowy małe rasy", [(A + "szampon-norkowy-male-rasy-200ml/", "200 ml")], ["pies"], ["sierść"]),
+    "amiwet-szampon-odstraszajacy-pchly-i-kleszcze": ("Amiwet Szampon odstraszający pchły i kleszcze", [(A + "szampon-odstraszajacy-pchly-i-kleszcze-200ml/", "200 ml")], ["pies", "kot"], ["sierść", "skóra"]),
+}
+for _slug, (_name, _vars, _sp, _ar) in AMIWET.items():
+    FAMILIES[_slug] = (_name, "Amiwet", "szampon", [(p, c, None) for p, c in _vars], _sp, _ar)
+CATEGORY = {H: "preparaty-wspomagajace-zdrowie", B: "preparaty-dla-ptakow-ozdobnych", A: "kolekcja-kolorpielegnacja"}
 
 
 def strip_md(s):
@@ -69,7 +84,7 @@ for slug, (name, line, ptype, variants, species, areas) in FAMILIES.items():
         errors.append(f"{slug}: page {variants[0][0]} missing")
         continue
     s = first["sections"]
-    cat = CATEGORY[H if variants[0][0].startswith(H) else B]
+    cat = CATEGORY[H if variants[0][0].startswith(H) else (B if variants[0][0].startswith(B) else A)]
     subtitle = first.get("subtitle")
     if subtitle and re.match(r"^\d", subtitle):  # parser picked the capacity as subtitle (bird pages)
         subtitle = None
@@ -103,6 +118,8 @@ for slug, (name, line, ptype, variants, species, areas) in FAMILIES.items():
                 pr = j["woo"]["prices"]
                 v.update(woo_path=j["path"], price_pln=int(pr["price"]) / 100, regular_price_pln=int(pr["regular_price"]) / 100,
                          in_stock=j["woo"].get("is_in_stock"))
+        if slug in AMIWET:
+            v["title"] = v["title"].strip()
         if p["sections"] != s and strip_md(p["sections"].get("properties")) != fam["properties_verbatim"]:
             fam["data_issues"].append(f"Variant page {path} text differs from {variants[0][0]}; family text taken from the first page.")
         fam["variants"].append(v)
@@ -125,10 +142,16 @@ for f in fams:
     if f["family_slug"] == "floramue":
         f["data_issues"].append("Badge on the page reads 'PRIÓRA' (typo for 'PIÓRA').")
 
-group_pages = {pp for pp, x in PAGES.items() if x.get("category_slug") in ("preparaty-wspomagajace-zdrowie", "preparaty-dla-ptakow-ozdobnych")}
+group_pages = {pp for pp, x in PAGES.items() if x.get("category_slug") in ("preparaty-wspomagajace-zdrowie", "preparaty-dla-ptakow-ozdobnych") or pp.count("/") == 3}
+for f in fams:
+    if f["family_slug"] in AMIWET:
+        f["precautions_verbatim"] = strip_md(PAGES[f["variants"][0]["page_path"]]["sections"].get("precautions"))
+        f["data_issues"].append("Amiwet page is published directly under /produkty/ (no category page lists it) and has no shop link; badge typo 'sierśc'.")
 for missing in sorted(group_pages - seen_pages):
     errors.append(f"page not assigned to a family: {missing}")
-out = {"group": "zdrowie-ptaki-inne", "families": fams, "unmatched_woo": []}
-json.dump(out, open(os.path.join(ROOT, "content/data/products/zdrowie-ptaki-inne.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+main = [f for f in fams if f["family_slug"] not in AMIWET]
+ami = [f for f in fams if f["family_slug"] in AMIWET]
+json.dump({"group": "zdrowie-ptaki-inne", "families": main, "unmatched_woo": []}, open(os.path.join(ROOT, "content/data/products/zdrowie-ptaki-inne.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+json.dump({"group": "amiwet", "families": ami, "unmatched_woo": []}, open(os.path.join(ROOT, "content/data/products/amiwet.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("families", len(fams), "variants", sum(len(f["variants"]) for f in fams), "woo", sum(1 for f in fams for v in f["variants"] if v["woo_id"]))
 print("\n".join(errors) if errors else "NO ERRORS")

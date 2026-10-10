@@ -134,6 +134,7 @@ final class Importer {
 					}
 					if ( function_exists( 'pll_set_term_language' ) ) {
 						pll_set_term_language( $id, 'pl' );
+						$this->termTranslations( $tax, $id, (array) ( $t['name'] ?? array() ), (array) ( $t['description'] ?? array() ), (array) ( $t['meta'] ?? array() ) );
 					}
 				}
 				++$n;
@@ -397,6 +398,11 @@ final class Importer {
 	private function upsertPost( string $post_type, array $item, string $lang = 'pl', int $translation_of = 0 ): int {
 		$key = $post_type . ':' . $lang . ':' . (string) $item['slug'];
 		$id  = $this->findBySourceKey( $post_type, $key );
+		// Pages created by `wp eurowet setup` or already on the production site: adopt them by path (no duplicates).
+		if ( ! $id && 'page' === $post_type && 'pl' === $lang ) {
+			$existing = get_page_by_path( (string) $item['slug'] );
+			$id       = $existing ? (int) $existing->ID : 0;
+		}
 		if ( $this->dryRun ) {
 			$this->say( ( $id ? 'update ' : 'create ' ) . $key );
 			return $id;
@@ -655,6 +661,194 @@ final class Importer {
 		}
 		update_option( 'ew_settings', $opts );
 		$this->say( 'Company settings imported.' );
+	}
+
+	/**
+	 * Creates/updates the EN/FR/UA translations of a Polish term (Polylang) from {lang: name} / {lang: description}.
+	 *
+	 * @param array<string, string> $names
+	 * @param array<string, string> $descs
+	 * @param array<string, mixed>  $meta  Term meta copied to translations (hub_type, species_slug, icon, order…).
+	 */
+	private function termTranslations( string $tax, int $pl_id, array $names, array $descs, array $meta = array(), array $slugs = array() ): void {
+		if ( ! function_exists( 'pll_save_term_translations' ) || ! function_exists( 'pll_get_term_translations' ) ) {
+			return;
+		}
+		$tr = (array) pll_get_term_translations( $pl_id );
+		$tr['pl'] = $pl_id;
+		foreach ( array( 'en', 'fr', 'ua' ) as $lang ) {
+			$name = trim( (string) ( $names[ $lang ] ?? '' ) );
+			if ( '' === $name ) {
+				continue;
+			}
+			$slug = sanitize_title( (string) ( $slugs[ $lang ] ?? remove_accents( self::translit( $name ) ) ) );
+			if ( '' === $slug || preg_match( '/^%/', $slug ) ) {
+				$slug = sanitize_title( get_term( $pl_id )->slug . '-' . $lang );
+			}
+			$tid = (int) ( $tr[ $lang ] ?? 0 );
+			if ( ! $tid ) {
+				$clash = get_term_by( 'slug', $slug, $tax );
+				if ( $clash && (int) $clash->term_id !== $pl_id && function_exists( 'pll_get_term_language' ) && pll_get_term_language( (int) $clash->term_id ) === $lang ) {
+					$tid = (int) $clash->term_id;
+				} else {
+					$slug = $clash ? $slug . '-' . $lang : $slug;
+					$r    = wp_insert_term( $name, $tax, array( 'slug' => $slug, 'description' => (string) ( $descs[ $lang ] ?? '' ) ) );
+					$tid  = is_wp_error( $r ) ? 0 : (int) $r['term_id'];
+				}
+			} elseif ( ! $this->production ) {
+				wp_update_term( $tid, $tax, array( 'name' => $name, 'description' => (string) ( $descs[ $lang ] ?? '' ) ) );
+			}
+			if ( ! $tid ) {
+				continue;
+			}
+			pll_set_term_language( $tid, $lang );
+			foreach ( $meta as $mk => $mv ) {
+				Meta::setTerm( $tid, (string) $mk, $mv );
+			}
+			if ( isset( $descs[ $lang ] ) && '' !== (string) $descs[ $lang ] ) {
+				Meta::setTerm( $tid, 'intro', (string) $descs[ $lang ] );
+			}
+			$tr[ $lang ] = $tid;
+		}
+		pll_save_term_translations( $tr );
+	}
+
+	/** Ukrainian Cyrillic → Latin (official KMU 2010 transliteration, simplified for slugs). */
+	public static function translit( string $text ): string {
+		static $map = array(
+			'а' => 'a', 'б' => 'b', 'в' => 'v', 'г' => 'h', 'ґ' => 'g', 'д' => 'd', 'е' => 'e', 'є' => 'ie', 'ж' => 'zh', 'з' => 'z', 'и' => 'y', 'і' => 'i', 'ї' => 'i', 'й' => 'i',
+			'к' => 'k', 'л' => 'l', 'м' => 'm', 'н' => 'n', 'о' => 'o', 'п' => 'p', 'р' => 'r', 'с' => 's', 'т' => 't', 'у' => 'u', 'ф' => 'f', 'х' => 'kh', 'ц' => 'ts', 'ч' => 'ch',
+			'ш' => 'sh', 'щ' => 'shch', 'ь' => '', 'ю' => 'iu', 'я' => 'ia', '’' => '', "'" => '', 'ʼ' => '', 'ы' => 'y', 'э' => 'e', 'ё' => 'io', 'ъ' => '',
+		);
+		return strtr( mb_strtolower( $text ), $map );
+	}
+
+	/**
+	 * Translated product pages (EN/FR/UA) from content/data/products-i18n/{lang}.json. They are catalogue pages
+	 * (not purchasable — the shop sells in PLN to Poland) linked to the Polish product, which keeps price, stock and
+	 * orders. Images are shared; facts are translations of the Polish verbatim texts (reviewed before import).
+	 */
+	public function productTranslations( string $only_lang = '' ): void {
+		if ( ! function_exists( 'pll_save_post_translations' ) || ! function_exists( 'wc_get_product' ) ) {
+			$this->say( 'Polylang/WooCommerce not active — skipped.' );
+			return;
+		}
+		foreach ( array( 'en', 'fr', 'ua' ) as $lang ) {
+			if ( '' !== $only_lang && $lang !== $only_lang ) {
+				continue;
+			}
+			$data = $this->json( 'content/data/products-i18n/' . $lang . '.json' );
+			if ( ! $data ) {
+				$this->say( "No product translations for {$lang}." );
+				continue;
+			}
+			// Categories first.
+			foreach ( (array) ( $data['categories'] ?? array() ) as $cslug => $c ) {
+				$pl = get_term_by( 'slug', (string) $cslug, 'product_cat' );
+				if ( $pl && ! $this->dryRun ) {
+					$this->termTranslations( 'product_cat', (int) $pl->term_id, array( $lang => (string) ( $c['name'] ?? '' ) ), array( $lang => (string) ( $c['description'] ?? '' ) ), array(), array( $lang => (string) ( $c['slug'] ?? '' ) ) );
+				}
+			}
+			$n = 0;
+			foreach ( (array) ( $data['families'] ?? array() ) as $fslug => $f ) {
+				foreach ( $this->familyIds( sanitize_title( (string) $fslug ) ) as $pl_id ) {
+					$n += $this->translateProduct( (int) $pl_id, $lang, (array) $f ) ? 1 : 0;
+				}
+			}
+			$this->say( "Product translations {$lang}: {$n}." );
+		}
+		Cache::bump();
+	}
+
+	private function translateProduct( int $pl_id, string $lang, array $f ): bool {
+		$pl = wc_get_product( $pl_id );
+		if ( ! $pl ) {
+			return false;
+		}
+		$path    = (string) Meta::get( $pl_id, '_ew_source_path', '' );
+		$variant = (array) ( $f['variants'][ $path ] ?? array() );
+		$key     = 'product:' . $lang . ':' . $pl_id;
+		$id      = $this->findBySourceKey( 'product', $key );
+		if ( ! $id ) {
+			$existing = pll_get_post( $pl_id, $lang );
+			$id       = $existing ? (int) $existing : 0;
+		}
+		if ( $this->dryRun ) {
+			$this->say( ( $id ? 'update ' : 'create ' ) . $key );
+			return true;
+		}
+		if ( $id && $this->production ) {
+			return true; // never overwrite edited translations on production
+		}
+		$p = $id ? wc_get_product( $id ) : new \WC_Product_Simple();
+		if ( ! $p ) {
+			return false;
+		}
+		$title = (string) ( $variant['title'] ?? '' );
+		if ( '' === $title ) {
+			$cap   = (string) Meta::get( $pl_id, '_ew_capacity', '' );
+			$title = trim( (string) ( $f['name'] ?? $pl->get_name() ) . ( $cap ? ' ' . $cap : '' ) );
+		}
+		$p->set_name( $title );
+		$p->set_slug( sanitize_title( (string) ( $variant['slug'] ?? ( $pl->get_slug() . '-' . $lang ) ) ) );
+		$p->set_status( 'publish' );
+		$p->set_catalog_visibility( 'visible' );
+		$p->set_short_description( '' );
+		$p->set_regular_price( (string) $pl->get_regular_price() );
+		$p->set_image_id( (int) $pl->get_image_id() );
+		$p->set_gallery_image_ids( $pl->get_gallery_image_ids() );
+		$p->set_stock_status( $pl->get_stock_status() );
+		$cats = array();
+		foreach ( $pl->get_category_ids() as $cid ) {
+			$tc = function_exists( 'pll_get_term' ) ? (int) pll_get_term( (int) $cid, $lang ) : 0;
+			if ( $tc ) {
+				$cats[] = $tc;
+			}
+		}
+		$p->set_category_ids( $cats );
+		$tid = $p->save();
+		if ( ! $tid ) {
+			return false;
+		}
+		pll_set_post_language( $tid, $lang );
+		$tr          = (array) pll_get_post_translations( $pl_id );
+		$tr['pl']    = $pl_id;
+		$tr[ $lang ] = $tid;
+		pll_save_post_translations( $tr );
+		$metas = array(
+			'_ew_subtitle'     => (string) ( $f['subtitle'] ?? '' ),
+			'_ew_badges'       => array_values( array_filter( array_map( 'strval', (array) ( $f['badges'] ?? array() ) ) ) ),
+			'_ew_properties'   => self::html( $f['properties'] ?? '' ),
+			'_ew_usage'        => self::html( $f['usage'] ?? '' ),
+			'_ew_indications'  => self::html( $f['indications'] ?? '' ),
+			'_ew_intended_for' => self::html( $f['intended_for'] ?? '' ),
+			'_ew_precautions'  => self::html( $f['precautions'] ?? '' ),
+			'_ew_composition'  => self::html( $f['composition'] ?? '' ),
+			'_ew_analytical'   => self::html( $f['analytical'] ?? '' ),
+			'_ew_notes'        => self::html( $f['notes'] ?? '' ),
+			'_ew_capacity'     => (string) ( $variant['capacity'] ?? Meta::get( $pl_id, '_ew_capacity', '' ) ),
+			'_ew_product_type' => (string) ( $f['product_type'] ?? '' ),
+			'_ew_catalog_only' => true,
+			'_ew_i18n_of'      => $pl_id,
+			'_ew_source_key'   => $key,
+			'_ew_source_path'  => $path,
+		);
+		foreach ( $metas as $k => $v ) {
+			Meta::set( $tid, $k, $v );
+		}
+		foreach ( array( 'ew_family', 'ew_species', 'ew_area', 'ew_line' ) as $tax ) {
+			$ids = wp_get_post_terms( $pl_id, $tax, array( 'fields' => 'ids' ) );
+			if ( is_wp_error( $ids ) ) {
+				continue;
+			}
+			$mapped = array();
+			foreach ( $ids as $term_id ) {
+				$t        = ( 'ew_family' !== $tax && function_exists( 'pll_get_term' ) ) ? (int) pll_get_term( (int) $term_id, $lang ) : (int) $term_id;
+				$mapped[] = $t ?: (int) $term_id;
+			}
+			wp_set_object_terms( $tid, $mapped, $tax );
+		}
+		return true;
 	}
 
 	public function redirects(): void {

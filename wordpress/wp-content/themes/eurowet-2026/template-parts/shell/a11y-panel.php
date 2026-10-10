@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="ew-a11y" id="ew-a11y-panel" role="dialog" aria-modal="false" aria-labelledby="ew-a11y-title" hidden data-ew-a11y>
+<div class="ew-a11y" id="ew-a11y-panel" role="dialog" aria-modal="false" aria-labelledby="ew-a11y-title" hidden data-ew-a11y data-msg-size="<?php esc_attr_e( 'Rozmiar tekstu', 'eurowet-2026' ); ?>" data-msg-reset="<?php esc_attr_e( 'Przywrócono ustawienia domyślne', 'eurowet-2026' ); ?>" data-msg-on="<?php esc_attr_e( 'włączone', 'eurowet-2026' ); ?>" data-msg-off="<?php esc_attr_e( 'wyłączone', 'eurowet-2026' ); ?>">
 	<div class="ew-a11y__head">
 		<h2 class="ew-a11y__title" id="ew-a11y-title"><?php esc_html_e( 'Ustawienia dostępności', 'eurowet-2026' ); ?></h2>
 		<button type="button" class="ew-tool" data-ew-a11y-close><?php echo ew_theme_ui_icon( 'close' ); // phpcs:ignore WordPress.Security.EscapeOutput ?><span class="ew-visually-hidden"><?php esc_html_e( 'Zamknij', 'eurowet-2026' ); ?></span></button>

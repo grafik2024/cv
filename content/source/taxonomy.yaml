@@ -77,6 +77,7 @@ lines:
   - {slug: vetinet, name: {pl: Vetinet}}
   - {slug: optex, name: {pl: Optex}}
   - {slug: stoma-zel, name: {pl: Stoma-żel}}
+  - {slug: amiwet, name: {pl: Amiwet}}
 material_types:
   - {slug: katalog, name: {pl: Katalogi, en: Catalogues, fr: Catalogues, ua: Каталоги}}
   - {slug: ulotki, name: {pl: Ulotki, en: Leaflets, fr: Brochures, ua: Листівки}}

@@ -51,7 +51,7 @@ document.addEventListener( 'keydown', ( e ) => {
 const toggle = document.querySelector( '[data-ew-theme-toggle]' );
 if ( toggle ) {
 	const label = toggle.querySelector( '[data-ew-theme-label]' );
-	const names = { system: 'Motyw: systemowy (kliknij, aby zmienić)', dark: 'Motyw: ciemny (kliknij, aby zmienić)', light: 'Motyw: jasny (kliknij, aby zmienić)' };
+	const names = { system: toggle.dataset.labelSystem || 'Motyw: systemowy', dark: toggle.dataset.labelDark || 'Motyw: ciemny', light: toggle.dataset.labelLight || 'Motyw: jasny' };
 	const read = () => { try { return localStorage.getItem( 'ew-theme' ) || 'system'; } catch ( e ) { return 'system'; } };
 	const apply = ( mode ) => {
 		try {

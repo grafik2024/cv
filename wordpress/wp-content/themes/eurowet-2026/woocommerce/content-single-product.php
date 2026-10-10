@@ -101,7 +101,15 @@ foreach ( $needs as $n ) {
 			</dl>
 
 			<div class="ew-product__buy">
-				<?php if ( $catalog_only ) : ?>
+				<?php
+				$pl_of  = (int) $m( '_ew_i18n_of', 0 ); // translated catalogue page → the Polish product sells it
+				$pl_buy = $pl_of ? wc_get_product( $pl_of ) : null;
+				?>
+				<?php if ( $catalog_only && $pl_buy && $pl_buy->is_purchasable() && $pl_buy->is_in_stock() && ! ew_theme_meta( $pl_of, '_ew_catalog_only', false ) ) : ?>
+					<?php echo wp_kses_post( '<p class="price">' . $pl_buy->get_price_html() . '</p>' ); ?>
+					<p class="ew-product__availability"><?php esc_html_e( 'Sprzedaż internetową prowadzimy w polskim sklepie (PLN, wysyłka na terenie Polski).', 'eurowet-2026' ); ?></p>
+					<p class="ew-cluster"><a class="ew-btn" href="<?php echo esc_url( get_permalink( $pl_of ) ); ?>" hreflang="pl" lang="pl"><?php esc_html_e( 'Kup w sklepie internetowym', 'eurowet-2026' ); ?></a> <a class="ew-btn ew-btn--secondary" href="<?php echo esc_url( ew_theme_url( 'contact' ) ); ?>"><?php esc_html_e( 'Zapytanie eksportowe', 'eurowet-2026' ); ?></a></p>
+				<?php elseif ( $catalog_only ) : ?>
 					<p class="ew-product__availability"><?php esc_html_e( 'Tego produktu nie sprzedajemy w sklepie internetowym. O dostępność zapytaj przedstawiciela handlowego.', 'eurowet-2026' ); ?></p>
 					<p class="ew-cluster"><a class="ew-btn" href="<?php echo esc_url( ew_theme_url( 'reps' ) ); ?>"><?php esc_html_e( 'Zapytaj o dostępność', 'eurowet-2026' ); ?></a></p>
 				<?php else : ?>

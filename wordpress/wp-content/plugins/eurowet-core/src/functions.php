@@ -198,3 +198,8 @@ function ew_product_summary( \WC_Product $product ): array {
 		'buy_url'      => ( $product->is_purchasable() && $product->is_in_stock() && ! Meta::get( $id, '_ew_catalog_only', false ) ) ? $product->add_to_cart_url() : '',
 	);
 }
+
+/** Archive URL of product|ew_need|ew_guide|ew_ingredient in the current (or given) language — localized bases. */
+function ew_archive_url( string $type, ?string $lang = null ): string {
+	return ew_safe( static fn() => \Eurowet\Core\I18n\Slugs::archiveUrl( $type, $lang ), home_url( '/' ) );
+}

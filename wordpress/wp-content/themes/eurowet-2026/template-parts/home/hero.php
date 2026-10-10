@@ -57,7 +57,7 @@ $has_3d  = $has_img && is_readable( EW_THEME_DIR . '/assets/3d/' . $profile . '.
 					</figcaption>
 				<?php endif; ?>
 				<?php if ( $has_3d ) : ?>
-					<button type="button" class="ew-hero__motion ew-btn ew-btn--ghost ew-btn--sm" data-ew-hero3d-toggle hidden aria-pressed="false"><?php echo ew_theme_ui_icon( 'rotate' ); // phpcs:ignore WordPress.Security.EscapeOutput ?> <span data-ew-hero3d-label><?php esc_html_e( 'Zatrzymaj obrót', 'eurowet-2026' ); ?></span></button>
+					<button type="button" class="ew-hero__motion ew-btn ew-btn--ghost ew-btn--sm" data-ew-hero3d-toggle hidden aria-pressed="false" data-label-pause="<?php esc_attr_e( 'Zatrzymaj obrót', 'eurowet-2026' ); ?>" data-label-play="<?php esc_attr_e( 'Wznów obrót', 'eurowet-2026' ); ?>"><?php echo ew_theme_ui_icon( 'rotate' ); // phpcs:ignore WordPress.Security.EscapeOutput ?> <span data-ew-hero3d-label><?php esc_html_e( 'Zatrzymaj obrót', 'eurowet-2026' ); ?></span></button>
 				<?php endif; ?>
 			</figure>
 		<?php endif; ?>

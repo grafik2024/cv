@@ -27,8 +27,8 @@ if ( panel && opener ) {
 	document.addEventListener( 'click', ( e ) => { if ( ! panel.hidden && ! panel.contains( e.target ) && ! opener.contains( e.target ) ) setOpen( false ); } );
 	panel.addEventListener( 'click', ( e ) => {
 		const b = e.target.closest( '[data-ew-a11y-set]' );
-		if ( b ) { const s = read(); s[ b.dataset.ewA11ySet ] = b.dataset.value; write( s ); apply( s ); announce( 'Rozmiar tekstu: ' + b.textContent ); }
-		if ( e.target.closest( '[data-ew-a11y-reset]' ) ) { write( {} ); apply( {} ); announce( 'Przywrócono ustawienia domyślne' ); }
+		if ( b ) { const s = read(); s[ b.dataset.ewA11ySet ] = b.dataset.value; write( s ); apply( s ); announce( ( panel.dataset.msgSize || 'Rozmiar tekstu' ) + ': ' + b.textContent ); }
+		if ( e.target.closest( '[data-ew-a11y-reset]' ) ) { write( {} ); apply( {} ); announce( panel.dataset.msgReset || 'Przywrócono ustawienia domyślne' ); }
 	} );
 	panel.addEventListener( 'change', ( e ) => {
 		const c = e.target.closest( '[data-ew-a11y-toggle]' );
@@ -37,7 +37,7 @@ if ( panel && opener ) {
 		s[ c.dataset.ewA11yToggle ] = c.checked ? c.value : '';
 		write( s );
 		apply( s );
-		announce( c.parentElement.textContent.trim() + ( c.checked ? ': włączone' : ': wyłączone' ) );
+		announce( c.parentElement.textContent.trim() + ': ' + ( c.checked ? ( panel.dataset.msgOn || 'włączone' ) : ( panel.dataset.msgOff || 'wyłączone' ) ) );
 	} );
 	apply( read() );
 }

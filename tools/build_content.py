@@ -418,7 +418,10 @@ def build_reps() -> list:
 
 
 def main() -> int:
-    check_only = "--check" in sys.argv
+    check_only = "--check" in sys.argv or any(a.startswith("--only") for a in sys.argv)
+    # --only=<kind>/<slug>: validate one source file (parallel writers); errors from other files are ignored, and
+    # unknown cross-references to items not written yet are reported as warnings.
+    only = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--only=")), "")
     built = {
         "taxonomy": taxonomy,
         "company": company,
@@ -429,6 +432,16 @@ def main() -> int:
         "ingredients": build_ingredients(),
         "pages": build_pages(),
     }
+    if only:
+        mine = [e for e in errors if f"source/{only}." in e or f"{only}:" in e or e.startswith(only)]
+        soft = [e for e in mine if re.search(r"unknown (guide|need) '", e)]
+        hard = [e for e in mine if e not in soft]
+        for e in soft:
+            print("warning (cross-reference not built yet):", e)
+        for e in hard:
+            print("ERROR:", e)
+        print(f"{only}: {len(hard)} error(s)")
+        return 1 if hard else 0
     for w in warnings:
         print("warning:", w)
     if errors:

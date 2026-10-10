@@ -1,0 +1,1101 @@
+# Copyright (C) 2026 Eurowet
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Eurowet 2026 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/eurowet-2026\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-10T19:07:37+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: eurowet-2026\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Eurowet 2026"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://eurowet.pl/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Motyw potomny Hello Elementor dla serwisu EUROWET: system projektowy (tokeny, typografia, komponenty bazowe), dostępna nawigacja, tryb ciemny, panel dostępności oraz szablony WooCommerce. Współpracuje z wtyczką eurowet-core."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Eurowet"
+msgstr ""
+
+#: 404.php:11
+msgid "Nie znaleźliśmy tej strony"
+msgstr ""
+
+#: 404.php:11
+msgid "Strona mogła zostać przeniesiona albo adres zawiera błąd. Opisz, czego szukasz, albo wybierz jeden z działów."
+msgstr ""
+
+#: 404.php:16
+msgid "Główne działy"
+msgstr ""
+
+#: 404.php:18
+msgid "Strona główna"
+msgstr ""
+
+#: 404.php:19
+#: inc/nav.php:62
+#: woocommerce/archive-product.php:24
+msgid "Produkty"
+msgstr ""
+
+#: 404.php:20
+#: inc/nav.php:63
+#: template-parts/home/hero.php:40
+msgid "Dobierz produkt"
+msgstr ""
+
+#: 404.php:21
+#: archive-ew_guide.php:17
+#: archive-ew_ingredient.php:15
+#: inc/nav.php:64
+#: search.php:45
+#: taxonomy-ew_hub.php:25
+#: template-parts/home/knowledge.php:20
+msgid "Porady i wiedza"
+msgstr ""
+
+#. Template Name of the theme
+#: 404.php:22
+#: front-page.php:75
+#: front-page.php:78
+#: inc/nav.php:68
+#: page-about.php:38
+#: page-contact.php:22
+#: page-reps.php:20
+msgid "Kontakt"
+msgstr ""
+
+#: archive-ew_guide.php:19
+msgid "Centrum wiedzy Eurowet"
+msgstr ""
+
+#: archive-ew_guide.php:24
+msgid "Wyszukaj poradę lub produkt"
+msgstr ""
+
+#: archive-ew_guide.php:26
+msgid "Opisz, co dzieje się z Twoim zwierzęciem"
+msgstr ""
+
+#: archive-ew_guide.php:33
+msgid "Tematy"
+msgstr ""
+
+#: archive-ew_guide.php:42
+msgid "Według gatunku"
+msgstr ""
+
+#: archive-ew_guide.php:51
+#: template-parts/home/knowledge.php:24
+msgid "Wszystkie porady"
+msgstr ""
+
+#: archive-ew_guide.php:63
+msgid "Porady są w przygotowaniu."
+msgstr ""
+
+#: archive-ew_ingredient.php:13
+#: template-parts/home/ingredients.php:25
+msgid "Składniki i technologie"
+msgstr ""
+
+#: archive-ew_ingredient.php:14
+msgid "Składniki, które Eurowet opisuje w swoich produktach — z cytatami z opisów produktów i listą produktów, w których występują."
+msgstr ""
+
+#: archive-ew_ingredient.php:30
+msgid "Litery"
+msgstr ""
+
+#: archive-ew_ingredient.php:52
+msgid "Opisy składników są w przygotowaniu."
+msgstr ""
+
+#: archive-ew_need.php:19
+msgid "Dobierz produkt do potrzeby zwierzęcia"
+msgstr ""
+
+#: archive-ew_need.php:21
+msgid "Wyszukiwarka potrzeb"
+msgstr ""
+
+#: archive-ew_need.php:25
+msgid "Wyszukiwarka"
+msgstr ""
+
+#: archive-ew_need.php:46
+msgid "Przeglądaj potrzeby"
+msgstr ""
+
+#: archive-ew_need.php:81
+msgid "Inne potrzeby"
+msgstr ""
+
+#: archive-ew_need.php:81
+msgid "Potrzeby"
+msgstr ""
+
+#: archive-ew_need.php:90
+msgid "Jak działa wyszukiwarka"
+msgstr ""
+
+#: archive-ew_need.php:92
+msgid "Wyszukiwarka dopasowuje Twój opis do listy potrzeb przygotowanej przez Eurowet, a następnie pokazuje wyłącznie produkty, których przeznaczenie potwierdza opis producenta. Nie stawia diagnozy i nie zastępuje wizyty u lekarza weterynarii."
+msgstr ""
+
+#: archive-ew_need.php:93
+msgid "Wpisywane zapytania zapisujemy anonimowo (bez adresu IP i plików cookie), aby uzupełniać porady o tematy, których brakuje."
+msgstr ""
+
+#: front-page.php:50
+#: taxonomy-ew_hub.php:43
+msgid "Najczęstsze potrzeby"
+msgstr ""
+
+#: front-page.php:52
+msgid "Wszystkie potrzeby"
+msgstr ""
+
+#. Template Name of the theme
+#: front-page.php:68
+#: page-about.php:46
+#: template-parts/shell/footer.php:40
+#: woocommerce/content-single-product.php:205
+msgid "Znajdź przedstawiciela"
+msgstr ""
+
+#: front-page.php:81
+#: page-contact.php:25
+msgid "Napisz do nas"
+msgstr ""
+
+#: header.php:19
+msgid "Przejdź do treści"
+msgstr ""
+
+#: home.php:15
+#: single.php:20
+msgid "Aktualności"
+msgstr ""
+
+#: inc/customizer.php:15
+msgid "Hero — nadtytuł"
+msgstr ""
+
+#: inc/customizer.php:16
+msgid "Hero — nagłówek (H1)"
+msgstr ""
+
+#: inc/customizer.php:17
+msgid "Hero — wprowadzenie"
+msgstr ""
+
+#: inc/customizer.php:18
+msgid "Finder — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:19
+msgid "Finder — opis"
+msgstr ""
+
+#: inc/customizer.php:20
+msgid "Najczęstsze potrzeby — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Kategorie — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:22
+msgid "Produkty flagowe — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:23
+msgid "Produkty flagowe — opis"
+msgstr ""
+
+#: inc/customizer.php:24
+msgid "Centrum wiedzy — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:25
+msgid "Centrum wiedzy — opis"
+msgstr ""
+
+#: inc/customizer.php:26
+msgid "Składniki — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Składniki — opis"
+msgstr ""
+
+#: inc/customizer.php:28
+msgid "O Eurowet — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:29
+msgid "O Eurowet — tekst"
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Współpraca B2B — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "Współpraca B2B — tekst"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Marka własna — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "Marka własna — tekst"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "Przedstawiciele — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "Przedstawiciele — tekst"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Kontakt — nagłówek"
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "Strona główna Eurowet"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Produkt w hero 3D (ID)"
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Profil bryły 3D (assets/3d/*.profile.json)"
+msgstr ""
+
+#. translators: %s: menu item
+#: inc/nav.php:46
+#, php-format
+msgid "Rozwiń: %s"
+msgstr ""
+
+#: inc/nav.php:65
+msgid "Składniki"
+msgstr ""
+
+#: inc/nav.php:66
+msgid "B2B"
+msgstr ""
+
+#. Template Name of the theme
+#: inc/nav.php:67
+#: page-about.php:45
+#: template-parts/home/company.php:43
+#: template-parts/shell/footer.php:41
+msgid "Marka własna"
+msgstr ""
+
+#: inc/setup.php:22
+#: template-parts/shell/header.php:19
+msgid "Menu główne"
+msgstr ""
+
+#: inc/setup.php:23
+#: template-parts/shell/footer.php:29
+msgid "Menu w stopce"
+msgstr ""
+
+#: inc/setup.php:24
+msgid "Linki prawne"
+msgstr ""
+
+#: inc/template-tags.php:86
+msgid "Ilustracja wygenerowana z pomocą AI."
+msgstr ""
+
+#: inc/template-tags.php:139
+msgid "Spis treści"
+msgstr ""
+
+#: inc/template-tags.php:210
+msgid "Poprzednia"
+msgstr ""
+
+#: inc/template-tags.php:211
+msgid "Następna"
+msgstr ""
+
+#: inc/template-tags.php:217
+msgid "Stronicowanie"
+msgstr ""
+
+#. translators: %d number of guides
+#: inc/template-tags.php:256
+#, php-format
+msgid "%d porada"
+msgid_plural "%d porad"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/woocommerce.php:96
+msgid "Filtruj produkty"
+msgstr ""
+
+#: inc/woocommerce.php:97
+msgid "Gatunek"
+msgstr ""
+
+#: inc/woocommerce.php:97
+msgid "Obszar"
+msgstr ""
+
+#: inc/woocommerce.php:97
+msgid "Linia"
+msgstr ""
+
+#: inc/woocommerce.php:105
+msgid "wszystkie"
+msgstr ""
+
+#: inc/woocommerce.php:111
+msgid "Filtruj"
+msgstr ""
+
+#. Template Name of the theme
+msgid "O firmie"
+msgstr ""
+
+#: page-about.php:27
+msgid "Nasze produkty"
+msgstr ""
+
+#: page-about.php:42
+msgid "Współpraca"
+msgstr ""
+
+#. Template Name of the theme
+#: page-about.php:44
+#: template-parts/home/company.php:30
+#: template-parts/shell/footer.php:41
+#: woocommerce/content-single-product.php:206
+msgid "Współpraca B2B"
+msgstr ""
+
+#: page-b2b.php:20
+#: page-private-label.php:21
+msgid "Dla partnerów"
+msgstr ""
+
+#: page-b2b.php:27
+msgid "Z kim współpracujemy"
+msgstr ""
+
+#: page-b2b.php:38
+msgid "Kontakt B2B"
+msgstr ""
+
+#: page-b2b.php:40
+msgid "Zapytanie o współpracę"
+msgstr ""
+
+#: page-b2b.php:41
+msgid "Twój przedstawiciel handlowy"
+msgstr ""
+
+#: page-b2b.php:45
+msgid "Materiały dla partnerów"
+msgstr ""
+
+#: page-contact.php:28
+msgid "Przedstawiciele handlowi"
+msgstr ""
+
+#: page-contact.php:30
+msgid "Przedstawiciel w Twoim województwie"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Materiały do pobrania"
+msgstr ""
+
+#: page-downloads.php:29
+msgid "Materiały są w przygotowaniu."
+msgstr ""
+
+#: page-private-label.php:24
+msgid "Zapytanie o markę własną"
+msgstr ""
+
+#: page-private-label.php:26
+msgid "Zapytaj o produkcję pod marką własną"
+msgstr ""
+
+#: page-reps.php:23
+msgid "Mapa przedstawicieli"
+msgstr ""
+
+#: page-reps.php:28
+msgid "Formularz kontaktowy"
+msgstr ""
+
+#: page-reps.php:30
+msgid "Poproś o kontakt przedstawiciela"
+msgstr ""
+
+#. translators: %s search query
+#: search.php:15
+#, php-format
+msgid "Wyniki wyszukiwania: %s"
+msgstr ""
+
+#: search.php:27
+msgid "Strony, produkty i porady"
+msgstr ""
+
+#: search.php:36
+msgid "Produkt"
+msgstr ""
+
+#: search.php:44
+msgid "Nie znaleźliśmy stron zawierających te słowa. Spróbuj opisać problem innymi słowami albo przejdź do porad."
+msgstr ""
+
+#: search.php:45
+#: template-parts/home/categories.php:31
+msgid "Wszystkie produkty"
+msgstr ""
+
+#: single-ew_guide.php:57
+msgid "Produkty Eurowet związane z tematem"
+msgstr ""
+
+#: single-ew_guide.php:69
+msgid "Nawigacja po artykule"
+msgstr ""
+
+#: single-ew_guide.php:82
+#: single-ew_ingredient.php:79
+msgid "Powiązane porady"
+msgstr ""
+
+#: single-ew_ingredient.php:28
+msgid "Składnik"
+msgstr ""
+
+#: single-ew_ingredient.php:32
+msgid "Nazwa INCI"
+msgstr ""
+
+#: single-ew_ingredient.php:33
+msgid "Inne nazwy"
+msgstr ""
+
+#: single-ew_ingredient.php:56
+msgid "Rola składnika w produktach Eurowet"
+msgstr ""
+
+#: single-ew_ingredient.php:60
+msgid "Opis produktu:"
+msgstr ""
+
+#: single-ew_ingredient.php:70
+msgid "Produkty zawierające ten składnik"
+msgstr ""
+
+#: single-ew_ingredient.php:82
+#: template-parts/home/ingredients.php:29
+msgid "Wszystkie składniki"
+msgstr ""
+
+#: single-ew_need.php:43
+msgid "Potrzeba"
+msgstr ""
+
+#: single-ew_need.php:46
+msgid "Dotyczy"
+msgstr ""
+
+#: single-ew_need.php:67
+msgid "Produkt dopasowany do tej potrzeby"
+msgstr ""
+
+#: single-ew_need.php:71
+msgid "Produkty uzupełniające"
+msgstr ""
+
+#: single-ew_need.php:72
+msgid "Inne produkty o podobnym przeznaczeniu"
+msgstr ""
+
+#: single-ew_need.php:92
+msgid "Jak pielęgnować"
+msgstr ""
+
+#: single-ew_need.php:99
+msgid "Czego unikać"
+msgstr ""
+
+#: single-ew_need.php:116
+msgid "Porady"
+msgstr ""
+
+#: single-ew_need.php:118
+msgid "Przeczytaj więcej"
+msgstr ""
+
+#: single-ew_need.php:126
+msgid "Szukasz czegoś innego?"
+msgstr ""
+
+#: single.php:33
+msgid "Poprzedni wpis"
+msgstr ""
+
+#: single.php:34
+msgid "Następny wpis"
+msgstr ""
+
+#: taxonomy-ew_hub.php:25
+msgid "Porady według gatunku"
+msgstr ""
+
+#: taxonomy-ew_hub.php:52
+msgid "Porady w tym dziale"
+msgstr ""
+
+#: taxonomy-ew_hub.php:64
+msgid "Porady w tym dziale są w przygotowaniu."
+msgstr ""
+
+#: taxonomy-ew_hub.php:64
+msgid "Zobacz wszystkie porady"
+msgstr ""
+
+#: taxonomy-ew_hub.php:75
+msgid "Inne działy porad"
+msgstr ""
+
+#: template-parts/company/card.php:18
+msgid "Dane kontaktowe"
+msgstr ""
+
+#: template-parts/company/card.php:25
+msgid "Biuro:"
+msgstr ""
+
+#: template-parts/company/card.php:28
+msgid "Sprzedaż:"
+msgstr ""
+
+#: template-parts/company/card.php:36
+msgid "Pokaż na mapie"
+msgstr ""
+
+#: template-parts/company/card.php:36
+#: template-parts/shell/footer.php:45
+#: woocommerce/content-single-product.php:114
+msgid "(otwiera się w nowej karcie)"
+msgstr ""
+
+#: template-parts/content/list.php:25
+msgid "Brak wpisów."
+msgstr ""
+
+#: template-parts/home/categories.php:30
+#: woocommerce/archive-product.php:31
+msgid "Kategorie produktów"
+msgstr ""
+
+#. translators: %d products
+#: template-parts/home/categories.php:50
+#, php-format
+msgid "%d produkt"
+msgid_plural "%d produktów"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/home/company.php:17
+#: template-parts/home/company.php:18
+msgid "O Eurowet"
+msgstr ""
+
+#: template-parts/home/company.php:20
+msgid "Więcej o firmie"
+msgstr ""
+
+#: template-parts/home/company.php:38
+msgid "Zostań partnerem"
+msgstr ""
+
+#: template-parts/home/company.php:45
+msgid "Zapytaj o markę własną"
+msgstr ""
+
+#: template-parts/home/flagship.php:53
+msgid "Produkty flagowe"
+msgstr ""
+
+#: template-parts/home/hero.php:41
+msgid "Zobacz produkty"
+msgstr ""
+
+#. translators: %s product name
+#: template-parts/home/hero.php:50
+#, php-format
+msgid "%s — opakowanie produktu"
+msgstr ""
+
+#. translators: %s product name
+#: template-parts/home/hero.php:50
+msgid "Opakowanie produktu Eurowet"
+msgstr ""
+
+#: template-parts/home/hero.php:60
+msgid "Zatrzymaj obrót"
+msgstr ""
+
+#. translators: %d products
+#: template-parts/home/ingredients.php:38
+#, php-format
+msgid "w %d produkcie"
+msgid_plural "w %d produktach"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/home/knowledge.php:29
+msgid "Najnowsze porady"
+msgstr ""
+
+#: template-parts/need/primary.php:24
+msgid "Najlepiej dopasowany produkt"
+msgstr ""
+
+#: template-parts/need/primary.php:28
+msgid "Potwierdzone przeznaczenie:"
+msgstr ""
+
+#: template-parts/need/primary.php:31
+msgid "Dlaczego pasuje:"
+msgstr ""
+
+#: template-parts/need/primary.php:34
+msgid "z opisu produktu"
+msgstr ""
+
+#: template-parts/need/primary.php:40
+msgid "Zobacz produkt"
+msgstr ""
+
+#: template-parts/need/primary.php:42
+msgid "Kup"
+msgstr ""
+
+#: template-parts/need/primary.php:44
+#: woocommerce/content-single-product.php:106
+msgid "Zapytaj o dostępność"
+msgstr ""
+
+#: template-parts/product/gallery.php:28
+msgid "Brak zdjęcia produktu"
+msgstr ""
+
+#. translators: %s product name
+#: template-parts/product/gallery.php:33
+#, php-format
+msgid "%s — widok 360°"
+msgstr ""
+
+#. translators: %s product name
+#: template-parts/product/gallery.php:34
+msgid "Obróć produkt"
+msgstr ""
+
+#: template-parts/product/gallery.php:40
+msgid "Zdjęcia produktu"
+msgstr ""
+
+#. translators: 1: number 2: product
+#: template-parts/product/gallery.php:43
+#, php-format
+msgid "Zdjęcie %1$d: %2$s"
+msgstr ""
+
+#: template-parts/product/gallery.php:51
+msgid "Widok 360°"
+msgstr ""
+
+#: template-parts/product/gallery.php:54
+#: template-parts/product/gallery.php:62
+msgid "Wideo"
+msgstr ""
+
+#: template-parts/product/gallery.php:68
+msgid "Transkrypcja"
+msgstr ""
+
+#: template-parts/shell/a11y-panel.php:12
+msgid "Ustawienia dostępności"
+msgstr ""
+
+#: template-parts/shell/a11y-panel.php:13
+msgid "Zamknij"
+msgstr ""
+
+#: template-parts/shell/a11y-panel.php:16
+msgid "Rozmiar tekstu"
+msgstr ""
+
+#: template-parts/shell/a11y-panel.php:25
+msgid "Wysoki kontrast"
+msgstr ""
+
+#: template-parts/shell/a11y-panel.php:26
+msgid "Podkreślaj linki"
+msgstr ""
+
+#: template-parts/shell/a11y-panel.php:27
+msgid "Zwiększone odstępy"
+msgstr ""
+
+#: template-parts/shell/a11y-panel.php:28
+msgid "Ogranicz animacje"
+msgstr ""
+
+#: template-parts/shell/a11y-panel.php:30
+msgid "Resetuj ustawienia"
+msgstr ""
+
+#: template-parts/shell/footer.php:39
+msgid "Współpraca handlowa"
+msgstr ""
+
+#: template-parts/shell/footer.php:53
+msgid "Informacje prawne"
+msgstr ""
+
+#: template-parts/shell/footer.php:60
+msgid "Polityka prywatności"
+msgstr ""
+
+#: template-parts/shell/footer.php:63
+msgid "Ustawienia cookies"
+msgstr ""
+
+#: template-parts/shell/header.php:16
+msgid "EUROWET — strona główna"
+msgstr ""
+
+#: template-parts/shell/header.php:24
+msgid "Szukaj"
+msgstr ""
+
+#: template-parts/shell/header.php:27
+msgid "Motyw kolorystyczny"
+msgstr ""
+
+#: template-parts/shell/header.php:33
+msgid "Dostępność"
+msgstr ""
+
+#: template-parts/shell/header.php:38
+msgid "Koszyk"
+msgstr ""
+
+#: template-parts/shell/header.php:39
+msgid "produktów"
+msgstr ""
+
+#: template-parts/shell/header.php:43
+#: template-parts/shell/header.php:49
+#: template-parts/shell/header.php:51
+msgid "Menu"
+msgstr ""
+
+#: template-parts/shell/header.php:52
+msgid "Zamknij menu"
+msgstr ""
+
+#: template-parts/shell/header.php:54
+msgid "Menu główne (mobilne)"
+msgstr ""
+
+#: template-parts/shell/header.php:56
+msgid "Szukaj i dobierz produkt"
+msgstr ""
+
+#: template-parts/shell/header.php:58
+msgid "Zamknij wyszukiwanie"
+msgstr ""
+
+#: woocommerce/archive-product.php:33
+msgid "Wszystkie"
+msgstr ""
+
+#: woocommerce/archive-product.php:62
+msgid "Nie wiesz, który produkt wybrać?"
+msgstr ""
+
+#: woocommerce/archive-product.php:62
+msgid "Opisz potrzebę zwierzęcia — pomożemy dobrać produkt."
+msgstr ""
+
+#: woocommerce/content-single-product.php:41
+msgid "Zastosowanie"
+msgstr ""
+
+#: woocommerce/content-single-product.php:42
+#: woocommerce/content-single-product.php:90
+msgid "Przeznaczenie"
+msgstr ""
+
+#: woocommerce/content-single-product.php:43
+msgid "Właściwości"
+msgstr ""
+
+#: woocommerce/content-single-product.php:44
+msgid "Sposób stosowania"
+msgstr ""
+
+#: woocommerce/content-single-product.php:45
+msgid "Środki ostrożności"
+msgstr ""
+
+#: woocommerce/content-single-product.php:46
+msgid "Skład"
+msgstr ""
+
+#: woocommerce/content-single-product.php:47
+msgid "Składniki analityczne i dodatki"
+msgstr ""
+
+#: woocommerce/content-single-product.php:48
+msgid "Uwagi"
+msgstr ""
+
+#. translators: %s product line
+#: woocommerce/content-single-product.php:73
+#, php-format
+msgid "Linia %s"
+msgstr ""
+
+#: woocommerce/content-single-product.php:81
+msgid "Najważniejsze cechy"
+msgstr ""
+
+#: woocommerce/content-single-product.php:93
+msgid "Dla"
+msgstr ""
+
+#: woocommerce/content-single-product.php:96
+msgid "Pojemność / ilość"
+msgstr ""
+
+#: woocommerce/content-single-product.php:99
+msgid "Kod produktu"
+msgstr ""
+
+#: woocommerce/content-single-product.php:105
+msgid "Tego produktu nie sprzedajemy w sklepie internetowym. O dostępność zapytaj przedstawiciela handlowego."
+msgstr ""
+
+#: woocommerce/content-single-product.php:112
+msgid "Kup także w:"
+msgstr ""
+
+#: woocommerce/content-single-product.php:122
+msgid "Pomaga w potrzebach:"
+msgstr ""
+
+#: woocommerce/content-single-product.php:139
+msgid "Kluczowe składniki"
+msgstr ""
+
+#: woocommerce/content-single-product.php:142
+#: woocommerce/content-single-product.php:176
+msgid "Dokumenty"
+msgstr ""
+
+#: woocommerce/content-single-product.php:146
+msgid "Informacje o produkcie"
+msgstr ""
+
+#: woocommerce/content-single-product.php:202
+msgid "Prowadzisz gabinet, hurtownię lub sklep?"
+msgstr ""
+
+#: woocommerce/content-single-product.php:203
+msgid "Skontaktuj się z przedstawicielem handlowym w Twoim województwie lub wyślij zapytanie o współpracę."
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Niebieski marki"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Niebieski marki (ciemny)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Niebieski marki (tło)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Zielony marki"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Zielony marki (tło)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tekst"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tekst pomocniczy"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tło"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Powierzchnia"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Obramowanie"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sukces"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ostrzeżenie"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Błąd"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Manrope"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Mały"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Podstawowy"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Duży"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Bardzo duży"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Nagłówek"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Nagłówek główny"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XS (8 px)"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "S (16 px)"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "M (24 px)"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "L (32 px)"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XL (48 px)"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2XL (64 px)"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3XL (96 px)"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Delikatny"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Uniesiony"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Unoszący się"
+msgstr ""

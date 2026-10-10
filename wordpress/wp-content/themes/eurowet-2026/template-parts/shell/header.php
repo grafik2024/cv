@@ -24,7 +24,7 @@ $cart_url   = ew_theme_has_woo() ? wc_get_cart_url() : '';
 				<?php echo ew_theme_ui_icon( 'search' ); // phpcs:ignore WordPress.Security.EscapeOutput ?><span class="ew-tool__label"><?php esc_html_e( 'Szukaj', 'eurowet-2026' ); ?></span>
 			</button>
 			<?php echo ew_theme_render( 'language-picker' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
-			<button type="button" class="ew-tool" data-ew-theme-toggle aria-label="<?php esc_attr_e( 'Motyw kolorystyczny', 'eurowet-2026' ); ?>">
+			<button type="button" class="ew-tool" data-ew-theme-toggle data-label-system="<?php esc_attr_e( 'Motyw: systemowy (kliknij, aby zmienić)', 'eurowet-2026' ); ?>" data-label-dark="<?php esc_attr_e( 'Motyw: ciemny (kliknij, aby zmienić)', 'eurowet-2026' ); ?>" data-label-light="<?php esc_attr_e( 'Motyw: jasny (kliknij, aby zmienić)', 'eurowet-2026' ); ?>" aria-label="<?php esc_attr_e( 'Motyw kolorystyczny', 'eurowet-2026' ); ?>">
 				<span class="ew-theme-icon ew-theme-icon--light"><?php echo ew_theme_ui_icon( 'sun' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span>
 				<span class="ew-theme-icon ew-theme-icon--dark"><?php echo ew_theme_ui_icon( 'moon' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span>
 				<span class="ew-visually-hidden" data-ew-theme-label></span>
