@@ -90,7 +90,12 @@ final class Setup {
 				update_option( 'woocommerce_price_decimal_sep', ',' );
 				update_option( 'woocommerce_price_thousand_sep', ' ' );
 				update_option( 'woocommerce_currency_pos', 'right_space' );
+				// WooCommerce ≥ 9.1 starts new stores in "coming soon" mode (replaces every shop page). Staging is
+				// protected at server level instead (HTTP auth + noindex), so the store itself must be visible.
+				update_option( 'woocommerce_coming_soon', 'no' );
+				update_option( 'woocommerce_store_pages_only', 'no' );
 			}
+			$log[] = 'WooCommerce site visibility: ' . ( 'yes' === get_option( 'woocommerce_coming_soon' ) ? 'COMING SOON (check before launch)' : 'live' );
 			$log[] = 'WooCommerce permalinks: /produkty/%product_cat%/';
 		}
 
@@ -120,6 +125,10 @@ final class Setup {
 		$t['title-ptarchive-ew_guide'] = 'Porady i wiedza o pielęgnacji psów i kotów %%sep%% Eurowet';
 		$t['title-ptarchive-ew_need']  = 'Dobierz produkt do potrzeby zwierzęcia %%sep%% Eurowet';
 		$t['title-tax-ew_hub']      = '%%term_title%% — porady %%sep%% Eurowet';
+		// Breadcrumbs: Home › Produkty › {kategoria} › {produkt}; Home › Porady › {dział} › {porada}.
+		$t['post_types-product-maintax']  = 'product_cat';
+		$t['post_types-ew_guide-maintax'] = 'ew_hub';
+		$t['breadcrumbs-display-blog-page'] = true;
 		foreach ( array( 'ew_rep', 'ew_material', 'ew_lead' ) as $pt ) {
 			$t[ 'noindex-' . $pt ] = true;
 		}
@@ -166,6 +175,18 @@ final class Setup {
 			$log[]             = "Menu {$location}: {$name}";
 		}
 		set_theme_mod( 'nav_menu_locations', $locs );
+		// Polylang stores menu locations per language; assign the Polish menus to the default language.
+		$pll = get_option( 'polylang' );
+		if ( is_array( $pll ) ) {
+			$theme = get_stylesheet();
+			foreach ( $locs as $location => $mid ) {
+				if ( isset( $spec[ $location ] ) ) {
+					$pll['nav_menus'][ $theme ][ $location ]['pl'] = (int) $mid;
+				}
+			}
+			update_option( 'polylang', $pll );
+			$log[] = 'Polylang: menus assigned to PL; other languages use the theme fallback until translated menus exist.';
+		}
 		return $log;
 	}
 

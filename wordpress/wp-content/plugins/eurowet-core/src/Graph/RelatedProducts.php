@@ -49,6 +49,10 @@ final class RelatedProducts {
 				}
 				$groups[ $group ][] = $id;
 				$exclude[ $id ]     = true;
+				// One card per product family: other capacities of the same product are reachable via the switcher.
+				foreach ( Families::variants( $id ) as $v ) {
+					$exclude[ (int) $v['product_id'] ] = true;
+				}
 			}
 		};
 

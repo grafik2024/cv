@@ -27,6 +27,7 @@ final class Importer {
 		'pies' => 'pies', 'szczenię' => 'pies', 'szczenieta' => 'pies', 'kot' => 'kot', 'kocię' => 'kot', 'gryzonie/małe ssaki' => 'male-ssaki', 'małe ssaki' => 'male-ssaki', 'gryzonie' => 'male-ssaki', 'male-ssaki' => 'male-ssaki',
 		'fretka' => 'fretka', 'ptaki ozdobne' => 'ptaki-ozdobne', 'ptaki-ozdobne' => 'ptaki-ozdobne', 'gołębie' => 'golebie', 'golebie' => 'golebie', 'koń' => 'kon', 'kon' => 'kon', 'konie' => 'kon',
 		'zwierzęta gospodarskie' => 'zwierzeta-gospodarskie', 'zwierzeta-gospodarskie' => 'zwierzeta-gospodarskie',
+		'żółwie' => 'zolwie', 'zolwie' => 'zolwie',
 	);
 
 	public const AREA_MAP = array(
@@ -34,6 +35,7 @@ final class Importer {
 		'łapy/opuszki' => 'lapy-i-pazury', 'pazury' => 'lapy-i-pazury', 'lapy-i-pazury' => 'lapy-i-pazury', 'stawy' => 'stawy', 'układ pokarmowy' => 'uklad-pokarmowy', 'uklad-pokarmowy' => 'uklad-pokarmowy',
 		'wątroba' => 'watroba', 'watroba' => 'watroba', 'układ moczowy' => 'uklad-moczowy', 'uklad-moczowy' => 'uklad-moczowy', 'serce' => 'serce', 'odporność' => 'odpornosc', 'odpornosc' => 'odpornosc',
 		'ogólna kondycja/witalność' => 'kondycja', 'kondycja' => 'kondycja', 'stres/zachowanie' => 'stres-i-zachowanie', 'stres-i-zachowanie' => 'stres-i-zachowanie', 'rozród/ciąża' => 'rozrod', 'rozrod' => 'rozrod',
+		'rany/otarcia' => 'skora', 'inne' => 'inne',
 	);
 
 	/** Canonical product category slugs (old /produkty/{cat}/ page paths) and names. */
@@ -137,11 +139,31 @@ final class Importer {
 				++$n;
 			}
 		}
+		$descriptions = array();
+		foreach ( (array) ( $data['product_cats'] ?? array() ) as $c ) {
+			if ( ! empty( $c['slug'] ) ) {
+				$descriptions[ (string) $c['slug'] ] = $c;
+			}
+		}
+		$i = 0;
 		foreach ( self::CATEGORIES as $slug => $name ) {
 			$id = $this->termId( 'product_cat', $slug, $name );
-			if ( $id && function_exists( 'pll_set_term_language' ) && ! $this->dryRun ) {
+			if ( ! $id || $this->dryRun ) {
+				continue;
+			}
+			if ( function_exists( 'pll_set_term_language' ) ) {
 				pll_set_term_language( $id, 'pl' );
 			}
+			// Category text = the client's own one-line description from the current homepage.
+			$desc = (string) ( $descriptions[ $slug ]['description']['pl'] ?? '' );
+			$term = get_term( $id, 'product_cat' );
+			if ( '' !== $desc && $term instanceof \WP_Term && ( ! $this->production || '' === trim( $term->description ) ) ) {
+				wp_update_term( $id, 'product_cat', array( 'description' => $desc ) );
+			}
+			if ( ! $this->production || '' === (string) get_term_meta( $id, 'order', true ) ) {
+				update_term_meta( $id, 'order', (int) ( $descriptions[ $slug ]['order'] ?? $i ) );
+			}
+			++$i;
 		}
 		$this->say( "Taxonomy terms processed: {$n} (+ product categories)." );
 	}
@@ -244,6 +266,18 @@ final class Importer {
 		$cid = $this->termId( 'product_cat', $cat, self::CATEGORIES[ $cat ] ?? $cat );
 		if ( $cid ) {
 			$product->set_category_ids( array_values( array_unique( array_merge( $is_new ? array() : $product->get_category_ids(), array( $cid ) ) ) ) );
+		}
+		// GTIN (EAN) for Product schema / Merchant listings — only when the family has a single variant, because the
+		// EAN printed in the family text belongs to the capacity of the page it was copied from.
+		if ( 1 === count( (array) ( $fam['variants'] ?? array() ) ) && method_exists( $product, 'set_global_unique_id' ) && ( ! $this->production || '' === (string) $product->get_global_unique_id() ) ) {
+			$hay = (string) ( $fam['notes_verbatim'] ?? '' ) . ' ' . (string) ( $fam['composition_verbatim'] ?? '' );
+			if ( preg_match( '/\bEAN\b[^0-9]{0,12}(\d{8}|\d{12,14})\b/i', $hay, $ean ) ) {
+				try {
+					$product->set_global_unique_id( $ean[1] );
+				} catch ( \Throwable $e ) {
+					$this->say( 'GTIN skipped for ' . $slug . ': ' . $e->getMessage() );
+				}
+			}
 		}
 		$id = $product->save();
 		if ( ! $id ) {
@@ -597,7 +631,8 @@ final class Importer {
 				'meta'       => array( '_ew_lang' => (string) ( $m['lang'] ?? 'pl' ), '_ew_source_url' => (string) $m['url'] ),
 			);
 			$id = $this->upsertPost( 'ew_material', $item, 'pl' );
-			if ( $id && $this->images && ! $this->dryRun && ! Meta::int( $id, '_ew_file' ) ) {
+			// Only real PDF files are copied into the media library; external viewers (e.g. Google Drive) stay links.
+			if ( $id && $this->images && ! $this->dryRun && ! Meta::int( $id, '_ew_file' ) && preg_match( '/\.pdf$/i', (string) wp_parse_url( (string) $m['url'], PHP_URL_PATH ) ) ) {
 				$aid = $this->sideload( (string) $m['url'], $id, (string) $m['title'] );
 				$aid && Meta::set( $id, '_ew_file', $aid );
 			}

@@ -92,12 +92,12 @@ final class Command {
 	 * [--dry-run]
 	 * : Print changes only.
 	 *
-	 * [--no-images]
-	 * : Skip downloading packshots/PDFs.
+	 * [--[no-]images]
+	 * : Download packshots/PDFs (default). Use --no-images to skip.
 	 */
 	public function import( $args, $assoc ): void {
 		$what = $args[0] ?? 'all';
-		$imp  = new Importer( $this->root( $assoc ), isset( $assoc['production'] ), isset( $assoc['dry-run'] ), ! isset( $assoc['no-images'] ) && ! ( isset( $assoc['images'] ) && 'false' === $assoc['images'] ) );
+		$imp  = new Importer( $this->root( $assoc ), isset( $assoc['production'] ), isset( $assoc['dry-run'] ), (bool) \WP_CLI\Utils\get_flag_value( $assoc, 'images', true ) );
 		$all  = array( 'taxonomy', 'company', 'products', 'ingredients', 'guides', 'needs', 'pages', 'reps', 'materials', 'redirects' );
 		$list = 'all' === $what ? $all : array( $what );
 		foreach ( $list as $w ) {

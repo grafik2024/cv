@@ -1,0 +1,1467 @@
+{
+ "group": "zdrowie-ptaki-inne",
+ "families": [
+  {
+   "family_slug": "amylan-ad",
+   "name": "Amylan-Ad",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGA TRAWIENIE I PRACĘ TRZUSTKI"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Amylan wyrównuje zaburzenia trawienia.",
+   "usage_verbatim": "3–12 tygodni, jednak w przypadku stałych problemów z pracą trzustki - przez całe życie zwierząt. Podawać przed karmieniem. Ilość przeznaczoną do podania podzielić na tyle porcji, ile zwierzę otrzymuje posiłków w ciągu dnia. Koty i małe psy: 1 tab. / dzień Psy średnie: 2 tab. / dzień Psy duże: 3 tab. / dzień Przed użyciem zaleca się konsultację z lekarzem weterynarii. Produkt przechowywać w oryginalnym opakowaniu. Przechowywać w suchym miejscu. Chronić przed wilgocią i światłem.",
+   "indications_verbatim": "Wyrównywanie zaburzeń trawienia.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: laktoza, sacharoza, przetworzone białko zwierzęce (suszona wątroba wołowa), węglan wapnia, celuloza sproszkowana, sole kwasów tłuszczowych Dodatki w 1 kg: Zootechniczne: Enzymy: Alfa – amylaza EC 3.2.1.1 z Bacillus subtilis DS098 – 87.5 g. Składniki analityczne: białko surowe 8,7%, włókno surowe 29,3%, tłuszcz surowy 2,5% popiół surowy 9,1%.",
+   "notes_verbatim": "Opakowanie zawiera: 30 tab. Masa netto: 24g.",
+   "variants": [
+    {
+     "title": "AMYLAN 30szt",
+     "capacity": "30 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/amylan-30szt/",
+     "woo_id": 5168,
+     "woo_path": "/produkt/amylan-ad-30szt/",
+     "price_pln": 54.24,
+     "regular_price_pln": 54.24,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/05/Amylan_AD_30tab_op.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "lespewet-pies",
+    "uromil"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": "Przed użyciem zaleca się konsultację z lekarzem weterynarii."
+  },
+  {
+   "family_slug": "diarsed",
+   "name": "Diarsed",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "ZABURZENIA ŻOŁĄDKOWO – JELITOWE"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Karma uzupełniająca pomaga utrzymywać prawidłową czynność przewodu pokarmowego i wspomaga go w zaburzeniach żołądkowo-jelitowych. Dodatek do karmy glinokrzemianu wpływa korzystnie na żołądek przy nadmiernym wydzielaniu kwasu solnego. Produkty roślinne wspomagają funkcjonowanie przewodu pokarmowego oraz pomagają utrzymać prawidłową motorykę żołądka i jelit. Podawać bezpośrednio lub po wymieszaniu z karmą.",
+   "usage_verbatim": "Podawać bezpośrednio lub po wymieszaniu z karmą. Psy, koty: 1 tab. / 10 kg m.c. / 2 razy dziennie. Stosować przez 3-5 dni. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "indications_verbatim": "Zaburzenia żołądkowo – jelitowe.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Maltodekstryna, produkty uboczne pochodzenia zwierzęcego (wątroba wołowa), produkty przetwarzania roślin (Vaccinium myrtillus - borówka czarna), mączka z suszonych strąków szarańczynu strąkowego. Dodatki w 1 kg: Technologiczne: Krzemionka (E 551b) Składniki analityczne: białko surowe 12,4 %, włókno surowe 2,0 %, tłuszcz surowy 2,5 %, popiół surowy 2,5 %.",
+   "notes_verbatim": "Masa netto jednostkowa: 0,62 g. Masa netto całościowa: 18,6 g. Ilość (sztuk): 30 tab.",
+   "variants": [
+    {
+     "title": "DIARSED 30szt.",
+     "capacity": "30 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/diarsed-30szt/",
+     "woo_id": 16597,
+     "woo_path": "/produkt/diarsed-30-tab-zaburzenia-zoladkowo-jelitowe-dla-psow-i-kotow/",
+     "price_pln": 47.48,
+     "regular_price_pln": 47.48,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/08/Diarsed_30tab-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "amylan-ad"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "hepachol",
+   "name": "Hepachol",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów, kotów, gołębi",
+   "badges_verbatim": [
+    "WSPOMAGA PRACĘ UKŁADU POKARMOWEGO I WĄTROBY"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "gołębie"
+   ],
+   "species_evidence": "Dla psów, kotów, gołębi.",
+   "body_areas": [
+    "układ pokarmowy",
+    "wątroba"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Płyn wpływa korzystnie na pracę układu pokarmowego, a w szczególności ułatwia funkcjonowanie wątroby. Składniki karmy wzmagają perystaltykę jelit oraz pobudzają produkcję żółci i wydzielanie enzymów trawiennych. Zaleca się podawać przy przekarmieniu, obniżeniu apetytu, osłabieniu, zaparciach, wymiotach.",
+   "usage_verbatim": "Stosować po wymieszaniu z karmą lub z wodą do picia. Podawać 2 razy dziennie przez 8-15 dni. Psy i koty: m.c. do 7 kg: 5 ml / dzień, m.c. 7 – 12 kg: 10 ml / dzień, m.c. 12 – 18 kg: 15 ml / dzień, m.c. 18 – 25 kg: 20 ml / dzień, m.c. › 25 kg: 30 ml / dzień. Gołębie: Podawać z wodą do picia: – 5 ml / 1 litr wody przez 7 – 10 dni – w okresie lotów stosować w tej samej ilości 1 raz w tygodniu. Po otwarciu przechowywać w miejscu chłodnym i suchym.",
+   "indications_verbatim": "Wspomaga pracę układu pokarmowego i wątroby.",
+   "intended_for_verbatim": "Dla psów, kotów, gołębi.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: sorbitol, woda, produkty przetwarzania roślin: karczoch zwyczajny (Cynara scolymus), ostropest plamisty (Silybum marianum), rozmaryn lekarski (Rosmarinus officinalis), mniszek lekarski (Taraxacum officinale). Dodatki w 1 kg: Dietetyczne: Aminokwasy: 3.2.3 L-lizyna HCl 20 g. Technologiczne: Konserwanty: E202 Sorbinian potasu 3 g. Składniki analityczne: białko surowe 1,4%, włókno surowe 0,2%, tłuszcz surowy 0,1%, popiół surowy 0,28%, wilgotność 33,7%.",
+   "notes_verbatim": "30 ml",
+   "variants": [
+    {
+     "title": "HEPACHOL 30ml",
+     "capacity": "30 ml",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/hepachol-30ml/",
+     "woo_id": 7853,
+     "woo_path": "/produkt/hepachol-30ml/",
+     "price_pln": 30.95,
+     "regular_price_pln": 30.95,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/03/Hepachol_30ml_1.png",
+     "en_page_path": null
+    },
+    {
+     "title": "HEPACHOL 125ml",
+     "capacity": "125 ml",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/hepachol-125ml/",
+     "woo_id": 5229,
+     "woo_path": "/produkt/hepachol-125ml/",
+     "price_pln": 55.68,
+     "regular_price_pln": 55.68,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/03/Hepachol_125ml_1-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "karbowital"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "hepachol-zwierzeta-gospodarskie",
+   "name": "Hepachol dla zwierząt gospodarskich",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla zwierząt gospodarskich",
+   "badges_verbatim": [
+    "WSPOMAGA PRACĘ UKŁADU POKARMOWEGO I WĄTROBY"
+   ],
+   "species": [
+    "zwierzęta gospodarskie"
+   ],
+   "species_evidence": "Dla zwierząt gospodarskich.",
+   "body_areas": [
+    "układ pokarmowy",
+    "wątroba"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "HEPACHOL syrop wpływa korzystnie na pracę układu pokarmowego, a w szczególności ułatwia funkcjonowanie wątroby. Składniki karmy wzmagają perystaltykę jelit oraz pobudzają produkcję żółci i wydzielanie enzymów trawiennych. Zaleca się podawać mieszankę przy przekarmieniu, obniżeniu apetytu, osłabieniu, zaparciach, zaburzeniach ze strony przewodu pokarmowego u prosiąt ssących, w okresie rekonwalescencji po przebytym leczeniu obciążającym wątrobę i nerki.",
+   "usage_verbatim": "Stosować po wymieszaniu z paszą lub z wodą do picia. Konie i bydło dorosłe: – 5 ml / zwierzę / dzień przez 4 m-ce – uzupełnianie żywienia podczas osłabienia – 60 ml / zwierzę / dzień przez 7 dni Cielęta: – od 1. m-ca życia do uboju – 2 ml / zwierzę / dzień – uzupełnianie żywienia podczas osłabienia – 30 ml / zwierzę / dzień przez 5 dni. Podawać 2 razy dziennie. Owce, kozy: – zwierzęta dorosłe – 15-20 ml / zwierzę / dzień przez 5-7 dni – jagnięta i koźlęta – 5-10 ml / zwierzę / dzień przez 5-7 dni Trzoda chlewna: – odsadzanie prosiąt – 1,5 ml w 1 l wody do picia lub 1 ml / zwierzę / dzień przez 7 dni – lochy – 50 ml / zwierzę / dzień przez 5 dni przed i po porodzie – uzupełnianie żywienia podczas osłabienia: prosięta – 3-5 ml / zwierzę / dzień tuczniki – 15 ml / zwierzę / dzień przez 5 dni lochy – 50 ml / zwierzę / dzień przez 5 dni Brojlery, kury, kaczki, gęsi, indyki, króliki: 1-2 ml w 1 l wody do picia przez 5 dni Tucz gęsi: 4 ml / ptaka / dzień przez 5 dni w połowie okresu tuczu",
+   "indications_verbatim": "Wspomaga pracę układu pokarmowego i wątroby.",
+   "intended_for_verbatim": "Dla zwierząt gospodarskich.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: sorbitol, woda, produkty przetwarzania roślin: karczoch zwyczajny (Cynara scolymus), ostropest plamisty (Silybum marianum), rozmaryn lekarski (Rosmarinus officinalis), mniszek lekarski (Taraxacum officinale). Dodatki w 1 kg: Dietetyczne: Aminokwasy: 3.2.3 L-lizyna HCl 20 g. Technologiczne: Konserwanty: E202 Sorbinian potasu 3 g. Składniki analityczne: białko surowe 1,4%, włókno surowe 0,2%, tłuszcz surowy 0,1%, popiół surowy 0,28%, wilgotność 33,7%.",
+   "notes_verbatim": "1 L",
+   "variants": [
+    {
+     "title": "HEPACHOL 1L",
+     "capacity": "1 l",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/hepachol-1l/",
+     "woo_id": 5230,
+     "woo_path": "/produkt/hepachol-1l/",
+     "price_pln": 216.16,
+     "regular_price_pln": 216.16,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Hepachol_1l-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "amylan-ad"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "karbowital",
+   "name": "Karbowital",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "OCHRONA PRZEWODU POKARMOWEGO",
+    "PRZYWRACA PRAWIDŁOWE FUNKCJONOWANIE JELIT",
+    "ABSORBUJE SZKODLIWE SUBSTANCJE",
+    "+Węgiel aktywny, błonnik akacjowy Fibregum"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "gołębie"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "KARBOWITAL wpływa korzystnie na przewód pokarmowy przy zaburzeniach żołądkowo-jelitowych. Wspomaga prawidłowe funkcjonowanie jelit. Węgiel aktywny i błonnik akacjowy chronią błonę śluzową przewodu pokarmowego przed drażniącymi czynnikami oraz absorbują szkodliwe substancje. Tabletki są wyjątkowo smaczne, dzięki czemu zwierzęta chętnie je przyjmują.",
+   "usage_verbatim": "Podawać bezpośrednio lub po wymieszaniu z karmą: 1 tab. na na 10 kg m.c., 2-3 razy dziennie lub wg zaleceń lekarza weterynarii.",
+   "indications_verbatim": "Ochrona przewodu pokarmowego.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Produkty przetwarzania roślin: błonnik akacjowy, węgiel roślinny (węgiel drzewny), wątroba wołowa, stearynian magnezu, krystobalit. Składniki analityczne: Białko surowe 10,1%, włókno surowe 25,3%, tłuszcz surowy 3,9%, popiół surowy 4,68%.",
+   "notes_verbatim": "30 tab.",
+   "variants": [
+    {
+     "title": "KARBOWITAL 30 tab.",
+     "capacity": "30 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/karbowital-30-tab/",
+     "woo_id": 10956,
+     "woo_path": "/produkt/karbowital-wegiel-dla-psow-i-kotow/",
+     "price_pln": 46.51,
+     "regular_price_pln": 46.51,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2021/11/Karbowital_30tab.png",
+     "en_page_path": null
+    },
+    {
+     "title": "KARBOWITAL 125ml",
+     "capacity": "125 ml",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/karbowital-125ml/",
+     "woo_id": 5231,
+     "woo_path": "/produkt/karbowital-125ml/",
+     "price_pln": 65.62,
+     "regular_price_pln": 65.62,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/03/Karbowital_125ml_1-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "hepachol"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Variant page /produkty/preparaty-wspomagajace-zdrowie/karbowital-125ml/ text differs from /produkty/preparaty-wspomagajace-zdrowie/karbowital-30-tab/; family text taken from the first page."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "karbowital-zwierzeta-gospodarskie",
+   "name": "Karbowital dla zwierząt gospodarskich",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla zwierząt gospodarskich",
+   "badges_verbatim": [
+    "OCHRONA PRZEWODU POKARMOWEGO",
+    "WSPOMAGA PRAWIDŁOWE FUNKCJONOWANIE JELIT",
+    "ABSORBUJE SZKODLIWE SUBSTANCJE"
+   ],
+   "species": [
+    "zwierzęta gospodarskie"
+   ],
+   "species_evidence": "Dla zwierząt gospodarskich.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Karma uzupełniająca wpływa korzystnie na przewód pokarmowy przy zaburzeniach żołądkowo-jelitowych (wzdęcia, niestrawności). Koloidalny roztwór węgla chroni błonę śluzową przewodu pokarmowego przed drażniącymi czynnikami, absorbuje szkodliwe substancje. Mieszanka wspomaga prawidłowe funkcjonowanie jelit.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą lub bezpośrednio: 1 ml / kg m.c. 2 razy dziennie. Przed podaniem wstrząsnąć.",
+   "indications_verbatim": "Ochrona przewodu pokarmowego.",
+   "intended_for_verbatim": "Dla zwierząt gospodarskich.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: gliceryna, węgiel roślinny (węgiel drzewny), sorbitol. Dodatki w 1 kg: Technologiczne: Konserwanty: E202 Sorbinian potasu 3 g. Składniki analityczne: białko surowe 0,5%, włókno surowe 15,7%, tłuszcz surowy 0,1%, popiół surowy 1,38%.",
+   "notes_verbatim": "1 L",
+   "variants": [
+    {
+     "title": "KARBOWITAL 1L",
+     "capacity": "1 l",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/karbowital-1l/",
+     "woo_id": 5232,
+     "woo_path": "/produkt/karbowital-1l/",
+     "price_pln": 265.43,
+     "regular_price_pln": 265.43,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Karbowital_1l-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "hepachol"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "lespewet",
+   "name": "Lespewet",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGANIE PRACY UKŁADU MOCZOWEGO"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "układ moczowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Składniki karmy wpływają korzystnie na drogi moczowe, wspomagają fizjologiczną funkcję nerek, ułatwiają oddawanie moczu.",
+   "usage_verbatim": "Stosować po wymieszaniu z karmą, wodą do picia lub bezpośrednio. Psy, koty 5 ml / 5 kg m.c. / dzień. Podawać 2 razy dziennie przez 10-15 dni. Nie należy podawać jednorazowo więcej niż 16 ml.",
+   "indications_verbatim": "Wspomaganie pracy układu moczowego.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: gliceryna, chlorek sodu, produkty przetwarzania roślin – z Lespedeza capitata. Dodatki w 1 kg: Dietetyczne: Aminokwasy: 3c322 L-lizyna HCl 20 g. Technologiczne: Konserwanty: 1k301 Benzoesan sodu 3 g, 1k202 Sorbinian potasu 3 g. Składniki analityczne: białko surowe 1,8%, włókno surowe 0%, tłuszcz surowy 0%, popiół surowy 0%, wilgotność 69%.",
+   "notes_verbatim": "125 ml",
+   "variants": [
+    {
+     "title": "LESPEWET 125ml",
+     "capacity": "125 ml",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/lespewet-125ml/",
+     "woo_id": 5233,
+     "woo_path": "/produkt/lespewet-125ml/",
+     "price_pln": 51.36,
+     "regular_price_pln": 51.36,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/01/Lespewet_125ml-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "uromil"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "lespewet-pies",
+   "name": "Lespewet dla psów",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "WSPOMAGANIE PRACY UKŁADU MOCZOWEGO"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "układ moczowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Składniki karmy wpływają korzystnie na drogi moczowe. Wspomagają pracę nerek, poprzez działanie moczopędne",
+   "usage_verbatim": "Podawać bezpośrednio lub z karmą: 1 tab. / 6 kg m.c. / dzień, przez 5-10 dni. W razie potrzeby ilość tabletek można podwoić lub stosować przez dłuższy czas.",
+   "indications_verbatim": "Wspomaganie pracy układu moczowego.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Maltodekstryna, produkty przetwarzania roślin – z Lespedeza capitata, węglan wapnia, przetworzone białko zwierzęce. Dodatki w 1 kg: Technologiczne: Substancja przeciwzbrylająca: Stearynian magnezu 2 g Składniki analityczne: białko surowe 15,0%, włókno surowe 1,1%, tłuszcz surowy 4,8%, popiół surowy 24,0%.",
+   "notes_verbatim": "Opakowanie zawiera: 30 tab. Masa netto: 11,7 g.",
+   "variants": [
+    {
+     "title": "LESPEWET 30szt.",
+     "capacity": "30 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/lespewet-30szt/",
+     "woo_id": 5234,
+     "woo_path": "/produkt/lespewet-30szt/",
+     "price_pln": 60.55,
+     "regular_price_pln": 60.55,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/03/Lespewet_pies_30tab-3.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "uromil"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "lespewet-kot",
+   "name": "Lespewet dla kotów",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "WSPOMAGANIE PRACY UKŁADU MOCZOWEGO"
+   ],
+   "species": [
+    "kot"
+   ],
+   "species_evidence": "Dla kotów.",
+   "body_areas": [
+    "układ moczowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Składniki karmy wpływają korzystnie na drogi moczowe. Wspomagają pracę nerek, poprzez działanie moczopędne. Lespedeza capitata jest bogata we flawonoidy i taniny. Wspomaga działanie nerek i układu moczowego, oczyszcza układ moczowy poprzez wydalanie mocznika.",
+   "usage_verbatim": "Podawać bezpośrednio lub z karmą - 1 tab. / 3 kg m.c. / dzień. W razie potrzeby ilość można podwoić lub stosować przez dłuższy czas.",
+   "indications_verbatim": "Wspomaganie pracy układu moczowego.",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Produkt przetwarzania roślin - z Lespedeza capitata, maltodekstryna, przetworzone białko zwierzęce (wątroba wołowa). Dodatki w 1 kg: Technologiczne: Stabilizatory: E460 celuloza mikrokrystaliczna 292,3 g. Zagęszczające: E470b Stearynian magnezu 20,5 g. Składniki analityczne: białko surowe 12,6 %, włókno surowe 29,2 %, tłuszcz surowy 2,2 %, popiół surowy 3,9 %.",
+   "notes_verbatim": "Masa netto jednostkowa: 0,195 g. Masa netto całościowa: 11,7 g. Ilość (sztuk): 60 tabletek. Ilość blistrów: 5.",
+   "variants": [
+    {
+     "title": "LESPEWET dla kotów 60 tab. 5 blistrów",
+     "capacity": "60 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/lespewet-dla-kotow-60-tab-5-blistrow/",
+     "woo_id": 16712,
+     "woo_path": "/produkt/lespewet-dla-kotow-60-tab-5-blistrow/",
+     "price_pln": 62.5,
+     "regular_price_pln": 62.5,
+     "in_stock": false,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2026/05/Lespewet_kot_60tab-1.png",
+     "en_page_path": null
+    },
+    {
+     "title": "LESPEWET 50szt.",
+     "capacity": "50 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/lespewet-50szt/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/03/Lespewet_kot_50tab-3.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "uromil"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Variant page /produkty/preparaty-wspomagajace-zdrowie/lespewet-50szt/ text differs from /produkty/preparaty-wspomagajace-zdrowie/lespewet-dla-kotow-60-tab-5-blistrow/; family text taken from the first page.",
+    "Two pack sizes for cats (50 tab. page without shop, 60 tab. in shop) — confirm whether 50 tab. is still sold."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "metadiar",
+   "name": "Metadiar",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "CHRONI ŻOŁĄDEK I JELITA"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Naturalny glinokrzemian wpływa adsorbująco i osłaniająco na przewód pokarmowy. Powleka błonę śluzową żołądka i jelit chroniąc ją przed działaniem czynników drażniących. Łagodzi skutki biegunki, wspomaga pracę układu pokarmowego. Nie wchłania się z przewodu pokarmowego, wiąże toksyczne substancje produkowane przez szkodliwą florę bakteryjną jelit, uniemożliwiając ich wchłonięcie. Ogranicza utratę wody przez ścianę jelita.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą lub w małej ilości wody. Psy – 1 saszetka na 10 kg/m.c. x2 dziennie Koty – ½ saszetki x2 dziennie.",
+   "indications_verbatim": "Ochrona żołądka i jelit.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Tlenek magnezu, chlorek sodu. Dodatki w 1 kg: Technologiczne: Substancje wiążące: 1m558i bentonit 700 g. Dietetyczne: Pierwiastki śladowe: E 172 tlenek żelaza 250 mg. Składniki analityczne: wapń 0%, sód 1,5%, fosfor 0%",
+   "notes_verbatim": "Proszek. 10 x 5g (50g)",
+   "variants": [
+    {
+     "title": "METADIAR 50g",
+     "capacity": "50 g",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/metadiar-50g/",
+     "woo_id": 21148,
+     "woo_path": "/produkt/metadiar-50g-saszetki/",
+     "price_pln": 61.0,
+     "regular_price_pln": 61.0,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2025/07/EUROWET_Metadiar_saszetka.png",
+     "en_page_path": null
+    },
+    {
+     "title": "METADIAR 60g",
+     "capacity": "60 g",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/metadiar-60g/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2023/02/Metadiar_60g-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "amylan-ad"
+   ],
+   "documents": [],
+   "data_issues": [
+    "Variant page /produkty/preparaty-wspomagajace-zdrowie/metadiar-60g/ text differs from /produkty/preparaty-wspomagajace-zdrowie/metadiar-50g/; family text taken from the first page."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "probiotyk-kot",
+   "name": "Probiotyk dla kotów",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Naturalna regulacja flory bakteryjnej dla kotów",
+   "badges_verbatim": [
+    "WZMACNIA PRAWIDŁOWE FUNKCJONOWANIE JELITOWEJ MIKROFLORY BAKTERYJNEJ",
+    "WSPOMAGA TRAWIENIE I PERYSTALTYKĘ JELIT",
+    "USUWA TOKSYCZNE ZWIĄZKI Z ORGANIZMU",
+    "DOSTARCZA ZWIĄZKI MINERALNE I WITAMINY"
+   ],
+   "species": [
+    "kot"
+   ],
+   "species_evidence": "Dla kotów.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Probiotyk to połączenie mikroorganizmów prozdrowotnych naturalnie występujących w przewodzie pokarmowym i koncentratu witaminowo – mineralno – aminokwasowego. Działa ochronnie na śluzówkę jelit tworząc barierę przed chorobotwórczymi szczepami bakterii (m.in.: Escherichi coli, Salmonella, Mycobacterium, Shigella, Bacteroides, Proteus, Streptococcus, Clostridium, Pseudomonas, Vibrio), wirusami (rotawirus i inne).",
+   "usage_verbatim": "Przeznaczony dla wszystkich ras i grup wiekowych kotów. Preparat podaje się w karmie lub wodzie do picia: - koty do 5 kg masy ciała – ½ saszetki co 3 dni - koty od 5 do 20 kg masy ciała – 1 saszetka co 3 dni",
+   "indications_verbatim": "Stosować podczas: antybiotykoterapii, biegunek, zaparć, zaburzeń trawienia, odrobaczania, chorób zakaźnych, spadku odporności, stresu, nieprzyjemnego zapachu z jamy ustnej.",
+   "intended_for_verbatim": "Dla kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: węglan wapniowo-magnezowy, sacharoza. Dodatki w 1 kg: Sensoryczne: 2b620 kwas glutaminowy 3400 mg, 2b17019 L-prolina 1568mg, 2b17012 L-leucyna 416mg, 2b17005 kwas asparaginowy 1112mg, 2b17020 DL-seryna 960mg, 2b17018 L-fenyloalanina 760mg, 2b17002 L-alanina 518mg, 2b17034 glicyna 320mg. Dietetyczne: Witaminy: 3a672a witamina A 400 000IU, 3a671 witamina D3 40 000IU, 3a300 witamina C 1 000 mg, 3a314 kwas nikotynowy 800mg, 3a700 witamina E 400mg, 3a841 D-pantotenian wapnia 400mg, 3a witamina B2 160mg, 3a820 witamina B1 80 mg, 3a831 witamina B6 60mg, 3a710 witamina K3 60mg, 3a316 kwas foliowy 20mg, 3a880 biotyna 6mg. Aminokwasy: 3c301 DL-metionina 2 000mg, 3.2.3 L-lizyna 2 000mg, 3c370 L-walina 1 096mg, 3c410 L-treonina 744mg, 3c362 L-arginina 624mg, 3c440 L-tryptofan 256mg, 3c391 L-cystyna 76 mg, 3c3.8.1 L-izoleucyna 944mg. Zootechniczne: 4b1715 Lactobacillus acidophilus CECT-4529. Składniki analityczne: Białko surowe 1,88%, Włókno surowe <0,4%, Oleje i tłuszcz surowy <0,3%, Popiół surowy 69,27%, Wapń 0,16%, Sód 0,00069%, Fosfor <0,06%.",
+   "notes_verbatim": "Saszetka 1,5 g x 15 sztuk",
+   "variants": [
+    {
+     "title": "Probiotyk 15 saszetek – kot",
+     "capacity": "15 saszetek",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/probiotyk-15-saszetek-kot/",
+     "woo_id": 8810,
+     "woo_path": "/produkt/probiotyk-kot-15-saszetek/",
+     "price_pln": 83.22,
+     "regular_price_pln": 83.22,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/07/Probiotyk_kot.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "amylan-ad"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "probiotyk-pies",
+   "name": "Probiotyk dla psów",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Naturalna regulacja flory bakteryjnej dla psów",
+   "badges_verbatim": [
+    "WZMACNIA PRAWIDŁOWE FUNKCJONOWANIE JELITOWEJ MIKROFLORY BAKTERYJNEJ",
+    "WSPOMAGA TRAWIENIE I PERYSTALTYKĘ JELIT",
+    "USUWA TOKSYCZNE ZWIĄZKI Z ORGANIZMU",
+    "DOSTARCZA ZWIĄZKI MINERALNE I WITAMINY"
+   ],
+   "species": [
+    "pies"
+   ],
+   "species_evidence": "Dla psów.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Probiotyk to połączenie mikroorganizmów prozdrowotnych naturalnie występujących w przewodzie pokarmowym i koncentratu witaminowo – mineralno – aminokwasowego. Działa ochronnie na śluzówkę jelit tworząc barierę przed chorobotwórczymi szczepami bakterii (m.in.: Escherichi coli, Salmonella, Mycobacterium, Shigella, Bacteroides, Proteus, Streptococcus, Clostridium, Pseudomonas, Vibrio), wirusami (rotawirus i inne).",
+   "usage_verbatim": null,
+   "indications_verbatim": "Stosować podczas: antybiotykoterapii, biegunek, zaparć, zaburzeń trawienia, odrobaczania, chorób zakaźnych, spadku odporności, stresu, nieprzyjemnego zapachu z jamy ustnej.",
+   "intended_for_verbatim": "Dla psów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: węglan wapniowo-magnezowy, sacharoza. Dodatki w 1 kg: Sensoryczne: 2b620 kwas glutaminowy 3400 mg, 2b17019 L-prolina 1568mg, 2b17012 L-leucyna 416mg, 2b17005 kwas asparaginowy 1112mg, 2b17020 DL-seryna 960mg, 2b17018 L-fenyloalanina 760mg, 2b17002 L-alanina 518mg, 2b17034 glicyna 320mg. Dietetyczne: Witaminy: 3a672a witamina A 400 000IU, 3a671 witamina D3 40 000IU, 3a300 witamina C 1 000 mg, 3a314 kwas nikotynowy 800mg, 3a700 witamina E 400mg, 3a841 D-pantotenian wapnia 400mg, 3a witamina B2 160mg, 3a820 witamina B1 80 mg, 3a831 witamina B6 60mg, 3a710 witamina K3 60mg, 3a316 kwas foliowy 20mg, 3a880 biotyna 6mg. Aminokwasy: 3c301 DL-metionina 2 000mg, 3.2.3 L-lizyna 2 000mg, 3c370 L-walina 1 096mg, 3c410 L-treonina 744mg, 3c362 L-arginina 624mg, 3c440 L-tryptofan 256mg, 3c391 L-cystyna 76 mg, 3c3.8.1 L-izoleucyna 944mg. Zootechniczne: 4b1820 Bacillus subtilis C-3102, 4b1715 Lactobacillus acidophilus CECT-4529. Składniki analityczne w 1 kg: Białko surowe 1,88%, Włókno surowe <0,4%, Oleje i tłuszcz surowy <0,3%, Popiół surowy 69,27%, Wapń 0,16%, Sód 0,00069%, Fosfor <0,06%",
+   "notes_verbatim": "Saszetka 1,5 g x 15 sztuk",
+   "variants": [
+    {
+     "title": "Probiotyk 15 saszetek – pies",
+     "capacity": "15 saszetek",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/probiotyk-15-saszetek-pies/",
+     "woo_id": 8807,
+     "woo_path": "/produkt/probiotyk-pies-15-saszetek/",
+     "price_pln": 79.09,
+     "regular_price_pln": 79.09,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/07/Probiotyk_pies.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "amylan-ad"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "probiotyk",
+   "name": "Probiotyk",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "WZMACNIA PRAWIDŁOWE FUNKCJONOWANIE JELITOWEJ MIKROFLORY BAKTERYJNEJ",
+    "WSPOMAGA TRAWIENIE I PERYSTALTYKĘ JELIT",
+    "USUWA TOKSYCZNE ZWIĄZKI Z ORGANIZMU",
+    "DOSTARCZA ZWIĄZKI MINERALNE I WITAMINY"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Probiotyk to połączenie mikroorganizmów prozdrowotnych naturalnie występujących w przewodzie pokarmowym i koncentratu witaminowo – mineralno – aminokwasowego. Działa ochronnie na śluzówkę jelit tworząc barierę przed chorobotwórczymi szczepami bakterii (m.in.: Escherichi coli, Salmonella, Mycobacterium, Shigella, Bacteroides, Proteus, Streptococcus, Clostridium, Pseudomonas, Vibrio), wirusami (rotawirus i inne). 1 saszetka probiotyku zawiera 7,2 x 109 żywych mikroorganizmów.",
+   "usage_verbatim": "Przeznaczony dla wszystkich ras i grup wiekowych psów i kotów. Preparat podaje się w karmie lub wodzie do picia: - psy i koty do 5 kg masy ciała – ½ saszetki co 3 dni - psy i koty od 5 do 20 kg masy ciała – 1 saszetka co 3 dni - psy ważące powyżej 20 kg – 2 saszetki co 3 dni",
+   "indications_verbatim": "Stosować podczas: antybiotykoterapii, biegunek, zaparć, zaburzeń trawienia, odrobaczania, chorób zakaźnych, spadku odporności, stresu, nieprzyjemnego zapachu z jamy ustnej.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Mikroorganizmy probiotyczne ze szczepów m.in. Lactobacillus acidophilus D2/CSL CECT 4529, Enterococcus faecium NCIMB 11181. Pozostałe składniki: premiks witaminowy, węglan wapniowo - magnezowy [11.1.3], sacharoza [4.1.3], aromat waniliowy.",
+   "notes_verbatim": "Saszetka 1,5 g x 15 sztuk 1 saszetka probiotyku zawiera 7,2 x 109 żywych mikroorganizmów.",
+   "variants": [
+    {
+     "title": "Probiotyk 15 saszetek",
+     "capacity": "15 saszetek",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/probiotyk-15-saszetek/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/10/Probiotyk_15saszetek.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "stresnal",
+   "name": "Stresnal",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "ŁAGODZI OBJAWY STRESU",
+    "RELAKSUJE",
+    "w składzie maczek kalifornijski"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "stres/zachowanie"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Składniki roślinne zawarte w karmie wpływają relaksująco na zwierzęta. Wpływają łagodząco na objawy związane ze stanami niepokoju, strachu i agresji. Wspomagają zmniejszyć napięcie mięśniowe. Karma wpływa korzystnie na psy i koty w czasie nieobecności właściciela, podczas zawodów, wystaw, podróży oraz w okresie napięć u szczeniąt.",
+   "usage_verbatim": "Stosować po wymieszaniu z karmą lub z wodą do picia. Podawać 2-3 razy dziennie. Psy i koty: 2 ml / 5 kg m.c. / dzień. Przy planowanym transporcie podać godzinę przed podróżą.",
+   "indications_verbatim": "Łagodzenie stresu.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Gliceryna, produkty przetwarzania roślin: maczek kalifornijski (Eschscholtzia californica), kwiatostan głogu (Crataegus oxyacantha), ziele męczennicy cielistej (Passiflora incarnata), ziele dziurawca zwyczajnego (Hypericum perforatum). Dodatki w 1 kg: Dietetyczne: Aminokwasy: 3c322 L-lizyna HCl 20 g. Technologiczne: Konserwanty: 1k301 Benzoesan sodu 3 g, 1k202 Sorbinian potasu 3 g. Składniki analityczne: białko surowe 1,14%, włókno surowe 0,4%, tłuszcz surowy 0,11%, popiół surowy 0,63%, wilgotność 71,8%.",
+   "notes_verbatim": "30 ml",
+   "variants": [
+    {
+     "title": "STRESNAL 30ml",
+     "capacity": "30 ml",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/stresnal-30ml/",
+     "woo_id": 7813,
+     "woo_path": "/produkt/stresnal-30ml/",
+     "price_pln": 29.77,
+     "regular_price_pln": 29.77,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/11/Stresnal_30ml.png",
+     "en_page_path": null
+    },
+    {
+     "title": "STRESNAL 125ml",
+     "capacity": "125 ml",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/stresnal-125ml/",
+     "woo_id": 5239,
+     "woo_path": "/produkt/stresnal-125ml/",
+     "price_pln": 74.77,
+     "regular_price_pln": 74.77,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2022/01/Stresnal_125ml-2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "amylan-ad",
+    "uromil"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "uromil",
+   "name": "Uromil",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "CIĄŻA UROJONA"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "rozród/ciąża"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Składniki karmy wspomagają odtruwanie organizmu w przebiegu ciąży urojonej u suk oraz działając moczopędnie ułatwiają powrót obrzękniętych gruczołów mlekowych do ich prawidłowego stanu. Karma wpływa także korzystnie na układ moczowy.",
+   "usage_verbatim": "Podawać sukom po wymieszaniu z karmą lub bezpośrednio 1 tab. / 10 kg m.c. 2 razy dziennie, przez 10 dni. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "indications_verbatim": "Ciąża urojona",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, produkty uboczne pochodzenia zwierzęcego (wątroba wołowa), produkty przetwarzania roślin: Hieracium pilosella (jastrzębiec kosmaczek), Phyllanthus (Liściokwiat). Składniki analityczne: białko surowe 11,3 %, włókno surowe 0,2 %, tłuszcz surowy 2,2 %, popiół surowy 1,4 %.",
+   "notes_verbatim": "Opakowanie zawiera: 30 tab. Masa netto: 12,9 g.",
+   "variants": [
+    {
+     "title": "UROMIL 30szt.",
+     "capacity": "30 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/uromil-30szt/",
+     "woo_id": 5241,
+     "woo_path": "/produkt/uromil-30szt/",
+     "price_pln": 57.73,
+     "regular_price_pln": 57.73,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/03/Uromil_30tab-3.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "diarsed"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "witamina-b12",
+   "name": "Witamina B12",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "Wspomaga pracę wątroby, trzustki, jelit",
+    "500 𝝁g witaminy b12 w tabletce"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "układ pokarmowy",
+    "wątroba"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest przeznaczona dla psów i kotów w celu odbudowania rezerwy wątrobowej w witaminę B12. Jej niedobory obserwuje się w przypadku niewydolności zewnątrz-wydzielniczej trzustki, przewlekłego zapalenia jelit, zapalenia wątroby i kanałów żółciowych.",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą. – do 10 kg m.c. – 1/2 tab. / dzień, – od 10 do 20 kg m.c. – 1 tab. / dzień, – powyżej 20 kg m.c. – 2 tab. / dzień.",
+   "indications_verbatim": "Wspomaga pracę wątroby, trzustki, jelit",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: Węglan magnezu, drożdże piwne - martwe (z Saccharomyces cerevisiae), przetworzone białko zwierzęce (wątroba wołowa). Dodatki w 1 kg: Dietetyczne: Witaminy: 3a Witamina B12 72 g, 3a316 Kwas foliowy 7,1 g. Technologiczne: Błonnik akacjowy (E414) Składniki analityczne: Białko surowe 16,6 %, włókno surowe 1,3 %, tłuszcz surowy 2,4 %, popiół surowy 31,1 %.",
+   "notes_verbatim": "Opakowanie: 50 tab. (5 blistrów x 10 tabletek). Masa netto: 35 g",
+   "variants": [
+    {
+     "title": "WITAMINA B12",
+     "capacity": "50 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/witamina-b12/",
+     "woo_id": 7925,
+     "woo_path": "/produkt/witamina-b12-50szt/",
+     "price_pln": 62.5,
+     "regular_price_pln": 62.5,
+     "in_stock": false,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2024/11/Witamina_b12_2.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [
+    "amylan-ad"
+   ],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "zn-cynk",
+   "name": "Zn-Cynk",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "DOSTARCZA CYNK DLA SKÓRY I SIERŚCI"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Składniki karmy wpływają korzystnie na funkcjonowanie skóry, na proces keratynizacji, na rozwój i czynność gruczołów łojowych skóry oraz poprawiają jakość sierści. Podawać karmę przy nadmiernym wypadaniu włosów, łamliwej, matowej i suchej sierści. Tabletki są wyjątkowo smaczne, dzięki czemu zwierzęta chętnie je przyjmują.",
+   "usage_verbatim": "Podawać co najmniej 1 godzinę przed podaniem karmy. - Problemy ze skórą i sierścią : psy i koty - 1/2 tab. / 10 kg m.c.- 2 razy dziennie przez 4 tygodnie - Ochrona wątroby : psy i koty - 1 tab. / 10 kg m.c.- 2 razy dziennie przez 4 tygodnie. Uwaga: - przy przedłużonym stosowaniu preparatu należy skorzystać z porady lekarza weterynarii - preparat może być stosowany u psów i kotów z niewydolnością serca i nerek",
+   "indications_verbatim": "Pielęgnacja sierści.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: przetworzone białko zwierzęce (suszona wątroba wołowa), fosforan dwuwapniowy, drożdże piwne inaktywowane (z Saccharomyces cerevisiae). Dodatki w 1 kg: Dietetyczne: 3b607 chelat cynku z glicyną 172,4 g. Witaminy: 3a831 witamina B6 129,3 g, 3a672a witamina A 4,36 g. Technologiczne: Stabilizatory: E414 błonnik akacjowy 438,7 g. Składniki analityczne: białko surowe 28,8 %, włókno surowe 0,2 %, tłuszcz surowy 1,5 %, popiół surowy 16,4 %.",
+   "notes_verbatim": "Opakowanie zawiera: 60 tab. Masa netto: 34,8g. 1 tabletka o masie 580 mg zawiera 37,5 mg cynku",
+   "variants": [
+    {
+     "title": "Zn-Cynk 60szt.",
+     "capacity": "60 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/zn-cynk-60szt/",
+     "woo_id": 8530,
+     "woo_path": "/produkt/zn-cynk_60szt/",
+     "price_pln": 47.52,
+     "regular_price_pln": 47.52,
+     "in_stock": true,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2020/06/Zn-Cynk_60tab.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "WooCommerce product 8530 is assigned to dermokosmetyki-weterynaryjne; its page is under preparaty-wspomagajace-zdrowie (category to correct). Shop button on the page points to non-existent /produkt/zn-cynk_60tab/."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "zn-a-b6",
+   "name": "Zn-A-B6",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "DOSTARCZA CYNK DLA SKÓRY I SIERŚCI"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "species_evidence": "Dla psów i kotów.",
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Składniki karmy wpływają korzystnie na funkcjonowanie skóry, na proces keratynizacji, na rozwój i czynność gruczołów łojowych skóry oraz poprawiają jakość sierści. Podawać karmę przy nadmiernym wypadaniu włosów, łamliwej, matowej i suchej sierści. Tabletki są wyjątkowo smaczne, dzięki czemu zwierzęta chętnie je przyjmują.",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą. Psy i koty: 1 tabl. / 10 kg m.c., 2 razy dziennie przez 3-4 tygodnie. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "indications_verbatim": "Pielęgnacja sierści.",
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: fosforan dwuwapniowy, produkty uboczne pochodzenia zwierzęcego (ze świń), drożdże piwne (uzyskane z Saccharomyces cerevisiae), skrobia z kukurydzy (Zea mays), gliceryna Składniki analityczne: białko surowe 26,4%, włókno surowe 5,8%, oleje i tłuszcze surowe 4,4%, popiół surowy 28,0%, fosfor 5,5%, wilgotność 5,0%, chlorowodorki 0,4% Dodatki w 1 kg: witaminy i pro-witaminy: E672 witamina A 1 600 000 IU, 3a831 witamina B6 (chlorowodorek pirydoksyny) 122,9 g, mieszanka pierwiastków śladowych: E6 cynk (siarczan cynku jednowodny) 25 000 mg",
+   "notes_verbatim": "Opakowanie zawiera: 60 tabletek. Masa netto tabletek wynosi: 36g.",
+   "variants": [
+    {
+     "title": "Zn-A-B6 60szt.",
+     "capacity": "60 tab.",
+     "page_path": "/produkty/preparaty-wspomagajace-zdrowie/zn-a-b6-60szt/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2019/03/Zn-A-B6_60tab-3.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "florabactil",
+   "name": "Florabactil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "Wspomaga osłabioną zdolność trawienia"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest przeznaczona dla ptaków ozdobnych. Podstawowym warunkiem wykorzystania substancji odżywczych jest właściwy proces trawienia. Składniki mieszanki wpływają korzystnie na jego przebieg, wspomagają osłabioną zdolność trawienia białek przez ptaki, co pozwala uniknąć utraty masy ciała oraz wychudzenia.",
+   "usage_verbatim": "Podawać bezpośrednio lub z karmą - 2 miarki mieszanki / 30 ml wody do picia (1 łyżeczka do herbaty / 300 ml wody). Podawać przez 3 kolejne dni w tygodniu, przez okres kilku miesięcy. PAPUGI: - 4 miarki mieszanki / 5 ml wody do picia (1 łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki do herbaty / 45 ml wody do picia i nasączyć 300 g ziarna. Podawać przez 3 kolejne dni w tygodniu, przez okres kilku miesięcy. 1 miarka zawiera 0,16 g mieszanki. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "indications_verbatim": "Wspomaga osłabioną zdolność trawienia.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: laktoza, siara, ekstrakt z Ananas comosus, sole kwasów tłuszczowych (stearynian magnezu) Składniki analityczne: białko surowe 2,48%, włókno surowe 0,1%, popiół surowy 0,4%, oleje i tłuszcze surowe 0,5%, lizyna 0,18%, metionina 0,03%, wapń 0,01%, fosfor 0%, sód 0%, wilgotność 5%",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "florabactil 30g",
+     "capacity": "30 g",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florabactil-30g/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Florabactil-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "floracal",
+   "name": "Floracal",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "uzupełnia składniki mineralne i aminokwasy"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "ogólna kondycja/witalność"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest przeznaczona dla ptaków ozdobnych jako dodatek do karmy. Uzupełnia dawkę pokarmową w podstawowe składniki mineralne oraz aminokwasy. Zawiera łatwo przyswajalne makro i mikroelementy konieczne do prawidłowego wzrostu, rozwoju oraz funkcjonowania organizmu. Mieszanka zawiera składniki wpływające na prawidłowy przebieg procesu tworzenia skorupy jaja, stanowi niezbędny dodatek do karmy dla ptaków w okresie reprodukcji.",
+   "usage_verbatim": "- 5 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 1 L wody) – 1 raz w tygodniu, - okres wzrostu młodych, przygotowanie do rozrodu oraz po 15 dniach od zakończenia pierzenia – 1 raz dziennie, PAPUGI: - 5 kropli mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki mieszanki / 150 ml wody do picia i nasączyć 1kg ziarna – 1 raz w tygodniu, - okres wzrostu młodych, przygotowanie do rozrodu oraz po 15 dniach od zakończenia pierzenia – 1 raz dziennie. 1 ml zawiera 20 kropli.",
+   "indications_verbatim": "Mieszanka zawiera składniki wpływające na prawidłowy przebieg procesu tworzenia skorupy jaja, stanowi niezbędny dodatek do karmy dla ptaków w okresie reprodukcji.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: chlorek wapnia, maltodekstryna Składniki analityczne: białko surowe 0%, popiół surowy 1,4%, oleje i tłuszcze surowe 0,1%, włókno surowe 0%, wapń 0,35%, fosfor 0,4%, sód 0%, lizyna 0,002%, metionina 0%, wilgotność 86,5% Dodatki w 1 L: witaminy i pro-witaminy: cholina (chlorek choliny) 140 mg, aminokwasy i ich sole: 3.2.3. L-lizyna HCl 20 mg, mieszanka pierwiastków śladowych: E1 żelazo (chlorek żelaza sześciowodny) 140 mg, E5 mangan (chlorek manganu czterowodny) 127 mg, E6 cynk (siarczan cynku siedmiowodny) 10 mg, E4 miedź (chlorek miedzi dwuwodny) 7 mg, E3 kobalt (chlorek kobaltu sześciowodny) 1,4 mg, konserwanty: E338 kwas ortofosforowy 17,2 g",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "floracal 15ml",
+     "capacity": "15 ml",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floracal-15ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Floracal-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "floracholine",
+   "name": "Floracholine",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "wpływa na przemianę tłuszczową w wątrobie"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "wątroba"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca wpływa na przemianę tłuszczową w wątrobie, wspomaga wydzielanie kwasów żółciowych oraz dostarcza energii. Wpływa korzystnie na funkcje układu pokarmowego, ułatwia eliminację tłuszczu z wątroby oraz produkcję żółci.",
+   "usage_verbatim": "- 10 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 500 ml wody) – 2 razy w tygodniu, PAPUGI: – 10 kropli mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki mieszanki / 75 ml wody do picia i nasączyć 500 g ziarna – 2 razy w tygodniu. 1 ml zawiera 20 kropli.",
+   "indications_verbatim": "Wspomaga wydzielanie kwasów żółciowych oraz dostarcza energii. Wpływa korzystnie na funkcje układu pokarmowego, ułatwia eliminację tłuszczu z wątroby oraz produkcję żółci.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: sorbitol, gliceryna Składniki analityczne: wilgotność 56,6%, białko surowe 31,2%, popiół surowy 0,1%, oleje i tłuszcze surowe 0%, włókno surowe 0%, wapń 0%, fosfor 0%, sód 0%, lizyna 2%, metionina 0% Dodatki w 1 L: witaminy i pro-witaminy: chlorek choliny) 500 g, aminokwasy i ich sole: 3.2.3. L-lizyna HCl 20 g",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "floracholine 60ml",
+     "capacity": "60 ml",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floracholine-60ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Floracholine-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "floraferol",
+   "name": "Floraferol",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "reprodukcja"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "rozród/ciąża"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy niezbędnym w okresie reprodukcji. Wpływa korzystnie na poprawę zdolności reprodukcyjnych samców i samic oraz na wskaźniki wylęgu.",
+   "usage_verbatim": "- 8 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 1 L wody), podawać 2 razy w tygodniu przez 3 tygodnie oraz przez cały okresie rozrodu, PAPUGI: – 8 kropli mieszanki / 5 ml wody do picia (1 łyżeczka do herbaty) i nasączyć 30 g ziarna lub 1 łyżeczka / 75 ml wody do picia i nasączyć 500 g ziarna, podawać 2 razy w tygodniu przez 3 tygodnie oraz przez cały okres rozrodu. 1 ml zawiera 20 kropli",
+   "indications_verbatim": "Reprodukcja.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: sorbitol, gliceryna Składniki analityczne: wilgotność 56,6%, białko surowe 31,2%, popiół surowy 0,1%, oleje i tłuszcze surowe 0%, włókno surowe 0%, wapń 0%, fosfor 0%, sód 0%, lizyna 2%, metionina 0% Dodatki w 1 L: witaminy i pro-witaminy: chlorek choliny) 500 g, aminokwasy i ich sole: 3.2.3. L-lizyna HCl 20 g",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "floraferol 15ml",
+     "capacity": "15 ml",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floraferol-15ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Floraferol-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "floramucil",
+   "name": "Floramucil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "układ oddechowy"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "inne"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na poprawę funkcjonowania układu oddechowego. Rośliny aromatyczne wywierają korzystne działanie na śluzówkę górnych dróg oddechowych.",
+   "usage_verbatim": "Podawać okresowo celem wspomagania pracy układu oddechowego: - 4 krople mieszanki / 60 ml wody do picia (2 ml / 1L wody), PAPUGI: – 4 krople mieszanki / 5 ml wody (1 łyżeczka do herbaty i nasączyć 30 g ziarna). 1 ml zawiera 20 kropli.",
+   "indications_verbatim": "Układ oddechowy.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: syrop cukrowy, produkty przetwarzania roślin: eukaliptus (Eucalyptus), rozmaryn (Rosmarinus officinalis), tymianek (Thymus vulgaris), sosna (Pinus silvestris) Składniki analityczne: białko surowe 1,3%, popiół surowy 0,3%, oleje i tłuszcze surowe 2,3%, włókno surowe 1,3%, lizyna 0%, metionina 0%, wapń 0%, fosfor 0%, sód 0,2%, wilgotność 46% Dodatki w 1 kg: emulgatory i stabilizatory: E484 rycynolan glicerolopolietylenoglikolu 38 500 mg",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "floramucil 15ml",
+     "capacity": "15 ml",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floramucil-15ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Floramucil-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "floramue",
+   "name": "Floramue",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "PRIÓRA"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "inne"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy. Uzupełnia dawkę pokarmową w witaminy, aminokwasy i mikroelementy niezbędne do prawidłowej budowy piór oraz funkcjonowania organizmu. Mieszanka zawiera metioninę wpływającą na prawidłowy przebieg procesu pierzenia.",
+   "usage_verbatim": "2 krople mieszanki / 60 ml wody do picia (lub 35 kropli / 1 litr wody) – przez cały okres pierzenia, PAPUGI: – 2 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty ) i nasączyć 30 g ziarna lub 35 kropli / 75 ml wody do picia i nasączyć 500 g ziarna – przez cały okres pierzenia. 1 ml zawiera 20 kropli.",
+   "indications_verbatim": "Pióra.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: syrop cukrowy, gliceryna Składniki analityczne: wilgotność 71,6%, białko surowe 1,5%, popiół surowy 0,2%, oleje i tłuszcze surowe 5,4%, włókno surowe 0%, wapń 0%, fosfor 0%, sód 0,05%, lizyna 0,5%, metionina 0,5% Dodatki w 1 L: witaminy i pro-witaminy: E672 witamina A 10 000 000 IU, E671 witamina D3 800 000 IU, 3a700 witamina E 27 000 IU, witamina B1 2000 mg, witamina B2 1800 mg, 3a831 witamina B6 6000 mg, witamina B12 28 mg, kwas nikotynowy 28 000 mg, D-pantotenian wapnia 6000 mg, chlorek choliny 10 000 mg, D-biotyna 200 mg, aminokwasy, ich sole: 3.2.3. L-lizyna HCl 5000 mg, 3.1.1. DL-metionina 5000 mg, mieszanka pierwiastków śladowych: E4 miedź (siarczan miedzi pięciowodny) 120 mg, E1 żelazo (siarczan żelaza siedmiowodny) 110 mg, E5 mangan (siarczan manganu jednowodny) 110 mg, E3 kobalt (siarczan kobaltu siedmiowodny) 115 mg; emulgatory i stabilizatory: E484 rycynolan glicerolopolietylenoglikolu 135 g; konserwanty: E200 kwas sorbowy 1500 mg; substancje aromatyzujące, naturalne lub syntetyczne: glicyna (CAS nr 56-40-6) 5000 mg",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "floramue 15ml",
+     "capacity": "15 ml",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floramue-15ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Floramue-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Badge on the page reads 'PRIÓRA' (typo for 'PIÓRA')."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "florarome",
+   "name": "Florarome",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "układ oddechowy i pokarmowy"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na poprawę funkcjonowania układu oddechowego i pokarmowego, poprzez wspomaganie pracy układu odpornościowego ptaków.",
+   "usage_verbatim": "3 krople mieszanki / 60 ml wody do picia (2 ml / 1 L wody), podawać 1 raz w miesiącu przez okres 5 – 10 dni, PAPUGI: – 3 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 ml / 75 ml wody do picia i nasączyć 500 g ziarna, podawać 1 raz w miesiącu przez okres 5 – 10 dni. 1 ml zawiera 20 kropli.",
+   "indications_verbatim": "Układ oddechowy i pokarmowy.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: syrop cukrowy, produkty przetwarzania roślin : eukaliptus (Eucalyptus), mięta pieprzowa (Mentha piperita), tymianek (Thymus vulgaris), sosna (Pinus silvestris) Składniki analityczne: białko surowe 1,3%, popiół surowy 0,3%, oleje i tłuszcze surowe 2,3%, włókno surowe 1,3%, lizyna 0%, metionina 0%, wapń 0%, fosfor 0%, sód 0,2%, wilgotność 46% Dodatki w 1 L: emulgatory i stabilizatory: E484 rycynolan glicerolopolietylenoglikolu 38 500 mg",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "florarome 15ml",
+     "capacity": "15 ml",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florarome-15ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Florarome-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "florarutil",
+   "name": "Florarutil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "pióra"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "inne"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na zwiększenie intensywności czerwonej barwy piór. Mieszanka może być podawana w wodzie do picia, w połączeniu z floramue lub podawana w papce albo wymieszana z tartą marchwią.",
+   "usage_verbatim": "1 miarka mieszanki / 60 ml wody do picia lub z karmą / 15 ptaków, podawać na początku pierzenia przez kolejne 20 dni. 1 miarka zawiera ok. 0,12 g mieszanki.",
+   "indications_verbatim": "Kolor piór.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: maltodekstryna, koncentrat białka sojowego, laktoza Składniki analityczne: białko surowe 27,0%, popiół surowy 0,1%, oleje i tłuszcze surowe 0%, włókno surowe 0,1%, lizyna 2,4%, metionina 0,6%, wapń 0,2%, fosfor 0,8%, sód 0,1%, wilgotność 5,3% Dodatki w 1 kg: dodatki sensoryczne: 2 a (iii) karotenoidy i ksantofile: E 161g kantaksantyna 66,7 g",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "florarutil 10g",
+     "capacity": "10 g",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florarutil-10g/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Florarutil-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "floratonyl",
+   "name": "Floratonyl",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "wzrost",
+    "pióra",
+    "odporność"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "odporność"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych ptaków. Składniki mieszanki wspomagają wzrost młodych ptaków, wpływają na upierzenie oraz witalność i reprodukcję. Hydrolizat miazgi wątrobowej dostarcza obok żelaza, witaminy A, D, K, witaminy z grupy B oraz witaminę C. Usprawniają metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają korzystnie na procesy odnowy nabłonków. Biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo- fosforowej. Podawanie mieszanki wpływa korzystnie na ptaki w okresie rekonwalescencji i osłabionego apetytu.",
+   "usage_verbatim": "2 krople mieszanki / 60 ml wody do picia (35 kropli / 1 L wody), podawać 1-2 razy w tygodniu, PAPUGI: – 2 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna (35 kropli / 75 ml wody i nasączyć 500 g ziarna), podawać 1 – 2 razy w tygodniu. 1 ml zawiera 20 kropli. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze. W przypadku stresu (transportowy, adaptacyjny, cieplny) lub rekonwalescencji dawkę można podwoić i podawać przez okres 3 dni.",
+   "indications_verbatim": "Wzrost. Pióra. Odporność.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: produkty uboczne pochodzenia zwierzęcego (ze świń), glikol propylenowy Składniki analityczne: białko surowe 20,2%, popiół surowy 0,1%, oleje i tłuszcze surowe 3,1%, włókno surowe 0%, wapń 0,01%, fosfor 0,33%, sód 0,08%, lizyna 0%, metionina 0%, wilgotność 71,6% Dodatki w 1 L: witaminy i pro-witaminy: E672 witamina A 10 000 000 IU, E671 witamina D3 1 000 000 IU, 3a700 witamina E 30 000 IU, witamina B1 1800 mg, witamina B2 2000 mg, 3a831 witamina B6 6000 mg, kwas nikotynowy 30 000 mg, D-pantotenian wapnia 6000 mg, witamina B12 30 mg; emulgatory i stabilizatory: E484 rycynolan glicerolopolietylenoglikolu 135 g; konserwanty: E200 kwas sorbowy 1,5 g, E330 kwas cytrynowy 0,5 g",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "floratonyl 15ml",
+     "capacity": "15 ml",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floratonyl-15ml/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/produkty_2000px_jednakowa_wysokosc_szerokosc_dostosowana_pod_produkty.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [
+    "Packshot file name is a generic template name (produkty_2000px_…png) — confirm the image shows Floratonyl."
+   ],
+   "vet_context_verbatim": null
+  },
+  {
+   "family_slug": "floratransit",
+   "name": "Floratransit",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "przewód pokarmowy",
+    "flora jelitowa"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "species_evidence": "Dla ptaków ozdobnych.",
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "needs_evidence": [],
+   "key_ingredients": [],
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca – mineralna jest dodatkiem do karmy. Wpływa na funkcjonowanie przewodu pokarmowego, na prawidłową konsystencję odchodów, dostarcza organizmowi elektrolitów. Osłania przewód pokarmowy oraz działa korzystnie na rozwój prawidłowej flory jelitowej. Ogranicza utratę wody przez ścianę jelita.",
+   "usage_verbatim": "1 miarka mieszanki / 40 g papki pokarmowej. 1 miarka zawiera ok. 0,12 g mieszanki. Uwaga: mieszankę podawać w postaci papki, ponieważ nie rozpuszcza się w wodzie. Po otwarciu przechowywać w suchym i chłodnym miejscu.",
+   "indications_verbatim": "Przewód pokarmowy. Flora jelitowa.",
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "precautions_verbatim": null,
+   "composition_verbatim": "Skład: tlenek magnezu, chlorek sodu Składniki analityczne: magnez 2,1%, sód 1,5%, lizyna 0%, metionina 0%, wapń 0%, fosfor 0% Dodatki w 1 kg: substancje wiążące i przeciwzbrylające: E558 bentonit-montmorylonit 955 g",
+   "notes_verbatim": null,
+   "variants": [
+    {
+     "title": "floratransit 10g",
+     "capacity": "10 g",
+     "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floratransit-10g/",
+     "woo_id": null,
+     "woo_path": null,
+     "price_pln": null,
+     "regular_price_pln": null,
+     "in_stock": null,
+     "packshot_url": "https://eurowet.pl/wp-content/uploads/2018/07/Floratransit-1.png",
+     "en_page_path": null
+    }
+   ],
+   "related_on_site": [],
+   "documents": [],
+   "data_issues": [],
+   "vet_context_verbatim": null
+  }
+ ],
+ "unmatched_woo": []
+}

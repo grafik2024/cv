@@ -32,7 +32,14 @@ if ( ! is_array( $cats ) || ! $cats ) {
 		</div>
 		<ul class="ew-cat-tiles ew-list-reset" role="list">
 			<?php foreach ( $cats as $cat ) : ?>
-				<?php $thumb = (int) get_term_meta( $cat->term_id, 'thumbnail_id', true ); ?>
+				<?php
+				// Category image: the category thumbnail, otherwise the packshot of the first product in the category.
+				$thumb = (int) get_term_meta( $cat->term_id, 'thumbnail_id', true );
+				if ( ! $thumb ) {
+					$first = get_posts( array( 'post_type' => 'product', 'post_status' => 'publish', 'posts_per_page' => 1, 'fields' => 'ids', 'no_found_rows' => true, 'orderby' => array( 'menu_order' => 'ASC', 'date' => 'ASC' ), 'meta_key' => '_thumbnail_id', 'tax_query' => array( array( 'taxonomy' => 'product_cat', 'terms' => $cat->term_id ) ) ) ); // phpcs:ignore WordPress.DB.SlowDBQuery
+					$thumb = $first ? (int) get_post_thumbnail_id( $first[0] ) : 0;
+				}
+				?>
 				<li class="ew-cat-tile">
 					<div class="ew-cat-tile__media" aria-hidden="true">
 						<?php echo $thumb ? ew_theme_image( $thumb, 'ew-card', 'tile', array( 'alt' => '' ) ) : ew_theme_ui_icon( 'paw' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>

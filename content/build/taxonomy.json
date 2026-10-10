@@ -1,0 +1,578 @@
+{
+ "species": [
+  {
+   "slug": "pies",
+   "name": {
+    "pl": "Psy",
+    "en": "Dogs",
+    "fr": "Chiens",
+    "ua": "Собаки"
+   },
+   "meta": {
+    "icon": "dog",
+    "label_plural": "psy"
+   }
+  },
+  {
+   "slug": "kot",
+   "name": {
+    "pl": "Koty",
+    "en": "Cats",
+    "fr": "Chats",
+    "ua": "Коти"
+   },
+   "meta": {
+    "icon": "cat",
+    "label_plural": "koty"
+   }
+  },
+  {
+   "slug": "male-ssaki",
+   "name": {
+    "pl": "Małe ssaki",
+    "en": "Small mammals",
+    "fr": "Petits mammifères",
+    "ua": "Дрібні ссавці"
+   },
+   "meta": {
+    "icon": "small-mammal"
+   }
+  },
+  {
+   "slug": "ptaki-ozdobne",
+   "name": {
+    "pl": "Ptaki ozdobne",
+    "en": "Pet birds",
+    "fr": "Oiseaux de compagnie",
+    "ua": "Декоративні птахи"
+   },
+   "meta": {
+    "icon": "bird"
+   }
+  },
+  {
+   "slug": "golebie",
+   "name": {
+    "pl": "Gołębie",
+    "en": "Pigeons",
+    "fr": "Pigeons",
+    "ua": "Голуби"
+   },
+   "meta": {
+    "icon": "bird"
+   }
+  },
+  {
+   "slug": "zolwie",
+   "name": {
+    "pl": "Żółwie",
+    "en": "Turtles",
+    "fr": "Tortues",
+    "ua": "Черепахи"
+   },
+   "meta": {
+    "icon": "paw"
+   }
+  }
+ ],
+ "areas": [
+  {
+   "slug": "skora",
+   "name": {
+    "pl": "Skóra",
+    "en": "Skin",
+    "fr": "Peau",
+    "ua": "Шкіра"
+   },
+   "meta": {
+    "icon": "skin"
+   }
+  },
+  {
+   "slug": "siersc",
+   "name": {
+    "pl": "Sierść",
+    "en": "Coat",
+    "fr": "Pelage",
+    "ua": "Шерсть"
+   },
+   "meta": {
+    "icon": "coat"
+   }
+  },
+  {
+   "slug": "uszy",
+   "name": {
+    "pl": "Uszy",
+    "en": "Ears",
+    "fr": "Oreilles",
+    "ua": "Вуха"
+   },
+   "meta": {
+    "icon": "ear"
+   }
+  },
+  {
+   "slug": "oczy",
+   "name": {
+    "pl": "Oczy",
+    "en": "Eyes",
+    "fr": "Yeux",
+    "ua": "Очі"
+   },
+   "meta": {
+    "icon": "eye"
+   }
+  },
+  {
+   "slug": "jama-ustna-i-zeby",
+   "name": {
+    "pl": "Jama ustna i zęby",
+    "en": "Mouth and teeth",
+    "fr": "Bouche et dents",
+    "ua": "Ротова порожнина і зуби"
+   },
+   "meta": {
+    "icon": "tooth"
+   }
+  },
+  {
+   "slug": "lapy-i-pazury",
+   "name": {
+    "pl": "Łapy i pazury",
+    "en": "Paws and claws",
+    "fr": "Pattes et griffes",
+    "ua": "Лапи і кігті"
+   },
+   "meta": {
+    "icon": "paw"
+   }
+  },
+  {
+   "slug": "stawy",
+   "name": {
+    "pl": "Stawy",
+    "en": "Joints",
+    "fr": "Articulations",
+    "ua": "Суглоби"
+   },
+   "meta": {
+    "icon": "paw"
+   }
+  },
+  {
+   "slug": "uklad-pokarmowy",
+   "name": {
+    "pl": "Układ pokarmowy",
+    "en": "Digestion",
+    "fr": "Digestion",
+    "ua": "Травлення"
+   },
+   "meta": {
+    "icon": "leaf"
+   }
+  },
+  {
+   "slug": "watroba",
+   "name": {
+    "pl": "Wątroba",
+    "en": "Liver",
+    "fr": "Foie",
+    "ua": "Печінка"
+   },
+   "meta": {
+    "icon": "leaf"
+   }
+  },
+  {
+   "slug": "uklad-moczowy",
+   "name": {
+    "pl": "Układ moczowy",
+    "en": "Urinary tract",
+    "fr": "Voies urinaires",
+    "ua": "Сечовидільна система"
+   },
+   "meta": {
+    "icon": "drop"
+   }
+  },
+  {
+   "slug": "serce",
+   "name": {
+    "pl": "Serce",
+    "en": "Heart",
+    "fr": "Cœur",
+    "ua": "Серце"
+   },
+   "meta": {
+    "icon": "shield"
+   }
+  },
+  {
+   "slug": "odpornosc",
+   "name": {
+    "pl": "Odporność",
+    "en": "Immunity",
+    "fr": "Immunité",
+    "ua": "Імунітет"
+   },
+   "meta": {
+    "icon": "shield"
+   }
+  },
+  {
+   "slug": "kondycja",
+   "name": {
+    "pl": "Kondycja i witalność",
+    "en": "Condition and vitality",
+    "fr": "Forme et vitalité",
+    "ua": "Форма і життєва сила"
+   },
+   "meta": {
+    "icon": "leaf"
+   }
+  },
+  {
+   "slug": "stres-i-zachowanie",
+   "name": {
+    "pl": "Stres i zachowanie",
+    "en": "Stress and behaviour",
+    "fr": "Stress et comportement",
+    "ua": "Стрес і поведінка"
+   },
+   "meta": {
+    "icon": "paw"
+   }
+  },
+  {
+   "slug": "rozrod",
+   "name": {
+    "pl": "Ciąża i wychowanie młodych",
+    "en": "Pregnancy and young animals",
+    "fr": "Gestation et jeunes",
+    "ua": "Вагітність і молодняк"
+   },
+   "meta": {
+    "icon": "paw"
+   }
+  },
+  {
+   "slug": "inne",
+   "name": {
+    "pl": "Inne",
+    "en": "Other",
+    "fr": "Autres",
+    "ua": "Інше"
+   },
+   "meta": {
+    "icon": "paw",
+    "order": 99
+   }
+  }
+ ],
+ "hubs": [
+  {
+   "slug": "skora-i-siersc",
+   "name": {
+    "pl": "Skóra i sierść",
+    "en": "Skin and coat",
+    "fr": "Peau et pelage",
+    "ua": "Шкіра і шерсть"
+   },
+   "meta": {
+    "hub_type": "topic",
+    "icon": "skin"
+   },
+   "description": {
+    "pl": "Świąd, suchość, łupież, przetłuszczanie, linienie i codzienna pielęgnacja skóry i sierści psów i kotów — oraz sygnały, przy których potrzebna jest wizyta u lekarza weterynarii."
+   }
+  },
+  {
+   "slug": "uszy",
+   "name": {
+    "pl": "Uszy",
+    "en": "Ears",
+    "fr": "Oreilles",
+    "ua": "Вуха"
+   },
+   "meta": {
+    "hub_type": "topic",
+    "icon": "ear"
+   },
+   "description": {
+    "pl": "Jak bezpiecznie czyścić uszy psa i kota, jak często to robić i co powinno skłonić do wizyty u lekarza weterynarii."
+   }
+  },
+  {
+   "slug": "oczy",
+   "name": {
+    "pl": "Oczy",
+    "en": "Eyes",
+    "fr": "Yeux",
+    "ua": "Очі"
+   },
+   "meta": {
+    "hub_type": "topic",
+    "icon": "eye"
+   },
+   "description": {
+    "pl": "Codzienna higiena oczu i okolic oczu, przemywanie, wydzielina i przebarwienia sierści pod oczami."
+   }
+  },
+  {
+   "slug": "jama-ustna-i-zeby",
+   "name": {
+    "pl": "Jama ustna i zęby",
+    "en": "Mouth and teeth",
+    "fr": "Bouche et dents",
+    "ua": "Ротова порожнина і зуби"
+   },
+   "meta": {
+    "hub_type": "topic",
+    "icon": "tooth"
+   },
+   "description": {
+    "pl": "Szczotkowanie zębów, płytka nazębna, nieświeży oddech i domowa higiena jamy ustnej psów i kotów."
+   }
+  },
+  {
+   "slug": "higiena-i-kapiel",
+   "name": {
+    "pl": "Kąpiel i higiena",
+    "en": "Bathing and hygiene",
+    "fr": "Bain et hygiène",
+    "ua": "Купання і гігієна"
+   },
+   "meta": {
+    "hub_type": "topic",
+    "icon": "drop"
+   },
+   "description": {
+    "pl": "Jak kąpać psa i kota, jak dobrać szampon, terapia szamponowa, szampon na sucho i higiena na co dzień."
+   }
+  },
+  {
+   "slug": "pielegnacja-i-opieka",
+   "name": {
+    "pl": "Pielęgnacja i opieka",
+    "en": "Grooming and care",
+    "fr": "Soins et toilettage",
+    "ua": "Догляд і опіка"
+   },
+   "meta": {
+    "hub_type": "topic",
+    "icon": "paw"
+   },
+   "description": {
+    "pl": "Czesanie, przycinanie pazurów, podawanie leków, opieka nad starszym zwierzęciem, podróże i ochrona przed pasożytami zewnętrznymi."
+   }
+  },
+  {
+   "slug": "zywienie-i-suplementacja",
+   "name": {
+    "pl": "Żywienie i suplementacja",
+    "en": "Nutrition and supplements",
+    "fr": "Alimentation et compléments",
+    "ua": "Харчування і добавки"
+   },
+   "meta": {
+    "hub_type": "topic",
+    "icon": "leaf"
+   },
+   "description": {
+    "pl": "Witaminy i minerały, karmy uzupełniające, okres ciąży i wzrostu, rekonwalescencja i wsparcie trawienia."
+   }
+  },
+  {
+   "slug": "psy",
+   "name": {
+    "pl": "Psy",
+    "en": "Dogs",
+    "fr": "Chiens",
+    "ua": "Собаки"
+   },
+   "meta": {
+    "hub_type": "species",
+    "species_slug": "pies",
+    "icon": "dog"
+   },
+   "description": {
+    "pl": "Porady o pielęgnacji i codziennej opiece nad psem — od szczeniaka po seniora."
+   }
+  },
+  {
+   "slug": "koty",
+   "name": {
+    "pl": "Koty",
+    "en": "Cats",
+    "fr": "Chats",
+    "ua": "Коти"
+   },
+   "meta": {
+    "hub_type": "species",
+    "species_slug": "kot",
+    "icon": "cat"
+   },
+   "description": {
+    "pl": "Porady o pielęgnacji i opiece nad kotem — sierść, oczy, uszy, zęby i żywienie."
+   }
+  },
+  {
+   "slug": "male-ssaki",
+   "name": {
+    "pl": "Małe ssaki",
+    "en": "Small mammals",
+    "fr": "Petits mammifères",
+    "ua": "Дрібні ссавці"
+   },
+   "meta": {
+    "hub_type": "species",
+    "species_slug": "male-ssaki",
+    "icon": "small-mammal"
+   },
+   "description": {
+    "pl": "Pielęgnacja skóry i sierści królików, świnek morskich i innych małych ssaków."
+   }
+  },
+  {
+   "slug": "ptaki",
+   "name": {
+    "pl": "Ptaki",
+    "en": "Birds",
+    "fr": "Oiseaux",
+    "ua": "Птахи"
+   },
+   "meta": {
+    "hub_type": "species",
+    "species_slug": "ptaki-ozdobne,golebie",
+    "icon": "bird"
+   },
+   "description": {
+    "pl": "Witaminy, minerały i aminokwasy dla ptaków ozdobnych i gołębi."
+   }
+  }
+ ],
+ "lines": [
+  {
+   "slug": "excellence",
+   "name": {
+    "pl": "Excellence"
+   }
+  },
+  {
+   "slug": "kolor-pielegnacja",
+   "name": {
+    "pl": "Kolor & Pielęgnacja"
+   }
+  },
+  {
+   "slug": "wita-vet",
+   "name": {
+    "pl": "Wita-Vet"
+   }
+  },
+  {
+   "slug": "vetinet",
+   "name": {
+    "pl": "Vetinet"
+   }
+  },
+  {
+   "slug": "optex",
+   "name": {
+    "pl": "Optex"
+   }
+  },
+  {
+   "slug": "stoma-zel",
+   "name": {
+    "pl": "Stoma-żel"
+   }
+  }
+ ],
+ "material_types": [
+  {
+   "slug": "katalog",
+   "name": {
+    "pl": "Katalogi",
+    "en": "Catalogues",
+    "fr": "Catalogues",
+    "ua": "Каталоги"
+   }
+  },
+  {
+   "slug": "ulotki",
+   "name": {
+    "pl": "Ulotki",
+    "en": "Leaflets",
+    "fr": "Brochures",
+    "ua": "Листівки"
+   }
+  }
+ ],
+ "product_cats": [
+  {
+   "slug": "dermokosmetyki-weterynaryjne",
+   "order": 1,
+   "description": {
+    "pl": "Grupa preparatów ułatwiających utrzymanie prawidłowego stanu skóry i sierści."
+   }
+  },
+  {
+   "slug": "produkty-do-pielegnacji-oczu-i-uszu",
+   "order": 2,
+   "description": {
+    "pl": "Nawilżają i łagodzą podrażnienia. Usuwają zanieczyszczenia."
+   }
+  },
+  {
+   "slug": "pielegnacja-jamy-ustnej-i-zebow",
+   "order": 3,
+   "description": {
+    "pl": "Zapobiegają powstawaniu kamienia nazębnego i nieprzyjemnego zapachu."
+   }
+  },
+  {
+   "slug": "kolekcja-kolorpielegnacja",
+   "order": 4,
+   "description": {
+    "pl": "Szampony, odżywki, spraye i preparaty ochronne do pielęgnacji sierści i skóry psów i kotów."
+   }
+  },
+  {
+   "slug": "karmy-uzupelniajace",
+   "order": 5,
+   "description": {
+    "pl": "Dostarczają odpowiednie ilości witamin i minerałów. Pozwalają utrzymać zwierzęta w dobrym stanie zdrowia przez cały okres życia."
+   }
+  },
+  {
+   "slug": "preparaty-wspomagajace-zdrowie",
+   "order": 6,
+   "description": {
+    "pl": "Ułatwiają utrzymanie dobrego stanu zdrowia zwierząt. Stosowane w zaburzeniach układu ruchowego i pokarmowego oraz wątroby, trzustki i nerek."
+   }
+  },
+  {
+   "slug": "preparaty-odstraszajace-pchly-i-kleszcze",
+   "order": 7,
+   "description": {
+    "pl": "Krople, spraye, pianki i szampony ochronne przeciw pchłom i kleszczom."
+   }
+  },
+  {
+   "slug": "preparaty-dla-ptakow-ozdobnych",
+   "order": 8,
+   "description": {
+    "pl": "Dostarczają niezbędnych witamin, związków mineralnych i aminokwasów."
+   }
+  },
+  {
+   "slug": "higiena",
+   "order": 9,
+   "description": {
+    "pl": "Preparaty myjące i czyszczące do ogólnego stosowania, takie jak żele do rąk, płyny myjące i spraye do powierzchni — do stosowania w warunkach domowych oraz w placówkach użytku publicznego."
+   }
+  }
+ ]
+}

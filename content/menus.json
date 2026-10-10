@@ -1,0 +1,199 @@
+{
+ "primary": {
+  "name": "Menu główne",
+  "items": [
+   {
+    "title": "Produkty",
+    "url": "/produkty/",
+    "children": [
+     {
+      "title": "Dermokosmetyki weterynaryjne",
+      "url": "/produkty/dermokosmetyki-weterynaryjne/"
+     },
+     {
+      "title": "Pielęgnacja oczu i uszu",
+      "url": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/"
+     },
+     {
+      "title": "Pielęgnacja jamy ustnej i zębów",
+      "url": "/produkty/pielegnacja-jamy-ustnej-i-zebow/"
+     },
+     {
+      "title": "Kolekcja Kolor & Pielęgnacja",
+      "url": "/produkty/kolekcja-kolorpielegnacja/"
+     },
+     {
+      "title": "Karmy uzupełniające",
+      "url": "/produkty/karmy-uzupelniajace/"
+     },
+     {
+      "title": "Preparaty wspomagające zdrowie",
+      "url": "/produkty/preparaty-wspomagajace-zdrowie/"
+     },
+     {
+      "title": "Ochrona przed pchłami i kleszczami",
+      "url": "/produkty/preparaty-odstraszajace-pchly-i-kleszcze/"
+     },
+     {
+      "title": "Preparaty dla ptaków",
+      "url": "/produkty/preparaty-dla-ptakow-ozdobnych/"
+     },
+     {
+      "title": "Higiena",
+      "url": "/produkty/higiena/"
+     }
+    ]
+   },
+   {
+    "title": "Dobierz produkt",
+    "url": "/potrzeby/"
+   },
+   {
+    "title": "Porady i wiedza",
+    "url": "/porady/",
+    "children": [
+     {
+      "title": "Skóra i sierść",
+      "url": "/porady/skora-i-siersc/"
+     },
+     {
+      "title": "Uszy",
+      "url": "/porady/uszy/"
+     },
+     {
+      "title": "Oczy",
+      "url": "/porady/oczy/"
+     },
+     {
+      "title": "Jama ustna i zęby",
+      "url": "/porady/jama-ustna-i-zeby/"
+     },
+     {
+      "title": "Kąpiel i higiena",
+      "url": "/porady/higiena-i-kapiel/"
+     },
+     {
+      "title": "Pielęgnacja i opieka",
+      "url": "/porady/pielegnacja-i-opieka/"
+     },
+     {
+      "title": "Żywienie i suplementacja",
+      "url": "/porady/zywienie-i-suplementacja/"
+     },
+     {
+      "title": "Psy",
+      "url": "/porady/psy/"
+     },
+     {
+      "title": "Koty",
+      "url": "/porady/koty/"
+     },
+     {
+      "title": "Małe ssaki",
+      "url": "/porady/male-ssaki/"
+     },
+     {
+      "title": "Ptaki",
+      "url": "/porady/ptaki/"
+     },
+     {
+      "title": "Składniki i technologie",
+      "url": "/skladniki/"
+     }
+    ]
+   },
+   {
+    "title": "Dla partnerów",
+    "url": "/wspolpraca-b2b/",
+    "children": [
+     {
+      "title": "Współpraca B2B",
+      "url": "/wspolpraca-b2b/"
+     },
+     {
+      "title": "Marka własna",
+      "url": "/marka-wlasna/"
+     },
+     {
+      "title": "Znajdź przedstawiciela",
+      "url": "/znajdz-przedstawiciela/"
+     },
+     {
+      "title": "Materiały do pobrania",
+      "url": "/pobierz/"
+     }
+    ]
+   },
+   {
+    "title": "O firmie",
+    "url": "/o-firmie/"
+   },
+   {
+    "title": "Kontakt",
+    "url": "/kontakt/"
+   }
+  ]
+ },
+ "footer": {
+  "name": "Stopka",
+  "items": [
+   {
+    "title": "Produkty",
+    "url": "/produkty/"
+   },
+   {
+    "title": "Dobierz produkt",
+    "url": "/potrzeby/"
+   },
+   {
+    "title": "Porady i wiedza",
+    "url": "/porady/"
+   },
+   {
+    "title": "Składniki",
+    "url": "/skladniki/"
+   },
+   {
+    "title": "Aktualności",
+    "url": "/aktualnosci/"
+   },
+   {
+    "title": "Współpraca B2B",
+    "url": "/wspolpraca-b2b/"
+   },
+   {
+    "title": "Marka własna",
+    "url": "/marka-wlasna/"
+   },
+   {
+    "title": "Znajdź przedstawiciela",
+    "url": "/znajdz-przedstawiciela/"
+   },
+   {
+    "title": "Materiały do pobrania",
+    "url": "/pobierz/"
+   },
+   {
+    "title": "O firmie",
+    "url": "/o-firmie/"
+   },
+   {
+    "title": "Kontakt",
+    "url": "/kontakt/"
+   }
+  ]
+ },
+ "legal": {
+  "name": "Informacje prawne",
+  "items": [
+   {
+    "title": "Polityka prywatności",
+    "url": "/polityka-prywatnosci/"
+   },
+   {
+    "title": "Formularz zwrotu",
+    "url": "/formularz-zwrotu/"
+   }
+  ]
+ }
+}

@@ -17,6 +17,34 @@ final class Routing {
 		add_filter( 'request', array( self::class, 'resolve' ), 20 );
 		add_action( 'init', array( self::class, 'addRewriteRules' ), 20 );
 		add_filter( 'query_vars', static fn( $v ) => array_merge( (array) $v, array( 'ew_llms' ) ) );
+		add_filter( 'rewrite_rules_array', array( self::class, 'categoryRules' ), 99 );
+	}
+
+	/**
+	 * WooCommerce drops product-category rules whose base equals the product base (/produkty/%product_cat%/), so
+	 * /produkty/{kategoria}/ would 404. Categories here are flat, products always have two segments, so a single
+	 * segment after /produkty/ is unambiguous: restore it (plus pagination) for the default language.
+	 *
+	 * @param array<string, string> $rules
+	 * @return array<string, string>
+	 */
+	public static function categoryRules( $rules ) {
+		if ( ! is_array( $rules ) || ! taxonomy_exists( 'product_cat' ) ) {
+			return $rules;
+		}
+		$perma = (array) get_option( 'woocommerce_permalinks', array() );
+		$base  = trim( (string) ( $perma['category_base'] ?? '' ), '/' );
+		$pbase = trim( (string) ( $perma['product_base'] ?? '' ), '/' );
+		if ( '' === $base || 0 !== strpos( $pbase, $base . '/%product_cat%' ) ) {
+			return $rules;
+		}
+		$lang = function_exists( 'pll_default_language' ) ? '&lang=' . pll_default_language() : '';
+		$q    = preg_quote( $base, '#' );
+		$add  = array(
+			$q . '/(?!page/|feed/)([^/]+)/page/?([0-9]{1,})/?$' => 'index.php?product_cat=$matches[1]&paged=$matches[2]' . $lang,
+			$q . '/(?!page/|feed/|feed$|page$)([^/]+)/?$'       => 'index.php?product_cat=$matches[1]' . $lang,
+		);
+		return $add + $rules;
 	}
 
 	/**

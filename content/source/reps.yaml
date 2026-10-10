@@ -1,0 +1,52 @@
+# Source: https://eurowet.pl/kontakt/ (2026-10) — names, roles, regions, e-mails and phones exactly as published there.
+# To confirm with Eurowet before launch: current assignments and consent to publish photos (no photos imported).
+- name: "Tomasz Wierucki"
+  first_name: "Tomasz"
+  last_name: "Wierucki"
+  position: "Koordynator sprzedaży"
+  email: "tomaszwierucki@eurowet.pl"
+  phone: "+48 600 052 636"
+  voivodeships: [lodzkie, wielkopolskie]
+- name: "Wojciech Farmus"
+  first_name: "Wojciech"
+  last_name: "Farmus"
+  position: "Koordynator regionu"
+  email: "wojciechfarmus@eurowet.pl"
+  phone: "+48 660 631 609"
+  voivodeships: [pomorskie, kujawsko-pomorskie, warminsko-mazurskie, podlaskie]
+- name: "Wojciech Strugała"
+  first_name: "Wojciech"
+  last_name: "Strugała"
+  position: "Koordynator regionu"
+  email: "wojciechstrugala@eurowet.pl"
+  phone: "+48 539 913 852"
+  voivodeships: [zachodniopomorskie, wielkopolskie, lubuskie, dolnoslaskie]
+- name: "Michał Koźlik"
+  first_name: "Michał"
+  last_name: "Koźlik"
+  position: "Koordynator regionu"
+  email: "michalkozlik@eurowet.pl"
+  phone: "+48 662 421 329"
+  voivodeships: [slaskie, opolskie, malopolskie, podkarpackie, swietokrzyskie]
+- name: "Emil Szymulski"
+  first_name: "Emil"
+  last_name: "Szymulski"
+  position: "Koordynator regionu"
+  email: "emilszymulski@eurowet.pl"
+  phone: "+48 668 306 552"
+  voivodeships: [mazowieckie, lubelskie]
+- name: "Natalia Ozierańska"
+  first_name: "Natalia"
+  last_name: "Ozierańska"
+  position: "Przedstawiciel handlowy"
+  email: "nataliaozieranska@eurowet.pl"
+  phone: "+48 787 941 896"
+  voivodeships: [dolnoslaskie, opolskie]
+- name: "Andrzej Jakubowski"
+  first_name: "Andrzej"
+  last_name: "Jakubowski"
+  position: "Eksport"
+  email: "andrzej.jakubowski@eurowet.pl"
+  phone: "+48 602 755 210"
+  voivodeships: []
+  segments: [eksport]
