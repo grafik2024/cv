@@ -1,0 +1,565 @@
+{
+ "guide": {
+  "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+  "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+  "hub": "zywienie-i-suplementacja",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "kondycja",
+   "odpornosc"
+  ],
+  "stage": "informational",
+  "decision": "new",
+  "legacy_path": "",
+  "merged_from": [],
+  "needs": [
+   "witaminy-i-mineraly-na-co-dzien",
+   "odpornosc",
+   "wsparcie-wzroku"
+  ],
+  "extra_families": [],
+  "brief": "New. Complementary feeds vs complete diet; consult vet before supplementing; no doses except as quoted per product."
+ },
+ "source_files": [],
+ "needs": {
+  "witaminy-i-mineraly-na-co-dzien": {
+   "slug": "witaminy-i-mineraly-na-co-dzien",
+   "title": "Witaminy i minerały na co dzień",
+   "scope": "IN: codzienna suplementacja witamin i minerałów zdrowego zwierzęcia (w tym królik, kawia, chomik, żółw). OUT: ciąża/wzrost (ciaza-karmienie-i-wzrost-mlodych), osłabienie i senior (oslabienie-rekonwalescencja-i-senior), ptaki (ptaki-witaminy-i-legi).",
+   "red_flag_level": "none"
+  },
+  "odpornosc": {
+   "slug": "odpornosc",
+   "title": "Odporność",
+   "scope": "IN: wsparcie odporności karmą uzupełniającą (dieta, kwasy omega, witaminy, probiotyk). OUT: częste infekcje, gorączka (red flags), osłabienie po chorobie (oslabienie-rekonwalescencja-i-senior).",
+   "red_flag_level": "caution"
+  },
+  "wsparcie-wzroku": {
+   "slug": "wsparcie-wzroku",
+   "title": "Wsparcie wzroku",
+   "scope": "IN: karma uzupełniająca wspierająca narząd wzroku, starsze zwierzę z pogarszającym się widzeniem (po wizycie u lekarza). OUT: przemywanie i nawilżanie oczu (przemywanie-oczu-i-wydzielina, suche-oczy-i-nos); nagła utrata wzroku, mętne oko (red flags).",
+   "red_flag_level": "caution"
+  }
+ },
+ "families": {
+  "wita-vet-complex-1g": {
+   "family_slug": "wita-vet-complex-1g",
+   "name": "WITA-VET Complex 1g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "Dzienna dawka witamin i minerałów",
+    "Wzrost | Praca | Witalność | Ciąża",
+    "Junior+ Adult, Ca/P 1,3"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta 1 tab. / do 10 kg m.c. / 1 raz dziennie.\nPsy dorosłe 1 tab. / do 10 kg m.c. / 1 raz dziennie.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-1g-80szt/"
+  },
+  "wita-vet-energia-kot": {
+   "family_slug": "wita-vet-energia-kot",
+   "name": "WITA-VET ENERGIA",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "kot",
+    "kocię"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST",
+    "WITALNOŚĆ",
+    "CIĄŻA",
+    "LAKTACJA"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "WZROST | WITALNOŚĆ | CIĄŻA | LAKTACJA",
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla kociąt, kotek ciężarnych i karmiących, kotów dorosłych wykazujących spadek formy, osłabienie apetytu lub żywionych nieodpowiednią karmą. Zwiększa witalność i poprawia kondycję. Korzystnie wpływa na przemiany energetyczne, mineralizację kości Produkt wyjątkowo smaczny, chętnie przyjmowany przez zwierzęta.",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą.\nKocięta | Do 3 miesiąca | 1 tab./dzień\nDo 10 miesiąca | 2 tab./dzień\nKotki ciężarne lub w okresie laktacji | 2 tab./dzień\nKoty dorosłe (m.c. poniżej 4 kg) | 1 tab. / dzień\nKoty dorosłe (m.c. powyżej 4 kg) | 2 tab. / dzień",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-kot-junioradult-energia-0195g-30szt/"
+  },
+  "wita-tonyl-gryzonie": {
+   "family_slug": "wita-tonyl-gryzonie",
+   "name": "WITA-TONYL",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "gryzonie/małe ssaki",
+    "żółwie"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla królików, żółwi, kawii, chomików, myszy",
+   "badges_verbatim": [
+    "WITALNOŚĆ",
+    "WZROST",
+    "CIĄŻA"
+   ],
+   "intended_for_verbatim": "Dla królików, żółwi, kawii, chomików, myszy.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Rekonwalescencja.",
+   "properties_verbatim": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt. Jest przeznaczona do stosowania w okresie wzrostu, ciąży, laktacji. Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu. Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu. Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- króliki 3-5 kropli / dzień\n- kawie i chomiki 2 kropli / dzień\n- żółwie 1 kropla / tydzień / 100 g m.c.\n1 ml zawiera 20 kropli.\nZawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": "Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-tonyl-gryzonie-30ml/"
+  },
+  "wita-vet-complex-3-2g": {
+   "family_slug": "wita-vet-complex-3-2g",
+   "name": "WITA-VET Complex 3,2g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+    "JUNIOR + ADULT | CA/P 2"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta 1 tab. / do 15-20 kg m.c. / 1 raz dziennie.\nPsy dorosłe 1 tab. / do 15-20 kg m.c. / 1 raz dziennie.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-32g-30szt/"
+  },
+  "wita-vet-complex-8g": {
+   "family_slug": "wita-vet-complex-8g",
+   "name": "WITA-VET Complex 8g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+    "JUNIOR + ADULT | CA/P 2"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta: 1 tab./do 20kg m.c./1 raz dziennie.\nPsy dorosłe: 1 tab./ 40kg m.c./1 raz dziennie",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-8g-30szt/"
+  },
+  "olej-z-lososia": {
+   "family_slug": "olej-z-lososia",
+   "name": "Olej z łososia",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WYSOKA ZAWARTOŚĆ KWASÓW OMEGA 3 I 6",
+    "ŹRÓDŁO EPA I DHA",
+    "WSPIERA SKÓRĘ, SIERŚĆ I ODPORNOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Łamliwość, matowienie sierści, utrata włosa, łupież, suchość skóry. Podrażnienia skóry, uczulenia, egzemy. Zaburzenia systemu odpornościowego, reprodukcja.",
+   "properties_verbatim": "Olej z łososia stanowi źródło kwasów tłuszczowych omega-3 (EPA i DHA), korzystnie wpływających na wiele procesów metabolicznych w organizmie psa i kota. Kwas EPA wspiera naturalne procesy zachodzące w organizmie psów i kotów, natomiast kwas DHA jest ważnym składnikiem błon komórkowych mózgu i siatkówki oka. Olej z łososia wpływa na równowagę między kwasami tłuszczowymi omega-3 i omega-6 oraz znacząco obniża poziom cholesterolu we krwi. Regularne stosowanie preparatu powoduje, że sierść Twojego psa lub kota staje się gęsta, sprężysta i lśniąca. Olej z łososia jest polecany przy łamliwości i matowieniu sierści, nadmiernej utracie włosa, łupieżu, suchości skóry. Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "usage_verbatim": "Psy i koty: poniżej 5 kg: 2,5 ml / dziennie od 5 do 15kg: 5 ml / dziennie od 15 do 30 kg: 10 ml / dziennie powyżej 30 kg: 15 ml / dziennie. Jedno pełne naciśnięcie pompki dozuje 1,25 ml preparatu.\nPo otwarciu przechowywać w lodówce, w oryginalnym opakowaniu.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "page_path": "/produkty/karmy-uzupelniajace/olej-z-lososia/"
+  },
+  "wita-tonyl-psy-koty": {
+   "family_slug": "wita-tonyl-psy-koty",
+   "name": "WITA-TONYL",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów, kotów",
+   "badges_verbatim": [
+    "WITALNOŚĆ",
+    "WZROST",
+    "CIĄŻA"
+   ],
+   "intended_for_verbatim": "Dla psów, kotów.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Rekonwalescencja.",
+   "properties_verbatim": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt. Jest przeznaczona do stosowania w okresie wzrostu, ciąży, laktacji. Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu. Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu.. Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.\nZawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": "Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-tonyl-psykoty-30ml/"
+  },
+  "wita-vet-senior": {
+   "family_slug": "wita-vet-senior",
+   "name": "WITA-VET senior",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "ODPORNOŚĆ",
+    "WITALNOŚĆ",
+    "WZROK",
+    "SMAKOŁYK"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Dzienna dawka witamin i minerałów . Odporność. Witalność. Wzrok. Smakołyk.",
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla psów powyżej 8 roku życia. Korzystnie wpływa na zwierzęta w stanach osłabienia oraz na poprawę witalności. Zawiera związki mineralne, witaminy, które dodają energii, podtrzymują witalność i chronią organizm przed wolnymi rodnikami.\nLuteina utrzymuje wzrok w dobrym stanie.\nKoenzym Q10 stymuluje odporność i wzmacnia pracę serca.\nWitamina E bierze udział w metabolizmie nienasyconych kwasów tłuszczowych zapobiegając tworzeniu się wolnych rodników.\nWitamina C chroni komórki przed działaniem szkodliwych produktów przemiany materii. Bierze udział w syntezie hormonów.",
+   "usage_verbatim": "1 tab./ do 10 kg m.c./ 1 raz dziennie",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-senior-80szt/"
+  },
+  "probiotyk-pies": {
+   "family_slug": "probiotyk-pies",
+   "name": "Probiotyk dla psów",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies"
+   ],
+   "subtitle_verbatim": "Naturalna regulacja flory bakteryjnej dla psów",
+   "badges_verbatim": [
+    "WZMACNIA PRAWIDŁOWE FUNKCJONOWANIE JELITOWEJ MIKROFLORY BAKTERYJNEJ",
+    "WSPOMAGA TRAWIENIE I PERYSTALTYKĘ JELIT",
+    "USUWA TOKSYCZNE ZWIĄZKI Z ORGANIZMU",
+    "DOSTARCZA ZWIĄZKI MINERALNE I WITAMINY"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Stosować podczas: antybiotykoterapii, biegunek, zaparć, zaburzeń trawienia, odrobaczania, chorób zakaźnych, spadku odporności, stresu, nieprzyjemnego zapachu z jamy ustnej.",
+   "properties_verbatim": "Probiotyk to połączenie mikroorganizmów prozdrowotnych naturalnie występujących w przewodzie pokarmowym i koncentratu witaminowo – mineralno – aminokwasowego. Działa ochronnie na śluzówkę jelit tworząc barierę przed chorobotwórczymi szczepami bakterii (m.in.: Escherichi coli, Salmonella, Mycobacterium, Shigella, Bacteroides, Proteus, Streptococcus, Clostridium, Pseudomonas, Vibrio), wirusami (rotawirus i inne).",
+   "usage_verbatim": null,
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-wspomagajace-zdrowie/probiotyk-15-saszetek-pies/"
+  },
+  "probiotyk-kot": {
+   "family_slug": "probiotyk-kot",
+   "name": "Probiotyk dla kotów",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "kot"
+   ],
+   "subtitle_verbatim": "Naturalna regulacja flory bakteryjnej dla kotów",
+   "badges_verbatim": [
+    "WZMACNIA PRAWIDŁOWE FUNKCJONOWANIE JELITOWEJ MIKROFLORY BAKTERYJNEJ",
+    "WSPOMAGA TRAWIENIE I PERYSTALTYKĘ JELIT",
+    "USUWA TOKSYCZNE ZWIĄZKI Z ORGANIZMU",
+    "DOSTARCZA ZWIĄZKI MINERALNE I WITAMINY"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "Stosować podczas: antybiotykoterapii, biegunek, zaparć, zaburzeń trawienia, odrobaczania, chorób zakaźnych, spadku odporności, stresu, nieprzyjemnego zapachu z jamy ustnej.",
+   "properties_verbatim": "Probiotyk to połączenie mikroorganizmów prozdrowotnych naturalnie występujących w przewodzie pokarmowym i koncentratu witaminowo – mineralno – aminokwasowego. Działa ochronnie na śluzówkę jelit tworząc barierę przed chorobotwórczymi szczepami bakterii (m.in.: Escherichi coli, Salmonella, Mycobacterium, Shigella, Bacteroides, Proteus, Streptococcus, Clostridium, Pseudomonas, Vibrio), wirusami (rotawirus i inne).",
+   "usage_verbatim": "Przeznaczony dla wszystkich ras i grup wiekowych kotów. Preparat podaje się w karmie lub wodzie do picia: - koty do 5 kg masy ciała – ½ saszetki co 3 dni - koty od 5 do 20 kg masy ciała – 1 saszetka co 3 dni",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-wspomagajace-zdrowie/probiotyk-15-saszetek-kot/"
+  },
+  "witazium": {
+   "family_slug": "witazium",
+   "name": "WITAZIUM",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów wspomagająca wzrok",
+   "badges_verbatim": [
+    "opóźnia zmętnienie soczewki",
+    "chroni narząd wzroku",
+    "utrzymuje sprawne funkcjonowanie siatkówki"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Chroni narząd wzroku. Opóźnia zmętnienie soczewki. Utrzymuje sprawne funkcjonowanie siatkówki.",
+   "properties_verbatim": "WITAZIUM zawiera taurynę, która wspomaga sprawne funkcjonowanie soczewki i siatkówki oka. Wyciąg z kurkumy chroni narząd wzroku poprzez działanie przeciwzapalne. Karotenoidy (luteina i zeaksantyna) wpływają na utrzymanie i poprawę zdolności widzenia. Dysmutaza ponadtlenkowa uaktywnia naturalne procesy chroniące narząd wzroku. Witamina E i C oraz oligo-elemeny (cynk, selen) usprawniają procesy metaboliczne zachodzące w oku.\nTauryna znajduje się w dużych ilościach w soczewce i siatkówce oka. Chroni wzrok przed szkodliwym działaniem promieni ultrafioletowych.\nTagetes erecta zawiera luteinę, zeaksantynę, które należą do naturalnych przeciwutleniaczy. Są obecne w dużych ilościach w siatkówce i soczewce oka. Absorbują światło niebieskie, które jest najbardziej szkodliwe dla wzroku. Luteina usprawnia zdolność widzenia.\nSkoncentrowany sok z melona naturalnie bogaty w dysmutazę ponadtlenkową wspomagającą naturalne procesy hamujące wytwarzanie wolnych rodników. Aktywuje substancje, które wstrzymują lub spowalniają procesy utleniania.\nKurkuma zawiera polifenol, który chroni narząd wzroku poprzez wielokierunkowe działanie przeciwzapalne. Redukuje wytwarzanie wolnych rodników za pomocą reakcji antyoksydacyjnych.\nWitamina C chroni komórki przed działaniem szkodliwych produktów przemiany materii. Bierze udział w syntezie hormonów.\nWitamina E bierze udział w metabolizmie nienasyconych kwasów tłuszczowych zapobiegając tworzeniu się wolnych rodników.\nCynk uczestniczy w przemianach witaminy A w barwnik pochłaniający światło.\nSelen jest niezbędny dla prawidłowej aktywności enzymatycznej przy eliminacji toksycznych produktów powstających w organizmie.",
+   "usage_verbatim": "Psy, koty | Dawkowanie\nPoniżej 5 kg | ½ tab. / co 2-gi dzień\nOd 5 kg do 10 kg | ½ tab. / dzień\nOd 11 do 18 kg | 1 tab. / dzień\nOd 19 do 25 kg | 1½ tab. / dzień\nOd 26 do 35 kg | 2 tab. / dzień\nPowyżej 36 kg | 2½ tab. / dzień",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Niska zawartość fosforu, potasu i sodu pozwala na stosowanie preparatu u zwierząt z niewydolnością serca lub nerek.",
+   "page_path": "/produkty/karmy-uzupelniajace/witazium-40szt/"
+  }
+ },
+ "all_guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "stage": "informational"
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "stage": "product"
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "product"
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "stage": "product"
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  }
+ ]
+}

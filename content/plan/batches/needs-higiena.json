@@ -1,0 +1,189 @@
+{
+ "batch": "higiena",
+ "needs": [
+  {
+   "slug": "higiena-rak-po-kontakcie-ze-zwierzetami",
+   "title": "Higiena rąk po kontakcie ze zwierzętami",
+   "batch": "higiena",
+   "species": [
+    "pies",
+    "kot",
+    "male-ssaki",
+    "ptaki-ozdobne"
+   ],
+   "areas": [
+    "inne"
+   ],
+   "priority": 35,
+   "red_flag_level": "none",
+   "scope": "IN: mycie rąk przed i po kontakcie ze zwierzętami, mycie przed kontaktem z żywnością, mycie zwierząt przed zabiegiem (placówki). OUT: kąpiel zwierzęcia (siersc-i-kapiel), powierzchnie i kuwety (czyszczenie-kuwety-klatki-i-powierzchni).",
+   "products": [
+    {
+     "family": "vetinet-higieniczny-plyn-myjacy-niebieski",
+     "role": "primary",
+     "evidence": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością."
+    },
+    {
+     "family": "vetinet-higieniczny-plyn-myjacy-fiolet",
+     "role": "similar",
+     "evidence": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością."
+    }
+   ]
+  },
+  {
+   "slug": "czyszczenie-kuwety-klatki-i-powierzchni",
+   "title": "Czyszczenie kuwety, klatki, transportera i powierzchni",
+   "batch": "higiena",
+   "species": [
+    "kot",
+    "pies",
+    "male-ssaki",
+    "ptaki-ozdobne"
+   ],
+   "areas": [
+    "inne"
+   ],
+   "priority": 40,
+   "red_flag_level": "none",
+   "scope": "IN: mycie kuwet, klatek, kojców, transporterów, akcesoriów i powierzchni; nieprzyjemny zapach w otoczeniu zwierzęcia. OUT: zapach od samego zwierzęcia (nieprzyjemny-zapach-skory-i-siersci).",
+   "products": [
+    {
+     "family": "vetinet-plyn-do-mycia-kuwet-klatek",
+     "role": "primary",
+     "evidence": "Polecany do mycia kuwet, klatek, kojców, transporterów i pozostałych akcesoriów używanych przez zwierzęta."
+    },
+    {
+     "family": "vetinet-plyn-do-powierzchni-zielony",
+     "role": "similar",
+     "evidence": "Polecany do higieny powierzchni."
+    }
+   ]
+  }
+ ],
+ "families": {
+  "vetinet-higieniczny-plyn-myjacy-niebieski": {
+   "family_slug": "vetinet-higieniczny-plyn-myjacy-niebieski",
+   "name": "VETINET higieniczny płyn myjący – niebieski",
+   "line": "Vetinet",
+   "product_type": "preparat higieniczny",
+   "category_slugs": [
+    "higiena"
+   ],
+   "species": [],
+   "body_areas": [
+    "skóra",
+    "inne"
+   ],
+   "subtitle_verbatim": "higieniczny płyn myjący",
+   "badges_verbatim": [
+    "z chlorheksydyną i olejkiem eukaliptusowym",
+    "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI",
+    "HIGIENA GABINETU I SPRZĘTU WETERYNARYJNEGO",
+    "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE SKUTECZNIE ZWALCZAJĄ DROBNOUSTROJE",
+    "PRZYJEMNY ZAPACH"
+   ],
+   "intended_for_verbatim": "Płyn myjący ogólnego zastosowania.",
+   "indications_verbatim": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością. Higiena gabinetu weterynaryjnego i sprzętu.",
+   "properties_verbatim": "Bez podrażnień skóry, błon śluzowych i ran. Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne. Posiada bardzo dobre właściwości myjące. Zalecany do powierzchni i ogólnego zastosowania.",
+   "usage_verbatim": "Na miejsce przeznaczone do mycia nanieść niewielką ilość płynu i rozprowadzić. Umyć i spłukać wodą. Czynność powtórzyć.",
+   "precautions_verbatim": "Unikać kontaktu z oczami. Przy nadwrażliwości na chlorheksydynę może wywołać alergiczne odczyny skórne.",
+   "vet_context_verbatim": "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI | HIGIENA GABINETU I SPRZĘTU WETERYNARYJNEGO",
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, CHLORHEXIDINE DIGLUCONATE, PEG 4 RAPESEEDAMIDE, GLICERIN, SILICONE QUATERIUM-17, LAURETH-9, POLYSORBATE 20, EUCALYPTUS RADIATA ESSENTIAL OIL, CITRIC ACID, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, CI42090",
+   "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-niebieski-1l/",
+   "in_shop": true
+  },
+  "vetinet-higieniczny-plyn-myjacy-fiolet": {
+   "family_slug": "vetinet-higieniczny-plyn-myjacy-fiolet",
+   "name": "VETINET higieniczny płyn myjący – fiolet",
+   "line": "Vetinet",
+   "product_type": "preparat higieniczny",
+   "category_slugs": [
+    "higiena"
+   ],
+   "species": [],
+   "body_areas": [
+    "skóra",
+    "inne"
+   ],
+   "subtitle_verbatim": "higieniczny płyn myjący",
+   "badges_verbatim": [
+    "z chlorheksydyną i olejkiem z lawendy",
+    "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI",
+    "HIGIENA GABINETU I SPRZĘTU WETERYNARYJNEGO",
+    "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE SKUTECZNIE ZWALCZAJĄ DROBNOUSTROJE",
+    "PRZYJEMNY ZAPACH"
+   ],
+   "intended_for_verbatim": "Płyn myjący ogólnego zastosowania.",
+   "indications_verbatim": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością. Higiena gabinetu weterynaryjnego i sprzętu.",
+   "properties_verbatim": "Bez podrażnień skóry, błon śluzowych i ran. Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne. Posiada bardzo dobre właściwości myjące. Zalecany do powierzchni i ogólnego zastosowania.",
+   "usage_verbatim": "Na miejsce przeznaczone do mycia nanieść niewielką ilość płynu i rozprowadzić. Umyć i spłukać wodą. Czynność powtórzyć.",
+   "precautions_verbatim": "Unikać kontaktu z oczami. Przy nadwrażliwości na chlorheksydynę może wywołać alergiczne odczyny skórne.",
+   "vet_context_verbatim": "NIEZBĘDNY PRZY MYCIU ZWIERZĄT PRZED ZABIEGAMI | HIGIENA GABINETU I SPRZĘTU WETERYNARYJNEGO",
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, CHLORHEXIDINE DIGLUCONATE, PEG 4 RAPESEEDAMIDE, GLICERIN, SILICONE QUATERIUM-17, LAURETH-9, POLYSORBATE 20, LAVANDULA ANGUSTIFOLIA (LAVENDER) OIL, PERFUM, CITRIC ACID, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, LINALOOL, CI42090, CI16255",
+   "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-fiolet-1l/",
+   "in_shop": true
+  },
+  "vetinet-plyn-do-mycia-kuwet-klatek": {
+   "family_slug": "vetinet-plyn-do-mycia-kuwet-klatek",
+   "name": "VETINET płyn do mycia kuwet, klatek",
+   "line": "Vetinet",
+   "product_type": "preparat higieniczny",
+   "category_slugs": [
+    "higiena"
+   ],
+   "species": [],
+   "body_areas": [
+    "inne"
+   ],
+   "subtitle_verbatim": "Higieniczny płyn do mycia kuwet, klatek, transporterów",
+   "badges_verbatim": [
+    "eliminuje nieprzyjemne zapachy",
+    "usuwa zanieczyszczenia biologiczne i mechaniczne",
+    "bardzo dobre właściwości myjące"
+   ],
+   "intended_for_verbatim": "Higieniczny płyn do mycia kuwet, klatek i innych akcesoriów przeznaczonych dla zwierząt.",
+   "indications_verbatim": "Polecany do mycia kuwet, klatek, kojców, transporterów i pozostałych akcesoriów używanych przez zwierzęta.",
+   "properties_verbatim": "VETINET doskonale eliminuje nieprzyjemne zapachy. Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne. Posiada bardzo dobre właściwości myjące. Polecany do mycia kuwet, klatek, kojców, transporterów i pozostałych akcesoriów używanych przez zwierzęta.",
+   "usage_verbatim": "Opróżnić i oczyścić zabrudzone powierzchnie. Spryskać preparatem całą powierzchnie. Pozostawić działaniu przez kilka minut. Przetrzeć powierzchnie wilgotną szmatką i osuszyć. W razie konieczności czynność powtórzyć.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Chlorhexidine Digluconate, Polysorbate 20, Eucalyptus Radiata Essential Oil, Citric Acid, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, CI19140, CI42090",
+   "page_path": "/produkty/higiena/vetinet-plyn-do-mycia-kuwet-klatek-500ml/",
+   "in_shop": true
+  },
+  "vetinet-plyn-do-powierzchni-zielony": {
+   "family_slug": "vetinet-plyn-do-powierzchni-zielony",
+   "name": "VETINET higieniczny płyn myjący do powierzchni codziennego użytku – zielony",
+   "line": "Vetinet",
+   "product_type": "preparat higieniczny",
+   "category_slugs": [
+    "higiena"
+   ],
+   "species": [],
+   "body_areas": [
+    "inne"
+   ],
+   "subtitle_verbatim": "higieniczny płyn myjący do powierzchni codziennego użytku",
+   "badges_verbatim": [
+    "z chlorheksydyną i olejkiem eukaliptusowym",
+    "SUBSTANCJE CZYNNE ZAWARTE W PRODUKCIE pomagają ZWALCZAć DROBNOUSTROJE",
+    "skuteczny i łatwy w użyciu",
+    "PRZYJEMNY ZAPACH",
+    "BEZ ROZCIEŃCZANIA"
+   ],
+   "intended_for_verbatim": null,
+   "indications_verbatim": "Higieniczny płyn myjący do powierzchni.",
+   "properties_verbatim": "VETINET doskonale eliminuje nieprzyjemne zapachy. Skutecznie usuwa zanieczyszczenia biologiczne i mechaniczne. Posiada bardzo dobre właściwości czyszczące. Polecany do higieny powierzchni.",
+   "usage_verbatim": "Spryskać preparatem miejsce przeznaczone do umycia. Nanieść preparat na miejsce przeznaczone do umycia. Pozostawić działaniu przez kilka minut. Przetrzeć wilgotną szmatką i osuszyć. W razie potrzeby czynność powtórzyć.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, PEG 4 RAPESEEDAMIDE, CHLORHEXIDINE DIGLUCONATE, POLYSORBATE 20, EUCALYPTUS RADIATA ESSENTIAL OIL, CITRIC ACID, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, CI19140, CI42090",
+   "page_path": "/produkty/higiena/vetinet-higieniczny-plyn-myjacy-do-powierzchni-codziennego-uzytku-zielony-500ml/",
+   "in_shop": true
+  }
+ }
+}

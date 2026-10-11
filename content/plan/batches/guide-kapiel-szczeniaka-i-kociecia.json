@@ -1,0 +1,364 @@
+{
+ "guide": {
+  "slug": "kapiel-szczeniaka-i-kociecia",
+  "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+  "hub": "higiena-i-kapiel",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "siersc",
+   "skora"
+  ],
+  "stage": "practical",
+  "decision": "new",
+  "legacy_path": "",
+  "merged_from": [],
+  "needs": [
+   "delikatna-kapiel-szczeniaka-i-kota"
+  ],
+  "extra_families": [],
+  "brief": "New. Age limits only as stated in product texts (e.g. Amiwet neem 'poniżej 3 miesiąca życia' precaution)."
+ },
+ "source_files": [],
+ "needs": {
+  "delikatna-kapiel-szczeniaka-i-kota": {
+   "slug": "delikatna-kapiel-szczeniaka-i-kota",
+   "title": "Delikatna kąpiel szczeniaka i kota",
+   "scope": "IN: pierwsza kąpiel szczeniaka, jaki szampon dla kota, łagodne mycie. OUT: mycie bez wody (mycie-bez-wody), problemy skóry (potrzeby z batcha skora). Kocięta: brak produktu wskazującego kocięta — nie obiecywać.",
+   "red_flag_level": "none"
+  }
+ },
+ "families": {
+  "kp-szampon-dla-szczeniat": {
+   "family_slug": "kp-szampon-dla-szczeniat",
+   "name": "Szampon dla szczeniąt",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon DLA SZCZENIĄT",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "DELIKATNIE MYJE",
+    "ŁAGODZI PODRAŻNIENIA",
+    "+ olejek z migdałowca, alantoina"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja skóry i sierści szczeniąt.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Zawarty w szamponie olejek z migdałowca sprawia, że jest bardzo dobrze tolerowany przez szczenięta. Sierść staje się miękka i błyszcząca. Alantoina łagodzi objawy związane z podrażnieniami. Tworzy warstwę chroniącą skórę przed drobnymi zranieniami, uszkodzeniami, otarciami i promieniami słonecznymi",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-szczenieta-200ml/"
+  },
+  "kp-szampon-dla-kotow": {
+   "family_slug": "kp-szampon-dla-kotow",
+   "name": "Szampon dla kotów",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "species": [
+    "kot"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "DELIKATNIE MYJE",
+    "+ Witamina E, olejek z lawendy"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "properties_verbatim": "Szampon zawiera łagodne związki powierzchniowo czynne wykazujące dobre właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie sierści i skóry. Ułatwia nawilżenie. Specjalna formuła szamponu pozwala na łatwe rozczesywanie włosa. Sierść staje się miękka i błyszcząca.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-dla-kotow-200ml/"
+  },
+  "kp-odzywka-bez-splukiwania": {
+   "family_slug": "kp-odzywka-bez-splukiwania",
+   "name": "Odżywka bez spłukiwania",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "odżywka/kosmetyk pielęgnacyjny",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja ODŻYWKA BEZ SPŁUKIWANIA DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "UŁATWIA ROZCZESYWANIE SIERŚCI",
+    "+ Betaina, kompleks nawilżający"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Odżywka do siersci i włosa.",
+   "properties_verbatim": "Profesjonalna odżywka rewitalizująca bez spłukiwania dla psów i kotów. Ułatwia rozczesywanie, dodaje objętości sierści i poprawia strukturę włosa. Powoduje, że sierść lepiej się układa oraz zapobiega powstawaniu filców i kołtunów. Doskonała dla wszystkich rodzajów sierści i włosa. Zalecana do sierści wymagającej wygładzenia, ułożenia, elektryzującej się i puszącej. Zawiera substancje aktywne, które wbudowują się w strukturę włosa, zapewniając jego wygładzenie, nawilżenie i połysk.",
+   "usage_verbatim": "Spryskać sierść odżywką i wyczesać.",
+   "precautions_verbatim": "W przypadku dostania się do oczu, spłukać letnią wodą.",
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-bez-splukiwania-200ml/"
+  }
+ },
+ "all_guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "stage": "informational"
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "stage": "product"
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "product"
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "stage": "product"
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  }
+ ]
+}

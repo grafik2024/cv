@@ -1,0 +1,422 @@
+{
+ "guide": {
+  "slug": "jak-czyscic-uszy-psa-i-kota",
+  "title": "Jak czyścić uszy psa i kota",
+  "hub": "uszy",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "uszy"
+  ],
+  "stage": "practical",
+  "decision": "C",
+  "legacy_path": "/pielegnacja-2/jak-czyscic-ucho/",
+  "merged_from": [
+   "/jak-czyscic-uszy/"
+  ],
+  "needs": [
+   "higiena-uszu-i-woskowina",
+   "podraznione-uszy-i-zapach-z-uszu"
+  ],
+  "extra_families": [],
+  "brief": "Merge both legacy ear-cleaning pages (signs list + step-by-step). Keep the client's steps; fix typos; warn: never cotton buds deep in the canal; signs that need a vet (no diagnoses)."
+ },
+ "source_files": [
+  "audit/extracted/pages/pielegnacja-2__jak-czyscic-ucho.md",
+  "audit/extracted/pages/jak-czyscic-uszy.md",
+  "audit/extracted/posts/akaryl-zel-prawidlowa-higiena-uszu.md"
+ ],
+ "needs": {
+  "higiena-uszu-i-woskowina": {
+   "slug": "higiena-uszu-i-woskowina",
+   "title": "Czyszczenie uszu i nadmiar woskowiny",
+   "scope": "IN: rutynowe czyszczenie uszu, nadmiar woskowiny, brudne uszy. OUT: swędzenie, zaczerwienienie, zapach, potrząsanie głową (podraznione-uszy-i-zapach-z-uszu).",
+   "red_flag_level": "caution"
+  },
+  "podraznione-uszy-i-zapach-z-uszu": {
+   "slug": "podraznione-uszy-i-zapach-z-uszu",
+   "title": "Podrażnione, swędzące uszy i nieprzyjemny zapach z uszu",
+   "scope": "IN: drapanie uszu, zaczerwieniona małżowina, nieprzyjemny zapach z ucha, podejrzenie pasożytów uszu (tylko pielęgnacja wspomagająca; rozpoznanie u lekarza). OUT: rutynowe czyszczenie (higiena-uszu-i-woskowina).",
+   "red_flag_level": "caution"
+  }
+ },
+ "families": {
+  "otolan": {
+   "family_slug": "otolan",
+   "name": "OTOLAN",
+   "line": null,
+   "product_type": "preparat do pielęgnacji uszu",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "PŁYN DO USUWANIA WOSKOWINY Z MAŁŻOWINY USZNEJ I PRZEWODU SŁUCHOWEGO ZEWNĘTRZNEGO U PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "ROZPUSZCZA WOSKOWINĘ",
+    "USUWA NIEPOŻĄDANY ZAPACH",
+    "ŁATWE STOSOWANIE",
+    "NATURALNY SKŁAD"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena przewodu słuchowego zewnętrznego i małżowiny usznej.",
+   "properties_verbatim": "OTOLAN Płyn do usuwania woskowiny z małżowiny usznej i przewodu słuchowego zewnętrznego u psów i kotów. Dzięki specjalnie dobranym składnikom doskonale usuwa zalegającą woskowinę uszną. Zapobiega rozwojowi niepożądanej flory bakteryjnej w małżowinie usznej i kanale słuchowym.\nOlej Jojoba\nNawilża i chroni małżowinę uszną oraz przewód słuchowy zewnętrzny przed działaniem niekorzystnych czynników.\nOlej ze słodkich migdałów\nDziała jako naturalny emolient dzięki obecności nienasyconych kwasów tłuszczowych. Wspomaga usuwanie odkładającej się woskowiny usznej.\nSkwalan\nŁagodzi podrażnienia i stany zapalne. Ułatwia naturalną odnowę naskórka przewodu słuchowego i małżowiny usznej. Wspomaga usuwanie zalegającej woskowiny.\nOlejek z pestek brzoskwini\nPosiada dużą zawartość kwasów tłuszczowych takich jak kwas omega-6 i omega-9. Działa nawilżająco i łagodząco na małżowinę uszną oraz przewód słuchowy zewnętrzny.\nWitamina E\nWspomaga regenerację naskórka małżowiny usznej i przewodu słuchowego zewnętrznego.",
+   "usage_verbatim": "Wprowadzić od 5 do 30 kropli (zależnie od wielkości zwierzęcia) preparatu do przewodu słuchowego. Rozprowadzić masując podstawę ucha, a następnie usunąć jej nadmiar przy pomocy wacika. Jednocześnie należy oczyścić wewnętrzną stronę małżowiny usznej. Nadmiar preparatu usunąć wacikiem.",
+   "precautions_verbatim": "Unikać kontaktu z oczami. Nie używać patyczków kosmetycznych.",
+   "vet_context_verbatim": "Łagodzi podrażnienia i stany zapalne.",
+   "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/otolan-100ml/"
+  },
+  "otiseptol": {
+   "family_slug": "otiseptol",
+   "name": "OTISEPTOL",
+   "line": null,
+   "product_type": "preparat do pielęgnacji uszu",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Emulsja do przemywania uszu dla psów i kotów",
+   "badges_verbatim": [
+    "USUWA WOSKOWINĘ",
+    "ROZMIĘKCZA ZROGOWACIAŁY NASKÓREK",
+    "Z OLEJKIEM MIGDAŁOWYM"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena przewodu słuchowego zewnętrznego i małżowiny usznej.",
+   "properties_verbatim": "Otiseptol ułatwia usunięcie woskowiny. Rozmiękcza nadmiernie zrogowaciały naskórek, ułatwia jego usunięcie i wspomaga szybką regenerację. Likwiduje nieprzyjemny zapach w przypadku infekcji przewodu słuchowego zewnętrznego i małżowiny usznej.",
+   "usage_verbatim": "Wprowadzić od 5 do 30 kropli (zależnie od wielkości zwierzęcia) emulsji do przewodu słuchowego. Rozprowadzić masując podstawę ucha, a następnie usunąć jej nadmiar przy pomocy wacika. Jednocześnie należy oczyścić wewnętrzną stronę małżowiny usznej. Zabieg należy powtarzać aż do całkowitego oczyszczenia ucha. Stosować w zależności od ilości wytwarzanej woskowiny 1 lub 2 razy w tygodniu.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Likwiduje nieprzyjemny zapach w przypadku infekcji przewodu słuchowego zewnętrznego i małżowiny usznej.",
+   "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/otiseptol-100ml/"
+  },
+  "kp-emulsja-do-przemywania-uszu": {
+   "family_slug": "kp-emulsja-do-przemywania-uszu",
+   "name": "Emulsja do przemywania uszu",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat do pielęgnacji uszu",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja EMULSJA DO PRZEMYWANIA USZU DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "USUWA WOSKOWINĘ",
+    "ROZMIĘKCZA ZROGOWACIAŁY NASKÓREK",
+    "+ Olejek migdałowy"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena uszu.",
+   "properties_verbatim": "Emulsja usuwa nadmiar woskowiny. Rozmiękcza zrogowaciały naskórek. Wskazania: higiena zewnętrznego przewodu słuchowego i małżowiny usznej.",
+   "usage_verbatim": "Wprowadzić 5 - 30 kropli (zależnie od wielkości zwierzęcia) do przewodu słuchowego. Rozprowadzić masując podstawę ucha, następnie usunąć nadmiar emulsji przy pomocy wacika. Należy również oczyścić wewnętrzną stronę małżowiny usznej. Stosować w zależności od ilości wytwarzanej woskowiny 1 lub 2 razy w tygodniu.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-emulsja-do-przemywania-uszu-100ml/"
+  },
+  "sebostop-spot-on": {
+   "family_slug": "sebostop-spot-on",
+   "name": "Sebostop Spot-on",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Preparat przeciw łojotokowi z fitosfingozyną dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGA ZWALCZAĆ STANY KERATO - ŁOJOTOKOWE SKÓRY OGÓLNE I MIEJSCOWE",
+    "USUWA NADMIAR WOSKOWINY Z PRZEWODZIE SŁUCHOWYM ZEWNĘTRZNYM",
+    "ELIMINUJE NIEPRZYJEMNY ZAPACH SKÓRY"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Stany kerato-łojotokowe skóry ogólne lub miejscowe. Nadmiar woskowiny w przewodzie słuchowym zewnętrznym. Zwalczanie nieprzyjemnego zapachu skóry.",
+   "properties_verbatim": "Sebostop spot-on jest dermokosmetykiem weterynaryjnym, specjalnie przystosowanym dla psów i kotów z objawami łojotoku. Fitosfingozyna pozwala na odbudowę warstwy rogowej naskórka, zmniejszenie łojotoku oraz wspomaga procesy regulujące mikroflorę naskórka. Pozostałe składniki preparatu chronią skórę przed odwodnieniem i łagodzą jej podrażnienia.",
+   "usage_verbatim": "Wspomagająco w połączeniu z szamponami przeciwłojotokowymi SEBOVET CLEAN lub SEBOVET excellence przy:\n– uogólnionym zespole kerato-łojotokowym: 1 raz w tygodniu przez 4 tygodnie.\nPo odsunięciu sierści należy nanieść zawartość pipety na skórę psa lub kota w 2 lub 3 miejsca (w okolicy międzyłopatkowej i lędźwiowej):\n- psy i koty o m.c. < 20 kg 1 pipeta\n- psy o m.c. 20-45 kg 2 pipety\n- psy o m.c. > 45 kg 3 pipety\n– miejscowym zespole kerato-łojotokowym: zawartość 1 pipety nanieść na skórę w okolicy zmian 1 raz w tygodniu, przez 4 tygodnie.\n– powstawaniu nieprzyjemnego zapachu: stosować jak przy uogólnionym zespole kerato-łojotokowym 1 raz w tygodniu.\n– nadmiarze woskowiny w zewnętrznym przewodzie słuchowym: zawartość ½ – 1 pipety do każdego ucha 2 razy w tygodniu, przez okres 3 tygodni.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/sebostop-spot-on-5x2ml/"
+  },
+  "akaryl-zel": {
+   "family_slug": "akaryl-zel",
+   "name": "AKARYL-ŻEL",
+   "line": null,
+   "product_type": "preparat do pielęgnacji uszu",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Emulsja do pielęgnacji uszu dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGA ZWALCZAĆ PASOŻYTY PRZEWODU SŁUCHOWEGO ZEWNĘTRZNEGO",
+    "KETOKONAZOL, OLEJEK MIGDAŁOWY"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena uszu.",
+   "properties_verbatim": "Emulsja łagodzi objawy związane z podrażnieniami przewodu słuchowego zewnętrznego i małżowiny usznej. Ułatwia naturalną odnowę naskórka. Pomaga zwalczać pasożyty przewodu słuchowego zewnętrznego.",
+   "usage_verbatim": "Wprowadzić kilka kropli emulsji do przewodu słuchowego zewnętrznego i małżowiny usznej. Delikatnie masować podstawę ucha. Usunąć nadmiar emulsji i ponownie przemyć ucho poprzez delikatne masowanie.",
+   "precautions_verbatim": "W przypadku nietolerancji przerwać stosowanie.",
+   "vet_context_verbatim": "Pomaga zwalczać pasożyty przewodu słuchowego zewnętrznego.",
+   "page_path": "/produkty/produkty-do-pielegnacji-oczu-i-uszu/akaryl-zel-15ml/"
+  }
+ },
+ "all_guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "stage": "informational"
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "stage": "product"
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "product"
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "stage": "product"
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  }
+ ]
+}

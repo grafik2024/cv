@@ -36,6 +36,22 @@ final class Module implements ModuleInterface {
 	public function register(): void {
 		Extended::register();
 		Slugs::register();
+		// x-default → the Polish (default-language) URL; Polylang adds it only with browser detection, which is off.
+		add_filter(
+			'pll_rel_hreflang_attributes',
+			static function ( $hreflangs ) {
+				if ( is_array( $hreflangs ) && ! isset( $hreflangs['x-default'] ) ) {
+					$default = function_exists( 'pll_default_language' ) ? (string) pll_default_language( 'slug' ) : 'pl';
+					foreach ( $hreflangs as $code => $url ) {
+						if ( 0 === strpos( (string) $code, $default ) ) {
+							$hreflangs['x-default'] = $url;
+							break;
+						}
+					}
+				}
+				return $hreflangs;
+			}
+		);
 		add_action(
 			'ew_settings_sections',
 			static function (): void {

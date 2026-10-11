@@ -1,0 +1,841 @@
+{
+ "batch": "siersc-i-kapiel",
+ "needs": [
+  {
+   "slug": "matowa-i-lamliwa-siersc",
+   "title": "Matowa, sucha i łamliwa sierść",
+   "batch": "siersc-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "priority": 76,
+   "red_flag_level": "none",
+   "scope": "IN: brak połysku, sucha, łamliwa, uszkodzona sierść; przygotowanie sierści do wystawy. OUT: linienie i wypadanie (linienie-i-wypadanie-siersci), kołtuny (dluga-siersc-i-koltuny), kolor (biala-siersc, ciemna-siersc).",
+   "products": [
+    {
+     "family": "wita-vet-siersc-krople",
+     "role": "primary",
+     "evidence": "polecana jest w przypadku sierści suchej, matowej i uszkodzonej"
+    },
+    {
+     "family": "olej-z-lososia",
+     "role": "similar",
+     "evidence": "Łamliwość, matowienie sierści"
+    },
+    {
+     "family": "zn-cynk",
+     "role": "similar",
+     "evidence": "łamliwej, matowej i suchej sierści"
+    },
+    {
+     "family": "wita-vet-siersc-pies",
+     "role": "similar",
+     "evidence": "Zalecana w przypadku sierści suchej, matowej i uszkodzonej."
+    },
+    {
+     "family": "wita-vet-siersc-kot",
+     "role": "similar",
+     "evidence": "przy sierści suchej i uszkodzonej"
+    },
+    {
+     "family": "kp-odzywka-bez-splukiwania",
+     "role": "complementary",
+     "evidence": "NADAJE POŁYSK I JEDWABISTOŚĆ"
+    }
+   ]
+  },
+  {
+   "slug": "linienie-i-wypadanie-siersci",
+   "title": "Linienie i nadmierne wypadanie sierści",
+   "batch": "siersc-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "priority": 85,
+   "red_flag_level": "caution",
+   "scope": "IN: sezonowe linienie, „sierść wszędzie”, nadmierne wypadanie sierści. OUT: łyse placki/ogniska bez sierści (red flag → lekarz), matowość bez wypadania (matowa-i-lamliwa-siersc).",
+   "products": [
+    {
+     "family": "kp-gold-regenerator-siersci-i-skory",
+     "role": "primary",
+     "evidence": "Szczególnie zaleca się ją podawać w okresie linienia."
+    },
+    {
+     "family": "wita-vet-siersc-pies",
+     "role": "similar",
+     "evidence": "Ogranicza linienie."
+    },
+    {
+     "family": "wita-vet-siersc-kot",
+     "role": "similar",
+     "evidence": "Karma uzupełniająca przeznaczona dla kotów do stosowania w okresie linienia"
+    },
+    {
+     "family": "olej-z-lososia",
+     "role": "similar",
+     "evidence": "nadmiernej utracie włosa"
+    },
+    {
+     "family": "zn-cynk",
+     "role": "similar",
+     "evidence": "Podawać karmę przy nadmiernym wypadaniu włosów"
+    },
+    {
+     "family": "efaderm-e-kapsulki-pies",
+     "role": "similar",
+     "evidence": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości i nadmiernego wypadania sierści."
+    }
+   ]
+  },
+  {
+   "slug": "dluga-siersc-i-koltuny",
+   "title": "Długa sierść, kołtuny i trudne rozczesywanie",
+   "batch": "siersc-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "priority": 68,
+   "red_flag_level": "none",
+   "scope": "IN: filcowanie, kołtuny, elektryzująca się i pusząca sierść, pielęgnacja długiego włosa (York, Shih Tzu, maltańczyk). OUT: kolor sierści (biala-siersc), matowość wynikająca z kondycji (matowa-i-lamliwa-siersc).",
+   "products": [
+    {
+     "family": "kp-odzywka-bez-splukiwania",
+     "role": "primary",
+     "evidence": "Powoduje, że sierść lepiej się układa oraz zapobiega powstawaniu filców i kołtunów."
+    },
+    {
+     "family": "kp-odzywka-do-siersci-i-wlosow",
+     "role": "similar",
+     "evidence": "Odżywka pozwala na łatwe rozczesywanie sierści po umyciu."
+    },
+    {
+     "family": "kp-szampon-york-dlugi-wlos",
+     "role": "complementary",
+     "evidence": "Pielęgnacja długiego włosa."
+    },
+    {
+     "family": "kp-szampon-shih-tzu",
+     "role": "complementary",
+     "evidence": "Pielęgnacja długiego włosa."
+    },
+    {
+     "family": "kp-szampon-dla-maltanczykow",
+     "role": "complementary",
+     "evidence": "Pielęgnacja długiego włosa."
+    }
+   ]
+  },
+  {
+   "slug": "biala-siersc",
+   "title": "Biała i jasna sierść – pielęgnacja koloru",
+   "batch": "siersc-i-kapiel",
+   "species": [
+    "pies"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "priority": 52,
+   "red_flag_level": "none",
+   "scope": "IN: żółknąca/zszarzała biała lub jasna sierść, podkreślenie jasnego koloru. OUT: zacieki łzowe pod oczami (przemywanie-oczu-i-wydzielina — bez obietnicy usuwania przebarwień), ciemna sierść (ciemna-siersc).",
+   "products": [
+    {
+     "family": "kp-szampon-biala-siersc",
+     "role": "primary",
+     "evidence": "Pielęgnacja skóry i jasnej sierści."
+    },
+    {
+     "family": "kp-szampon-dla-maltanczykow",
+     "role": "similar",
+     "evidence": "ROZJAŚNIA KOLOR"
+    }
+   ]
+  },
+  {
+   "slug": "ciemna-siersc",
+   "title": "Ciemna sierść – podkreślenie koloru",
+   "batch": "siersc-i-kapiel",
+   "species": [
+    "pies"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "priority": 42,
+   "red_flag_level": "none",
+   "scope": "IN: ciemna/czarna sierść, która straciła głębię koloru. OUT: biała sierść (biala-siersc), siwienie jako objaw zdrowotny.",
+   "products": [
+    {
+     "family": "kp-szampon-ciemna-siersc",
+     "role": "primary",
+     "evidence": "Pielęgnacja skóry i ciemnej sierści."
+    },
+    {
+     "family": "wita-vet-siersc-krople",
+     "role": "complementary",
+     "evidence": "Składniki karmy ułatwiają przywrócenie sprężystości skóry, połysku i barwy sierści"
+    }
+   ]
+  },
+  {
+   "slug": "delikatna-kapiel-szczeniaka-i-kota",
+   "title": "Delikatna kąpiel szczeniaka i kota",
+   "batch": "siersc-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc",
+    "skora"
+   ],
+   "priority": 58,
+   "red_flag_level": "none",
+   "scope": "IN: pierwsza kąpiel szczeniaka, jaki szampon dla kota, łagodne mycie. OUT: mycie bez wody (mycie-bez-wody), problemy skóry (potrzeby z batcha skora). Kocięta: brak produktu wskazującego kocięta — nie obiecywać.",
+   "products": [
+    {
+     "family": "kp-szampon-dla-szczeniat",
+     "role": "primary",
+     "evidence": "Zawarty w szamponie olejek z migdałowca sprawia, że jest bardzo dobrze tolerowany przez szczenięta."
+    },
+    {
+     "family": "kp-szampon-dla-kotow",
+     "role": "similar",
+     "evidence": "DELIKATNIE MYJE"
+    },
+    {
+     "family": "kp-odzywka-bez-splukiwania",
+     "role": "complementary",
+     "evidence": "UŁATWIA ROZCZESYWANIE SIERŚCI"
+    }
+   ]
+  },
+  {
+   "slug": "mycie-bez-wody",
+   "title": "Mycie bez wody (szampon na sucho)",
+   "batch": "siersc-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc",
+    "skora"
+   ],
+   "priority": 60,
+   "red_flag_level": "none",
+   "scope": "IN: zwierzę nie lubi kąpieli, podróż, przed wystawą, zabrudzenia po zabiegach weterynaryjnych. OUT: regularna kąpiel szamponem (delikatna-kapiel-szczeniaka-i-kota).",
+   "products": [
+    {
+     "family": "kp-szampon-do-mycia-na-sucho",
+     "role": "primary",
+     "evidence": "Szampon piankowy jest przeznaczony dla zwierząt, które nie lubią kąpieli."
+    },
+    {
+     "family": "dry-clean",
+     "role": "similar",
+     "evidence": "CZYŚCI SKÓRĘ I SIERŚĆ BEZ UŻYCIA WODY"
+    }
+   ]
+  }
+ ],
+ "families": {
+  "wita-vet-siersc-krople": {
+   "family_slug": "wita-vet-siersc-krople",
+   "name": "WITA-VET sierść",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Lśniąca sierść. Zdrowa skóra.",
+   "properties_verbatim": "WITA-VET sierść polecana jest w przypadku sierści suchej, matowej i uszkodzonej, w czasie linienia oraz przygotowywania zwierząt do wystaw. Składniki karmy ułatwiają przywrócenie sprężystości skóry, połysku i barwy sierści, regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. sprawdzony skład wzbogacony teraz w Witaminę E i Miedź. Witamina E posiada właściwości antyoksydacyjne, które chronią sierść przed zniszczeniem i niekorzystnym działaniem czynników zewnętrznych. Główny składnik tej witaminy, tokoferol, wzmacnia również naczynia krwionośne, poprawiając w ten sposób ukrwienie skóry. Przyspiesza to wchłanianie substancji odżywczych do mieszków włosowych, tworząc idealne warunki do szybkiego wzrostu sierści, a także spowalnia jej wypadanie. Miedź bierze udział w produkcji melaniny – pigmentu, który odpowiada za kolor sierści i skóry. Dzięki miedzi nie dochodzi do przedwczesnego siwienia. odpowiedni poziom miedzi w organizmie jest potrzebny do Prawidłowego formowania się łodygi włosa. Dzięki temu sierść jest sprężysta i mocna. Niedobór miedzi prowadzi do osłabienia i rozdwajania się końcówek włosa.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Woda, glikol propylenowy, gliceryna. Dodatki w 1 kg: Witaminy: 3a672b witamina A 800 000 UI, 3a700 witamina E 20 g, 3a481 D-pantotenian wapnia 8 g, 3a831 witamina B6 4 g, 3a880 biotyna 500 mg, 3a315 niacynamid 8 g. Pierwiastki śladowe: 3b401 dioctan miedzi(II) jednowodny 100 mg, 3b601 octan cynku dwuwodny 3000 mg. Składniki analityczne: białko surowe 1,7 %, włókno surowe 0 %, tłuszcz surowy 2,7 %, popiół surowy 0,4 %, wilgotność 87 %.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-krople-25ml/",
+   "in_shop": true
+  },
+  "olej-z-lososia": {
+   "family_slug": "olej-z-lososia",
+   "name": "Olej z łososia",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść",
+    "odporność",
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WYSOKA ZAWARTOŚĆ KWASÓW OMEGA 3 I 6",
+    "ŹRÓDŁO EPA I DHA",
+    "WSPIERA SKÓRĘ, SIERŚĆ I ODPORNOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Łamliwość, matowienie sierści, utrata włosa, łupież, suchość skóry. Podrażnienia skóry, uczulenia, egzemy. Zaburzenia systemu odpornościowego, reprodukcja.",
+   "properties_verbatim": "Olej z łososia stanowi źródło kwasów tłuszczowych omega-3 (EPA i DHA), korzystnie wpływających na wiele procesów metabolicznych w organizmie psa i kota. Kwas EPA wspiera naturalne procesy zachodzące w organizmie psów i kotów, natomiast kwas DHA jest ważnym składnikiem błon komórkowych mózgu i siatkówki oka. Olej z łososia wpływa na równowagę między kwasami tłuszczowymi omega-3 i omega-6 oraz znacząco obniża poziom cholesterolu we krwi. Regularne stosowanie preparatu powoduje, że sierść Twojego psa lub kota staje się gęsta, sprężysta i lśniąca. Olej z łososia jest polecany przy łamliwości i matowieniu sierści, nadmiernej utracie włosa, łupieżu, suchości skóry. Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "usage_verbatim": "Psy i koty: poniżej 5 kg: 2,5 ml / dziennie od 5 do 15kg: 5 ml / dziennie od 15 do 30 kg: 10 ml / dziennie powyżej 30 kg: 15 ml / dziennie. Jedno pełne naciśnięcie pompki dozuje 1,25 ml preparatu.\nPo otwarciu przechowywać w lodówce, w oryginalnym opakowaniu.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "notes_verbatim": "Profil kwasów tłuszczowych\nNasycone kwasy tłuszczowe – 13,7% w tym kwas palmitynowy – 8,9% Jednonienasycone kwasy tłuszczowe – 52,7% w tym kwas oleinowy – 43,2% Wielonienasycone kwasy tłuszczowe – 33,5% w tym kwasy omega-3 – 14,5% w tym kwasy omega-6 – 17,1% w tym kwas linolowy – 14,8%",
+   "composition_verbatim": "Skład: OLEJ Z ŁOSOSIA ATLANTYCKIEGO. Dodatki w 1 kg: Dodatki technologiczne – Przeciwutleniacze: alfa-tokoferol (1b307) 500 mg. Składniki analityczne: Białko surowe 0%, włókno surowe 0%, oleje i tłuszcze surowe 99%, popiół surowy 0%.",
+   "page_path": "/produkty/karmy-uzupelniajace/olej-z-lososia/",
+   "in_shop": true
+  },
+  "zn-cynk": {
+   "family_slug": "zn-cynk",
+   "name": "Zn-Cynk",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "DOSTARCZA CYNK DLA SKÓRY I SIERŚCI"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja sierści.",
+   "properties_verbatim": "Składniki karmy wpływają korzystnie na funkcjonowanie skóry, na proces keratynizacji, na rozwój i czynność gruczołów łojowych skóry oraz poprawiają jakość sierści. Podawać karmę przy nadmiernym wypadaniu włosów, łamliwej, matowej i suchej sierści. Tabletki są wyjątkowo smaczne, dzięki czemu zwierzęta chętnie je przyjmują.",
+   "usage_verbatim": "Podawać co najmniej 1 godzinę przed podaniem karmy. - Problemy ze skórą i sierścią : psy i koty - 1/2 tab. / 10 kg m.c.- 2 razy dziennie przez 4 tygodnie - Ochrona wątroby : psy i koty - 1 tab. / 10 kg m.c.- 2 razy dziennie przez 4 tygodnie. Uwaga: - przy przedłużonym stosowaniu preparatu należy skorzystać z porady lekarza weterynarii - preparat może być stosowany u psów i kotów z niewydolnością serca i nerek",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": "Opakowanie zawiera: 60 tab. Masa netto: 34,8g. 1 tabletka o masie 580 mg zawiera 37,5 mg cynku",
+   "composition_verbatim": "Skład: przetworzone białko zwierzęce (suszona wątroba wołowa), fosforan dwuwapniowy, drożdże piwne inaktywowane (z Saccharomyces cerevisiae). Dodatki w 1 kg: Dietetyczne: 3b607 chelat cynku z glicyną 172,4 g. Witaminy: 3a831 witamina B6 129,3 g, 3a672a witamina A 4,36 g. Technologiczne: Stabilizatory: E414 błonnik akacjowy 438,7 g. Składniki analityczne: białko surowe 28,8 %, włókno surowe 0,2 %, tłuszcz surowy 1,5 %, popiół surowy 16,4 %.",
+   "page_path": "/produkty/preparaty-wspomagajace-zdrowie/zn-cynk-60szt/",
+   "in_shop": true
+  },
+  "wita-vet-siersc-pies": {
+   "family_slug": "wita-vet-siersc-pies",
+   "name": "WITA-VET sierść 2g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "OGRANICZA LINIENIE",
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "OGRANICZA LINIENIE | LŚNIĄCA SIERŚĆ | ZDROWA SKÓRA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna polecana do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Ogranicza linienie. Zalecana w przypadku sierści suchej, matowej i uszkodzonej. Składniki karmy ułatwiają przywrócenie jędrności skóry, połysku, barwy i sprężystości sierści. Regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. Podczas przygotowywania psów do wystaw należy rozpocząć stosowanie preparatu na 3 tygodnie przed pokazem.",
+   "usage_verbatim": "1 tab./ do 10kg m.c. / 1 raz dziennie",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, przetworzone białko zwierzęce (sproszkowana wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), lecytyna sojowa, sole magnezowe kwasów organicznych (stearynian magnezu). Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 1040 mg, 3a700 witamina E 19180 mg, 3a314 niacyna 5230 mg, 3a841 D-pantotenian wapnia 4795 mg, 3a witamina B2 (ryboflawina) 520 mg, 3a831 witamina B6 260 mg, 3a880 D-biotyna 218 mg, Aminokwasy: 3c391 L-cystyna 29000 mg. Pierwiastki śladowe: 3b405 siarczan miedzi pięciowodny 50 mg, 3b201 jodek potasu 47 mg, 3b605 siarczan cynku jednowodny 5300 mg. Składniki analityczne: Wapń 14,5 %, sód 0,1 %, fosfor 10,9 %.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-2g-30szt/",
+   "in_shop": true
+  },
+  "wita-vet-siersc-kot": {
+   "family_slug": "wita-vet-siersc-kot",
+   "name": "WITA-VET SIERŚĆ",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "OGRANICZA LINIENIE",
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "OGRANICZA LINIENIE | LŚNIĄCA SIERŚĆ | ZDROWA SKÓRA",
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla kotów do stosowania w okresie linienia, przy sierści suchej i uszkodzonej oraz podczas przygotowywania zwierząt do wystaw. Składniki karmy przywracają elastyczność skóry, połysk, barwę i sprężystość sierści. Regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. Produkt wyjątkowo smaczny, chętnie przyjmowany przez zwierzęta",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą.\nKoty o m.c. do 4kg – 1 tabl. / 1 raz dziennie.\nKoty o m.c. powyżej 4kg – 2 tab. / 1 raz dziennie.\nPodczas przygotowywania kotów do wystaw rozpocząć stosowanie na 3 tyg. przed planowanym pokazem. Stosować aż do uzyskania prawidłowego stanu sierści i skóry. Podawać bezpośrednio lub wymieszać z karmą.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), lecytyna surowa (sojowa). Dodatki w 1 kg: Witaminy: 3a672a witamina A 103 mg, 3a700 witamina E 30 g, 3a825iii witamina B2 3 g, 3a841 D-pantotenian wapnia 3 g, 3a315 niacynamid 30 g, 3a831 witamina B6 3,6 g, 3a880 biotyna 77 mg, 3a370 tauryna 12,5 g. Aminokwasy: 3c301 DL-metionina 50 mg. Pierwiastki śladowe: 3b605 siarczan cynku jednowodny 27,6 g, 3b201 jodek potasu 277 mg, 3b405 siarczan miedzi(II) pięciowodny 2,7 g. Technologiczne: spoiwo - krzemionka Składniki analityczne: Białko surowe 34,0 %, włókno surowe 1,0 %, tłuszcz surowy 11,0 %, popiół surowy 9,0 %.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-kot-siersc-30szt/",
+   "in_shop": true
+  },
+  "kp-odzywka-bez-splukiwania": {
+   "family_slug": "kp-odzywka-bez-splukiwania",
+   "name": "Odżywka bez spłukiwania",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "odżywka/kosmetyk pielęgnacyjny",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "sierść"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja ODŻYWKA BEZ SPŁUKIWANIA DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "UŁATWIA ROZCZESYWANIE SIERŚCI",
+    "+ Betaina, kompleks nawilżający"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Odżywka do siersci i włosa.",
+   "properties_verbatim": "Profesjonalna odżywka rewitalizująca bez spłukiwania dla psów i kotów. Ułatwia rozczesywanie, dodaje objętości sierści i poprawia strukturę włosa. Powoduje, że sierść lepiej się układa oraz zapobiega powstawaniu filców i kołtunów. Doskonała dla wszystkich rodzajów sierści i włosa. Zalecana do sierści wymagającej wygładzenia, ułożenia, elektryzującej się i puszącej. Zawiera substancje aktywne, które wbudowują się w strukturę włosa, zapewniając jego wygładzenie, nawilżenie i połysk.",
+   "usage_verbatim": "Spryskać sierść odżywką i wyczesać.",
+   "precautions_verbatim": "W przypadku dostania się do oczu, spłukać letnią wodą.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Betaine, Silicone Quaternium-22, Polyglyceryl-3 Caprate, Dipropylene Glycol, Cocamidopropyl Betaine, Sodium Lactate, Sodium PCA, Glycine, Fructose, Urea, Niacinamide, Inositol, Sodium Benzoate, Lactic Acid, Polysorbate 20, Parfum, Phenoxyethanol, Ethylhexylglycerin",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-bez-splukiwania-200ml/",
+   "in_shop": true
+  },
+  "kp-gold-regenerator-siersci-i-skory": {
+   "family_slug": "kp-gold-regenerator-siersci-i-skory",
+   "name": "Gold Regenerator sierści i skóry",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra",
+    "ogólna kondycja/witalność"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Mieszanka paszowa uzupełniająca. Kompleks witamin dla psów i kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "+ BIOTYNA, WIT. A, B6, KWAS NIKOTYNOWY"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Lśniąca sierść. Zdrowa skóra.",
+   "properties_verbatim": "Karma uzupełniająca dla psów i kotów do stosowania w celu poprawy jakości sierści. Szczególnie zaleca się ją podawać w okresie linienia. Pomaga także uzupełnić niedobory żywieniowe oraz zaspokoić potrzeby zwierząt w okresie rekonwalescencji. Dodatek hydrolizatu miazgi wątrobowej dostarcza szereg witamin z grupy B, w szczególności biorących udział w procesie tworzenia czerwonych ciałek. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina. Wpływa korzystnie na prawidłowe funkcjonowanie organizmu Hydrolizat wspomaga pracę wątroby. Witaminy wpływają wspomagająco na procesy odpornościowe oraz przemiany metaboliczne organizmu.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą: - psy i koty do 5 kg m.c 5 kropli / dzień - psy 5 – 15 kg m.c. 10 kropli / dzień - psy 15 – 30 kg m.c. 15 kropli / dzień - psy 30 – 45 kg m.c. 20 kropli / dzień - psy powyżej 45 kg m.c. 25 kropli / dzień 1 ml zawiera 20 kropli. Po otwarciu przechowywać w miejscu chłodnym i suchym",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład (2): Glikol propylenowy, produkty pochodzenia zwierzęcego Dodatki w 1 kg (3): 3a672a witamina A 2 g, 3a880 biotyna 0,5 g, 3a831 witamina B6 4 g, 3a314 niacyna 8 g, 3a841 D-pantotenian wapnia 8 g, E6 glukonian cynku 0,3 g Składniki analityczne (4): białko surowe 0,3%, włókno surowe 0%, tłuszcz surowy 0,9%, popiół surowy 0,1%, wilgotność 87,4%.",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-gold-regenerator-siersci-i-skory-25ml/",
+   "in_shop": true
+  },
+  "efaderm-e-kapsulki-pies": {
+   "family_slug": "efaderm-e-kapsulki-pies",
+   "name": "EFADERM-E",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "SIERŚĆ",
+    "SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości i nadmiernego wypadania sierści.",
+   "properties_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "usage_verbatim": "Podawać bezpośrednio lub po wymieszaniu z karmą: 1 szt. / 10 kg m.c. / dzień. Podawać przez okres do 2 miesięcy.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład (2): olej z ryb, żelatyna bydlęca, gliceryna Dodatki w 1 kg (3): Technologiczne: Przeciwutleniacze: 1b306(i) ekstrakt naturalnych tokoferoli 13420 mg. Składniki analityczne (4): białko surowe 18,6%, włókno surowe 0%, tłuszcz surowy 70,9%, popiół surowy 0%.",
+   "page_path": "/produkty/karmy-uzupelniajace/efaderm-e-60szt-psy/",
+   "in_shop": true
+  },
+  "kp-odzywka-do-siersci-i-wlosow": {
+   "family_slug": "kp-odzywka-do-siersci-i-wlosow",
+   "name": "Odżywka do sierści i włosów",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "odżywka/kosmetyk pielęgnacyjny",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "sierść"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja ODŻYWKA DO SIERŚCI I WŁOSÓW dla psów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "UŁATWIA ROZCZESYWANIE SIERŚCI",
+    "+ Olejek z migdałowca"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja sierści.",
+   "properties_verbatim": "Odżywka pozwala na łatwe rozczesywanie sierści po umyciu. Nadaje jej miękkość, połysk i jedwabistość.",
+   "usage_verbatim": "Po umyciu szamponem rozprowadzić odżywkę na całej sierści, łagodnie wcierając. Pozostawić przez 2-3 minuty, a następnie spłukać letnią wodą. W przypadku sierści trudnej do rozczesywania, czynności powtórzyć. Wysuszyć i wyszczotkować.",
+   "precautions_verbatim": "Jeżeli produkt przypadkowo dostanie się do oczu, spłukać letnią wodą.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Cetyl Alcohol, Cetearyl Alcohol, Stearalkonium Chloride, PEG-20 Stearate, Silicone Quaternium-17, Laureth-9, Prunus Amygdalus Dulcis (Sweet Almond) Oil,Tocopheryl Acetate, Parfum, Citric Acids, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-do-siersci-i-wlosow-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-york-dlugi-wlos": {
+   "family_slug": "kp-szampon-york-dlugi-wlos",
+   "name": "Szampon YORK DŁUGI WŁOS",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon DLA psów rasy YORK",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "GŁĘBOKO ODŻYWIA",
+    "+Nori Complex, proteiny, olejek norkowy"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja długiego włosa.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Proteiny pszeniczne są bardzo łatwo absorbowane przez włos i skórę. Nadaje się doskonale do pielęgnacji psów o przesuszonym i łamliwym włosie. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Głęboko odżywia włos, nadaje mu jedwabistość i połysk.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N. Uwaga: przed kąpielą rozczesz sierść aby usunąć martwe włosy, zanieczyszczenia oraz aby unikniąć splątania i zacieśnienia ewentualnych węzłów włosów pod wpływem wody.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Peg 40 Hydrogenated Castor Oil, Hydrolyzed Wheat Gluten, Sodium Chloride, Glicerin, PEG-7 Glyceryl Cocate, Polysorbate 20, Parfum, Glycol Distearate, Mink Oil, Cocamide DEA, Cocamide MEA, Laureth-10, Porphyra Umbilicalis Extract, Caesalpinia Spinosa Gum, Citric Acids, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-york-dlugi-wlos-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-shih-tzu": {
+   "family_slug": "kp-szampon-shih-tzu",
+   "name": "Szampon SHIH TZU",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla psów rasy SHIH TZU",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "GŁĘBOKO ODŻYWIA",
+    "+Nori Complex, proteiny, olejek nabłyszczający"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja długiego włosa.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Proteiny pszeniczne są bardzo łatwo absorbowane przez włos i skórę. Idealny do pielęgnacji przesuszonych i łamliwych włosów. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Głęboko odżywia włos, nadaje mu jedwabistość i połysk.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N. Uwaga: przed kąpielą rozczesz sierść aby usunąć martwe włosy, zanieczyszczenia oraz aby unikniąć splątania i zacieśnienia ewentualnych węzłów włosów pod wpływem wody.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Peg 40 Hydrogenated Castor Oil, Hydrolyzed Wheat Gluten, Sodium Chloride, Glicerin, PEG-7 Glyceryl Cocate, Polysorbate 20, Parfum, Glycol Distearate, Mink Oil, Cocamide DEA, Cocamide MEA, Laureth-10, Porphyra Umbilicalis Extract, Caesalpinia Spinosa Gum, Sodium Hydroxide,, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-shih-tzu-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-dla-maltanczykow": {
+   "family_slug": "kp-szampon-dla-maltanczykow",
+   "name": "Szampon dla maltańczyków",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon SZAMPON DLA psów rasy maltańczyk",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "ROZJAŚNIA KOLOR",
+    "+ Rumianek, Pokrzywa, Witamina E"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja długiego włosa.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Sierść staje się miękka i błyszcząca. Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu. Wyciąg z rumianku wzmacnia naturalny kolor włosa.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Propylene Glycol, PEG 4 Rapeseedamide, Glycerin, PEG-7 Glyceryl Cocate, Silicone Quaterium-17, Laureth-9, Chamomilla Recutita Flower Extract, Urtica Dioica Leaf Extract, Tocopherol Acetate, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-maltanczyk-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-biala-siersc": {
+   "family_slug": "kp-szampon-biala-siersc",
+   "name": "Szampon biała sierść",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon biała sierść dla psów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "ROZJAŚNIA KOLOR",
+    "+ Rumianek, Pokrzywa, Witamina E"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja skóry i jasnej sierści.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Sierść staje się miękka i błyszcząca. Składniki roślinne zmniejszają wypadanie sierści oraz powstawanie łupieżu. Wyciąg z rumianku wzmacnia naturalny kolor włosa.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Propylene Glycol, PEG 4 Rapeseedamide, Glycerin, PEG-7 Glyceryl Cocate, Silicone Quaterium-17, Laureth-9, Chamomilla Recutita Flower Extract, Urtica Dioica Leaf Extract, Tocopherol Acetate, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-biala-siersc-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-ciemna-siersc": {
+   "family_slug": "kp-szampon-ciemna-siersc",
+   "name": "Szampon ciemna sierść",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon ciemna sierść dla psów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "INTENSYFIKUJE KOLOR",
+    "+ Henna, Algi, Alantoina"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja skóry i ciemnej sierści.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Sierść staje się miękka i błyszcząca. Składniki roślinne działają zmiękczająco i uelastyczniająco na naskórek. Wyciąg z krzewu hennowego wzmacnia naturalny kolor włosa.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Glicerin, PEG-7 Glyceryl Cocate, Lawsonia Inermis Leaf Extract, Porphyra Umbilicalis Extract, Caesalpinia Spinosa Gum, Silicone Quaterium-17, Laureth-9, Polysorbate 20, Parfum, Allantoin, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ciemna-siersc-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-dla-szczeniat": {
+   "family_slug": "kp-szampon-dla-szczeniat",
+   "name": "Szampon dla szczeniąt",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon DLA SZCZENIĄT",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "DELIKATNIE MYJE",
+    "ŁAGODZI PODRAŻNIENIA",
+    "+ olejek z migdałowca, alantoina"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja skóry i sierści szczeniąt.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Zawarty w szamponie olejek z migdałowca sprawia, że jest bardzo dobrze tolerowany przez szczenięta. Sierść staje się miękka i błyszcząca. Alantoina łagodzi objawy związane z podrażnieniami. Tworzy warstwę chroniącą skórę przed drobnymi zranieniami, uszkodzeniami, otarciami i promieniami słonecznymi",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, PEG-40 Hydrogenated Castor Oil, Sweet Almond Oil, Allantoin, PEG-7 Glyceryl Cocate, Silicone Quaterium-17, Laureth-9, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide,, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-szczenieta-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-dla-kotow": {
+   "family_slug": "kp-szampon-dla-kotow",
+   "name": "Szampon dla kotów",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "DELIKATNIE MYJE",
+    "+ Witamina E, olejek z lawendy"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "properties_verbatim": "Szampon zawiera łagodne związki powierzchniowo czynne wykazujące dobre właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie sierści i skóry. Ułatwia nawilżenie. Specjalna formuła szamponu pozwala na łatwe rozczesywanie włosa. Sierść staje się miękka i błyszcząca.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Glicerin, PEG 4 Rapeseedamide, Cocamidopropyl Betaine, Sodium Chloride, Parfum, Tocopherol, Silicone Quaterium-17, Laureth-9, Lavandula Angustifolia Oil, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acids",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-dla-kotow-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-do-mycia-na-sucho": {
+   "family_slug": "kp-szampon-do-mycia-na-sucho",
+   "name": "Szampon do mycia na sucho",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon DO MYCIA NA SUCHO DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "WYGODNY W UŻYCIU W DOMU I W PODRÓŻY",
+    "+ Łagodne substancje myjące i nawilżające"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena sierści i skóry.",
+   "properties_verbatim": "Szampon piankowy jest przeznaczony dla zwierząt, które nie lubią kąpieli. Forma piankowa umożliwia stosowanie także w trakcie podróży lub przed wystawami. Zawarte składniki pozwalają na dokładne umycie sierści i skóry. Sierść staje się miękka, błyszcząca i łatwa w rozczesywaniu.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Nałożyć piankę na wilgotną rękawicę do mycia i łagodnie wcierać w sierść. Myć stopniowo miejsce po miejscu dodając regularnie szamponu, aż do umycia całej powierzchni ciała. Następnie wytrzeć ręcznikiem i wyszczotkować.",
+   "precautions_verbatim": "Jeżeli produkt przypadkowo dostanie się do oczu, spłukać letnią wodą.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Glicerin, Sodium Chloride, Polysorbate 20, Perfum, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acids",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-na-sucho-150ml/",
+   "in_shop": true
+  },
+  "dry-clean": {
+   "family_slug": "dry-clean",
+   "name": "Dry&Clean",
+   "line": null,
+   "product_type": "szampon",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "pozostałe zwierzęta"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "PIANKA DO MYCIA NA SUCHO dla psów, kotów i pozostałych zwierząt",
+   "badges_verbatim": [
+    "CZYŚCI SKÓRĘ I SIERŚĆ BEZ UŻYCIA WODY",
+    "ZMYWA ZABRUDZENIA PO ZABIEGACH",
+    "NIE WYWOŁUJE PODRAŻNIEŃ"
+   ],
+   "intended_for_verbatim": "Dla psów, kotów i pozostałych zwierząt.",
+   "indications_verbatim": "Higiena sierści i skóry.",
+   "properties_verbatim": "Dry & Clean pianka do mycia na sucho przeznaczona jest do czyszczenia skóry i sierści zwierząt bez użycia wody. Do stosowania w trakcie podróży, przed wystawami. Pomocna przy usuwaniu zanieczyszczeń powstałych na skórze i sierści po zabiegach weterynaryjnych. Dry & Clean pianka pozwala dokładnie umyć i nawilżyć sierść i skórę. Nie powoduje podrażnień. Sierść staje się miękka, błyszcząca i łatwa w rozczesywaniu.",
+   "usage_verbatim": "Przed użyciem wstrząsnąć. Nałożyć piankę na wilgotną rękawicę do mycia i łagodnie wcierać w sierść. Myć stopniowo miejsce po miejscu dodając regularnie szamponu, aż do umycia całej powierzchni skóry i sierści. Następnie wytrzeć ręcznikiem i wyszczotkować.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Pomocna przy usuwaniu zanieczyszczeń powstałych na skórze i sierści po zabiegach weterynaryjnych.",
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Chlorhexidine Digluconate, Glicerin, Urea, Polysorbate 20, Perfum, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Lacid Acids",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/dryclean-150ml/",
+   "in_shop": true
+  }
+ }
+}

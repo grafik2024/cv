@@ -58,13 +58,38 @@ final class Module implements ModuleInterface {
 		if ( '' !== trim( (string) $desc ) || ! is_singular() ) {
 			return $desc;
 		}
-		$id  = get_queried_object_id();
-		$key = array( 'ew_need' => '_ew_short_answer', 'ew_guide' => '_ew_tldr', 'ew_ingredient' => '_ew_summary', 'product' => '_ew_subtitle' )[ get_post_type( $id ) ] ?? '';
-		if ( '' === $key ) {
-			return $desc;
+		$id   = get_queried_object_id();
+		$keys = array(
+			'ew_need'       => array( '_ew_short_answer' ),
+			'ew_guide'      => array( '_ew_tldr' ),
+			'ew_ingredient' => array( '_ew_summary' ),
+			'product'       => array( '_ew_properties', '_ew_indications', '_ew_subtitle' ), // the product's own text, never stronger claims
+		)[ get_post_type( $id ) ] ?? array();
+		foreach ( $keys as $key ) {
+			$text = trim( (string) preg_replace( '/\s+/u', ' ', wp_strip_all_tags( (string) Meta::get( $id, $key, '' ) ) ) );
+			if ( '' === $text ) {
+				continue;
+			}
+			if ( mb_strtoupper( $text ) === $text ) {
+				$text = mb_strtoupper( mb_substr( $text, 0, 1 ) ) . mb_strtolower( mb_substr( $text, 1 ) );
+			}
+			return self::clip( $text, 155 );
 		}
-		$text = wp_strip_all_tags( (string) Meta::get( $id, $key, '' ) );
-		return '' !== $text ? mb_substr( preg_replace( '/\s+/', ' ', $text ) ?? $text, 0, 155 ) : $desc;
+		return $desc;
+	}
+
+	/** Cut at a sentence end, else at a word boundary, max $max characters. */
+	public static function clip( string $text, int $max ): string {
+		if ( mb_strlen( $text ) <= $max ) {
+			return $text;
+		}
+		$cut  = mb_substr( $text, 0, $max );
+		$stop = max( (int) mb_strrpos( $cut, '. ' ), (int) mb_strrpos( $cut, '! ' ), (int) mb_strrpos( $cut, '? ' ) );
+		if ( $stop > 80 ) {
+			return mb_substr( $cut, 0, $stop + 1 );
+		}
+		$space = (int) mb_strrpos( $cut, ' ' );
+		return rtrim( mb_substr( $cut, 0, $space > 0 ? $space : $max ), ' ,;:–-' ) . '…';
 	}
 
 	/** Filtered/faceted listings: noindex,follow (canonical stays the unfiltered URL). */

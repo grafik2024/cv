@@ -1,0 +1,517 @@
+{
+ "guide": {
+  "slug": "pielegnacja-ptakow-ozdobnych",
+  "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+  "hub": "zywienie-i-suplementacja",
+  "species": [
+   "ptaki-ozdobne"
+  ],
+  "areas": [
+   "kondycja"
+  ],
+  "stage": "practical",
+  "decision": "new",
+  "legacy_path": "",
+  "merged_from": [],
+  "needs": [
+   "ptaki-piora-i-pierzenie",
+   "ptaki-witaminy-i-legi",
+   "ptaki-trawienie",
+   "ptaki-uklad-oddechowy"
+  ],
+  "extra_families": [],
+  "brief": "New. Avian vet for illness; products by text."
+ },
+ "source_files": [],
+ "needs": {
+  "ptaki-piora-i-pierzenie": {
+   "slug": "ptaki-piora-i-pierzenie",
+   "title": "Pióra i pierzenie ptaków ozdobnych",
+   "scope": "IN: pierzenie, kondycja i budowa piór, intensywność czerwonej barwy piór. OUT: wyskubywanie piór, łyse miejsca, nastroszenie i apatia (red flags → lekarz).",
+   "red_flag_level": "caution"
+  },
+  "ptaki-witaminy-i-legi": {
+   "slug": "ptaki-witaminy-i-legi",
+   "title": "Witaminy, minerały i okres lęgowy ptaków",
+   "scope": "IN: witaminy i minerały dla ptaków ozdobnych, wzrost młodych, okres lęgowy, tworzenie skorupy jaja. OUT: samica nie może znieść jaja, siedzi nastroszona (red flags → pilnie lekarz).",
+   "red_flag_level": "caution"
+  },
+  "ptaki-trawienie": {
+   "slug": "ptaki-trawienie",
+   "title": "Trawienie ptaków ozdobnych",
+   "scope": "IN: osłabione trawienie, konsystencja odchodów, flora jelitowa, wsparcie wątroby u ptaków. OUT: biegunka z apatią, krew w odchodach, chudnięcie (red flags).",
+   "red_flag_level": "caution"
+  },
+  "ptaki-uklad-oddechowy": {
+   "slug": "ptaki-uklad-oddechowy",
+   "title": "Układ oddechowy ptaków ozdobnych",
+   "scope": "IN: wsparcie górnych dróg oddechowych karmą uzupełniającą. OUT: duszność, oddychanie z otwartym dziobem, wydzielina z nozdrzy, apatia (red flags → lekarz).",
+   "red_flag_level": "caution"
+  }
+ },
+ "families": {
+  "floramue": {
+   "family_slug": "floramue",
+   "name": "Floramue",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "PRIÓRA"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Pióra.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy. Uzupełnia dawkę pokarmową w witaminy, aminokwasy i mikroelementy niezbędne do prawidłowej budowy piór oraz funkcjonowania organizmu. Mieszanka zawiera metioninę wpływającą na prawidłowy przebieg procesu pierzenia.",
+   "usage_verbatim": "2 krople mieszanki / 60 ml wody do picia (lub 35 kropli / 1 litr wody) – przez cały okres pierzenia, PAPUGI: – 2 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty ) i nasączyć 30 g ziarna lub 35 kropli / 75 ml wody do picia i nasączyć 500 g ziarna – przez cały okres pierzenia. 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floramue-15ml/"
+  },
+  "floratonyl": {
+   "family_slug": "floratonyl",
+   "name": "Floratonyl",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "wzrost",
+    "pióra",
+    "odporność"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Wzrost. Pióra. Odporność.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych ptaków. Składniki mieszanki wspomagają wzrost młodych ptaków, wpływają na upierzenie oraz witalność i reprodukcję. Hydrolizat miazgi wątrobowej dostarcza obok żelaza, witaminy A, D, K, witaminy z grupy B oraz witaminę C. Usprawniają metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają korzystnie na procesy odnowy nabłonków. Biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo- fosforowej. Podawanie mieszanki wpływa korzystnie na ptaki w okresie rekonwalescencji i osłabionego apetytu.",
+   "usage_verbatim": "2 krople mieszanki / 60 ml wody do picia (35 kropli / 1 L wody), podawać 1-2 razy w tygodniu, PAPUGI: – 2 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna (35 kropli / 75 ml wody i nasączyć 500 g ziarna), podawać 1 – 2 razy w tygodniu. 1 ml zawiera 20 kropli. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze. W przypadku stresu (transportowy, adaptacyjny, cieplny) lub rekonwalescencji dawkę można podwoić i podawać przez okres 3 dni.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floratonyl-15ml/"
+  },
+  "florarutil": {
+   "family_slug": "florarutil",
+   "name": "Florarutil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "pióra"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Kolor piór.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na zwiększenie intensywności czerwonej barwy piór. Mieszanka może być podawana w wodzie do picia, w połączeniu z floramue lub podawana w papce albo wymieszana z tartą marchwią.",
+   "usage_verbatim": "1 miarka mieszanki / 60 ml wody do picia lub z karmą / 15 ptaków, podawać na początku pierzenia przez kolejne 20 dni. 1 miarka zawiera ok. 0,12 g mieszanki.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florarutil-10g/"
+  },
+  "floraferol": {
+   "family_slug": "floraferol",
+   "name": "Floraferol",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "reprodukcja"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Reprodukcja.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy niezbędnym w okresie reprodukcji. Wpływa korzystnie na poprawę zdolności reprodukcyjnych samców i samic oraz na wskaźniki wylęgu.",
+   "usage_verbatim": "- 8 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 1 L wody), podawać 2 razy w tygodniu przez 3 tygodnie oraz przez cały okresie rozrodu, PAPUGI: – 8 kropli mieszanki / 5 ml wody do picia (1 łyżeczka do herbaty) i nasączyć 30 g ziarna lub 1 łyżeczka / 75 ml wody do picia i nasączyć 500 g ziarna, podawać 2 razy w tygodniu przez 3 tygodnie oraz przez cały okres rozrodu. 1 ml zawiera 20 kropli",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floraferol-15ml/"
+  },
+  "floracal": {
+   "family_slug": "floracal",
+   "name": "Floracal",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "uzupełnia składniki mineralne i aminokwasy"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Mieszanka zawiera składniki wpływające na prawidłowy przebieg procesu tworzenia skorupy jaja, stanowi niezbędny dodatek do karmy dla ptaków w okresie reprodukcji.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest przeznaczona dla ptaków ozdobnych jako dodatek do karmy. Uzupełnia dawkę pokarmową w podstawowe składniki mineralne oraz aminokwasy. Zawiera łatwo przyswajalne makro i mikroelementy konieczne do prawidłowego wzrostu, rozwoju oraz funkcjonowania organizmu. Mieszanka zawiera składniki wpływające na prawidłowy przebieg procesu tworzenia skorupy jaja, stanowi niezbędny dodatek do karmy dla ptaków w okresie reprodukcji.",
+   "usage_verbatim": "- 5 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 1 L wody) – 1 raz w tygodniu, - okres wzrostu młodych, przygotowanie do rozrodu oraz po 15 dniach od zakończenia pierzenia – 1 raz dziennie, PAPUGI: - 5 kropli mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki mieszanki / 150 ml wody do picia i nasączyć 1kg ziarna – 1 raz w tygodniu, - okres wzrostu młodych, przygotowanie do rozrodu oraz po 15 dniach od zakończenia pierzenia – 1 raz dziennie. 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floracal-15ml/"
+  },
+  "floratransit": {
+   "family_slug": "floratransit",
+   "name": "Floratransit",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "przewód pokarmowy",
+    "flora jelitowa"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Przewód pokarmowy. Flora jelitowa.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca – mineralna jest dodatkiem do karmy. Wpływa na funkcjonowanie przewodu pokarmowego, na prawidłową konsystencję odchodów, dostarcza organizmowi elektrolitów. Osłania przewód pokarmowy oraz działa korzystnie na rozwój prawidłowej flory jelitowej. Ogranicza utratę wody przez ścianę jelita.",
+   "usage_verbatim": "1 miarka mieszanki / 40 g papki pokarmowej. 1 miarka zawiera ok. 0,12 g mieszanki. Uwaga: mieszankę podawać w postaci papki, ponieważ nie rozpuszcza się w wodzie. Po otwarciu przechowywać w suchym i chłodnym miejscu.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floratransit-10g/"
+  },
+  "florabactil": {
+   "family_slug": "florabactil",
+   "name": "Florabactil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "Wspomaga osłabioną zdolność trawienia"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Wspomaga osłabioną zdolność trawienia.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest przeznaczona dla ptaków ozdobnych. Podstawowym warunkiem wykorzystania substancji odżywczych jest właściwy proces trawienia. Składniki mieszanki wpływają korzystnie na jego przebieg, wspomagają osłabioną zdolność trawienia białek przez ptaki, co pozwala uniknąć utraty masy ciała oraz wychudzenia.",
+   "usage_verbatim": "Podawać bezpośrednio lub z karmą - 2 miarki mieszanki / 30 ml wody do picia (1 łyżeczka do herbaty / 300 ml wody). Podawać przez 3 kolejne dni w tygodniu, przez okres kilku miesięcy. PAPUGI: - 4 miarki mieszanki / 5 ml wody do picia (1 łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki do herbaty / 45 ml wody do picia i nasączyć 300 g ziarna. Podawać przez 3 kolejne dni w tygodniu, przez okres kilku miesięcy. 1 miarka zawiera 0,16 g mieszanki. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florabactil-30g/"
+  },
+  "florarome": {
+   "family_slug": "florarome",
+   "name": "Florarome",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "układ oddechowy i pokarmowy"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Układ oddechowy i pokarmowy.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na poprawę funkcjonowania układu oddechowego i pokarmowego, poprzez wspomaganie pracy układu odpornościowego ptaków.",
+   "usage_verbatim": "3 krople mieszanki / 60 ml wody do picia (2 ml / 1 L wody), podawać 1 raz w miesiącu przez okres 5 – 10 dni, PAPUGI: – 3 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 ml / 75 ml wody do picia i nasączyć 500 g ziarna, podawać 1 raz w miesiącu przez okres 5 – 10 dni. 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florarome-15ml/"
+  },
+  "floracholine": {
+   "family_slug": "floracholine",
+   "name": "Floracholine",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "wpływa na przemianę tłuszczową w wątrobie"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Wspomaga wydzielanie kwasów żółciowych oraz dostarcza energii. Wpływa korzystnie na funkcje układu pokarmowego, ułatwia eliminację tłuszczu z wątroby oraz produkcję żółci.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca wpływa na przemianę tłuszczową w wątrobie, wspomaga wydzielanie kwasów żółciowych oraz dostarcza energii. Wpływa korzystnie na funkcje układu pokarmowego, ułatwia eliminację tłuszczu z wątroby oraz produkcję żółci.",
+   "usage_verbatim": "- 10 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 500 ml wody) – 2 razy w tygodniu, PAPUGI: – 10 kropli mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki mieszanki / 75 ml wody do picia i nasączyć 500 g ziarna – 2 razy w tygodniu. 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floracholine-60ml/"
+  },
+  "floramucil": {
+   "family_slug": "floramucil",
+   "name": "Floramucil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "układ oddechowy"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Układ oddechowy.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na poprawę funkcjonowania układu oddechowego. Rośliny aromatyczne wywierają korzystne działanie na śluzówkę górnych dróg oddechowych.",
+   "usage_verbatim": "Podawać okresowo celem wspomagania pracy układu oddechowego: - 4 krople mieszanki / 60 ml wody do picia (2 ml / 1L wody), PAPUGI: – 4 krople mieszanki / 5 ml wody (1 łyżeczka do herbaty i nasączyć 30 g ziarna). 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floramucil-15ml/"
+  }
+ },
+ "all_guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "stage": "informational"
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "stage": "product"
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "product"
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "stage": "product"
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 /* Consent manager: stores the choice (first-party cookie, 180 days), updates Consent Mode, activates gated tags. */
 const COOKIE = 'ew_consent';
-const banner = document.querySelector( '[data-ew-consent]' );
+const banner = document.querySelector( 'div[data-ew-consent]' ); // not the gated <script data-ew-consent> tags
 const dialog = document.querySelector( '[data-ew-consent-dialog]' );
 
 const read = () => {

@@ -1,0 +1,418 @@
+{
+ "guide": {
+  "slug": "nieswiezy-oddech-u-psa-i-kota",
+  "title": "Nieświeży oddech u psa i kota",
+  "hub": "jama-ustna-i-zeby",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "jama-ustna-i-zeby"
+  ],
+  "stage": "practical",
+  "decision": "new",
+  "legacy_path": "",
+  "merged_from": [],
+  "needs": [
+   "nieswiezy-oddech",
+   "kamien-i-plytka-nazebna"
+  ],
+  "extra_families": [],
+  "brief": "New."
+ },
+ "source_files": [],
+ "needs": {
+  "nieswiezy-oddech": {
+   "slug": "nieswiezy-oddech",
+   "title": "Nieświeży oddech",
+   "scope": "IN: brzydki zapach z pyska, świeżość oddechu, higiena jamy ustnej bez szczotkowania. OUT: widoczny kamień i płytka (kamien-i-plytka-nazebna); krwawiące dziąsła, ból, ślinienie (red flags).",
+   "red_flag_level": "caution"
+  },
+  "kamien-i-plytka-nazebna": {
+   "slug": "kamien-i-plytka-nazebna",
+   "title": "Płytka i kamień nazębny – mycie zębów",
+   "scope": "IN: płytka nazębna, zapobieganie kamieniowi, nauka mycia zębów, pasta i szczoteczka. OUT: usuwanie istniejącego kamienia (zabieg u lekarza weterynarii), zapalenie dziąseł (red flag).",
+   "red_flag_level": "caution"
+  }
+ },
+ "families": {
+  "plyn-do-higieny-jamy-ustnej": {
+   "family_slug": "plyn-do-higieny-jamy-ustnej",
+   "name": "Płyn do higieny jamy ustnej dla psów i kotów",
+   "line": null,
+   "product_type": "preparat do higieny jamy ustnej",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Czyste zęby. świeży oddech.",
+   "badges_verbatim": [
+    "POMAGA ZACHOWAĆ PRAWIDŁOWĄ MIKROFLORĘ BAKTERYJNĄ W JAMIE USTNEJ",
+    "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ",
+    "ZAPEWNIA ŚWIEŻY ODDECH"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Płyn dla psów i kotów do stosowania w celu utrzymania prawidłowej higieny jamy ustnej i zębów. Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech.",
+   "usage_verbatim": "Wstrząśnij butelką przed użyciem. Codziennie rozpuszczać 5 ml płynu w 250 ml wody do picia zwierzęcia. Codziennie wymieniać wodę w misce.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/plyn-do-higieny-jamy-ustnej-dla-psow-i-kotow-250ml/"
+  },
+  "spray-do-higieny-jamy-ustnej": {
+   "family_slug": "spray-do-higieny-jamy-ustnej",
+   "name": "Spray do higieny jamy ustnej dla psów i kotów",
+   "line": null,
+   "product_type": "preparat do higieny jamy ustnej",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Czyste zęby. świeży oddech.",
+   "badges_verbatim": [
+    "POMAGA ZACHOWAĆ PRAWIDŁOWĄ MIKROFLORĘ BAKTERYJNĄ W JAMIE USTNEJ",
+    "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ",
+    "ZAPEWNIA ŚWIEŻY ODDECH"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Spray dla psów i kotów do stosowania w celu utrzymania prawidłowej higieny jamy ustnej i zębów. Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech.",
+   "usage_verbatim": "Wstrząśnij butelką przed użyciem. Spryskaj zęby i dziąsła zwierzęcia. Można również czyścić zęby gazikiem zwilżonym preparatem.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/spray-do-higieny-jamy-ustnej-dla-psow-i-kotow-100ml/"
+  },
+  "stoma-zel": {
+   "family_slug": "stoma-zel",
+   "name": "STOMA-ŻEL",
+   "line": "Stoma-żel",
+   "product_type": "preparat do higieny jamy ustnej",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Pasta do pielęgnacji uzębienia dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH",
+    "SZCZOTECZKA DO MYCIA ZĘBÓW WEWNĄTRZ OPAKOWANIA",
+    "aromat miętowy"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Stoma – żel jest kosmetykiem weterynaryjnym przeznaczonym do pielęgnacji jamy ustnej. Dodatek chlorheksydyny do pasty wpływa na ograniczenie rozwoju niepożądanej mikroflory w jamie ustnej, usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł. Dodatek smakowo-zapachowy sprawia, że zwierzęta łatwo akceptują stosowanie pasty. Środki czyszczące zapobiegają powstawaniu kamienia nazębnego oraz wytwarzają emulsję z drobinami pokarmu pozwalającą na jego usuwanie z powierzchni zębów.",
+   "usage_verbatim": "1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia. Pastę nakładać za pomocą szczoteczki do zębów, palca lub kawałka gazy. Łagodnie wcierać. Nie wypłukiwać.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-w-tubce-50g-szczoteczka-do-zebow/"
+  },
+  "szczoteczki-do-pielegnacji-uzebienia": {
+   "family_slug": "szczoteczki-do-pielegnacji-uzebienia",
+   "name": "Szczoteczki do pielęgnacji uzębienia",
+   "line": null,
+   "product_type": "akcesorium",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Delikatne i przyjemne: Gumowe szczoteczki na palec są miękkie i delikatne dla dziąseł i zębów psów i kotów.\nMasowanie dziąseł: szczoteczki pomagają w stymulowaniu krążenia krwi i zachowaniu zdrowych dziąseł zwierząt.\nUsuwanie płytki nazębnej: Elastyczne włosie skutecznie usuwa płytkę nazębną, resztki jedzenia.\nZapobieganie chorobom jamy ustnej: zapobiegają chorobom związanym z jamą ustną, takim jak kamień nazębny, zapalenie dziąseł czy infekcje.\nŚwieży oddech: Skuteczne czyszczenie zębów przyczynia się do utrzymania świeżego oddechu.\nErgonomiczny design: Gumowe szczoteczki na palec są łatwe do trzymania, kontrolowania, co ułatwia właścicielowi skupienie się na dokładnym czyszczeniu zębów.\nZintegrowana ochrona zdrowia: Dbając o zdrowie zębów i dziąseł swojego zwierzęcia, możesz wpłynąć na ogólną kondycję zdrowotną, eliminując potencjalne problemy związane z jamą ustną.",
+   "usage_verbatim": "Szczoteczkę nakładamy na palec. Nakładamy pastę. Delikatnie myjemy zęby zwierzęcia 1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "zapobiegają chorobom związanym z jamą ustną, takim jak kamień nazębny, zapalenie dziąseł czy infekcje.",
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/2-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/"
+  },
+  "stoma-zel-zapach-wolowiny": {
+   "family_slug": "stoma-zel-zapach-wolowiny",
+   "name": "STOMA-ŻEL zapach wołowiny",
+   "line": "Stoma-żel",
+   "product_type": "preparat do higieny jamy ustnej",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Pasta do pielęgnacji uzębienia dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH",
+    "SZCZOTECZKA DO MYCIA ZĘBÓW WEWNĄTRZ OPAKOWANIA",
+    "Zapach wołowiny",
+    "aromat wołowiny"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Stoma-żel pasta do zębów dla psów i kotów z zapachem wołowiny. Dodatek zapachowy sprawia, że zwierzęta chętnie akceptują aplikację pasty. Zawarta w paście chlorheksydyna wpływa hamująco na rozwój niepożądanej mikroflory w jamie ustnej, usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł. Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł. Hamuje osadzanie się płytki nazębnej. chroni przed bakteriami przez 8-12 godzin. Środki czyszczące zapobiegają powstawaniu kamienia nazębnego oraz wytwarzają emulsję, która z drobinami pokarmu pozwala na usuwanie zanieczyszczeń z powierzchni zębów i dziąseł.\nDodatek zbalansowanego aromatu wołowiny sprawia, że aplikacja pasty staje się dla zwierząt pozytywnym doświadczeniem. Zapach nie tylko ułatwia akceptację pasty, ale również tworzy przyjemne doznanie dla zwierzęcia podczas codziennej pielęgnacji. Zwierzęta z chęcią poddają się zabiegowi, co przekłada się na regularność stosowania pasty Stoma-Żel i utrzymanie zdrowej jamy ustnej.",
+   "usage_verbatim": "1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia. Pastę nakładać za pomocą szczoteczki do zębów, palca lub kawałka gazy. Łagodnie wcierać. Nie wypłukiwać.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł.",
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-zapach-wolowiny-szczoteczka-do-zebow/"
+  }
+ },
+ "all_guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "stage": "informational"
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "stage": "product"
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "product"
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "stage": "product"
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  }
+ ]
+}

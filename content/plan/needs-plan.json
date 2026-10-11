@@ -1,0 +1,1625 @@
+[
+ {
+  "slug": "swiad-i-drapanie",
+  "title": "Świąd i drapanie",
+  "batch": "skora",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora"
+  ],
+  "priority": 95,
+  "red_flag_level": "caution",
+  "scope": "IN: ogólne swędzenie skóry, drapanie się, gryzienie/wylizywanie skóry jako objaw. OUT: swędzenie uszu i drapanie uszu (podraznione-uszy-i-zapach-z-uszu), swędzenie po ukąszeniach owadów i pchły (pchly-i-kleszcze), skłonność do alergii jako typ skóry (skora-wrazliwa-i-alergiczna), zdiagnozowane zapalenie skóry (stany-zapalne-skory).",
+  "products": [
+   {
+    "family": "alervet-excellence",
+    "role": "primary",
+    "evidence": "Szampon pielęgnacyjny, łagodzący świąd z fitosfingozyną dla psów i kotów"
+   },
+   {
+    "family": "triaderm-excellence",
+    "role": "similar",
+    "evidence": "ŁAGODZI ŚWIĄD"
+   },
+   {
+    "family": "ektovet",
+    "role": "similar",
+    "evidence": "ŁAGODZI ŚWIĄD I PODRAŻNIENIA"
+   },
+   {
+    "family": "alervet",
+    "role": "similar",
+    "evidence": "WSPOMAGA ZMNIEJSZAĆ OBJAWY ŚWIĄDU"
+   },
+   {
+    "family": "hydra-derm-spray",
+    "role": "similar",
+    "evidence": "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI I ŚWIĄDEM SKÓRY"
+   },
+   {
+    "family": "sebolan",
+    "role": "similar",
+    "evidence": "Dermatologiczny szampon przeciw świądowi i łupieżowi dla psów"
+   }
+  ]
+ },
+ {
+  "slug": "skora-wrazliwa-i-alergiczna",
+  "title": "Skóra wrażliwa, alergiczna i podrażniona",
+  "batch": "skora",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora"
+  ],
+  "priority": 88,
+  "red_flag_level": "caution",
+  "scope": "IN: skóra skłonna do alergii/uczuleń, nadwrażliwa, łatwo się podrażniająca, zaczerwieniona po kąpieli lub kontakcie; pielęgnacja przy atopii (wspomagająco). OUT: sam świąd jako objaw (swiad-i-drapanie), suchość i łupież (sucha-skora-i-lupiez), rany (otarcia-i-drobne-rany), zdiagnozowane infekcje skóry (stany-zapalne-skory).",
+  "products": [
+   {
+    "family": "ektovet",
+    "role": "primary",
+    "evidence": "SKÓRA WRAŻLIWA I ALERGICZNA"
+   },
+   {
+    "family": "triaderm-excellence",
+    "role": "similar",
+    "evidence": "DLA SKÓRY ALERGICZNEJ I USZKODZONEJ"
+   },
+   {
+    "family": "kp-szampon-lagodzacy-podraznienia",
+    "role": "similar",
+    "evidence": "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SKÓRY"
+   },
+   {
+    "family": "alervet",
+    "role": "similar",
+    "evidence": "Dermoszampon łagodzący objawy związane z podrażnieniami skóry dla psów i kotów"
+   },
+   {
+    "family": "olej-z-lososia",
+    "role": "complementary",
+    "evidence": "Podrażnienia skóry, uczulenia, egzemy."
+   },
+   {
+    "family": "efaderm-e-kapsulki-pies",
+    "role": "complementary",
+    "evidence": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości"
+   }
+  ]
+ },
+ {
+  "slug": "sucha-skora-i-lupiez",
+  "title": "Sucha skóra i łupież",
+  "batch": "skora",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora",
+   "siersc"
+  ],
+  "priority": 84,
+  "red_flag_level": "caution",
+  "scope": "IN: przesuszona, szorstka, łuszcząca się skóra, suchy łupież (drobne białe łuski). OUT: tłusty łupież i przetłuszczanie (przetluszczajaca-sie-skora-i-lojotok), zgrubienia na łokciach (zrogowacenia-skory-na-lokciach), sucha sierść bez problemu skóry (matowa-i-lamliwa-siersc).",
+  "products": [
+   {
+    "family": "alervet",
+    "role": "primary",
+    "evidence": "Stosować w przypadku skóry wrażliwej ze skłonnością do łupieżu oraz skóry suchej."
+   },
+   {
+    "family": "sebovet-dry",
+    "role": "similar",
+    "evidence": "Dermatologiczny szampon przeciwłupieżowy dla psów i kotów"
+   },
+   {
+    "family": "kp-szampon-nawilzajacy",
+    "role": "similar",
+    "evidence": "Pielęgnacja suchej skóry i sierści."
+   },
+   {
+    "family": "ektovet",
+    "role": "similar",
+    "evidence": "przeznaczonym do pielęgnacji suchej i wrażliwej skóry oraz sierści psów i kotów"
+   },
+   {
+    "family": "kp-szampon-bulldog",
+    "role": "similar",
+    "evidence": "NAWILŻA I UELASTYCZNIA SKÓRĘ"
+   },
+   {
+    "family": "hydra-derm-n",
+    "role": "complementary",
+    "evidence": "Ogólne lub miejscowe nawilżanie skóry suchej lub z łupieżem."
+   }
+  ]
+ },
+ {
+  "slug": "przetluszczajaca-sie-skora-i-lojotok",
+  "title": "Przetłuszczająca się skóra i sierść (łojotok)",
+  "batch": "skora",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora",
+   "siersc"
+  ],
+  "priority": 74,
+  "red_flag_level": "caution",
+  "scope": "IN: tłusta, lepiąca się sierść, tłusty łupież, łojotok (stany kerato-łojotokowe — pielęgnacja). OUT: zapach skóry jako główny problem (nieprzyjemny-zapach-skory-i-siersci), suchy łupież (sucha-skora-i-lupiez), woskowina w uszach (higiena-uszu-i-woskowina).",
+  "products": [
+   {
+    "family": "peroxyvet",
+    "role": "primary",
+    "evidence": "Dermatologiczny szampon dla skóry i sierści przetłuszczonej dla psów i kotów"
+   },
+   {
+    "family": "sebovet-clean",
+    "role": "similar",
+    "evidence": "Łojotok tłusty, tłusty wygląd sierści, sklejone łuski łupieżu, miejscowe zaczerwienienie skóry."
+   },
+   {
+    "family": "sebovet-excellence",
+    "role": "similar",
+    "evidence": "Szampon przeciwłupieżowy i przeciwłojotokowy z fitosfingozyną i ekstraktami roślinnymi dla psów i kotów"
+   },
+   {
+    "family": "hydra-derm-spray",
+    "role": "similar",
+    "evidence": "Miejscowe nawadnianie i odtłuszczanie skóry z tendencją do łojotoku."
+   },
+   {
+    "family": "sebostop-spot-on",
+    "role": "complementary",
+    "evidence": "Preparat przeciw łojotokowi z fitosfingozyną dla psów i kotów"
+   }
+  ]
+ },
+ {
+  "slug": "nieprzyjemny-zapach-skory-i-siersci",
+  "title": "Nieprzyjemny zapach skóry i sierści",
+  "batch": "skora",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora",
+   "siersc"
+  ],
+  "priority": 80,
+  "red_flag_level": "caution",
+  "scope": "IN: „pies śmierdzi”, zapach od skóry i sierści mimo kąpieli, zapach w okolicy odbytu (pielęgnacyjnie). OUT: zapach z uszu (podraznione-uszy-i-zapach-z-uszu), z pyska (nieswiezy-oddech), zapach w domu/kuwecie (czyszczenie-kuwety-klatki-i-powierzchni).",
+  "products": [
+   {
+    "family": "kp-dezodorant-neutralizator-zapachow",
+    "role": "primary",
+    "evidence": "Spray zapewnia skuteczną ochronę przeciwko powstawaniu nieprzyjemnych zapachów na skórze i sierści zwierząt"
+   },
+   {
+    "family": "sebostop-spot-on",
+    "role": "similar",
+    "evidence": "ELIMINUJE NIEPRZYJEMNY ZAPACH SKÓRY"
+   },
+   {
+    "family": "sebovet-excellence",
+    "role": "complementary",
+    "evidence": "Zwalczanie nieprzyjemnego zapachu skóry u zwierząt ze skłonnością do łojotoku."
+   }
+  ]
+ },
+ {
+  "slug": "stany-zapalne-skory",
+  "title": "Zapalenie skóry – pielęgnacja wspomagająca leczenie",
+  "batch": "skora",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora"
+  ],
+  "priority": 62,
+  "red_flag_level": "urgent",
+  "scope": "IN: zapalenie skóry/infekcja skóry rozpoznane lub podejrzewane (krosty, sączące zmiany, ropne zmiany, „grzybica”) — wyłącznie pielęgnacja jako uzupełnienie leczenia u lekarza weterynarii; produkty za ostrzeżeniem. OUT: zwykły świąd, wrażliwa skóra, łupież (osobne potrzeby).",
+  "products": [
+   {
+    "family": "hexoderm-excellence",
+    "role": "primary",
+    "evidence": "Pielęgnacja skóry i sierści, wspomagająco przy leczeniu bakteryjnego zapalenia skóry."
+   },
+   {
+    "family": "hexoderm",
+    "role": "similar",
+    "evidence": "Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry."
+   },
+   {
+    "family": "hexoderm-k",
+    "role": "similar",
+    "evidence": "Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry."
+   },
+   {
+    "family": "peptoderm-excellence",
+    "role": "similar",
+    "evidence": "Wspomagająco przy leczeniu bakteryjnego zapalenia skóry."
+   },
+   {
+    "family": "triaderm-excellence",
+    "role": "similar",
+    "evidence": "Polecany do codziennej pielęgnacji wspierającej terapię dermatologiczną."
+   }
+  ]
+ },
+ {
+  "slug": "otarcia-i-drobne-rany",
+  "title": "Otarcia i drobne uszkodzenia skóry",
+  "batch": "skora",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora"
+  ],
+  "priority": 60,
+  "red_flag_level": "caution",
+  "scope": "IN: drobne otarcia, zadrapania, uszkodzona skóra, wylizywanie miejsca uszkodzenia. OUT: głębokie, krwawiące, ropiejące rany i ugryzienia (red flags → lekarz), opuszki łap (opuszki-lap).",
+  "products": [
+   {
+    "family": "fyto-derm",
+    "role": "primary",
+    "evidence": "Preparat pielęgnacyjny na uszkodzenia skóry dla psów, kotów i pozostałych zwierząt"
+   },
+   {
+    "family": "alu-derm",
+    "role": "similar",
+    "evidence": "Preparat pielęgnacyjny na uszkodzenia skóry dla psów i kotów"
+   }
+  ]
+ },
+ {
+  "slug": "zrogowacenia-skory-na-lokciach",
+  "title": "Zrogowaciała, zgrubiała skóra na łokciach",
+  "batch": "skora",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora"
+  ],
+  "priority": 48,
+  "red_flag_level": "caution",
+  "scope": "IN: zgrubienia/odciski i zrogowaciała skóra na łokciach i stawach skokowych (miejscowe zrogowacenie). OUT: opuszki łap (opuszki-lap), ogólna suchość (sucha-skora-i-lupiez).",
+  "products": [
+   {
+    "family": "hydra-derm-n",
+    "role": "primary",
+    "evidence": "Zmiękczanie skóry w przypadku miejscowego zrogowacenia (łokcie, stawy skokowe itp.)."
+   },
+   {
+    "family": "hydra-derm-spray",
+    "role": "similar",
+    "evidence": "Zmiękczanie skóry w przypadku jej lokalnego nadmiernego zrogowacenia (łokcie, stawy skokowe itp.)."
+   }
+  ]
+ },
+ {
+  "slug": "matowa-i-lamliwa-siersc",
+  "title": "Matowa, sucha i łamliwa sierść",
+  "batch": "siersc-i-kapiel",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "siersc"
+  ],
+  "priority": 76,
+  "red_flag_level": "none",
+  "scope": "IN: brak połysku, sucha, łamliwa, uszkodzona sierść; przygotowanie sierści do wystawy. OUT: linienie i wypadanie (linienie-i-wypadanie-siersci), kołtuny (dluga-siersc-i-koltuny), kolor (biala-siersc, ciemna-siersc).",
+  "products": [
+   {
+    "family": "wita-vet-siersc-krople",
+    "role": "primary",
+    "evidence": "polecana jest w przypadku sierści suchej, matowej i uszkodzonej"
+   },
+   {
+    "family": "olej-z-lososia",
+    "role": "similar",
+    "evidence": "Łamliwość, matowienie sierści"
+   },
+   {
+    "family": "zn-cynk",
+    "role": "similar",
+    "evidence": "łamliwej, matowej i suchej sierści"
+   },
+   {
+    "family": "wita-vet-siersc-pies",
+    "role": "similar",
+    "evidence": "Zalecana w przypadku sierści suchej, matowej i uszkodzonej."
+   },
+   {
+    "family": "wita-vet-siersc-kot",
+    "role": "similar",
+    "evidence": "przy sierści suchej i uszkodzonej"
+   },
+   {
+    "family": "kp-odzywka-bez-splukiwania",
+    "role": "complementary",
+    "evidence": "NADAJE POŁYSK I JEDWABISTOŚĆ"
+   }
+  ]
+ },
+ {
+  "slug": "linienie-i-wypadanie-siersci",
+  "title": "Linienie i nadmierne wypadanie sierści",
+  "batch": "siersc-i-kapiel",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "siersc"
+  ],
+  "priority": 85,
+  "red_flag_level": "caution",
+  "scope": "IN: sezonowe linienie, „sierść wszędzie”, nadmierne wypadanie sierści. OUT: łyse placki/ogniska bez sierści (red flag → lekarz), matowość bez wypadania (matowa-i-lamliwa-siersc).",
+  "products": [
+   {
+    "family": "kp-gold-regenerator-siersci-i-skory",
+    "role": "primary",
+    "evidence": "Szczególnie zaleca się ją podawać w okresie linienia."
+   },
+   {
+    "family": "wita-vet-siersc-pies",
+    "role": "similar",
+    "evidence": "Ogranicza linienie."
+   },
+   {
+    "family": "wita-vet-siersc-kot",
+    "role": "similar",
+    "evidence": "Karma uzupełniająca przeznaczona dla kotów do stosowania w okresie linienia"
+   },
+   {
+    "family": "olej-z-lososia",
+    "role": "similar",
+    "evidence": "nadmiernej utracie włosa"
+   },
+   {
+    "family": "zn-cynk",
+    "role": "similar",
+    "evidence": "Podawać karmę przy nadmiernym wypadaniu włosów"
+   },
+   {
+    "family": "efaderm-e-kapsulki-pies",
+    "role": "similar",
+    "evidence": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości i nadmiernego wypadania sierści."
+   }
+  ]
+ },
+ {
+  "slug": "dluga-siersc-i-koltuny",
+  "title": "Długa sierść, kołtuny i trudne rozczesywanie",
+  "batch": "siersc-i-kapiel",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "siersc"
+  ],
+  "priority": 68,
+  "red_flag_level": "none",
+  "scope": "IN: filcowanie, kołtuny, elektryzująca się i pusząca sierść, pielęgnacja długiego włosa (York, Shih Tzu, maltańczyk). OUT: kolor sierści (biala-siersc), matowość wynikająca z kondycji (matowa-i-lamliwa-siersc).",
+  "products": [
+   {
+    "family": "kp-odzywka-bez-splukiwania",
+    "role": "primary",
+    "evidence": "Powoduje, że sierść lepiej się układa oraz zapobiega powstawaniu filców i kołtunów."
+   },
+   {
+    "family": "kp-odzywka-do-siersci-i-wlosow",
+    "role": "similar",
+    "evidence": "Odżywka pozwala na łatwe rozczesywanie sierści po umyciu."
+   },
+   {
+    "family": "kp-szampon-york-dlugi-wlos",
+    "role": "complementary",
+    "evidence": "Pielęgnacja długiego włosa."
+   },
+   {
+    "family": "kp-szampon-shih-tzu",
+    "role": "complementary",
+    "evidence": "Pielęgnacja długiego włosa."
+   },
+   {
+    "family": "kp-szampon-dla-maltanczykow",
+    "role": "complementary",
+    "evidence": "Pielęgnacja długiego włosa."
+   }
+  ]
+ },
+ {
+  "slug": "biala-siersc",
+  "title": "Biała i jasna sierść – pielęgnacja koloru",
+  "batch": "siersc-i-kapiel",
+  "species": [
+   "pies"
+  ],
+  "areas": [
+   "siersc"
+  ],
+  "priority": 52,
+  "red_flag_level": "none",
+  "scope": "IN: żółknąca/zszarzała biała lub jasna sierść, podkreślenie jasnego koloru. OUT: zacieki łzowe pod oczami (przemywanie-oczu-i-wydzielina — bez obietnicy usuwania przebarwień), ciemna sierść (ciemna-siersc).",
+  "products": [
+   {
+    "family": "kp-szampon-biala-siersc",
+    "role": "primary",
+    "evidence": "Pielęgnacja skóry i jasnej sierści."
+   },
+   {
+    "family": "kp-szampon-dla-maltanczykow",
+    "role": "similar",
+    "evidence": "ROZJAŚNIA KOLOR"
+   }
+  ]
+ },
+ {
+  "slug": "ciemna-siersc",
+  "title": "Ciemna sierść – podkreślenie koloru",
+  "batch": "siersc-i-kapiel",
+  "species": [
+   "pies"
+  ],
+  "areas": [
+   "siersc"
+  ],
+  "priority": 42,
+  "red_flag_level": "none",
+  "scope": "IN: ciemna/czarna sierść, która straciła głębię koloru. OUT: biała sierść (biala-siersc), siwienie jako objaw zdrowotny.",
+  "products": [
+   {
+    "family": "kp-szampon-ciemna-siersc",
+    "role": "primary",
+    "evidence": "Pielęgnacja skóry i ciemnej sierści."
+   },
+   {
+    "family": "wita-vet-siersc-krople",
+    "role": "complementary",
+    "evidence": "Składniki karmy ułatwiają przywrócenie sprężystości skóry, połysku i barwy sierści"
+   }
+  ]
+ },
+ {
+  "slug": "delikatna-kapiel-szczeniaka-i-kota",
+  "title": "Delikatna kąpiel szczeniaka i kota",
+  "batch": "siersc-i-kapiel",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "siersc",
+   "skora"
+  ],
+  "priority": 58,
+  "red_flag_level": "none",
+  "scope": "IN: pierwsza kąpiel szczeniaka, jaki szampon dla kota, łagodne mycie. OUT: mycie bez wody (mycie-bez-wody), problemy skóry (potrzeby z batcha skora). Kocięta: brak produktu wskazującego kocięta — nie obiecywać.",
+  "products": [
+   {
+    "family": "kp-szampon-dla-szczeniat",
+    "role": "primary",
+    "evidence": "Zawarty w szamponie olejek z migdałowca sprawia, że jest bardzo dobrze tolerowany przez szczenięta."
+   },
+   {
+    "family": "kp-szampon-dla-kotow",
+    "role": "similar",
+    "evidence": "DELIKATNIE MYJE"
+   },
+   {
+    "family": "kp-odzywka-bez-splukiwania",
+    "role": "complementary",
+    "evidence": "UŁATWIA ROZCZESYWANIE SIERŚCI"
+   }
+  ]
+ },
+ {
+  "slug": "mycie-bez-wody",
+  "title": "Mycie bez wody (szampon na sucho)",
+  "batch": "siersc-i-kapiel",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "siersc",
+   "skora"
+  ],
+  "priority": 60,
+  "red_flag_level": "none",
+  "scope": "IN: zwierzę nie lubi kąpieli, podróż, przed wystawą, zabrudzenia po zabiegach weterynaryjnych. OUT: regularna kąpiel szamponem (delikatna-kapiel-szczeniaka-i-kota).",
+  "products": [
+   {
+    "family": "kp-szampon-do-mycia-na-sucho",
+    "role": "primary",
+    "evidence": "Szampon piankowy jest przeznaczony dla zwierząt, które nie lubią kąpieli."
+   },
+   {
+    "family": "dry-clean",
+    "role": "similar",
+    "evidence": "CZYŚCI SKÓRĘ I SIERŚĆ BEZ UŻYCIA WODY"
+   }
+  ]
+ },
+ {
+  "slug": "higiena-uszu-i-woskowina",
+  "title": "Czyszczenie uszu i nadmiar woskowiny",
+  "batch": "uszy-oczy",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "uszy"
+  ],
+  "priority": 90,
+  "red_flag_level": "caution",
+  "scope": "IN: rutynowe czyszczenie uszu, nadmiar woskowiny, brudne uszy. OUT: swędzenie, zaczerwienienie, zapach, potrząsanie głową (podraznione-uszy-i-zapach-z-uszu).",
+  "products": [
+   {
+    "family": "otolan",
+    "role": "primary",
+    "evidence": "PŁYN DO USUWANIA WOSKOWINY Z MAŁŻOWINY USZNEJ I PRZEWODU SŁUCHOWEGO ZEWNĘTRZNEGO U PSÓW I KOTÓW"
+   },
+   {
+    "family": "otiseptol",
+    "role": "similar",
+    "evidence": "Otiseptol ułatwia usunięcie woskowiny."
+   },
+   {
+    "family": "kp-emulsja-do-przemywania-uszu",
+    "role": "similar",
+    "evidence": "Emulsja usuwa nadmiar woskowiny."
+   },
+   {
+    "family": "sebostop-spot-on",
+    "role": "similar",
+    "evidence": "Nadmiar woskowiny w przewodzie słuchowym zewnętrznym."
+   }
+  ]
+ },
+ {
+  "slug": "podraznione-uszy-i-zapach-z-uszu",
+  "title": "Podrażnione, swędzące uszy i nieprzyjemny zapach z uszu",
+  "batch": "uszy-oczy",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "uszy"
+  ],
+  "priority": 84,
+  "red_flag_level": "caution",
+  "scope": "IN: drapanie uszu, zaczerwieniona małżowina, nieprzyjemny zapach z ucha, podejrzenie pasożytów uszu (tylko pielęgnacja wspomagająca; rozpoznanie u lekarza). OUT: rutynowe czyszczenie (higiena-uszu-i-woskowina).",
+  "products": [
+   {
+    "family": "akaryl-zel",
+    "role": "primary",
+    "evidence": "Emulsja łagodzi objawy związane z podrażnieniami przewodu słuchowego zewnętrznego i małżowiny usznej."
+   },
+   {
+    "family": "otiseptol",
+    "role": "similar",
+    "evidence": "Likwiduje nieprzyjemny zapach w przypadku infekcji przewodu słuchowego zewnętrznego i małżowiny usznej."
+   },
+   {
+    "family": "otolan",
+    "role": "complementary",
+    "evidence": "USUWA NIEPOŻĄDANY ZAPACH"
+   }
+  ]
+ },
+ {
+  "slug": "przemywanie-oczu-i-wydzielina",
+  "title": "Przemywanie oczu: wydzielina, łzawienie i podrażnienia",
+  "batch": "uszy-oczy",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "oczy"
+  ],
+  "priority": 86,
+  "red_flag_level": "caution",
+  "scope": "IN: wydzielina w kącikach oczu, łzawienie, zanieczyszczenia, podrażnione spojówki, codzienna higiena oczu; zacieki tylko jako pytanie o higienę okolic oczu (bez obietnicy usuwania przebarwień). OUT: suche oko (suche-oczy-i-nos), wsparcie wzroku dietą (wsparcie-wzroku), uraz oka/mętne oko (red flags).",
+  "products": [
+   {
+    "family": "optex",
+    "role": "primary",
+    "evidence": "Płyn do przemywania oczu i powiek dla psów i kotów"
+   },
+   {
+    "family": "kp-plyn-do-przemywania-oczu",
+    "role": "similar",
+    "evidence": "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SPOJÓWEK"
+   },
+   {
+    "family": "ektozin",
+    "role": "similar",
+    "evidence": "łagodzi objawy związane z podrażnieniami spojówek"
+   },
+   {
+    "family": "vetaseptol",
+    "role": "similar",
+    "evidence": "USUWANIE ZANIECZYSZCZEŃ Z WORKA SPOJÓWKOWEGO"
+   },
+   {
+    "family": "optex-ha",
+    "role": "similar",
+    "evidence": "Pomaga usunąć zanieczyszczenia z worka spojówkowego."
+   }
+  ]
+ },
+ {
+  "slug": "suche-oczy-i-nos",
+  "title": "Suche oczy i suchy nos",
+  "batch": "uszy-oczy",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "oczy",
+   "inne"
+  ],
+  "priority": 64,
+  "red_flag_level": "caution",
+  "scope": "IN: objawy suchego oka, nawilżanie oka, suchy/spierzchnięty nos, podrażnienia od wiatru, słońca, kurzu, suchego powietrza. OUT: wydzielina i przemywanie (przemywanie-oczu-i-wydzielina); wyciek ropny z nosa, krwawienie (red flags).",
+  "products": [
+   {
+    "family": "krople-hialuronowe-do-oczu-i-nosa",
+    "role": "primary",
+    "evidence": "DŁUGOTRWALE NAWILŻAJĄ OCZY I NOS"
+   },
+   {
+    "family": "optex-ha",
+    "role": "similar",
+    "evidence": "kwas hialuronowy nawilża rogówkę, łagodzi suchość i ból oczu"
+   },
+   {
+    "family": "vetaseptol",
+    "role": "similar",
+    "evidence": "chroni i oczyszcza nos, nawilża"
+   }
+  ]
+ },
+ {
+  "slug": "wsparcie-wzroku",
+  "title": "Wsparcie wzroku",
+  "batch": "uszy-oczy",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "oczy"
+  ],
+  "priority": 52,
+  "red_flag_level": "caution",
+  "scope": "IN: karma uzupełniająca wspierająca narząd wzroku, starsze zwierzę z pogarszającym się widzeniem (po wizycie u lekarza). OUT: przemywanie i nawilżanie oczu (przemywanie-oczu-i-wydzielina, suche-oczy-i-nos); nagła utrata wzroku, mętne oko (red flags).",
+  "products": [
+   {
+    "family": "witazium",
+    "role": "primary",
+    "evidence": "Karma uzupełniająca dla psów i kotów wspomagająca wzrok"
+   },
+   {
+    "family": "wita-vet-senior",
+    "role": "similar",
+    "evidence": "Luteina utrzymuje wzrok w dobrym stanie."
+   }
+  ]
+ },
+ {
+  "slug": "nieswiezy-oddech",
+  "title": "Nieświeży oddech",
+  "batch": "jama-ustna",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "jama-ustna-i-zeby"
+  ],
+  "priority": 85,
+  "red_flag_level": "caution",
+  "scope": "IN: brzydki zapach z pyska, świeżość oddechu, higiena jamy ustnej bez szczotkowania. OUT: widoczny kamień i płytka (kamien-i-plytka-nazebna); krwawiące dziąsła, ból, ślinienie (red flags).",
+  "products": [
+   {
+    "family": "plyn-do-higieny-jamy-ustnej",
+    "role": "primary",
+    "evidence": "ZAPEWNIA ŚWIEŻY ODDECH"
+   },
+   {
+    "family": "spray-do-higieny-jamy-ustnej",
+    "role": "similar",
+    "evidence": "ZAPEWNIA ŚWIEŻY ODDECH"
+   },
+   {
+    "family": "stoma-zel",
+    "role": "complementary",
+    "evidence": "usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł"
+   },
+   {
+    "family": "szczoteczki-do-pielegnacji-uzebienia",
+    "role": "complementary",
+    "evidence": "Skuteczne czyszczenie zębów przyczynia się do utrzymania świeżego oddechu."
+   },
+   {
+    "family": "stoma-zel-zapach-wolowiny",
+    "role": "similar",
+    "evidence": "usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł"
+   }
+  ]
+ },
+ {
+  "slug": "kamien-i-plytka-nazebna",
+  "title": "Płytka i kamień nazębny – mycie zębów",
+  "batch": "jama-ustna",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "jama-ustna-i-zeby"
+  ],
+  "priority": 82,
+  "red_flag_level": "caution",
+  "scope": "IN: płytka nazębna, zapobieganie kamieniowi, nauka mycia zębów, pasta i szczoteczka. OUT: usuwanie istniejącego kamienia (zabieg u lekarza weterynarii), zapalenie dziąseł (red flag).",
+  "products": [
+   {
+    "family": "stoma-zel",
+    "role": "primary",
+    "evidence": "Środki czyszczące zapobiegają powstawaniu kamienia nazębnego"
+   },
+   {
+    "family": "stoma-zel-zapach-wolowiny",
+    "role": "similar",
+    "evidence": "Hamuje osadzanie się płytki nazębnej."
+   },
+   {
+    "family": "szczoteczki-do-pielegnacji-uzebienia",
+    "role": "complementary",
+    "evidence": "Elastyczne włosie skutecznie usuwa płytkę nazębną, resztki jedzenia."
+   },
+   {
+    "family": "plyn-do-higieny-jamy-ustnej",
+    "role": "complementary",
+    "evidence": "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ"
+   },
+   {
+    "family": "spray-do-higieny-jamy-ustnej",
+    "role": "complementary",
+    "evidence": "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ"
+   }
+  ]
+ },
+ {
+  "slug": "pchly-i-kleszcze",
+  "title": "Ochrona przed pchłami i kleszczami",
+  "batch": "ochrona-i-lapy",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "skora",
+   "siersc"
+  ],
+  "priority": 92,
+  "red_flag_level": "caution",
+  "scope": "IN: dodatkowa ochrona/odstraszanie pcheł, kleszczy i innych owadów (spacery, sezon), swędzenie po ukąszeniach. OUT: leczenie istniejącej inwazji pasożytów i choroby odkleszczowe (lekarz weterynarii — produkty tylko wspomagają ochronę, nie zastępują środków przeciwpasożytniczych).",
+  "products": [
+   {
+    "family": "kp-spray-ochronny-przeciw-pchlom-i-kleszczom",
+    "role": "primary",
+    "evidence": "SPRAY WSPOMAGAJĄCY OCHRONĘ PRZECIW PCHŁOM, KLESZCZOM i innym owadom"
+   },
+   {
+    "family": "kp-drop-and-go-krople",
+    "role": "similar",
+    "evidence": "WSPOMAGA OCHRONĘ PSÓW I KOTÓW PRZED PCHŁAMI, KLESZCZAMI I INNYMI PASOŻYTAMI"
+   },
+   {
+    "family": "kp-pianka-ochronna-przeciw-pchlom-i-kleszczom",
+    "role": "similar",
+    "evidence": "Preparat wspomaga działanie ochronne przed obecnością pcheł, kleszczy i innych owadów na sierści oraz skórze psów i kotów."
+   },
+   {
+    "family": "kp-szampon-ochronny-przeciw-pchlom-i-kleszczom",
+    "role": "complementary",
+    "evidence": "Preparat wspomaga działanie ochronne przed obecnością pcheł i kleszczy na sierści oraz skórze psów i kotów."
+   }
+  ]
+ },
+ {
+  "slug": "opuszki-lap",
+  "title": "Podrażnione i popękane opuszki łap",
+  "batch": "ochrona-i-lapy",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "lapy-i-pazury"
+  ],
+  "priority": 70,
+  "red_flag_level": "caution",
+  "scope": "IN: popękane, podrażnione, otarte opuszki; ochrona przed solą drogową, śniegiem, gorącym asfaltem, twardym podłożem. OUT: zrogowacenia na łokciach (zrogowacenia-skory-na-lokciach); głębokie skaleczenia, kulawizna, obrzęk (red flags).",
+  "products": [
+   {
+    "family": "tanaderm",
+    "role": "primary",
+    "evidence": "Preparat do pielęgnacji opuszek palców dla psów i kotów"
+   },
+   {
+    "family": "kp-spray-ochronny-na-opuszki-palcow",
+    "role": "similar",
+    "evidence": "Pielęgnacja i regeneracja skóry opuszek palców oraz łagodzenie objawów związanych z ich podrażnieniem."
+   }
+  ]
+ },
+ {
+  "slug": "witaminy-i-mineraly-na-co-dzien",
+  "title": "Witaminy i minerały na co dzień",
+  "batch": "zywienie-i-mlode",
+  "species": [
+   "pies",
+   "kot",
+   "male-ssaki",
+   "zolwie"
+  ],
+  "areas": [
+   "kondycja"
+  ],
+  "priority": 70,
+  "red_flag_level": "none",
+  "scope": "IN: codzienna suplementacja witamin i minerałów zdrowego zwierzęcia (w tym królik, kawia, chomik, żółw). OUT: ciąża/wzrost (ciaza-karmienie-i-wzrost-mlodych), osłabienie i senior (oslabienie-rekonwalescencja-i-senior), ptaki (ptaki-witaminy-i-legi).",
+  "products": [
+   {
+    "family": "wita-vet-complex-1g",
+    "role": "primary",
+    "evidence": "Dzienna dawka witamin i minerałów"
+   },
+   {
+    "family": "wita-vet-energia-kot",
+    "role": "similar",
+    "evidence": "DZIENNA DAWKA WITAMIN I MINERAŁÓW"
+   },
+   {
+    "family": "wita-tonyl-gryzonie",
+    "role": "similar",
+    "evidence": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt."
+   },
+   {
+    "family": "wita-vet-complex-3-2g",
+    "role": "similar",
+    "evidence": "DZIENNA DAWKA WITAMIN I MINERAŁÓW"
+   },
+   {
+    "family": "wita-vet-complex-8g",
+    "role": "similar",
+    "evidence": "DZIENNA DAWKA WITAMIN I MINERAŁÓW"
+   }
+  ]
+ },
+ {
+  "slug": "ciaza-karmienie-i-wzrost-mlodych",
+  "title": "Ciąża, karmienie i wzrost młodych",
+  "batch": "zywienie-i-mlode",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "rozrod",
+   "kondycja"
+  ],
+  "priority": 68,
+  "red_flag_level": "caution",
+  "scope": "IN: suka/kotka ciężarna i karmiąca, wzrost szczeniąt i kociąt (karma uzupełniająca). OUT: odchów bez matki/mleko zastępcze (mleko-zastepcze-dla-szczeniat-i-kociat), ciąża urojona (ciaza-urojona).",
+  "products": [
+   {
+    "family": "wita-vet-junior-adult-krople",
+    "role": "primary",
+    "evidence": "Karma uzupełniająca dla szczeniąt, suk i kotek ciężarnych, karmiących"
+   },
+   {
+    "family": "wita-vet-energia-kot",
+    "role": "similar",
+    "evidence": "Karma uzupełniająca przeznaczona dla kociąt, kotek ciężarnych i karmiących"
+   },
+   {
+    "family": "wita-vet-complex-1g",
+    "role": "similar",
+    "evidence": "Zalecana dla suk ciężarnych i karmiących"
+   },
+   {
+    "family": "milvet",
+    "role": "complementary",
+    "evidence": "Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka."
+   },
+   {
+    "family": "wita-vet-stawy-pies",
+    "role": "complementary",
+    "evidence": "Można podawać młodym psom w okresie intensywnego wzrostu."
+   }
+  ]
+ },
+ {
+  "slug": "mleko-zastepcze-dla-szczeniat-i-kociat",
+  "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+  "batch": "zywienie-i-mlode",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "rozrod"
+  ],
+  "priority": 64,
+  "red_flag_level": "caution",
+  "scope": "IN: odchów bez matki, za mało mleka u matki, dokarmianie butelką, odsadzanie. OUT: witaminy dla ciężarnej/karmiącej (ciaza-karmienie-i-wzrost-mlodych). Noworodek, który nie ssie, jest wychłodzony lub słabnie → lekarz.",
+  "products": [
+   {
+    "family": "milvet",
+    "role": "primary",
+    "evidence": "Pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt oraz dla psów i kotów dorosłych"
+   },
+   {
+    "family": "butelka-do-karmienia-zwierzat",
+    "role": "complementary",
+    "evidence": "Butelka do karmienia zwierząt. Dwa smoczki."
+   },
+   {
+    "family": "smoczki-do-karmienia-psow",
+    "role": "complementary",
+    "evidence": "Smoczek kauczukowy dla szczeniąt"
+   },
+   {
+    "family": "smoczki-do-karmienia-kotow",
+    "role": "complementary",
+    "evidence": "Smoczek silikonowy dla kociąt."
+   }
+  ]
+ },
+ {
+  "slug": "oslabienie-rekonwalescencja-i-senior",
+  "title": "Osłabienie, rekonwalescencja i starszy wiek",
+  "batch": "zywienie-i-mlode",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "kondycja",
+   "odpornosc"
+  ],
+  "priority": 66,
+  "red_flag_level": "caution",
+  "scope": "IN: zwierzę osłabione, przemęczone, po chorobie (rekonwalescencja, gdy lekarz już je obejrzał), słabszy apetyt, starszy pies/kot. OUT: nagły brak apetytu, apatia, chudnięcie bez przyczyny (red flags → lekarz), codzienne witaminy zdrowego zwierzęcia (witaminy-i-mineraly-na-co-dzien).",
+  "products": [
+   {
+    "family": "wita-tonyl-psy-koty",
+    "role": "primary",
+    "evidence": "Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu."
+   },
+   {
+    "family": "wita-vet-senior",
+    "role": "similar",
+    "evidence": "Korzystnie wpływa na zwierzęta w stanach osłabienia oraz na poprawę witalności."
+   },
+   {
+    "family": "wita-vet-energia-kot",
+    "role": "similar",
+    "evidence": "kotów dorosłych wykazujących spadek formy, osłabienie apetytu"
+   },
+   {
+    "family": "kp-gold-regenerator-siersci-i-skory",
+    "role": "complementary",
+    "evidence": "Pomaga także uzupełnić niedobory żywieniowe oraz zaspokoić potrzeby zwierząt w okresie rekonwalescencji."
+   },
+   {
+    "family": "milvet",
+    "role": "complementary",
+    "evidence": "dla psów i kotów dorosłych w okresie rekonwalescencji i wzmożonego wysiłku"
+   }
+  ]
+ },
+ {
+  "slug": "pies-aktywny-i-pracujacy",
+  "title": "Pies aktywny, sportowy i pracujący",
+  "batch": "zywienie-i-mlode",
+  "species": [
+   "pies"
+  ],
+  "areas": [
+   "kondycja"
+  ],
+  "priority": 48,
+  "red_flag_level": "none",
+  "scope": "IN: psy sportowe, myśliwskie, pracujące, intensywny wysiłek, regeneracja po wysiłku. OUT: stawy i problemy z poruszaniem (stawy-i-problemy-z-poruszaniem), odwodnienie z biegunką (biegunka).",
+  "products": [
+   {
+    "family": "wita-vet-sport",
+    "role": "primary",
+    "evidence": "Karma uzupełniająca polecana dla psów sportowych, aktywnych, pracujących, psów myśliwskich."
+   },
+   {
+    "family": "wita-vet-junior-adult-krople",
+    "role": "similar",
+    "evidence": "dla zwierząt narażonych na wysiłek fizyczny"
+   },
+   {
+    "family": "wita-vet-complex-8g",
+    "role": "similar",
+    "evidence": "psów hodowlanych, pracujących"
+   },
+   {
+    "family": "elektrolity",
+    "role": "complementary",
+    "evidence": "wysiłek fizyczny"
+   }
+  ]
+ },
+ {
+  "slug": "ciaza-urojona",
+  "title": "Ciąża urojona u suki",
+  "batch": "zywienie-i-mlode",
+  "species": [
+   "pies"
+  ],
+  "areas": [
+   "rozrod"
+  ],
+  "priority": 45,
+  "red_flag_level": "caution",
+  "scope": "IN: objawy ciąży urojonej u suki, obrzęknięte gruczoły mlekowe (karma uzupełniająca). OUT: prawdziwa ciąża (ciaza-karmienie-i-wzrost-mlodych). Wyjątek: tylko 1 produkt w katalogu — potrzeba istnieje, by zapytanie „ciąża urojona” nie trafiało do witamin ciążowych.",
+  "products": [
+   {
+    "family": "uromil",
+    "role": "primary",
+    "evidence": "Ciąża urojona"
+   }
+  ]
+ },
+ {
+  "slug": "biegunka",
+  "title": "Biegunka",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "uklad-pokarmowy"
+  ],
+  "priority": 88,
+  "red_flag_level": "caution",
+  "scope": "IN: luźny stolec, biegunka po zmianie karmy, uzupełnianie płynów. OUT: zaparcia, niestrawność, przekarmienie (niestrawnosc-i-zaparcia), osłona po antybiotyku (mikroflora-jelit); krew w kale, wymioty, apatia, szczenię/kocię z biegunką (red flags).",
+  "products": [
+   {
+    "family": "metadiar",
+    "role": "primary",
+    "evidence": "Łagodzi skutki biegunki, wspomaga pracę układu pokarmowego."
+   },
+   {
+    "family": "karbowital",
+    "role": "similar",
+    "evidence": "KARBOWITAL wpływa korzystnie na przewód pokarmowy przy zaburzeniach żołądkowo-jelitowych."
+   },
+   {
+    "family": "elektrolity",
+    "role": "complementary",
+    "evidence": "odwodnienie · zaburzenia trawienia · biegunka"
+   },
+   {
+    "family": "probiotyk-pies",
+    "role": "complementary",
+    "evidence": "Stosować podczas: antybiotykoterapii, biegunek"
+   },
+   {
+    "family": "probiotyk-kot",
+    "role": "complementary",
+    "evidence": "Stosować podczas: antybiotykoterapii, biegunek"
+   }
+  ]
+ },
+ {
+  "slug": "niestrawnosc-i-zaparcia",
+  "title": "Niestrawność, zaparcia i rozstrój żołądka",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "uklad-pokarmowy"
+  ],
+  "priority": 74,
+  "red_flag_level": "caution",
+  "scope": "IN: rozstrój żołądka, przekarmienie, zaparcia, słabsze trawienie, wsparcie trawienia i trzustki. OUT: biegunka (biegunka), wątroba (wsparcie-watroby); uporczywe wymioty, wzdęty brzuch, brak oddawania kału (red flags).",
+  "products": [
+   {
+    "family": "diarsed",
+    "role": "primary",
+    "evidence": "Karma uzupełniająca pomaga utrzymywać prawidłową czynność przewodu pokarmowego i wspomaga go w zaburzeniach żołądkowo-jelitowych."
+   },
+   {
+    "family": "hepachol",
+    "role": "similar",
+    "evidence": "Zaleca się podawać przy przekarmieniu, obniżeniu apetytu, osłabieniu, zaparciach"
+   },
+   {
+    "family": "amylan-ad",
+    "role": "similar",
+    "evidence": "WSPOMAGA TRAWIENIE I PRACĘ TRZUSTKI"
+   },
+   {
+    "family": "karbowital",
+    "role": "similar",
+    "evidence": "OCHRONA PRZEWODU POKARMOWEGO"
+   },
+   {
+    "family": "probiotyk-pies",
+    "role": "complementary",
+    "evidence": "WSPOMAGA TRAWIENIE I PERYSTALTYKĘ JELIT"
+   },
+   {
+    "family": "probiotyk-kot",
+    "role": "complementary",
+    "evidence": "WSPOMAGA TRAWIENIE I PERYSTALTYKĘ JELIT"
+   }
+  ]
+ },
+ {
+  "slug": "mikroflora-jelit",
+  "title": "Mikroflora jelit – w trakcie i po antybiotykoterapii",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "uklad-pokarmowy",
+   "odpornosc"
+  ],
+  "priority": 68,
+  "red_flag_level": "caution",
+  "scope": "IN: probiotyk przy antybiotykoterapii, odrobaczaniu, zmianie karmy, osłabieniu odporności. OUT: ostra biegunka (biegunka).",
+  "products": [
+   {
+    "family": "probiotyk-pies",
+    "role": "primary",
+    "evidence": "WZMACNIA PRAWIDŁOWE FUNKCJONOWANIE JELITOWEJ MIKROFLORY BAKTERYJNEJ"
+   },
+   {
+    "family": "probiotyk-kot",
+    "role": "similar",
+    "evidence": "WZMACNIA PRAWIDŁOWE FUNKCJONOWANIE JELITOWEJ MIKROFLORY BAKTERYJNEJ"
+   },
+   {
+    "family": "probiotyk",
+    "role": "similar",
+    "evidence": "Stosować podczas: antybiotykoterapii"
+   }
+  ]
+ },
+ {
+  "slug": "wsparcie-watroby",
+  "title": "Wsparcie wątroby",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot",
+   "golebie"
+  ],
+  "areas": [
+   "watroba",
+   "uklad-pokarmowy"
+  ],
+  "priority": 55,
+  "red_flag_level": "caution",
+  "scope": "IN: wsparcie pracy wątroby i trawienia (także gołębie — Hepachol). OUT: zażółcenie śluzówek, wymioty, apatia (red flags → lekarz); trawienie ogólnie (niestrawnosc-i-zaparcia).",
+  "products": [
+   {
+    "family": "hepachol",
+    "role": "primary",
+    "evidence": "WSPOMAGA PRACĘ UKŁADU POKARMOWEGO I WĄTROBY"
+   },
+   {
+    "family": "witamina-b12",
+    "role": "similar",
+    "evidence": "Wspomaga pracę wątroby, trzustki, jelit"
+   }
+  ]
+ },
+ {
+  "slug": "uklad-moczowy",
+  "title": "Wsparcie układu moczowego",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "uklad-moczowy"
+  ],
+  "priority": 66,
+  "red_flag_level": "caution",
+  "scope": "IN: wsparcie pracy dróg moczowych i nerek karmą uzupełniającą. OUT: krew w moczu, parcie bez oddawania moczu (szczególnie kocur), bolesne oddawanie moczu (red flags → pilnie lekarz).",
+  "products": [
+   {
+    "family": "lespewet",
+    "role": "primary",
+    "evidence": "Wspomaganie pracy układu moczowego."
+   },
+   {
+    "family": "lespewet-kot",
+    "role": "similar",
+    "evidence": "Wspomaga działanie nerek i układu moczowego, oczyszcza układ moczowy poprzez wydalanie mocznika."
+   },
+   {
+    "family": "lespewet-pies",
+    "role": "similar",
+    "evidence": "Składniki karmy wpływają korzystnie na drogi moczowe."
+   }
+  ]
+ },
+ {
+  "slug": "stres-i-niepokoj",
+  "title": "Stres i niepokój",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "stres-i-zachowanie"
+  ],
+  "priority": 70,
+  "red_flag_level": "caution",
+  "scope": "IN: stres w podróży, na wystawie, podczas nieobecności właściciela, napięcie u szczeniąt, niepokój. OUT: nagła zmiana zachowania, agresja bez przyczyny (red flags → lekarz/behawiorysta). Wyjątek: 1 produkt w katalogu.",
+  "products": [
+   {
+    "family": "stresnal",
+    "role": "primary",
+    "evidence": "ŁAGODZI OBJAWY STRESU"
+   }
+  ]
+ },
+ {
+  "slug": "odpornosc",
+  "title": "Odporność",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "odpornosc"
+  ],
+  "priority": 58,
+  "red_flag_level": "caution",
+  "scope": "IN: wsparcie odporności karmą uzupełniającą (dieta, kwasy omega, witaminy, probiotyk). OUT: częste infekcje, gorączka (red flags), osłabienie po chorobie (oslabienie-rekonwalescencja-i-senior).",
+  "products": [
+   {
+    "family": "olej-z-lososia",
+    "role": "primary",
+    "evidence": "WSPIERA SKÓRĘ, SIERŚĆ I ODPORNOŚĆ"
+   },
+   {
+    "family": "wita-tonyl-psy-koty",
+    "role": "similar",
+    "evidence": "wspomagają procesy odpornościowe w organizmie"
+   },
+   {
+    "family": "wita-vet-senior",
+    "role": "similar",
+    "evidence": "ODPORNOŚĆ"
+   },
+   {
+    "family": "probiotyk-pies",
+    "role": "complementary",
+    "evidence": "spadku odporności"
+   },
+   {
+    "family": "probiotyk-kot",
+    "role": "complementary",
+    "evidence": "spadku odporności"
+   }
+  ]
+ },
+ {
+  "slug": "stawy-i-problemy-z-poruszaniem",
+  "title": "Stawy i problemy z poruszaniem",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "stawy"
+  ],
+  "priority": 80,
+  "red_flag_level": "caution",
+  "scope": "IN: sztywność, wolniejsze wstawanie, wsparcie stawów u psów i kotów dorosłych/starszych, młode psy w okresie intensywnego wzrostu. OUT: nagła kulawizna, uraz, obrzęk stawu, ból (red flags).",
+  "products": [
+   {
+    "family": "wita-vet-stawy-pies",
+    "role": "primary",
+    "evidence": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów."
+   },
+   {
+    "family": "wita-vet-stawy-kot",
+    "role": "similar",
+    "evidence": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów."
+   },
+   {
+    "family": "wita-vet-sport",
+    "role": "complementary",
+    "evidence": "wspierają prawidłowe funkcjonowanie aparatu ruchu"
+   }
+  ]
+ },
+ {
+  "slug": "wsparcie-serca",
+  "title": "Wsparcie serca i układu krążenia",
+  "batch": "zdrowie-wewnetrzne",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "serce"
+  ],
+  "priority": 50,
+  "red_flag_level": "caution",
+  "scope": "IN: karma uzupełniająca wspierająca serce (zwykle u zwierzęcia pod opieką lekarza). OUT: kaszel, duszność, omdlenia, szybkie męczenie się (red flags → lekarz).",
+  "products": [
+   {
+    "family": "nutrikard",
+    "role": "primary",
+    "evidence": "Mieszanka paszowa uzupełniająca dla psów i kotów WSPOMAGAJĄCA UKŁAD SERCOWO-NACZYNIOWY"
+   },
+   {
+    "family": "wita-vet-senior",
+    "role": "similar",
+    "evidence": "Koenzym Q10 stymuluje odporność i wzmacnia pracę serca."
+   }
+  ]
+ },
+ {
+  "slug": "ptaki-piora-i-pierzenie",
+  "title": "Pióra i pierzenie ptaków ozdobnych",
+  "batch": "ptaki-male-ssaki",
+  "species": [
+   "ptaki-ozdobne"
+  ],
+  "areas": [
+   "inne"
+  ],
+  "priority": 45,
+  "red_flag_level": "caution",
+  "scope": "IN: pierzenie, kondycja i budowa piór, intensywność czerwonej barwy piór. OUT: wyskubywanie piór, łyse miejsca, nastroszenie i apatia (red flags → lekarz).",
+  "products": [
+   {
+    "family": "floramue",
+    "role": "primary",
+    "evidence": "Mieszanka zawiera metioninę wpływającą na prawidłowy przebieg procesu pierzenia."
+   },
+   {
+    "family": "floratonyl",
+    "role": "similar",
+    "evidence": "Wzrost. Pióra. Odporność."
+   },
+   {
+    "family": "florarutil",
+    "role": "complementary",
+    "evidence": "Wpływa na zwiększenie intensywności czerwonej barwy piór."
+   }
+  ]
+ },
+ {
+  "slug": "ptaki-trawienie",
+  "title": "Trawienie ptaków ozdobnych",
+  "batch": "ptaki-male-ssaki",
+  "species": [
+   "ptaki-ozdobne"
+  ],
+  "areas": [
+   "uklad-pokarmowy"
+  ],
+  "priority": 42,
+  "red_flag_level": "caution",
+  "scope": "IN: osłabione trawienie, konsystencja odchodów, flora jelitowa, wsparcie wątroby u ptaków. OUT: biegunka z apatią, krew w odchodach, chudnięcie (red flags).",
+  "products": [
+   {
+    "family": "floratransit",
+    "role": "primary",
+    "evidence": "Przewód pokarmowy. Flora jelitowa."
+   },
+   {
+    "family": "florabactil",
+    "role": "similar",
+    "evidence": "Wspomaga osłabioną zdolność trawienia."
+   },
+   {
+    "family": "florarome",
+    "role": "similar",
+    "evidence": "Wpływa na poprawę funkcjonowania układu oddechowego i pokarmowego"
+   },
+   {
+    "family": "floracholine",
+    "role": "complementary",
+    "evidence": "Wpływa korzystnie na funkcje układu pokarmowego, ułatwia eliminację tłuszczu z wątroby oraz produkcję żółci."
+   }
+  ]
+ },
+ {
+  "slug": "ptaki-witaminy-i-legi",
+  "title": "Witaminy, minerały i okres lęgowy ptaków",
+  "batch": "ptaki-male-ssaki",
+  "species": [
+   "ptaki-ozdobne"
+  ],
+  "areas": [
+   "kondycja",
+   "rozrod"
+  ],
+  "priority": 44,
+  "red_flag_level": "caution",
+  "scope": "IN: witaminy i minerały dla ptaków ozdobnych, wzrost młodych, okres lęgowy, tworzenie skorupy jaja. OUT: samica nie może znieść jaja, siedzi nastroszona (red flags → pilnie lekarz).",
+  "products": [
+   {
+    "family": "floratonyl",
+    "role": "primary",
+    "evidence": "Dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych ptaków."
+   },
+   {
+    "family": "floraferol",
+    "role": "complementary",
+    "evidence": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy niezbędnym w okresie reprodukcji."
+   },
+   {
+    "family": "floracal",
+    "role": "complementary",
+    "evidence": "stanowi niezbędny dodatek do karmy dla ptaków w okresie reprodukcji"
+   }
+  ]
+ },
+ {
+  "slug": "ptaki-uklad-oddechowy",
+  "title": "Układ oddechowy ptaków ozdobnych",
+  "batch": "ptaki-male-ssaki",
+  "species": [
+   "ptaki-ozdobne"
+  ],
+  "areas": [
+   "inne"
+  ],
+  "priority": 40,
+  "red_flag_level": "caution",
+  "scope": "IN: wsparcie górnych dróg oddechowych karmą uzupełniającą. OUT: duszność, oddychanie z otwartym dziobem, wydzielina z nozdrzy, apatia (red flags → lekarz).",
+  "products": [
+   {
+    "family": "floramucil",
+    "role": "primary",
+    "evidence": "Wpływa na poprawę funkcjonowania układu oddechowego."
+   },
+   {
+    "family": "florarome",
+    "role": "similar",
+    "evidence": "Układ oddechowy i pokarmowy."
+   }
+  ]
+ },
+ {
+  "slug": "male-ssaki-skora-i-siersc",
+  "title": "Skóra i sierść gryzoni i królików",
+  "batch": "ptaki-male-ssaki",
+  "species": [
+   "male-ssaki"
+  ],
+  "areas": [
+   "skora",
+   "siersc"
+  ],
+  "priority": 45,
+  "red_flag_level": "caution",
+  "scope": "IN: pielęgnacja skóry i sierści królików, świnek morskich i innych gryzoni (szampon dermatologiczny, witaminy). OUT: łyse placki, strupy, świąd u gryzoni (red flags → lekarz); rutynowe kąpanie królików (nie zalecać).",
+  "products": [
+   {
+    "family": "hexoderm-gryzonie",
+    "role": "primary",
+    "evidence": "Dermatologiczny szampon dla gryzoni i zwierząt futerkowych"
+   },
+   {
+    "family": "wita-tonyl-gryzonie",
+    "role": "complementary",
+    "evidence": "wpływają na odnowę nabłonków i skóry"
+   }
+  ]
+ },
+ {
+  "slug": "higiena-rak-po-kontakcie-ze-zwierzetami",
+  "title": "Higiena rąk po kontakcie ze zwierzętami",
+  "batch": "higiena",
+  "species": [
+   "pies",
+   "kot",
+   "male-ssaki",
+   "ptaki-ozdobne"
+  ],
+  "areas": [
+   "inne"
+  ],
+  "priority": 35,
+  "red_flag_level": "none",
+  "scope": "IN: mycie rąk przed i po kontakcie ze zwierzętami, mycie przed kontaktem z żywnością, mycie zwierząt przed zabiegiem (placówki). OUT: kąpiel zwierzęcia (siersc-i-kapiel), powierzchnie i kuwety (czyszczenie-kuwety-klatki-i-powierzchni).",
+  "products": [
+   {
+    "family": "vetinet-higieniczny-plyn-myjacy-niebieski",
+    "role": "primary",
+    "evidence": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością."
+   },
+   {
+    "family": "vetinet-higieniczny-plyn-myjacy-fiolet",
+    "role": "similar",
+    "evidence": "Mycie przed i po kontakcie ze zwierzętami, mycie zwierząt przed zabiegiem, mycie przed kontaktem z żywnością."
+   }
+  ]
+ },
+ {
+  "slug": "czyszczenie-kuwety-klatki-i-powierzchni",
+  "title": "Czyszczenie kuwety, klatki, transportera i powierzchni",
+  "batch": "higiena",
+  "species": [
+   "kot",
+   "pies",
+   "male-ssaki",
+   "ptaki-ozdobne"
+  ],
+  "areas": [
+   "inne"
+  ],
+  "priority": 40,
+  "red_flag_level": "none",
+  "scope": "IN: mycie kuwet, klatek, kojców, transporterów, akcesoriów i powierzchni; nieprzyjemny zapach w otoczeniu zwierzęcia. OUT: zapach od samego zwierzęcia (nieprzyjemny-zapach-skory-i-siersci).",
+  "products": [
+   {
+    "family": "vetinet-plyn-do-mycia-kuwet-klatek",
+    "role": "primary",
+    "evidence": "Polecany do mycia kuwet, klatek, kojców, transporterów i pozostałych akcesoriów używanych przez zwierzęta."
+   },
+   {
+    "family": "vetinet-plyn-do-powierzchni-zielony",
+    "role": "similar",
+    "evidence": "Polecany do higieny powierzchni."
+   }
+  ]
+ }
+]

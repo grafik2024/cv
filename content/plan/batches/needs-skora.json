@@ -1,0 +1,1105 @@
+{
+ "batch": "skora",
+ "needs": [
+  {
+   "slug": "swiad-i-drapanie",
+   "title": "Świąd i drapanie",
+   "batch": "skora",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "priority": 95,
+   "red_flag_level": "caution",
+   "scope": "IN: ogólne swędzenie skóry, drapanie się, gryzienie/wylizywanie skóry jako objaw. OUT: swędzenie uszu i drapanie uszu (podraznione-uszy-i-zapach-z-uszu), swędzenie po ukąszeniach owadów i pchły (pchly-i-kleszcze), skłonność do alergii jako typ skóry (skora-wrazliwa-i-alergiczna), zdiagnozowane zapalenie skóry (stany-zapalne-skory).",
+   "products": [
+    {
+     "family": "alervet-excellence",
+     "role": "primary",
+     "evidence": "Szampon pielęgnacyjny, łagodzący świąd z fitosfingozyną dla psów i kotów"
+    },
+    {
+     "family": "triaderm-excellence",
+     "role": "similar",
+     "evidence": "ŁAGODZI ŚWIĄD"
+    },
+    {
+     "family": "ektovet",
+     "role": "similar",
+     "evidence": "ŁAGODZI ŚWIĄD I PODRAŻNIENIA"
+    },
+    {
+     "family": "alervet",
+     "role": "similar",
+     "evidence": "WSPOMAGA ZMNIEJSZAĆ OBJAWY ŚWIĄDU"
+    },
+    {
+     "family": "hydra-derm-spray",
+     "role": "similar",
+     "evidence": "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI I ŚWIĄDEM SKÓRY"
+    },
+    {
+     "family": "sebolan",
+     "role": "similar",
+     "evidence": "Dermatologiczny szampon przeciw świądowi i łupieżowi dla psów"
+    }
+   ]
+  },
+  {
+   "slug": "skora-wrazliwa-i-alergiczna",
+   "title": "Skóra wrażliwa, alergiczna i podrażniona",
+   "batch": "skora",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "priority": 88,
+   "red_flag_level": "caution",
+   "scope": "IN: skóra skłonna do alergii/uczuleń, nadwrażliwa, łatwo się podrażniająca, zaczerwieniona po kąpieli lub kontakcie; pielęgnacja przy atopii (wspomagająco). OUT: sam świąd jako objaw (swiad-i-drapanie), suchość i łupież (sucha-skora-i-lupiez), rany (otarcia-i-drobne-rany), zdiagnozowane infekcje skóry (stany-zapalne-skory).",
+   "products": [
+    {
+     "family": "ektovet",
+     "role": "primary",
+     "evidence": "SKÓRA WRAŻLIWA I ALERGICZNA"
+    },
+    {
+     "family": "triaderm-excellence",
+     "role": "similar",
+     "evidence": "DLA SKÓRY ALERGICZNEJ I USZKODZONEJ"
+    },
+    {
+     "family": "kp-szampon-lagodzacy-podraznienia",
+     "role": "similar",
+     "evidence": "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SKÓRY"
+    },
+    {
+     "family": "alervet",
+     "role": "similar",
+     "evidence": "Dermoszampon łagodzący objawy związane z podrażnieniami skóry dla psów i kotów"
+    },
+    {
+     "family": "olej-z-lososia",
+     "role": "complementary",
+     "evidence": "Podrażnienia skóry, uczulenia, egzemy."
+    },
+    {
+     "family": "efaderm-e-kapsulki-pies",
+     "role": "complementary",
+     "evidence": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości"
+    }
+   ]
+  },
+  {
+   "slug": "sucha-skora-i-lupiez",
+   "title": "Sucha skóra i łupież",
+   "batch": "skora",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "priority": 84,
+   "red_flag_level": "caution",
+   "scope": "IN: przesuszona, szorstka, łuszcząca się skóra, suchy łupież (drobne białe łuski). OUT: tłusty łupież i przetłuszczanie (przetluszczajaca-sie-skora-i-lojotok), zgrubienia na łokciach (zrogowacenia-skory-na-lokciach), sucha sierść bez problemu skóry (matowa-i-lamliwa-siersc).",
+   "products": [
+    {
+     "family": "alervet",
+     "role": "primary",
+     "evidence": "Stosować w przypadku skóry wrażliwej ze skłonnością do łupieżu oraz skóry suchej."
+    },
+    {
+     "family": "sebovet-dry",
+     "role": "similar",
+     "evidence": "Dermatologiczny szampon przeciwłupieżowy dla psów i kotów"
+    },
+    {
+     "family": "kp-szampon-nawilzajacy",
+     "role": "similar",
+     "evidence": "Pielęgnacja suchej skóry i sierści."
+    },
+    {
+     "family": "ektovet",
+     "role": "similar",
+     "evidence": "przeznaczonym do pielęgnacji suchej i wrażliwej skóry oraz sierści psów i kotów"
+    },
+    {
+     "family": "kp-szampon-bulldog",
+     "role": "similar",
+     "evidence": "NAWILŻA I UELASTYCZNIA SKÓRĘ"
+    },
+    {
+     "family": "hydra-derm-n",
+     "role": "complementary",
+     "evidence": "Ogólne lub miejscowe nawilżanie skóry suchej lub z łupieżem."
+    }
+   ]
+  },
+  {
+   "slug": "przetluszczajaca-sie-skora-i-lojotok",
+   "title": "Przetłuszczająca się skóra i sierść (łojotok)",
+   "batch": "skora",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "priority": 74,
+   "red_flag_level": "caution",
+   "scope": "IN: tłusta, lepiąca się sierść, tłusty łupież, łojotok (stany kerato-łojotokowe — pielęgnacja). OUT: zapach skóry jako główny problem (nieprzyjemny-zapach-skory-i-siersci), suchy łupież (sucha-skora-i-lupiez), woskowina w uszach (higiena-uszu-i-woskowina).",
+   "products": [
+    {
+     "family": "peroxyvet",
+     "role": "primary",
+     "evidence": "Dermatologiczny szampon dla skóry i sierści przetłuszczonej dla psów i kotów"
+    },
+    {
+     "family": "sebovet-clean",
+     "role": "similar",
+     "evidence": "Łojotok tłusty, tłusty wygląd sierści, sklejone łuski łupieżu, miejscowe zaczerwienienie skóry."
+    },
+    {
+     "family": "sebovet-excellence",
+     "role": "similar",
+     "evidence": "Szampon przeciwłupieżowy i przeciwłojotokowy z fitosfingozyną i ekstraktami roślinnymi dla psów i kotów"
+    },
+    {
+     "family": "hydra-derm-spray",
+     "role": "similar",
+     "evidence": "Miejscowe nawadnianie i odtłuszczanie skóry z tendencją do łojotoku."
+    },
+    {
+     "family": "sebostop-spot-on",
+     "role": "complementary",
+     "evidence": "Preparat przeciw łojotokowi z fitosfingozyną dla psów i kotów"
+    }
+   ]
+  },
+  {
+   "slug": "nieprzyjemny-zapach-skory-i-siersci",
+   "title": "Nieprzyjemny zapach skóry i sierści",
+   "batch": "skora",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "priority": 80,
+   "red_flag_level": "caution",
+   "scope": "IN: „pies śmierdzi”, zapach od skóry i sierści mimo kąpieli, zapach w okolicy odbytu (pielęgnacyjnie). OUT: zapach z uszu (podraznione-uszy-i-zapach-z-uszu), z pyska (nieswiezy-oddech), zapach w domu/kuwecie (czyszczenie-kuwety-klatki-i-powierzchni).",
+   "products": [
+    {
+     "family": "kp-dezodorant-neutralizator-zapachow",
+     "role": "primary",
+     "evidence": "Spray zapewnia skuteczną ochronę przeciwko powstawaniu nieprzyjemnych zapachów na skórze i sierści zwierząt"
+    },
+    {
+     "family": "sebostop-spot-on",
+     "role": "similar",
+     "evidence": "ELIMINUJE NIEPRZYJEMNY ZAPACH SKÓRY"
+    },
+    {
+     "family": "sebovet-excellence",
+     "role": "complementary",
+     "evidence": "Zwalczanie nieprzyjemnego zapachu skóry u zwierząt ze skłonnością do łojotoku."
+    }
+   ]
+  },
+  {
+   "slug": "stany-zapalne-skory",
+   "title": "Zapalenie skóry – pielęgnacja wspomagająca leczenie",
+   "batch": "skora",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "priority": 62,
+   "red_flag_level": "urgent",
+   "scope": "IN: zapalenie skóry/infekcja skóry rozpoznane lub podejrzewane (krosty, sączące zmiany, ropne zmiany, „grzybica”) — wyłącznie pielęgnacja jako uzupełnienie leczenia u lekarza weterynarii; produkty za ostrzeżeniem. OUT: zwykły świąd, wrażliwa skóra, łupież (osobne potrzeby).",
+   "products": [
+    {
+     "family": "hexoderm-excellence",
+     "role": "primary",
+     "evidence": "Pielęgnacja skóry i sierści, wspomagająco przy leczeniu bakteryjnego zapalenia skóry."
+    },
+    {
+     "family": "hexoderm",
+     "role": "similar",
+     "evidence": "Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry."
+    },
+    {
+     "family": "hexoderm-k",
+     "role": "similar",
+     "evidence": "Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry."
+    },
+    {
+     "family": "peptoderm-excellence",
+     "role": "similar",
+     "evidence": "Wspomagająco przy leczeniu bakteryjnego zapalenia skóry."
+    },
+    {
+     "family": "triaderm-excellence",
+     "role": "similar",
+     "evidence": "Polecany do codziennej pielęgnacji wspierającej terapię dermatologiczną."
+    }
+   ]
+  },
+  {
+   "slug": "otarcia-i-drobne-rany",
+   "title": "Otarcia i drobne uszkodzenia skóry",
+   "batch": "skora",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "priority": 60,
+   "red_flag_level": "caution",
+   "scope": "IN: drobne otarcia, zadrapania, uszkodzona skóra, wylizywanie miejsca uszkodzenia. OUT: głębokie, krwawiące, ropiejące rany i ugryzienia (red flags → lekarz), opuszki łap (opuszki-lap).",
+   "products": [
+    {
+     "family": "fyto-derm",
+     "role": "primary",
+     "evidence": "Preparat pielęgnacyjny na uszkodzenia skóry dla psów, kotów i pozostałych zwierząt"
+    },
+    {
+     "family": "alu-derm",
+     "role": "similar",
+     "evidence": "Preparat pielęgnacyjny na uszkodzenia skóry dla psów i kotów"
+    }
+   ]
+  },
+  {
+   "slug": "zrogowacenia-skory-na-lokciach",
+   "title": "Zrogowaciała, zgrubiała skóra na łokciach",
+   "batch": "skora",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "priority": 48,
+   "red_flag_level": "caution",
+   "scope": "IN: zgrubienia/odciski i zrogowaciała skóra na łokciach i stawach skokowych (miejscowe zrogowacenie). OUT: opuszki łap (opuszki-lap), ogólna suchość (sucha-skora-i-lupiez).",
+   "products": [
+    {
+     "family": "hydra-derm-n",
+     "role": "primary",
+     "evidence": "Zmiękczanie skóry w przypadku miejscowego zrogowacenia (łokcie, stawy skokowe itp.)."
+    },
+    {
+     "family": "hydra-derm-spray",
+     "role": "similar",
+     "evidence": "Zmiękczanie skóry w przypadku jej lokalnego nadmiernego zrogowacenia (łokcie, stawy skokowe itp.)."
+    }
+   ]
+  }
+ ],
+ "families": {
+  "alervet-excellence": {
+   "family_slug": "alervet-excellence",
+   "name": "Alervet excellence",
+   "line": "Excellence",
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Szampon pielęgnacyjny, łagodzący świąd z fitosfingozyną dla psów i kotów",
+   "badges_verbatim": [
+    "PRZECIWŚWIĄDOWY, PRZECIWZAPALNY, NAWILŻAJĄCY",
+    "DELIKATNA BAZA MYJĄCA",
+    "+FITOSFINGOZYNA"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja skóry i sierści, wspomagająco przy leczeniu stanów zapalnych skóry. Łagodzenie świądu.",
+   "properties_verbatim": "Alervet excellence jest dermokosmetykiem weterynaryjnym łagodzącym świąd i wspomagającym leczenie stanów zapalnych skóry. Fitosfingozyna odbudowuje barierę ochronną skóry oraz utrzymuje jej nawilżenie. Szampon posiada bardzo dobre właściwości myjące, ułatwia usunięcie martwych komórek z powierzchni skóry oraz umożliwia jej natłuszczenie.",
+   "usage_verbatim": "Przed kąpielą sierść psa/kota należy starannie wyczesać. Zmoczyć sierść i skórę letnią wodą, polać szamponem całą powierzchnię ciała i dokładnie rozprowadzić. Delikatnie masować, aż do wytworzenia piany, spłukać. Czynności powtórzyć. Pozostawić szampon na sierści i skórze przez kilka minut i dokładnie spłukać.-częstotliwość: stosować od 2 do 3 razy w tygodniu lub według potrzeby.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Pielęgnacja skóry i sierści, wspomagająco przy leczeniu stanów zapalnych skóry. Łagodzenie świądu.",
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Cocamidopropyl Betaine, Coco Glucoside, Disodium Lauryl Sulfosuccinate, Glicerin, PEG 4 Rapeseedamide, Polygryceryl-4 Caprate, PEG 40 Hydrogenated Castor Oil, Hydrolyzed Wheat Gluten, Peg 7 Gliceryl Cocoate, Silicone Quaternium-17, Laureth-9, Mink Oil, Parfum, Phytosphingosine Hydrochloride, Citric Acids, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Sodium Hydroxide",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/alervet-excellence-200ml/",
+   "in_shop": true
+  },
+  "triaderm-excellence": {
+   "family_slug": "triaderm-excellence",
+   "name": "Triaderm excellence",
+   "line": "Excellence",
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "SZAMPON HIPOALERGICZNY Z KONWALNIKIEM JAPOŃSKIM I FITOSFINGOZYNĄ",
+   "badges_verbatim": [
+    "ŁAGODZI ŚWIĄD",
+    "DLA SKÓRY ALERGICZNEJ I USZKODZONEJ",
+    "ODBUDOWUJE BARIERĘ SKÓRNĄ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Wspomagająco w stanach zapalnych skóry, atopii, przy infekcjach skórnych , alergii oraz uszkodzeniach bariery skórnej. Polecany do codziennej pielęgnacji wspierającej terapię dermatologiczną.",
+   "properties_verbatim": "Szampon hipoalergiczny z konwalnikiem japońskim i fitosfingozyną jest dermokosmetykiem weterynaryjnym przeznaczonym do pielęgnacji uszkodzonej i wrażliwej skóry oraz sierści psów i kotów. Dzięki zastosowanym składnikom wspomaga nawilżanie skóry, zapobiega jej wysuszaniu, reguluje mikroflorę oraz wzmacnia barierę hydrolipidową. Łagodzi świąd i podrażnienia.",
+   "usage_verbatim": "Przed kąpielą wyczesać sierść, zmoczyć letnią wodą całą powierzchnię ciała, nałożyć szampon i dokładnie rozprowadzić. Masować do wytworzenia piany, następnie spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Dokładnie spłukać letnią wodą. Częstotliwość stosowania 2–3 razy w tygodniu lub według potrzeb.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Wspomagająco w stanach zapalnych skóry, atopii, przy infekcjach skórnych , alergii oraz uszkodzeniach bariery skórnej. Polecany do codziennej pielęgnacji wspierającej terapię dermatologiczną.",
+   "notes_verbatim": "Klasa wyrobu: Dermokosmetyk weterynaryjny\nWolne od: SLS i SLES • parabenów • barwników syntetycznych\nBezpieczeństwo stosowania: Tylko do użytku zewnętrznego.\nPrzechowywanie: W oryginalnym opakowaniu, w miejscu niedostępnym dla dzieci.\nTermin trwałości / PAO: 36 miesięcy od daty produkcji. Po otwarciu zużyć w ciągu 12 miesięcy (PAO 12M).\nKOD EAN: 5907785443792",
+   "composition_verbatim": "Aqua, Cocamidopropyl Betaine, Coco Glucoside, Disodium Lauryl Sulfosuccinate, Glycerin, PEG-4 Rapeseedamide, Ophiopogon Japonicus Root Extract, Polyglyceryl-4 Caprate, Silicone Quaternium-17, Laureth-9, PEG-7 Glyceryl Cocoate, Polysorbate 20, Parfum, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Sodium Hydroxide, Phytosphingosine Hydrochloride",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/triaderm-excellence-200ml/",
+   "in_shop": true
+  },
+  "ektovet": {
+   "family_slug": "ektovet",
+   "name": "Ektovet",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "SZAMPON Z KONWALNIKIEM JAPOŃSKIM I EKTOINĄ DLA PSÓW I KOTÓW, PRZEZNACZONY DO PIELĘGNACJI SKÓRY WRAŻLIWEJ I ALERGICZNEJ",
+   "badges_verbatim": [
+    "ŁAGODZI ŚWIĄD I PODRAŻNIENIA",
+    "SKÓRA WRAŻLIWA I ALERGICZNA",
+    "NAWILŻA I REGENERUJE"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Wspomagająco przy atopii, alergii, przesuszeniu skóry, łuszczeniu naskórka i nadwrażliwości skórnej.",
+   "properties_verbatim": "Ektovet szampon z konwalnikiem japońskim i ektoiną jest dermokosmetykiem weterynaryjnym przeznaczonym do pielęgnacji suchej i wrażliwej skóry oraz sierści psów i kotów. Zalecany przy skórze skłonnej do alergii, przesuszeniu i utracie elastyczności. Dzięki ektoinie wiążącej wodę intensywnie nawilża i chroni przed transepidermalną utratą wody (TEWL). Wspiera regenerację bariery hydrolipidowej i łagodzi świąd. Wspomagająco przy atopii, alergii, przesuszeniu skóry, łuszczeniu naskórka i nadwrażliwości skórnej.\nKonwalnik japoński – łagodzi podrażnienia skóry i zmniejsza jej wrażliwość. Ogranicza utratę wody przez skórę, przywracając jej elastyczność. Wspiera regenerację uszkodzeń skóry poprzez przyspieszenie odnowy naskórka. Wzmacnia odporność skóry na czynniki zewnętrzne i ogranicza złuszczanie. Przywraca równowagę flory bakteryjnej skóry. Poprawia wygląd i miękkość sierści.\nEktoina jest naturalnym związkiem o właściwościach nawilżających i ochronnych. Dzięki wiązaniu wody tworzy na powierzchni skóry warstwę ochronną, co zapobiega przeznaskórkowej utracie wody, a tym samym jej przesuszeniu. Ma właściwości łagodzące świąd przy podrażnieniach, alergiach skórnych i atopowym zapaleniu skóry. Wspomaga odbudowę uszkodzonego naskórka i wspiera równowagę mikroflory skóry.",
+   "usage_verbatim": "Przed kąpielą wyczesać sierść, zmoczyć letnią wodą całą powierzchnię ciała, nałożyć szampon i dokładnie rozprowadzić. Masować do wytworzenia piany, następnie spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Dokładnie spłukać letnią wodą. Częstotliwość stosowania 2–3 razy w tygodniu lub według potrzeb",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Wspomagająco przy atopii, alergii, przesuszeniu skóry, łuszczeniu naskórka i nadwrażliwości skórnej.",
+   "notes_verbatim": "Klasa wyrobu: Dermokosmetyk weterynaryjny\nWolne od: SLS i SLES • parabenów • barwników syntetycznych\nBezpieczeństwo stosowania: Do użytku zewnętrznego.\nPrzechowywanie: W oryginalnym opakowaniu, w miejscu niedostępnym dla dzieci.",
+   "composition_verbatim": "Aqua, Decyl Glucoside, Cocamidopropyl Betaine, PEG-120 Methyl Glucose Dioleate, Ophiopogon Japonicus Root Extract, Glycerin, Polysorbate 20, Ectoin, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid, Parfum",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/ektovet-200ml/",
+   "in_shop": true
+  },
+  "alervet": {
+   "family_slug": "alervet",
+   "name": "Alervet",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Dermoszampon łagodzący objawy związane z podrażnieniami skóry dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGA ZMNIEJSZAĆ OBJAWY ŚWIĄDU",
+    "REGULUJE ZŁUSZCZANIE NASKÓRKA",
+    "PRZYWRACA SIERŚCI MIĘKKOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Stosować w przypadku skóry wrażliwej ze skłonnością do łupieżu oraz skóry suchej.",
+   "properties_verbatim": "Alervet jest dermokosmetykiem weterynaryjnym, który przywraca sierści miękkość i wspomaga zmniejszanie objawów świądu poprzez korzystny wpływ na regulację procesu złuszczania naskórka oraz skład jego mikroflory, nawilża i natłuszcza skórę oraz nabłyszcza sierść.",
+   "usage_verbatim": "Wstrząsnąć przed użyciem. Zmoczoną sierść i skórę polać szamponem, rozprowadzając go równomiernie po całym ciele, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez 5-10 minut. Stosować codziennie lub w zależności od potrzeb. Zaleca się do ostatniego spłukiwania użyć płyn nawilżający Hydra-Derm N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, GLYCERIN, COCAMIDOPROPYL BETAINE, PEG 4 RAPESEEDAMIDE, PROPYLENE GLYCOL, SODIUM CHLORIDE, CALENDULA OFFICINALIS FLOWER EXTRACT, POLYSORBATE 20, POLYSORBATE 80, PARFUM, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, CITRIC ACID, CI 42090, CI 19140",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/alervet-200ml/",
+   "in_shop": true
+  },
+  "hydra-derm-spray": {
+   "family_slug": "hydra-derm-spray",
+   "name": "Hydra-Derm Spray",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Spray przeciw łojotokowi i rogowaceniu skóry u psów",
+   "badges_verbatim": [
+    "REGULUJE WYTWARZANIE ŁOJU",
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI I ŚWIĄDEM SKÓRY"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Miejscowe nawadnianie i odtłuszczanie skóry z tendencją do łojotoku. Zmiękczanie skóry w przypadku jej lokalnego nadmiernego zrogowacenia (łokcie, stawy skokowe itp.). Działanie zmiękczające i keratolityczne na skórę na zmiany powstałe na skutek nieprawidłowego funkcjonowania skóry, np. towarzyszące alergiom, ichtiozie (rybia łuska).",
+   "properties_verbatim": "Hydra-Derm –spray jest dermokosmetykiem weterynaryjnym. Dziegieć z jałowca wpływa na prawidłowe wytwarzanie łoju oraz zapobiega nadmiernemu rogowaceniu naskórka. Łagodzi objawy związane z podrażnieniami skóry. Gliceryna działa zmiękczająco, ułatwia nawilżenie skóry, łagodzi uczucie świądu oraz nabłyszcza sierść.",
+   "usage_verbatim": "Miejscowo spryskiwać skórę i sierść. Stosować codziennie lub w zależności od potrzeb.",
+   "precautions_verbatim": "Nie stosować na rany skóry. Unikać kontaktu z oczami. Nie stosować u kotów.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Glicerin, Polysorbate 20, Junipures Oxycedrus Wood Oil, Silicone Quaterium-17, Laureth-9, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/hydra-derm-spray-200ml/",
+   "in_shop": true
+  },
+  "sebolan": {
+   "family_slug": "sebolan",
+   "name": "Sebolan",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "skóra"
+   ],
+   "subtitle_verbatim": "Dermatologiczny szampon przeciw świądowi i łupieżowi dla psów",
+   "badges_verbatim": [
+    "ZWIĘKSZA ELASTYCZNOŚĆ SKÓRY",
+    "ŁAGODZI OBJAWY ŚWIĄDU",
+    "WSPOMAGA REGULACJĘ MIKROFLORY SKÓRY"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Świąd, łupież, objawy wrażliwej skóry u psów.",
+   "properties_verbatim": "Sebolan jest dermokosmetykiem weterynaryjnym, który wykazuje bardzo dobre właściwości myjące. Obecny w jego składzie olejek jałowcowy powoduje, że szampon ma działanie keratolityczne i keratoplastyczne. Zwiększa elastyczność skóry, łagodzi objawy świądu oraz wspomaga procesy regulujące mikroflorę skóry.",
+   "usage_verbatim": "Wstrząsnąć przed użyciem. Zmoczoną sierść i skórę polać szamponem, rozprowadzając go równomiernie po całym ciele, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez 5-10 minut. Stosować codziennie lub w zależności od potrzeb. Zaleca się do ostatniego spłukiwania użyć płyn nawilżający Hydra-Derm N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Sodium Chloride, Polisorbate 20, Junipures Oxycedrus Wood Oil, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/sebolan-200ml/",
+   "in_shop": false
+  },
+  "kp-szampon-lagodzacy-podraznienia": {
+   "family_slug": "kp-szampon-lagodzacy-podraznienia",
+   "name": "Szampon łagodzący podrażnienia",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla psów i kotów",
+   "badges_verbatim": [
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI SKÓRY",
+    "OGRANICZA ZŁUSZCZANIE NASKÓRKA",
+    "+ olejek jałowcowy"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "properties_verbatim": "Szampon ma bardzo dobre właściwości myjące i jest łatwy w spłukiwaniu. Obecność olejku jałowcowego powoduje, że szampon łagodzi objawy związane z podrażnieniami skóry oraz ogranicza złuszczanie się naskórka. Bez olejku Neem.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Urea, Propylene Glycol, Alcohol denat., Achillea Millefolium Flower Extract, Humulus Lupulus Extract, Melissa Officinalis Leaf Extract, Foeniculum Vulgare Fruit Extract, Chamomilla Recutita Flower Extract, Viscum Album Extract, Sodium Chloride, Polisorbate 20, Junipures Oxycedrus Wood Oil, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-lagodzacy-podraznienia-200ml/",
+   "in_shop": true
+  },
+  "olej-z-lososia": {
+   "family_slug": "olej-z-lososia",
+   "name": "Olej z łososia",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść",
+    "odporność",
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WYSOKA ZAWARTOŚĆ KWASÓW OMEGA 3 I 6",
+    "ŹRÓDŁO EPA I DHA",
+    "WSPIERA SKÓRĘ, SIERŚĆ I ODPORNOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Łamliwość, matowienie sierści, utrata włosa, łupież, suchość skóry. Podrażnienia skóry, uczulenia, egzemy. Zaburzenia systemu odpornościowego, reprodukcja.",
+   "properties_verbatim": "Olej z łososia stanowi źródło kwasów tłuszczowych omega-3 (EPA i DHA), korzystnie wpływających na wiele procesów metabolicznych w organizmie psa i kota. Kwas EPA wspiera naturalne procesy zachodzące w organizmie psów i kotów, natomiast kwas DHA jest ważnym składnikiem błon komórkowych mózgu i siatkówki oka. Olej z łososia wpływa na równowagę między kwasami tłuszczowymi omega-3 i omega-6 oraz znacząco obniża poziom cholesterolu we krwi. Regularne stosowanie preparatu powoduje, że sierść Twojego psa lub kota staje się gęsta, sprężysta i lśniąca. Olej z łososia jest polecany przy łamliwości i matowieniu sierści, nadmiernej utracie włosa, łupieżu, suchości skóry. Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "usage_verbatim": "Psy i koty: poniżej 5 kg: 2,5 ml / dziennie od 5 do 15kg: 5 ml / dziennie od 15 do 30 kg: 10 ml / dziennie powyżej 30 kg: 15 ml / dziennie. Jedno pełne naciśnięcie pompki dozuje 1,25 ml preparatu.\nPo otwarciu przechowywać w lodówce, w oryginalnym opakowaniu.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "notes_verbatim": "Profil kwasów tłuszczowych\nNasycone kwasy tłuszczowe – 13,7% w tym kwas palmitynowy – 8,9% Jednonienasycone kwasy tłuszczowe – 52,7% w tym kwas oleinowy – 43,2% Wielonienasycone kwasy tłuszczowe – 33,5% w tym kwasy omega-3 – 14,5% w tym kwasy omega-6 – 17,1% w tym kwas linolowy – 14,8%",
+   "composition_verbatim": "Skład: OLEJ Z ŁOSOSIA ATLANTYCKIEGO. Dodatki w 1 kg: Dodatki technologiczne – Przeciwutleniacze: alfa-tokoferol (1b307) 500 mg. Składniki analityczne: Białko surowe 0%, włókno surowe 0%, oleje i tłuszcze surowe 99%, popiół surowy 0%.",
+   "page_path": "/produkty/karmy-uzupelniajace/olej-z-lososia/",
+   "in_shop": true
+  },
+  "efaderm-e-kapsulki-pies": {
+   "family_slug": "efaderm-e-kapsulki-pies",
+   "name": "EFADERM-E",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "SIERŚĆ",
+    "SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości i nadmiernego wypadania sierści.",
+   "properties_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "usage_verbatim": "Podawać bezpośrednio lub po wymieszaniu z karmą: 1 szt. / 10 kg m.c. / dzień. Podawać przez okres do 2 miesięcy.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład (2): olej z ryb, żelatyna bydlęca, gliceryna Dodatki w 1 kg (3): Technologiczne: Przeciwutleniacze: 1b306(i) ekstrakt naturalnych tokoferoli 13420 mg. Składniki analityczne (4): białko surowe 18,6%, włókno surowe 0%, tłuszcz surowy 70,9%, popiół surowy 0%.",
+   "page_path": "/produkty/karmy-uzupelniajace/efaderm-e-60szt-psy/",
+   "in_shop": true
+  },
+  "sebovet-dry": {
+   "family_slug": "sebovet-dry",
+   "name": "Sebovet Dry",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Dermatologiczny szampon przeciwłupieżowy dla psów i kotów",
+   "badges_verbatim": [
+    "ZWIĘKSZA ELASTYCZNOŚĆ SKÓRY",
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Łupież (charakteryzujący się obecnością dużej ilości drobnych łusek na skórze). Sierść woskowata z włosem matowym, suchym i łatwo łamiącym się.",
+   "properties_verbatim": "Sebovet – Dry jest dermokosmetykiem weterynaryjnym, specjalnie przystosowanym do mycia psów i kotów z objawami łupieżu. Związki czynne zawarte w szamponie wspomagają prawidłowy stan naskórka, zwiększają elastyczność skóry i łagodzą objawy związane z jej podrażnieniami.",
+   "usage_verbatim": "Wstrząsnąć przed użyciem. Zmoczoną sierść i skórę polać szamponem, rozprowadzając go równomiernie po całym ciele, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez 5-10 minut. Stosować codziennie lub w zależności od potrzeb. Zaleca się do ostatniego spłukiwania użyć płyn nawilżający Hydra-Derm N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Sodium Chloride, Hydrolyzet Keratin Parfum, Polisorbate 20, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/sebovet-dry-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-nawilzajacy": {
+   "family_slug": "kp-szampon-nawilzajacy",
+   "name": "Szampon nawilżający",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon NAWILŻAJĄCY dla psów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "NAWILŻA I UELASTYCZNIA SKÓRĘ",
+    "+ Aloes, Proteiny, Sorbitol"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja suchej skóry i sierści.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści oraz ułatwia jej rozczesywanie. Sierść staje się miękka i błyszcząca. Składniki roślinne oraz sorbitol działają nawilżająco i uelastyczniająco na naskórek.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Aloe Barbadensis Leaf Juice, Cocamidopropyl Betaine, Sorbitol, PEG 4 Rapeseedamide, Hydrolyzed Wheat Gluten, PEG-7 Glyceryl Cocate, Polyquaternium-7, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-nawilzajacy-200ml/",
+   "in_shop": true
+  },
+  "kp-szampon-bulldog": {
+   "family_slug": "kp-szampon-bulldog",
+   "name": "Szampon bulldog",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Szampon dla bulldogów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "NAWILŻA I UELASTYCZNIA SKÓRĘ",
+    "+ KOLAGEN, ELASTYNA"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "properties_verbatim": "Szampon zawiera substancje mające właściwości myjące z jednoczesną łatwością ich spłukiwania. Pozwala na dokładne umycie skóry i sierści. Sierść staje się miękka i błyszcząca. Kolagen działa regenerująco, przywraca skórze sprężystość i nawilżenie. Elastyna łagodzi objawy związane z podrażnieniami, wspomaga procesy regeneracji i odbudowy naskórka. Działa silnie nawilżająco.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Collagen, Hydrolyzed Elastin, PEG 4 Rapeseedamide, Allantoin, PEG-7 Glyceryl Cocate, Silicone Quaterium-17, Laureth-9, Polysorbate 20, Parfum, Sodium Chloride, Sodium Hydroxide, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinon, Citric Acid",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-bulldog-200ml/",
+   "in_shop": true
+  },
+  "hydra-derm-n": {
+   "family_slug": "hydra-derm-n",
+   "name": "Hydra-Derm N",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Nawilżający płyn do skóry i sierści suchej dla psów i kotów",
+   "badges_verbatim": [
+    "ZAPOBIEGA WYSUSZANIU SKÓRY I SIERŚCI",
+    "Z MOCZNIKIEM I KWASEM MLEKOWYM"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Ogólne lub miejscowe nawilżanie skóry suchej lub z łupieżem. Zmiękczanie skóry w przypadku miejscowego zrogowacenia (łokcie, stawy skokowe itp.).",
+   "properties_verbatim": "Hydra-Derm N jest dermokosmetykiem weterynaryjnym, który umożliwia utrzymanie równowagi wodno-tłuszczowej w przypadku skóry suchej lub łupieżu (łojotoku suchego). Wykazuje właściwości zatrzymywania wody, dzięki czemu zapobiega wysuszaniu skóry.",
+   "usage_verbatim": "1) Spłukiwanie: rozcieńczyć 20 ml płynu w 1 litrze wody. Stosować na skórę i sierść. Wmasować i wysuszyć. 2) Spryskiwanie: rozcieńczyć płyn wodą w stosunku 1:2. Stosować na skórę i sierść 1 raz dziennie. Wmasować i wysuszyć.",
+   "precautions_verbatim": "Nie stosować na rany skóry. Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, GLICERIN, UREA, POLYSORBATE 20, PARFUM, LACTIC ACIDS, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/hydra-derm-n-200ml/",
+   "in_shop": true
+  },
+  "peroxyvet": {
+   "family_slug": "peroxyvet",
+   "name": "Peroxyvet",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Dermatologiczny szampon dla skóry i sierści przetłuszczonej dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGA REGULACJĘ MIKROFLORY SKÓRY I WYDZIELANIE GRUCZOŁÓW ŁOJOWYCH",
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja skóry i sierści przetłuszczonej.",
+   "properties_verbatim": "Peroxyvet jest dermokosmetykiem weterynaryjnym i szamponem przeznaczonym do pielęgnacji przetłuszczającej się skóry i sierści. Wspomaga procesy regulujące mikroflorę skóry i wydzielanie gruczołów łojowych. Łagodzi objawy związane z podrażnieniami skóry oraz wpływa korzystnie na naturalną odnowę naskórka. Dodatek łagodnych substancji myjących poprawia kondycję skóry i okrywy włosowej.",
+   "usage_verbatim": "Wstrząsnąć przed użyciem. Zmoczoną sierść i skórę polać szamponem, rozprowadzając go równomiernie po całym ciele, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez 5-10 minut. Stosować codziennie lub w zależności od potrzeb. Zaleca się do ostatniego spłukiwania użyć płyn nawilżający Hydra-Derm N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Benzoyl Peroxide, Cetearyl Alcohol, PEG 4 Rapeseedamide, Glyceryl Stearate, Ceteareth-20, Ceteareth-12, Cetyl Palmitate, Glicerin, Propylene Glycol, Talc, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Sodium Chloride, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/peroxyvet-200ml/",
+   "in_shop": true
+  },
+  "sebovet-clean": {
+   "family_slug": "sebovet-clean",
+   "name": "Sebovet Clean",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Dermatologiczny szampon przeciw łojotokowi tłustemu dla psów",
+   "badges_verbatim": [
+    "UŁATWIA PRAWIDŁOWE FUNKCJONOWANIE GRUCZOŁÓW ŁOJOWYCH",
+    "ZAPOBIEGA NADMIERNEMU ZŁUSZCZANIU NASKÓRKA"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Łojotok tłusty, tłusty wygląd sierści, sklejone łuski łupieżu, miejscowe zaczerwienienie skóry.",
+   "properties_verbatim": "Sebovet – Clean jest dermokosmetykiem weterynaryjnym, specjalnie przystosowanym do mycia psów z objawami łojotoku tłustego. Dziegieć z jałowca zawarty w szamponie ułatwia prawidłową czynność gruczołów łojowych oraz zapobiega nadmiernemu złuszczaniu naskórka.",
+   "usage_verbatim": "Wstrząsnąć przed użyciem. Zmoczoną sierść i skórę polać szamponem, rozprowadzając go równomiernie po całym ciele, umyć i spłukać. Czynności powtórzyć, pozostawiając szampon na sierści i skórze przez 5-10 minut. Stosować codziennie lub w zależności od potrzeb. Zaleca się do ostatniego spłukiwania użyć płyn nawilżający Hydra-Derm N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Glicerin, Cocamidopropyl Betaine, PEG 4 Rapeseedamide, Sodium Chloride, Polisorbate 20, Junipures Oxycedrus Wood Oil, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/sebovet-clean-200ml/",
+   "in_shop": true
+  },
+  "sebovet-excellence": {
+   "family_slug": "sebovet-excellence",
+   "name": "Sebovet excellence",
+   "line": "Excellence",
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Szampon przeciwłupieżowy i przeciwłojotokowy z fitosfingozyną i ekstraktami roślinnymi dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGA LECZENIE",
+    "DELIKATNA BAZA MYJĄCA",
+    "+Fitosfingozyna",
+    "+Ekstrakty roślinne"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja skóry i sierści, wspomagająco przy leczeniu stanów kerato - łojotokowych. Zwalczanie nieprzyjemnego zapachu skóry u zwierząt ze skłonnością do łojotoku.",
+   "properties_verbatim": "Sebovet excellence jest dermokosmetykiem weterynaryjnym o działaniu przeciwłupieżowym, przeciwłojotokowym oraz hamującym powstawanie nieprzyjemnego zapachu skóry. Fitosfingozyna odbudowuje barierę ochronną skóry oraz utrzymuje jej nawilżenie. Zawarty w składzie kompleks ekstraktów roślinnych wykazuje działanie przeciwłojotokowe i przeciwłupieżowe. Szampon posiada bardzo dobre właściwości myjące, ułatwia usunięcie martwych komórek z powierzchni skóry oraz umożliwia jej natłuszczenie.",
+   "usage_verbatim": "Przed kąpielą sierść psa/kota należy starannie wyczesać. Zmoczyć sierść i skórę letnią wodą, polać szamponem całą powierzchnię ciała i dokładnie rozprowadzić. Delikatnie masować, aż do wytworzenia piany, spłukać. Czynności powtórzyć. Pozostawić szampon na sierści i skórze przez kilka minut i dokładnie spłukać. -częstotliwość: stosować od 2 do 3 razy w tygodniu lub według potrzeby.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Pielęgnacja skóry i sierści, wspomagająco przy leczeniu stanów kerato - łojotokowych. Zwalczanie nieprzyjemnego zapachu skóry u zwierząt ze skłonnością do łojotoku.",
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Cocamidopropyl Betaine Coco Glucoside, Disodium Lauryl Sulfosuccinate, Glicerin, PEG 4 Rapeseedamide, Propylene Glycol, Polygryceryl-4 Caprate, Chlorhexidine Digluconate, PEG 40 Hydrogenated Castor Oil, Hydrolyzed Wheat Gluten, Peg 7 Gliceryl Cocoate, Silicone Quaterium-17, Laureth-9, Rosmarinus Officinalis Leaf Extract, Chamomilla Recutita Flower Extract, Arnica Montana Flower Extract, Lamium Album Extract, Salvia Officinalis Leaf Extract, Pinus Sylvestris Bud Extract, Nasturtium Officinale Extract, Arctium Majus Root Extract, Citrus Limon Peel Extract, Hedera Helix Extract, Calendula Officinalis Flower Extract, Tropaeolum Majus Flower Extract , Parefum, Polisorbate 20, Phytosphingosine Hydrochloride, Citric Acids, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Sodium Hydroxide",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/sebovet-excellence-200ml/",
+   "in_shop": true
+  },
+  "sebostop-spot-on": {
+   "family_slug": "sebostop-spot-on",
+   "name": "Sebostop Spot-on",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "uszy"
+   ],
+   "subtitle_verbatim": "Preparat przeciw łojotokowi z fitosfingozyną dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGA ZWALCZAĆ STANY KERATO - ŁOJOTOKOWE SKÓRY OGÓLNE I MIEJSCOWE",
+    "USUWA NADMIAR WOSKOWINY Z PRZEWODZIE SŁUCHOWYM ZEWNĘTRZNYM",
+    "ELIMINUJE NIEPRZYJEMNY ZAPACH SKÓRY"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Stany kerato-łojotokowe skóry ogólne lub miejscowe. Nadmiar woskowiny w przewodzie słuchowym zewnętrznym. Zwalczanie nieprzyjemnego zapachu skóry.",
+   "properties_verbatim": "Sebostop spot-on jest dermokosmetykiem weterynaryjnym, specjalnie przystosowanym dla psów i kotów z objawami łojotoku. Fitosfingozyna pozwala na odbudowę warstwy rogowej naskórka, zmniejszenie łojotoku oraz wspomaga procesy regulujące mikroflorę naskórka. Pozostałe składniki preparatu chronią skórę przed odwodnieniem i łagodzą jej podrażnienia.",
+   "usage_verbatim": "Wspomagająco w połączeniu z szamponami przeciwłojotokowymi SEBOVET CLEAN lub SEBOVET excellence przy:\n– uogólnionym zespole kerato-łojotokowym: 1 raz w tygodniu przez 4 tygodnie.\nPo odsunięciu sierści należy nanieść zawartość pipety na skórę psa lub kota w 2 lub 3 miejsca (w okolicy międzyłopatkowej i lędźwiowej):\n- psy i koty o m.c. < 20 kg 1 pipeta\n- psy o m.c. 20-45 kg 2 pipety\n- psy o m.c. > 45 kg 3 pipety\n– miejscowym zespole kerato-łojotokowym: zawartość 1 pipety nanieść na skórę w okolicy zmian 1 raz w tygodniu, przez 4 tygodnie.\n– powstawaniu nieprzyjemnego zapachu: stosować jak przy uogólnionym zespole kerato-łojotokowym 1 raz w tygodniu.\n– nadmiarze woskowiny w zewnętrznym przewodzie słuchowym: zawartość ½ – 1 pipety do każdego ucha 2 razy w tygodniu, przez okres 3 tygodni.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Ethoxydiglycol, PVP, Polyglyceryl-4 Caprate, Phytosphingosine",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/sebostop-spot-on-5x2ml/",
+   "in_shop": true
+  },
+  "kp-dezodorant-neutralizator-zapachow": {
+   "family_slug": "kp-dezodorant-neutralizator-zapachow",
+   "name": "Dezodorant - Neutralizator zapachów",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "odżywka/kosmetyk pielęgnacyjny",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść",
+    "okolice odbytu/gruczoły",
+    "uszy"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Dezodorant - Neutralizator zapachów DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "Koniec nieprzyjemnych zapachów",
+    "Regulacja mikroflory skóry",
+    "+ Ekstrakt z komórek macierzystych owocu Noni, kompleks prebiotyczny"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Dezodorant w sprayu",
+   "properties_verbatim": "Spray zapewnia skuteczną ochronę przeciwko powstawaniu nieprzyjemnych zapachów na skórze i sierści zwierząt, wokół gruczołów okołoodbytowych i w uszach. Innowacyjny, naturalny skład oparty na ekstrakcie z komórek macierzystych owocu Noni oraz prebiotykach zapobiega powstawaniu nieprzyjemnych zapachów i wzrostowi nieprawidłowej mikroflory bakteryjnej. Jednocześnie nie upośledza naturalnych funkcji skóry i korzystnie wpływa na jej stan.",
+   "usage_verbatim": "Wyczesać sierść w kierunku przeciwnym do ułożenia włosa. Spryskiwać ją równomiernie z odległości 20 – 30 cm z jednoczesnym jej rozchylaniem i ponownie wyczesać. Stosować w zależności od potrzeb.",
+   "precautions_verbatim": "W przypadku dostania się do oczu, spłukać letnią wodą.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, POLYSORBATE 20, GLYCERIN, MORINDA CITRIFOLIA CALLUS CULTURE LYSATE, CITRIC ACID, MALTODEXTRIN, PARFUM, PHENOXYETHANOL, ETHYLHEXYLGLYCERIN",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-dezodorant-neutralizator-zapachow-100ml/",
+   "in_shop": true
+  },
+  "hexoderm-excellence": {
+   "family_slug": "hexoderm-excellence",
+   "name": "Hexoderm excellence",
+   "line": "Excellence",
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Szampon wspomagający regulację mikroflory skóry z fitosfingozyną i chlorheksydyną dla psów i kotów",
+   "badges_verbatim": [
+    "REGULUJE MIKROFLORĘ SKÓRY",
+    "DELIKATNA BAZA MYJĄCA",
+    "+FITOSFINGOZYNA",
+    "+CHLORHEKSYDYNA"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja skóry i sierści, wspomagająco przy leczeniu bakteryjnego zapalenia skóry. Utrzymanie prawidłowej mikroflory skóry. Łojotok.",
+   "properties_verbatim": "Hexoderm excellence jest dermokosmetykiem weterynaryjnym o działaniu ułatwiającym przywrócenie prawidłowej mikroflory skóry. Fitosfingozyna odbudowuje barierę ochronną skóry oraz utrzymuje jej nawilżenie. Szampon posiada bardzo dobre właściwości myjące, ułatwia usunięcie martwych komórek z powierzchni skóry oraz umożliwia jej natłuszczenie.",
+   "usage_verbatim": "Przed kąpielą sierść psa/kota należy starannie wyczesać. Zmoczyć sierść i skórę letnią wodą, polać szamponem całą powierzchnię ciała i dokładnie rozprowadzić. Delikatnie masować, aż do wytworzenia piany, spłukać. Czynności powtórzyć. Pozostawić szampon na sierści i skórze przez kilka minut i dokładnie spłukać. -częstotliwość: stosować od 2 do 3 razy w tygodniu lub według potrzeby.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Pielęgnacja skóry i sierści, wspomagająco przy leczeniu bakteryjnego zapalenia skóry. Utrzymanie prawidłowej mikroflory skóry. Łojotok.",
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, COCAMIDOPROPYL BETAINE, COCO GLUCOSIDE, DISODIUM LAURYL SULFOSUCCINATE, GLICERIN, PEG 4 RAPESEEDAMIDE, POLYGRYCERYL-4 CAPRATE, CHLORHEXIDINE DIGLUCONATE, PEG 40 HYDROGENATED CASTOR OIL, HYDROLYZED WHEAT GLUTEN, PEG 7 GLICERYL COCOATE, SILICONE QUATERIUM-17, LAURETH-9, MINK OIL, PAREFUM, PHYTOSPHINGOSINE HYDROCHLORIDE,TERPINEN-4-OL, CITRIC ACIDS, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, SODIUM HYDROXIDE",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/hexoderm-excellence-200ml/",
+   "in_shop": true
+  },
+  "hexoderm": {
+   "family_slug": "hexoderm",
+   "name": "Hexoderm",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Dermatologiczny szampon dla psów i kotów",
+   "badges_verbatim": [
+    "UTRZYMUJE PRAWIDŁOWĄ MIKROFLORĘ SKÓRY",
+    "ŁAGODZI STANY ZAPALNE",
+    "PRZYWRACA SIERŚCI MIĘKKOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja skóry. Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry.",
+   "properties_verbatim": "Hexoderm jest dermokosmetykiem weterynaryjnym, regulującym mikroflorę skóry, stabilizującym jej pH oraz zapobiegającym wysuszaniu poprzez pozostawienie cienkiej warstwy tłuszczowo-białkowej. Zawarte w płynie łagodne środki myjące pozwalają na jego częste stosowanie.",
+   "usage_verbatim": "Wstrząsnąć przed użyciem. Zmoczoną sierść i skórę polać płynem, rozprowadzając go równomiernie po całym ciele, umyć i spłukać. Czynności powtórzyć, pozostawiając płyn na sierści i skórze przez 5-10 minut. Stosować codziennie lub w zależności od potrzeb. Zaleca się do ostatniego spłukiwania użyć płyn nawilżający Hydra-Derm N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Pielęgnacja skóry. Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry.",
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Chlorhexidine Digluconate, PEG 4 Rapeseedamide, Glicerin, Cocos Nucifera Oil, Cocos Nucifera Fruit Extract, Glycol Distearate, Cocamide MEA, Laureth-10, Polysorbate 20, Parfum, Citric Acid, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/hexoderm-200ml/",
+   "in_shop": true
+  },
+  "hexoderm-k": {
+   "family_slug": "hexoderm-k",
+   "name": "Hexoderm-K",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Dermatologiczny szampon dla psów i kotów",
+   "badges_verbatim": [
+    "CHLORHEKSYDYNA, KETOKONAZOL, OLEJEK KOKOSOWY",
+    "UTRZYMUJE PRAWIDŁOWĄ MIKROFLORĘ SKÓRY",
+    "ŁAGODZI STANY ZAPALNE",
+    "PRZYWRACA SIERŚCI MIĘKKOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja skóry. Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry.",
+   "properties_verbatim": "Hexoderm-K jest dermokosmetykiem weterynaryjnym, regulującym mikroflorę skóry, stabilizującym jej pH oraz zapobiegającym wysuszaniu poprzez pozostawienie cienkiej warstwy tłuszczowo-białkowej. Chlorheksydyna i ketokonazol zwalczają szkodliwe mikroorganizmy (bakterie, drożdżaki oraz dermatofity), które powodują szereg dolegliwości skórnych. Zawarte w płynie łagodne środki myjące pozwalają na jego częste stosowanie. Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry.",
+   "usage_verbatim": "Wstrząsnąć przed użyciem. Zmoczoną sierść i skórę polać płynem, rozprowadzając go równomiernie po całym ciele, umyć i spłukać. Czynności powtórzyć, pozostawiając płyn na sierści i skórze przez 5-10 minut. Stosować codziennie lub w zależności od potrzeb. Zaleca się do ostatniego spłukiwania użyć płyn nawilżający Hydra-Derm N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Pielęgnacja skóry. Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry.",
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, POLYGRYCERYL-4 CAPRATE, CHLORHEXIDINE DIGLUCONATE, PEG 4 RAPESEEDAMIDE, KETOCONAZOLE, GLICERIN, COCOS NUCIFERA OIL, COCOS NUCIFERA FRUIT EXTRACT, GLYCOL DISTEARATE, COCAMIDE MEA, LAURETH-10, POLYSORBATE 20, PARFUM, CITRIC ACID, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/hexoderm-k-200ml/",
+   "in_shop": true
+  },
+  "peptoderm-excellence": {
+   "family_slug": "peptoderm-excellence",
+   "name": "Peptoderm excellence",
+   "line": "Excellence",
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra"
+   ],
+   "subtitle_verbatim": "SZAMPON WSPOMAGAJĄCY REGULACJĘ MIKROFLORY SKÓRY DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "+PEPTYD ANTYDROBNOUSTROJOWY AMP",
+    "+CHLORHEKSYDYNA",
+    "+TERPINEN-4-OL"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Wspomagająco przy leczeniu bakteryjnego zapalenia skóry. Utrzymanie prawidłowej mikroflory skóry. Łojotok.",
+   "properties_verbatim": "Peptoderm excellence jest dermokosmetykiem weterynaryjnym, regulującym mikroflorę skóry, stabilizującym jej pH, zapobiegającym wysuszaniu poprzez pozostawienie cienkiej warstwy lipidowej. Innowacyjna formuła preparatu wykorzystuje współdziałanie peptydu antydrobnoustrojowego AMP, chlorheksydyny oraz terpinen-4-olu w walce ze szkodliwymi mikroorganizmami powodującymi dolegliwości skórne, jednocześnie unikając nabywania przez nie oporności na stosowane substancje.",
+   "usage_verbatim": "Wyczesać sierść przed kąpielą, zmoczyć letnią wodą całą powierzchnię ciała, nałożyć szampon i dokładnie rozprowadzić. Masować, aż do wytworzenia piany, spłukać. Czynność powtórzyć pozostawiając szampon na sierści i skórze przez kilka minut. Dokładnie spłukać letnią wodą. Częstotliwość stosowania: od 2 do 3 razy w tygodniu lub według potrzeb.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Wspomagająco przy leczeniu bakteryjnego zapalenia skóry. Utrzymanie prawidłowej mikroflory skóry. Łojotok.",
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Cocamidopropyl Betaine, Coco Glucoside, Disodium Lauryl Sulfosuccinate, Glicerin, PEG 4 Rapeseedamide, Chlorhexidine Digluconate, PEG 40 Hydrogenated Castor Oil, Barbadensis Leaf Juice, Peg 7 Gliceryl Cocoate, Silicone Quaternium-17, Laureth-9, Mink Oil, Parfum, Terpinen-4-ol, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid, Sodium Hydroxide, Monopeptide-17",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/peptoderm-excellence-200ml/",
+   "in_shop": true
+  },
+  "fyto-derm": {
+   "family_slug": "fyto-derm",
+   "name": "Fyto-derm",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "pozostałe zwierzęta"
+   ],
+   "body_areas": [
+    "skóra",
+    "rany/otarcia"
+   ],
+   "subtitle_verbatim": "Preparat pielęgnacyjny na uszkodzenia skóry dla psów, kotów i pozostałych zwierząt",
+   "badges_verbatim": [
+    "WSPOMAGA GOJENIE RAN",
+    "ZAWIERA GORYCZKĘ ZAPOBIEGAJĄCĄ WYLIZYWANIU RAN"
+   ],
+   "intended_for_verbatim": "Dla psów, kotów i pozostałych zwierząt.",
+   "indications_verbatim": "Pielęgnacja uszkodzonej skóry.",
+   "properties_verbatim": "Fyto-Derm jest dermokosmetykiem weterynaryjnym do stosowania na uszkodzoną skórę. Składniki preparatu wykazują działanie regulujące mikroflorę skóry oraz wpływają na jej odnowę. Charakterystyczny zapach preparatu zapobiega wylizywaniu miejsca uszkodzonej skóry przez zwierzęta.",
+   "usage_verbatim": "Po oczyszczeniu miejsca uszkodzonej skóry spryskiwać 3 razy dziennie.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Denat. Alcohol, Aqua, Propylene Glycol, Lavandula Angustifolia (Lavender) Oil, Rosmarinus Officinalis Oil, Thymus Vulgaris (Thyme) Oil, Centella Asiatica Extract, Aesculus Hippocastanum Seed Extract",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/fytoderm-100ml/",
+   "in_shop": true
+  },
+  "alu-derm": {
+   "family_slug": "alu-derm",
+   "name": "Alu-derm",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra"
+   ],
+   "subtitle_verbatim": "Preparat pielęgnacyjny na uszkodzenia skóry dla psów i kotów",
+   "badges_verbatim": [
+    "REGULUJE MIKROFLORĘ SKÓRY",
+    "WPŁYWA NA ODNOWĘ NASKÓRKA",
+    "DZIAŁA WYSUSZAJĄCO I ŚCIĄGAJĄCO"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja uszkodzonej skóry.",
+   "properties_verbatim": "ALU-DERM jest dermokosmetykiem weterynaryjnym do stosowania na uszkodzoną skórę. Składniki preparatu wykazują działanie regulujące mikroflorę skóry oraz wpływają na jej odnowę. Działają wysuszająco i ściągająco.",
+   "usage_verbatim": "Przed użyciem energicznie wstrząsnąć. Stosować na uszkodzoną skórę, po uprzednim oczyszczeniu. Spryskiwać z odległości 15-20 cm, aż do całkowitego pokrycia uszkodzonego miejsca. Zbiornik należy trzymać pionowo. Powtarzać 2-3 razy dziennie lub w zależności od potrzeb.",
+   "precautions_verbatim": "Unikać kontaktu z oczami. Stosować z dala od źródeł ognia. Stosować w miejscu dobrze wietrzonym. Nie dziurawić. Nie nagrzewać. Zbiornik metalowy pod ciśnieniem. Wrzucenie opakowania do ognia grozi wybuchem. Nie palić papierosów w trakcie stosowania. Nie wdychać aerozolu.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "CI 77000, ISOBUTYL METHACRYLATE, MEK",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/alu-derm-200ml/",
+   "in_shop": false
+  }
+ }
+}

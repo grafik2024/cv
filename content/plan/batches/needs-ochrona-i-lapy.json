@@ -1,0 +1,275 @@
+{
+ "batch": "ochrona-i-lapy",
+ "needs": [
+  {
+   "slug": "pchly-i-kleszcze",
+   "title": "Ochrona przed pchłami i kleszczami",
+   "batch": "ochrona-i-lapy",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "priority": 92,
+   "red_flag_level": "caution",
+   "scope": "IN: dodatkowa ochrona/odstraszanie pcheł, kleszczy i innych owadów (spacery, sezon), swędzenie po ukąszeniach. OUT: leczenie istniejącej inwazji pasożytów i choroby odkleszczowe (lekarz weterynarii — produkty tylko wspomagają ochronę, nie zastępują środków przeciwpasożytniczych).",
+   "products": [
+    {
+     "family": "kp-spray-ochronny-przeciw-pchlom-i-kleszczom",
+     "role": "primary",
+     "evidence": "SPRAY WSPOMAGAJĄCY OCHRONĘ PRZECIW PCHŁOM, KLESZCZOM i innym owadom"
+    },
+    {
+     "family": "kp-drop-and-go-krople",
+     "role": "similar",
+     "evidence": "WSPOMAGA OCHRONĘ PSÓW I KOTÓW PRZED PCHŁAMI, KLESZCZAMI I INNYMI PASOŻYTAMI"
+    },
+    {
+     "family": "kp-pianka-ochronna-przeciw-pchlom-i-kleszczom",
+     "role": "similar",
+     "evidence": "Preparat wspomaga działanie ochronne przed obecnością pcheł, kleszczy i innych owadów na sierści oraz skórze psów i kotów."
+    },
+    {
+     "family": "kp-szampon-ochronny-przeciw-pchlom-i-kleszczom",
+     "role": "complementary",
+     "evidence": "Preparat wspomaga działanie ochronne przed obecnością pcheł i kleszczy na sierści oraz skórze psów i kotów."
+    }
+   ]
+  },
+  {
+   "slug": "opuszki-lap",
+   "title": "Podrażnione i popękane opuszki łap",
+   "batch": "ochrona-i-lapy",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "lapy-i-pazury"
+   ],
+   "priority": 70,
+   "red_flag_level": "caution",
+   "scope": "IN: popękane, podrażnione, otarte opuszki; ochrona przed solą drogową, śniegiem, gorącym asfaltem, twardym podłożem. OUT: zrogowacenia na łokciach (zrogowacenia-skory-na-lokciach); głębokie skaleczenia, kulawizna, obrzęk (red flags).",
+   "products": [
+    {
+     "family": "tanaderm",
+     "role": "primary",
+     "evidence": "Preparat do pielęgnacji opuszek palców dla psów i kotów"
+    },
+    {
+     "family": "kp-spray-ochronny-na-opuszki-palcow",
+     "role": "similar",
+     "evidence": "Pielęgnacja i regeneracja skóry opuszek palców oraz łagodzenie objawów związanych z ich podrażnieniem."
+    }
+   ]
+  }
+ ],
+ "families": {
+  "kp-spray-ochronny-przeciw-pchlom-i-kleszczom": {
+   "family_slug": "kp-spray-ochronny-przeciw-pchlom-i-kleszczom",
+   "name": "Spray ochronny przeciw pchłom i kleszczom",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat odstraszający",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja",
+    "preparaty-odstraszajace-pchly-i-kleszcze"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja SPRAY WSPOMAGAJĄCY OCHRONĘ PRZECIW PCHŁOM, KLESZCZOM i innym owadom",
+   "badges_verbatim": [
+    "ZAPEWNIA SKUTECZNĄ DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+    "BEZPIECZNY, skuteczny, naturalny",
+    "+ olejek Neem"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "properties_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł, kleszczy i innych owadów na sierści oraz skórze psów i kotów. OLEJEK NEEM Melia Azadirachta Leaf Extract to wyciąg z liści miodli indyjskiej, Melia azadirachta, Meliaceae. Wyciąg z liści miodli indyjskiej jest wyjątkowo bogaty we wtórne substancje roślinne i olejki eteryczne. Liście Neem mają właściwości przeciwzapalne, przeciwgorączkowe, antybakteryjne, antywirusowe, przeciwgrzybiczne, przeciwpasożytnicze. Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów: wodny ekstrakt z liści działa przeciwko składaniu jaj przez Anticaria gemmatalis, świeże liście działają mutagennie na komara Aedes aegypti, dihydronimocynol i 6-α-hydroksy-azadiradion okazały się być śmiertelne dla Anopheles stephensi (na czwartym etapie larwalnym), a salanina wydłuża etap larwalny, opóźnia etap kokonu, wywołuje śmiertelność wśród larw i poczwarek oraz redukuje wagę poczwarki Oxya fuscovittata. Niektóre pochodne limonoidu niekorzystnie wpływają na płodność muchy domowej Musca domestica. Azadirachtyna jest toksyczna względem pluskwiaków Rhodnius prolixus, hamuje proces odżywiania szarańczy Schistocerca gregaria i działa na ponad 200 gatunków insektów, przerywając ich wzrost i utrudniając odżywianie. W pewnym stopniu jest więc względem nich toksyczna natomiast wykazuje bardzo niską toksyczność względem ssaków i jest biodegradowalna. Najaktywniejszymi związkami miodli są azadirachtyna A, azadirachtyna B i salanina, które są rozpuszczalne w wodzie, dzięki czemu ekstrakt z miodli zachowuje ich właściwości repelencyjne. Dlatego ekstrakt z miodli zalecany jest w kosmetykach odstraszających owady.",
+   "usage_verbatim": "Wyczesać sierść w kierunku przeciwnym do ułożenia włosa. Spryskiwać ją równomiernie z odległości 20 – 30 cm z jednoczesnym jej rozchylaniem, a następnie wmasować preparat w skórę i sierść. Stosować 1 raz w tygodniu lub w zależności od potrzeb.",
+   "precautions_verbatim": "Należy unikać kontaktu preparatu z oczami. Nie przeznaczony dla psów i kotów poniżej 3 miesiąca życia oraz dla suk i kotek ciężarnych lub karmiących. W celu zmniejszenia ryzyka obecności pcheł i kleszczy konieczna jest okresowa i regularna wymiana legowiska. Warunki przechowywania: W oryginalnym opakowaniu i z dala od dzieci.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Polysorbate 20, PEG 4 Rapeseedamide, Melia Azadirachta Leaf Extract, Phenoxyethanol, Ethylhexylglycerin, Sodium hydroxide",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-spray-ochronny-przeciw-pchlom-i-kleszczom-100ml/",
+   "in_shop": true
+  },
+  "kp-drop-and-go-krople": {
+   "family_slug": "kp-drop-and-go-krople",
+   "name": "Drop&Go",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat odstraszający",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja",
+    "preparaty-odstraszajace-pchly-i-kleszcze"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Krople przeciw pchłom, kleszczom i innym owadom",
+   "badges_verbatim": [
+    "NATURALNY EKSTRAKT Z MIODLI INDYJSKIEJ (NEEM) O DZIAŁANIU REPELENCYJNYM, PRZECIWBAKTERYJNYM I PRZECIWZAPALNYM",
+    "WSPOMAGA OCHRONĘ PSÓW I KOTÓW PRZED PCHŁAMI, KLESZCZAMI I INNYMI PASOŻYTAMI, ŁAGODZI SWĘDZENIE PO UKĄSZENIACH",
+    "BEZPIECZNY PREPARAT DO STOSOWANIA MIEJSCOWEGO NA SKÓRĘ I SIERŚĆ",
+    "+ olejek Neem"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "properties_verbatim": "Krople zapewniają dodatkową skuteczną ochronę przeciw pchłom i kleszczom. Bezpieczne dla ciebie, twoich bliskich i środowiska! Bez alergii i podrażnień. Skutecznie dodatkowo chroni przed pchłami i kleszczami. OLEJEK NEEM Melia Azadirachta Leaf Extract to wyciąg z liści miodli indyjskiej, Melia azadirachta, Meliaceae. Wyciąg z liści miodli indyjskiej jest wyjątkowo bogaty we wtórne substancje roślinne i olejki eteryczne. Liście Neem mają właściwości przeciwzapalne, przeciwgorączkowe, antybakteryjne, antywirusowe, przeciwgrzybiczne, przeciwpasożytnicze. Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów: wodny ekstrakt z liści działa przeciwko składaniu jaj przez Anticaria gemmatalis, świeże liście działają mutagennie na komara Aedes aegypti, dihydronimocynol i 6-α-hydroksy-azadiradion okazały się być śmiertelne dla Anopheles stephensi (na czwartym etapie larwalnym), a salanina wydłuża etap larwalny, opóźnia etap kokonu, wywołuje śmiertelność wśród larw i poczwarek oraz redukuje wagę poczwarki Oxya fuscovittata. Niektóre pochodne limonoidu niekorzystnie wpływają na płodność muchy domowej Musca domestica. Azadirachtyna jest toksyczna względem pluskwiaków Rhodnius prolixus, hamuje proces odżywiania szarańczy Schistocerca gregaria i działa na ponad 200 gatunków insektów, przerywając ich wzrost i utrudniając odżywianie. W pewnym stopniu jest więc względem nich toksyczna natomiast wykazuje bardzo niską toksyczność względem ssaków i jest biodegradowalna. Najaktywniejszymi związkami miodli są azadirachtyna A, azadirachtyna B i salanina, które są rozpuszczalne w wodzie, dzięki czemu ekstrakt z miodli zachowuje ich właściwości repelencyjne. Dlatego ekstrakt z miodli zalecany jest w kosmetykach odstraszających owady.",
+   "usage_verbatim": "Przed otworzeniem pipety należy ją wstrząsnąć. Po odsunięciu sierści zawartość pipety nanieść na skórę w dwóch lub trzech miejscach ( w okolicy międzyłopatkowej lub lędźwiowej) Stosować w zależności od potrzeb. - psy i koty o m.c. 45 kg - 3 pipety",
+   "precautions_verbatim": "Należy unikać kontaktu preparatu z oczami i umyć ręce po każdym użyciu. Do użytku zewnętrznego.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Glycerin, Melia Azadirachta Leaf Extract, Polysorbate 20, Phenoxyethanol, Ethylhexylglycerin, Sodium Benzoate, Potassium Sorbate",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/dropgo-krople-ochronne-przeciw-pchlom-i-kleszczom-i-innym-owadom-5x2ml/",
+   "in_shop": true
+  },
+  "kp-pianka-ochronna-przeciw-pchlom-i-kleszczom": {
+   "family_slug": "kp-pianka-ochronna-przeciw-pchlom-i-kleszczom",
+   "name": "Pianka ochronna przeciw pchłom i kleszczom",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "preparat odstraszający",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja",
+    "preparaty-odstraszajace-pchly-i-kleszcze"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Pianka WSPOMAGAJĄCA OCHRONĘ PRZECIW PCHŁOM I KLESZCZOM",
+   "badges_verbatim": [
+    "ZAPEWNIA SKUTECZNĄ DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+    "BEZPIECZNa, skuteczna, naturalna",
+    "+ olejek Neem"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "properties_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł, kleszczy i innych owadów na sierści oraz skórze psów i kotów. OLEJEK NEEM Melia Azadirachta Leaf Extract to wyciąg z liści miodli indyjskiej, Melia azadirachta, Meliaceae. Wyciąg z liści miodli indyjskiej jest wyjątkowo bogaty we wtórne substancje roślinne i olejki eteryczne. Liście Neem mają właściwości przeciwzapalne, przeciwgorączkowe, antybakteryjne, antywirusowe, przeciwgrzybiczne, przeciwpasożytnicze. Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów: wodny ekstrakt z liści działa przeciwko składaniu jaj przez Anticaria gemmatalis, świeże liście działają mutagennie na komara Aedes aegypti, dihydronimocynol i 6-α-hydroksy-azadiradion okazały się być śmiertelne dla Anopheles stephensi (na czwartym etapie larwalnym), a salanina wydłuża etap larwalny, opóźnia etap kokonu, wywołuje śmiertelność wśród larw i poczwarek oraz redukuje wagę poczwarki Oxya fuscovittata. Niektóre pochodne limonoidu niekorzystnie wpływają na płodność muchy domowej Musca domestica. Azadirachtyna jest toksyczna względem pluskwiaków Rhodnius prolixus, hamuje proces odżywiania szarańczy Schistocerca gregaria i działa na ponad 200 gatunków insektów, przerywając ich wzrost i utrudniając odżywianie. W pewnym stopniu jest więc względem nich toksyczna natomiast wykazuje bardzo niską toksyczność względem ssaków i jest biodegradowalna. Najaktywniejszymi związkami miodli są azadirachtyna A, azadirachtyna B i salanina, które są rozpuszczalne w wodzie, dzięki czemu ekstrakt z miodli zachowuje ich właściwości repelencyjne. Dlatego ekstrakt z miodli zalecany jest w kosmetykach odstraszających owady.",
+   "usage_verbatim": "wyczesać sierść w kierunku przeciwnym do ułożenia włosa. Nałożyć na dłoń 1 lub 2 porcje pianki wielkości orzecha włoskiego, nanieść na sierść i wcierać w skórę w kierunku przeciwnym do ułożenia włosa. Czynność powtarzać aż do całkowitego pokrycia powierzchni ciała. Wysuszyć w sposób naturalny i wyczesać.",
+   "precautions_verbatim": "Należy unikać kontaktu pianki z oczami. Nie przeznaczona dla psów i kotów poniżej 1 roku życia. W celu uzyskania maksymalnego działania preparatu, po jego zastosowaniu, należy wyprowadzić psa na spacer. W celu zmniejszenia ryzyka obecności pcheł i kleszczy konieczna jest okresowa i regularna wymiana legowiska. Warunki przechowywania: W oryginalnym opakowaniu i z dala od dzieci.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, PEG 4 Rapeseedamide, Polysorbate 20, Glicerin, Melia Azadirachta Leaf Extract, Citric Acid, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinon",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-pianka-ochronna-przeciw-pchlom-i-kleszczom-150ml/",
+   "in_shop": true
+  },
+  "kp-szampon-ochronny-przeciw-pchlom-i-kleszczom": {
+   "family_slug": "kp-szampon-ochronny-przeciw-pchlom-i-kleszczom",
+   "name": "Szampon ochronny przeciw pchłom i kleszczom",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "szampon",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja",
+    "preparaty-odstraszajace-pchly-i-kleszcze"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja SZAMPON WSPOMAGAJĄCY OCHRONĘ PRZECIW PCHŁOM, KLESZCZOM I INNYM OWADOM dla psów i kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "ZAPEWNIA DODATKOWĄ OCHRONĘ PRZED PCHŁAMI, KLESZCZAMI i innymi owadami",
+    "bezpieczny",
+    "+ olejek Neem"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja sierści i skóry.",
+   "properties_verbatim": "Preparat wspomaga działanie ochronne przed obecnością pcheł i kleszczy na sierści oraz skórze psów i kotów. Posiada także bardzo dobre właściwości myjące. OLEJEK NEEM Melia Azadirachta Leaf Extract to wyciąg z liści miodli indyjskiej, Melia azadirachta, Meliaceae. Wyciąg z liści miodli indyjskiej jest wyjątkowo bogaty we wtórne substancje roślinne i olejki eteryczne. Liście Neem mają właściwości przeciwzapalne, przeciwgorączkowe, antybakteryjne, antywirusowe, przeciwgrzybiczne, przeciwpasożytnicze. Miodla i jej liście są stosowane jako repelent, ponieważ są aktywne względem różnych rodzajów insektów: wodny ekstrakt z liści działa przeciwko składaniu jaj przez Anticaria gemmatalis, świeże liście działają mutagennie na komara Aedes aegypti, dihydronimocynol i 6-α-hydroksy-azadiradion okazały się być śmiertelne dla Anopheles stephensi (na czwartym etapie larwalnym), a salanina wydłuża etap larwalny, opóźnia etap kokonu, wywołuje śmiertelność wśród larw i poczwarek oraz redukuje wagę poczwarki Oxya fuscovittata. Niektóre pochodne limonoidu niekorzystnie wpływają na płodność muchy domowej Musca domestica. Azadirachtyna jest toksyczna względem pluskwiaków Rhodnius prolixus, hamuje proces odżywiania szarańczy Schistocerca gregaria i działa na ponad 200 gatunków insektów, przerywając ich wzrost i utrudniając odżywianie. W pewnym stopniu jest więc względem nich toksyczna natomiast wykazuje bardzo niską toksyczność względem ssaków i jest biodegradowalna. Najaktywniejszymi związkami miodli są azadirachtyna A, azadirachtyna B i salanina, które są rozpuszczalne w wodzie, dzięki czemu ekstrakt z miodli zachowuje ich właściwości repelencyjne. Dlatego ekstrakt z miodli zalecany jest w kosmetykach odstraszających owady.",
+   "usage_verbatim": "Do użytku zewnętrznego. Wstrząsnąć przed użyciem. Zmoczyć sierść i skórę, polać szamponem, rozprowadzić, umyć i spłukać. Czynność powtórzyć, pozostawiając szampon na sierści i skórze przez kilka minut. Spłukać letnią wodą, wysuszyć i wyszczotkować. Po umyciu stosować płyn nawilżający HYDRA-DERM N.",
+   "precautions_verbatim": "Należy unikać kontaktu szamponu z oczami. Nie przeznaczony dla psów i kotów poniżej 3 miesiąca życia oraz dla suk i kotek ciężarnych lub karmiących. W celu zmniejszenia ryzyka obecności pcheł i kleszczy konieczna jest okresowa i regularna wymiana legowiska. Warunki przechowywania: W oryginalnym opakowaniu i z dala od dzieci.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "AQUA, SODIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE, PEG 4 RAPESEEDAMIDE, GLICERIN, MELIA AZADIRACHTA LEAF EXTRACT, SODIUM CHLORIDE, DMDM HYDANTOIN, METHYLCHLOROISOTHIAZOLINONE, METHYLISOTHIAZOLINONE, CITRIC ACID",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-szampon-ochronny-200ml/",
+   "in_shop": true
+  },
+  "tanaderm": {
+   "family_slug": "tanaderm",
+   "name": "Tanaderm",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "łapy/opuszki"
+   ],
+   "subtitle_verbatim": "Preparat do pielęgnacji opuszek palców dla psów i kotów",
+   "badges_verbatim": [
+    "WSPOMAGAJĄCO – REGENERUJĄCY",
+    "CHRONIĄCY PRZED TRUDNYM PODŁOŻEM",
+    "NIE POZOSTAWIA ŚLADÓW"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja opuszek palców, łagodzenie objawów związanych z podrażnieniami opuszek palców.",
+   "properties_verbatim": "Tanaderm jest pielęgnacyjnym dermokosmetykiem weterynaryjnym, o działaniu łagodzącym objawy związane z uszkodzeniami opuszek palców oraz wspomagającym procesy odnowy naskórka. Jego składniki wpływają na utrzymanie prawidłowej mikroflory skóry oraz działają wysuszająco i ściągająco.",
+   "usage_verbatim": "Po oczyszczeniu uszkodzonych opuszek palców spryskiwać lub tamponować nawilżoną gazą. Wysuszyć. Zabieg powtarzać 2 razy dziennie. U psów o wrażliwych opuszkach palców stosować w zależności od potrzeb - 2-3 razy w tygodniu. Dla wzmocniena opuszek palców psów pracujących lub narażonych na ich uszkodzenie np. w okresie polowań, wakacji (twarde i ostre podłoże, rozgrzany asfalt) i w zimie (ochrona przed szkodliwym działaniem soli, śniegu ...) - stosować 1 raz dziennie przez 15 dni. Nie dopuszczać do wylizywania.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Glicerin, Trichloroacetic acid, Propylene Glycol, Centella Asiatica Extract, Aloe Barbadensis Leaf Juice, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/tanaderm-90ml/",
+   "in_shop": true
+  },
+  "kp-spray-ochronny-na-opuszki-palcow": {
+   "family_slug": "kp-spray-ochronny-na-opuszki-palcow",
+   "name": "Spray ochronny na opuszki palców",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "łapy/opuszki",
+    "skóra"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja ochrona opuszek palców",
+   "badges_verbatim": [
+    "regenerujący",
+    "ŁAGODZI OBJAWY ZWIĄZANE Z PODRAŻNIENIAMI",
+    "BEZ ŚLADÓW"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja i regeneracja skóry opuszek palców oraz łagodzenie objawów związanych z ich podrażnieniem.",
+   "properties_verbatim": "Dermokosmetyk weterynaryjny o działaniu pielęgnująco -ochronnym na opuszki palców uszkodzone przez kontakt z negatywnymi czynnikami występującymi w podłożu oraz wspomagającym i przyspieszającym odnowę naskórka. Jego składniki wspomagają utrzymanie prawidłowej mikroflory skóry oraz działają wysuszająco, ściągająco i kojąco.",
+   "usage_verbatim": "Po oczyszczeniu uszkodzonych opuszek palców spryskiwać lub tamponować nawilżoną gazą. Wysuszyć. Zabieg powtarzać 2 razy dziennie. U psów o wrażliwych opuszkach palców stosować w zależności od potrzeb - 2-3 razy w tygodniu. Dla wzmocnienia skóry opuszek palców psów pracujących lub psów narażonych na ich uszkodzenie np. w okresie polowań, wakacji (twarde i ostre podłoże, rozgrzany asfalt) i w zimie (ochrona przed szkodliwym działaniem soli, śniegu ...) - stosować 1 raz dziennie. Nie dopuszczać do wylizywania.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Glicerin, Trichloroacetic acid, Propylene Glycol, Centella Asiatica Extract, Aloe Barbadensis Leaf Juice, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone, Citric Acid",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-spray-ochronny-na-opuszki-palcow-90ml/",
+   "in_shop": true
+  }
+ }
+}

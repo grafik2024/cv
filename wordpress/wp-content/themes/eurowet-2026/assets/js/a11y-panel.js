@@ -40,4 +40,19 @@ if ( panel && opener ) {
 		announce( c.parentElement.textContent.trim() + ': ' + ( c.checked ? ( panel.dataset.msgOn || 'włączone' ) : ( panel.dataset.msgOff || 'wyłączone' ) ) );
 	} );
 	apply( read() );
+
+	// Colour theme (same storage as the header toggle in shell.js; the header toggle is hidden on small screens).
+	const themeButtons = panel.querySelectorAll( '[data-ew-theme-set]' );
+	const readTheme = () => { try { return localStorage.getItem( 'ew-theme' ) || 'system'; } catch ( e ) { return 'system'; } };
+	const markTheme = ( mode ) => themeButtons.forEach( ( b ) => b.setAttribute( 'aria-pressed', String( b.dataset.ewThemeSet === mode ) ) );
+	themeButtons.forEach( ( b ) => b.addEventListener( 'click', () => {
+		const mode = b.dataset.ewThemeSet;
+		try {
+			if ( 'system' === mode ) { html.removeAttribute( 'data-theme' ); localStorage.removeItem( 'ew-theme' ); }
+			else { html.setAttribute( 'data-theme', mode ); localStorage.setItem( 'ew-theme', mode ); }
+		} catch ( e ) { if ( 'system' !== mode ) html.setAttribute( 'data-theme', mode ); else html.removeAttribute( 'data-theme' ); }
+		markTheme( mode );
+		announce( b.textContent.trim() );
+	} ) );
+	markTheme( readTheme() );
 }

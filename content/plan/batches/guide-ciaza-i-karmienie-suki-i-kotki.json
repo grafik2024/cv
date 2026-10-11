@@ -1,0 +1,443 @@
+{
+ "guide": {
+  "slug": "ciaza-i-karmienie-suki-i-kotki",
+  "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+  "hub": "zywienie-i-suplementacja",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "rozrod"
+  ],
+  "stage": "informational",
+  "decision": "new",
+  "legacy_path": "",
+  "merged_from": [],
+  "needs": [
+   "ciaza-karmienie-i-wzrost-mlodych",
+   "ciaza-urojona"
+  ],
+  "extra_families": [],
+  "brief": "New. Vet supervision; products by text; no gestation numbers unless verified."
+ },
+ "source_files": [],
+ "needs": {
+  "ciaza-karmienie-i-wzrost-mlodych": {
+   "slug": "ciaza-karmienie-i-wzrost-mlodych",
+   "title": "Ciąża, karmienie i wzrost młodych",
+   "scope": "IN: suka/kotka ciężarna i karmiąca, wzrost szczeniąt i kociąt (karma uzupełniająca). OUT: odchów bez matki/mleko zastępcze (mleko-zastepcze-dla-szczeniat-i-kociat), ciąża urojona (ciaza-urojona).",
+   "red_flag_level": "caution"
+  },
+  "ciaza-urojona": {
+   "slug": "ciaza-urojona",
+   "title": "Ciąża urojona u suki",
+   "scope": "IN: objawy ciąży urojonej u suki, obrzęknięte gruczoły mlekowe (karma uzupełniająca). OUT: prawdziwa ciąża (ciaza-karmienie-i-wzrost-mlodych). Wyjątek: tylko 1 produkt w katalogu — potrzeba istnieje, by zapytanie „ciąża urojona” nie trafiało do witamin ciążowych.",
+   "red_flag_level": "caution"
+  }
+ },
+ "families": {
+  "wita-vet-junior-adult-krople": {
+   "family_slug": "wita-vet-junior-adult-krople",
+   "name": "WITA-VET junior + adult",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "kot",
+    "szczenię"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WZROST",
+    "CIĄŻA",
+    "LAKTACJA",
+    "WITALNOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Witalność.",
+   "properties_verbatim": "Karma uzupełniająca dla szczeniąt, suk i kotek ciężarnych, karmiących, dla psów w okresie rekonwalescencji, psów hodowlanych, wystawowych oraz dla zwierząt narażonych na wysiłek fizyczny.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-junioradult-krople-25ml/"
+  },
+  "wita-vet-energia-kot": {
+   "family_slug": "wita-vet-energia-kot",
+   "name": "WITA-VET ENERGIA",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "kot",
+    "kocię"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST",
+    "WITALNOŚĆ",
+    "CIĄŻA",
+    "LAKTACJA"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "WZROST | WITALNOŚĆ | CIĄŻA | LAKTACJA",
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla kociąt, kotek ciężarnych i karmiących, kotów dorosłych wykazujących spadek formy, osłabienie apetytu lub żywionych nieodpowiednią karmą. Zwiększa witalność i poprawia kondycję. Korzystnie wpływa na przemiany energetyczne, mineralizację kości Produkt wyjątkowo smaczny, chętnie przyjmowany przez zwierzęta.",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą.\nKocięta | Do 3 miesiąca | 1 tab./dzień\nDo 10 miesiąca | 2 tab./dzień\nKotki ciężarne lub w okresie laktacji | 2 tab./dzień\nKoty dorosłe (m.c. poniżej 4 kg) | 1 tab. / dzień\nKoty dorosłe (m.c. powyżej 4 kg) | 2 tab. / dzień",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-kot-junioradult-energia-0195g-30szt/"
+  },
+  "wita-vet-complex-1g": {
+   "family_slug": "wita-vet-complex-1g",
+   "name": "WITA-VET Complex 1g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "Dzienna dawka witamin i minerałów",
+    "Wzrost | Praca | Witalność | Ciąża",
+    "Junior+ Adult, Ca/P 1,3"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta 1 tab. / do 10 kg m.c. / 1 raz dziennie.\nPsy dorosłe 1 tab. / do 10 kg m.c. / 1 raz dziennie.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-1g-80szt/"
+  },
+  "milvet": {
+   "family_slug": "milvet",
+   "name": "MILVET",
+   "line": null,
+   "product_type": "inny (pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt)",
+   "species": [
+    "pies",
+    "kot",
+    "szczenię",
+    "kocię"
+   ],
+   "subtitle_verbatim": "Pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt oraz dla psów i kotów dorosłych",
+   "badges_verbatim": [
+    "BUTELKA+SMOCZEK WEWNĄTRZ OPAKOWANIA",
+    "ZASTĘPUJE POKARM MATKI",
+    "MOŻE BYĆ PODAWANY ZARAZ PO URODZENIU",
+    "DOSTARCZA ENERGII, WITAMIN I MINERAŁÓW"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Preparat mlekozastępczy dla szczeniąt i kociąt.",
+   "properties_verbatim": "Pełnoporcjowy preparat mlekozastępczy doskonale zastępuje naturalny pokarm matki. Dostarcza lekkostrawnego białka i łatwo przyswajalnego tłuszczu. Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka. Szczeniętom i kociętom dostarcza niezbędnej energii, witamin i budulca do rozwoju. Preparat zaspokaja potrzeby mineralne i witaminowe rosnących szczeniąt i kociąt. Jest bardzo dobrze przyswajany przez zwierzęta i może być podawany zaraz po urodzeniu.",
+   "usage_verbatim": "Podawać przy:\n- niedostatecznej ilości wydzielanego przez matkę mleka\n- odchowie szczeniąt i kociąt bez udziału matki\n- jako dodatek do karmy w trakcie odsadzania\n- dla psów i kotów dorosłych w okresie rekonwalescencji i wzmożonego wysiłku\nUstalić porcję preparatu zgodnie z tabelą na opakowaniu. Do butelki wsypać jedną porcję preparatu, a następnie dodać dwie porcje przegotowanej wody o temperaturze ok. 60°C – proporcja 1:2. Energicznie wymieszać. Wystudzić do temperatury 37°C. Przygotowane mleko przechowywać pomiędzy posiłkami w temp.+2°C- +8°C. Po przygotowaniu przechowywać nie dłużej niż 24 godziny. Przez pierwsze 15 dni życia karmić przez smoczek, a następnie próbować podawać do picia z miseczki. Po 4 tygodniu życia, w trakcie stopniowego przechodzenia zwierząt na karmę stałą, dodawać proszek do karmy.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/milvet-10-x-100g/"
+  },
+  "wita-vet-stawy-pies": {
+   "family_slug": "wita-vet-stawy-pies",
+   "name": "WITA-VET stawy",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZMOCNIENIE STAWÓW",
+    "SMAKOŁYK"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Karma uzupełniająca, zalecana jest dla psów dorosłych z problemami kostno-stawowymi.",
+   "properties_verbatim": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów. Polecana dla psów z problemami poruszania. Można podawać młodym psom w okresie intensywnego wzrostu. Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność. Ekstrakt owocu dzikiej róży dostarcza witaminę C, która bierze udział w syntezie kolagenu chrząstki stawowej.",
+   "usage_verbatim": "1 tabletka dziennie na 40kg masy",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Karma uzupełniająca, zalecana jest dla psów dorosłych z problemami kostno-stawowymi.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-stawy-4-g-30-tab-dla-psow/"
+  },
+  "uromil": {
+   "family_slug": "uromil",
+   "name": "Uromil",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "CIĄŻA UROJONA"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Ciąża urojona",
+   "properties_verbatim": "Składniki karmy wspomagają odtruwanie organizmu w przebiegu ciąży urojonej u suk oraz działając moczopędnie ułatwiają powrót obrzękniętych gruczołów mlekowych do ich prawidłowego stanu. Karma wpływa także korzystnie na układ moczowy.",
+   "usage_verbatim": "Podawać sukom po wymieszaniu z karmą lub bezpośrednio 1 tab. / 10 kg m.c. 2 razy dziennie, przez 10 dni. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-wspomagajace-zdrowie/uromil-30szt/"
+  }
+ },
+ "all_guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "stage": "informational"
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "stage": "product"
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "product"
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "stage": "product"
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  }
+ ]
+}

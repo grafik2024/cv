@@ -12,8 +12,8 @@ $cart_url   = ew_theme_has_woo() ? wc_get_cart_url() : '';
 ?>
 <header class="ew-header" data-ew-header>
 	<div class="ew-container ew-header__bar">
-		<a class="ew-header__logo" href="<?php echo esc_url( function_exists( 'pll_home_url' ) ? pll_home_url() : home_url( '/' ) ); ?>" rel="home">
-			<img class="ew-logo ew-logo--light" src="<?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-360.png' ) ); ?>" srcset="<?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-180.png' ) ); ?> 180w, <?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-360.png' ) ); ?> 360w, <?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-540.png' ) ); ?> 540w" sizes="180px" width="180" height="37" alt="<?php esc_attr_e( 'EUROWET — strona główna', 'eurowet-2026' ); ?>">
+		<a class="ew-header__logo" href="<?php echo esc_url( function_exists( 'pll_home_url' ) ? pll_home_url() : home_url( '/' ) ); ?>" rel="home" aria-label="<?php esc_attr_e( 'EUROWET — strona główna', 'eurowet-2026' ); ?>">
+			<img class="ew-logo ew-logo--light" src="<?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-360.png' ) ); ?>" srcset="<?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-180.png' ) ); ?> 180w, <?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-360.png' ) ); ?> 360w, <?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-540.png' ) ); ?> 540w" sizes="180px" width="180" height="37" alt="">
 			<img class="ew-logo ew-logo--dark" src="<?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-white-360.png' ) ); ?>" srcset="<?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-white-180.png' ) ); ?> 180w, <?php echo esc_url( ew_theme_asset_uri( 'assets/brand/eurowet-logo-white-360.png' ) ); ?> 360w" sizes="180px" width="180" height="37" alt="" aria-hidden="true">
 		</a>
 		<nav class="ew-nav" aria-label="<?php esc_attr_e( 'Menu główne', 'eurowet-2026' ); ?>" id="ew-nav" data-ew-nav>

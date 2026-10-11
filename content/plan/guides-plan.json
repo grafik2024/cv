@@ -1,0 +1,955 @@
+{
+ "guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "uszy"
+   ],
+   "stage": "practical",
+   "decision": "C",
+   "legacy_path": "/pielegnacja-2/jak-czyscic-ucho/",
+   "merged_from": [
+    "/jak-czyscic-uszy/"
+   ],
+   "needs": [
+    "higiena-uszu-i-woskowina",
+    "podraznione-uszy-i-zapach-z-uszu"
+   ],
+   "extra_families": [],
+   "brief": "Merge both legacy ear-cleaning pages (signs list + step-by-step). Keep the client's steps; fix typos; warn: never cotton buds deep in the canal; signs that need a vet (no diagnoses)."
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "oczy"
+   ],
+   "stage": "practical",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/jak-czyscic-oczy/",
+   "merged_from": [],
+   "needs": [
+    "przemywanie-oczu-i-wydzielina",
+    "suche-oczy-i-nos"
+   ],
+   "extra_families": [],
+   "brief": "Keep the steps and 'prawidłowe gesty'. The legacy list of eye symptoms (zmętnienie rogówki, zmiana koloru tęczówki, ślepota) belongs to 'when to see a vet' — urgent signals."
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "jama-ustna-i-zeby"
+   ],
+   "stage": "practical",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/jak-czyscic-zeby/",
+   "merged_from": [],
+   "needs": [
+    "kamien-i-plytka-nazebna",
+    "nieswiezy-oddech"
+   ],
+   "extra_families": [],
+   "brief": "Keep healthy vs inflamed gums description as observation help; brushing step-by-step; gradual habituation; vet for tartar removal (do not say products remove existing tartar unless product text says so)."
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc",
+    "skora"
+   ],
+   "stage": "practical",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/kapanie-twojego-kota-lub-psa/",
+   "merged_from": [],
+   "needs": [
+    "delikatna-kapiel-szczeniaka-i-kota",
+    "matowa-i-lamliwa-siersc"
+   ],
+   "extra_families": [],
+   "brief": "Keep legacy advice (bathing from young age, human shampoos unsuitable) but verify claims; frequency only as 'w zależności od potrzeb' or per product text."
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "stage": "practical",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/suchy-szampon/",
+   "merged_from": [],
+   "needs": [
+    "mycie-bez-wody"
+   ],
+   "extra_families": [],
+   "brief": "Keep when dry shampoo helps (seniors, convalescence, no time) and how to use; link the dry shampoo products by their verbatim use."
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/terapia-szamponowa/",
+   "merged_from": [],
+   "needs": [
+    "stany-zapalne-skory",
+    "swiad-i-drapanie"
+   ],
+   "extra_families": [],
+   "brief": "Very long technical legacy text (3674 words, all-caps headings). Preserve the substance (forms: szampony, emulsje, spraye…; contact time; rinsing; frequency set by the vet) in a readable structure ~1200–1500 words; remove anything that reads as therapy instructions without a vet."
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "stage": "product",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/szampony-excellence/",
+   "merged_from": [],
+   "needs": [
+    "swiad-i-drapanie",
+    "przetluszczajaca-sie-skora-i-lojotok",
+    "skora-wrazliwa-i-alergiczna"
+   ],
+   "extra_families": [
+    "hexoderm-excellence",
+    "alervet-excellence",
+    "sebovet-excellence",
+    "peptoderm-excellence",
+    "triaderm-excellence"
+   ],
+   "brief": "Legacy product guide (Hexoderm, Alervet, Sebovet excellence + ingredients). Update with the current line (also Peptoderm, Triaderm). Every product statement verbatim-supported; a comparison table built only from product texts."
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/rola-fitosfingozyny/",
+   "merged_from": [],
+   "needs": [
+    "skora-wrazliwa-i-alergiczna",
+    "sucha-skora-i-lupiez"
+   ],
+   "extra_families": [],
+   "brief": "Long legacy article on skin barrier. Keep anatomy/barrier explanation if correct (verify numbers like '12% ciężaru ciała'); remove or source percentages; products with fitosfingozyna only by their texts."
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies"
+   ],
+   "areas": [
+    "skora",
+    "lapy-i-pazury"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/hiperkeratoza-u-psow/",
+   "merged_from": [],
+   "needs": [
+    "zrogowacenia-skory-na-lokciach",
+    "opuszki-lap"
+   ],
+   "extra_families": [],
+   "brief": "Disease topic: explain what owners see, care that supports (only general), vet diagnosis; verify causes list; no treatment claims."
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/zakazenia-skory/",
+   "merged_from": [],
+   "needs": [
+    "stany-zapalne-skory",
+    "otarcia-i-drobne-rany"
+   ],
+   "extra_families": [],
+   "brief": "Medical topic: skin flora balance, observable signs, hygiene that supports vet treatment ('wspomagająco'), vet first. No diagnoses or drugs."
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora",
+    "siersc",
+    "stres-i-zachowanie"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/wakacje-wplyw-stresu-na-skore/",
+   "merged_from": [],
+   "needs": [
+    "stres-i-niepokoj",
+    "linienie-i-wypadanie-siersci"
+   ],
+   "extra_families": [],
+   "brief": "Keep the holiday/stress context; general calm-routine advice; no invented physiology numbers."
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc",
+    "oczy"
+   ],
+   "stage": "practical",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/jasne-oczy-i-okazale-ogony/",
+   "merged_from": [],
+   "needs": [
+    "linienie-i-wypadanie-siersci",
+    "matowa-i-lamliwa-siersc"
+   ],
+   "extra_families": [],
+   "brief": "Legacy 'Jasne oczy i okazałe ogony jesienią': seasonal shedding, brushing, eye hygiene in autumn. New clearer title; keep substance."
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "stage": "practical",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/jak-poprawnie-czesac-psa-lub-kota/",
+   "merged_from": [],
+   "needs": [
+    "dluga-siersc-i-koltuny",
+    "linienie-i-wypadanie-siersci"
+   ],
+   "extra_families": [],
+   "brief": "Keep the brushing advice by coat type; tools; habituation."
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "kot"
+   ],
+   "areas": [
+    "lapy-i-pazury"
+   ],
+   "stage": "practical",
+   "decision": "A",
+   "legacy_path": "/pielegnacja-2/przycinanie-pazurow/",
+   "merged_from": [],
+   "needs": [],
+   "extra_families": [],
+   "brief": "Keep; verify anatomy statements (pazur, miazga, liczba palców); safe trimming; when to ask a vet/groomer."
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [],
+   "stage": "practical",
+   "decision": "A",
+   "legacy_path": "/pielegnacja-2/jak-podawac-lek-doustnie-kotu-albo-psu/",
+   "merged_from": [],
+   "needs": [],
+   "extra_families": [],
+   "brief": "Keep the practical tips per form (tabletki, płyn, pasta); never suggest crushing/mixing without vet/pharmacist advice."
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "jama-ustna-i-zeby",
+    "skora"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/korowodki-srodziemnomorskie/",
+   "merged_from": [],
+   "needs": [],
+   "extra_families": [],
+   "brief": "Legacy text is a French adaptation about the pine processionary. Fact-check the Polish context (in Poland mainly korowódka dębówka; pine processionary occurrence?) using authoritative Polish sources (e.g. Lasy Państwowe, GIS); urgent vet; no home remedies."
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "kot"
+   ],
+   "areas": [],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/koty-i-ciaza-jakie-jest-ryzyko/",
+   "merged_from": [],
+   "needs": [
+    "czyszczenie-kuwety-klatki-i-powierzchni",
+    "higiena-rak-po-kontakcie-ze-zwierzetami"
+   ],
+   "extra_families": [],
+   "brief": "Human-health topic: verify with GIS/WHO/CDC; hygiene rules (litter box daily, gloves, hand washing); defer to the physician for testing; no fear-mongering."
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc",
+    "skora"
+   ],
+   "stage": "product",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/olejek-neem-na-pchly-i-kleszcze/",
+   "merged_from": [],
+   "needs": [
+    "pchly-i-kleszcze"
+   ],
+   "extra_families": [
+    "kp-szampon-ochronny-przeciw-pchlom-i-kleszczom"
+   ],
+   "brief": "Keep plant history only if verifiable; repellent = additional protection, not a biocide/treatment; products only by their texts; vet antiparasitic prevention is primary (no drug names). Substance from the two Neem news posts may be used (they stay as news)."
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [],
+   "stage": "informational",
+   "decision": "A",
+   "legacy_path": "/pielegnacja-2/opcje-opieki-nad-twoim-psem-lub-kotem/",
+   "merged_from": [],
+   "needs": [
+    "stres-i-niepokoj"
+   ],
+   "extra_families": [],
+   "brief": "Keep the options (rodzina, opiekun, hotel…) with pros/cons; neutral."
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "species": [
+    "male-ssaki"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "stage": "practical",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/pielegnacja-skory-i-siersci-malych-ssakow/",
+   "merged_from": [],
+   "needs": [
+    "male-ssaki-skora-i-siersc"
+   ],
+   "extra_families": [],
+   "brief": "Verify species-specific statements (e.g. bathing rabbits is not routine); keep grease/odour/coat sections; exotic-vet referral."
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "stres-i-zachowanie",
+    "kondycja"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/problemy-behawioralne-starzejacych-sie-zwierzat/",
+   "merged_from": [],
+   "needs": [
+    "oslabienie-rekonwalescencja-i-senior"
+   ],
+   "extra_families": [],
+   "brief": "Verify age thresholds (pies 7+, kot 10+) or phrase generally; signs list; vet first; environment tips."
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "stawy"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/stawy/",
+   "merged_from": [],
+   "needs": [
+    "stawy-i-problemy-z-poruszaniem"
+   ],
+   "extra_families": [],
+   "brief": "Legacy claims about chondroitin ('hamuje enzymy') and devil's claw ('przeciwzapalne, przeciwbólowe') must NOT stay unless a product text says so — use product verbatim only. Signs list, weight control, vet."
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "uklad-pokarmowy"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/zaburzenia-zoladkowe/",
+   "merged_from": [],
+   "needs": [
+    "biegunka",
+    "niestrawnosc-i-zaparcia",
+    "mikroflora-jelit"
+   ],
+   "extra_families": [],
+   "brief": "Symptom lists → red flags (blood, fever, apathy, dehydration = urgent). Supportive products only by their texts; hydration and vet."
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/ile-mialbym-lat/",
+   "merged_from": [],
+   "needs": [
+    "oslabienie-rekonwalescencja-i-senior"
+   ],
+   "extra_families": [],
+   "brief": "Legacy conversion table by size. Verify against a published source (e.g. AVMA / AAHA life-stage guidance) and present as an approximation with source, or simplify."
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "kondycja"
+   ],
+   "stage": "informational",
+   "decision": "B",
+   "legacy_path": "/pielegnacja-2/ile-powinienem-wazyc/",
+   "merged_from": [],
+   "needs": [
+    "pies-aktywny-i-pracujacy",
+    "oslabienie-rekonwalescencja-i-senior"
+   ],
+   "extra_families": [],
+   "brief": "Legacy breed weight table (1261 words). Keep as 'orientacyjne zakresy masy ciała dorosłych psów wg ras' only after spot-checking several values against breed standards; add body-condition assessment (ribs, waist) as the primary method; vet for diet."
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "swiad-i-drapanie",
+    "skora-wrazliwa-i-alergiczna"
+   ],
+   "extra_families": [],
+   "brief": "New. Most-searched problem. Possible general reasons named only as 'np. pasożyty, alergia, sucha skóra — rozpoznaje lekarz'; care routine; red flags; products by text."
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "sucha-skora-i-lupiez"
+   ],
+   "extra_families": [],
+   "brief": "New."
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "przetluszczajaca-sie-skora-i-lojotok",
+    "nieprzyjemny-zapach-skory-i-siersci"
+   ],
+   "extra_families": [],
+   "brief": "New."
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "oczy",
+    "siersc"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "przemywanie-oczu-i-wydzielina"
+   ],
+   "extra_families": [],
+   "brief": "New. Never promise removal of tear stains; daily hygiene; vet when discharge colour changes etc."
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "jama-ustna-i-zeby"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "nieswiezy-oddech",
+    "kamien-i-plytka-nazebna"
+   ],
+   "extra_families": [],
+   "brief": "New."
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc",
+    "skora"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "pchly-i-kleszcze"
+   ],
+   "extra_families": [],
+   "brief": "New. Prevention plan from the vet comes first (no drug names); checking the coat after walks; repellent products as additional protection by their texts; tick removal general advice (verified)."
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "lapy-i-pazury"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "opuszki-lap"
+   ],
+   "extra_families": [],
+   "brief": "New. Salt, snow, hot pavements; rinsing and drying paws; products by text."
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc",
+    "skora"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "delikatna-kapiel-szczeniaka-i-kota"
+   ],
+   "extra_families": [],
+   "brief": "New. Age limits only as stated in product texts (e.g. Amiwet neem 'poniżej 3 miesiąca życia' precaution)."
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "dluga-siersc-i-koltuny"
+   ],
+   "extra_families": [],
+   "brief": "New."
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "siersc"
+   ],
+   "stage": "product",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "biala-siersc",
+    "ciemna-siersc"
+   ],
+   "extra_families": [],
+   "brief": "New. Colour shampoos by their texts."
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "kondycja",
+    "odpornosc"
+   ],
+   "stage": "informational",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "witaminy-i-mineraly-na-co-dzien",
+    "odpornosc",
+    "wsparcie-wzroku"
+   ],
+   "extra_families": [],
+   "brief": "New. Complementary feeds vs complete diet; consult vet before supplementing; no doses except as quoted per product."
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "rozrod"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "mleko-zastepcze-dla-szczeniat-i-kociat"
+   ],
+   "extra_families": [],
+   "brief": "New. Only product-stated preparation/doses; hygiene of bottles; vet for orphaned/weak newborns (urgent)."
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "rozrod"
+   ],
+   "stage": "informational",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "ciaza-karmienie-i-wzrost-mlodych",
+    "ciaza-urojona"
+   ],
+   "extra_families": [],
+   "brief": "New. Vet supervision; products by text; no gestation numbers unless verified."
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "kondycja"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "oslabienie-rekonwalescencja-i-senior",
+    "pies-aktywny-i-pracujacy"
+   ],
+   "extra_families": [],
+   "brief": "New."
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "uklad-pokarmowy"
+   ],
+   "stage": "informational",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "mikroflora-jelit",
+    "biegunka"
+   ],
+   "extra_families": [],
+   "brief": "New."
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "stres-i-zachowanie"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "stres-i-niepokoj"
+   ],
+   "extra_families": [],
+   "brief": "New. Behavioural/environmental advice; products by text; behaviourist/vet."
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "species": [
+    "ptaki-ozdobne"
+   ],
+   "areas": [
+    "kondycja"
+   ],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "ptaki-piora-i-pierzenie",
+    "ptaki-witaminy-i-legi",
+    "ptaki-trawienie",
+    "ptaki-uklad-oddechowy"
+   ],
+   "extra_families": [],
+   "brief": "New. Avian vet for illness; products by text."
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "species": [
+    "pies",
+    "kot",
+    "male-ssaki"
+   ],
+   "areas": [],
+   "stage": "practical",
+   "decision": "new",
+   "legacy_path": "",
+   "merged_from": [],
+   "needs": [
+    "higiena-rak-po-kontakcie-ze-zwierzetami",
+    "czyszczenie-kuwety-klatki-i-powierzchni"
+   ],
+   "extra_families": [],
+   "brief": "New. Products by text (hygiene line)."
+  }
+ ],
+ "redirect_only": [
+  {
+   "old": "/pielegnacja-2/",
+   "new": "/porady/",
+   "reason": "old guides index"
+  },
+  {
+   "old": "/pomoc-znajdz-rozwiazanie-dla-swojego-pupila/",
+   "new": "/potrzeby/",
+   "reason": "old help page → Product Finder"
+  }
+ ]
+}

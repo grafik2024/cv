@@ -1,0 +1,387 @@
+{
+ "guide": {
+  "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+  "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+  "hub": "zywienie-i-suplementacja",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "rozrod"
+  ],
+  "stage": "practical",
+  "decision": "new",
+  "legacy_path": "",
+  "merged_from": [],
+  "needs": [
+   "mleko-zastepcze-dla-szczeniat-i-kociat"
+  ],
+  "extra_families": [],
+  "brief": "New. Only product-stated preparation/doses; hygiene of bottles; vet for orphaned/weak newborns (urgent)."
+ },
+ "source_files": [],
+ "needs": {
+  "mleko-zastepcze-dla-szczeniat-i-kociat": {
+   "slug": "mleko-zastepcze-dla-szczeniat-i-kociat",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "scope": "IN: odchów bez matki, za mało mleka u matki, dokarmianie butelką, odsadzanie. OUT: witaminy dla ciężarnej/karmiącej (ciaza-karmienie-i-wzrost-mlodych). Noworodek, który nie ssie, jest wychłodzony lub słabnie → lekarz.",
+   "red_flag_level": "caution"
+  }
+ },
+ "families": {
+  "milvet": {
+   "family_slug": "milvet",
+   "name": "MILVET",
+   "line": null,
+   "product_type": "inny (pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt)",
+   "species": [
+    "pies",
+    "kot",
+    "szczenię",
+    "kocię"
+   ],
+   "subtitle_verbatim": "Pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt oraz dla psów i kotów dorosłych",
+   "badges_verbatim": [
+    "BUTELKA+SMOCZEK WEWNĄTRZ OPAKOWANIA",
+    "ZASTĘPUJE POKARM MATKI",
+    "MOŻE BYĆ PODAWANY ZARAZ PO URODZENIU",
+    "DOSTARCZA ENERGII, WITAMIN I MINERAŁÓW"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Preparat mlekozastępczy dla szczeniąt i kociąt.",
+   "properties_verbatim": "Pełnoporcjowy preparat mlekozastępczy doskonale zastępuje naturalny pokarm matki. Dostarcza lekkostrawnego białka i łatwo przyswajalnego tłuszczu. Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka. Szczeniętom i kociętom dostarcza niezbędnej energii, witamin i budulca do rozwoju. Preparat zaspokaja potrzeby mineralne i witaminowe rosnących szczeniąt i kociąt. Jest bardzo dobrze przyswajany przez zwierzęta i może być podawany zaraz po urodzeniu.",
+   "usage_verbatim": "Podawać przy:\n- niedostatecznej ilości wydzielanego przez matkę mleka\n- odchowie szczeniąt i kociąt bez udziału matki\n- jako dodatek do karmy w trakcie odsadzania\n- dla psów i kotów dorosłych w okresie rekonwalescencji i wzmożonego wysiłku\nUstalić porcję preparatu zgodnie z tabelą na opakowaniu. Do butelki wsypać jedną porcję preparatu, a następnie dodać dwie porcje przegotowanej wody o temperaturze ok. 60°C – proporcja 1:2. Energicznie wymieszać. Wystudzić do temperatury 37°C. Przygotowane mleko przechowywać pomiędzy posiłkami w temp.+2°C- +8°C. Po przygotowaniu przechowywać nie dłużej niż 24 godziny. Przez pierwsze 15 dni życia karmić przez smoczek, a następnie próbować podawać do picia z miseczki. Po 4 tygodniu życia, w trakcie stopniowego przechodzenia zwierząt na karmę stałą, dodawać proszek do karmy.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/milvet-10-x-100g/"
+  },
+  "butelka-do-karmienia-zwierzat": {
+   "family_slug": "butelka-do-karmienia-zwierzat",
+   "name": "Butelka do karmienia zwierząt",
+   "line": null,
+   "product_type": "akcesorium",
+   "species": [
+    "pies",
+    "kot",
+    "szczenię",
+    "kocię"
+   ],
+   "subtitle_verbatim": "Do karmienia zwierząt. Dwa smoczki.",
+   "badges_verbatim": [
+    "BEZPIECZNA Z ŻYWNOŚCIĄ - BEZ BISFENOLU A (BPA).",
+    "BUTELKA ODPORNA NA USZKODZENIA.",
+    "2 SMOCZKI DLA KOCIĄT I SZCZENIĄT. WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE."
+   ],
+   "intended_for_verbatim": "Dla psów, kotów.",
+   "indications_verbatim": "Butelka do karmienia zwierząt.",
+   "properties_verbatim": "Butelka do karmienia zwierząt. Dwa smoczki. Butelka odporna na uszkodzenia. Bez szkodliwego Bisfenolu A (BPA), bezpieczna w kontakcie z żywnością. Smoczek silikonowy dla kociąt. Przezroczysty bez smaku i zapachu. Zachowuje swój kształt nawet po dłuższym czasie użytkowania. Smoczek kauczukowy dla szczeniąt. Elastyczny o brązowym zabarwieniu, odporny na gryzienie.",
+   "usage_verbatim": null,
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/butelka-do-karmienia-zwierzat/"
+  },
+  "smoczki-do-karmienia-psow": {
+   "family_slug": "smoczki-do-karmienia-psow",
+   "name": "Smoczki do karmienia psów",
+   "line": null,
+   "product_type": "akcesorium",
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Smoczki do butelki do karmienia zwierząt.",
+   "properties_verbatim": "Smoczek kauczukowy dla szczeniąt\nElastyczny o brązowym zabarwieniu, odporny na gryzienie.",
+   "usage_verbatim": null,
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/2-x-smoczki-do-karmienia-psow/"
+  },
+  "smoczki-do-karmienia-kotow": {
+   "family_slug": "smoczki-do-karmienia-kotow",
+   "name": "Smoczki do karmienia kotów",
+   "line": null,
+   "product_type": "akcesorium",
+   "species": [
+    "kot",
+    "kocię"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "Smoczki do butelki do karmienia zwierząt.",
+   "properties_verbatim": "Smoczek silikonowy dla kociąt.\nPrzezroczysty bez smaku i zapachu. Zachowuje swój kształt nawet po dłuższym czasie użytkowania.\npasuje do butelki",
+   "usage_verbatim": null,
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/2-x-smoczki-do-karmienia-kotow/"
+  }
+ },
+ "all_guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "stage": "informational"
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "stage": "product"
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "product"
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "stage": "product"
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  }
+ ]
+}

@@ -21,6 +21,14 @@ defined( 'ABSPATH' ) || exit;
 			<button type="button" data-ew-a11y-set="text" data-value="3" aria-pressed="false">A+++</button>
 		</div>
 	</fieldset>
+	<fieldset class="ew-a11y__group">
+		<legend><?php esc_html_e( 'Motyw kolorystyczny', 'eurowet-2026' ); ?></legend>
+		<div class="ew-a11y__seg ew-a11y__seg--3" role="group">
+			<button type="button" data-ew-theme-set="system" aria-pressed="true"><?php esc_html_e( 'Systemowy', 'eurowet-2026' ); ?></button>
+			<button type="button" data-ew-theme-set="light" aria-pressed="false"><?php esc_html_e( 'Jasny', 'eurowet-2026' ); ?></button>
+			<button type="button" data-ew-theme-set="dark" aria-pressed="false"><?php esc_html_e( 'Ciemny', 'eurowet-2026' ); ?></button>
+		</div>
+	</fieldset>
 	<ul class="ew-a11y__toggles ew-list-reset">
 		<li><label><input type="checkbox" data-ew-a11y-toggle="contrast" value="high"> <?php esc_html_e( 'Wysoki kontrast', 'eurowet-2026' ); ?></label></li>
 		<li><label><input type="checkbox" data-ew-a11y-toggle="links" value="underline"> <?php esc_html_e( 'Podkreślaj linki', 'eurowet-2026' ); ?></label></li>

@@ -1,0 +1,483 @@
+{
+ "guide": {
+  "slug": "jesienne-linienie-psa-i-kota",
+  "title": "Jesienne linienie i pielęgnacja psa i kota",
+  "hub": "skora-i-siersc",
+  "species": [
+   "pies",
+   "kot"
+  ],
+  "areas": [
+   "siersc",
+   "oczy"
+  ],
+  "stage": "practical",
+  "decision": "B",
+  "legacy_path": "/pielegnacja-2/jasne-oczy-i-okazale-ogony/",
+  "merged_from": [],
+  "needs": [
+   "linienie-i-wypadanie-siersci",
+   "matowa-i-lamliwa-siersc"
+  ],
+  "extra_families": [],
+  "brief": "Legacy 'Jasne oczy i okazałe ogony jesienią': seasonal shedding, brushing, eye hygiene in autumn. New clearer title; keep substance."
+ },
+ "source_files": [
+  "audit/extracted/pages/pielegnacja-2__jasne-oczy-i-okazale-ogony.md"
+ ],
+ "needs": {
+  "linienie-i-wypadanie-siersci": {
+   "slug": "linienie-i-wypadanie-siersci",
+   "title": "Linienie i nadmierne wypadanie sierści",
+   "scope": "IN: sezonowe linienie, „sierść wszędzie”, nadmierne wypadanie sierści. OUT: łyse placki/ogniska bez sierści (red flag → lekarz), matowość bez wypadania (matowa-i-lamliwa-siersc).",
+   "red_flag_level": "caution"
+  },
+  "matowa-i-lamliwa-siersc": {
+   "slug": "matowa-i-lamliwa-siersc",
+   "title": "Matowa, sucha i łamliwa sierść",
+   "scope": "IN: brak połysku, sucha, łamliwa, uszkodzona sierść; przygotowanie sierści do wystawy. OUT: linienie i wypadanie (linienie-i-wypadanie-siersci), kołtuny (dluga-siersc-i-koltuny), kolor (biala-siersc, ciemna-siersc).",
+   "red_flag_level": "none"
+  }
+ },
+ "families": {
+  "kp-gold-regenerator-siersci-i-skory": {
+   "family_slug": "kp-gold-regenerator-siersci-i-skory",
+   "name": "Gold Regenerator sierści i skóry",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Mieszanka paszowa uzupełniająca. Kompleks witamin dla psów i kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "+ BIOTYNA, WIT. A, B6, KWAS NIKOTYNOWY"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Lśniąca sierść. Zdrowa skóra.",
+   "properties_verbatim": "Karma uzupełniająca dla psów i kotów do stosowania w celu poprawy jakości sierści. Szczególnie zaleca się ją podawać w okresie linienia. Pomaga także uzupełnić niedobory żywieniowe oraz zaspokoić potrzeby zwierząt w okresie rekonwalescencji. Dodatek hydrolizatu miazgi wątrobowej dostarcza szereg witamin z grupy B, w szczególności biorących udział w procesie tworzenia czerwonych ciałek. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina. Wpływa korzystnie na prawidłowe funkcjonowanie organizmu Hydrolizat wspomaga pracę wątroby. Witaminy wpływają wspomagająco na procesy odpornościowe oraz przemiany metaboliczne organizmu.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą: - psy i koty do 5 kg m.c 5 kropli / dzień - psy 5 – 15 kg m.c. 10 kropli / dzień - psy 15 – 30 kg m.c. 15 kropli / dzień - psy 30 – 45 kg m.c. 20 kropli / dzień - psy powyżej 45 kg m.c. 25 kropli / dzień 1 ml zawiera 20 kropli. Po otwarciu przechowywać w miejscu chłodnym i suchym",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-gold-regenerator-siersci-i-skory-25ml/"
+  },
+  "wita-vet-siersc-pies": {
+   "family_slug": "wita-vet-siersc-pies",
+   "name": "WITA-VET sierść 2g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "OGRANICZA LINIENIE",
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "OGRANICZA LINIENIE | LŚNIĄCA SIERŚĆ | ZDROWA SKÓRA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna polecana do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Ogranicza linienie. Zalecana w przypadku sierści suchej, matowej i uszkodzonej. Składniki karmy ułatwiają przywrócenie jędrności skóry, połysku, barwy i sprężystości sierści. Regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. Podczas przygotowywania psów do wystaw należy rozpocząć stosowanie preparatu na 3 tygodnie przed pokazem.",
+   "usage_verbatim": "1 tab./ do 10kg m.c. / 1 raz dziennie",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-2g-30szt/"
+  },
+  "wita-vet-siersc-kot": {
+   "family_slug": "wita-vet-siersc-kot",
+   "name": "WITA-VET SIERŚĆ",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "kot"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "OGRANICZA LINIENIE",
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "OGRANICZA LINIENIE | LŚNIĄCA SIERŚĆ | ZDROWA SKÓRA",
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla kotów do stosowania w okresie linienia, przy sierści suchej i uszkodzonej oraz podczas przygotowywania zwierząt do wystaw. Składniki karmy przywracają elastyczność skóry, połysk, barwę i sprężystość sierści. Regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. Produkt wyjątkowo smaczny, chętnie przyjmowany przez zwierzęta",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą.\nKoty o m.c. do 4kg – 1 tabl. / 1 raz dziennie.\nKoty o m.c. powyżej 4kg – 2 tab. / 1 raz dziennie.\nPodczas przygotowywania kotów do wystaw rozpocząć stosowanie na 3 tyg. przed planowanym pokazem. Stosować aż do uzyskania prawidłowego stanu sierści i skóry. Podawać bezpośrednio lub wymieszać z karmą.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-kot-siersc-30szt/"
+  },
+  "olej-z-lososia": {
+   "family_slug": "olej-z-lososia",
+   "name": "Olej z łososia",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WYSOKA ZAWARTOŚĆ KWASÓW OMEGA 3 I 6",
+    "ŹRÓDŁO EPA I DHA",
+    "WSPIERA SKÓRĘ, SIERŚĆ I ODPORNOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Łamliwość, matowienie sierści, utrata włosa, łupież, suchość skóry. Podrażnienia skóry, uczulenia, egzemy. Zaburzenia systemu odpornościowego, reprodukcja.",
+   "properties_verbatim": "Olej z łososia stanowi źródło kwasów tłuszczowych omega-3 (EPA i DHA), korzystnie wpływających na wiele procesów metabolicznych w organizmie psa i kota. Kwas EPA wspiera naturalne procesy zachodzące w organizmie psów i kotów, natomiast kwas DHA jest ważnym składnikiem błon komórkowych mózgu i siatkówki oka. Olej z łososia wpływa na równowagę między kwasami tłuszczowymi omega-3 i omega-6 oraz znacząco obniża poziom cholesterolu we krwi. Regularne stosowanie preparatu powoduje, że sierść Twojego psa lub kota staje się gęsta, sprężysta i lśniąca. Olej z łososia jest polecany przy łamliwości i matowieniu sierści, nadmiernej utracie włosa, łupieżu, suchości skóry. Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "usage_verbatim": "Psy i koty: poniżej 5 kg: 2,5 ml / dziennie od 5 do 15kg: 5 ml / dziennie od 15 do 30 kg: 10 ml / dziennie powyżej 30 kg: 15 ml / dziennie. Jedno pełne naciśnięcie pompki dozuje 1,25 ml preparatu.\nPo otwarciu przechowywać w lodówce, w oryginalnym opakowaniu.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Wpływa łagodząco na podrażnienia skóry, uczulenia, egzemy. Wspomaga organizm przy zaburzeniach systemu odpornościowego oraz usprawnia zdolność reprodukcyjną.",
+   "page_path": "/produkty/karmy-uzupelniajace/olej-z-lososia/"
+  },
+  "zn-cynk": {
+   "family_slug": "zn-cynk",
+   "name": "Zn-Cynk",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "DOSTARCZA CYNK DLA SKÓRY I SIERŚCI"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja sierści.",
+   "properties_verbatim": "Składniki karmy wpływają korzystnie na funkcjonowanie skóry, na proces keratynizacji, na rozwój i czynność gruczołów łojowych skóry oraz poprawiają jakość sierści. Podawać karmę przy nadmiernym wypadaniu włosów, łamliwej, matowej i suchej sierści. Tabletki są wyjątkowo smaczne, dzięki czemu zwierzęta chętnie je przyjmują.",
+   "usage_verbatim": "Podawać co najmniej 1 godzinę przed podaniem karmy. - Problemy ze skórą i sierścią : psy i koty - 1/2 tab. / 10 kg m.c.- 2 razy dziennie przez 4 tygodnie - Ochrona wątroby : psy i koty - 1 tab. / 10 kg m.c.- 2 razy dziennie przez 4 tygodnie. Uwaga: - przy przedłużonym stosowaniu preparatu należy skorzystać z porady lekarza weterynarii - preparat może być stosowany u psów i kotów z niewydolnością serca i nerek",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/preparaty-wspomagajace-zdrowie/zn-cynk-60szt/"
+  },
+  "efaderm-e-kapsulki-pies": {
+   "family_slug": "efaderm-e-kapsulki-pies",
+   "name": "EFADERM-E",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "SIERŚĆ",
+    "SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Wspomaganie regeneracyjnej funkcji skóry w przypadku jej nadwrażliwości i nadmiernego wypadania sierści.",
+   "properties_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "usage_verbatim": "Podawać bezpośrednio lub po wymieszaniu z karmą: 1 szt. / 10 kg m.c. / dzień. Podawać przez okres do 2 miesięcy.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Wspomaganie funkcji skóry w przypadku jej stanów zapalnych i nadmiernego wypadania sierści.",
+   "page_path": "/produkty/karmy-uzupelniajace/efaderm-e-60szt-psy/"
+  },
+  "wita-vet-siersc-krople": {
+   "family_slug": "wita-vet-siersc-krople",
+   "name": "WITA-VET sierść",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "LŚNIĄCA SIERŚĆ",
+    "ZDROWA SKÓRA"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Lśniąca sierść. Zdrowa skóra.",
+   "properties_verbatim": "WITA-VET sierść polecana jest w przypadku sierści suchej, matowej i uszkodzonej, w czasie linienia oraz przygotowywania zwierząt do wystaw. Składniki karmy ułatwiają przywrócenie sprężystości skóry, połysku i barwy sierści, regulują pracę gruczołów łojowych oraz ułatwiają utrzymanie nawilżenia skóry. sprawdzony skład wzbogacony teraz w Witaminę E i Miedź. Witamina E posiada właściwości antyoksydacyjne, które chronią sierść przed zniszczeniem i niekorzystnym działaniem czynników zewnętrznych. Główny składnik tej witaminy, tokoferol, wzmacnia również naczynia krwionośne, poprawiając w ten sposób ukrwienie skóry. Przyspiesza to wchłanianie substancji odżywczych do mieszków włosowych, tworząc idealne warunki do szybkiego wzrostu sierści, a także spowalnia jej wypadanie. Miedź bierze udział w produkcji melaniny – pigmentu, który odpowiada za kolor sierści i skóry. Dzięki miedzi nie dochodzi do przedwczesnego siwienia. odpowiedni poziom miedzi w organizmie jest potrzebny do Prawidłowego formowania się łodygi włosa. Dzięki temu sierść jest sprężysta i mocna. Niedobór miedzi prowadzi do osłabienia i rozdwajania się końcówek włosa.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-siersc-krople-25ml/"
+  },
+  "kp-odzywka-bez-splukiwania": {
+   "family_slug": "kp-odzywka-bez-splukiwania",
+   "name": "Odżywka bez spłukiwania",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "odżywka/kosmetyk pielęgnacyjny",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja ODŻYWKA BEZ SPŁUKIWANIA DLA PSÓW I KOTÓW",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "UŁATWIA ROZCZESYWANIE SIERŚCI",
+    "+ Betaina, kompleks nawilżający"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Odżywka do siersci i włosa.",
+   "properties_verbatim": "Profesjonalna odżywka rewitalizująca bez spłukiwania dla psów i kotów. Ułatwia rozczesywanie, dodaje objętości sierści i poprawia strukturę włosa. Powoduje, że sierść lepiej się układa oraz zapobiega powstawaniu filców i kołtunów. Doskonała dla wszystkich rodzajów sierści i włosa. Zalecana do sierści wymagającej wygładzenia, ułożenia, elektryzującej się i puszącej. Zawiera substancje aktywne, które wbudowują się w strukturę włosa, zapewniając jego wygładzenie, nawilżenie i połysk.",
+   "usage_verbatim": "Spryskać sierść odżywką i wyczesać.",
+   "precautions_verbatim": "W przypadku dostania się do oczu, spłukać letnią wodą.",
+   "vet_context_verbatim": null,
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-odzywka-bez-splukiwania-200ml/"
+  }
+ },
+ "all_guides": [
+  {
+   "slug": "jak-czyscic-uszy-psa-i-kota",
+   "title": "Jak czyścić uszy psa i kota",
+   "hub": "uszy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-oczy-psa-i-kota",
+   "title": "Jak przemywać oczy psa i kota",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czyscic-zeby-psa-i-kota",
+   "title": "Jak czyścić zęby psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-psa-i-kota",
+   "title": "Kąpiel psa i kota — jak i jak często",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "suchy-szampon-mycie-bez-wody",
+   "title": "Suchy szampon: mycie psa i kota bez wody",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "terapia-szamponowa",
+   "title": "Terapia szamponowa — jak działają dermokosmetyki weterynaryjne",
+   "hub": "higiena-i-kapiel",
+   "stage": "informational"
+  },
+  {
+   "slug": "szampony-excellence-jak-wybrac",
+   "title": "Szampony Excellence — który wybrać",
+   "hub": "skora-i-siersc",
+   "stage": "product"
+  },
+  {
+   "slug": "fitosfingozyna-bariera-skorna",
+   "title": "Bariera skórna psa i kota i rola fitosfingozyny",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "hiperkeratoza-u-psow",
+   "title": "Hiperkeratoza u psów — zrogowaciała skóra nosa i opuszek",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "zakazenia-skory-u-psa-i-kota",
+   "title": "Zakażenia skóry u psa i kota — jak rozpoznać sygnały i dbać o skórę",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-a-skora-i-siersc",
+   "title": "Stres a skóra i sierść psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "informational"
+  },
+  {
+   "slug": "jesienne-linienie-psa-i-kota",
+   "title": "Jesienne linienie i pielęgnacja psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-czesac-psa-i-kota",
+   "title": "Jak poprawnie czesać psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "przycinanie-pazurow-kota",
+   "title": "Przycinanie pazurów kota — kiedy i jak",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "jak-podawac-leki-psu-i-kotu",
+   "title": "Jak podać lek doustnie psu lub kotu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "korowodki-zagrozenie-dla-psa-i-kota",
+   "title": "Gąsienice korowódek — zagrożenie dla psa i kota",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "toksoplazmoza-kot-a-ciaza",
+   "title": "Kot w domu a ciąża — toksoplazmoza bez paniki",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "olejek-neem-ochrona-przed-pchlami-i-kleszczami",
+   "title": "Olejek Neem — naturalne wsparcie ochrony przed pchłami i kleszczami",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "product"
+  },
+  {
+   "slug": "opieka-nad-psem-i-kotem-podczas-wyjazdu",
+   "title": "Opieka nad psem i kotem podczas wyjazdu — możliwe rozwiązania",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "pielegnacja-skory-i-siersci-malych-ssakow",
+   "title": "Pielęgnacja skóry i sierści małych ssaków",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "starszy-pies-i-kot-zmiany-zachowania",
+   "title": "Starszy pies i kot — zmiany w zachowaniu",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "stawy-psa-i-kota",
+   "title": "Stawy psa i kota — jak rozpoznać problem i wspierać ruch",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "zaburzenia-zoladkowo-jelitowe-psa-i-kota",
+   "title": "Zaburzenia żołądkowo-jelitowe u psa i kota — kiedy do weterynarza",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "wiek-psa-i-kota-w-ludzkich-latach",
+   "title": "Wiek psa i kota w ludzkich latach",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "informational"
+  },
+  {
+   "slug": "prawidlowa-waga-psa-i-kota",
+   "title": "Prawidłowa waga psa i kota — jak ocenić kondycję",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "swiad-u-psa-i-kota",
+   "title": "Świąd u psa i kota — dlaczego zwierzę się drapie i jak mu pomóc",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "sucha-skora-i-lupiez-u-psa-i-kota",
+   "title": "Sucha skóra i łupież u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "przetluszczajaca-sie-siersc-i-lojotok",
+   "title": "Przetłuszczająca się sierść i łojotok u psa i kota",
+   "hub": "skora-i-siersc",
+   "stage": "practical"
+  },
+  {
+   "slug": "zacieki-pod-oczami-psa-i-kota",
+   "title": "Zacieki pod oczami u psa i kota — codzienna higiena",
+   "hub": "oczy",
+   "stage": "practical"
+  },
+  {
+   "slug": "nieswiezy-oddech-u-psa-i-kota",
+   "title": "Nieświeży oddech u psa i kota",
+   "hub": "jama-ustna-i-zeby",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-przed-pchlami-i-kleszczami",
+   "title": "Ochrona psa i kota przed pchłami i kleszczami — co możesz zrobić",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "ochrona-lap-psa-zima-i-latem",
+   "title": "Ochrona łap psa zimą i latem",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "kapiel-szczeniaka-i-kociecia",
+   "title": "Pierwsza kąpiel szczeniaka i kocięcia",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-dlugiej-siersci-i-koltuny",
+   "title": "Długa sierść i kołtuny — pielęgnacja krok po kroku",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-bialej-i-ciemnej-siersci",
+   "title": "Pielęgnacja białej i ciemnej sierści",
+   "hub": "higiena-i-kapiel",
+   "stage": "product"
+  },
+  {
+   "slug": "witaminy-i-mineraly-dla-psa-i-kota",
+   "title": "Witaminy i minerały dla psa i kota — kiedy warto po nie sięgnąć",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "karmienie-szczeniat-i-kociat-mlekiem-zastepczym",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "ciaza-i-karmienie-suki-i-kotki",
+   "title": "Ciąża i karmienie u suki i kotki — żywienie i opieka",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "rekonwalescencja-psa-i-kota",
+   "title": "Rekonwalescencja psa i kota — jak wspierać powrót do formy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "mikroflora-jelit-probiotyki-psa-i-kota",
+   "title": "Mikroflora jelit psa i kota — rola probiotyków",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "informational"
+  },
+  {
+   "slug": "stres-u-psa-i-kota",
+   "title": "Stres u psa i kota — jak rozpoznać i jak pomóc",
+   "hub": "pielegnacja-i-opieka",
+   "stage": "practical"
+  },
+  {
+   "slug": "pielegnacja-ptakow-ozdobnych",
+   "title": "Pielęgnacja ptaków ozdobnych — pióra, pierzenie, witaminy",
+   "hub": "zywienie-i-suplementacja",
+   "stage": "practical"
+  },
+  {
+   "slug": "higiena-w-domu-ze-zwierzetami",
+   "title": "Higiena w domu ze zwierzętami — ręce, kuweta, klatka",
+   "hub": "higiena-i-kapiel",
+   "stage": "practical"
+  }
+ ]
+}

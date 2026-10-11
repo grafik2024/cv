@@ -1,0 +1,519 @@
+{
+ "batch": "ptaki-male-ssaki",
+ "needs": [
+  {
+   "slug": "ptaki-piora-i-pierzenie",
+   "title": "Pióra i pierzenie ptaków ozdobnych",
+   "batch": "ptaki-male-ssaki",
+   "species": [
+    "ptaki-ozdobne"
+   ],
+   "areas": [
+    "inne"
+   ],
+   "priority": 45,
+   "red_flag_level": "caution",
+   "scope": "IN: pierzenie, kondycja i budowa piór, intensywność czerwonej barwy piór. OUT: wyskubywanie piór, łyse miejsca, nastroszenie i apatia (red flags → lekarz).",
+   "products": [
+    {
+     "family": "floramue",
+     "role": "primary",
+     "evidence": "Mieszanka zawiera metioninę wpływającą na prawidłowy przebieg procesu pierzenia."
+    },
+    {
+     "family": "floratonyl",
+     "role": "similar",
+     "evidence": "Wzrost. Pióra. Odporność."
+    },
+    {
+     "family": "florarutil",
+     "role": "complementary",
+     "evidence": "Wpływa na zwiększenie intensywności czerwonej barwy piór."
+    }
+   ]
+  },
+  {
+   "slug": "ptaki-trawienie",
+   "title": "Trawienie ptaków ozdobnych",
+   "batch": "ptaki-male-ssaki",
+   "species": [
+    "ptaki-ozdobne"
+   ],
+   "areas": [
+    "uklad-pokarmowy"
+   ],
+   "priority": 42,
+   "red_flag_level": "caution",
+   "scope": "IN: osłabione trawienie, konsystencja odchodów, flora jelitowa, wsparcie wątroby u ptaków. OUT: biegunka z apatią, krew w odchodach, chudnięcie (red flags).",
+   "products": [
+    {
+     "family": "floratransit",
+     "role": "primary",
+     "evidence": "Przewód pokarmowy. Flora jelitowa."
+    },
+    {
+     "family": "florabactil",
+     "role": "similar",
+     "evidence": "Wspomaga osłabioną zdolność trawienia."
+    },
+    {
+     "family": "florarome",
+     "role": "similar",
+     "evidence": "Wpływa na poprawę funkcjonowania układu oddechowego i pokarmowego"
+    },
+    {
+     "family": "floracholine",
+     "role": "complementary",
+     "evidence": "Wpływa korzystnie na funkcje układu pokarmowego, ułatwia eliminację tłuszczu z wątroby oraz produkcję żółci."
+    }
+   ]
+  },
+  {
+   "slug": "ptaki-witaminy-i-legi",
+   "title": "Witaminy, minerały i okres lęgowy ptaków",
+   "batch": "ptaki-male-ssaki",
+   "species": [
+    "ptaki-ozdobne"
+   ],
+   "areas": [
+    "kondycja",
+    "rozrod"
+   ],
+   "priority": 44,
+   "red_flag_level": "caution",
+   "scope": "IN: witaminy i minerały dla ptaków ozdobnych, wzrost młodych, okres lęgowy, tworzenie skorupy jaja. OUT: samica nie może znieść jaja, siedzi nastroszona (red flags → pilnie lekarz).",
+   "products": [
+    {
+     "family": "floratonyl",
+     "role": "primary",
+     "evidence": "Dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych ptaków."
+    },
+    {
+     "family": "floraferol",
+     "role": "complementary",
+     "evidence": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy niezbędnym w okresie reprodukcji."
+    },
+    {
+     "family": "floracal",
+     "role": "complementary",
+     "evidence": "stanowi niezbędny dodatek do karmy dla ptaków w okresie reprodukcji"
+    }
+   ]
+  },
+  {
+   "slug": "ptaki-uklad-oddechowy",
+   "title": "Układ oddechowy ptaków ozdobnych",
+   "batch": "ptaki-male-ssaki",
+   "species": [
+    "ptaki-ozdobne"
+   ],
+   "areas": [
+    "inne"
+   ],
+   "priority": 40,
+   "red_flag_level": "caution",
+   "scope": "IN: wsparcie górnych dróg oddechowych karmą uzupełniającą. OUT: duszność, oddychanie z otwartym dziobem, wydzielina z nozdrzy, apatia (red flags → lekarz).",
+   "products": [
+    {
+     "family": "floramucil",
+     "role": "primary",
+     "evidence": "Wpływa na poprawę funkcjonowania układu oddechowego."
+    },
+    {
+     "family": "florarome",
+     "role": "similar",
+     "evidence": "Układ oddechowy i pokarmowy."
+    }
+   ]
+  },
+  {
+   "slug": "male-ssaki-skora-i-siersc",
+   "title": "Skóra i sierść gryzoni i królików",
+   "batch": "ptaki-male-ssaki",
+   "species": [
+    "male-ssaki"
+   ],
+   "areas": [
+    "skora",
+    "siersc"
+   ],
+   "priority": 45,
+   "red_flag_level": "caution",
+   "scope": "IN: pielęgnacja skóry i sierści królików, świnek morskich i innych gryzoni (szampon dermatologiczny, witaminy). OUT: łyse placki, strupy, świąd u gryzoni (red flags → lekarz); rutynowe kąpanie królików (nie zalecać).",
+   "products": [
+    {
+     "family": "hexoderm-gryzonie",
+     "role": "primary",
+     "evidence": "Dermatologiczny szampon dla gryzoni i zwierząt futerkowych"
+    },
+    {
+     "family": "wita-tonyl-gryzonie",
+     "role": "complementary",
+     "evidence": "wpływają na odnowę nabłonków i skóry"
+    }
+   ]
+  }
+ ],
+ "families": {
+  "floramue": {
+   "family_slug": "floramue",
+   "name": "Floramue",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "inne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "PRIÓRA"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Pióra.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy. Uzupełnia dawkę pokarmową w witaminy, aminokwasy i mikroelementy niezbędne do prawidłowej budowy piór oraz funkcjonowania organizmu. Mieszanka zawiera metioninę wpływającą na prawidłowy przebieg procesu pierzenia.",
+   "usage_verbatim": "2 krople mieszanki / 60 ml wody do picia (lub 35 kropli / 1 litr wody) – przez cały okres pierzenia, PAPUGI: – 2 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty ) i nasączyć 30 g ziarna lub 35 kropli / 75 ml wody do picia i nasączyć 500 g ziarna – przez cały okres pierzenia. 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: syrop cukrowy, gliceryna Składniki analityczne: wilgotność 71,6%, białko surowe 1,5%, popiół surowy 0,2%, oleje i tłuszcze surowe 5,4%, włókno surowe 0%, wapń 0%, fosfor 0%, sód 0,05%, lizyna 0,5%, metionina 0,5% Dodatki w 1 L: witaminy i pro-witaminy: E672 witamina A 10 000 000 IU, E671 witamina D3 800 000 IU, 3a700 witamina E 27 000 IU, witamina B1 2000 mg, witamina B2 1800 mg, 3a831 witamina B6 6000 mg, witamina B12 28 mg, kwas nikotynowy 28 000 mg, D-pantotenian wapnia 6000 mg, chlorek choliny 10 000 mg, D-biotyna 200 mg, aminokwasy, ich sole: 3.2.3. L-lizyna HCl 5000 mg, 3.1.1. DL-metionina 5000 mg, mieszanka pierwiastków śladowych: E4 miedź (siarczan miedzi pięciowodny) 120 mg, E1 żelazo (siarczan żelaza siedmiowodny) 110 mg, E5 mangan (siarczan manganu jednowodny) 110 mg, E3 kobalt (siarczan kobaltu siedmiowodny) 115 mg; emulgatory i stabilizatory: E484 rycynolan glicerolopolietylenoglikolu 135 g; konserwanty: E200 kwas sorbowy 1500 mg; substancje aromatyzujące, naturalne lub syntetyczne: glicyna (CAS nr 56-40-6) 5000 mg",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floramue-15ml/",
+   "in_shop": false
+  },
+  "floratonyl": {
+   "family_slug": "floratonyl",
+   "name": "Floratonyl",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "odporność"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "wzrost",
+    "pióra",
+    "odporność"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Wzrost. Pióra. Odporność.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych ptaków. Składniki mieszanki wspomagają wzrost młodych ptaków, wpływają na upierzenie oraz witalność i reprodukcję. Hydrolizat miazgi wątrobowej dostarcza obok żelaza, witaminy A, D, K, witaminy z grupy B oraz witaminę C. Usprawniają metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają korzystnie na procesy odnowy nabłonków. Biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo- fosforowej. Podawanie mieszanki wpływa korzystnie na ptaki w okresie rekonwalescencji i osłabionego apetytu.",
+   "usage_verbatim": "2 krople mieszanki / 60 ml wody do picia (35 kropli / 1 L wody), podawać 1-2 razy w tygodniu, PAPUGI: – 2 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna (35 kropli / 75 ml wody i nasączyć 500 g ziarna), podawać 1 – 2 razy w tygodniu. 1 ml zawiera 20 kropli. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze. W przypadku stresu (transportowy, adaptacyjny, cieplny) lub rekonwalescencji dawkę można podwoić i podawać przez okres 3 dni.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: produkty uboczne pochodzenia zwierzęcego (ze świń), glikol propylenowy Składniki analityczne: białko surowe 20,2%, popiół surowy 0,1%, oleje i tłuszcze surowe 3,1%, włókno surowe 0%, wapń 0,01%, fosfor 0,33%, sód 0,08%, lizyna 0%, metionina 0%, wilgotność 71,6% Dodatki w 1 L: witaminy i pro-witaminy: E672 witamina A 10 000 000 IU, E671 witamina D3 1 000 000 IU, 3a700 witamina E 30 000 IU, witamina B1 1800 mg, witamina B2 2000 mg, 3a831 witamina B6 6000 mg, kwas nikotynowy 30 000 mg, D-pantotenian wapnia 6000 mg, witamina B12 30 mg; emulgatory i stabilizatory: E484 rycynolan glicerolopolietylenoglikolu 135 g; konserwanty: E200 kwas sorbowy 1,5 g, E330 kwas cytrynowy 0,5 g",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floratonyl-15ml/",
+   "in_shop": false
+  },
+  "florarutil": {
+   "family_slug": "florarutil",
+   "name": "Florarutil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "inne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "pióra"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Kolor piór.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na zwiększenie intensywności czerwonej barwy piór. Mieszanka może być podawana w wodzie do picia, w połączeniu z floramue lub podawana w papce albo wymieszana z tartą marchwią.",
+   "usage_verbatim": "1 miarka mieszanki / 60 ml wody do picia lub z karmą / 15 ptaków, podawać na początku pierzenia przez kolejne 20 dni. 1 miarka zawiera ok. 0,12 g mieszanki.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: maltodekstryna, koncentrat białka sojowego, laktoza Składniki analityczne: białko surowe 27,0%, popiół surowy 0,1%, oleje i tłuszcze surowe 0%, włókno surowe 0,1%, lizyna 2,4%, metionina 0,6%, wapń 0,2%, fosfor 0,8%, sód 0,1%, wilgotność 5,3% Dodatki w 1 kg: dodatki sensoryczne: 2 a (iii) karotenoidy i ksantofile: E 161g kantaksantyna 66,7 g",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florarutil-10g/",
+   "in_shop": false
+  },
+  "floratransit": {
+   "family_slug": "floratransit",
+   "name": "Floratransit",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "przewód pokarmowy",
+    "flora jelitowa"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Przewód pokarmowy. Flora jelitowa.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca – mineralna jest dodatkiem do karmy. Wpływa na funkcjonowanie przewodu pokarmowego, na prawidłową konsystencję odchodów, dostarcza organizmowi elektrolitów. Osłania przewód pokarmowy oraz działa korzystnie na rozwój prawidłowej flory jelitowej. Ogranicza utratę wody przez ścianę jelita.",
+   "usage_verbatim": "1 miarka mieszanki / 40 g papki pokarmowej. 1 miarka zawiera ok. 0,12 g mieszanki. Uwaga: mieszankę podawać w postaci papki, ponieważ nie rozpuszcza się w wodzie. Po otwarciu przechowywać w suchym i chłodnym miejscu.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: tlenek magnezu, chlorek sodu Składniki analityczne: magnez 2,1%, sód 1,5%, lizyna 0%, metionina 0%, wapń 0%, fosfor 0% Dodatki w 1 kg: substancje wiążące i przeciwzbrylające: E558 bentonit-montmorylonit 955 g",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floratransit-10g/",
+   "in_shop": false
+  },
+  "florabactil": {
+   "family_slug": "florabactil",
+   "name": "Florabactil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "Wspomaga osłabioną zdolność trawienia"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Wspomaga osłabioną zdolność trawienia.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest przeznaczona dla ptaków ozdobnych. Podstawowym warunkiem wykorzystania substancji odżywczych jest właściwy proces trawienia. Składniki mieszanki wpływają korzystnie na jego przebieg, wspomagają osłabioną zdolność trawienia białek przez ptaki, co pozwala uniknąć utraty masy ciała oraz wychudzenia.",
+   "usage_verbatim": "Podawać bezpośrednio lub z karmą - 2 miarki mieszanki / 30 ml wody do picia (1 łyżeczka do herbaty / 300 ml wody). Podawać przez 3 kolejne dni w tygodniu, przez okres kilku miesięcy. PAPUGI: - 4 miarki mieszanki / 5 ml wody do picia (1 łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki do herbaty / 45 ml wody do picia i nasączyć 300 g ziarna. Podawać przez 3 kolejne dni w tygodniu, przez okres kilku miesięcy. 1 miarka zawiera 0,16 g mieszanki. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: laktoza, siara, ekstrakt z Ananas comosus, sole kwasów tłuszczowych (stearynian magnezu) Składniki analityczne: białko surowe 2,48%, włókno surowe 0,1%, popiół surowy 0,4%, oleje i tłuszcze surowe 0,5%, lizyna 0,18%, metionina 0,03%, wapń 0,01%, fosfor 0%, sód 0%, wilgotność 5%",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florabactil-30g/",
+   "in_shop": false
+  },
+  "florarome": {
+   "family_slug": "florarome",
+   "name": "Florarome",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "układ pokarmowy"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "układ oddechowy i pokarmowy"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Układ oddechowy i pokarmowy.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na poprawę funkcjonowania układu oddechowego i pokarmowego, poprzez wspomaganie pracy układu odpornościowego ptaków.",
+   "usage_verbatim": "3 krople mieszanki / 60 ml wody do picia (2 ml / 1 L wody), podawać 1 raz w miesiącu przez okres 5 – 10 dni, PAPUGI: – 3 krople mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 ml / 75 ml wody do picia i nasączyć 500 g ziarna, podawać 1 raz w miesiącu przez okres 5 – 10 dni. 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: syrop cukrowy, produkty przetwarzania roślin : eukaliptus (Eucalyptus), mięta pieprzowa (Mentha piperita), tymianek (Thymus vulgaris), sosna (Pinus silvestris) Składniki analityczne: białko surowe 1,3%, popiół surowy 0,3%, oleje i tłuszcze surowe 2,3%, włókno surowe 1,3%, lizyna 0%, metionina 0%, wapń 0%, fosfor 0%, sód 0,2%, wilgotność 46% Dodatki w 1 L: emulgatory i stabilizatory: E484 rycynolan glicerolopolietylenoglikolu 38 500 mg",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/florarome-15ml/",
+   "in_shop": false
+  },
+  "floracholine": {
+   "family_slug": "floracholine",
+   "name": "Floracholine",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "wątroba"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "wpływa na przemianę tłuszczową w wątrobie"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Wspomaga wydzielanie kwasów żółciowych oraz dostarcza energii. Wpływa korzystnie na funkcje układu pokarmowego, ułatwia eliminację tłuszczu z wątroby oraz produkcję żółci.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca wpływa na przemianę tłuszczową w wątrobie, wspomaga wydzielanie kwasów żółciowych oraz dostarcza energii. Wpływa korzystnie na funkcje układu pokarmowego, ułatwia eliminację tłuszczu z wątroby oraz produkcję żółci.",
+   "usage_verbatim": "- 10 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 500 ml wody) – 2 razy w tygodniu, PAPUGI: – 10 kropli mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki mieszanki / 75 ml wody do picia i nasączyć 500 g ziarna – 2 razy w tygodniu. 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: sorbitol, gliceryna Składniki analityczne: wilgotność 56,6%, białko surowe 31,2%, popiół surowy 0,1%, oleje i tłuszcze surowe 0%, włókno surowe 0%, wapń 0%, fosfor 0%, sód 0%, lizyna 2%, metionina 0% Dodatki w 1 L: witaminy i pro-witaminy: chlorek choliny) 500 g, aminokwasy i ich sole: 3.2.3. L-lizyna HCl 20 g",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floracholine-60ml/",
+   "in_shop": false
+  },
+  "floraferol": {
+   "family_slug": "floraferol",
+   "name": "Floraferol",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "reprodukcja"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Reprodukcja.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy niezbędnym w okresie reprodukcji. Wpływa korzystnie na poprawę zdolności reprodukcyjnych samców i samic oraz na wskaźniki wylęgu.",
+   "usage_verbatim": "- 8 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 1 L wody), podawać 2 razy w tygodniu przez 3 tygodnie oraz przez cały okresie rozrodu, PAPUGI: – 8 kropli mieszanki / 5 ml wody do picia (1 łyżeczka do herbaty) i nasączyć 30 g ziarna lub 1 łyżeczka / 75 ml wody do picia i nasączyć 500 g ziarna, podawać 2 razy w tygodniu przez 3 tygodnie oraz przez cały okres rozrodu. 1 ml zawiera 20 kropli",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: sorbitol, gliceryna Składniki analityczne: wilgotność 56,6%, białko surowe 31,2%, popiół surowy 0,1%, oleje i tłuszcze surowe 0%, włókno surowe 0%, wapń 0%, fosfor 0%, sód 0%, lizyna 2%, metionina 0% Dodatki w 1 L: witaminy i pro-witaminy: chlorek choliny) 500 g, aminokwasy i ich sole: 3.2.3. L-lizyna HCl 20 g",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floraferol-15ml/",
+   "in_shop": false
+  },
+  "floracal": {
+   "family_slug": "floracal",
+   "name": "Floracal",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "uzupełnia składniki mineralne i aminokwasy"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Mieszanka zawiera składniki wpływające na prawidłowy przebieg procesu tworzenia skorupy jaja, stanowi niezbędny dodatek do karmy dla ptaków w okresie reprodukcji.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest przeznaczona dla ptaków ozdobnych jako dodatek do karmy. Uzupełnia dawkę pokarmową w podstawowe składniki mineralne oraz aminokwasy. Zawiera łatwo przyswajalne makro i mikroelementy konieczne do prawidłowego wzrostu, rozwoju oraz funkcjonowania organizmu. Mieszanka zawiera składniki wpływające na prawidłowy przebieg procesu tworzenia skorupy jaja, stanowi niezbędny dodatek do karmy dla ptaków w okresie reprodukcji.",
+   "usage_verbatim": "- 5 kropli mieszanki / 60 ml wody do picia (1 łyżeczka do herbaty / 1 L wody) – 1 raz w tygodniu, - okres wzrostu młodych, przygotowanie do rozrodu oraz po 15 dniach od zakończenia pierzenia – 1 raz dziennie, PAPUGI: - 5 kropli mieszanki / 5 ml wody do picia (łyżeczka do herbaty) i nasączyć 30 g ziarna lub 2 łyżeczki mieszanki / 150 ml wody do picia i nasączyć 1kg ziarna – 1 raz w tygodniu, - okres wzrostu młodych, przygotowanie do rozrodu oraz po 15 dniach od zakończenia pierzenia – 1 raz dziennie. 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: chlorek wapnia, maltodekstryna Składniki analityczne: białko surowe 0%, popiół surowy 1,4%, oleje i tłuszcze surowe 0,1%, włókno surowe 0%, wapń 0,35%, fosfor 0,4%, sód 0%, lizyna 0,002%, metionina 0%, wilgotność 86,5% Dodatki w 1 L: witaminy i pro-witaminy: cholina (chlorek choliny) 140 mg, aminokwasy i ich sole: 3.2.3. L-lizyna HCl 20 mg, mieszanka pierwiastków śladowych: E1 żelazo (chlorek żelaza sześciowodny) 140 mg, E5 mangan (chlorek manganu czterowodny) 127 mg, E6 cynk (siarczan cynku siedmiowodny) 10 mg, E4 miedź (chlorek miedzi dwuwodny) 7 mg, E3 kobalt (chlorek kobaltu sześciowodny) 1,4 mg, konserwanty: E338 kwas ortofosforowy 17,2 g",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floracal-15ml/",
+   "in_shop": false
+  },
+  "floramucil": {
+   "family_slug": "floramucil",
+   "name": "Floramucil",
+   "line": null,
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "preparaty-dla-ptakow-ozdobnych"
+   ],
+   "species": [
+    "ptaki ozdobne"
+   ],
+   "body_areas": [
+    "inne"
+   ],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "układ oddechowy"
+   ],
+   "intended_for_verbatim": "Dla ptaków ozdobnych.",
+   "indications_verbatim": "Układ oddechowy.",
+   "properties_verbatim": "Mieszanka paszowa uzupełniająca jest dodatkiem do karmy lub wody do picia. Wpływa na poprawę funkcjonowania układu oddechowego. Rośliny aromatyczne wywierają korzystne działanie na śluzówkę górnych dróg oddechowych.",
+   "usage_verbatim": "Podawać okresowo celem wspomagania pracy układu oddechowego: - 4 krople mieszanki / 60 ml wody do picia (2 ml / 1L wody), PAPUGI: – 4 krople mieszanki / 5 ml wody (1 łyżeczka do herbaty i nasączyć 30 g ziarna). 1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: syrop cukrowy, produkty przetwarzania roślin: eukaliptus (Eucalyptus), rozmaryn (Rosmarinus officinalis), tymianek (Thymus vulgaris), sosna (Pinus silvestris) Składniki analityczne: białko surowe 1,3%, popiół surowy 0,3%, oleje i tłuszcze surowe 2,3%, włókno surowe 1,3%, lizyna 0%, metionina 0%, wapń 0%, fosfor 0%, sód 0,2%, wilgotność 46% Dodatki w 1 kg: emulgatory i stabilizatory: E484 rycynolan glicerolopolietylenoglikolu 38 500 mg",
+   "page_path": "/produkty/preparaty-dla-ptakow-ozdobnych/floramucil-15ml/",
+   "in_shop": false
+  },
+  "hexoderm-gryzonie": {
+   "family_slug": "hexoderm-gryzonie",
+   "name": "Hexoderm gryzonie",
+   "line": null,
+   "product_type": "dermokosmetyk weterynaryjny",
+   "category_slugs": [
+    "dermokosmetyki-weterynaryjne"
+   ],
+   "species": [
+    "gryzonie/małe ssaki"
+   ],
+   "body_areas": [
+    "skóra",
+    "sierść"
+   ],
+   "subtitle_verbatim": "Dermatologiczny szampon dla gryzoni i zwierząt futerkowych",
+   "badges_verbatim": [
+    "UTRZYMUJE PRAWIDŁOWĄ MIKROFLORĘ SKÓRY",
+    "ŁAGODZI STANY ZAPALNE",
+    "PRZYWRACA SIERŚCI MIĘKKOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Pielęgnacja skóry. Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry.",
+   "properties_verbatim": "Hexoderm jest dermokosmetykiem weterynaryjnym, regulującym mikroflorę skóry, stabilizującym jej pH oraz zapobiegającym wysuszaniu poprzez pozostawienie cienkiej warstwy tłuszczowo-białkowej. Zawarte w płynie łagodne środki myjące pozwalają na jego częste stosowanie.",
+   "usage_verbatim": "Wstrząsnąć przed użyciem. Zmoczoną sierść i skórę polać płynem, rozprowadzając go równomiernie po całym ciele, umyć i spłukać. Czynności powtórzyć, pozostawiając płyn na sierści i skórze przez 5-10 minut. Stosować codziennie lub w zależności od potrzeb. Zaleca się do ostatniego spłukiwania użyć płyn nawilżający Hydra-Derm N.",
+   "precautions_verbatim": "Unikać kontaktu z oczami.",
+   "vet_context_verbatim": "Pielęgnacja skóry. Jako element pielęgnacyjny stosować przez cały okres właściwego leczenia stanów zapalnych skóry.",
+   "notes_verbatim": null,
+   "composition_verbatim": "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Chlorhexidine Digluconate, PEG 4 Rapeseedamide, Glicerin, Cocos Nucifera Oil, Cocos Nucifera Fruit Extract, Glycol Distearate, Cocamide MEA, Laureth-10, Polysorbate 20, Parfum, Citric Acid, DMDM Hydantoin, Methylchloroisothiazolinone, Methylisothiazolinone",
+   "page_path": "/produkty/dermokosmetyki-weterynaryjne/hexoderm-gryzonie-20ml/",
+   "in_shop": true
+  },
+  "wita-tonyl-gryzonie": {
+   "family_slug": "wita-tonyl-gryzonie",
+   "name": "WITA-TONYL",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "gryzonie/małe ssaki",
+    "żółwie"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża",
+    "odporność"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla królików, żółwi, kawii, chomików, myszy",
+   "badges_verbatim": [
+    "WITALNOŚĆ",
+    "WZROST",
+    "CIĄŻA"
+   ],
+   "intended_for_verbatim": "Dla królików, żółwi, kawii, chomików, myszy.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Rekonwalescencja.",
+   "properties_verbatim": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt. Jest przeznaczona do stosowania w okresie wzrostu, ciąży, laktacji. Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu. Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu. Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- króliki 3-5 kropli / dzień\n- kawie i chomiki 2 kropli / dzień\n- żółwie 1 kropla / tydzień / 100 g m.c.\n1 ml zawiera 20 kropli.\nZawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": "Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład (2): glikol propylenowy, przetworzone białko zwierzęce Dodatki w 1 kg (3): Dietetyczne: Witaminy: 3a672a witamina A 10 000 000 IU, 3a670a witamina D3 1 000 000 IU, 3a700 witamina E 30 000 IU, 3a820 witamina B1 1 800 mg, 3a witamina B2 (ryboflawina) 2 000 mg, 3a841 D-pantotenian wapnia 6 000 mg, E3a831 witamina B6 6 000 mg, 3a witamina B12 (cyjanokobalamina) 30 mg, 3a314 niacyna 30 000 mg. Technologiczne: Emulgatory: E484 Gliceryl polietyleno-glikol rycynolanowy 135 g. Konserwanty: E200 kwas sorbowy 1,5 g, E330 kwas cytrynowy 0,5 g. Składniki analityczne (4): białko surowe 5,6%, włókno surowe 0%, tłuszcz surowy 6,2%, popiół surowy 0,3%, wilgotność 71,6%.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-tonyl-gryzonie-30ml/",
+   "in_shop": true
+  }
+ }
+}

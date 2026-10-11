@@ -1,0 +1,253 @@
+{
+ "batch": "jama-ustna",
+ "needs": [
+  {
+   "slug": "nieswiezy-oddech",
+   "title": "Nieświeży oddech",
+   "batch": "jama-ustna",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "jama-ustna-i-zeby"
+   ],
+   "priority": 85,
+   "red_flag_level": "caution",
+   "scope": "IN: brzydki zapach z pyska, świeżość oddechu, higiena jamy ustnej bez szczotkowania. OUT: widoczny kamień i płytka (kamien-i-plytka-nazebna); krwawiące dziąsła, ból, ślinienie (red flags).",
+   "products": [
+    {
+     "family": "plyn-do-higieny-jamy-ustnej",
+     "role": "primary",
+     "evidence": "ZAPEWNIA ŚWIEŻY ODDECH"
+    },
+    {
+     "family": "spray-do-higieny-jamy-ustnej",
+     "role": "similar",
+     "evidence": "ZAPEWNIA ŚWIEŻY ODDECH"
+    },
+    {
+     "family": "stoma-zel",
+     "role": "complementary",
+     "evidence": "usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł"
+    },
+    {
+     "family": "szczoteczki-do-pielegnacji-uzebienia",
+     "role": "complementary",
+     "evidence": "Skuteczne czyszczenie zębów przyczynia się do utrzymania świeżego oddechu."
+    },
+    {
+     "family": "stoma-zel-zapach-wolowiny",
+     "role": "similar",
+     "evidence": "usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł"
+    }
+   ]
+  },
+  {
+   "slug": "kamien-i-plytka-nazebna",
+   "title": "Płytka i kamień nazębny – mycie zębów",
+   "batch": "jama-ustna",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "jama-ustna-i-zeby"
+   ],
+   "priority": 82,
+   "red_flag_level": "caution",
+   "scope": "IN: płytka nazębna, zapobieganie kamieniowi, nauka mycia zębów, pasta i szczoteczka. OUT: usuwanie istniejącego kamienia (zabieg u lekarza weterynarii), zapalenie dziąseł (red flag).",
+   "products": [
+    {
+     "family": "stoma-zel",
+     "role": "primary",
+     "evidence": "Środki czyszczące zapobiegają powstawaniu kamienia nazębnego"
+    },
+    {
+     "family": "stoma-zel-zapach-wolowiny",
+     "role": "similar",
+     "evidence": "Hamuje osadzanie się płytki nazębnej."
+    },
+    {
+     "family": "szczoteczki-do-pielegnacji-uzebienia",
+     "role": "complementary",
+     "evidence": "Elastyczne włosie skutecznie usuwa płytkę nazębną, resztki jedzenia."
+    },
+    {
+     "family": "plyn-do-higieny-jamy-ustnej",
+     "role": "complementary",
+     "evidence": "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ"
+    },
+    {
+     "family": "spray-do-higieny-jamy-ustnej",
+     "role": "complementary",
+     "evidence": "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ"
+    }
+   ]
+  }
+ ],
+ "families": {
+  "plyn-do-higieny-jamy-ustnej": {
+   "family_slug": "plyn-do-higieny-jamy-ustnej",
+   "name": "Płyn do higieny jamy ustnej dla psów i kotów",
+   "line": null,
+   "product_type": "preparat do higieny jamy ustnej",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "subtitle_verbatim": "Czyste zęby. świeży oddech.",
+   "badges_verbatim": [
+    "POMAGA ZACHOWAĆ PRAWIDŁOWĄ MIKROFLORĘ BAKTERYJNĄ W JAMIE USTNEJ",
+    "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ",
+    "ZAPEWNIA ŚWIEŻY ODDECH"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Płyn dla psów i kotów do stosowania w celu utrzymania prawidłowej higieny jamy ustnej i zębów. Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech.",
+   "usage_verbatim": "Wstrząśnij butelką przed użyciem. Codziennie rozpuszczać 5 ml płynu w 250 ml wody do picia zwierzęcia. Codziennie wymieniać wodę w misce.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Woda, sorbitol, glicerol, ekstrakt z mięty pieprzowej, ekstrakt z czystka. Dodatki: Dodatki technologiczne w 1 kg: konserwanty (E211, E202), barwnik (E133). Składniki analityczne w 100 g produktu: Białko surowe 0,1 g, Włókno surowe 0,1 g, Oleje i tłuszcze surowe 0,3 g, Popiół surowy 0,1 g, Wilgotność 99,4 g.",
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/plyn-do-higieny-jamy-ustnej-dla-psow-i-kotow-250ml/",
+   "in_shop": true
+  },
+  "spray-do-higieny-jamy-ustnej": {
+   "family_slug": "spray-do-higieny-jamy-ustnej",
+   "name": "Spray do higieny jamy ustnej dla psów i kotów",
+   "line": null,
+   "product_type": "preparat do higieny jamy ustnej",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "subtitle_verbatim": "Czyste zęby. świeży oddech.",
+   "badges_verbatim": [
+    "POMAGA ZACHOWAĆ PRAWIDŁOWĄ MIKROFLORĘ BAKTERYJNĄ W JAMIE USTNEJ",
+    "UŁATWIA HIGIENĘ ZĘBÓW I DZIĄSEŁ",
+    "ZAPEWNIA ŚWIEŻY ODDECH"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Spray dla psów i kotów do stosowania w celu utrzymania prawidłowej higieny jamy ustnej i zębów. Naturalne ekstrakty z czystka i mięty pieprzowej pomagają zachować prawidłową mikroflorę bakteryjną jamy ustnej, a tym samym zapewniają świeży oddech.",
+   "usage_verbatim": "Wstrząśnij butelką przed użyciem. Spryskaj zęby i dziąsła zwierzęcia. Można również czyścić zęby gazikiem zwilżonym preparatem.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Woda, sorbitol, glicerol, ekstrakt z mięty pieprzowej, ekstrakt z czystka. Dodatki: Dodatki technologiczne w 1 kg: konserwanty (E211, E202), barwnik (E133). Składniki analityczne w 100 g produktu: Białko surowe 0,1 g, Włókno surowe 0,1 g, Oleje i tłuszcze surowe 0,3 g, Popiół surowy 0,1 g, Wilgotność 99,4 g.",
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/spray-do-higieny-jamy-ustnej-dla-psow-i-kotow-100ml/",
+   "in_shop": true
+  },
+  "stoma-zel": {
+   "family_slug": "stoma-zel",
+   "name": "STOMA-ŻEL",
+   "line": "Stoma-żel",
+   "product_type": "preparat do higieny jamy ustnej",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "subtitle_verbatim": "Pasta do pielęgnacji uzębienia dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH",
+    "SZCZOTECZKA DO MYCIA ZĘBÓW WEWNĄTRZ OPAKOWANIA",
+    "aromat miętowy"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Stoma – żel jest kosmetykiem weterynaryjnym przeznaczonym do pielęgnacji jamy ustnej. Dodatek chlorheksydyny do pasty wpływa na ograniczenie rozwoju niepożądanej mikroflory w jamie ustnej, usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł. Dodatek smakowo-zapachowy sprawia, że zwierzęta łatwo akceptują stosowanie pasty. Środki czyszczące zapobiegają powstawaniu kamienia nazębnego oraz wytwarzają emulsję z drobinami pokarmu pozwalającą na jego usuwanie z powierzchni zębów.",
+   "usage_verbatim": "1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia. Pastę nakładać za pomocą szczoteczki do zębów, palca lub kawałka gazy. Łagodnie wcierać. Nie wypłukiwać.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": "Szczoteczka do mycia zębów wewnątrz opakowania.",
+   "composition_verbatim": "AQUA, CALCIUM CARBONATE, CETEARETH-33, ALUMINUM SILICATE, CHLORHEXIDINE DIGLUCONATE, TITANIUM DIOXIDE, PARFUM",
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-w-tubce-50g-szczoteczka-do-zebow/",
+   "in_shop": true
+  },
+  "szczoteczki-do-pielegnacji-uzebienia": {
+   "family_slug": "szczoteczki-do-pielegnacji-uzebienia",
+   "name": "Szczoteczki do pielęgnacji uzębienia",
+   "line": null,
+   "product_type": "akcesorium",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "subtitle_verbatim": "Dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Delikatne i przyjemne: Gumowe szczoteczki na palec są miękkie i delikatne dla dziąseł i zębów psów i kotów.\nMasowanie dziąseł: szczoteczki pomagają w stymulowaniu krążenia krwi i zachowaniu zdrowych dziąseł zwierząt.\nUsuwanie płytki nazębnej: Elastyczne włosie skutecznie usuwa płytkę nazębną, resztki jedzenia.\nZapobieganie chorobom jamy ustnej: zapobiegają chorobom związanym z jamą ustną, takim jak kamień nazębny, zapalenie dziąseł czy infekcje.\nŚwieży oddech: Skuteczne czyszczenie zębów przyczynia się do utrzymania świeżego oddechu.\nErgonomiczny design: Gumowe szczoteczki na palec są łatwe do trzymania, kontrolowania, co ułatwia właścicielowi skupienie się na dokładnym czyszczeniu zębów.\nZintegrowana ochrona zdrowia: Dbając o zdrowie zębów i dziąseł swojego zwierzęcia, możesz wpłynąć na ogólną kondycję zdrowotną, eliminując potencjalne problemy związane z jamą ustną.",
+   "usage_verbatim": "Szczoteczkę nakładamy na palec. Nakładamy pastę. Delikatnie myjemy zęby zwierzęcia 1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "zapobiegają chorobom związanym z jamą ustną, takim jak kamień nazębny, zapalenie dziąseł czy infekcje.",
+   "notes_verbatim": null,
+   "composition_verbatim": null,
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/2-szczoteczki-do-pielegnacji-uzebienia-dla-psow-i-kotow/",
+   "in_shop": true
+  },
+  "stoma-zel-zapach-wolowiny": {
+   "family_slug": "stoma-zel-zapach-wolowiny",
+   "name": "STOMA-ŻEL zapach wołowiny",
+   "line": "Stoma-żel",
+   "product_type": "preparat do higieny jamy ustnej",
+   "category_slugs": [
+    "pielegnacja-jamy-ustnej-i-zebow"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "jama ustna i zęby"
+   ],
+   "subtitle_verbatim": "Pasta do pielęgnacji uzębienia dla psów i kotów",
+   "badges_verbatim": [
+    "ZDROWE ZĘBY",
+    "ŚWIEŻY ODDECH",
+    "SZCZOTECZKA DO MYCIA ZĘBÓW WEWNĄTRZ OPAKOWANIA",
+    "Zapach wołowiny",
+    "aromat wołowiny"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Higiena jamy ustnej i uzębienia",
+   "properties_verbatim": "Stoma-żel pasta do zębów dla psów i kotów z zapachem wołowiny. Dodatek zapachowy sprawia, że zwierzęta chętnie akceptują aplikację pasty. Zawarta w paście chlorheksydyna wpływa hamująco na rozwój niepożądanej mikroflory w jamie ustnej, usuwa nieprzyjemny zapach oraz utrzymuje higienę zębów i dziąseł. Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł. Hamuje osadzanie się płytki nazębnej. chroni przed bakteriami przez 8-12 godzin. Środki czyszczące zapobiegają powstawaniu kamienia nazębnego oraz wytwarzają emulsję, która z drobinami pokarmu pozwala na usuwanie zanieczyszczeń z powierzchni zębów i dziąseł.\nDodatek zbalansowanego aromatu wołowiny sprawia, że aplikacja pasty staje się dla zwierząt pozytywnym doświadczeniem. Zapach nie tylko ułatwia akceptację pasty, ale również tworzy przyjemne doznanie dla zwierzęcia podczas codziennej pielęgnacji. Zwierzęta z chęcią poddają się zabiegowi, co przekłada się na regularność stosowania pasty Stoma-Żel i utrzymanie zdrowej jamy ustnej.",
+   "usage_verbatim": "1-2 razy w tygodniu lub codziennie w zależności od stanu uzębienia. Pastę nakładać za pomocą szczoteczki do zębów, palca lub kawałka gazy. Łagodnie wcierać. Nie wypłukiwać.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Chlorheksydyna wspomaga leczenie stanów zapalnych dziąseł.",
+   "notes_verbatim": "Szczoteczka do pielęgnacji uzębienia dla psów i kotów wewnątrz opakowania.",
+   "composition_verbatim": "AQUA, CALCIUM CARBONATE, CETEARETH-33, ALUMINUM SILICATE, CHLORHEXIDINE DIGLUCONATE, TITANIUM DIOXIDE, PARFUM",
+   "page_path": "/produkty/pielegnacja-jamy-ustnej-i-zebow/stoma-zel-50g-zapach-wolowiny-szczoteczka-do-zebow/",
+   "in_shop": true
+  }
+ }
+}

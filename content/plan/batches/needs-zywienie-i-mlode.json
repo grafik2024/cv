@@ -1,0 +1,791 @@
+{
+ "batch": "zywienie-i-mlode",
+ "needs": [
+  {
+   "slug": "witaminy-i-mineraly-na-co-dzien",
+   "title": "Witaminy i minerały na co dzień",
+   "batch": "zywienie-i-mlode",
+   "species": [
+    "pies",
+    "kot",
+    "male-ssaki",
+    "zolwie"
+   ],
+   "areas": [
+    "kondycja"
+   ],
+   "priority": 70,
+   "red_flag_level": "none",
+   "scope": "IN: codzienna suplementacja witamin i minerałów zdrowego zwierzęcia (w tym królik, kawia, chomik, żółw). OUT: ciąża/wzrost (ciaza-karmienie-i-wzrost-mlodych), osłabienie i senior (oslabienie-rekonwalescencja-i-senior), ptaki (ptaki-witaminy-i-legi).",
+   "products": [
+    {
+     "family": "wita-vet-complex-1g",
+     "role": "primary",
+     "evidence": "Dzienna dawka witamin i minerałów"
+    },
+    {
+     "family": "wita-vet-energia-kot",
+     "role": "similar",
+     "evidence": "DZIENNA DAWKA WITAMIN I MINERAŁÓW"
+    },
+    {
+     "family": "wita-tonyl-gryzonie",
+     "role": "similar",
+     "evidence": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt."
+    },
+    {
+     "family": "wita-vet-complex-3-2g",
+     "role": "similar",
+     "evidence": "DZIENNA DAWKA WITAMIN I MINERAŁÓW"
+    },
+    {
+     "family": "wita-vet-complex-8g",
+     "role": "similar",
+     "evidence": "DZIENNA DAWKA WITAMIN I MINERAŁÓW"
+    }
+   ]
+  },
+  {
+   "slug": "ciaza-karmienie-i-wzrost-mlodych",
+   "title": "Ciąża, karmienie i wzrost młodych",
+   "batch": "zywienie-i-mlode",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "rozrod",
+    "kondycja"
+   ],
+   "priority": 68,
+   "red_flag_level": "caution",
+   "scope": "IN: suka/kotka ciężarna i karmiąca, wzrost szczeniąt i kociąt (karma uzupełniająca). OUT: odchów bez matki/mleko zastępcze (mleko-zastepcze-dla-szczeniat-i-kociat), ciąża urojona (ciaza-urojona).",
+   "products": [
+    {
+     "family": "wita-vet-junior-adult-krople",
+     "role": "primary",
+     "evidence": "Karma uzupełniająca dla szczeniąt, suk i kotek ciężarnych, karmiących"
+    },
+    {
+     "family": "wita-vet-energia-kot",
+     "role": "similar",
+     "evidence": "Karma uzupełniająca przeznaczona dla kociąt, kotek ciężarnych i karmiących"
+    },
+    {
+     "family": "wita-vet-complex-1g",
+     "role": "similar",
+     "evidence": "Zalecana dla suk ciężarnych i karmiących"
+    },
+    {
+     "family": "milvet",
+     "role": "complementary",
+     "evidence": "Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka."
+    },
+    {
+     "family": "wita-vet-stawy-pies",
+     "role": "complementary",
+     "evidence": "Można podawać młodym psom w okresie intensywnego wzrostu."
+    }
+   ]
+  },
+  {
+   "slug": "mleko-zastepcze-dla-szczeniat-i-kociat",
+   "title": "Karmienie szczeniąt i kociąt mlekiem zastępczym",
+   "batch": "zywienie-i-mlode",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "rozrod"
+   ],
+   "priority": 64,
+   "red_flag_level": "caution",
+   "scope": "IN: odchów bez matki, za mało mleka u matki, dokarmianie butelką, odsadzanie. OUT: witaminy dla ciężarnej/karmiącej (ciaza-karmienie-i-wzrost-mlodych). Noworodek, który nie ssie, jest wychłodzony lub słabnie → lekarz.",
+   "products": [
+    {
+     "family": "milvet",
+     "role": "primary",
+     "evidence": "Pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt oraz dla psów i kotów dorosłych"
+    },
+    {
+     "family": "butelka-do-karmienia-zwierzat",
+     "role": "complementary",
+     "evidence": "Butelka do karmienia zwierząt. Dwa smoczki."
+    },
+    {
+     "family": "smoczki-do-karmienia-psow",
+     "role": "complementary",
+     "evidence": "Smoczek kauczukowy dla szczeniąt"
+    },
+    {
+     "family": "smoczki-do-karmienia-kotow",
+     "role": "complementary",
+     "evidence": "Smoczek silikonowy dla kociąt."
+    }
+   ]
+  },
+  {
+   "slug": "oslabienie-rekonwalescencja-i-senior",
+   "title": "Osłabienie, rekonwalescencja i starszy wiek",
+   "batch": "zywienie-i-mlode",
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "areas": [
+    "kondycja",
+    "odpornosc"
+   ],
+   "priority": 66,
+   "red_flag_level": "caution",
+   "scope": "IN: zwierzę osłabione, przemęczone, po chorobie (rekonwalescencja, gdy lekarz już je obejrzał), słabszy apetyt, starszy pies/kot. OUT: nagły brak apetytu, apatia, chudnięcie bez przyczyny (red flags → lekarz), codzienne witaminy zdrowego zwierzęcia (witaminy-i-mineraly-na-co-dzien).",
+   "products": [
+    {
+     "family": "wita-tonyl-psy-koty",
+     "role": "primary",
+     "evidence": "Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu."
+    },
+    {
+     "family": "wita-vet-senior",
+     "role": "similar",
+     "evidence": "Korzystnie wpływa na zwierzęta w stanach osłabienia oraz na poprawę witalności."
+    },
+    {
+     "family": "wita-vet-energia-kot",
+     "role": "similar",
+     "evidence": "kotów dorosłych wykazujących spadek formy, osłabienie apetytu"
+    },
+    {
+     "family": "kp-gold-regenerator-siersci-i-skory",
+     "role": "complementary",
+     "evidence": "Pomaga także uzupełnić niedobory żywieniowe oraz zaspokoić potrzeby zwierząt w okresie rekonwalescencji."
+    },
+    {
+     "family": "milvet",
+     "role": "complementary",
+     "evidence": "dla psów i kotów dorosłych w okresie rekonwalescencji i wzmożonego wysiłku"
+    }
+   ]
+  },
+  {
+   "slug": "pies-aktywny-i-pracujacy",
+   "title": "Pies aktywny, sportowy i pracujący",
+   "batch": "zywienie-i-mlode",
+   "species": [
+    "pies"
+   ],
+   "areas": [
+    "kondycja"
+   ],
+   "priority": 48,
+   "red_flag_level": "none",
+   "scope": "IN: psy sportowe, myśliwskie, pracujące, intensywny wysiłek, regeneracja po wysiłku. OUT: stawy i problemy z poruszaniem (stawy-i-problemy-z-poruszaniem), odwodnienie z biegunką (biegunka).",
+   "products": [
+    {
+     "family": "wita-vet-sport",
+     "role": "primary",
+     "evidence": "Karma uzupełniająca polecana dla psów sportowych, aktywnych, pracujących, psów myśliwskich."
+    },
+    {
+     "family": "wita-vet-junior-adult-krople",
+     "role": "similar",
+     "evidence": "dla zwierząt narażonych na wysiłek fizyczny"
+    },
+    {
+     "family": "wita-vet-complex-8g",
+     "role": "similar",
+     "evidence": "psów hodowlanych, pracujących"
+    },
+    {
+     "family": "elektrolity",
+     "role": "complementary",
+     "evidence": "wysiłek fizyczny"
+    }
+   ]
+  },
+  {
+   "slug": "ciaza-urojona",
+   "title": "Ciąża urojona u suki",
+   "batch": "zywienie-i-mlode",
+   "species": [
+    "pies"
+   ],
+   "areas": [
+    "rozrod"
+   ],
+   "priority": 45,
+   "red_flag_level": "caution",
+   "scope": "IN: objawy ciąży urojonej u suki, obrzęknięte gruczoły mlekowe (karma uzupełniająca). OUT: prawdziwa ciąża (ciaza-karmienie-i-wzrost-mlodych). Wyjątek: tylko 1 produkt w katalogu — potrzeba istnieje, by zapytanie „ciąża urojona” nie trafiało do witamin ciążowych.",
+   "products": [
+    {
+     "family": "uromil",
+     "role": "primary",
+     "evidence": "Ciąża urojona"
+    }
+   ]
+  }
+ ],
+ "families": {
+  "wita-vet-complex-1g": {
+   "family_slug": "wita-vet-complex-1g",
+   "name": "WITA-VET Complex 1g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "Dzienna dawka witamin i minerałów",
+    "Wzrost | Praca | Witalność | Ciąża",
+    "Junior+ Adult, Ca/P 1,3"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta 1 tab. / do 10 kg m.c. / 1 raz dziennie.\nPsy dorosłe 1 tab. / do 10 kg m.c. / 1 raz dziennie.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), tlenek magnezu. Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 2000 mg, 3a671 witamina D3 0,125 mg, 3a700 witamina E 2500 mg, 3a300 witamina C 10000 mg, 3a314 niacyna 1500 mg, 3a841 kwas pantotenowy 7500 mg, 3a820 witamina B1 750 mg, 3a witamina B2 (ryboflawina) 750 mg, 3a831 witamina B6 100 mg, 3a890 chlorek choliny 3000 mg, 3a880 D-biotyna 50 mg, 3a316 kwas foliowy 40 mg, 3a witamina B12 (cyjanokobalamina) 40,15 mg. Aminokwasy: 3c322 L-lizyna HCl 2000 mg, 3c361 L-arginina 2000 mg. Pierwiastki śladowe: 3b104 siarczan żelaza siedmiowodny 4743 mg, 3b405 siarczan miedzi pięciowodny 500 mg, 3b201 jodek potasu 4560 mg, 3b605 siarczan cynku jednowodny 250 mg, 3b502 tlenek manganu 130 mg. Składniki analityczne: Wapń 13,3 %, sód 0,2 %, fosfor 9,2 %.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-1g-80szt/",
+   "in_shop": true
+  },
+  "wita-vet-energia-kot": {
+   "family_slug": "wita-vet-energia-kot",
+   "name": "WITA-VET ENERGIA",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "kot",
+    "kocię"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla kotów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST",
+    "WITALNOŚĆ",
+    "CIĄŻA",
+    "LAKTACJA"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "WZROST | WITALNOŚĆ | CIĄŻA | LAKTACJA",
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla kociąt, kotek ciężarnych i karmiących, kotów dorosłych wykazujących spadek formy, osłabienie apetytu lub żywionych nieodpowiednią karmą. Zwiększa witalność i poprawia kondycję. Korzystnie wpływa na przemiany energetyczne, mineralizację kości Produkt wyjątkowo smaczny, chętnie przyjmowany przez zwierzęta.",
+   "usage_verbatim": "Podawać bezpośrednio lub rozkruszone i wymieszane z karmą.\nKocięta | Do 3 miesiąca | 1 tab./dzień\nDo 10 miesiąca | 2 tab./dzień\nKotki ciężarne lub w okresie laktacji | 2 tab./dzień\nKoty dorosłe (m.c. poniżej 4 kg) | 1 tab. / dzień\nKoty dorosłe (m.c. powyżej 4 kg) | 2 tab. / dzień",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), tlenek magnezu. Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 1846 mg, 3a671 witamina D3 0,1281 mg, 3a700 witamina E 2308 mg, 3a300 witamina C 9230,8 mg, 3a315 niacynamid 0,0069 mg, 3a841 kwas pantotenowy 4615 mg, 3a820 witamina B1 692 mg, 3a825iii witamina B2 (ryboflawina) 692 mg, 3a831 witamina B6 923 mg, 3a890 chlorek choliny 2769 mg, 3a880 D-biotyna 46 mg, 3a316 kwas foliowy 36,9 mg, 3a835 witamina B12 (cyjanokobalamina) 15,3 g, 3a370 tauryna 77 g. Aminokwasy: 3c322 L-lizyna HCl 1846 mg, 3c361 L-arginina 1846 mg. Pierwiastki śladowe: 3b103 siarczan żelaza jednowodny 960 mg, 3b405 siarczan miedzi pięciowodny 220 mg, 3b202 jodan wapnia 120,7 mg, 3b605 siarczan cynku jednowodny 90 mg, 3b502 tlenek manganu 80 mg. Składniki analityczne: Białko surowe 31,0 %, włókno surowe 3,5 %, tłuszcz surowy 3,0 %, popiół surowy 34,0 %.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-kot-junioradult-energia-0195g-30szt/",
+   "in_shop": true
+  },
+  "wita-tonyl-gryzonie": {
+   "family_slug": "wita-tonyl-gryzonie",
+   "name": "WITA-TONYL",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "gryzonie/małe ssaki",
+    "żółwie"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża",
+    "odporność"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla królików, żółwi, kawii, chomików, myszy",
+   "badges_verbatim": [
+    "WITALNOŚĆ",
+    "WZROST",
+    "CIĄŻA"
+   ],
+   "intended_for_verbatim": "Dla królików, żółwi, kawii, chomików, myszy.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Rekonwalescencja.",
+   "properties_verbatim": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt. Jest przeznaczona do stosowania w okresie wzrostu, ciąży, laktacji. Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu. Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu. Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- króliki 3-5 kropli / dzień\n- kawie i chomiki 2 kropli / dzień\n- żółwie 1 kropla / tydzień / 100 g m.c.\n1 ml zawiera 20 kropli.\nZawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": "Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład (2): glikol propylenowy, przetworzone białko zwierzęce Dodatki w 1 kg (3): Dietetyczne: Witaminy: 3a672a witamina A 10 000 000 IU, 3a670a witamina D3 1 000 000 IU, 3a700 witamina E 30 000 IU, 3a820 witamina B1 1 800 mg, 3a witamina B2 (ryboflawina) 2 000 mg, 3a841 D-pantotenian wapnia 6 000 mg, E3a831 witamina B6 6 000 mg, 3a witamina B12 (cyjanokobalamina) 30 mg, 3a314 niacyna 30 000 mg. Technologiczne: Emulgatory: E484 Gliceryl polietyleno-glikol rycynolanowy 135 g. Konserwanty: E200 kwas sorbowy 1,5 g, E330 kwas cytrynowy 0,5 g. Składniki analityczne (4): białko surowe 5,6%, włókno surowe 0%, tłuszcz surowy 6,2%, popiół surowy 0,3%, wilgotność 71,6%.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-tonyl-gryzonie-30ml/",
+   "in_shop": true
+  },
+  "wita-vet-complex-3-2g": {
+   "family_slug": "wita-vet-complex-3-2g",
+   "name": "WITA-VET Complex 3,2g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+    "JUNIOR + ADULT | CA/P 2"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta 1 tab. / do 15-20 kg m.c. / 1 raz dziennie.\nPsy dorosłe 1 tab. / do 15-20 kg m.c. / 1 raz dziennie.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, fosforan trójwapniowy, przetworzone białko zwierzęce (wątroba wołowa), tlenek magnezu, węglan wapnia, sole kwasów tłuszczowych, sole magnezowe kwasów organicznych (stearynian magnezu). Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 831,3 mg, 3a671 witamina D3 318,8 mg, 3a700 witamina E 3080 mg, 3a710 witamina K3 1000 mg, 3a300 witamina C 1530 mg, 3a314 niacyna 1520 mg, 3a841 D-pantotenian wapnia 670 mg, 3a890 chlorek choliny 870 mg, 3a820 witamina B1 246,9 mg, 3a witamina B2 185 mg, 3a831 witamina B6 50 mg, 3a880 biotyna 13,1 mg, 3a witamina B12 670 mg. Aminokwasy: 3c361 DL-metionina 6500 mg, 3c322 L-lizyna HCl 1080 mg. Pierwiastki śladowe: 3b103 siarczan żelaza jednowodny 408,8 mg, 3b405 siarczan miedzi pięciowodny 12,5 mg, 3b201 jodan potasu 32,8 mg, 3b605 siarczan cynku jednowodny 77,2 mg, 3b502 tlenek manganu 40 mg. Składniki analityczne: Wapń 28,1 %, sód 0,1 %, fosfor 9,9 %.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-32g-30szt/",
+   "in_shop": true
+  },
+  "wita-vet-complex-8g": {
+   "family_slug": "wita-vet-complex-8g",
+   "name": "WITA-VET Complex 8g",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+    "JUNIOR + ADULT | CA/P 2"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "WZROST | PRACA | WITALNOŚĆ | CIĄŻA",
+   "properties_verbatim": "Karma uzupełniająca – mineralna do codziennego stosowania dla psów wszystkich ras, szczeniąt i psów dorosłych żywionych karmą gotową lub domową. Zwiększa witalność i poprawia kondycję. Zalecana dla suk ciężarnych i karmiących, dla psów w okresie rekonwalescencji oraz psów hodowlanych, pracujących.",
+   "usage_verbatim": "Szczenięta: 1 tab./do 20kg m.c./1 raz dziennie.\nPsy dorosłe: 1 tab./ 40kg m.c./1 raz dziennie",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: fosforan dwuwapniowy, przetworzone białko zwierzęce (wątroba wołowa), drożdże piwne - martwe (z Saccharomyces cerevisiae), węglan wapnia, tlenek magnezu. Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 68,8 mg, 3a671 witamina D3 12,5 mg, 3a700 witamina E 2500 mg, 3a300 witamina C 2000 mg, 3a314 niacyna 1500 mg, 3a841 kwas pantotenowy 1000 mg, 3a820 witamina B1 150 mg, 3a witamina B2 (ryboflawina) 150 mg, 3a831 witamina B6 20 mg, 3a890 chlorek choliny 600 mg, 3a880 D-biotyna 10 mg, 3a316 kwas foliowy 8 mg, 3a witamina B12 (cyjanokobalamina) 5000 mg. Aminokwasy: 3c322 L-lizyna HCl 400 mg, 3c361 L-arginina 400 mg. Pierwiastki śladowe: 3b104 siarczan żelaza siedmiowodny 327 mg, 3b405 siarczan miedzi pięciowodny 50 mg, 3b201 jodek potasu 10,6 mg, 3b605 siarczan cynku jednowodny 20 mg, 3b502 tlenek manganu 18 mg. Składniki analityczne: Wapń 21,0 %, sód 0,1 %, fosfor 10,7 %.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-complex-8g-30szt/",
+   "in_shop": true
+  },
+  "wita-vet-junior-adult-krople": {
+   "family_slug": "wita-vet-junior-adult-krople",
+   "name": "WITA-VET junior + adult",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "szczenię"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "WZROST",
+    "CIĄŻA",
+    "LAKTACJA",
+    "WITALNOŚĆ"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Witalność.",
+   "properties_verbatim": "Karma uzupełniająca dla szczeniąt, suk i kotek ciężarnych, karmiących, dla psów w okresie rekonwalescencji, psów hodowlanych, wystawowych oraz dla zwierząt narażonych na wysiłek fizyczny.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: glikol propylenowy, acetylometionina, glukonian magnezu, chlorek sodu, Dodatki w 1 kg: Witaminy: 3a672a witamina A 270 mg , 3a671 witamina D3 50 mg , 3a700 witamina E 10 mg, 3a820 witamina B1 3,7 g, 3a witamina B2 350 mg, 3a831 witamina B6 2,4 g, 3a835 witamina B12 50 mg, 3a314 niacyna 6 g, 3a710 witamina K3 3 g, 3a880 biotyna 10 mg, 3a841 D-pantotenian wapnia 10,3 mg, 3a300 witamina C 2,5 g, 3a890 chlorek choliny 6 g Pierwiastki śladowe: 3b102 żelazo (chlorek żelaza) 125 mg, 3b403 miedź (chlorek miedziowy) 140 mg, 3b501 mangan (chlorek manganowy ) 123 mg Składniki analityczne: białko surowe 1,4 %, włókno surowe 0, 0 %, tłuszcz surowy 0,0%, popiół surowy 0,2 %, wilgotność 86 %",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-junioradult-krople-25ml/",
+   "in_shop": true
+  },
+  "milvet": {
+   "family_slug": "milvet",
+   "name": "MILVET",
+   "line": null,
+   "product_type": "inny (pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt)",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "szczenię",
+    "kocię"
+   ],
+   "body_areas": [
+    "rozród/ciąża",
+    "ogólna kondycja/witalność"
+   ],
+   "subtitle_verbatim": "Pełnoporcjowy preparat mlekozastępczy dla szczeniąt i kociąt oraz dla psów i kotów dorosłych",
+   "badges_verbatim": [
+    "BUTELKA+SMOCZEK WEWNĄTRZ OPAKOWANIA",
+    "ZASTĘPUJE POKARM MATKI",
+    "MOŻE BYĆ PODAWANY ZARAZ PO URODZENIU",
+    "DOSTARCZA ENERGII, WITAMIN I MINERAŁÓW"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Preparat mlekozastępczy dla szczeniąt i kociąt.",
+   "properties_verbatim": "Pełnoporcjowy preparat mlekozastępczy doskonale zastępuje naturalny pokarm matki. Dostarcza lekkostrawnego białka i łatwo przyswajalnego tłuszczu. Podawanie preparatu mlekozastępczego sukom i kotkom karmiącym pomaga zwiększyć produkcję ich własnego mleka. Szczeniętom i kociętom dostarcza niezbędnej energii, witamin i budulca do rozwoju. Preparat zaspokaja potrzeby mineralne i witaminowe rosnących szczeniąt i kociąt. Jest bardzo dobrze przyswajany przez zwierzęta i może być podawany zaraz po urodzeniu.",
+   "usage_verbatim": "Podawać przy:\n- niedostatecznej ilości wydzielanego przez matkę mleka\n- odchowie szczeniąt i kociąt bez udziału matki\n- jako dodatek do karmy w trakcie odsadzania\n- dla psów i kotów dorosłych w okresie rekonwalescencji i wzmożonego wysiłku\nUstalić porcję preparatu zgodnie z tabelą na opakowaniu. Do butelki wsypać jedną porcję preparatu, a następnie dodać dwie porcje przegotowanej wody o temperaturze ok. 60°C – proporcja 1:2. Energicznie wymieszać. Wystudzić do temperatury 37°C. Przygotowane mleko przechowywać pomiędzy posiłkami w temp.+2°C- +8°C. Po przygotowaniu przechowywać nie dłużej niż 24 godziny. Przez pierwsze 15 dni życia karmić przez smoczek, a następnie próbować podawać do picia z miseczki. Po 4 tygodniu życia, w trakcie stopniowego przechodzenia zwierząt na karmę stałą, dodawać proszek do karmy.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": "Informacja\nPłaska łyżeczka do herbaty lub płaska miarka (5 ml) zawiera ok. 2 g preparatu, płaska łyżka stołowa lub płaska miarka (15 ml) zawiera ok. 6 g preparatu.\nInformacja\nDZIĘKI ZASTOSOWANIU TECHNIKI NAPEŁNIANIA OPAKOWAŃ W ATMOSFERZE AZOTU ZWIĄZKI TŁUSZCZOWE I WITAMINY ZAWARTE W PREPARACIE NIE ULEGAJĄ ROZKŁADOWI.",
+   "composition_verbatim": "Skład: Odtłuszczone mleko w proszku, tłuszcz mleczny, koncentrat białek serwatkowych, serwatka w proszku, lecytyna sojowa. Dodatki w 1 kg: Dietetyczne: Witaminy: 3a672a witamina A 25 000 IU, 3a671 witamina D3 2 000 IU, 3a700 witamina E 60 mg, 3a820 witamina B1 20 mg, 3a witamina B2 40 mg, 3a831 witamina B6 15 mg, 3a witamina B12 (cynkobalamina) 0,08 mg, 3a841 D-pantotenian wapnia 46 mg, 3a316 kwas foliowy 0,8 mg, 3a314 niacyna 25 mg, 3a890 chlorek choliny 1000 mg, 3a370 tauryna 2000 mg. Pierwiastki śladowe: 3b108 chelat żelazowy wodzianu glicyny 100 mg, 3b201 jodek potasu 1,6 mg, 3b405 siarczan miedzi(II) pięciowodny 15 mg, 3b503 siarczan manganu jednowodny 66 mg, 3b603 tlenek cynku 160 mg, 3b801 selenian sodu 0,25 mg. Aminokwasy: 3c301 DL-metionina 2000 mg. Składniki analityczne: Białko surowe 30,0%, włókno surowe 0,0%, tłuszcz surowy 20,0%, popiół surowy 6,0%",
+   "page_path": "/produkty/karmy-uzupelniajace/milvet-10-x-100g/",
+   "in_shop": true
+  },
+  "wita-vet-stawy-pies": {
+   "family_slug": "wita-vet-stawy-pies",
+   "name": "WITA-VET stawy",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "stawy"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "WZMOCNIENIE STAWÓW",
+    "SMAKOŁYK"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Karma uzupełniająca, zalecana jest dla psów dorosłych z problemami kostno-stawowymi.",
+   "properties_verbatim": "Karma uzupełniająca wspomaga prawidłowe funkcjonowanie stawów. Polecana dla psów z problemami poruszania. Można podawać młodym psom w okresie intensywnego wzrostu. Składniki zawarte w preparacie chondroityna, glukozamina, czarci pazur, kolagen rybi, metylosulfonylometan (MSM) oraz kwas hialuronowy wzmacniają funkcjonowanie stawów, wspomagają ich ruchliwość i elastyczność. Ekstrakt owocu dzikiej róży dostarcza witaminę C, która bierze udział w syntezie kolagenu chrząstki stawowej.",
+   "usage_verbatim": "1 tabletka dziennie na 40kg masy",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "Karma uzupełniająca, zalecana jest dla psów dorosłych z problemami kostno-stawowymi.",
+   "notes_verbatim": "Składniki aktywne w 1 tabletce na 40 kg:\nKolagen rybi 565 mg, czarci pazur 565 mg, siarczan glukozaminy 750 mg, siarczan chondroityny 750 mg, msm (Methyl - Sulfonyl - Methan) 280 mg, ekstrakt z dzikiej roży (witamina c) 170 mg (120 mg), kwas hialuronowy 50 mg.",
+   "composition_verbatim": "Siarczan chondroityny, siarczan glukozaminy, kolagen rybi, ekstrakt z czarciego pazura, celuloza, metylosulfonylometan (MSM), fosforan dwuwapniowy, ekstrakt z owocu dzikiej róży, przetworzone białko zwierzęce (wątroba wołowa), kwas hialuronowy, stearynian magnezu. Dodatki w 1 kg: Technologiczne: krzemionka 10 g. Składniki analityczne: Białko surowe 24,2 g, włókno surowe 8,5 g, tłuszcz surowy 1,3 g, popiół surowy 11 g.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-stawy-4-g-30-tab-dla-psow/",
+   "in_shop": true
+  },
+  "butelka-do-karmienia-zwierzat": {
+   "family_slug": "butelka-do-karmienia-zwierzat",
+   "name": "Butelka do karmienia zwierząt",
+   "line": null,
+   "product_type": "akcesorium",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "kot",
+    "szczenię",
+    "kocię"
+   ],
+   "body_areas": [],
+   "subtitle_verbatim": "Do karmienia zwierząt. Dwa smoczki.",
+   "badges_verbatim": [
+    "BEZPIECZNA Z ŻYWNOŚCIĄ - BEZ BISFENOLU A (BPA).",
+    "BUTELKA ODPORNA NA USZKODZENIA.",
+    "2 SMOCZKI DLA KOCIĄT I SZCZENIĄT. WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE."
+   ],
+   "intended_for_verbatim": "Dla psów, kotów.",
+   "indications_verbatim": "Butelka do karmienia zwierząt.",
+   "properties_verbatim": "Butelka do karmienia zwierząt. Dwa smoczki. Butelka odporna na uszkodzenia. Bez szkodliwego Bisfenolu A (BPA), bezpieczna w kontakcie z żywnością. Smoczek silikonowy dla kociąt. Przezroczysty bez smaku i zapachu. Zachowuje swój kształt nawet po dłuższym czasie użytkowania. Smoczek kauczukowy dla szczeniąt. Elastyczny o brązowym zabarwieniu, odporny na gryzienie.",
+   "usage_verbatim": null,
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": "Informacja\nBEZPIECZNA Z ŻYWNOŚCIĄ - BEZ BISFENOLU A (BPA). BUTELKA ODPORNA NA USZKODZENIA. 2 SMOCZKI DLA KOCIĄT I SZCZENIĄT. WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE.",
+   "composition_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/butelka-do-karmienia-zwierzat/",
+   "in_shop": true
+  },
+  "smoczki-do-karmienia-psow": {
+   "family_slug": "smoczki-do-karmienia-psow",
+   "name": "Smoczki do karmienia psów",
+   "line": null,
+   "product_type": "akcesorium",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "szczenię"
+   ],
+   "body_areas": [],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Smoczki do butelki do karmienia zwierząt.",
+   "properties_verbatim": "Smoczek kauczukowy dla szczeniąt\nElastyczny o brązowym zabarwieniu, odporny na gryzienie.",
+   "usage_verbatim": null,
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": "Informacja\nWYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE.",
+   "composition_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/2-x-smoczki-do-karmienia-psow/",
+   "in_shop": true
+  },
+  "smoczki-do-karmienia-kotow": {
+   "family_slug": "smoczki-do-karmienia-kotow",
+   "name": "Smoczki do karmienia kotów",
+   "line": null,
+   "product_type": "akcesorium",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "kot",
+    "kocię"
+   ],
+   "body_areas": [],
+   "subtitle_verbatim": null,
+   "badges_verbatim": [
+    "WYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE"
+   ],
+   "intended_for_verbatim": "Dla kotów.",
+   "indications_verbatim": "Smoczki do butelki do karmienia zwierząt.",
+   "properties_verbatim": "Smoczek silikonowy dla kociąt.\nPrzezroczysty bez smaku i zapachu. Zachowuje swój kształt nawet po dłuższym czasie użytkowania.\npasuje do butelki",
+   "usage_verbatim": null,
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": "Informacja\nWYTRZYMAŁE NA GRYZIENIE I ELASTYCZNE.",
+   "composition_verbatim": null,
+   "page_path": "/produkty/karmy-uzupelniajace/2-x-smoczki-do-karmienia-kotow/",
+   "in_shop": true
+  },
+  "wita-tonyl-psy-koty": {
+   "family_slug": "wita-tonyl-psy-koty",
+   "name": "WITA-TONYL",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "rozród/ciąża",
+    "odporność"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów, kotów",
+   "badges_verbatim": [
+    "WITALNOŚĆ",
+    "WZROST",
+    "CIĄŻA"
+   ],
+   "intended_for_verbatim": "Dla psów, kotów.",
+   "indications_verbatim": "Wzrost. Ciąża. Laktacja. Rekonwalescencja.",
+   "properties_verbatim": "Karma dostarcza witamin niezbędnych do zaspokojenia potrzeb żywieniowych małych zwierząt. Jest przeznaczona do stosowania w okresie wzrostu, ciąży, laktacji. Wpływa korzystnie na zwierzęta starsze, przemęczone, w okresie rekonwalescencji i osłabionego apetytu. Hydrolizat miazgi wątrobowej dostarcza szereg witamin z grupy B w szczególności witamin biorących udział w procesie tworzenia czerwonych ciałek krwi. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina wpływa korzystnie na prawidłowe funkcjonowanie organizmu.. Witaminy wpływają na metabolizm, wspomagają procesy odpornościowe w organizmie oraz wpływają na odnowę nabłonków i skóry, biorą udział w mineralizacji kości, regulowaniu gospodarki wapniowo-fosforowej.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą:\n- psy i koty do 5 kg m.c 5 kropli / dzień\n- psy 5 – 15 kg m.c. 10 kropli / dzień\n- psy 15 – 30 kg m.c. 15 kropli / dzień\n- psy 30 – 45 kg m.c. 20 kropli / dzień\n- psy powyżej 45 kg m.c. 25 kropli / dzień\n1 ml zawiera 20 kropli.\nZawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": "Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład (2): glikol propylenowy, przetworzone białko zwierzęce (wyciąg wątrobowy). Dodatki w 1 kg (3): Dietetyczne: Witaminy: 3a672a witamina A 10 000 000 IU, 3a670a witamina D3 1 000 000 IU, 3a700 witamina E 30 000 IU, 3a820 witamina B1 1 800 mg, 3a witamina B2 (ryboflawina) 2 000 mg, 3a841 D-pantotenian wapnia 6 000 mg, E3a831 witamina B6 6 000 mg, 3a witamina B12 (cyjanokobalamina) 30 mg, 3a314 niacyna 30 000. Technologiczne: Emulgatory: E484 Gliceryl polietyleno-glikol rycynolanowy 135 g. Konserwanty: E200 kwas sorbowy 1,5 g, E330 kwas cytrynowy 0,5 g. Składniki analityczne (4): białko surowe 5,6%, włókno surowe 0%, tłuszcz surowy 6,2%, popiół surowy 0,3%, wilgotność 71,6%.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-tonyl-psykoty-30ml/",
+   "in_shop": false
+  },
+  "wita-vet-senior": {
+   "family_slug": "wita-vet-senior",
+   "name": "WITA-VET senior",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "odporność",
+    "oczy",
+    "serce"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "ODPORNOŚĆ",
+    "WITALNOŚĆ",
+    "WZROK",
+    "SMAKOŁYK"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Dzienna dawka witamin i minerałów . Odporność. Witalność. Wzrok. Smakołyk.",
+   "properties_verbatim": "Karma uzupełniająca przeznaczona dla psów powyżej 8 roku życia. Korzystnie wpływa na zwierzęta w stanach osłabienia oraz na poprawę witalności. Zawiera związki mineralne, witaminy, które dodają energii, podtrzymują witalność i chronią organizm przed wolnymi rodnikami.\nLuteina utrzymuje wzrok w dobrym stanie.\nKoenzym Q10 stymuluje odporność i wzmacnia pracę serca.\nWitamina E bierze udział w metabolizmie nienasyconych kwasów tłuszczowych zapobiegając tworzeniu się wolnych rodników.\nWitamina C chroni komórki przed działaniem szkodliwych produktów przemiany materii. Bierze udział w syntezie hormonów.",
+   "usage_verbatim": "1 tab./ do 10 kg m.c./ 1 raz dziennie",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, przetworzone białko zwierzęce (wątroba wołowa), maltodekstryna, luteina (pochodzenia roślinnego Tagetes erecta L), koenzym (Q10). Dodatki w 1 kg: Dietetyczne: 3a700 witamina E 108 g, 3a300 witamina C (kwas L-askorbowy) 73 g. Aminokwasy: 3c361 L-arginina 41 g. Pierwiastki śladowe: 3b801 selenin sodu 18 mg. Technologiczne: celuloza 100 g. Składniki analityczne: Białko surowe 18,2 g, włókno surowe 24,1 g, tłuszcz surowy 7,8 g, popiół surowy 10,4 g, wapń 8,61 g, fosfor 6,4 g.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-senior-80szt/",
+   "in_shop": true
+  },
+  "kp-gold-regenerator-siersci-i-skory": {
+   "family_slug": "kp-gold-regenerator-siersci-i-skory",
+   "name": "Gold Regenerator sierści i skóry",
+   "line": "Kolor & Pielęgnacja",
+   "product_type": "mieszanka paszowa uzupełniająca",
+   "category_slugs": [
+    "kolekcja-kolorpielegnacja"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "sierść",
+    "skóra",
+    "ogólna kondycja/witalność"
+   ],
+   "subtitle_verbatim": "Kolor&Pielęgnacja Mieszanka paszowa uzupełniająca. Kompleks witamin dla psów i kotów",
+   "badges_verbatim": [
+    "NADAJE POŁYSK I JEDWABISTOŚĆ",
+    "+ BIOTYNA, WIT. A, B6, KWAS NIKOTYNOWY"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Lśniąca sierść. Zdrowa skóra.",
+   "properties_verbatim": "Karma uzupełniająca dla psów i kotów do stosowania w celu poprawy jakości sierści. Szczególnie zaleca się ją podawać w okresie linienia. Pomaga także uzupełnić niedobory żywieniowe oraz zaspokoić potrzeby zwierząt w okresie rekonwalescencji. Dodatek hydrolizatu miazgi wątrobowej dostarcza szereg witamin z grupy B, w szczególności biorących udział w procesie tworzenia czerwonych ciałek. Ze względu na zawartość aminokwasów, takich jak: izoleucyna, leucyna, lizyna, metionina, fenyloalanina, treonina, walina. Wpływa korzystnie na prawidłowe funkcjonowanie organizmu Hydrolizat wspomaga pracę wątroby. Witaminy wpływają wspomagająco na procesy odpornościowe oraz przemiany metaboliczne organizmu.",
+   "usage_verbatim": "Podawać po wymieszaniu z karmą: - psy i koty do 5 kg m.c 5 kropli / dzień - psy 5 – 15 kg m.c. 10 kropli / dzień - psy 15 – 30 kg m.c. 15 kropli / dzień - psy 30 – 45 kg m.c. 20 kropli / dzień - psy powyżej 45 kg m.c. 25 kropli / dzień 1 ml zawiera 20 kropli. Po otwarciu przechowywać w miejscu chłodnym i suchym",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Skład (2): Glikol propylenowy, produkty pochodzenia zwierzęcego Dodatki w 1 kg (3): 3a672a witamina A 2 g, 3a880 biotyna 0,5 g, 3a831 witamina B6 4 g, 3a314 niacyna 8 g, 3a841 D-pantotenian wapnia 8 g, E6 glukonian cynku 0,3 g Składniki analityczne (4): białko surowe 0,3%, włókno surowe 0%, tłuszcz surowy 0,9%, popiół surowy 0,1%, wilgotność 87,4%.",
+   "page_path": "/produkty/kolekcja-kolorpielegnacja/kolorpielegnacja-gold-regenerator-siersci-i-skory-25ml/",
+   "in_shop": true
+  },
+  "wita-vet-sport": {
+   "family_slug": "wita-vet-sport",
+   "name": "WITA-VET SPORT",
+   "line": "Wita-Vet",
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies"
+   ],
+   "body_areas": [
+    "ogólna kondycja/witalność",
+    "inne"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów",
+   "badges_verbatim": [
+    "DZIENNA DAWKA WITAMIN I MINERAŁÓW",
+    "ENERGIA",
+    "WITALNOŚĆ",
+    "SMAKOŁYK"
+   ],
+   "intended_for_verbatim": "Dla psów.",
+   "indications_verbatim": "Karma uzupełniająca polecana dla psów sportowych, aktywnych, pracujących, psów myśliwskich.",
+   "properties_verbatim": "Karma uzupełniająca polecana dla psów sportowych, aktywnych, pracujących, psów myśliwskich. Składniki zawarte w preparacie zapewniają sprawność, energię i doskonałą kondycję oraz wspierają prawidłowe funkcjonowanie aparatu ruchu.\nHMB-Ca – podtrzymuje sprawność i siłę mięśni, podnosi zdolność wysiłkową organizmu. Przyspiesza regenerację mięśni.\nBCAA (Leucyna, Izoleucyna, Walina) – dostarcza łatwo przyswajalne aminokwasy niezbędne dla właściwej regeneracji i rozwoju mięśni.\nL-karnityna – transportuje wolne kwasy tłuszczowe oraz wspiera procesy ograniczające gromadzenie tłuszczu w komórkach tłuszczowych.",
+   "usage_verbatim": "1 tab./ do 20 kg m.c./ 1 raz dziennie",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": null,
+   "composition_verbatim": "Olej sojowy, HMB-Ca (β-hydroksy-β-metylomaślan wapnia), przetworzone białko zwierzęce (wątroba wołowa), stearynian magnezu. Dodatki w 1 kg: Dietetyczne: Witaminy i Pro-witaminy: 3a911 L-winian-L- karnityny 83,3 g. Aminokwasy i ich sole: 3c382 L-leucyna 83,3 g, 3c381 L-izoleucyna 41,7 g, 3c370 L-walina 41,7 g. Technologiczne: E 460 Celuloza mikrokrystaliczna 450g. Składniki analityczne: Białko surowe 19,8 g, włókno surowe 31,9 g, tłuszcz surowy 13,8 g, popiół surowy 3,5 g.",
+   "page_path": "/produkty/karmy-uzupelniajace/wita-vet-sport-12g-30-tab-dla-psow/",
+   "in_shop": false
+  },
+  "elektrolity": {
+   "family_slug": "elektrolity",
+   "name": "Elektrolity",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "karmy-uzupelniajace"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "układ pokarmowy",
+    "ogólna kondycja/witalność",
+    "inne"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "PRZYWRACA HOMEOSTAZĘ ORGANIZMU",
+    "DOSTARCZA ENERGIĘ",
+    "UZUPEŁNIA NIEDOBORY WIT. C",
+    "KOMPLEKS BCAA (LEUCYNA, IZOLEUCYNA, WALINA), L-GLUTAMINA",
+    "SMAK WĄTRÓBKI"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "· odwodnienie · zaburzenia trawienia · biegunka · wysiłek fizyczny · przywrócenie homeostazy organizmu",
+   "properties_verbatim": "Karma uzupełniająca dla psów i kotów regulująca równowagę wodno – elektrolitową organizmu. Zmieszana z wodą tworzy roztwór izotoniczny.\nGlukoza zwiększa absorpcję makro – elementów i wody oraz dostarcza łatwo przyswajalną energię. Elektrolity zawierają sole dysocjujące na jony, ułatwiające przekazywanie impulsów nerwowych w organizmie. Ekstrakt owocu z dzikiej róży uzupełnia niedobory witaminy C. Kompleks BCAA (Leucyna, Izoleucyna, Walina), L-glutamina dostarczają aminokwasy niezbędne dla właściwej regeneracji i rozwoju mięśni. Dodatek proszku wątrobowego poprawia smak, który powoduje, że zwierzęta chętnie przyjmują preparat.",
+   "usage_verbatim": "1 saszetka (25 g) na 15 kg m.c. - Preparat rozpuścić w wodzie lub wymieszać z karmą. Produkt naturalnie mętny.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": "· odwodnienie · zaburzenia trawienia · biegunka · wysiłek fizyczny · przywrócenie homeostazy organizmu",
+   "notes_verbatim": null,
+   "composition_verbatim": "Glukoza, wątroba wołowa suszona, chlorek potasu, chlorek sodu, mleczan magnezu, ekstrakt z owocu dzikiej róży. Dodatki w 1 kg: Aminokwasy: 3c381 Izoleucyna 25 g, 3c382 L-leucyna 50 g, 3c370 Walina 25 g, 3c451 L-glutamina 50 g. Składniki analityczne: Białko surowe 22,3 g, włókno surowe: 0,2 g, tłuszcz surowy: 2,3 g, popiół surowy 11,1 g, wapń 0,1 g, magnez 5,5 g, sód 0,2 g, potas 0,2 g.",
+   "page_path": "/produkty/karmy-uzupelniajace/elektrolity-pies-kot-10x25g/",
+   "in_shop": true
+  },
+  "uromil": {
+   "family_slug": "uromil",
+   "name": "Uromil",
+   "line": null,
+   "product_type": "karma uzupełniająca",
+   "category_slugs": [
+    "preparaty-wspomagajace-zdrowie"
+   ],
+   "species": [
+    "pies",
+    "kot"
+   ],
+   "body_areas": [
+    "rozród/ciąża"
+   ],
+   "subtitle_verbatim": "Karma uzupełniająca dla psów i kotów",
+   "badges_verbatim": [
+    "CIĄŻA UROJONA"
+   ],
+   "intended_for_verbatim": "Dla psów i kotów.",
+   "indications_verbatim": "Ciąża urojona",
+   "properties_verbatim": "Składniki karmy wspomagają odtruwanie organizmu w przebiegu ciąży urojonej u suk oraz działając moczopędnie ułatwiają powrót obrzękniętych gruczołów mlekowych do ich prawidłowego stanu. Karma wpływa także korzystnie na układ moczowy.",
+   "usage_verbatim": "Podawać sukom po wymieszaniu z karmą lub bezpośrednio 1 tab. / 10 kg m.c. 2 razy dziennie, przez 10 dni. Zawiera białko pochodzenia zwierzęcego, do karmienia zwierząt innych niż przeżuwacze.",
+   "precautions_verbatim": null,
+   "vet_context_verbatim": null,
+   "notes_verbatim": "Opakowanie zawiera: 30 tab. Masa netto: 12,9 g.",
+   "composition_verbatim": "Skład: Fosforan dwuwapniowy, produkty uboczne pochodzenia zwierzęcego (wątroba wołowa), produkty przetwarzania roślin: Hieracium pilosella (jastrzębiec kosmaczek), Phyllanthus (Liściokwiat). Składniki analityczne: białko surowe 11,3 %, włókno surowe 0,2 %, tłuszcz surowy 2,2 %, popiół surowy 1,4 %.",
+   "page_path": "/produkty/preparaty-wspomagajace-zdrowie/uromil-30szt/",
+   "in_shop": true
+  }
+ }
+}
