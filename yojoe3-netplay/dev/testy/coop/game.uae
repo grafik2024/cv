@@ -1,0 +1,5 @@
+use_gui=no
+quickstart=a500,0
+kickstart_rom_file=:AROS
+bogomem_size=2
+nr_floppies=2

@@ -1,0 +1,71 @@
+name: WinUAE netplay (Yo! Joe! 3) - Windows build
+
+# Builds WinUAE x64 with the netplay patch from yojoe3-netplay/ and
+# publishes a ready-to-play package (winuae64.exe + config + launchers).
+# The build steps follow WinUAE's own .github/workflows/build-winuae-binary.yml.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'yojoe3-netplay/**'
+      - '.github/workflows/winuae-netplay.yml'
+
+env:
+  WINUAE_REPO: https://github.com/tonioni/WinUAE.git
+  WINUAE_COMMIT: ae186a9c6c5a4a91f370a2927937c0bbcd9f6a2f
+
+jobs:
+  build-x64:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Fetch WinUAE source and apply the netplay patch
+      shell: bash
+      run: |
+        git config --global core.autocrlf false
+        git init winuae
+        cd winuae
+        git remote add origin "$WINUAE_REPO"
+        git fetch --depth 1 origin "$WINUAE_COMMIT"
+        git checkout --quiet FETCH_HEAD
+        git apply --verbose ../yojoe3-netplay/winuae-netplay.patch
+
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Download WinUAE includes and libs
+      shell: powershell
+      run: Invoke-WebRequest -Uri "https://download.abime.net/winuae/files/b/winuaeinclibs.zip" -OutFile "winuaeinclibs.zip"
+
+    - name: Unpack WinUAE includes and libs to C:\dev
+      uses: ihiroky/extract-action@v1
+      with:
+        file_path: winuaeinclibs.zip
+        extract_dir: C:\dev
+
+    - name: Add NASM to PATH
+      uses: ilammy/setup-nasm@v1.5.1
+
+    - name: Build x64 FullRelease
+      shell: cmd
+      run: |
+        for /f "usebackq delims=" %%i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set "VSINSTALL=%%i"
+        call "%VSINSTALL%\Common7\Tools\VsDevCmd.bat"
+        msbuild /m /p:Platform=x64 /p:Configuration=FullRelease winuae\od-win32\winuae_msvc15\winuae_msvc.sln
+
+    - name: Package
+      shell: pwsh
+      run: |
+        New-Item -ItemType Directory -Force -Path pkg | Out-Null
+        Copy-Item D:\Amiga\winuae64.exe pkg\
+        Copy-Item yojoe3-netplay\gra\* pkg\
+        Copy-Item yojoe3-netplay\README.md pkg\README_netplay.md
+        Get-ChildItem pkg
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: YoJoe3-netplay-WinUAE-x64
+        path: pkg

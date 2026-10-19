@@ -1,0 +1,64 @@
+YO! JOE! 3 - GRA ONLINE (CO-OP PRZEZ INTERNET)
+==============================================
+
+To jest WinUAE z dodaną obsługą gry sieciowej (netplay). Dwóch graczy
+na dwóch komputerach gra razem w trybie dwóch graczy, tak jakby siedzieli
+przy jednej Amidze z dwoma joystickami.
+
+  Gracz 1 = HOST    -> Joe, joystick w porcie 2 Amigi
+  Gracz 2 = DOŁĄCZ  -> Nat, joystick w porcie 1 Amigi
+
+CO JEST W FOLDERZE
+------------------
+  winuae64.exe          WinUAE z netplay (obaj gracze muszą mieć TEN SAM plik)
+  YoJoe3_netplay.uae    wspólna konfiguracja Amigi (nie zmieniaj jej u jednego)
+  HOST_gra_online.bat   uruchamia grę jako host (gracz 1)
+  DOLACZ_do_gry.bat     dołącza do hosta (gracz 2)
+
+HOST (gracz 1)
+--------------
+1. Skopiuj do tego folderu oba dyski gry: ..._A.adf i ..._B.adf
+2. Uruchom HOST_gra_online.bat, wybierz sterowanie.
+3. Podaj graczowi 2 swój adres IP (patrz "POŁĄCZENIE" niżej).
+4. Okno WinUAE czeka na gracza 2 - stan widać na pasku tytułu okna.
+   Windows może zapytać o zaporę - kliknij "Zezwól".
+
+DOŁĄCZ (gracz 2)
+----------------
+1. Dysków gry NIE potrzebujesz - host przyśle je automatycznie.
+2. Uruchom DOLACZ_do_gry.bat, wpisz adres hosta, wybierz sterowanie.
+   Swój joystick/klawiaturę ustawiasz jak zwykle - program sam przeniesie
+   go do portu 1 Amigi, więc sterujesz drugą postacią (Nat).
+
+W GRZE
+------
+- Trainer TRSI: F1-F5 działają u obu graczy. Start: gracz 2 wciska fire
+  (albo host klika lewym przyciskiem myszy w oknie gry).
+- Ekran tytułowy: zjedź na OPTIONS, fire, ustaw "TWO PLAYER" (fire),
+  zjedź na OK, fire. Potem START.
+- Klawiatura działa u obu (np. wpisywanie imienia do tabeli rekordów).
+
+POŁĄCZENIE
+----------
+Najprościej: obaj zainstalujcie darmowy Radmin VPN, ZeroTier albo Tailscale,
+dołączcie do wspólnej sieci i jako adres hosta wpiszcie adres z tej sieci.
+
+Bez VPN: host przekierowuje w routerze port TCP 25200 na swój komputer,
+a gracz 2 wpisuje publiczny adres hosta (np. z https://ifconfig.me).
+Własny port: wpisz go przy starcie hosta, a gracz 2 podaje adres:port.
+
+DOBRZE WIEDZIEĆ
+---------------
+- Opóźnienie sterowania dobiera się samo według pingu (np. 3 klatki = 60 ms
+  przy pingu ok. 90 ms).
+- Gdy jeden gracz zatrzyma grę (pauza, F12, minimalizacja z pauzą),
+  drugi czeka. Po wznowieniu gra toczy się dalej.
+- Reset (Ctrl+Amiga+Amiga, przycisk Reset w GUI) wykonuje się u obu naraz.
+- W trakcie sesji nie zmieniaj dyskietek ani ustawień emulatora (F12) -
+  zmiana tylko u jednego gracza rozjechałaby grę. WinUAE to zablokuje
+  albo ostrzeże.
+- Jeśli na ekranie pojawi się "Netplay: DESYNC", zamknijcie WinUAE
+  u obu i połączcie się od nowa.
+- Gdy połączenie zostanie zerwane, gra działa dalej u każdego osobno.
+
+Szczegóły techniczne: README_netplay.md

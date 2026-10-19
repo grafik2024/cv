@@ -1,0 +1,2376 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 624d8fc..c5f5188 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1802,6 +1802,7 @@ set(WINUAE_CORE_SOURCES
+     missing.cpp
+     mos6502.cpp
+     native2amiga.cpp
++    netplay.cpp
+     newcpu.cpp
+     newcpu_common.cpp
+     readcpu.cpp
+diff --git a/cfgfile.cpp b/cfgfile.cpp
+index 10fbd0d..f2f35ed 100644
+--- a/cfgfile.cpp
++++ b/cfgfile.cpp
+@@ -44,6 +44,7 @@
+ #include "specialmonitors.h"
+ #endif
+ #include "ide.h"
++#include "netplay.h"
+ 
+ #define cfgfile_warning write_log
+ #define cfgfile_warning_obsolete write_log
+@@ -182,6 +183,7 @@ static const TCHAR *filtermode2v[] = { _T("-"), _T("1x"), _T("2x"), _T("3x"), _T
+ #endif
+ static const TCHAR *cartsmode[] = { _T("none"), _T("hrtmon"), 0 };
+ static const TCHAR *idemode[] = { _T("none"), _T("a600/a1200"), _T("a4000"), 0 };
++static const TCHAR *netplaymode[] = { _T("off"), _T("host"), _T("client"), _T("join"), 0 };
+ static const TCHAR *rtctype[] = { _T("none"), _T("MSM6242B"), _T("RP5C01A"), _T("MSM6242B_A2000"), 0 };
+ static const TCHAR *ciaatodmode[] = { _T("vblank"), _T("50hz"), _T("60hz"), 0 };
+ static const TCHAR *ksmirrortype[] = { _T("none"), _T("e0"), _T("a8+e0"), 0 };
+@@ -2200,6 +2202,16 @@ void cfgfile_save_options (struct zfile *f, struct uae_prefs *p, int type)
+ 	if (p->trainerfile[0])
+ 		cfgfile_write_path2(f, _T("trainerfile"), p->trainerfile, PATH_NONE);
+ 
++	if (p->netplay_mode != NETPLAY_MODE_OFF) {
++		cfgfile_write_strarr(f, _T("netplay"), netplaymode, p->netplay_mode);
++		cfgfile_write_str(f, _T("netplay_address"), p->netplay_address);
++		cfgfile_write(f, _T("netplay_port"), _T("%d"), p->netplay_port);
++		cfgfile_write(f, _T("netplay_delay"), _T("%d"), p->netplay_delay);
++		cfgfile_dwrite_str(f, _T("netplay_password"), p->netplay_password);
++		cfgfile_write_bool(f, _T("netplay_swap_ports"), p->netplay_swapports);
++		cfgfile_write_bool(f, _T("netplay_mouse"), p->netplay_mouse);
++	}
++
+ 	if (p->statefile[0])
+ 		cfgfile_write_path2(f, _T("statefile"), p->statefile, PATH_NONE);
+ 	if (p->quitstatefile[0])
+@@ -4471,6 +4483,22 @@ static int cfgfile_parse_host (struct uae_prefs *p, TCHAR *option, TCHAR *value)
+ 	if (cfgfile_path(option, value, _T("trainerfile"), p->trainerfile, sizeof p->trainerfile / sizeof(TCHAR)))
+ 		return 1;
+ 
++	if (cfgfile_strval(option, value, _T("netplay"), &p->netplay_mode, netplaymode, 0)) {
++		// "join" is an alias of "client"
++		if (p->netplay_mode == 3)
++			p->netplay_mode = NETPLAY_MODE_CLIENT;
++		return 1;
++	}
++	if (cfgfile_string(option, value, _T("netplay_address"), p->netplay_address, sizeof p->netplay_address / sizeof(TCHAR))
++		|| cfgfile_string(option, value, _T("netplay_password"), p->netplay_password, sizeof p->netplay_password / sizeof(TCHAR))
++		|| cfgfile_intval(option, value, _T("netplay_port"), &p->netplay_port, 1)
++		|| cfgfile_intval(option, value, _T("netplay_delay"), &p->netplay_delay, 1)
++		|| cfgfile_yesno(option, value, _T("netplay_swap_ports"), &p->netplay_swapports)
++		|| cfgfile_yesno(option, value, _T("netplay_mouse"), &p->netplay_mouse)
++		|| cfgfile_path(option, value, _T("netplay_debug_input"), p->netplay_debug_input, sizeof p->netplay_debug_input / sizeof(TCHAR))
++		|| cfgfile_path(option, value, _T("netplay_debug_log"), p->netplay_debug_log, sizeof p->netplay_debug_log / sizeof(TCHAR)))
++		return 1;
++
+ 	if (cfgfile_path(option, value, _T("statefile_quit"), p->quitstatefile, sizeof p->quitstatefile / sizeof (TCHAR)))
+ 		return 1;
+ 
+@@ -9073,6 +9101,8 @@ static void buildin_default_prefs (struct uae_prefs *p)
+ #ifdef GDBSERVER
+ 	p->gdb_port = 2345;
+ #endif
++	p->netplay_port = NETPLAY_DEFAULT_PORT;
++	p->netplay_swapports = true;
+ 
+ 	target_default_options (p, 1);
+ 	cfgfile_compatibility_romtype(p);
+diff --git a/disk.cpp b/disk.cpp
+index 5ace5a8..6fa2fa0 100644
+--- a/disk.cpp
++++ b/disk.cpp
+@@ -53,6 +53,7 @@ int disk_debug_track = -1;
+ #endif
+ #include "crc32.h"
+ #include "inputrecord.h"
++#include "netplay.h"
+ #ifdef AMAX
+ #include "amax.h"
+ #endif
+@@ -3341,6 +3342,13 @@ static void disk_insert_2 (int num, const TCHAR *name, bool forced, bool forcedw
+ {
+ 	drive *drv = floppy + num;
+ 
++	if (!forced && netplay_active()) {
++		// a floppy change on one machine only would desync netplay
++		if (_tcscmp(currprefs.floppyslots[num].df, name))
++			statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: floppy change not possible during a session"));
++		_tcscpy(changed_prefs.floppyslots[num].df, currprefs.floppyslots[num].df);
++		return;
++	}
+ 	if (forced) {
+ 		drive_insert (drv, &currprefs, num, name, false, forcedwriteprotect);
+ 		return;
+diff --git a/include/netplay.h b/include/netplay.h
+new file mode 100644
+index 0000000..e76d8ce
+--- /dev/null
++++ b/include/netplay.h
+@@ -0,0 +1,44 @@
++ /*
++  * UAE - The Un*x Amiga Emulator
++  *
++  * Netplay: two emulators run the same Amiga in lockstep over TCP.
++  * Only input events travel over the network, both sides emulate.
++  *
++  */
++
++#ifndef UAE_NETPLAY_H
++#define UAE_NETPLAY_H
++
++#include "uae/types.h"
++
++#define NETPLAY_MODE_OFF 0
++#define NETPLAY_MODE_HOST 1
++#define NETPLAY_MODE_CLIENT 2
++
++#define NETPLAY_DEFAULT_PORT 25200
++
++/* true while a session is running in lockstep */
++extern bool netplay_active(void);
++/* netplay requested in config but session not yet started */
++extern bool netplay_pending(void);
++/* blocking connect + handshake, called once before the first hard reset */
++extern bool netplay_start(void);
++extern void netplay_stop(const TCHAR *reason);
++
++/* local input event, returns true if netplay took it (do not apply now) */
++extern bool netplay_capture_event(int nr, int state, int max, int autofire);
++/* frame boundary (vpos == 0): send local input, wait for remote input */
++extern void netplay_frame(void);
++/* events to apply for the current frame, same order on both machines */
++extern bool netplay_playevent(int *nr, int *state, int *max, int *autofire);
++/* reset requested by user (GUI/hotkey), returns true if it was synchronized */
++extern bool netplay_request_reset(int hardreset, int keyboardreset);
++/* inputcodes (AKS_xxx) that would only change one machine are refused */
++extern bool netplay_allow_inputcode(int code, int state);
++/* emulated port types used during the session */
++extern bool netplay_port_is_mouse(int port);
++
++extern void netplay_getstatus(TCHAR *out);
++extern void netplay_exit(void);
++
++#endif /* UAE_NETPLAY_H */
+diff --git a/include/options.h b/include/options.h
+index 547a165..d511b8c 100644
+--- a/include/options.h
++++ b/include/options.h
+@@ -806,6 +806,15 @@ struct uae_prefs {
+ 	TCHAR statefile_path[MAX_DPATH];
+ 	TCHAR inprecfile[MAX_DPATH];
+ 	TCHAR trainerfile[MAX_DPATH];
++	int netplay_mode;
++	TCHAR netplay_address[256];
++	int netplay_port;
++	int netplay_delay;
++	TCHAR netplay_password[64];
++	bool netplay_swapports;
++	bool netplay_mouse;
++	TCHAR netplay_debug_input[MAX_DPATH];
++	TCHAR netplay_debug_log[MAX_DPATH];
+ 	bool inprec_autoplay;
+ 	bool refresh_indicator;
+ 
+diff --git a/inputdevice.cpp b/inputdevice.cpp
+index b93cd98..89e8599 100644
+--- a/inputdevice.cpp
++++ b/inputdevice.cpp
+@@ -29,6 +29,7 @@
+ #include "inputdevice.h"
+ #include "gdb_server.h"
+ #include "inputrecord.h"
++#include "netplay.h"
+ #include "keybuf.h"
+ #include "custom.h"
+ #include "xwin.h"
+@@ -3705,7 +3706,7 @@ static void maybe_read_input(void)
+ 	if (inputread >= 0 && (vpos - inputread) <= maxvpos_display / 3) {
+ 		return;
+ 	}
+-	if (input_record || savestate_state == STATE_DOSAVE) {
++	if (input_record || savestate_state == STATE_DOSAVE || netplay_active()) {
+ 		return;
+ 	}
+ 	inputread = vpos;
+@@ -3845,6 +3846,8 @@ static bool cd32padmode(int joy)
+ 
+ static bool is_joystick_pullup (int joy)
+ {
++	if (netplay_active())
++		return false;
+ 	return joymodes[joy][0] == JSEM_MODE_GAMEPAD;
+ }
+ static bool is_mouse_pullup (int joy)
+@@ -4375,6 +4378,16 @@ void inputdevice_playevents(void)
+ 		handle_input_event(nr, state, max, (autofire ? HANDLE_IE_FLAG_AUTOFIRE : 0) | HANDLE_IE_FLAG_PLAYBACKEVENT);
+ }
+ 
++// netplay: both machines apply the same events at the start of the frame
++static void inputdevice_netplayevents(void)
++{
++	inputdevice_read();
++	netplay_frame();
++	int nr, state, max, autofire;
++	while (netplay_playevent(&nr, &state, &max, &autofire))
++		handle_input_event(nr, state, max, (autofire ? HANDLE_IE_FLAG_AUTOFIRE : 0) | HANDLE_IE_FLAG_PLAYBACKEVENT);
++}
++
+ // strobe slot is clock for pot counters
+ void inputdevice_hsync_strobe(void)
+ {
+@@ -4455,7 +4468,10 @@ void inputdevice_hsync(bool forceread)
+ 		if (vpos == 0)
+ 			handle_msgpump(true);
+ 	}
+-	if (!input_record && !input_play) {
++	if (netplay_active()) {
++		if (vpos == 0)
++			inputdevice_netplayevents();
++	} else if (!input_record && !input_play) {
+ 		if (forceread) {
+ 			inputread = maxvpos + 1;
+ 			inputdevice_read();
+@@ -4803,6 +4819,8 @@ static bool inputdevice_handle_inputcode2(int monid, int code, int state, const
+ 
+ 	if (code == 0)
+ 		goto end;
++	if (!netplay_allow_inputcode(code, state))
++		goto end;
+ 	if (state && needcputrace(code) && can_cpu_tracer() == true && is_cpu_tracer() == false && !input_play && !input_record && !debugging) {
+ 		if (set_cpu_tracer (true)) {
+ 			tracer_enable = 1;
+@@ -5085,10 +5103,12 @@ static bool inputdevice_handle_inputcode2(int monid, int code, int state, const
+ 		uae_quit ();
+ 		break;
+ 	case AKS_SOFTRESET:
+-		uae_reset (0, 0);
++		if (!netplay_request_reset(0, 0))
++			uae_reset (0, 0);
+ 		break;
+ 	case AKS_HARDRESET:
+-		uae_reset (1, 1);
++		if (!netplay_request_reset(1, 1))
++			uae_reset (1, 1);
+ 		break;
+ 	case AKS_RESTART:
+ 		uae_restart(&currprefs, -1, NULL);
+@@ -5361,6 +5381,8 @@ static int handle_input_event2(int nr, int state, int max, int flags, int extra)
+ 	}
+ #endif
+ 	if (!isaks) {
++		if (!(flags & HANDLE_IE_FLAG_PLAYBACKEVENT) && netplay_capture_event(nr, state, max, autofire))
++			return 0;
+ 		if (input_record && input_record != INPREC_RECORD_PLAYING)
+ 			inprec_recordevent (nr, state, max, autofire);
+ 		if (input_play && state && (flags & HANDLE_IE_FLAG_CANSTOPPLAYBACK)) {
+@@ -5497,7 +5519,7 @@ static int handle_input_event2(int nr, int state, int max, int flags, int extra)
+ 				}
+ 
+ 				if (ie->data == 0 && old != (joybutton[joy] & (1 << ie->data)) && currprefs.cpu_cycle_exact) {
+-					if (!input_record && !input_play && currprefs.input_contact_bounce) {
++					if (!input_record && !input_play && !netplay_active() && currprefs.input_contact_bounce) {
+ 						// emulate contact bounce, 1st button only, others have capacitors
+ 						bouncy = 1;
+ 						bouncy_cycles = get_cycles () + CYCLE_UNIT * currprefs.input_contact_bounce;
+@@ -6724,6 +6746,28 @@ static void check_enable(int ei)
+ 	islightpen(ei);
+ }
+ 
++/* Port types depend on local device mapping. During netplay both
++* machines must emulate the same hardware: plain joysticks with a
++* digital 2nd button, port 0 optionally a mouse.
++*/
++static void netplay_fixports (void)
++{
++	if (!netplay_active())
++		return;
++	for (int i = 0; i < NORMAL_JPORTS; i++) {
++		mouse_port[i] = netplay_port_is_mouse(i) ? 1 : 0;
++		cd32_pad_enabled[i] = 0;
++		digital_port[i][0] = 0;
++		digital_port[i][1] = 1;
++		analog_port[i][0] = 0;
++		analog_port[i][1] = 0;
++	}
++	parport_joystick_enabled = 0;
++	lightpen_enabled = 0;
++	lightpen_enabled2 = 0;
++	memset(lightpen_port, 0, sizeof lightpen_port);
++}
++
+ static void scanevents (struct uae_prefs *p)
+ {
+ 	int i, j, k, ei;
+@@ -8083,7 +8127,7 @@ bool inputdevice_set_gameports_mapping (struct uae_prefs *prefs, int devnum, int
+ 
+ static void resetinput (void)
+ {
+-	if ((input_play || input_record) && hsync_counter > 0)
++	if ((input_play || input_record || netplay_active()) && hsync_counter > 0)
+ 		return;
+ 	cd32_shifter[0] = cd32_shifter[1] = 8;
+ 	for (int i = 0; i < MAX_JPORTS; i++) {
+@@ -8182,6 +8226,7 @@ void inputdevice_updateconfig_internal (struct uae_prefs *srcprefs, struct uae_p
+ 
+ 	disableifempty (dstprefs);
+ 	scanevents (dstprefs);
++	netplay_fixports ();
+ 
+ 	if (srcprefs) {
+ 		for (int i = 0; i < MAX_JPORTS; i++) {
+diff --git a/netplay.cpp b/netplay.cpp
+new file mode 100644
+index 0000000..986b516
+--- /dev/null
++++ b/netplay.cpp
+@@ -0,0 +1,1888 @@
++/*
++* UAE - The Un*x Amiga Emulator
++*
++* Netplay: two emulators run the same Amiga in lockstep over TCP.
++*
++* Both machines start from the same power-on state (same configuration,
++* ROM, floppy images and random seed) and only input events travel over
++* the network. Input captured on frame N is applied on both machines at
++* frame N + delay, at the same emulated position (vpos 0), so emulation
++* stays identical. Memory/CPU checksums are exchanged to detect desync.
++*
++* The host owns Amiga joystick port 2 (player 1 in most games), the
++* client's joystick is moved to joystick port 1 (the mouse port).
++*
++*/
++
++#include "sysconfig.h"
++#ifdef _WIN32
++#include <winsock2.h>
++#include <ws2tcpip.h>
++#else
++#include <sys/types.h>
++#include <sys/socket.h>
++#include <sys/select.h>
++#include <netinet/in.h>
++#include <netinet/tcp.h>
++#include <arpa/inet.h>
++#include <netdb.h>
++#include <fcntl.h>
++#include <unistd.h>
++#include <errno.h>
++#endif
++#include "sysdeps.h"
++
++#include "options.h"
++#include "uae.h"
++#include "custom.h"
++#include "memory.h"
++#include "newcpu.h"
++#include "inputdevice.h"
++#include "keyboard.h"
++#include "disk.h"
++#include "zfile.h"
++#include "crc32.h"
++#include "statusline.h"
++#include "xwin.h"
++#include "fsdb.h"
++#include "devices.h"
++#include "savestate.h"
++#include "sounddep/sound.h"
++#include "netplay.h"
++
++#include <vector>
++#include <string>
++#include <deque>
++#include <map>
++#include <chrono>
++
++#if defined(_MSC_VER)
++#pragma comment(lib, "ws2_32.lib")
++#endif
++
++#define NP_MAGIC 0x57554e50 /* 'WUNP' */
++#define NP_PROTOCOL 1
++#define NP_RING 128
++#define NP_MAXDELAY 15
++#define NP_MAXMSG (4 * 1024 * 1024)
++#define NP_DISKCHUNK 32768
++#define NP_HASHINTERVAL 50
++#define NP_MAXDRIVES 4
++#define NP_MAXDISKSIZE (64 * 1024 * 1024)
++
++enum {
++	MSG_HELLO = 1,
++	MSG_REJECT,
++	MSG_PING,
++	MSG_PONG,
++	MSG_SETUP,
++	MSG_SETUPREPLY,
++	MSG_DISKDATA,
++	MSG_START,
++	MSG_FRAME,
++	MSG_HASH,
++	MSG_BYE,
++	MSG_READY
++};
++
++#define NPEV_AUTOFIRE 1
++#define NPEV_SPECIAL 0x80
++
++#define NPSPECIAL_SOFTRESET 1
++#define NPSPECIAL_HARDRESET 2
++#define NPSPECIAL_KEYBOARDRESET 3
++
++enum { NP_OFF, NP_HANDSHAKE, NP_RUNNING };
++
++namespace {
++
++#ifdef _WIN32
++typedef SOCKET np_socket;
++const np_socket np_invalid = INVALID_SOCKET;
++void np_closesocket(np_socket s) { closesocket(s); }
++bool np_wouldblock(void)
++{
++	int e = WSAGetLastError();
++	return e == WSAEWOULDBLOCK || e == WSAEINPROGRESS || e == WSAEINTR;
++}
++bool np_nonblocking(np_socket s) { u_long one = 1; return ioctlsocket(s, FIONBIO, &one) == 0; }
++#else
++typedef int np_socket;
++const np_socket np_invalid = -1;
++void np_closesocket(np_socket s) { close(s); }
++bool np_wouldblock(void) { return errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR || errno == EINPROGRESS; }
++bool np_nonblocking(np_socket s)
++{
++	int flags = fcntl(s, F_GETFL, 0);
++	return flags >= 0 && fcntl(s, F_SETFL, flags | O_NONBLOCK) == 0;
++}
++#endif
++
++struct npbuf
++{
++	std::vector<uae_u8> d;
++	void u8(uae_u8 v) { d.push_back(v); }
++	void u16(uae_u16 v) { u8((uae_u8)(v >> 8)); u8((uae_u8)v); }
++	void u32(uae_u32 v) { u16((uae_u16)(v >> 16)); u16((uae_u16)v); }
++	void str(const std::string &s)
++	{
++		size_t len = s.size() > 65535 ? 65535 : s.size();
++		u16((uae_u16)len);
++		d.insert(d.end(), s.begin(), s.begin() + len);
++	}
++	void bytes(const uae_u8 *p, size_t len) { d.insert(d.end(), p, p + len); }
++};
++
++struct npreader
++{
++	const uae_u8 *p;
++	size_t len, pos;
++	bool bad;
++	npreader(const std::vector<uae_u8> &v) : p(v.data()), len(v.size()), pos(0), bad(false) { }
++	uae_u8 u8(void)
++	{
++		if (pos + 1 > len) {
++			bad = true;
++			return 0;
++		}
++		return p[pos++];
++	}
++	uae_u16 u16(void) { uae_u16 v = u8() << 8; return v | u8(); }
++	uae_u32 u32(void) { uae_u32 v = u16() << 16; return v | u16(); }
++	std::string str(void)
++	{
++		size_t l = u16();
++		if (bad || pos + l > len) {
++			bad = true;
++			return std::string();
++		}
++		std::string s((const char*)p + pos, l);
++		pos += l;
++		return s;
++	}
++	const uae_u8 *bytes(size_t l)
++	{
++		if (pos + l > len) {
++			bad = true;
++			return NULL;
++		}
++		const uae_u8 *r = p + pos;
++		pos += l;
++		return r;
++	}
++};
++
++struct npmsg
++{
++	uae_u8 type;
++	std::vector<uae_u8> data;
++};
++
++struct npevent
++{
++	uae_u16 nr;
++	uae_u8 flags;
++	uae_s32 state;
++	uae_s32 max;
++};
++
++struct npframe
++{
++	uae_u32 frame;
++	bool valid;
++	std::vector<npevent> ev;
++};
++
++struct npdisk
++{
++	bool present;
++	bool wp;
++	uae_u32 size, crc;
++	std::string name;
++	std::vector<uae_u8> data;
++	uae_u32 received;
++};
++
++struct npdebugstep
++{
++	uae_u32 frame;
++	int action;
++	int nr, state;
++	std::string arg;
++};
++
++int np_state = NP_OFF;
++bool np_started;
++bool sockets_started;
++bool is_host;
++np_socket listener = np_invalid, sock = np_invalid;
++std::vector<uae_u8> inbuf, outbuf;
++size_t outpos;
++std::deque<npmsg> inbox;
++TCHAR np_error[512];
++TCHAR np_status[256];
++bool np_failed;
++
++uae_u32 np_seed;
++int np_delay;
++bool np_swapports;
++bool np_mouse;
++int np_hashinterval;
++
++uae_u32 cur_frame;
++npframe local_frames[NP_RING], remote_frames[NP_RING];
++std::vector<npevent> pending_local, play;
++size_t play_pos;
++std::map<uae_u32, uae_u32> local_hash, remote_hash;
++bool desync_reported;
++int remap[INPUTEVENT_END];
++
++int rtt_ms = -1;
++int pongs;
++std::chrono::steady_clock::time_point ping_sent[16];
++uae_u64 wait_total_ms;
++uae_u32 wait_frames;
++
++npdisk disks[NP_MAXDRIVES];
++
++std::string session_config;
++bool config_change_reported;
++
++std::vector<npdebugstep> debug_steps;
++size_t debug_pos;
++struct zfile *debug_log;
++
++uae_s64 now_ms(void)
++{
++	return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count();
++}
++
++std::string to_utf8(const TCHAR *s)
++{
++	char *c = uutf8(s);
++	std::string r(c ? c : "");
++	xfree(c);
++	return r;
++}
++
++void from_utf8(TCHAR *out, int maxlen, const std::string &s)
++{
++	TCHAR *t = utf8u(s.c_str());
++	_tcsncpy(out, t ? t : _T(""), maxlen - 1);
++	out[maxlen - 1] = 0;
++	xfree(t);
++}
++
++void set_status(const TCHAR *s)
++{
++	if (_tcscmp(np_status, s)) {
++		_tcsncpy(np_status, s, sizeof np_status / sizeof(TCHAR) - 1);
++		np_status[sizeof np_status / sizeof(TCHAR) - 1] = 0;
++		refreshtitle();
++	}
++}
++
++void close_sockets(void)
++{
++	if (sock != np_invalid)
++		np_closesocket(sock);
++	sock = np_invalid;
++	if (listener != np_invalid)
++		np_closesocket(listener);
++	listener = np_invalid;
++	inbuf.clear();
++	outbuf.clear();
++	outpos = 0;
++	inbox.clear();
++}
++
++void fail(const TCHAR *reason)
++{
++	if (!np_failed) {
++		_tcsncpy(np_error, reason, sizeof np_error / sizeof(TCHAR) - 1);
++		np_error[sizeof np_error / sizeof(TCHAR) - 1] = 0;
++		write_log(_T("NETPLAY: %s\n"), np_error);
++	}
++	np_failed = true;
++	if (sock != np_invalid)
++		np_closesocket(sock);
++	sock = np_invalid;
++}
++
++bool start_sockets(void)
++{
++	if (sockets_started)
++		return true;
++#ifdef _WIN32
++	WSADATA data;
++	if (WSAStartup(MAKEWORD(2, 2), &data))
++		return false;
++#endif
++	sockets_started = true;
++	return true;
++}
++
++void setup_socket(np_socket s)
++{
++	int one = 1;
++	setsockopt(s, IPPROTO_TCP, TCP_NODELAY, (const char*)&one, sizeof one);
++#ifdef SO_NOSIGPIPE
++	setsockopt(s, SOL_SOCKET, SO_NOSIGPIPE, &one, sizeof one);
++#endif
++	np_nonblocking(s);
++}
++
++bool flush_out(void)
++{
++	if (sock == np_invalid)
++		return false;
++	while (outpos < outbuf.size()) {
++		int flags = 0;
++#ifdef MSG_NOSIGNAL
++		flags = MSG_NOSIGNAL;
++#endif
++		size_t left = outbuf.size() - outpos;
++		int len = left > 65536 ? 65536 : (int)left;
++		int n = (int)send(sock, (const char*)outbuf.data() + outpos, len, flags);
++		if (n > 0) {
++			outpos += n;
++		} else if (n < 0 && np_wouldblock()) {
++			break;
++		} else {
++			fail(_T("Connection lost (send)."));
++			return false;
++		}
++	}
++	if (outpos >= outbuf.size()) {
++		outbuf.clear();
++		outpos = 0;
++	} else if (outpos > 1024 * 1024) {
++		outbuf.erase(outbuf.begin(), outbuf.begin() + outpos);
++		outpos = 0;
++	}
++	return true;
++}
++
++void send_msg(uae_u8 type, const npbuf &b)
++{
++	if (sock == np_invalid)
++		return;
++	uae_u32 len = (uae_u32)b.d.size() + 1;
++	outbuf.push_back((uae_u8)(len >> 24));
++	outbuf.push_back((uae_u8)(len >> 16));
++	outbuf.push_back((uae_u8)(len >> 8));
++	outbuf.push_back((uae_u8)len);
++	outbuf.push_back(type);
++	outbuf.insert(outbuf.end(), b.d.begin(), b.d.end());
++	flush_out();
++}
++
++void send_reject(const TCHAR *reason)
++{
++	npbuf b;
++	b.str(to_utf8(reason));
++	send_msg(MSG_REJECT, b);
++	flush_out();
++}
++
++void handle_frame_msg(const npmsg &m);
++void handle_hash_msg(const npmsg &m);
++
++// messages that can arrive at any time are handled here, the rest is queued
++void dispatch(npmsg &m)
++{
++	switch (m.type)
++	{
++	case MSG_PING:
++	{
++		npbuf b;
++		b.bytes(m.data.data(), m.data.size());
++		send_msg(MSG_PONG, b);
++		break;
++	}
++	case MSG_PONG:
++	{
++		npreader r(m.data);
++		uae_u32 id = r.u32();
++		if (!r.bad && id < 16) {
++			int ms = (int)std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - ping_sent[id]).count();
++			rtt_ms = rtt_ms < 0 ? ms : (rtt_ms * 3 + ms) / 4;
++			pongs++;
++		}
++		break;
++	}
++	case MSG_FRAME:
++		handle_frame_msg(m);
++		break;
++	case MSG_HASH:
++		handle_hash_msg(m);
++		break;
++	case MSG_BYE:
++	case MSG_REJECT:
++	{
++		npreader r(m.data);
++		TCHAR reason[256];
++		from_utf8(reason, sizeof reason / sizeof(TCHAR), r.str());
++		TCHAR tmp[512];
++		_stprintf(tmp, _T("%s: %s"), m.type == MSG_BYE ? _T("Partner left") : _T("Connection refused"), reason);
++		fail(tmp);
++		break;
++	}
++	default:
++		inbox.push_back(std::move(m));
++		break;
++	}
++}
++
++bool read_in(void)
++{
++	if (sock == np_invalid)
++		return false;
++	uae_u8 tmp[65536];
++	bool closed = false;
++	for (int i = 0; i < 64; i++) {
++		int n = (int)recv(sock, (char*)tmp, sizeof tmp, 0);
++		if (n > 0) {
++			inbuf.insert(inbuf.end(), tmp, tmp + n);
++		} else if (n < 0 && np_wouldblock()) {
++			break;
++		} else {
++			// parse what we have first, partner may have sent BYE
++			closed = true;
++			break;
++		}
++		if (n < (int)sizeof tmp)
++			break;
++	}
++	size_t pos = 0;
++	while (inbuf.size() - pos >= 5) {
++		const uae_u8 *p = inbuf.data() + pos;
++		uae_u32 len = (p[0] << 24) | (p[1] << 16) | (p[2] << 8) | p[3];
++		if (len == 0 || len > NP_MAXMSG) {
++			fail(_T("Protocol error."));
++			return false;
++		}
++		if (inbuf.size() - pos < 4 + len)
++			break;
++		npmsg m;
++		m.type = p[4];
++		m.data.assign(p + 5, p + 4 + len);
++		pos += 4 + len;
++		dispatch(m);
++		if (np_failed)
++			return false;
++	}
++	if (pos)
++		inbuf.erase(inbuf.begin(), inbuf.begin() + pos);
++	if (closed) {
++		fail(_T("Partner disconnected."));
++		return false;
++	}
++	return true;
++}
++
++// wait up to timeout ms for network activity, process it
++bool np_poll(int timeout)
++{
++	if (np_failed || sock == np_invalid)
++		return false;
++	fd_set rfds, wfds;
++	FD_ZERO(&rfds);
++	FD_ZERO(&wfds);
++	FD_SET(sock, &rfds);
++	if (outpos < outbuf.size())
++		FD_SET(sock, &wfds);
++	struct timeval tv;
++	tv.tv_sec = timeout / 1000;
++	tv.tv_usec = (timeout % 1000) * 1000;
++	int n = select((int)sock + 1, &rfds, &wfds, NULL, &tv);
++	if (n < 0) {
++		if (np_wouldblock())
++			return true;
++		fail(_T("Network error (select)."));
++		return false;
++	}
++	if (n > 0 && FD_ISSET(sock, &wfds)) {
++		if (!flush_out())
++			return false;
++	}
++	if (n > 0 && FD_ISSET(sock, &rfds)) {
++		if (!read_in())
++			return false;
++	}
++	return !np_failed;
++}
++
++bool user_quit(void)
++{
++	return quit_program == -UAE_QUIT || quit_program == UAE_QUIT;
++}
++
++void pump_host(void)
++{
++	static uae_s64 last;
++	uae_s64 t = now_ms();
++	if (t - last >= 10) {
++		last = t;
++		handle_msgpump(true);
++	}
++}
++
++// wait until a message of given type is queued
++bool wait_msg(uae_u8 type, npmsg &out, int timeout_ms)
++{
++	uae_s64 start = now_ms();
++	for (;;) {
++		for (auto it = inbox.begin(); it != inbox.end(); ++it) {
++			if (it->type == type) {
++				out = std::move(*it);
++				inbox.erase(it);
++				return true;
++			}
++		}
++		if (!np_poll(5))
++			return false;
++		pump_host();
++		if (user_quit()) {
++			fail(_T("Cancelled."));
++			return false;
++		}
++		if (timeout_ms > 0 && now_ms() - start > timeout_ms) {
++			fail(_T("Partner did not respond (timeout)."));
++			return false;
++		}
++	}
++}
++
++void send_ping(uae_u32 id)
++{
++	npbuf b;
++	b.u32(id);
++	ping_sent[id & 15] = std::chrono::steady_clock::now();
++	send_msg(MSG_PING, b);
++}
++
++void measure_rtt(void)
++{
++	rtt_ms = -1;
++	for (int i = 0; i < 8 && !np_failed; i++) {
++		int old = pongs;
++		send_ping(i);
++		uae_s64 start = now_ms();
++		while (pongs == old && now_ms() - start < 2000) {
++			if (!np_poll(5))
++				return;
++			pump_host();
++		}
++	}
++}
++
++bool parse_address(const TCHAR *addr, std::string &host, int &port)
++{
++	std::string a = to_utf8(addr);
++	port = currprefs.netplay_port > 0 ? currprefs.netplay_port : NETPLAY_DEFAULT_PORT;
++	if (a.empty())
++		return false;
++	if (a[0] == '[') {
++		size_t e = a.find(']');
++		if (e == std::string::npos)
++			return false;
++		host = a.substr(1, e - 1);
++		if (e + 1 < a.size() && a[e + 1] == ':')
++			port = atoi(a.c_str() + e + 2);
++	} else {
++		size_t c = a.find(':');
++		if (c != std::string::npos && a.find(':', c + 1) == std::string::npos) {
++			host = a.substr(0, c);
++			port = atoi(a.c_str() + c + 1);
++		} else {
++			host = a;
++		}
++	}
++	return !host.empty() && port > 0 && port < 65536;
++}
++
++bool host_listen(int port)
++{
++	struct sockaddr_in6 a6;
++	struct sockaddr_in a4;
++	int one = 1, zero = 0;
++
++	listener = socket(AF_INET6, SOCK_STREAM, 0);
++	if (listener != np_invalid) {
++		setsockopt(listener, IPPROTO_IPV6, IPV6_V6ONLY, (const char*)&zero, sizeof zero);
++#ifndef _WIN32
++		setsockopt(listener, SOL_SOCKET, SO_REUSEADDR, &one, sizeof one);
++#endif
++		// all zero address is in6addr_any
++		memset(&a6, 0, sizeof a6);
++		a6.sin6_family = AF_INET6;
++		a6.sin6_port = htons((unsigned short)port);
++		if (bind(listener, (struct sockaddr*)&a6, sizeof a6) || listen(listener, 1)) {
++			np_closesocket(listener);
++			listener = np_invalid;
++		}
++	}
++	if (listener == np_invalid) {
++		listener = socket(AF_INET, SOCK_STREAM, 0);
++		if (listener == np_invalid)
++			return false;
++#ifndef _WIN32
++		setsockopt(listener, SOL_SOCKET, SO_REUSEADDR, &one, sizeof one);
++#endif
++		memset(&a4, 0, sizeof a4);
++		a4.sin_family = AF_INET;
++		a4.sin_port = htons((unsigned short)port);
++		a4.sin_addr.s_addr = htonl(INADDR_ANY);
++		if (bind(listener, (struct sockaddr*)&a4, sizeof a4) || listen(listener, 1)) {
++			np_closesocket(listener);
++			listener = np_invalid;
++			return false;
++		}
++	}
++	np_nonblocking(listener);
++	return true;
++}
++
++bool client_connect_once(const std::string &host, int port)
++{
++	struct addrinfo hints, *res = NULL;
++	char portstr[16];
++	memset(&hints, 0, sizeof hints);
++	hints.ai_family = AF_UNSPEC;
++	hints.ai_socktype = SOCK_STREAM;
++	sprintf(portstr, "%d", port);
++	if (getaddrinfo(host.c_str(), portstr, &hints, &res) || !res)
++		return false;
++	bool ok = false;
++	for (struct addrinfo *ai = res; ai && !ok && !user_quit(); ai = ai->ai_next) {
++		np_socket s = socket(ai->ai_family, ai->ai_socktype, ai->ai_protocol);
++		if (s == np_invalid)
++			continue;
++		np_nonblocking(s);
++		int r = connect(s, ai->ai_addr, (int)ai->ai_addrlen);
++		if (r != 0 && !np_wouldblock()) {
++			np_closesocket(s);
++			continue;
++		}
++		// wait for connect, keep window alive
++		uae_s64 start = now_ms();
++		bool done = r == 0;
++		while (!done && now_ms() - start < 3000 && !user_quit()) {
++			fd_set wfds, efds;
++			FD_ZERO(&wfds);
++			FD_ZERO(&efds);
++			FD_SET(s, &wfds);
++			FD_SET(s, &efds);
++			struct timeval tv = { 0, 10000 };
++			int n = select((int)s + 1, NULL, &wfds, &efds, &tv);
++			if (n > 0) {
++				int err = 0;
++				socklen_t len = sizeof err;
++				getsockopt(s, SOL_SOCKET, SO_ERROR, (char*)&err, &len);
++				if (err == 0 && FD_ISSET(s, &wfds))
++					done = true;
++				else
++					break;
++			}
++			pump_host();
++		}
++		if (done) {
++			sock = s;
++			setup_socket(sock);
++			ok = true;
++		} else {
++			np_closesocket(s);
++		}
++	}
++	freeaddrinfo(res);
++	return ok;
++}
++
++uae_u32 bank_crc(addrbank *ab)
++{
++	if (!ab->baseaddr || !ab->allocated_size)
++		return 0;
++	return get_crc32(ab->baseaddr, ab->allocated_size);
++}
++
++uae_u32 state_hash(void)
++{
++	uae_u32 v[24];
++	int n = 0;
++	v[n++] = bank_crc(&chipmem_bank);
++	v[n++] = bank_crc(&bogomem_bank);
++	for (int i = 0; i < 16; i++)
++		v[n++] = m68k_dreg(regs, i);
++	v[n++] = m68k_getpc();
++	v[n++] = hsync_counter;
++	v[n++] = vpos;
++	v[n++] = uaerandgetseed();
++	return get_crc32(v, n * sizeof(uae_u32));
++}
++
++uae_u32 rom_crc(void)
++{
++	uae_u32 c = bank_crc(&kickmem_bank);
++	return c ^ (bank_crc(&extendedkickmem_bank) * 3);
++}
++
++// config lines that matter for emulation, host specific lines are skipped
++bool config_key_ignored(const std::string &k)
++{
++	// sound emulation itself must match, output settings do not matter
++	if (k == "sound_output")
++		return false;
++	static const char *prefixes[] = {
++		"config_", "win32.", "unix.", "amiberry.", "use_gui", "use_debugger", "debugging_", "gdb_port",
++		"kickstart_rom_file", "kickstart_ext_rom_file", "kickstart_key_file", "flash_file", "rtc_file", "cart_file", "cart",
++		"diskimage", "floppy_path", "rom_path", "hardfile_path", "cd_path",
++		"floppy_volume", "floppy_channel_mask", "floppy_samples",
++		"gfx_", "show_", "statusbar", "sound_", "kbd_lang",
++		"serial_", "parallel_", "midi", "sampler", "statefile", "inprec", "trainerfile", "lua",
++		"netplay", "rndseed", "headless", "ghostscript", "joyport", "chipset_refreshrate", "displaydata",
++		NULL
++	};
++	for (int i = 0; prefixes[i]; i++) {
++		if (!k.compare(0, strlen(prefixes[i]), prefixes[i]))
++			return true;
++	}
++	// floppyN path, floppyNwp, floppyNsound*, floppyNsubtype*
++	if (k.size() >= 7 && !k.compare(0, 6, "floppy") && k[6] >= '0' && k[6] <= '9') {
++		std::string rest = k.substr(7);
++		if (rest.empty() || rest == "wp" || !rest.compare(0, 5, "sound") || !rest.compare(0, 7, "subtype"))
++			return true;
++	}
++	// host input mapping, except settings that change emulated port values
++	if (!k.compare(0, 6, "input.")) {
++		if (k == "input.autofire_linecnt" || !k.compare(0, 23, "input.analog_joystick_m") || !k.compare(0, 23, "input.analog_joystick_o"))
++			return false;
++		return true;
++	}
++	return false;
++}
++
++std::map<std::string, std::string> config_lines(struct uae_prefs *p)
++{
++	std::map<std::string, std::string> out;
++	struct zfile *f = zfile_fopen_empty(NULL, _T("netplay.uae"));
++	if (!f)
++		return out;
++	cfgfile_save_options(f, p, 0);
++	int len = 0;
++	uae_u8 *data = zfile_getdata(f, 0, -1, &len);
++	zfile_fclose(f);
++	if (!data)
++		return out;
++	std::string s((const char*)data, len);
++	xfree(data);
++	size_t pos = 0;
++	while (pos < s.size()) {
++		size_t e = s.find('\n', pos);
++		if (e == std::string::npos)
++			e = s.size();
++		std::string line = s.substr(pos, e - pos);
++		pos = e + 1;
++		while (!line.empty() && (line.back() == '\r' || line.back() == ' '))
++			line.pop_back();
++		if (line.empty() || line[0] == ';')
++			continue;
++		size_t eq = line.find('=');
++		if (eq == std::string::npos)
++			continue;
++		std::string k = line.substr(0, eq);
++		if (k.size() > 5 && !k.compare(k.size() - 5, 5, ".utf8"))
++			continue;
++		if (config_key_ignored(k))
++			continue;
++		std::string v = line.substr(eq + 1);
++		// interrupts/normal/exact emulate Paula identically, only "none" differs
++		if (k == "sound_output" && v != "none")
++			v = "emulated";
++		out[k] = v;
++	}
++	return out;
++}
++
++std::string config_text(void)
++{
++	std::string s;
++	// currprefs holds temporary startup values (sound off), compare user settings
++	auto m = config_lines(&changed_prefs);
++	for (auto &kv : m)
++		s += kv.first + "=" + kv.second + "\n";
++	return s;
++}
++
++std::string compare_config(const std::string &hosttext)
++{
++	std::map<std::string, std::string> h;
++	size_t pos = 0;
++	while (pos < hosttext.size()) {
++		size_t e = hosttext.find('\n', pos);
++		if (e == std::string::npos)
++			e = hosttext.size();
++		std::string line = hosttext.substr(pos, e - pos);
++		pos = e + 1;
++		size_t eq = line.find('=');
++		if (eq != std::string::npos)
++			h[line.substr(0, eq)] = line.substr(eq + 1);
++	}
++	auto c = config_lines(&changed_prefs);
++	std::string diff;
++	int cnt = 0;
++	auto add = [&](const std::string &k, const std::string &hv, const std::string &cv) {
++		if (cnt++ < 12)
++			diff += k + ": host=" + (hv.empty() ? "(default)" : hv) + " client=" + (cv.empty() ? "(default)" : cv) + "\n";
++	};
++	for (auto &kv : h) {
++		auto it = c.find(kv.first);
++		if (it == c.end())
++			add(kv.first, kv.second, "");
++		else if (it->second != kv.second)
++			add(kv.first, kv.second, it->second);
++	}
++	for (auto &kv : c) {
++		if (h.find(kv.first) == h.end())
++			add(kv.first, "", kv.second);
++	}
++	if (cnt > 12)
++		diff += "...\n";
++	return diff;
++}
++
++const TCHAR *basename_of(const TCHAR *path)
++{
++	const TCHAR *p = path + _tcslen(path);
++	while (p > path && p[-1] != '/' && p[-1] != '\\' && p[-1] != ':')
++		p--;
++	return p;
++}
++
++bool load_disk_image(int num, npdisk &d)
++{
++	d.present = false;
++	d.data.clear();
++	const TCHAR *df = currprefs.floppyslots[num].df;
++	if (!df[0] || currprefs.floppyslots[num].dfxtype < 0)
++		return true;
++	struct zfile *f = zfile_fopen(df, _T("rb"), ZFD_NORMAL);
++	if (!f)
++		return false;
++	int len = 0;
++	uae_u8 *data = zfile_getdata(f, 0, -1, &len);
++	const TCHAR *name = zfile_getfilename(f);
++	d.name = to_utf8(basename_of(name && name[0] ? name : df));
++	zfile_fclose(f);
++	if (!data)
++		return false;
++	d.data.assign(data, data + len);
++	xfree(data);
++	d.present = true;
++	d.size = (uae_u32)d.data.size();
++	d.crc = get_crc32(d.data.data(), (int)d.data.size());
++	d.wp = currprefs.floppyslots[num].forcedwriteprotect;
++	return true;
++}
++
++// create missing directories of a path ending with a separator
++void make_dirs(const TCHAR *path)
++{
++	TCHAR tmp[MAX_DPATH];
++	_tcsncpy(tmp, path, MAX_DPATH - 1);
++	tmp[MAX_DPATH - 1] = 0;
++	for (TCHAR *p = tmp + 1; *p; p++) {
++		if (*p != '/' && *p != '\\')
++			continue;
++		TCHAR c = *p;
++		*p = 0;
++		if (tmp[0] && tmp[_tcslen(tmp) - 1] != ':' && !my_existsdir(tmp))
++			my_mkdir(tmp);
++		*p = c;
++	}
++}
++
++void disk_cache_path(TCHAR *out, int size, const npdisk &d)
++{
++	TCHAR name[MAX_DPATH];
++	fetch_saveimagepath(out, size, 1);
++	int l = uaetcslen(out);
++	if (l > 0 && out[l - 1] != '/' && out[l - 1] != '\\') {
++		out[l++] = FSDB_DIR_SEPARATOR;
++		out[l] = 0;
++	}
++	make_dirs(out);
++	from_utf8(name, sizeof name / sizeof(TCHAR), d.name);
++	// strip anything that could escape the directory
++	for (TCHAR *p = name; *p; p++) {
++		if (*p == '/' || *p == '\\' || *p == ':')
++			*p = '_';
++	}
++	_stprintf(out + l, _T("netplay_%08x_%s"), d.crc, name);
++}
++
++bool file_crc(const TCHAR *path, uae_u32 size, uae_u32 crc)
++{
++	struct zfile *f = zfile_fopen(path, _T("rb"), 0);
++	if (!f)
++		return false;
++	int len = 0;
++	uae_u8 *data = zfile_getdata(f, 0, -1, &len);
++	zfile_fclose(f);
++	bool ok = data && (uae_u32)len == size && get_crc32(data, len) == crc;
++	xfree(data);
++	return ok;
++}
++
++bool save_file(const TCHAR *path, const std::vector<uae_u8> &data)
++{
++	struct zfile *f = zfile_fopen(path, _T("wb"), 0);
++	if (!f)
++		return false;
++	bool ok = zfile_fwrite(data.data(), 1, data.size(), f) == data.size();
++	zfile_fclose(f);
++	return ok;
++}
++
++bool machine_check(TCHAR *err)
++{
++	if (currprefs.m68k_speed < 0) {
++		_tcscpy(err, _T("CPU speed \"Fastest possible\" depends on host speed and cannot be synchronized. Use \"Approximate A500/A1200 or cycle-exact\" CPU speed."));
++		return false;
++	}
++	if (currprefs.cachesize) {
++		_tcscpy(err, _T("JIT is not supported in netplay."));
++		return false;
++	}
++	if (currprefs.cpu_thread) {
++		_tcscpy(err, _T("Threaded CPU is not supported in netplay."));
++		return false;
++	}
++	if (savestate_state == STATE_DORESTORE || savestate_state == STATE_RESTORE) {
++		_tcscpy(err, _T("Netplay always starts from power-on, state files cannot be loaded at startup."));
++		return false;
++	}
++	return true;
++}
++
++void build_remap(void)
++{
++	for (int i = 0; i < INPUTEVENT_END; i++)
++		remap[i] = i;
++	if (is_host || !np_swapports)
++		return;
++	// client's joystick port events move to the mouse port
++	for (int i = 1; i < INPUTEVENT_END; i++) {
++		const struct inputevent *ie = inputdevice_get_eventinfo(i);
++		if (!ie || !ie->name || ie->unit != 2 || !ie->portid)
++			continue;
++		for (int j = 1; j < INPUTEVENT_END; j++) {
++			const struct inputevent *ie2 = inputdevice_get_eventinfo(j);
++			if (ie2 && ie2->name && ie2->unit == 1 && ie2->portid == ie->portid && ie2->type == ie->type) {
++				remap[i] = j;
++				break;
++			}
++		}
++	}
++}
++
++void load_debug_script(void)
++{
++	debug_steps.clear();
++	debug_pos = 0;
++	if (!currprefs.netplay_debug_input[0])
++		return;
++	struct zfile *f = zfile_fopen(currprefs.netplay_debug_input, _T("rb"), 0);
++	if (!f)
++		return;
++	int len = 0;
++	uae_u8 *data = zfile_getdata(f, 0, -1, &len);
++	zfile_fclose(f);
++	if (!data)
++		return;
++	std::string s((const char*)data, len);
++	xfree(data);
++	size_t pos = 0;
++	while (pos < s.size()) {
++		size_t e = s.find('\n', pos);
++		if (e == std::string::npos)
++			e = s.size();
++		std::string line = s.substr(pos, e - pos);
++		pos = e + 1;
++		char what[64], arg[256];
++		unsigned int frame;
++		int state = 0;
++		arg[0] = 0;
++		if (line.empty() || line[0] == '#' || sscanf(line.c_str(), "%u %63s %255s %d", &frame, what, arg, &state) < 2)
++			continue;
++		npdebugstep st;
++		st.frame = frame;
++		st.nr = 0;
++		st.state = state;
++		st.arg = arg;
++		if (!strcmp(what, "event")) {
++			st.action = 0;
++			TCHAR *name = au(arg);
++			for (int i = 1; i < INPUTEVENT_END; i++) {
++				const struct inputevent *ie = inputdevice_get_eventinfo(i);
++				if (ie && ie->confname && !_tcsicmp(ie->confname, name)) {
++					st.nr = i;
++					break;
++				}
++			}
++			xfree(name);
++			if (!st.nr) {
++				TCHAR *l = au(line.c_str());
++				write_log(_T("NETPLAY: debug script, unknown event '%s'\n"), l);
++				xfree(l);
++				continue;
++			}
++		} else if (!strcmp(what, "shot")) {
++			st.action = 1;
++		} else if (!strcmp(what, "quit")) {
++			st.action = 2;
++		} else if (!strcmp(what, "reset")) {
++			st.action = 3;
++		} else {
++			continue;
++		}
++		debug_steps.push_back(st);
++	}
++	write_log(_T("NETPLAY: %d debug script steps\n"), (int)debug_steps.size());
++}
++
++void run_debug_script(void)
++{
++	while (debug_pos < debug_steps.size() && debug_steps[debug_pos].frame <= cur_frame) {
++		npdebugstep &st = debug_steps[debug_pos++];
++		if (st.action == 0) {
++			netplay_capture_event(st.nr, st.state, 1, 0);
++		} else if (st.action == 1) {
++			TCHAR *path = au(st.arg.c_str());
++			screenshot_save(0, path);
++			xfree(path);
++		} else if (st.action == 2) {
++			uae_quit();
++		} else if (st.action == 3) {
++			netplay_request_reset(st.arg == "hard", 0);
++		}
++	}
++}
++
++void reset_session_data(void)
++{
++	for (int i = 0; i < NP_RING; i++) {
++		local_frames[i].valid = false;
++		local_frames[i].ev.clear();
++		remote_frames[i].valid = false;
++		remote_frames[i].ev.clear();
++	}
++	// first frames carry no input on either side
++	for (int i = 0; i < np_delay; i++) {
++		local_frames[i].valid = true;
++		local_frames[i].frame = i;
++		remote_frames[i].valid = true;
++		remote_frames[i].frame = i;
++	}
++	pending_local.clear();
++	play.clear();
++	play_pos = 0;
++	local_hash.clear();
++	remote_hash.clear();
++	desync_reported = false;
++	cur_frame = 0;
++	wait_total_ms = 0;
++	wait_frames = 0;
++}
++
++void check_hashes(uae_u32 frame)
++{
++	auto l = local_hash.find(frame);
++	auto r = remote_hash.find(frame);
++	if (l == local_hash.end() || r == remote_hash.end())
++		return;
++	if (l->second != r->second && !desync_reported) {
++		desync_reported = true;
++		write_log(_T("NETPLAY: DESYNC at frame %u (local %08x remote %08x)\n"), frame, l->second, r->second);
++		statusline_add_message(STATUSTYPE_OTHER, _T("Netplay: DESYNC at frame %u! Restart the session."), frame);
++		set_status(_T("DESYNC"));
++	}
++	// forget old entries
++	while (!local_hash.empty() && local_hash.begin()->first + 1000 < frame)
++		local_hash.erase(local_hash.begin());
++	while (!remote_hash.empty() && remote_hash.begin()->first + 1000 < frame)
++		remote_hash.erase(remote_hash.begin());
++}
++
++// partner may only send what netplay_capture_event() produces:
++// keys, joystick/mouse ports, never special actions (AKS_xxx)
++bool valid_remote_event(const npevent &e)
++{
++	if (e.flags & NPEV_SPECIAL)
++		return e.nr == 0 && e.state >= NPSPECIAL_SOFTRESET && e.state <= NPSPECIAL_KEYBOARDRESET;
++	if (e.nr == 0 || e.nr >= INPUTEVENT_END || e.nr == INPUTEVENT_SPC_CUSTOM_EVENT)
++		return false;
++	const struct inputevent *ie = inputdevice_get_eventinfo(e.nr);
++	if (!ie || !ie->name)
++		return false;
++	if (ie->unit == 0 && ie->data >= AKS_FIRST)
++		return false;
++	return true;
++}
++
++void handle_frame_msg(const npmsg &m)
++{
++	npreader r(m.data);
++	uae_u32 frame = r.u32();
++	int cnt = r.u16();
++	if (r.bad || np_state != NP_RUNNING) {
++		fail(_T("Protocol error (frame)."));
++		return;
++	}
++	if (frame < cur_frame || frame >= cur_frame + NP_RING - 1) {
++		fail(_T("Protocol error (frame number)."));
++		return;
++	}
++	npframe &f = remote_frames[frame % NP_RING];
++	f.frame = frame;
++	f.ev.clear();
++	for (int i = 0; i < cnt; i++) {
++		npevent e;
++		e.nr = r.u16();
++		e.flags = r.u8();
++		e.state = (uae_s32)r.u32();
++		e.max = (uae_s32)r.u32();
++		if (r.bad || !valid_remote_event(e)) {
++			fail(_T("Protocol error (event)."));
++			return;
++		}
++		f.ev.push_back(e);
++	}
++	f.valid = true;
++}
++
++void handle_hash_msg(const npmsg &m)
++{
++	npreader r(m.data);
++	uae_u32 frame = r.u32();
++	uae_u32 hash = r.u32();
++	if (r.bad)
++		return;
++	if (frame + NP_RING < cur_frame || frame > cur_frame + NP_RING)
++		return;
++	remote_hash[frame] = hash;
++	check_hashes(frame);
++}
++
++void apply_session(void)
++{
++	// same random seed on both machines, used by the reset that follows
++	currprefs.seed = changed_prefs.seed = np_seed;
++	uaesetrandseed(np_seed);
++	// host time based devices
++	currprefs.cs_rtc = changed_prefs.cs_rtc = 0;
++	currprefs.turbo_emulation = changed_prefs.turbo_emulation = 0;
++	currprefs.input_contact_bounce = changed_prefs.input_contact_bounce = 0;
++	build_remap();
++	reset_session_data();
++	session_config = config_text();
++	config_change_reported = false;
++	load_debug_script();
++	if (currprefs.netplay_debug_log[0])
++		debug_log = zfile_fopen(currprefs.netplay_debug_log, _T("w"), 0);
++	np_state = NP_RUNNING;
++	// canonical emulated port types (see inputdevice.cpp)
++	inputdevice_updateconfig(&changed_prefs, &currprefs);
++	device_add_exit(netplay_exit, NULL);
++	TCHAR tmp[256];
++	_stprintf(tmp, _T("%s, delay %d"), is_host ? _T("host") : _T("client"), np_delay);
++	set_status(tmp);
++	write_log(_T("NETPLAY: session started as %s, delay %d frames, rtt %d ms, seed %08x\n"),
++		is_host ? _T("host") : _T("client"), np_delay, rtt_ms, np_seed);
++	statusline_add_message(STATUSTYPE_OTHER, _T("Netplay started (%s), input delay %d frames"), is_host ? _T("host") : _T("client"), np_delay);
++}
++
++bool host_handshake(void)
++{
++	TCHAR tmp[2048];
++	int port = currprefs.netplay_port > 0 ? currprefs.netplay_port : NETPLAY_DEFAULT_PORT;
++	if (!host_listen(port)) {
++		_stprintf(tmp, _T("Cannot listen on TCP port %d."), port);
++		fail(tmp);
++		return false;
++	}
++	_stprintf(tmp, _T("waiting for player 2 on port %d"), port);
++	set_status(tmp);
++	write_log(_T("NETPLAY: host listening on port %d\n"), port);
++
++	for (;;) {
++		// wait for a client
++		while (sock == np_invalid) {
++			struct sockaddr_storage sa;
++			socklen_t salen = sizeof sa;
++			np_socket s = accept(listener, (struct sockaddr*)&sa, &salen);
++			if (s != np_invalid) {
++				char hostname[128];
++				hostname[0] = 0;
++				getnameinfo((struct sockaddr*)&sa, salen, hostname, sizeof hostname, NULL, 0, NI_NUMERICHOST);
++				TCHAR *h = au(hostname);
++				write_log(_T("NETPLAY: connection from %s\n"), h);
++				xfree(h);
++				sock = s;
++				setup_socket(sock);
++				np_failed = false;
++				break;
++			}
++			pump_host();
++			if (user_quit()) {
++				fail(_T("Cancelled."));
++				return false;
++			}
++			sleep_millis(5);
++		}
++
++		npmsg m;
++		if (!wait_msg(MSG_HELLO, m, 10000)) {
++			// drop this client and keep waiting
++			close_sockets();
++			if (user_quit() || !host_listen(port))
++				return false;
++			np_failed = false;
++			continue;
++		}
++		npreader r(m.data);
++		uae_u32 magic = r.u32();
++		uae_u16 proto = r.u16();
++		std::string version = r.str();
++		std::string password = r.str();
++		if (r.bad || magic != NP_MAGIC || proto != NP_PROTOCOL) {
++			send_reject(_T("Different netplay protocol version, use the same WinUAE build on both machines."));
++			close_sockets();
++			if (!host_listen(port))
++				return false;
++			np_failed = false;
++			continue;
++		}
++		if (password != to_utf8(currprefs.netplay_password)) {
++			send_reject(_T("Wrong netplay password."));
++			close_sockets();
++			if (!host_listen(port))
++				return false;
++			np_failed = false;
++			continue;
++		}
++		// one client only
++		if (listener != np_invalid) {
++			np_closesocket(listener);
++			listener = np_invalid;
++		}
++		break;
++	}
++
++	set_status(_T("player 2 connected, measuring ping"));
++	measure_rtt();
++	if (np_failed)
++		return false;
++	if (currprefs.netplay_delay > 0) {
++		np_delay = currprefs.netplay_delay;
++	} else {
++		double frame_ms = 1000.0 / (vblank_hz > 1 ? vblank_hz : 50.0);
++		int oneway = rtt_ms < 0 ? 50 : rtt_ms / 2;
++		np_delay = (int)((oneway + 15 + frame_ms - 1) / frame_ms);
++	}
++	if (np_delay < 1)
++		np_delay = 1;
++	if (np_delay > NP_MAXDELAY)
++		np_delay = NP_MAXDELAY;
++
++	// rndseed in config makes sessions reproducible
++	np_seed = currprefs.seed ? (uae_u32)currprefs.seed : (uae_u32)time(NULL) ^ (uae_u32)now_ms() ^ 0x5a5a1234;
++	if (!np_seed)
++		np_seed = 1;
++	np_swapports = currprefs.netplay_swapports;
++	np_mouse = currprefs.netplay_mouse;
++	np_hashinterval = currprefs.netplay_debug_log[0] ? 1 : NP_HASHINTERVAL;
++
++	for (int i = 0; i < NP_MAXDRIVES; i++) {
++		if (!load_disk_image(i, disks[i])) {
++			_stprintf(tmp, _T("Cannot read floppy image DF%d: %s"), i, currprefs.floppyslots[i].df);
++			send_reject(tmp);
++			fail(tmp);
++			return false;
++		}
++	}
++
++	npbuf b;
++	b.u32(np_seed);
++	b.u8((uae_u8)np_delay);
++	b.u8((np_swapports ? 1 : 0) | (np_mouse ? 2 : 0));
++	b.u16((uae_u16)np_hashinterval);
++	b.u16((uae_u16)(rtt_ms < 0 ? 0 : rtt_ms));
++	b.u32(rom_crc());
++	b.u8(NP_MAXDRIVES);
++	for (int i = 0; i < NP_MAXDRIVES; i++) {
++		b.u8(disks[i].present ? 1 : 0);
++		b.u8(disks[i].wp ? 1 : 0);
++		b.u32(disks[i].present ? disks[i].size : 0);
++		b.u32(disks[i].present ? disks[i].crc : 0);
++		b.str(disks[i].present ? disks[i].name : std::string());
++	}
++	std::string cfg = config_text();
++	if (currprefs.netplay_debug_log[0]) {
++		TCHAR *c = utf8u(cfg.c_str());
++		write_log(_T("NETPLAY: compared configuration:\n%s"), c);
++		xfree(c);
++	}
++	b.u32((uae_u32)cfg.size());
++	b.bytes((const uae_u8*)cfg.data(), cfg.size());
++	send_msg(MSG_SETUP, b);
++
++	set_status(_T("checking configuration"));
++	npmsg m;
++	if (!wait_msg(MSG_SETUPREPLY, m, 30000))
++		return false;
++	npreader r(m.data);
++	uae_u8 ok = r.u8();
++	std::string err = r.str();
++	uae_u8 need = r.u8();
++	if (r.bad || !ok) {
++		TCHAR e[1024];
++		from_utf8(e, sizeof e / sizeof(TCHAR), err);
++		_stprintf(tmp, _T("Player 2 cannot join:\n%s"), e);
++		fail(tmp);
++		return false;
++	}
++
++	// floppy images the client does not have yet
++	for (int i = 0; i < NP_MAXDRIVES; i++) {
++		if (!(need & (1 << i)) || !disks[i].present)
++			continue;
++		_stprintf(tmp, _T("sending DF%d to player 2"), i);
++		set_status(tmp);
++		for (uae_u32 off = 0; off < disks[i].size; off += NP_DISKCHUNK) {
++			uae_u32 len = disks[i].size - off;
++			if (len > NP_DISKCHUNK)
++				len = NP_DISKCHUNK;
++			npbuf d;
++			d.u8((uae_u8)i);
++			d.u32(off);
++			d.bytes(disks[i].data.data() + off, len);
++			send_msg(MSG_DISKDATA, d);
++			// do not queue megabytes, let the socket drain
++			while (outbuf.size() - outpos > 256 * 1024) {
++				if (!np_poll(10))
++					return false;
++				pump_host();
++				if (user_quit()) {
++					fail(_T("Cancelled."));
++					return false;
++				}
++			}
++		}
++	}
++	npbuf s;
++	s.u32(0);
++	send_msg(MSG_START, s);
++	set_status(_T("waiting for player 2"));
++	// client stores the images and inserts them, then both power on
++	if (!wait_msg(MSG_READY, m, 60000))
++		return false;
++	return true;
++}
++
++bool client_handshake(void)
++{
++	TCHAR tmp[1024];
++	std::string host;
++	int port;
++	if (!parse_address(currprefs.netplay_address, host, port)) {
++		fail(_T("No host address. Use netplay_address=<ip or name>[:port]."));
++		return false;
++	}
++	int attempt = 0;
++	TCHAR *hostt = au(host.c_str());
++	TCHAR hostname[256];
++	_tcsncpy(hostname, hostt, sizeof hostname / sizeof(TCHAR) - 1);
++	hostname[sizeof hostname / sizeof(TCHAR) - 1] = 0;
++	xfree(hostt);
++	while (sock == np_invalid) {
++		attempt++;
++		_stprintf(tmp, _T("connecting to %s:%d (attempt %d)"), hostname, port, attempt);
++		set_status(tmp);
++		if (client_connect_once(host, port))
++			break;
++		if (user_quit()) {
++			fail(_T("Cancelled."));
++			return false;
++		}
++		// host may not be up yet
++		uae_s64 start = now_ms();
++		while (now_ms() - start < 1000 && !user_quit()) {
++			pump_host();
++			sleep_millis(10);
++		}
++	}
++	write_log(_T("NETPLAY: connected to %s:%d\n"), hostname, port);
++
++	npbuf b;
++	b.u32(NP_MAGIC);
++	b.u16(NP_PROTOCOL);
++	b.str("WinUAE netplay");
++	b.str(to_utf8(currprefs.netplay_password));
++	send_msg(MSG_HELLO, b);
++
++	set_status(_T("connected, waiting for host"));
++	npmsg m;
++	if (!wait_msg(MSG_SETUP, m, 60000))
++		return false;
++	npreader r(m.data);
++	np_seed = r.u32();
++	np_delay = r.u8();
++	uae_u8 flags = r.u8();
++	np_hashinterval = r.u16();
++	rtt_ms = r.u16();
++	uae_u32 hostrom = r.u32();
++	int ndrives = r.u8();
++	np_swapports = (flags & 1) != 0;
++	np_mouse = (flags & 2) != 0;
++	for (int i = 0; i < ndrives && i < NP_MAXDRIVES; i++) {
++		disks[i].present = r.u8() != 0;
++		disks[i].wp = r.u8() != 0;
++		disks[i].size = r.u32();
++		disks[i].crc = r.u32();
++		disks[i].name = r.str();
++		disks[i].data.clear();
++		disks[i].received = 0;
++	}
++	uae_u32 cfglen = r.u32();
++	const uae_u8 *cfgp = r.bytes(cfglen);
++	for (int i = 0; i < NP_MAXDRIVES; i++) {
++		if (disks[i].present && (disks[i].size == 0 || disks[i].size > NP_MAXDISKSIZE))
++			r.bad = true;
++	}
++	if (r.bad || np_delay < 1 || np_delay > NP_MAXDELAY || ndrives != NP_MAXDRIVES) {
++		fail(_T("Protocol error (setup)."));
++		return false;
++	}
++	if (debug_log == NULL && currprefs.netplay_debug_log[0])
++		np_hashinterval = 1;
++	std::string cfg((const char*)cfgp, cfglen);
++
++	std::string err;
++	if (rom_crc() != hostrom)
++		err += "Different Kickstart ROM. Both players need the same ROM (or both the built-in AROS ROM).\n";
++	std::string diff = compare_config(cfg);
++	if (!diff.empty())
++		err += "Different emulator configuration (use the same .uae file):\n" + diff;
++	for (int i = 0; i < NP_MAXDRIVES; i++) {
++		bool used = currprefs.floppyslots[i].dfxtype >= 0;
++		if (disks[i].present && !used) {
++			err += "Floppy drive DF" + std::to_string(i) + " is disabled here but the host uses it.\n";
++		}
++	}
++
++	uae_u8 need = 0;
++	if (err.empty()) {
++		for (int i = 0; i < NP_MAXDRIVES; i++) {
++			if (!disks[i].present)
++				continue;
++			TCHAR path[MAX_DPATH];
++			disk_cache_path(path, MAX_DPATH, disks[i]);
++			if (!file_crc(path, disks[i].size, disks[i].crc)) {
++				need |= 1 << i;
++				disks[i].data.resize(disks[i].size);
++			}
++			write_log(_T("NETPLAY: DF%d %s\n"), i, (need & (1 << i)) ? _T("will be received from host") : _T("found in cache"));
++		}
++	}
++	npbuf rep;
++	rep.u8(err.empty() ? 1 : 0);
++	rep.str(err);
++	rep.u8(need);
++	send_msg(MSG_SETUPREPLY, rep);
++	if (!err.empty()) {
++		while (outpos < outbuf.size() && np_poll(10));
++		TCHAR e[2048];
++		from_utf8(e, sizeof e / sizeof(TCHAR), err);
++		fail(e);
++		return false;
++	}
++
++	// receive floppy images until START
++	set_status(need ? _T("receiving floppy images") : _T("waiting for host"));
++	for (;;) {
++		for (auto it = inbox.begin(); it != inbox.end(); ) {
++			if (it->type != MSG_DISKDATA) {
++				++it;
++				continue;
++			}
++			npreader d(it->data);
++			int drv = d.u8();
++			uae_u32 off = d.u32();
++			size_t len = it->data.size() - 5;
++			if (d.bad || drv >= NP_MAXDRIVES || !(need & (1 << drv)) || off + len > disks[drv].size) {
++				fail(_T("Protocol error (disk data)."));
++				return false;
++			}
++			memcpy(disks[drv].data.data() + off, it->data.data() + 5, len);
++			disks[drv].received += (uae_u32)len;
++			it = inbox.erase(it);
++		}
++		bool started = false;
++		for (auto it = inbox.begin(); it != inbox.end(); ++it) {
++			if (it->type == MSG_START) {
++				inbox.erase(it);
++				started = true;
++				break;
++			}
++		}
++		if (started)
++			break;
++		if (!np_poll(5))
++			return false;
++		pump_host();
++		if (user_quit()) {
++			fail(_T("Cancelled."));
++			return false;
++		}
++	}
++
++	for (int i = 0; i < NP_MAXDRIVES; i++) {
++		TCHAR path[MAX_DPATH];
++		path[0] = 0;
++		if (disks[i].present) {
++			disk_cache_path(path, MAX_DPATH, disks[i]);
++			if (need & (1 << i)) {
++				if (disks[i].received != disks[i].size || get_crc32(disks[i].data.data(), (int)disks[i].size) != disks[i].crc) {
++					fail(_T("Floppy image transfer failed (checksum)."));
++					return false;
++				}
++				if (!save_file(path, disks[i].data)) {
++					_stprintf(tmp, _T("Cannot write %s"), path);
++					fail(tmp);
++					return false;
++				}
++			}
++			disks[i].data.clear();
++		}
++		// inserted by the hard reset that follows
++		_tcscpy(currprefs.floppyslots[i].df, path);
++		_tcscpy(changed_prefs.floppyslots[i].df, path);
++		currprefs.floppyslots[i].forcedwriteprotect = changed_prefs.floppyslots[i].forcedwriteprotect = disks[i].wp;
++	}
++	npbuf ready;
++	ready.u32(0);
++	send_msg(MSG_READY, ready);
++	while (outpos < outbuf.size()) {
++		if (!np_poll(10))
++			return false;
++	}
++	return true;
++}
++
++}
++
++bool netplay_active(void)
++{
++	return np_state == NP_RUNNING;
++}
++
++bool netplay_pending(void)
++{
++	return currprefs.netplay_mode != NETPLAY_MODE_OFF && !np_started;
++}
++
++bool netplay_port_is_mouse(int port)
++{
++	return port == 0 && np_mouse;
++}
++
++bool netplay_start(void)
++{
++	TCHAR err[1024];
++
++	np_started = true;
++	np_failed = false;
++	np_error[0] = 0;
++	is_host = currprefs.netplay_mode == NETPLAY_MODE_HOST;
++
++	if (!machine_check(err)) {
++		gui_message(_T("Netplay: %s"), err);
++		return false;
++	}
++	if (!start_sockets()) {
++		gui_message(_T("Netplay: network initialization failed."));
++		return false;
++	}
++	np_state = NP_HANDSHAKE;
++	pause_sound();
++	bool ok = is_host ? host_handshake() : client_handshake();
++	resume_sound();
++	if (!ok) {
++		np_state = NP_OFF;
++		close_sockets();
++		set_status(_T(""));
++		if (!user_quit())
++			gui_message(_T("Netplay failed:\n%s\n\nThe game continues without netplay."), np_error);
++		return false;
++	}
++	if (listener != np_invalid) {
++		np_closesocket(listener);
++		listener = np_invalid;
++	}
++	apply_session();
++	return true;
++}
++
++void netplay_stop(const TCHAR *reason)
++{
++	if (np_state == NP_OFF)
++		return;
++	if (sock != np_invalid && !np_failed) {
++		npbuf b;
++		b.str(to_utf8(reason));
++		send_msg(MSG_BYE, b);
++		uae_s64 start = now_ms();
++		while (outpos < outbuf.size() && now_ms() - start < 500 && np_poll(10));
++	}
++	np_state = NP_OFF;
++	close_sockets();
++	if (debug_log)
++		zfile_fclose(debug_log);
++	debug_log = NULL;
++	play.clear();
++	play_pos = 0;
++	write_log(_T("NETPLAY: stopped: %s\n"), reason);
++	write_log(_T("NETPLAY: %u frames, waited for partner %u ms in %u frames, rtt %d ms\n"),
++		cur_frame, (uae_u32)wait_total_ms, wait_frames, rtt_ms);
++	statusline_add_message(STATUSTYPE_OTHER, _T("Netplay ended: %s"), reason);
++	set_status(_T("ended"));
++}
++
++void netplay_exit(void)
++{
++	netplay_stop(_T("WinUAE was closed."));
++	// a restarted emulator connects again
++	np_started = false;
++#ifdef _WIN32
++	if (sockets_started)
++		WSACleanup();
++#endif
++	sockets_started = false;
++}
++
++bool netplay_capture_event(int nr, int state, int max, int autofire)
++{
++	// nothing may touch the Amiga before both machines power on
++	if (np_state == NP_HANDSHAKE)
++		return true;
++	if (np_state != NP_RUNNING)
++		return false;
++	if (nr <= 0 || nr >= INPUTEVENT_END)
++		return true;
++	npevent e;
++	e.nr = (uae_u16)remap[nr];
++	e.flags = autofire ? NPEV_AUTOFIRE : 0;
++	e.state = state;
++	e.max = max;
++	pending_local.push_back(e);
++	return true;
++}
++
++bool netplay_request_reset(int hardreset, int keyboardreset)
++{
++	if (np_state != NP_RUNNING)
++		return false;
++	npevent e;
++	e.nr = 0;
++	e.flags = NPEV_SPECIAL;
++	e.state = hardreset ? NPSPECIAL_HARDRESET : (keyboardreset ? NPSPECIAL_KEYBOARDRESET : NPSPECIAL_SOFTRESET);
++	e.max = 0;
++	pending_local.push_back(e);
++	statusline_add_message(STATUSTYPE_OTHER, _T("Netplay: reset requested"));
++	return true;
++}
++
++bool netplay_allow_inputcode(int code, int state)
++{
++	if (np_state != NP_RUNNING)
++		return true;
++	switch (code)
++	{
++	case AKS_FREEZEBUTTON:
++	case AKS_FLOPPY0: case AKS_FLOPPY1: case AKS_FLOPPY2: case AKS_FLOPPY3:
++	case AKS_EFLOPPY0: case AKS_EFLOPPY1: case AKS_EFLOPPY2: case AKS_EFLOPPY3:
++	case AKS_CD0: case AKS_ECD0:
++	case AKS_IRQ7:
++	case AKS_STATEREWIND: case AKS_STATECURRENT:
++	case AKS_STATERESTOREQUICK: case AKS_STATERESTOREQUICK1: case AKS_STATERESTOREQUICK2:
++	case AKS_STATERESTOREQUICK3: case AKS_STATERESTOREQUICK4: case AKS_STATERESTOREQUICK5:
++	case AKS_STATERESTOREQUICK6: case AKS_STATERESTOREQUICK7: case AKS_STATERESTOREQUICK8:
++	case AKS_STATERESTOREQUICK9: case AKS_STATERESTOREDIALOG:
++	case AKS_RESTART:
++	case AKS_PASTE:
++	case AKS_DISKSWAPPER_INSERT0: case AKS_DISKSWAPPER_INSERT1:
++	case AKS_DISKSWAPPER_INSERT2: case AKS_DISKSWAPPER_INSERT3:
++	case AKS_DISK_PREV0: case AKS_DISK_PREV1: case AKS_DISK_PREV2: case AKS_DISK_PREV3:
++	case AKS_DISK_NEXT0: case AKS_DISK_NEXT1: case AKS_DISK_NEXT2: case AKS_DISK_NEXT3:
++	case AKS_ARCADIADIAGNOSTICS: case AKS_ARCADIAPLY1: case AKS_ARCADIAPLY2:
++	case AKS_ARCADIACOIN1: case AKS_ARCADIACOIN2:
++	case AKS_CDTV_FRONT_PANEL_STOP: case AKS_CDTV_FRONT_PANEL_PLAYPAUSE:
++	case AKS_CDTV_FRONT_PANEL_PREV: case AKS_CDTV_FRONT_PANEL_NEXT:
++	case AKS_CDTV_FRONT_PANEL_REW: case AKS_CDTV_FRONT_PANEL_FF:
++	case AKS_ALGSERVICE: case AKS_ALGLSTART: case AKS_ALGRSTART: case AKS_ALGLCOIN: case AKS_ALGRCOIN:
++	case AKS_ALGLTRIGGER: case AKS_ALGRTRIGGER: case AKS_ALGLHOLSTER: case AKS_ALGRHOLSTER:
++	case AKS_CUBOTOUCH: case AKS_CUBOTEST: case AKS_CUBOCOIN1: case AKS_CUBOCOIN2: case AKS_CUBOCOIN3: case AKS_CUBOCOIN4:
++		if (state)
++			statusline_add_message(STATUSTYPE_OTHER, _T("Netplay: not available during a netplay session"));
++		return false;
++	}
++	return true;
++}
++
++void netplay_frame(void)
++{
++	if (np_state != NP_RUNNING)
++		return;
++
++	if (debug_pos < debug_steps.size())
++		run_debug_script();
++
++	// local input of this frame is applied delay frames later on both machines
++	uae_u32 target = cur_frame + np_delay;
++	npframe &lf = local_frames[target % NP_RING];
++	lf.frame = target;
++	lf.valid = true;
++	lf.ev.swap(pending_local);
++	pending_local.clear();
++	npbuf b;
++	b.u32(target);
++	b.u16((uae_u16)lf.ev.size());
++	for (auto &e : lf.ev) {
++		b.u16(e.nr);
++		b.u8(e.flags);
++		b.u32((uae_u32)e.state);
++		b.u32((uae_u32)e.max);
++	}
++	send_msg(MSG_FRAME, b);
++	if (np_failed) {
++		netplay_stop(np_error);
++		return;
++	}
++	np_poll(0);
++
++	npframe &rf = remote_frames[cur_frame % NP_RING];
++	if (!(rf.valid && rf.frame == cur_frame)) {
++		uae_s64 start = now_ms();
++		bool slow = false;
++		while (!(rf.valid && rf.frame == cur_frame)) {
++			if (!np_poll(2)) {
++				netplay_stop(np_error[0] ? np_error : _T("Connection lost."));
++				return;
++			}
++			pump_host();
++			if (user_quit()) {
++				netplay_stop(_T("WinUAE was closed."));
++				return;
++			}
++			if (!slow && now_ms() - start > 1000) {
++				slow = true;
++				pause_sound();
++				set_status(_T("waiting for partner..."));
++				statusline_add_message(STATUSTYPE_OTHER, _T("Netplay: waiting for partner..."));
++			}
++		}
++		uae_s64 waited = now_ms() - start;
++		wait_total_ms += waited;
++		wait_frames++;
++		if (slow) {
++			resume_sound();
++			TCHAR tmp[256];
++			_stprintf(tmp, _T("%s, delay %d"), is_host ? _T("host") : _T("client"), np_delay);
++			set_status(tmp);
++		}
++	}
++
++	// identical state on both machines at this point
++	if (np_hashinterval > 0 && (cur_frame % np_hashinterval) == 0) {
++		uae_u32 h = state_hash();
++		local_hash[cur_frame] = h;
++		npbuf hb;
++		hb.u32(cur_frame);
++		hb.u32(h);
++		send_msg(MSG_HASH, hb);
++		if (debug_log) {
++			char line[64];
++			sprintf(line, "%u %08x\n", cur_frame, h);
++			zfile_fwrite(line, 1, strlen(line), debug_log);
++		}
++		check_hashes(cur_frame);
++	}
++	if (cur_frame > 0 && (cur_frame % 250) == 0)
++		send_ping((cur_frame / 250) & 15);
++	// settings changed in the GUI on one machine break the session
++	if ((cur_frame % 250) == 125 && !config_change_reported) {
++		std::string diff = compare_config(session_config);
++		if (!diff.empty()) {
++			config_change_reported = true;
++			TCHAR *d = utf8u(diff.c_str());
++			write_log(_T("NETPLAY: configuration changed during the session:\n%s"), d);
++			xfree(d);
++			statusline_add_message(STATUSTYPE_OTHER, _T("Netplay: emulator settings changed during the session, the game may desync"));
++		}
++	}
++
++	// host input first, then client input
++	npframe &mine = local_frames[cur_frame % NP_RING];
++	npframe &first = is_host ? mine : rf;
++	npframe &second = is_host ? rf : mine;
++	play.clear();
++	play_pos = 0;
++	play.insert(play.end(), first.ev.begin(), first.ev.end());
++	play.insert(play.end(), second.ev.begin(), second.ev.end());
++	mine.valid = false;
++	mine.ev.clear();
++	rf.valid = false;
++	rf.ev.clear();
++	cur_frame++;
++}
++
++bool netplay_playevent(int *nr, int *state, int *max, int *autofire)
++{
++	while (play_pos < play.size()) {
++		npevent &e = play[play_pos++];
++		if (e.flags & NPEV_SPECIAL) {
++			switch (e.state)
++			{
++			case NPSPECIAL_SOFTRESET:
++				uae_reset(0, 0);
++				break;
++			case NPSPECIAL_HARDRESET:
++				uae_reset(1, 1);
++				break;
++			case NPSPECIAL_KEYBOARDRESET:
++				uae_reset(0, 1);
++				break;
++			}
++			continue;
++		}
++		*nr = e.nr;
++		*state = e.state;
++		*max = e.max;
++		*autofire = (e.flags & NPEV_AUTOFIRE) ? 1 : 0;
++		return true;
++	}
++	return false;
++}
++
++void netplay_getstatus(TCHAR *out)
++{
++	if (!np_status[0] || currprefs.netplay_mode == NETPLAY_MODE_OFF)
++		return;
++	TCHAR tmp[400];
++	if (np_state == NP_RUNNING && rtt_ms >= 0)
++		_stprintf(tmp, _T("[Netplay %s, %d ms] "), np_status, rtt_ms);
++	else
++		_stprintf(tmp, _T("[Netplay: %s] "), np_status);
++	_tcscat(out, tmp);
++}
+diff --git a/newcpu.cpp b/newcpu.cpp
+index e9ee84e..9649ec6 100644
+--- a/newcpu.cpp
++++ b/newcpu.cpp
+@@ -40,6 +40,7 @@
+ #include "blitter.h"
+ #include "ar.h"
+ #include "inputrecord.h"
++#include "netplay.h"
+ #include "inputdevice.h"
+ #include "audio.h"
+ #include "fpp.h"
+@@ -6746,6 +6747,13 @@ void m68k_go (int may_quit)
+ 			if (quit_program == UAE_QUIT)
+ 				break;
+ 
++			if (hardboot && netplay_pending()) {
++				// connect and agree on floppies and random seed before power-on
++				netplay_start();
++				if (quit_program == -UAE_QUIT)
++					break;
++			}
++
+ 			hsync_counter = 0;
+ 			vsync_counter = 0;
+ 			if (quit_program) {
+diff --git a/od-unix/graphics.cpp b/od-unix/graphics.cpp
+index c432358..b0df69a 100644
+--- a/od-unix/graphics.cpp
++++ b/od-unix/graphics.cpp
+@@ -17,6 +17,7 @@
+ #include "host.h"
+ #include "devices.h"
+ #include "gfxboard.h"
++#include "netplay.h"
+ 
+ #if defined(DEBUGGER) && defined(WINUAE_UNIX_WITH_INTEGRATED_QT_UI)
+ #include "debug.h"
+@@ -364,7 +365,7 @@ void flush_screen(struct vidbuffer*, int, int) {}
+ void flush_clear_screen(struct vidbuffer*) {}
+ bool render_screen(int, int, bool)
+ {
+-    set_custom_limits(-1, -1, -1, -1, false);
++    set_custom_limits(-1, -1, -1, -1);
+     return true;
+ }
+ 
+@@ -492,7 +493,11 @@ int debuggable(void) { return 1; }
+ 
+ void refreshtitle(void)
+ {
+-    unix_video_set_title(_T(WINUAE_UNIX_WINDOW_TITLE));
++    TCHAR title[512];
++    title[0] = 0;
++    netplay_getstatus(title);
++    _tcscat(title, _T(WINUAE_UNIX_WINDOW_TITLE));
++    unix_video_set_title(title);
+ }
+ 
+ void InitPicasso96(int monid)
+diff --git a/od-win32/win32.cpp b/od-win32/win32.cpp
+index 24b2c7d..3bccb67 100644
+--- a/od-win32/win32.cpp
++++ b/od-win32/win32.cpp
+@@ -81,6 +81,7 @@
+ #include "clipboard_win32.h"
+ #include "blkdev.h"
+ #include "inputrecord.h"
++#include "netplay.h"
+ #include "gfxboard.h"
+ #include "statusline.h"
+ #include "devices.h"
+@@ -651,6 +652,7 @@ static void setmaintitle(int monid)
+ 	txt[0] = 0;
+ 	if (!monid) {
+ 		inprec_getstatus(txt);
++		netplay_getstatus(txt);
+ 		if (currprefs.config_window_title[0]) {
+ 			_tcscat(txt, currprefs.config_window_title);
+ 			_tcscat(txt, _T(" - "));
+@@ -2798,7 +2800,9 @@ static LRESULT CALLBACK AmigaWindowProc(HWND hWnd, UINT message, WPARAM wParam,
+ 				int df0 = 11;
+ 				if (num >= df0 && num <= df0 + 3) { // DF0-DF3
+ 					num -= df0;
+-					if (nm->code == NM_RCLICK) {
++					if (netplay_active()) {
++						statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: floppy change not possible during a session"));
++					} else if (nm->code == NM_RCLICK) {
+ 						disk_eject(num);
+ 					} else if (changed_prefs.floppyslots[num].dfxtype >= 0) {
+ 						DiskSelection(hWnd, IDC_DF0 + num, 0, &changed_prefs, NULL, NULL);
+@@ -2807,7 +2811,7 @@ static LRESULT CALLBACK AmigaWindowProc(HWND hWnd, UINT message, WPARAM wParam,
+ 				} else if (num == 6) { // POWER
+ 					if (nm->code == NM_CLICK) {
+ 						inputdevice_add_inputcode(AKS_ENTERGUI, 1, NULL);
+-					} else {
++					} else if (!netplay_request_reset(0, 1)) {
+ 						uae_reset(0, 1);
+ 					}
+ 				} else if (num == 4) { // FPS
+@@ -3281,7 +3285,8 @@ static LRESULT CALLBACK HiddenWindowProc (HWND hWnd, UINT message, WPARAM wParam
+ 			uae_quit ();
+ 			break;
+ 		case ID_ST_RESET:
+-			uae_reset (0, 1);
++			if (!netplay_request_reset(0, 1))
++				uae_reset (0, 1);
+ 			break;
+ 
+ 		case ID_ST_CDEJECTALL:
+diff --git a/od-win32/win32gui.cpp b/od-win32/win32gui.cpp
+index 8c30a57..4ca79e9 100644
+--- a/od-win32/win32gui.cpp
++++ b/od-win32/win32gui.cpp
+@@ -48,6 +48,7 @@
+ #include "autoconf.h"
+ #include "inputdevice.h"
+ #include "inputrecord.h"
++#include "netplay.h"
+ #include "xwin.h"
+ #include "zfile.h"
+ #include "parallel.h"
+@@ -23622,7 +23623,8 @@ static INT_PTR CALLBACK DialogProc (HWND hDlg, UINT msg, WPARAM wParam, LPARAM l
+ 				}
+ 				break;
+ 			case IDC_RESETAMIGA:
+-				uae_reset(1, 1);
++				if (!netplay_request_reset(1, 1))
++					uae_reset(1, 1);
+ 				SendMessage (hDlg, WM_COMMAND, IDOK, 0);
+ 				return TRUE;
+ 			case IDC_QUITEMU:
+diff --git a/od-win32/winuae_msvc15/winuae_msvc.vcxproj b/od-win32/winuae_msvc15/winuae_msvc.vcxproj
+index 26ef58c..642e00d 100644
+--- a/od-win32/winuae_msvc15/winuae_msvc.vcxproj
++++ b/od-win32/winuae_msvc15/winuae_msvc.vcxproj
+@@ -1270,6 +1270,7 @@
+     <ClCompile Include="..\..\missing.cpp" />
+     <ClCompile Include="..\..\native2amiga.cpp" />
+     <ClCompile Include="..\..\ncr_scsi.cpp" />
++    <ClCompile Include="..\..\netplay.cpp" />
+     <ClCompile Include="..\..\newcpu.cpp" />
+     <ClCompile Include="..\..\readcpu.cpp" />
+     <ClCompile Include="..\..\rommgr.cpp" />
+diff --git a/od-win32/winuae_msvc15/winuae_msvc.vcxproj.filters b/od-win32/winuae_msvc15/winuae_msvc.vcxproj.filters
+index 39c0ce0..be94479 100644
+--- a/od-win32/winuae_msvc15/winuae_msvc.vcxproj.filters
++++ b/od-win32/winuae_msvc15/winuae_msvc.vcxproj.filters
+@@ -328,6 +328,9 @@
+     <ClCompile Include="..\..\gdb_server.cpp">
+       <Filter>common</Filter>
+     </ClCompile>
++    <ClCompile Include="..\..\netplay.cpp">
++      <Filter>common</Filter>
++    </ClCompile>
+     <ClCompile Include="..\..\gdb_target.cpp">
+       <Filter>common</Filter>
+     </ClCompile>
