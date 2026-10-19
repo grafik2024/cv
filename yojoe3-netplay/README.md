@@ -21,8 +21,9 @@ w WinUAE (input recorder), tylko na żywo między dwoma komputerami:
 
 1. **Start z tego samego stanu.** Przed włączeniem Amigi host i klient łączą
    się przez TCP. Host sprawdza, czy obaj mają tę samą konfigurację emulatora
-   i ten sam Kickstart (suma CRC), przesyła obrazy dyskietek (klient trzyma je
-   w katalogu SaveImages jako `netplay_<crc>_<nazwa>.adf` i przy następnej
+   i ten sam Kickstart (suma CRC), przesyła obrazy dyskietek (klient zapisuje
+   je jako `netplay_<crc>_<nazwa>.adf` w katalogu obrazów WinUAE – w paczce
+   uruchamianej z `-portable` to folder z `winuae64.exe` – i przy następnej
    sesji nie pobiera ich ponownie) oraz wspólne ziarno liczb losowych.
    Potem obaj robią twardy reset – stan obu Amig jest identyczny co do bitu.
 2. **Przez sieć idzie tylko wejście.** Każde zdarzenie z joysticka, myszy
@@ -137,8 +138,8 @@ dwie instancje na jednym komputerze, sterowanie skryptami
 | Dźwięk `interrupts` kontra `exact` (osobne sesje, ten sam seed) | identyczna emulacja przez 8001 klatek – tryb wyjścia dźwięku może się różnić |
 | Zabicie klienta w trakcie gry | host od razu kończy sesję i gra dalej (50 kl./s) |
 | Inna konfiguracja (`chipmem_size`, cycle-exact) / złe hasło | odrzucone z listą różnic / „Wrong netplay password” |
-| **Windows ↔ Windows**: `winuae64.exe` zbudowany przez GitHub Actions, obie kopie uruchomione pod Wine 9 (Xvfb, bez karty dźwiękowej), menu → TWO PLAYER → gra | 8 002 klatki, sumy identyczne w każdej klatce |
-| Windows (Wine) ↔ Linux | połączenie, przesłanie dysków i lockstep działają, ale buildy Windows i Unix emulują inaczej od klatki 96 – rozjazd został wykryty u obu; dlatego teraz handshake od razu odrzuca graczy z inną platformą |
+| **Windows ↔ Windows**: finalny `winuae64.exe` z GitHub Actions, obie kopie pod Wine 9 (Xvfb, bez karty dźwiękowej), trainer, menu → TWO PLAYER → gra obu graczy | 8 002 klatki, sumy identyczne w każdej klatce, zrzuty host = klient |
+| Windows (Wine) ↔ Linux | połączenie, przesłanie dysków i lockstep działają, ale buildy Windows i Unix emulują inaczej od klatki 96 – rozjazd został wykryty u obu; teraz handshake od razu odrzuca taką sesję: „Different emulator version: host WinUAE 6.1.0 Windows x64, player 2 WinUAE 6.1.0 Unix x64” |
 
 Szczegóły i skrypty: [`dev/TESTY.md`](dev/TESTY.md).
 
