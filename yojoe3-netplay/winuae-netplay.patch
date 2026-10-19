@@ -324,10 +324,10 @@ index b93cd98..89e8599 100644
  		for (int i = 0; i < MAX_JPORTS; i++) {
 diff --git a/netplay.cpp b/netplay.cpp
 new file mode 100644
-index 0000000..986b516
+index 0000000..fb9ad24
 --- /dev/null
 +++ b/netplay.cpp
-@@ -0,0 +1,1888 @@
+@@ -0,0 +1,1909 @@
 +/*
 +* UAE - The Un*x Amiga Emulator
 +*
@@ -882,6 +882,14 @@ index 0000000..986b516
 +			return false;
 +		}
 +	}
++}
++
++// both players need the same emulator version, emulation may differ between versions
++std::string version_string(void)
++{
++	char tmp[64];
++	sprintf(tmp, "WinUAE %d.%d.%d", UAEMAJOR, UAEMINOR, UAESUBREV);
++	return std::string(tmp);
 +}
 +
 +void send_ping(uae_u32 id)
@@ -1593,6 +1601,19 @@ index 0000000..986b516
 +			np_failed = false;
 +			continue;
 +		}
++		if (version != version_string()) {
++			TCHAR *v = utf8u(version.c_str());
++			TCHAR *mine = utf8u(version_string().c_str());
++			_stprintf(tmp, _T("Different emulator version: host %s, player 2 %s. Use the same WinUAE build."), mine, v);
++			xfree(mine);
++			xfree(v);
++			send_reject(tmp);
++			close_sockets();
++			if (!host_listen(port))
++				return false;
++			np_failed = false;
++			continue;
++		}
 +		if (password != to_utf8(currprefs.netplay_password)) {
 +			send_reject(_T("Wrong netplay password."));
 +			close_sockets();
@@ -1757,7 +1778,7 @@ index 0000000..986b516
 +	npbuf b;
 +	b.u32(NP_MAGIC);
 +	b.u16(NP_PROTOCOL);
-+	b.str("WinUAE netplay");
++	b.str(version_string());
 +	b.str(to_utf8(currprefs.netplay_password));
 +	send_msg(MSG_HELLO, b);
 +
