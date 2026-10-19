@@ -50,7 +50,9 @@ sprzęt. Lewy przycisk myszy hosta nadal działa jako fire w porcie 1.
 1. Pobierz paczkę `YoJoe3-netplay-WinUAE-x64` (artefakt workflow
    [winuae-netplay.yml](../.github/workflows/winuae-netplay.yml) w zakładce
    *Actions* repozytorium) i rozpakuj ją u obu graczy. Obaj muszą mieć ten
-   sam `winuae64.exe` i ten sam `YoJoe3_netplay.uae`.
+   sam `winuae64.exe` i ten sam `YoJoe3_netplay.uae`. To WinUAE 6.1.0 beta
+   (gałąź główna WinUAE); dołączony `winuae.ini` wyłącza okienko
+   „Public Beta Disclaimer” (oficjalny przełącznik `Beta_Just_Shut_Up`).
 2. Host kopiuje do tego folderu oba dyski gry (`..._A.adf` i `..._B.adf`)
    i uruchamia `HOST_gra_online.bat`.
 3. Gracz 2 uruchamia `DOLACZ_do_gry.bat` i wpisuje adres hosta.
@@ -135,11 +137,10 @@ dwie instancje na jednym komputerze, sterowanie skryptami
 | Dźwięk `interrupts` kontra `exact` (osobne sesje, ten sam seed) | identyczna emulacja przez 8001 klatek – tryb wyjścia dźwięku może się różnić |
 | Zabicie klienta w trakcie gry | host od razu kończy sesję i gra dalej (50 kl./s) |
 | Inna konfiguracja (`chipmem_size`, cycle-exact) / złe hasło | odrzucone z listą różnic / „Wrong netplay password” |
+| **Windows ↔ Windows**: `winuae64.exe` zbudowany przez GitHub Actions, obie kopie uruchomione pod Wine 9 (Xvfb, bez karty dźwiękowej), menu → TWO PLAYER → gra | 8 002 klatki, sumy identyczne w każdej klatce |
+| Windows (Wine) ↔ Linux | połączenie, przesłanie dysków i lockstep działają, ale buildy Windows i Unix emulują inaczej od klatki 96 – rozjazd został wykryty u obu; dlatego teraz handshake od razu odrzuca graczy z inną platformą |
 
 Szczegóły i skrypty: [`dev/TESTY.md`](dev/TESTY.md).
-
-Wersja Windows jest budowana przez GitHub Actions z tej samej łatki
-(kod sieciowy ma osobne gałęzie dla Winsock i gniazd POSIX).
 
 ## Dla programistów
 
@@ -178,7 +179,9 @@ plików od hosta są oczyszczane.
 
 ### Ograniczenia
 
-* Dwóch graczy. Obaj muszą mieć tę samą kompilację WinUAE.
+* Dwóch graczy. Obaj muszą mieć tę samą kompilację WinUAE na tej samej
+  platformie (Windows z Windows); inna wersja lub platforma jest odrzucana
+  przy łączeniu.
 * Sesja zaczyna się od włączenia Amigi; nie da się dołączyć do trwającej gry,
   a po rozjechaniu się („DESYNC”) trzeba połączyć się od nowa.
 * Gry z dysku twardego/CD nie są przesyłane (tylko dyskietki).

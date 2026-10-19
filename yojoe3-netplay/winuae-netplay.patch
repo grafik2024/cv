@@ -324,10 +324,10 @@ index b93cd98..89e8599 100644
  		for (int i = 0; i < MAX_JPORTS; i++) {
 diff --git a/netplay.cpp b/netplay.cpp
 new file mode 100644
-index 0000000..fb9ad24
+index 0000000..7e34618
 --- /dev/null
 +++ b/netplay.cpp
-@@ -0,0 +1,1909 @@
+@@ -0,0 +1,1941 @@
 +/*
 +* UAE - The Un*x Amiga Emulator
 +*
@@ -884,11 +884,26 @@ index 0000000..fb9ad24
 +	}
 +}
 +
-+// both players need the same emulator version, emulation may differ between versions
++// both players need the same emulator version and platform: Windows and Unix
++// builds of the same source were seen to emulate differently
 +std::string version_string(void)
 +{
-+	char tmp[64];
-+	sprintf(tmp, "WinUAE %d.%d.%d", UAEMAJOR, UAEMINOR, UAESUBREV);
++#if defined(_WIN32)
++	const char *os = "Windows";
++#elif defined(__APPLE__)
++	const char *os = "macOS";
++#else
++	const char *os = "Unix";
++#endif
++#if defined(_M_ARM64) || defined(__aarch64__)
++	const char *arch = "ARM64";
++#elif defined(_M_X64) || defined(__x86_64__)
++	const char *arch = "x64";
++#else
++	const char *arch = "x86";
++#endif
++	char tmp[128];
++	sprintf(tmp, "WinUAE %d.%d.%d %s %s", UAEMAJOR, UAEMINOR, UAESUBREV, os, arch);
 +	return std::string(tmp);
 +}
 +
@@ -1079,6 +1094,8 @@ index 0000000..fb9ad24
 +		"gfx_", "show_", "statusbar", "sound_", "kbd_lang",
 +		"serial_", "parallel_", "midi", "sampler", "statefile", "inprec", "trainerfile", "lua",
 +		"netplay", "rndseed", "headless", "ghostscript", "joyport", "chipset_refreshrate", "displaydata",
++		// JIT is refused in netplay, RTG modes are host display choices
++		"comp_", "compfpu", "rtg_modes",
 +		NULL
 +	};
 +	for (int i = 0; prefixes[i]; i++) {
@@ -1098,6 +1115,25 @@ index 0000000..fb9ad24
 +		return true;
 +	}
 +	return false;
++}
++
++// same rules for own and received lines, so host and client filters may differ
++void normalize_config(std::map<std::string, std::string> &m)
++{
++	for (auto it = m.begin(); it != m.end(); ) {
++		if (config_key_ignored(it->first))
++			it = m.erase(it);
++		else
++			++it;
++	}
++	// interrupts/normal/exact emulate Paula identically, only "none" differs
++	auto snd = m.find("sound_output");
++	if (snd != m.end() && snd->second != "none")
++		snd->second = "emulated";
++	// Zorro III start address differs between host platforms, unused without Z3 RAM
++	auto z3 = m.find("z3mem_size");
++	if (z3 == m.end() || z3->second == "0")
++		m.erase("z3mem_start");
 +}
 +
 +std::map<std::string, std::string> config_lines(struct uae_prefs *p)
@@ -1131,14 +1167,9 @@ index 0000000..fb9ad24
 +		std::string k = line.substr(0, eq);
 +		if (k.size() > 5 && !k.compare(k.size() - 5, 5, ".utf8"))
 +			continue;
-+		if (config_key_ignored(k))
-+			continue;
-+		std::string v = line.substr(eq + 1);
-+		// interrupts/normal/exact emulate Paula identically, only "none" differs
-+		if (k == "sound_output" && v != "none")
-+			v = "emulated";
-+		out[k] = v;
++		out[k] = line.substr(eq + 1);
 +	}
++	normalize_config(out);
 +	return out;
 +}
 +
@@ -1166,6 +1197,7 @@ index 0000000..fb9ad24
 +		if (eq != std::string::npos)
 +			h[line.substr(0, eq)] = line.substr(eq + 1);
 +	}
++	normalize_config(h);
 +	auto c = config_lines(&changed_prefs);
 +	std::string diff;
 +	int cnt = 0;

@@ -11,6 +11,7 @@ przy jednej Amidze z dwoma joystickami.
 CO JEST W FOLDERZE
 ------------------
   winuae64.exe          WinUAE z netplay (obaj gracze muszą mieć TEN SAM plik)
+  winuae.ini            ustawienia WinUAE (wyłącza okienko o wersji beta)
   YoJoe3_netplay.uae    wspólna konfiguracja Amigi (nie zmieniaj jej u jednego)
   HOST_gra_online.bat   uruchamia grę jako host (gracz 1)
   DOLACZ_do_gry.bat     dołącza do hosta (gracz 2)
@@ -60,5 +61,7 @@ DOBRZE WIEDZIEĆ
 - Jeśli na ekranie pojawi się "Netplay: DESYNC", zamknijcie WinUAE
   u obu i połączcie się od nowa.
 - Gdy połączenie zostanie zerwane, gra działa dalej u każdego osobno.
+- Obaj gracze grają na Windows tą samą paczką. Inna wersja WinUAE albo
+  inny system (np. Linux/macOS) jest odrzucana przy łączeniu.
 
 Szczegóły techniczne: README_netplay.md
