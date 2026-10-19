@@ -1,0 +1,18 @@
+; Test zmiany dyskietek w trakcie sesji: A500 jak w gra/YoJoe3_netplay.uae,
+; ale z JEDNA stacja dyskow (DF0), wiec gra prosi o dysk 2 i host go wklada.
+config_description=Yo! Joe! 3 - netplay, jedna stacja (test dyskietek)
+use_gui=no
+quickstart=a500,0
+kickstart_rom_file=:AROS
+chipmem_size=1
+bogomem_size=2
+fastmem_size=0
+nr_floppies=1
+floppy0type=0
+floppy1type=-1
+floppy_speed=100
+cpu_speed=real
+sound_output=exact
+show_leds=true
+joyport0=mouse
+joyport1=kbd2

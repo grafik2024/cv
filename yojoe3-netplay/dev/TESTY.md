@@ -16,6 +16,9 @@ w **każdej** klatce; plik hosta i klienta muszą być identyczne.
 dev/build-linux.sh /tmp/np                       # WinUAE z łatką -> /tmp/np/build/winuae
 cp -r dev/testy/coop /tmp/coop
 dev/nptest.sh /tmp/np/build/winuae KATALOG_Z_ADF /tmp/coop 25200
+# cała gra (~20 min) i zmiana dyskietek; rndseed = ta sama losowość co w wynikach
+dev/nptest.sh /tmp/np/build/winuae KATALOG_Z_ADF /tmp/cala_gra 25201 -s rndseed=4242
+dev/nptest.sh /tmp/np/build/winuae KATALOG_Z_ADF /tmp/dyskietka 25202 -s rndseed=4242
 ```
 
 ## Wyniki
@@ -38,13 +41,21 @@ dev/nptest.sh /tmp/np/build/winuae KATALOG_Z_ADF /tmp/coop 25200
 | 14 | **Windows ↔ Windows**: `winuae64.exe` z GitHub Actions, host i klient pod Wine 9.0 + Xvfb (bez karty dźwiękowej, `winuae.ini` z paczki), trainer, menu → TWO PLAYER → START, obaj gracze biegają i strzelają. Powtórzone na finalnym artefakcie (run #3) z przesłaniem dysków od nowa | 8 002 | sumy identyczne w każdej klatce, 3/3 zrzuty identyczne (WinUAE pod Wine robi ~42 kl./s, więc partner częściej czeka – gra i tak idzie dalej) |
 | 15 | Windows (Wine) host ↔ Linux klient | 8 001 | protokół, transfer dysków i lockstep działają, ale emulacja buildu Windows i Unix różni się od klatki 96 (wykryte „DESYNC” u obu). Mapy pamięci i porównywana konfiguracja są identyczne, więc różnica jest w kodzie platform. Wniosek: wersja w handshake zawiera teraz platformę (`WinUAE 6.1.0 Windows x64`) i sesja mieszana jest odrzucana przed startem – sprawdzone na finalnym artefakcie: „Connection refused: Different emulator version: host WinUAE 6.1.0 Windows x64, player 2 WinUAE 6.1.0 Unix x64” |
 | 16 | Host bez działającego audio (`SDL_AUDIODRIVER` z błędną nazwą) ↔ klient z audio, Linux | 8 002 | identyczne – brak karty dźwiękowej nie psuje synchronizacji |
+| 17 | `testy/cala_gra`: cała gra od trainera do zakończenia (HELP co 300 klatek), tabela rekordów – Joe wpisuje „JOE” z klawiatury hosta, Nat „NAT” z klawiatury klienta – potem START i nowa gra dwóch graczy | 64 001 | sumy identyczne w każdej klatce, 27/27 zrzutów identycznych (`zrzuty/cala_gra_koniec_rekordy_nowa_gra.png`). Wcześniej znaleziony błąd: gra z jedną wyłączoną stacją i obrazem wpisanym w DF1 u hosta rozjeżdżała się w klatce 241 (obraz w wyłączonej stacji zmienia emulację) – host teraz czyści takie sloty |
+| 18 | `testy/dyskietka`: `nr_floppies=1`; po 1. poziomie gra prosi „Insert Disk 2”, host wkłada B (`disk @DISKB@ 0`) – klient nie ma B, 901 120 B przesłane w trakcie gry; potem wysunięcie, A, B (z pamięci podręcznej klienta); klient w klatkach 9000/9100 próbuje zmienić dysk | 20 002 | sumy identyczne, 16/16 zrzutów; gra ładuje kolejne poziomy z nowo włożonego dysku u obu; log klienta: „floppy 1 received”, „found in cache” ×2, „DF0 change refused” ×2 |
+| 19 | Ponowne połączenie (3 procesy): host + klient 1 grają 6 900 klatek (trainer, menu, gra 2 graczy), host kończy sesję i robi twardy reset (`leave`), łączy się klient 2 (świeży proces, pobiera dyski) | 6 900 + 6 900 | druga sesja identyczna co do klatki z pierwszą. Wcześniej rozjazd: konfiguracja „rtc” zmieniona przez sesję (odrzucenie klienta), rejestry CPU, mechanika stacji i RAM AROS pod `$A80000` przetrwały reset – teraz zerowane na starcie sesji, a RAM `$A80000` jest w sumie kontrolnej |
+| 20 | UPnP z atrapą routera (`fake_igd.py`: SSDP multicast, opis urządzenia w kodowaniu chunked, SOAP) | – | `AddPortMapping` (dzierżawa 7200 s) + `GetExternalIPAddress` → pasek tytułu „203.0.113.7 port …”, `DeletePortMapping` po sesji; router „tylko stałe dzierżawy” (725) → ponowienie z 0; port przekierowany na inny komputer (718) → komunikat, bez usuwania cudzego wpisu; brak routera → komunikat po 2,5 s, sesja działa |
 
 Czas od uruchomienia do startu sesji w LAN: ~1,5 s (łącznie z przesłaniem
 2 × 880 KB dysków).
 
 ## Narzędzia
 
-* `nptest.sh` – sesja host + klient, porównanie sum.
+* `nptest.sh` – sesja host + klient, porównanie sum. W skryptach
+  `@DISKA@`/`@DISKB@` to ścieżki dysków gry; `game.uae` z `nr_floppies=1`
+  dostaje tylko dysk A.
+* `fake_igd.py PORT_HTTP [--only-permanent] [--conflict IP]` – atrapa routera
+  UPnP do testów otwierania portu.
 * `latency_proxy.py PORT_NASŁUCH PORT_HOSTA OPÓŹNIENIE_MS [JITTER_MS]` – proxy TCP
   dodające opóźnienie w obie strony (klient łączy się przez nie:
   `CLIENT_ARGS="-s netplay_address=127.0.0.1:PORT_NASŁUCH"`).

@@ -20,9 +20,10 @@ HOST (gracz 1)
 --------------
 1. Skopiuj do tego folderu oba dyski gry: ..._A.adf i ..._B.adf
 2. Uruchom HOST_gra_online.bat, wybierz sterowanie.
-3. Podaj graczowi 2 swój adres IP (patrz "POŁĄCZENIE" niżej).
-4. Okno WinUAE czeka na gracza 2 - stan widać na pasku tytułu okna.
+3. Okno WinUAE czeka na gracza 2. Na pasku tytułu okna widać adres,
+   który podajesz graczowi 2 (patrz "POŁĄCZENIE" niżej).
    Windows może zapytać o zaporę - kliknij "Zezwól".
+   Esc w oknie WinUAE przerywa czekanie (gra rusza bez netplay).
 
 DOŁĄCZ (gracz 2)
 ----------------
@@ -33,21 +34,34 @@ DOŁĄCZ (gracz 2)
    Swój joystick/klawiaturę ustawiasz jak zwykle - program sam przeniesie
    go do portu 1 Amigi, więc sterujesz drugą postacią (Nat).
 
+INNE GRY / BEZ PLIKÓW .BAT
+--------------------------
+W oknie ustawień WinUAE (F12) jest strona "Netplay" (w grupie Host):
+  Host  - wybierz, włóż dyskietki, Start (albo Reset, jeśli gra już działa)
+  Join  - wybierz, wpisz adres hosta, Start
+Obaj gracze wczytują przedtem tę samą konfigurację (.uae). Tak można grać
+w dowolną grę na dwóch graczy z dyskietek.
+
 W GRZE
 ------
 - Trainer TRSI: F1-F5 działają u obu graczy. Start: gracz 2 wciska fire
   (albo host klika lewym przyciskiem myszy w oknie gry).
 - Ekran tytułowy: zjedź na OPTIONS, fire, ustaw "TWO PLAYER" (fire),
   zjedź na OK, fire. Potem START.
-- Klawiatura działa u obu (np. wpisywanie imienia do tabeli rekordów).
+- Klawiatura działa u obu. Tabela rekordów: najpierw imię wpisuje Joe
+  (host) i Enter, potem Nat (gracz 2) i Enter.
 
 POŁĄCZENIE
 ----------
-Najprościej: obaj zainstalujcie darmowy Radmin VPN, ZeroTier albo Tailscale,
-dołączcie do wspólnej sieci i jako adres hosta wpiszcie adres z tej sieci.
+Najczęściej nic nie trzeba robić: WinUAE hosta prosi router o otwarcie
+portu (UPnP) i pokazuje na pasku tytułu publiczny adres - gracz 2 wpisuje
+właśnie ten adres. Strona "Netplay" w oknie ustawień pokazuje wynik.
 
-Bez VPN: host przekierowuje w routerze port TCP 25200 na swój komputer,
-a gracz 2 wpisuje publiczny adres hosta (np. z https://ifconfig.me).
+Gdy router nie obsługuje UPnP:
+- obaj instalujcie darmowy Radmin VPN, ZeroTier albo Tailscale,
+  dołączcie do wspólnej sieci i wpiszcie adres hosta z tej sieci
+  (pasek tytułu hosta pokazuje też adresy LAN/VPN), albo
+- host przekierowuje w routerze port TCP 25200 na swój komputer.
 Własny port: wpisz go przy starcie hosta, a gracz 2 podaje adres:port.
 
 DOBRZE WIEDZIEĆ
@@ -56,13 +70,18 @@ DOBRZE WIEDZIEĆ
   przy pingu ok. 90 ms).
 - Gdy jeden gracz zatrzyma grę (pauza, F12, minimalizacja z pauzą),
   drugi czeka. Po wznowieniu gra toczy się dalej.
-- Reset (Ctrl+Amiga+Amiga, przycisk Reset w GUI) wykonuje się u obu naraz.
-- W trakcie sesji nie zmieniaj dyskietek ani ustawień emulatora (F12) -
-  zmiana tylko u jednego gracza rozjechałaby grę. WinUAE to zablokuje
-  albo ostrzeże.
+- Reset (Ctrl+Amiga+Amiga, przycisk Reset w GUI) i tryb turbo (warp)
+  działają u obu naraz.
+- Dyskietki zmienia tylko host (pasek stanu, F12, skróty) - zmiana dzieje
+  się u obu w tej samej chwili, a gracz 2 dostaje nowy dysk automatycznie.
+  Przydaje się w grach na jedną stację, które proszą o "Disk 2".
+- Nie zmieniaj ustawień emulatora (F12) w trakcie gry - zmiana tylko
+  u jednego gracza rozjechałaby grę. WinUAE wtedy ostrzeże.
 - Jeśli na ekranie pojawi się "Netplay: DESYNC", zamknijcie WinUAE
   u obu i połączcie się od nowa.
 - Gdy połączenie zostanie zerwane, gra działa dalej u każdego osobno.
+  Twardy reset (przycisk Reset w F12) uruchamia netplay od nowa: host
+  znowu czeka, gracz 2 łączy się ponownie.
 - Obaj gracze grają na Windows tą samą paczką. Inna wersja WinUAE albo
   inny system (np. Linux/macOS) jest odrzucana przy łączeniu.
 

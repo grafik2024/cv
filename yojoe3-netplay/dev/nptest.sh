@@ -14,7 +14,12 @@
 #   <frame> event <INPUTEVENT name> <state>   local input, e.g. JOY2_FIRE_BUTTON 1
 #   <frame> shot <file.png>                   screenshot
 #   <frame> reset soft|hard                   synchronized reset
+#   <frame> warp 1|0                          synchronized warp mode
+#   <frame> disk <image> <drive>              floppy change (host: on both
+#                                             machines, client: refused)
+#   <frame> eject <drive>
 #   <frame> quit
+# @DISKA@ / @DISKB@ in a script are replaced by the paths of the game disks.
 # Each side writes "<frame> <state checksum>" for every frame to
 # host.hash / client.hash, the files must be identical.
 set -u
@@ -28,17 +33,23 @@ export SDL_AUDIODRIVER=${SDL_AUDIODRIVER:-dummy} SDL_VIDEODRIVER=${SDL_VIDEODRIV
 cd "$DIR"
 DISKA=$(ls "$ADF"/*_A.adf | head -1)
 DISKB=${DISKA%_A.adf}_B.adf
+# a game.uae with one drive gets disk A only
+DRIVE1=(-s "floppy1=$DISKB")
+grep -q '^nr_floppies=1' game.uae && DRIVE1=()
 mkdir -p hhome chome
 rm -f status.txt host.hash client.hash
+for f in host client; do
+	sed -e "s|@DISKA@|$DISKA|g" -e "s|@DISKB@|$DISKB|g" $f.script > $f.run.script
+done
 (HOME=$PWD/hhome timeout $TIMEOUT "$W" -f game.uae \
-	-s floppy0="$DISKA" -s floppy1="$DISKB" \
+	-s floppy0="$DISKA" "${DRIVE1[@]}" \
 	-s netplay=host -s netplay_port=$PORT \
-	-s netplay_debug_input=$PWD/host.script -s netplay_debug_log=$PWD/host.hash \
+	-s netplay_debug_input=$PWD/host.run.script -s netplay_debug_log=$PWD/host.hash \
 	${HOST_ARGS:-} "$@" > host.log 2>&1; echo "host exit $?" >> status.txt) &
 sleep 1
 (HOME=$PWD/chome timeout $TIMEOUT "$W" -f game.uae \
 	-s netplay=client -s netplay_address=127.0.0.1:$PORT \
-	-s netplay_debug_input=$PWD/client.script -s netplay_debug_log=$PWD/client.hash \
+	-s netplay_debug_input=$PWD/client.run.script -s netplay_debug_log=$PWD/client.hash \
 	${CLIENT_ARGS:-} "$@" > client.log 2>&1; echo "client exit $?" >> status.txt) &
 wait
 cat status.txt

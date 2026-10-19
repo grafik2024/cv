@@ -11,7 +11,7 @@ index 624d8fc..c5f5188 100644
      newcpu_common.cpp
      readcpu.cpp
 diff --git a/cfgfile.cpp b/cfgfile.cpp
-index 10fbd0d..f2f35ed 100644
+index 10fbd0d..5c5dd2e 100644
 --- a/cfgfile.cpp
 +++ b/cfgfile.cpp
 @@ -44,6 +44,7 @@
@@ -30,7 +30,7 @@ index 10fbd0d..f2f35ed 100644
  static const TCHAR *rtctype[] = { _T("none"), _T("MSM6242B"), _T("RP5C01A"), _T("MSM6242B_A2000"), 0 };
  static const TCHAR *ciaatodmode[] = { _T("vblank"), _T("50hz"), _T("60hz"), 0 };
  static const TCHAR *ksmirrortype[] = { _T("none"), _T("e0"), _T("a8+e0"), 0 };
-@@ -2200,6 +2202,16 @@ void cfgfile_save_options (struct zfile *f, struct uae_prefs *p, int type)
+@@ -2200,6 +2202,17 @@ void cfgfile_save_options (struct zfile *f, struct uae_prefs *p, int type)
  	if (p->trainerfile[0])
  		cfgfile_write_path2(f, _T("trainerfile"), p->trainerfile, PATH_NONE);
  
@@ -42,12 +42,13 @@ index 10fbd0d..f2f35ed 100644
 +		cfgfile_dwrite_str(f, _T("netplay_password"), p->netplay_password);
 +		cfgfile_write_bool(f, _T("netplay_swap_ports"), p->netplay_swapports);
 +		cfgfile_write_bool(f, _T("netplay_mouse"), p->netplay_mouse);
++		cfgfile_write_bool(f, _T("netplay_upnp"), p->netplay_upnp);
 +	}
 +
  	if (p->statefile[0])
  		cfgfile_write_path2(f, _T("statefile"), p->statefile, PATH_NONE);
  	if (p->quitstatefile[0])
-@@ -4471,6 +4483,22 @@ static int cfgfile_parse_host (struct uae_prefs *p, TCHAR *option, TCHAR *value)
+@@ -4471,6 +4484,23 @@ static int cfgfile_parse_host (struct uae_prefs *p, TCHAR *option, TCHAR *value)
  	if (cfgfile_path(option, value, _T("trainerfile"), p->trainerfile, sizeof p->trainerfile / sizeof(TCHAR)))
  		return 1;
  
@@ -63,6 +64,7 @@ index 10fbd0d..f2f35ed 100644
 +		|| cfgfile_intval(option, value, _T("netplay_delay"), &p->netplay_delay, 1)
 +		|| cfgfile_yesno(option, value, _T("netplay_swap_ports"), &p->netplay_swapports)
 +		|| cfgfile_yesno(option, value, _T("netplay_mouse"), &p->netplay_mouse)
++		|| cfgfile_yesno(option, value, _T("netplay_upnp"), &p->netplay_upnp)
 +		|| cfgfile_path(option, value, _T("netplay_debug_input"), p->netplay_debug_input, sizeof p->netplay_debug_input / sizeof(TCHAR))
 +		|| cfgfile_path(option, value, _T("netplay_debug_log"), p->netplay_debug_log, sizeof p->netplay_debug_log / sizeof(TCHAR)))
 +		return 1;
@@ -70,17 +72,42 @@ index 10fbd0d..f2f35ed 100644
  	if (cfgfile_path(option, value, _T("statefile_quit"), p->quitstatefile, sizeof p->quitstatefile / sizeof (TCHAR)))
  		return 1;
  
-@@ -9073,6 +9101,8 @@ static void buildin_default_prefs (struct uae_prefs *p)
+@@ -9073,6 +9103,9 @@ static void buildin_default_prefs (struct uae_prefs *p)
  #ifdef GDBSERVER
  	p->gdb_port = 2345;
  #endif
 +	p->netplay_port = NETPLAY_DEFAULT_PORT;
 +	p->netplay_swapports = true;
++	p->netplay_upnp = true;
  
  	target_default_options (p, 1);
  	cfgfile_compatibility_romtype(p);
+diff --git a/custom.cpp b/custom.cpp
+index 014b13f..0756520 100644
+--- a/custom.cpp
++++ b/custom.cpp
+@@ -29,6 +29,7 @@
+ #include "blitter.h"
+ #include "xwin.h"
+ #include "inputdevice.h"
++#include "netplay.h"
+ #ifdef SERIAL_PORT
+ #include "serial.h"
+ #endif
+@@ -8824,6 +8825,11 @@ void check_prefs_changed_custom(void)
+ 	if (!config_changed)
+ 		return;
+ 	currprefs.gfx_framerate = changed_prefs.gfx_framerate;
++	if (netplay_active()) {
++		// warp is switched on both machines by netplay
++		changed_prefs.turbo_emulation = currprefs.turbo_emulation;
++		changed_prefs.turbo_emulation_limit = currprefs.turbo_emulation_limit;
++	}
+ 	if (currprefs.turbo_emulation_limit != changed_prefs.turbo_emulation_limit) {
+ 		currprefs.turbo_emulation_limit = changed_prefs.turbo_emulation_limit;
+ 		if (changed_prefs.turbo_emulation) {
 diff --git a/disk.cpp b/disk.cpp
-index 5ace5a8..6fa2fa0 100644
+index 5ace5a8..aa03617 100644
 --- a/disk.cpp
 +++ b/disk.cpp
 @@ -53,6 +53,7 @@ int disk_debug_track = -1;
@@ -91,26 +118,181 @@ index 5ace5a8..6fa2fa0 100644
  #ifdef AMAX
  #include "amax.h"
  #endif
-@@ -3341,6 +3342,13 @@ static void disk_insert_2 (int num, const TCHAR *name, bool forced, bool forcedw
+@@ -846,6 +847,8 @@ static bool drive_writeprotected(drive *drv)
+ 	return currprefs.floppy_read_only || drv->wrprot || drv->forcedwrprot || drv->diskfile == NULL;
+ }
+ 
++static void disk_eject_internal (int num);
++
+ static void reset_drive (int num)
+ {
+ 	drive *drv = &floppy[num];
+@@ -894,7 +897,7 @@ static void reset_drive (int num)
+ 	}
+ #endif
+ 	if (!drive_insert (drv, &currprefs, num, currprefs.floppyslots[num].df, false, false))
+-		disk_eject (num);
++		disk_eject_internal (num);
+ }
+ 
+ /* code for track display */
+@@ -3273,7 +3276,7 @@ int disk_setwriteprotect (struct uae_prefs *p, int num, const TCHAR *fname_in, b
+ 	return 1;
+ }
+ 
+-void disk_eject (int num)
++static void disk_eject_internal (int num)
+ {
+ 	set_config_changed ();
+ 	gui_filename (num, _T(""));
+@@ -3283,6 +3286,14 @@ void disk_eject (int num)
+ 	update_drive_gui (num, true);
+ }
+ 
++void disk_eject (int num)
++{
++	// during netplay the eject happens on both machines in the same frame
++	if (netplay_request_disk (num, NULL, false))
++		return;
++	disk_eject_internal (num);
++}
++
+ int DISK_history_add(const TCHAR *name, int idx, int type, int nopathfix)
+ {
+ 	int i;
+@@ -3337,16 +3348,10 @@ TCHAR *DISK_history_get (int idx, int type)
+ 	return dfxhistory[type][idx];
+ }
+ 
+-static void disk_insert_2 (int num, const TCHAR *name, bool forced, bool forcedwriteprotect)
++static void disk_change (int num, const TCHAR *name, bool forcedwriteprotect)
  {
  	drive *drv = floppy + num;
  
-+	if (!forced && netplay_active()) {
-+		// a floppy change on one machine only would desync netplay
-+		if (_tcscmp(currprefs.floppyslots[num].df, name))
-+			statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: floppy change not possible during a session"));
+-	if (forced) {
+-		drive_insert (drv, &currprefs, num, name, false, forcedwriteprotect);
+-		return;
+-	}
+-	if (!_tcscmp (currprefs.floppyslots[num].df, name))
+-		return;
+ 	drv->dskeject = false;
+ 	_tcscpy(drv->newname, name);
+ 	drv->newnamewriteprotected = forcedwriteprotect;
+@@ -3354,7 +3359,7 @@ static void disk_insert_2 (int num, const TCHAR *name, bool forced, bool forcedw
+ 	currprefs.floppyslots[num].forcedwriteprotect = forcedwriteprotect;
+ 	DISK_history_add (name, -1, HISTORY_FLOPPY, 0);
+ 	if (name[0] == 0) {
+-		disk_eject (num);
++		disk_eject_internal (num);
+ 	} else if (!drive_empty(drv) || drv->dskchange_time > 0) {
+ 		// delay eject so that it is always called when emulation is active
+ 		drv->dskeject = true;
+@@ -3366,6 +3371,32 @@ static void disk_insert_2 (int num, const TCHAR *name, bool forced, bool forcedw
+ 	}
+ }
+ 
++static void disk_insert_2 (int num, const TCHAR *name, bool forced, bool forcedwriteprotect)
++{
++	drive *drv = floppy + num;
++
++	if (forced) {
++		drive_insert (drv, &currprefs, num, name, false, forcedwriteprotect);
++		return;
++	}
++	if (!_tcscmp (currprefs.floppyslots[num].df, name))
++		return;
++	// during netplay the host's change happens on both machines in the same frame
++	if (netplay_request_disk (num, name, forcedwriteprotect)) {
 +		_tcscpy(changed_prefs.floppyslots[num].df, currprefs.floppyslots[num].df);
 +		return;
 +	}
- 	if (forced) {
- 		drive_insert (drv, &currprefs, num, name, false, forcedwriteprotect);
- 		return;
++	disk_change (num, name, forcedwriteprotect);
++}
++
++void disk_netplay_change (int num, const TCHAR *name, bool forcedwriteprotect)
++{
++	set_config_changed ();
++	_tcscpy (changed_prefs.floppyslots[num].df, name);
++	changed_prefs.floppyslots[num].forcedwriteprotect = forcedwriteprotect;
++	disk_change (num, name, forcedwriteprotect);
++}
++
+ void disk_insert (int num, const TCHAR *name, bool forcedwriteprotect)
+ {
+ 	set_config_changed ();
+@@ -5483,7 +5514,7 @@ void DISK_init (void)
+ 		/* reset all drive types to 3.5 DD */
+ 		drive_settype_id (drv);
+ 		if (!drive_insert (drv, &currprefs, dr, currprefs.floppyslots[dr].df, false, currprefs.floppyslots[dr].forcedwriteprotect))
+-			disk_eject (dr);
++			disk_eject_internal (dr);
+ 	}
+ #ifdef FLOPPYBRIDGE
+ 	floppybridge_init2(&currprefs);
+@@ -5495,6 +5526,44 @@ void DISK_init (void)
+ #endif
+ }
+ 
++// Floppy mechanics and controller as at emulator start. A reset keeps head
++// position, motor and side like real drives, netplay needs a hard reset to
++// look like power-on so that both machines start alike.
++void DISK_poweron (void)
++{
++	for (int dr = 0; dr < MAX_FLOPPY_DRIVES; dr++) {
++		drive *drv = &floppy[dr];
++#ifdef FLOPPYBRIDGE
++		if (drv->bridge)
++			continue;
++#endif
++#ifdef CATWEASEL
++		if (drv->catweasel)
++			continue;
++#endif
++		drive_image_free (drv);
++		memset (drv, 0, sizeof (drive));
++	}
++	side = direction = reserved_side = 0;
++	selected = 15;
++	disabled = reserved = 0;
++	dskdmaen = dsklength = dsklength2 = dsklen = dsklen2 = 0;
++	dskbytr_val = dskbytr_val_prev = 0;
++	dskbytr_delay = false;
++	dskpt = dskpt_start = 0;
++	fifo_filled = false;
++	memset (fifo, 0, sizeof fifo);
++	memset (fifo_inuse, 0, sizeof fifo_inuse);
++	dma_enable = bitoffset = syncoffset = 0;
++	word = dsksync = 0;
++	dsksync_on = false;
++	disk_hpos = disk_jitter = indexdecay = 0;
++	prev_data = 0;
++	prev_step = 0;
++	linecounter = 0;
++	DISK_init ();
++}
++
+ void DISK_reset (void)
+ {
+ 	if (savestate_state)
+diff --git a/include/disk.h b/include/disk.h
+index b41361c..4dc8097 100644
+--- a/include/disk.h
++++ b/include/disk.h
+@@ -76,6 +76,8 @@ extern int disk_empty (int num);
+ extern void disk_insert (int num, const TCHAR *name);
+ extern void disk_insert (int num, const TCHAR *name, bool forcedwriteprotect);
+ extern void disk_insert_force (int num, const TCHAR *name, bool forcedwriteprotect);
++extern void disk_netplay_change (int num, const TCHAR *name, bool forcedwriteprotect);
++extern void DISK_poweron (void);
+ extern void DISK_vsync (void);
+ extern int DISK_validate_filename (struct uae_prefs *p, const TCHAR *fname, int num, TCHAR *outfname, int leave_open, bool *wrprot, uae_u32 *crc32, struct zfile **zf);
+ extern void DISK_handler (uae_u32);
 diff --git a/include/netplay.h b/include/netplay.h
 new file mode 100644
-index 0000000..e76d8ce
+index 0000000..ff46d0a
 --- /dev/null
 +++ b/include/netplay.h
-@@ -0,0 +1,44 @@
+@@ -0,0 +1,50 @@
 + /*
 +  * UAE - The Un*x Amiga Emulator
 +  *
@@ -146,6 +328,10 @@ index 0000000..e76d8ce
 +extern bool netplay_playevent(int *nr, int *state, int *max, int *autofire);
 +/* reset requested by user (GUI/hotkey), returns true if it was synchronized */
 +extern bool netplay_request_reset(int hardreset, int keyboardreset);
++/* warp on (1), off (0) or toggle (-1) on both machines, returns true if synchronized */
++extern bool netplay_request_warp(int mode);
++/* floppy insert (name) or eject (NULL) of the host on both machines, returns true if handled by netplay */
++extern bool netplay_request_disk(int num, const TCHAR *name, bool wp);
 +/* inputcodes (AKS_xxx) that would only change one machine are refused */
 +extern bool netplay_allow_inputcode(int code, int state);
 +/* emulated port types used during the session */
@@ -153,13 +339,15 @@ index 0000000..e76d8ce
 +
 +extern void netplay_getstatus(TCHAR *out);
 +extern void netplay_exit(void);
++/* status, addresses of this computer and UPnP result for the GUI */
++extern void netplay_getinfo(TCHAR *out, int maxlen);
 +
 +#endif /* UAE_NETPLAY_H */
 diff --git a/include/options.h b/include/options.h
-index 547a165..d511b8c 100644
+index 547a165..d0ac66e 100644
 --- a/include/options.h
 +++ b/include/options.h
-@@ -806,6 +806,15 @@ struct uae_prefs {
+@@ -806,6 +806,16 @@ struct uae_prefs {
  	TCHAR statefile_path[MAX_DPATH];
  	TCHAR inprecfile[MAX_DPATH];
  	TCHAR trainerfile[MAX_DPATH];
@@ -170,13 +358,14 @@ index 547a165..d511b8c 100644
 +	TCHAR netplay_password[64];
 +	bool netplay_swapports;
 +	bool netplay_mouse;
++	bool netplay_upnp;
 +	TCHAR netplay_debug_input[MAX_DPATH];
 +	TCHAR netplay_debug_log[MAX_DPATH];
  	bool inprec_autoplay;
  	bool refresh_indicator;
  
 diff --git a/inputdevice.cpp b/inputdevice.cpp
-index b93cd98..89e8599 100644
+index b93cd98..3272675 100644
 --- a/inputdevice.cpp
 +++ b/inputdevice.cpp
 @@ -29,6 +29,7 @@
@@ -243,7 +432,17 @@ index b93cd98..89e8599 100644
  	if (state && needcputrace(code) && can_cpu_tracer() == true && is_cpu_tracer() == false && !input_play && !input_record && !debugging) {
  		if (set_cpu_tracer (true)) {
  			tracer_enable = 1;
-@@ -5085,10 +5103,12 @@ static bool inputdevice_handle_inputcode2(int monid, int code, int state, const
+@@ -5049,7 +5067,8 @@ static bool inputdevice_handle_inputcode2(int monid, int code, int state, const
+ 		autopause = 1;
+ 		break;
+ 	case AKS_WARP:
+-		warpmode (newstate);
++		if (!netplay_request_warp(newstate))
++			warpmode (newstate);
+ 		break;
+ 	case AKS_INHIBITSCREEN:
+ 		toggle_inhibit_frame(monid, IHF_SCROLLLOCK);
+@@ -5085,10 +5104,12 @@ static bool inputdevice_handle_inputcode2(int monid, int code, int state, const
  		uae_quit ();
  		break;
  	case AKS_SOFTRESET:
@@ -258,7 +457,7 @@ index b93cd98..89e8599 100644
  		break;
  	case AKS_RESTART:
  		uae_restart(&currprefs, -1, NULL);
-@@ -5361,6 +5381,8 @@ static int handle_input_event2(int nr, int state, int max, int flags, int extra)
+@@ -5361,6 +5382,8 @@ static int handle_input_event2(int nr, int state, int max, int flags, int extra)
  	}
  #endif
  	if (!isaks) {
@@ -267,7 +466,7 @@ index b93cd98..89e8599 100644
  		if (input_record && input_record != INPREC_RECORD_PLAYING)
  			inprec_recordevent (nr, state, max, autofire);
  		if (input_play && state && (flags & HANDLE_IE_FLAG_CANSTOPPLAYBACK)) {
-@@ -5497,7 +5519,7 @@ static int handle_input_event2(int nr, int state, int max, int flags, int extra)
+@@ -5497,7 +5520,7 @@ static int handle_input_event2(int nr, int state, int max, int flags, int extra)
  				}
  
  				if (ie->data == 0 && old != (joybutton[joy] & (1 << ie->data)) && currprefs.cpu_cycle_exact) {
@@ -276,7 +475,7 @@ index b93cd98..89e8599 100644
  						// emulate contact bounce, 1st button only, others have capacitors
  						bouncy = 1;
  						bouncy_cycles = get_cycles () + CYCLE_UNIT * currprefs.input_contact_bounce;
-@@ -6724,6 +6746,28 @@ static void check_enable(int ei)
+@@ -6724,6 +6747,28 @@ static void check_enable(int ei)
  	islightpen(ei);
  }
  
@@ -305,7 +504,7 @@ index b93cd98..89e8599 100644
  static void scanevents (struct uae_prefs *p)
  {
  	int i, j, k, ei;
-@@ -8083,7 +8127,7 @@ bool inputdevice_set_gameports_mapping (struct uae_prefs *prefs, int devnum, int
+@@ -8083,7 +8128,7 @@ bool inputdevice_set_gameports_mapping (struct uae_prefs *prefs, int devnum, int
  
  static void resetinput (void)
  {
@@ -314,7 +513,7 @@ index b93cd98..89e8599 100644
  		return;
  	cd32_shifter[0] = cd32_shifter[1] = 8;
  	for (int i = 0; i < MAX_JPORTS; i++) {
-@@ -8182,6 +8226,7 @@ void inputdevice_updateconfig_internal (struct uae_prefs *srcprefs, struct uae_p
+@@ -8182,6 +8227,7 @@ void inputdevice_updateconfig_internal (struct uae_prefs *srcprefs, struct uae_p
  
  	disableifempty (dstprefs);
  	scanevents (dstprefs);
@@ -322,12 +521,34 @@ index b93cd98..89e8599 100644
  
  	if (srcprefs) {
  		for (int i = 0; i < MAX_JPORTS; i++) {
+diff --git a/keybuf.cpp b/keybuf.cpp
+index f6d4bc0..ce2614e 100644
+--- a/keybuf.cpp
++++ b/keybuf.cpp
+@@ -19,6 +19,7 @@
+ #include "options.h"
+ #include "keybuf.h"
+ #include "inputdevice.h"
++#include "netplay.h"
+ #include "custom.h"
+ 
+ int key_swap_hack2 = false;
+@@ -268,7 +269,8 @@ void keybuf_vsync(void)
+ 
+ int record_key(int kc, bool direct)
+ {
+-	if (pause_emulation)
++	// netplay applies keys on both machines, a local pause must not drop them
++	if (pause_emulation && !netplay_active())
+ 		return 0;
+ 	return record_key_direct(kc, direct);
+ }
 diff --git a/netplay.cpp b/netplay.cpp
 new file mode 100644
-index 0000000..7e34618
+index 0000000..039d8da
 --- /dev/null
 +++ b/netplay.cpp
-@@ -0,0 +1,1941 @@
+@@ -0,0 +1,2805 @@
 +/*
 +* UAE - The Un*x Amiga Emulator
 +*
@@ -356,6 +577,7 @@ index 0000000..7e34618
 +#include <netinet/tcp.h>
 +#include <arpa/inet.h>
 +#include <netdb.h>
++#include <ifaddrs.h>
 +#include <fcntl.h>
 +#include <unistd.h>
 +#include <errno.h>
@@ -385,13 +607,14 @@ index 0000000..7e34618
 +#include <deque>
 +#include <map>
 +#include <chrono>
++#include <algorithm>
 +
 +#if defined(_MSC_VER)
 +#pragma comment(lib, "ws2_32.lib")
 +#endif
 +
 +#define NP_MAGIC 0x57554e50 /* 'WUNP' */
-+#define NP_PROTOCOL 1
++#define NP_PROTOCOL 2
 +#define NP_RING 128
 +#define NP_MAXDELAY 15
 +#define NP_MAXMSG (4 * 1024 * 1024)
@@ -399,6 +622,8 @@ index 0000000..7e34618
 +#define NP_HASHINTERVAL 50
 +#define NP_MAXDRIVES 4
 +#define NP_MAXDISKSIZE (64 * 1024 * 1024)
++/* floppy changed during the session is sent at most this much per frame */
++#define NP_DISKRATE 16384
 +
 +enum {
 +	MSG_HELLO = 1,
@@ -412,7 +637,11 @@ index 0000000..7e34618
 +	MSG_FRAME,
 +	MSG_HASH,
 +	MSG_BYE,
-+	MSG_READY
++	MSG_READY,
++	MSG_DISKOFFER,
++	MSG_DISKREPLY,
++	MSG_DISKCHUNK,
++	MSG_DISKREADY
 +};
 +
 +#define NPEV_AUTOFIRE 1
@@ -421,6 +650,10 @@ index 0000000..7e34618
 +#define NPSPECIAL_SOFTRESET 1
 +#define NPSPECIAL_HARDRESET 2
 +#define NPSPECIAL_KEYBOARDRESET 3
++#define NPSPECIAL_WARPON 4
++#define NPSPECIAL_WARPOFF 5
++/* nr = drive, max = image id (0 = eject) */
++#define NPSPECIAL_DISK 6
 +
 +enum { NP_OFF, NP_HANDSHAKE, NP_RUNNING };
 +
@@ -533,6 +766,25 @@ index 0000000..7e34618
 +	uae_u32 received;
 +};
 +
++// floppy image changed by the host during the session
++struct npxfer
++{
++	int state;
++	uae_u32 id;
++	int drive;
++	bool wp;
++	uae_u32 size, crc, pos;
++	std::vector<uae_u8> data;
++	std::basic_string<TCHAR> path;
++};
++enum { XFER_IDLE, XFER_OFFERED, XFER_SENDING, XFER_WAITREADY, XFER_RECEIVING };
++
++struct npdiskref
++{
++	std::basic_string<TCHAR> path;
++	bool wp;
++};
++
 +struct npdebugstep
 +{
 +	uae_u32 frame;
@@ -542,7 +794,6 @@ index 0000000..7e34618
 +};
 +
 +int np_state = NP_OFF;
-+bool np_started;
 +bool sockets_started;
 +bool is_host;
 +np_socket listener = np_invalid, sock = np_invalid;
@@ -552,6 +803,7 @@ index 0000000..7e34618
 +TCHAR np_error[512];
 +TCHAR np_status[256];
 +bool np_failed;
++bool np_cancelled;
 +
 +uae_u32 np_seed;
 +int np_delay;
@@ -574,6 +826,9 @@ index 0000000..7e34618
 +uae_u32 wait_frames;
 +
 +npdisk disks[NP_MAXDRIVES];
++npxfer xfer;
++std::map<uae_u32, npdiskref> disk_table;
++uae_u32 disk_counter;
 +
 +std::string session_config;
 +bool config_change_reported;
@@ -592,6 +847,14 @@ index 0000000..7e34618
 +	char *c = uutf8(s);
 +	std::string r(c ? c : "");
 +	xfree(c);
++	return r;
++}
++
++std::basic_string<TCHAR> to_tchar(const std::string &s)
++{
++	TCHAR *t = utf8u(s.c_str());
++	std::basic_string<TCHAR> r(t ? t : _T(""));
++	xfree(t);
 +	return r;
 +}
 +
@@ -717,6 +980,7 @@ index 0000000..7e34618
 +
 +void handle_frame_msg(const npmsg &m);
 +void handle_hash_msg(const npmsg &m);
++void handle_disk_msg(const npmsg &m);
 +
 +// messages that can arrive at any time are handled here, the rest is queued
 +void dispatch(npmsg &m)
@@ -746,6 +1010,12 @@ index 0000000..7e34618
 +		break;
 +	case MSG_HASH:
 +		handle_hash_msg(m);
++		break;
++	case MSG_DISKOFFER:
++	case MSG_DISKREPLY:
++	case MSG_DISKCHUNK:
++	case MSG_DISKREADY:
++		handle_disk_msg(m);
 +		break;
 +	case MSG_BYE:
 +	case MSG_REJECT:
@@ -843,9 +1113,29 @@ index 0000000..7e34618
 +	return !np_failed;
 +}
 +
++// Esc in the emulator window cancels waiting for the partner
++bool esc_pressed(void)
++{
++#ifdef _WIN32
++	if (!(GetAsyncKeyState(VK_ESCAPE) & 0x8000))
++		return false;
++	DWORD pid = 0;
++	GetWindowThreadProcessId(GetForegroundWindow(), &pid);
++	return pid == GetCurrentProcessId();
++#else
++	return false;
++#endif
++}
++
 +bool user_quit(void)
 +{
-+	return quit_program == -UAE_QUIT || quit_program == UAE_QUIT;
++	if (quit_program == -UAE_QUIT || quit_program == UAE_QUIT)
++		return true;
++	if (np_state == NP_HANDSHAKE && esc_pressed()) {
++		np_cancelled = true;
++		return true;
++	}
++	return false;
 +}
 +
 +void pump_host(void)
@@ -882,6 +1172,402 @@ index 0000000..7e34618
 +			return false;
 +		}
 +	}
++}
++
++// IPv4 addresses of this computer (LAN, VPN), to tell player 2
++std::string local_addresses(void)
++{
++	std::string out;
++	auto add = [&out](const char *ip) {
++		if (!strncmp(ip, "127.", 4) || !strncmp(ip, "169.254.", 8) || out.find(ip) != std::string::npos)
++			return;
++		if (!out.empty())
++			out += ", ";
++		out += ip;
++	};
++#ifdef _WIN32
++	char name[256];
++	if (!start_sockets() || gethostname(name, sizeof name))
++		return out;
++	struct addrinfo hints, *res = NULL;
++	memset(&hints, 0, sizeof hints);
++	hints.ai_family = AF_INET;
++	hints.ai_socktype = SOCK_STREAM;
++	if (getaddrinfo(name, NULL, &hints, &res) || !res)
++		return out;
++	for (struct addrinfo *a = res; a; a = a->ai_next) {
++		char ip[64];
++		if (!getnameinfo(a->ai_addr, (int)a->ai_addrlen, ip, sizeof ip, NULL, 0, NI_NUMERICHOST))
++			add(ip);
++	}
++	freeaddrinfo(res);
++#else
++	struct ifaddrs *ifa = NULL;
++	if (getifaddrs(&ifa))
++		return out;
++	for (struct ifaddrs *a = ifa; a; a = a->ifa_next) {
++		char ip[64];
++		if (a->ifa_addr && a->ifa_addr->sa_family == AF_INET &&
++			!getnameinfo(a->ifa_addr, sizeof(struct sockaddr_in), ip, sizeof ip, NULL, 0, NI_NUMERICHOST))
++			add(ip);
++	}
++	freeifaddrs(ifa);
++#endif
++	return out;
++}
++
++// UPnP Internet Gateway Device: asks the home router to forward the
++// netplay port to this computer (SSDP discovery + SOAP AddPortMapping)
++struct npigd
++{
++	std::string host, control, service, localip, external;
++	int port;
++	int mapped;
++};
++npigd igd;
++std::string upnp_info;
++
++std::string lowercase(std::string s)
++{
++	for (auto &c : s)
++		c = (char)tolower((unsigned char)c);
++	return s;
++}
++
++std::string xml_value(const std::string &xml, const char *tag)
++{
++	std::string open = std::string("<") + tag + ">";
++	std::string close = std::string("</") + tag + ">";
++	size_t a = xml.find(open);
++	if (a == std::string::npos)
++		return std::string();
++	a += open.size();
++	size_t b = xml.find(close, a);
++	if (b == std::string::npos)
++		return std::string();
++	std::string v = xml.substr(a, b - a);
++	size_t f = v.find_first_not_of(" \t\r\n");
++	size_t l = v.find_last_not_of(" \t\r\n");
++	return f == std::string::npos ? std::string() : v.substr(f, l - f + 1);
++}
++
++bool parse_url(const std::string &url, std::string &host, int &port, std::string &path)
++{
++	if (lowercase(url.substr(0, 7)) != "http://")
++		return false;
++	size_t pe = url.find('/', 7);
++	std::string hp = url.substr(7, pe == std::string::npos ? std::string::npos : pe - 7);
++	path = pe == std::string::npos ? "/" : url.substr(pe);
++	port = 80;
++	size_t c = hp.find(':');
++	if (c != std::string::npos) {
++		port = atoi(hp.c_str() + c + 1);
++		hp = hp.substr(0, c);
++	}
++	host = hp;
++	return !host.empty() && port > 0 && port < 65536;
++}
++
++bool resolve4(const std::string &host, int port, struct sockaddr_in &sa)
++{
++	struct addrinfo hints, *res = NULL;
++	memset(&hints, 0, sizeof hints);
++	hints.ai_family = AF_INET;
++	char ps[16];
++	sprintf(ps, "%d", port);
++	if (getaddrinfo(host.c_str(), ps, &hints, &res) || !res)
++		return false;
++	memcpy(&sa, res->ai_addr, sizeof sa);
++	freeaddrinfo(res);
++	return true;
++}
++
++// small HTTP/1.1 client, returns status and (de-chunked) body
++bool http_request(const std::string &host, int port, const std::string &req, int &status, std::string &body, int timeout_ms)
++{
++	struct sockaddr_in sa;
++	if (!resolve4(host, port, sa))
++		return false;
++	np_socket s = socket(AF_INET, SOCK_STREAM, 0);
++	if (s == np_invalid)
++		return false;
++	np_nonblocking(s);
++	connect(s, (struct sockaddr*)&sa, sizeof sa);
++	std::string resp;
++	size_t sent = 0;
++	bool closed = false;
++	uae_s64 start = now_ms();
++	while (now_ms() - start < timeout_ms && !closed) {
++		fd_set rfds, wfds;
++		FD_ZERO(&rfds);
++		FD_ZERO(&wfds);
++		if (sent < req.size())
++			FD_SET(s, &wfds);
++		else
++			FD_SET(s, &rfds);
++		struct timeval tv;
++		tv.tv_sec = 0;
++		tv.tv_usec = 20000;
++		int n = select((int)s + 1, &rfds, &wfds, NULL, &tv);
++		pump_host();
++		if (n < 0 && !np_wouldblock())
++			break;
++		if (n <= 0)
++			continue;
++		if (sent < req.size()) {
++			int w = (int)send(s, req.data() + sent, (int)(req.size() - sent), 0);
++			if (w > 0)
++				sent += w;
++			else if (!np_wouldblock())
++				break;
++		} else {
++			char buf[4096];
++			int r = (int)recv(s, buf, sizeof buf, 0);
++			if (r > 0) {
++				resp.append(buf, r);
++				if (resp.size() > 512 * 1024)
++					break;
++			} else if (r == 0 || !np_wouldblock()) {
++				closed = true;
++			}
++		}
++	}
++	np_closesocket(s);
++	size_t he = resp.find("\r\n\r\n");
++	if (he == std::string::npos || resp.compare(0, 5, "HTTP/") != 0)
++		return false;
++	size_t sp = resp.find(' ');
++	status = atoi(resp.c_str() + sp + 1);
++	std::string head = lowercase(resp.substr(0, he));
++	body = resp.substr(he + 4);
++	if (head.find("transfer-encoding: chunked") != std::string::npos) {
++		std::string out;
++		size_t pos = 0;
++		for (;;) {
++			size_t le = body.find("\r\n", pos);
++			if (le == std::string::npos)
++				break;
++			unsigned long len = strtoul(body.c_str() + pos, NULL, 16);
++			pos = le + 2;
++			if (len == 0 || len > body.size() - pos)
++				break;
++			out.append(body, pos, len);
++			pos += len + 2;
++		}
++		body = out;
++	}
++	return true;
++}
++
++// LOCATION urls of gateways that answered the SSDP search
++std::vector<std::string> ssdp_discover(int timeout_ms)
++{
++	std::vector<std::string> found;
++	np_socket s = socket(AF_INET, SOCK_DGRAM, 0);
++	if (s == np_invalid)
++		return found;
++	np_nonblocking(s);
++	int ttl = 2;
++	setsockopt(s, IPPROTO_IP, IP_MULTICAST_TTL, (const char*)&ttl, sizeof ttl);
++	struct sockaddr_in to;
++	memset(&to, 0, sizeof to);
++	to.sin_family = AF_INET;
++	to.sin_port = htons(1900);
++	inet_pton(AF_INET, "239.255.255.250", &to.sin_addr);
++	static const char *targets[] = {
++		"urn:schemas-upnp-org:device:InternetGatewayDevice:1",
++		"urn:schemas-upnp-org:device:InternetGatewayDevice:2",
++		"urn:schemas-upnp-org:service:WANIPConnection:1",
++		"urn:schemas-upnp-org:service:WANPPPConnection:1",
++		NULL
++	};
++	for (int i = 0; targets[i]; i++) {
++		char msg[512];
++		sprintf(msg, "M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1900\r\nMAN: \"ssdp:discover\"\r\nMX: 2\r\nST: %s\r\n\r\n", targets[i]);
++		sendto(s, msg, (int)strlen(msg), 0, (struct sockaddr*)&to, sizeof to);
++	}
++	uae_s64 start = now_ms(), first = 0;
++	while (now_ms() - start < timeout_ms && (!first || now_ms() - first < 300)) {
++		fd_set rfds;
++		FD_ZERO(&rfds);
++		FD_SET(s, &rfds);
++		struct timeval tv;
++		tv.tv_sec = 0;
++		tv.tv_usec = 20000;
++		int n = select((int)s + 1, &rfds, NULL, NULL, &tv);
++		pump_host();
++		if (n <= 0)
++			continue;
++		char buf[2048];
++		int r = (int)recvfrom(s, buf, sizeof buf - 1, 0, NULL, NULL);
++		if (r <= 0)
++			continue;
++		buf[r] = 0;
++		std::string resp(buf);
++		std::string low = lowercase(resp);
++		size_t l = low.find("\nlocation:");
++		if (l == std::string::npos)
++			continue;
++		l += 10;
++		size_t e = resp.find("\r", l);
++		std::string loc = resp.substr(l, e == std::string::npos ? std::string::npos : e - l);
++		size_t f = loc.find_first_not_of(" \t");
++		if (f == std::string::npos)
++			continue;
++		loc = loc.substr(f);
++		if (std::find(found.begin(), found.end(), loc) == found.end())
++			found.push_back(loc);
++		if (!first)
++			first = now_ms();
++	}
++	np_closesocket(s);
++	return found;
++}
++
++// read the gateway's description, find its WAN connection service
++bool igd_from_location(const std::string &location)
++{
++	std::string host, path, body;
++	int port, status;
++	if (!parse_url(location, host, port, path))
++		return false;
++	std::string req = "GET " + path + " HTTP/1.1\r\nHost: " + host + ":" + std::to_string(port) + "\r\nConnection: close\r\n\r\n";
++	if (!http_request(host, port, req, status, body, 3000) || status != 200)
++		return false;
++	std::string control, service;
++	size_t pos = 0;
++	while ((pos = body.find("<service>", pos)) != std::string::npos) {
++		size_t end = body.find("</service>", pos);
++		if (end == std::string::npos)
++			break;
++		std::string block = body.substr(pos, end - pos);
++		std::string type = xml_value(block, "serviceType");
++		bool ip = type.find(":WANIPConnection:") != std::string::npos;
++		if ((ip || type.find(":WANPPPConnection:") != std::string::npos) && (control.empty() || ip)) {
++			control = xml_value(block, "controlURL");
++			service = type;
++		}
++		pos = end;
++	}
++	if (control.empty())
++		return false;
++	std::string base = xml_value(body, "URLBase");
++	if (base.empty())
++		base = location;
++	std::string chost, cpath;
++	int cport;
++	if (lowercase(control.substr(0, 7)) == "http://") {
++		if (!parse_url(control, chost, cport, cpath))
++			return false;
++	} else {
++		if (!parse_url(base, chost, cport, cpath))
++			return false;
++		cpath = control[0] == '/' ? control : "/" + control;
++	}
++	igd.host = chost;
++	igd.port = cport;
++	igd.control = cpath;
++	igd.service = service;
++	// our address as seen from the router
++	struct sockaddr_in sa, me;
++	if (!resolve4(chost, cport, sa))
++		return false;
++	np_socket s = socket(AF_INET, SOCK_DGRAM, 0);
++	if (s == np_invalid)
++		return false;
++	socklen_t len = sizeof me;
++	bool ok = connect(s, (struct sockaddr*)&sa, sizeof sa) == 0 && getsockname(s, (struct sockaddr*)&me, &len) == 0;
++	np_closesocket(s);
++	if (!ok)
++		return false;
++	char ip[64];
++	if (!inet_ntop(AF_INET, &me.sin_addr, ip, sizeof ip))
++		return false;
++	igd.localip = ip;
++	return true;
++}
++
++bool soap(const char *action, const std::string &args, int &status, std::string &body)
++{
++	std::string env = "<?xml version=\"1.0\"?>\r\n<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><s:Body><u:";
++	env += std::string(action) + " xmlns:u=\"" + igd.service + "\">" + args + "</u:" + action + "></s:Body></s:Envelope>\r\n";
++	std::string req = "POST " + igd.control + " HTTP/1.1\r\nHost: " + igd.host + ":" + std::to_string(igd.port) + "\r\n";
++	req += "Content-Type: text/xml; charset=\"utf-8\"\r\nSOAPAction: \"" + igd.service + "#" + action + "\"\r\n";
++	req += "Content-Length: " + std::to_string(env.size()) + "\r\nConnection: close\r\n\r\n" + env;
++	return http_request(igd.host, igd.port, req, status, body, 3000);
++}
++
++bool upnp_add(int port, int lease, int &status, std::string &body)
++{
++	std::string p = std::to_string(port);
++	std::string args = "<NewRemoteHost></NewRemoteHost><NewExternalPort>" + p + "</NewExternalPort><NewProtocol>TCP</NewProtocol>"
++		"<NewInternalPort>" + p + "</NewInternalPort><NewInternalClient>" + igd.localip + "</NewInternalClient>"
++		"<NewEnabled>1</NewEnabled><NewPortMappingDescription>WinUAE netplay</NewPortMappingDescription>"
++		"<NewLeaseDuration>" + std::to_string(lease) + "</NewLeaseDuration>";
++	return soap("AddPortMapping", args, status, body);
++}
++
++void upnp_open(int port)
++{
++	igd = npigd();
++	upnp_info.clear();
++	std::vector<std::string> locs = ssdp_discover(2500);
++	bool found = false;
++	for (auto &l : locs) {
++		if (igd_from_location(l)) {
++			found = true;
++			break;
++		}
++	}
++	char tmp[512];
++	if (!found) {
++		sprintf(tmp, "UPnP: no router answered. Forward TCP port %d to this computer or use a VPN.", port);
++		upnp_info = tmp;
++		return;
++	}
++	int status = 0;
++	std::string body;
++	// limited lease so a crashed session does not leave the port open,
++	// some routers only accept permanent mappings (error 725)
++	bool ok = upnp_add(port, 7200, status, body) && status == 200;
++	if (!ok && xml_value(body, "errorCode") == "725")
++		ok = upnp_add(port, 0, status, body) && status == 200;
++	if (!ok && xml_value(body, "errorCode") == "718") {
++		// already forwarded: fine if it points to this computer
++		std::string p = std::to_string(port);
++		std::string b2;
++		int st2 = 0;
++		if (soap("GetSpecificPortMappingEntry", "<NewRemoteHost></NewRemoteHost><NewExternalPort>" + p + "</NewExternalPort><NewProtocol>TCP</NewProtocol>", st2, b2)
++			&& st2 == 200 && xml_value(b2, "NewInternalClient") == igd.localip)
++			ok = true;
++	}
++	if (ok) {
++		igd.mapped = port;
++		std::string b3;
++		int st3 = 0;
++		if (soap("GetExternalIPAddress", "", st3, b3) && st3 == 200)
++			igd.external = xml_value(b3, "NewExternalIPAddress");
++		sprintf(tmp, "UPnP: router forwards TCP port %d to %s", port, igd.localip.c_str());
++		upnp_info = tmp;
++		if (!igd.external.empty())
++			upnp_info += ", public address " + igd.external;
++	} else {
++		std::string code = xml_value(body, "errorCode");
++		sprintf(tmp, "UPnP: router refused to forward TCP port %d (%s). Forward it manually or use a VPN.", port, code.empty() ? std::to_string(status).c_str() : code.c_str());
++		upnp_info = tmp;
++	}
++}
++
++void upnp_close(void)
++{
++	if (!igd.mapped)
++		return;
++	std::string p = std::to_string(igd.mapped);
++	std::string body;
++	int status = 0;
++	soap("DeletePortMapping", "<NewRemoteHost></NewRemoteHost><NewExternalPort>" + p + "</NewExternalPort><NewProtocol>TCP</NewProtocol>", status, body);
++	write_log(_T("NETPLAY: UPnP port %d closed (%d)\n"), igd.mapped, status);
++	igd.mapped = 0;
 +}
 +
 +// both players need the same emulator version and platform: Windows and Unix
@@ -1059,12 +1745,31 @@ index 0000000..7e34618
 +	return get_crc32(ab->baseaddr, ab->allocated_size);
 +}
 +
++// RAM checksum; big boards are checked 1 MB per call, all of it over time
++uae_u32 ram_crc(addrbank *ab)
++{
++	const uae_u32 slice = 1024 * 1024;
++	if (!ab->baseaddr || ab->allocated_size <= 2 * slice)
++		return bank_crc(ab);
++	uae_u32 n = (uae_u32)(ab->allocated_size / slice);
++	uae_u32 i = (cur_frame / (np_hashinterval > 0 ? np_hashinterval : 1)) % n;
++	return get_crc32(ab->baseaddr + i * slice, slice);
++}
++
 +uae_u32 state_hash(void)
 +{
-+	uae_u32 v[24];
++	uae_u32 v[64];
 +	int n = 0;
-+	v[n++] = bank_crc(&chipmem_bank);
-+	v[n++] = bank_crc(&bogomem_bank);
++	v[n++] = ram_crc(&chipmem_bank);
++	v[n++] = ram_crc(&bogomem_bank);
++	// non-autoconfig RAM is added for the built-in AROS ROM
++	v[n++] = ram_crc(&custmem1_bank);
++	v[n++] = ram_crc(&custmem2_bank);
++	v[n++] = ram_crc(&mem25bit_bank);
++	for (int i = 0; i < MAX_RAM_BOARDS; i++) {
++		v[n++] = ram_crc(&fastmem_bank[i]);
++		v[n++] = ram_crc(&z3fastmem_bank[i]);
++	}
 +	for (int i = 0; i < 16; i++)
 +		v[n++] = m68k_dreg(regs, i);
 +	v[n++] = m68k_getpc();
@@ -1086,6 +1791,9 @@ index 0000000..7e34618
 +	// sound emulation itself must match, output settings do not matter
 +	if (k == "sound_output")
 +		return false;
++	// switched off on both machines by apply_session()
++	if (k == "rtc" || k == "synchronize_clock")
++		return true;
 +	static const char *prefixes[] = {
 +		"config_", "win32.", "unix.", "amiberry.", "use_gui", "use_debugger", "debugging_", "gdb_port",
 +		"kickstart_rom_file", "kickstart_ext_rom_file", "kickstart_key_file", "flash_file", "rtc_file", "cart_file", "cart",
@@ -1094,6 +1802,8 @@ index 0000000..7e34618
 +		"gfx_", "show_", "statusbar", "sound_", "kbd_lang",
 +		"serial_", "parallel_", "midi", "sampler", "statefile", "inprec", "trainerfile", "lua",
 +		"netplay", "rndseed", "headless", "ghostscript", "joyport", "chipset_refreshrate", "displaydata",
++		// warp is switched on both machines by netplay
++		"warp",
 +		// JIT is refused in netplay, RTG modes are host display choices
 +		"comp_", "compfpu", "rtg_modes",
 +		NULL
@@ -1229,13 +1939,13 @@ index 0000000..7e34618
 +	return p;
 +}
 +
-+bool load_disk_image(int num, npdisk &d)
++// read (and unpack) a floppy image the way disk.cpp opens it
++bool load_image_file(const TCHAR *df_in, bool forcedwp, npdisk &d)
 +{
++	TCHAR df[MAX_DPATH];
 +	d.present = false;
 +	d.data.clear();
-+	const TCHAR *df = currprefs.floppyslots[num].df;
-+	if (!df[0] || currprefs.floppyslots[num].dfxtype < 0)
-+		return true;
++	cfgfile_resolve_path_out_load(df_in, df, MAX_DPATH, PATH_FLOPPY);
 +	struct zfile *f = zfile_fopen(df, _T("rb"), ZFD_NORMAL);
 +	if (!f)
 +		return false;
@@ -1251,8 +1961,24 @@ index 0000000..7e34618
 +	d.present = true;
 +	d.size = (uae_u32)d.data.size();
 +	d.crc = get_crc32(d.data.data(), (int)d.data.size());
-+	d.wp = currprefs.floppyslots[num].forcedwriteprotect;
++	// read-only image file is write protected in the drive, the copy of player 2 must be too
++	d.wp = forcedwp;
++	struct zfile *w = zfile_fopen(df, _T("r+b"), ZFD_NORMAL);
++	if (w)
++		zfile_fclose(w);
++	else
++		d.wp = true;
 +	return true;
++}
++
++bool load_disk_image(int num, npdisk &d)
++{
++	d.present = false;
++	d.data.clear();
++	const TCHAR *df = currprefs.floppyslots[num].df;
++	if (!df[0] || currprefs.floppyslots[num].dfxtype < 0)
++		return true;
++	return load_image_file(df, currprefs.floppyslots[num].forcedwriteprotect, d);
 +}
 +
 +// create missing directories of a path ending with a separator
@@ -1413,6 +2139,27 @@ index 0000000..7e34618
 +			st.action = 2;
 +		} else if (!strcmp(what, "reset")) {
 +			st.action = 3;
++		} else if (!strcmp(what, "warp")) {
++			st.action = 4;
++			st.state = atoi(arg);
++		} else if (!strcmp(what, "disk")) {
++			// <frame> disk <image> <drive>, image path may contain spaces
++			st.action = 5;
++			size_t a = line.find("disk") + 4;
++			size_t b = line.find_last_not_of(" \t\r");
++			size_t c = line.find_last_of(" \t", b);
++			if (c == std::string::npos || c <= a)
++				continue;
++			st.state = atoi(line.c_str() + c + 1);
++			size_t d = line.find_first_not_of(" \t", a);
++			size_t e = line.find_last_not_of(" \t", c);
++			st.arg = line.substr(d, e - d + 1);
++		} else if (!strcmp(what, "eject")) {
++			st.action = 6;
++			st.state = atoi(arg);
++		} else if (!strcmp(what, "leave")) {
++			// end the session and hard reset, netplay starts again
++			st.action = 7;
 +		} else {
 +			continue;
 +		}
@@ -1435,6 +2182,19 @@ index 0000000..7e34618
 +			uae_quit();
 +		} else if (st.action == 3) {
 +			netplay_request_reset(st.arg == "hard", 0);
++		} else if (st.action == 4) {
++			netplay_request_warp(st.state ? 1 : 0);
++		} else if (st.action == 5 && st.state >= 0 && st.state < NP_MAXDRIVES) {
++			// same path as a floppy change in the GUI
++			TCHAR *path = au(st.arg.c_str());
++			disk_insert(st.state, path);
++			xfree(path);
++		} else if (st.action == 6 && st.state >= 0 && st.state < NP_MAXDRIVES) {
++			disk_eject(st.state);
++		} else if (st.action == 7) {
++			netplay_stop(_T("Player left (test)."));
++			uae_reset(1, 1);
++			return;
 +		}
 +	}
 +}
@@ -1457,6 +2217,10 @@ index 0000000..7e34618
 +	pending_local.clear();
 +	play.clear();
 +	play_pos = 0;
++	xfer.state = XFER_IDLE;
++	xfer.data.clear();
++	disk_table.clear();
++	disk_counter = 0;
 +	local_hash.clear();
 +	remote_hash.clear();
 +	desync_reported = false;
@@ -1488,8 +2252,12 @@ index 0000000..7e34618
 +// keys, joystick/mouse ports, never special actions (AKS_xxx)
 +bool valid_remote_event(const npevent &e)
 +{
-+	if (e.flags & NPEV_SPECIAL)
-+		return e.nr == 0 && e.state >= NPSPECIAL_SOFTRESET && e.state <= NPSPECIAL_KEYBOARDRESET;
++	if (e.flags & NPEV_SPECIAL) {
++		// only the host changes floppies, using an image player 2 has confirmed
++		if (e.state == NPSPECIAL_DISK)
++			return !is_host && e.nr < NP_MAXDRIVES && (e.max == 0 || disk_table.count((uae_u32)e.max));
++		return e.nr == 0 && e.state >= NPSPECIAL_SOFTRESET && e.state <= NPSPECIAL_WARPOFF;
++	}
 +	if (e.nr == 0 || e.nr >= INPUTEVENT_END || e.nr == INPUTEVENT_SPC_CUSTOM_EVENT)
 +		return false;
 +	const struct inputevent *ie = inputdevice_get_eventinfo(e.nr);
@@ -1544,6 +2312,187 @@ index 0000000..7e34618
 +	check_hashes(frame);
 +}
 +
++void queue_special(int what, int nr, int max)
++{
++	npevent e;
++	e.nr = (uae_u16)nr;
++	e.flags = NPEV_SPECIAL;
++	e.state = what;
++	e.max = max;
++	pending_local.push_back(e);
++}
++
++void xfer_done(void)
++{
++	xfer.state = XFER_IDLE;
++	xfer.data.clear();
++	xfer.data.shrink_to_fit();
++}
++
++// host: player 2 has the image, it goes into the drive on both machines in the same frame
++void xfer_ready(void)
++{
++	disk_table[xfer.id] = { xfer.path, xfer.wp };
++	queue_special(NPSPECIAL_DISK, xfer.drive, (int)xfer.id);
++	write_log(_T("NETPLAY: floppy %u ready on both machines, DF%d\n"), xfer.id, xfer.drive);
++	xfer_done();
++}
++
++// host: image data goes out a little every frame so the game keeps running
++void send_disk_chunks(void)
++{
++	if (!is_host || xfer.state != XFER_SENDING)
++		return;
++	uae_u32 budget = NP_DISKRATE;
++	while (budget > 0 && xfer.pos < xfer.size && outbuf.size() - outpos < 4 * NP_DISKRATE && sock != np_invalid) {
++		uae_u32 len = xfer.size - xfer.pos;
++		if (len > 8192)
++			len = 8192;
++		if (len > budget)
++			len = budget;
++		npbuf b;
++		b.u32(xfer.id);
++		b.u32(xfer.pos);
++		b.bytes(xfer.data.data() + xfer.pos, len);
++		send_msg(MSG_DISKCHUNK, b);
++		xfer.pos += len;
++		budget -= len;
++	}
++	if (xfer.pos >= xfer.size)
++		xfer.state = XFER_WAITREADY;
++}
++
++void handle_disk_msg(const npmsg &m)
++{
++	npreader r(m.data);
++	if (np_state != NP_RUNNING) {
++		fail(_T("Protocol error (floppy change)."));
++		return;
++	}
++	switch (m.type)
++	{
++	case MSG_DISKOFFER:
++	{
++		// player 2: host changes a floppy, use the cached copy or ask for the image
++		npdisk d;
++		uae_u32 id = r.u32();
++		int drive = r.u8();
++		bool wp = r.u8() != 0;
++		d.size = r.u32();
++		d.crc = r.u32();
++		d.name = r.str();
++		if (r.bad || is_host || id == 0 || drive >= NP_MAXDRIVES || d.size == 0 || d.size > NP_MAXDISKSIZE) {
++			fail(_T("Protocol error (floppy offer)."));
++			return;
++		}
++		TCHAR path[MAX_DPATH];
++		disk_cache_path(path, MAX_DPATH, d);
++		xfer_done();
++		xfer.id = id;
++		xfer.drive = drive;
++		xfer.wp = wp;
++		xfer.size = d.size;
++		xfer.crc = d.crc;
++		xfer.pos = 0;
++		xfer.path = path;
++		npbuf b;
++		b.u32(id);
++		if (file_crc(path, d.size, d.crc)) {
++			disk_table[id] = { xfer.path, wp };
++			b.u8(0);
++			write_log(_T("NETPLAY: floppy %u for DF%d found in cache\n"), id, drive);
++		} else {
++			xfer.data.resize(d.size);
++			xfer.state = XFER_RECEIVING;
++			b.u8(1);
++			write_log(_T("NETPLAY: receiving floppy %u for DF%d (%u bytes)\n"), id, drive, d.size);
++			statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: receiving floppy image from player 1..."));
++		}
++		send_msg(MSG_DISKREPLY, b);
++		break;
++	}
++	case MSG_DISKCHUNK:
++	{
++		uae_u32 id = r.u32();
++		uae_u32 off = r.u32();
++		size_t len = m.data.size() - 8;
++		if (r.bad || is_host || xfer.state != XFER_RECEIVING || id != xfer.id || off != xfer.pos || off + len > xfer.size) {
++			fail(_T("Protocol error (floppy data)."));
++			return;
++		}
++		memcpy(xfer.data.data() + off, m.data.data() + 8, len);
++		xfer.pos += (uae_u32)len;
++		if (xfer.pos < xfer.size)
++			break;
++		bool ok = get_crc32(xfer.data.data(), (int)xfer.size) == xfer.crc && save_file(xfer.path.c_str(), xfer.data);
++		if (ok) {
++			disk_table[id] = { xfer.path, xfer.wp };
++			write_log(_T("NETPLAY: floppy %u received\n"), id);
++		} else {
++			write_log(_T("NETPLAY: floppy %u: cannot store %s\n"), id, xfer.path.c_str());
++			statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: cannot store the floppy image from player 1"));
++		}
++		xfer_done();
++		npbuf b;
++		b.u32(id);
++		b.u8(ok ? 1 : 0);
++		send_msg(MSG_DISKREADY, b);
++		break;
++	}
++	case MSG_DISKREPLY:
++	{
++		// host: 0 = player 2 has the image, 1 = send it
++		uae_u32 id = r.u32();
++		int need = r.u8();
++		if (r.bad || !is_host) {
++			fail(_T("Protocol error (floppy reply)."));
++			return;
++		}
++		if (xfer.state != XFER_OFFERED || id != xfer.id)
++			break;
++		if (need) {
++			xfer.state = XFER_SENDING;
++			xfer.pos = 0;
++			write_log(_T("NETPLAY: sending floppy %u (%u bytes)\n"), id, xfer.size);
++			statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: sending floppy image to player 2..."));
++		} else {
++			xfer_ready();
++		}
++		break;
++	}
++	case MSG_DISKREADY:
++	{
++		uae_u32 id = r.u32();
++		int ok = r.u8();
++		if (r.bad || !is_host) {
++			fail(_T("Protocol error (floppy ready)."));
++			return;
++		}
++		if (xfer.state != XFER_WAITREADY || id != xfer.id)
++			break;
++		if (ok) {
++			xfer_ready();
++		} else {
++			statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: player 2 could not store the floppy image, floppy not changed"));
++			xfer_done();
++		}
++		break;
++	}
++	}
++}
++
++void play_disk_change(int drive, uae_u32 id)
++{
++	if (id == 0) {
++		disk_netplay_change(drive, _T(""), false);
++		return;
++	}
++	auto it = disk_table.find(id);
++	if (it == disk_table.end())
++		return;
++	disk_netplay_change(drive, it->second.path.c_str(), it->second.wp);
++}
++
 +void apply_session(void)
 +{
 +	// same random seed on both machines, used by the reset that follows
@@ -1553,6 +2502,19 @@ index 0000000..7e34618
 +	currprefs.cs_rtc = changed_prefs.cs_rtc = 0;
 +	currprefs.turbo_emulation = changed_prefs.turbo_emulation = 0;
 +	currprefs.input_contact_bounce = changed_prefs.input_contact_bounce = 0;
++	// "synchronize clock" writes host time into the Amiga
++	currprefs.tod_hack = changed_prefs.tod_hack = false;
++	// CPU reset keeps data/address registers, a fresh emulator has zeros:
++	// the hard reset that follows must look like power-on on both machines
++	memset(regs.regs, 0, sizeof regs.regs);
++	regs.usp = regs.isp = regs.msp = 0;
++	regs.sr = 0;
++	DISK_poweron();
++	// RAM that the hard reset does not clear
++	if (custmem1_bank.baseaddr)
++		memset(custmem1_bank.baseaddr, 0, custmem1_bank.allocated_size);
++	if (custmem2_bank.baseaddr)
++		memset(custmem2_bank.baseaddr, 0, custmem2_bank.allocated_size);
 +	build_remap();
 +	reset_session_data();
 +	session_config = config_text();
@@ -1581,9 +2543,22 @@ index 0000000..7e34618
 +		fail(tmp);
 +		return false;
 +	}
-+	_stprintf(tmp, _T("waiting for player 2 on port %d"), port);
++	std::string addrs = local_addresses();
++	write_log(_T("NETPLAY: host listening on port %d, addresses: %s\n"), port, to_tchar(addrs).c_str());
++	if (currprefs.netplay_upnp) {
++		set_status(_T("opening the port in the router (UPnP)"));
++		upnp_open(port);
++		write_log(_T("NETPLAY: %s\n"), to_tchar(upnp_info).c_str());
++		statusline_add_message(STATUSTYPE_OTHER, _T("Netplay %s"), to_tchar(upnp_info).c_str());
++	}
++	// address for player 2: public one from the router, else LAN/VPN ones
++	std::string show = !igd.external.empty() ? igd.external : addrs;
++#ifdef _WIN32
++	_stprintf(tmp, _T("waiting for player 2: %s port %d (Esc = cancel)"), to_tchar(show).c_str(), port);
++#else
++	_stprintf(tmp, _T("waiting for player 2: %s port %d"), to_tchar(show).c_str(), port);
++#endif
 +	set_status(tmp);
-+	write_log(_T("NETPLAY: host listening on port %d\n"), port);
 +
 +	for (;;) {
 +		// wait for a client
@@ -1693,6 +2668,11 @@ index 0000000..7e34618
 +			fail(tmp);
 +			return false;
 +		}
++		// an image left in a disabled drive changes emulation, player 2 has none
++		if (!disks[i].present) {
++			currprefs.floppyslots[i].df[0] = 0;
++			changed_prefs.floppyslots[i].df[0] = 0;
++		}
 +	}
 +
 +	npbuf b;
@@ -1790,7 +2770,11 @@ index 0000000..7e34618
 +	xfree(hostt);
 +	while (sock == np_invalid) {
 +		attempt++;
++#ifdef _WIN32
++		_stprintf(tmp, _T("connecting to %s:%d (attempt %d, Esc = cancel)"), hostname, port, attempt);
++#else
 +		_stprintf(tmp, _T("connecting to %s:%d (attempt %d)"), hostname, port, attempt);
++#endif
 +		set_status(tmp);
 +		if (client_connect_once(host, port))
 +			break;
@@ -1970,9 +2954,10 @@ index 0000000..7e34618
 +	return np_state == NP_RUNNING;
 +}
 +
++// netplay starts at power-on and at every hard reset outside a session
 +bool netplay_pending(void)
 +{
-+	return currprefs.netplay_mode != NETPLAY_MODE_OFF && !np_started;
++	return currprefs.netplay_mode != NETPLAY_MODE_OFF && np_state == NP_OFF;
 +}
 +
 +bool netplay_port_is_mouse(int port)
@@ -1984,8 +2969,8 @@ index 0000000..7e34618
 +{
 +	TCHAR err[1024];
 +
-+	np_started = true;
 +	np_failed = false;
++	np_cancelled = false;
 +	np_error[0] = 0;
 +	is_host = currprefs.netplay_mode == NETPLAY_MODE_HOST;
 +
@@ -2004,9 +2989,15 @@ index 0000000..7e34618
 +	if (!ok) {
 +		np_state = NP_OFF;
 +		close_sockets();
-+		set_status(_T(""));
-+		if (!user_quit())
-+			gui_message(_T("Netplay failed:\n%s\n\nThe game continues without netplay."), np_error);
++		upnp_close();
++		if (np_cancelled) {
++			set_status(_T("cancelled"));
++			statusline_add_message(STATUSTYPE_OTHER, _T("Netplay cancelled, hard reset starts it again"));
++		} else {
++			set_status(_T(""));
++			if (!user_quit())
++				gui_message(_T("Netplay failed:\n%s\n\nThe game continues without netplay."), np_error);
++		}
 +		return false;
 +	}
 +	if (listener != np_invalid) {
@@ -2030,6 +3021,7 @@ index 0000000..7e34618
 +	}
 +	np_state = NP_OFF;
 +	close_sockets();
++	upnp_close();
 +	if (debug_log)
 +		zfile_fclose(debug_log);
 +	debug_log = NULL;
@@ -2045,8 +3037,6 @@ index 0000000..7e34618
 +void netplay_exit(void)
 +{
 +	netplay_stop(_T("WinUAE was closed."));
-+	// a restarted emulator connects again
-+	np_started = false;
 +#ifdef _WIN32
 +	if (sockets_started)
 +		WSACleanup();
@@ -2076,13 +3066,66 @@ index 0000000..7e34618
 +{
 +	if (np_state != NP_RUNNING)
 +		return false;
-+	npevent e;
-+	e.nr = 0;
-+	e.flags = NPEV_SPECIAL;
-+	e.state = hardreset ? NPSPECIAL_HARDRESET : (keyboardreset ? NPSPECIAL_KEYBOARDRESET : NPSPECIAL_SOFTRESET);
-+	e.max = 0;
-+	pending_local.push_back(e);
++	queue_special(hardreset ? NPSPECIAL_HARDRESET : (keyboardreset ? NPSPECIAL_KEYBOARDRESET : NPSPECIAL_SOFTRESET), 0, 0);
 +	statusline_add_message(STATUSTYPE_OTHER, _T("Netplay: reset requested"));
++	return true;
++}
++
++// warp changes emulation (automatic key release in keybuf.cpp), so both machines switch together
++bool netplay_request_warp(int mode)
++{
++	if (np_state != NP_RUNNING)
++		return false;
++	int on = mode < 0 ? !currprefs.turbo_emulation : mode > 0;
++	queue_special(on ? NPSPECIAL_WARPON : NPSPECIAL_WARPOFF, 0, 0);
++	return true;
++}
++
++// floppy insert/eject by the host goes to both machines: the image is offered
++// to player 2 (sent if not cached), then changed on both in the same frame
++bool netplay_request_disk(int num, const TCHAR *name, bool wp)
++{
++	if (np_state != NP_RUNNING)
++		return false;
++	if (!is_host) {
++		write_log(_T("NETPLAY: DF%d change refused, only the host changes floppies\n"), num);
++		statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: only player 1 (host) can change floppies"));
++		return true;
++	}
++	if (num < 0 || num >= NP_MAXDRIVES)
++		return true;
++	if (xfer.state != XFER_IDLE) {
++		statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: previous floppy change is still in progress"));
++		return true;
++	}
++	if (!name || !name[0]) {
++		queue_special(NPSPECIAL_DISK, num, 0);
++		return true;
++	}
++	npdisk d;
++	if (!load_image_file(name, wp, d) || d.size == 0 || d.size > NP_MAXDISKSIZE) {
++		statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: cannot read floppy image %s"), name);
++		return true;
++	}
++	xfer_done();
++	xfer.id = ++disk_counter;
++	xfer.drive = num;
++	xfer.wp = wp;
++	xfer.size = d.size;
++	xfer.crc = d.crc;
++	xfer.pos = 0;
++	xfer.path = name;
++	xfer.data.swap(d.data);
++	xfer.state = XFER_OFFERED;
++	npbuf b;
++	b.u32(xfer.id);
++	b.u8((uae_u8)num);
++	b.u8(d.wp ? 1 : 0);
++	b.u32(d.size);
++	b.u32(d.crc);
++	b.str(d.name);
++	send_msg(MSG_DISKOFFER, b);
++	write_log(_T("NETPLAY: floppy %u offered for DF%d: %s\n"), xfer.id, num, name);
 +	return true;
 +}
 +
@@ -2092,9 +3135,19 @@ index 0000000..7e34618
 +		return true;
 +	switch (code)
 +	{
-+	case AKS_FREEZEBUTTON:
 +	case AKS_FLOPPY0: case AKS_FLOPPY1: case AKS_FLOPPY2: case AKS_FLOPPY3:
 +	case AKS_EFLOPPY0: case AKS_EFLOPPY1: case AKS_EFLOPPY2: case AKS_EFLOPPY3:
++	case AKS_DISKSWAPPER_INSERT0: case AKS_DISKSWAPPER_INSERT1:
++	case AKS_DISKSWAPPER_INSERT2: case AKS_DISKSWAPPER_INSERT3:
++	case AKS_DISK_PREV0: case AKS_DISK_PREV1: case AKS_DISK_PREV2: case AKS_DISK_PREV3:
++	case AKS_DISK_NEXT0: case AKS_DISK_NEXT1: case AKS_DISK_NEXT2: case AKS_DISK_NEXT3:
++		// floppy changes of the host are synchronized (netplay_request_disk)
++		if (is_host)
++			return true;
++		if (state)
++			statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: only player 1 (host) can change floppies"));
++		return false;
++	case AKS_FREEZEBUTTON:
 +	case AKS_CD0: case AKS_ECD0:
 +	case AKS_IRQ7:
 +	case AKS_STATEREWIND: case AKS_STATECURRENT:
@@ -2104,10 +3157,6 @@ index 0000000..7e34618
 +	case AKS_STATERESTOREQUICK9: case AKS_STATERESTOREDIALOG:
 +	case AKS_RESTART:
 +	case AKS_PASTE:
-+	case AKS_DISKSWAPPER_INSERT0: case AKS_DISKSWAPPER_INSERT1:
-+	case AKS_DISKSWAPPER_INSERT2: case AKS_DISKSWAPPER_INSERT3:
-+	case AKS_DISK_PREV0: case AKS_DISK_PREV1: case AKS_DISK_PREV2: case AKS_DISK_PREV3:
-+	case AKS_DISK_NEXT0: case AKS_DISK_NEXT1: case AKS_DISK_NEXT2: case AKS_DISK_NEXT3:
 +	case AKS_ARCADIADIAGNOSTICS: case AKS_ARCADIAPLY1: case AKS_ARCADIAPLY2:
 +	case AKS_ARCADIACOIN1: case AKS_ARCADIACOIN2:
 +	case AKS_CDTV_FRONT_PANEL_STOP: case AKS_CDTV_FRONT_PANEL_PLAYPAUSE:
@@ -2128,8 +3177,11 @@ index 0000000..7e34618
 +	if (np_state != NP_RUNNING)
 +		return;
 +
-+	if (debug_pos < debug_steps.size())
++	if (debug_pos < debug_steps.size()) {
 +		run_debug_script();
++		if (np_state != NP_RUNNING)
++			return;
++	}
 +
 +	// local input of this frame is applied delay frames later on both machines
 +	uae_u32 target = cur_frame + np_delay;
@@ -2148,6 +3200,7 @@ index 0000000..7e34618
 +		b.u32((uae_u32)e.max);
 +	}
 +	send_msg(MSG_FRAME, b);
++	send_disk_chunks();
 +	if (np_failed) {
 +		netplay_stop(np_error);
 +		return;
@@ -2246,6 +3299,15 @@ index 0000000..7e34618
 +			case NPSPECIAL_KEYBOARDRESET:
 +				uae_reset(0, 1);
 +				break;
++			case NPSPECIAL_WARPON:
++				warpmode(1);
++				break;
++			case NPSPECIAL_WARPOFF:
++				warpmode(0);
++				break;
++			case NPSPECIAL_DISK:
++				play_disk_change(e.nr, (uae_u32)e.max);
++				break;
 +			}
 +			continue;
 +		}
@@ -2256,6 +3318,29 @@ index 0000000..7e34618
 +		return true;
 +	}
 +	return false;
++}
++
++// text for the netplay page of the GUI
++void netplay_getinfo(TCHAR *out, int maxlen)
++{
++	std::basic_string<TCHAR> s;
++	TCHAR tmp[800];
++	tmp[0] = 0;
++	if (np_state == NP_RUNNING) {
++		_stprintf(tmp, _T("Session running as %s, input delay %d frames, ping %d ms."), is_host ? _T("host") : _T("player 2"), np_delay, rtt_ms);
++	} else if (np_error[0]) {
++		_stprintf(tmp, _T("Not connected. Last session: %s"), np_error);
++	} else {
++		_tcscpy(tmp, _T("Not connected. Netplay starts with Start or a hard reset."));
++	}
++	s += tmp;
++	std::string a = local_addresses();
++	if (!a.empty())
++		s += _T("\nThis computer: ") + to_tchar(a);
++	if (!upnp_info.empty())
++		s += _T("\n") + to_tchar(upnp_info);
++	_tcsncpy(out, s.c_str(), maxlen - 1);
++	out[maxlen - 1] = 0;
 +}
 +
 +void netplay_getstatus(TCHAR *out)
@@ -2329,8 +3414,119 @@ index c432358..b0df69a 100644
  }
  
  void InitPicasso96(int monid)
+diff --git a/od-win32/resources/resource.h b/od-win32/resources/resource.h
+index 12d5889..1da35d1 100644
+--- a/od-win32/resources/resource.h
++++ b/od-win32/resources/resource.h
+@@ -29,6 +29,7 @@
+ #define IDS_EXPANSION                   22
+ #define IDS_EXPANSION2                  23
+ #define IDS_BOARD                       24
++#define IDS_NETPLAY                     25
+ #define IDC_PANELTREE                   50
+ #define IDD_PANEL                       51
+ #define IDC_PANEL_FRAME                 52
+@@ -394,6 +395,7 @@
+ #define IDD_EXPANSION2                  398
+ #define IDS_SLIRP_INBOUND               399
+ #define IDD_BOARDS                      399
++#define IDD_NETPLAY                     407
+ #define IDS_FILTER_PAL_EXTRA            400
+ #define IDD_CHSQUERY                    400
+ #define IDS_FILTER_3D_EXTRA             401
+@@ -1429,6 +1431,17 @@
+ #define ID_ST_MONITORS_PREVIOUSDISPLAY  40052
+ #define ID_ST_DISPLAYS_CHIPSET          40053
+ #define IDC_STATIC                      -1
++#define IDC_NETPLAY_OFF                 1870
++#define IDC_NETPLAY_HOST                1871
++#define IDC_NETPLAY_JOIN                1872
++#define IDC_NETPLAY_ADDRESS             1873
++#define IDC_NETPLAY_PORT                1874
++#define IDC_NETPLAY_PASSWORD            1875
++#define IDC_NETPLAY_DELAY               1876
++#define IDC_NETPLAY_SWAPPORTS           1877
++#define IDC_NETPLAY_MOUSE               1878
++#define IDC_NETPLAY_UPNP                1879
++#define IDC_NETPLAY_STATUS              1880
+ 
+ // Next default values for new objects
+ // 
+@@ -1436,9 +1449,9 @@
+ #ifndef APSTUDIO_READONLY_SYMBOLS
+ #define _APS_NO_MFC                     1
+ #define _APS_3D_CONTROLS                     1
+-#define _APS_NEXT_RESOURCE_VALUE        407
++#define _APS_NEXT_RESOURCE_VALUE        409
+ #define _APS_NEXT_COMMAND_VALUE         40054
+-#define _APS_NEXT_CONTROL_VALUE         1870
++#define _APS_NEXT_CONTROL_VALUE         1881
+ #define _APS_NEXT_SYMED_VALUE           101
+ #endif
+ #endif
+diff --git a/od-win32/resources/winuae.rc b/od-win32/resources/winuae.rc
+index cd8b7d3..5bcca3f 100644
+--- a/od-win32/resources/winuae.rc
++++ b/od-win32/resources/winuae.rc
+@@ -103,6 +103,37 @@ END
+ // Dialog
+ //
+ 
++IDD_NETPLAY DIALOGEX 0, 0, 396, 316
++STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
++FONT 8, "MS Sans Serif", 0, 0, 0x1
++BEGIN
++    GROUPBOX        "Netplay: two players, two computers, one Amiga",IDC_STATIC,1,0,393,112
++    CONTROL         "Off",IDC_NETPLAY_OFF,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,14,170,10
++    CONTROL         "Host (player 1, waits for player 2)",IDC_NETPLAY_HOST,"Button",BS_AUTORADIOBUTTON,12,28,170,10
++    CONTROL         "Join (player 2, connects to the host)",IDC_NETPLAY_JOIN,"Button",BS_AUTORADIOBUTTON,12,42,170,10
++    CONTROL         "Player 2 joystick goes to Amiga port 1",IDC_NETPLAY_SWAPPORTS,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,12,62,170,10
++    CONTROL         "Mouse in Amiga port 1 (mouse games)",IDC_NETPLAY_MOUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,76,170,10
++    CONTROL         "Open the port in the router (UPnP)",IDC_NETPLAY_UPNP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,90,170,10
++    RTEXT           "Host address:",IDC_STATIC,186,14,86,10,SS_CENTERIMAGE
++    EDITTEXT        IDC_NETPLAY_ADDRESS,276,13,110,12,ES_AUTOHSCROLL
++    RTEXT           "TCP port:",IDC_STATIC,186,30,86,10,SS_CENTERIMAGE
++    EDITTEXT        IDC_NETPLAY_PORT,276,29,40,12,ES_AUTOHSCROLL | ES_NUMBER
++    RTEXT           "Password (optional):",IDC_STATIC,186,46,86,10,SS_CENTERIMAGE
++    EDITTEXT        IDC_NETPLAY_PASSWORD,276,45,110,12,ES_AUTOHSCROLL
++    RTEXT           "Input delay (frames):",IDC_STATIC,186,62,86,10,SS_CENTERIMAGE
++    EDITTEXT        IDC_NETPLAY_DELAY,276,61,24,12,ES_AUTOHSCROLL | ES_NUMBER
++    LTEXT           "0 = automatic",IDC_STATIC,305,62,80,10,SS_CENTERIMAGE
++    GROUPBOX        "Status",IDC_STATIC,1,116,393,62
++    LTEXT           "",IDC_NETPLAY_STATUS,10,128,376,44
++    GROUPBOX        "How to play",IDC_STATIC,1,182,393,128
++    LTEXT           "1. Both players use the same WinUAE build and load the same configuration. The Kickstart ROM must be identical (or both use the built-in AROS ROM).",IDC_STATIC,10,194,376,18
++    LTEXT           "2. Host: insert the disks, select Host and press Start (or Reset). WinUAE waits for player 2.",IDC_STATIC,10,213,376,18
++    LTEXT           "3. Player 2: select Join, enter the host address (name or IP, optional :port) and press Start. The host's floppy images are sent automatically.",IDC_STATIC,10,232,376,18
++    LTEXT           "4. Host's joystick is Amiga port 2 (player 1), player 2's joystick is moved to port 1.",IDC_STATIC,10,251,376,10
++    LTEXT           "5. Only the host changes floppies. Reset and warp mode work on both computers. Esc cancels waiting for the partner.",IDC_STATIC,10,263,376,18
++    LTEXT           "Internet: forward the TCP port to the host computer (or use UPnP), or use a VPN (ZeroTier, Tailscale, Radmin VPN) and its address.",IDC_STATIC,10,282,376,18
++END
++
+ IDD_BOARDS DIALOGEX 0, 0, 396, 316
+ STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+ EXSTYLE WS_EX_CONTEXTHELP
+@@ -1621,6 +1652,10 @@ BEGIN
+     BEGIN
+     END
+ 
++    IDD_NETPLAY, DIALOG
++    BEGIN
++    END
++
+     IDD_KICKSTART, DIALOG
+     BEGIN
+     END
+@@ -1858,6 +1893,7 @@ BEGIN
+     IDS_EXPANSION           "RTG board"
+     IDS_EXPANSION2          "Expansions"
+     IDS_BOARD               "Hardware info"
++    IDS_NETPLAY             "Netplay"
+ END
+ 
+ STRINGTABLE
 diff --git a/od-win32/win32.cpp b/od-win32/win32.cpp
-index 24b2c7d..3bccb67 100644
+index 24b2c7d..4c0fbbc 100644
 --- a/od-win32/win32.cpp
 +++ b/od-win32/win32.cpp
 @@ -81,6 +81,7 @@
@@ -2354,8 +3550,8 @@ index 24b2c7d..3bccb67 100644
  				if (num >= df0 && num <= df0 + 3) { // DF0-DF3
  					num -= df0;
 -					if (nm->code == NM_RCLICK) {
-+					if (netplay_active()) {
-+						statusline_add_message(STATUSTYPE_FLOPPY, _T("Netplay: floppy change not possible during a session"));
++					if (!netplay_allow_inputcode((nm->code == NM_RCLICK ? AKS_EFLOPPY0 : AKS_FLOPPY0) + num, 1)) {
++						// netplay: only the host changes floppies
 +					} else if (nm->code == NM_RCLICK) {
  						disk_eject(num);
  					} else if (changed_prefs.floppyslots[num].dfxtype >= 0) {
@@ -2380,7 +3576,7 @@ index 24b2c7d..3bccb67 100644
  
  		case ID_ST_CDEJECTALL:
 diff --git a/od-win32/win32gui.cpp b/od-win32/win32gui.cpp
-index 8c30a57..4ca79e9 100644
+index 8c30a57..2edee1f 100644
 --- a/od-win32/win32gui.cpp
 +++ b/od-win32/win32gui.cpp
 @@ -48,6 +48,7 @@
@@ -2391,7 +3587,128 @@ index 8c30a57..4ca79e9 100644
  #include "xwin.h"
  #include "zfile.h"
  #include "parallel.h"
-@@ -23622,7 +23623,8 @@ static INT_PTR CALLBACK DialogProc (HWND hDlg, UINT msg, WPARAM wParam, LPARAM l
+@@ -260,7 +261,7 @@ static int LOADSAVE_ID = -1, MEMORY_ID = -1, KICKSTART_ID = -1, CPU_ID = -1,
+ 	DISPLAY_ID = -1, HW3D_ID = -1, CHIPSET_ID = -1, CHIPSET2_ID = -1, SOUND_ID = -1, FLOPPY_ID = -1, DISK_ID = -1,
+ 	HARDDISK_ID = -1, IOPORTS_ID = -1, GAMEPORTS_ID = -1, INPUT_ID = -1, MISC1_ID = -1, MISC2_ID = -1,
+ 	AVIOUTPUT_ID = -1, PATHS_ID = -1, QUICKSTART_ID = -1, ABOUT_ID = -1, EXPANSION_ID = -1, EXPANSION2_ID = -1,
+-	BOARD_ID = -1, FRONTEND_ID = -1;
++	BOARD_ID = -1, FRONTEND_ID = -1, NETPLAY_ID = -1;
+ static const int INPUTMAP_ID = MAX_C_PAGES - 1;
+ static HWND pages[MAX_C_PAGES];
+ #define MAX_IMAGETOOLTIPS 10
+@@ -18927,6 +18928,103 @@ static INT_PTR CALLBACK GamePortsDlgProc (HWND hDlg, UINT msg, WPARAM wParam, LP
+ }
+ 
+ /* Handle messages for the IO Settings page of our property-sheet */
++static void enable_for_netplaydlg(HWND hDlg)
++{
++	bool on = workprefs.netplay_mode != NETPLAY_MODE_OFF;
++	bool host = workprefs.netplay_mode == NETPLAY_MODE_HOST;
++	// player 2 gets delay and port settings from the host
++	ew(hDlg, IDC_NETPLAY_ADDRESS, workprefs.netplay_mode == NETPLAY_MODE_CLIENT);
++	ew(hDlg, IDC_NETPLAY_PORT, on);
++	ew(hDlg, IDC_NETPLAY_PASSWORD, on);
++	ew(hDlg, IDC_NETPLAY_DELAY, host);
++	ew(hDlg, IDC_NETPLAY_SWAPPORTS, host);
++	ew(hDlg, IDC_NETPLAY_MOUSE, host);
++	ew(hDlg, IDC_NETPLAY_UPNP, host);
++}
++
++static void values_to_netplaydlg(HWND hDlg)
++{
++	TCHAR tmp[1000];
++	int id = IDC_NETPLAY_OFF;
++	if (workprefs.netplay_mode == NETPLAY_MODE_HOST)
++		id = IDC_NETPLAY_HOST;
++	else if (workprefs.netplay_mode == NETPLAY_MODE_CLIENT)
++		id = IDC_NETPLAY_JOIN;
++	CheckRadioButton(hDlg, IDC_NETPLAY_OFF, IDC_NETPLAY_JOIN, id);
++	SetDlgItemText(hDlg, IDC_NETPLAY_ADDRESS, workprefs.netplay_address);
++	SetDlgItemInt(hDlg, IDC_NETPLAY_PORT, workprefs.netplay_port > 0 ? workprefs.netplay_port : NETPLAY_DEFAULT_PORT, FALSE);
++	SetDlgItemText(hDlg, IDC_NETPLAY_PASSWORD, workprefs.netplay_password);
++	SetDlgItemInt(hDlg, IDC_NETPLAY_DELAY, workprefs.netplay_delay, FALSE);
++	CheckDlgButton(hDlg, IDC_NETPLAY_SWAPPORTS, workprefs.netplay_swapports);
++	CheckDlgButton(hDlg, IDC_NETPLAY_MOUSE, workprefs.netplay_mouse);
++	CheckDlgButton(hDlg, IDC_NETPLAY_UPNP, workprefs.netplay_upnp);
++	netplay_getinfo(tmp, sizeof tmp / sizeof(TCHAR));
++	SetDlgItemText(hDlg, IDC_NETPLAY_STATUS, tmp);
++	enable_for_netplaydlg(hDlg);
++}
++
++static void values_from_netplaydlg(HWND hDlg)
++{
++	BOOL ok;
++	int v;
++	workprefs.netplay_mode = NETPLAY_MODE_OFF;
++	if (ischecked(hDlg, IDC_NETPLAY_HOST))
++		workprefs.netplay_mode = NETPLAY_MODE_HOST;
++	else if (ischecked(hDlg, IDC_NETPLAY_JOIN))
++		workprefs.netplay_mode = NETPLAY_MODE_CLIENT;
++	GetDlgItemText(hDlg, IDC_NETPLAY_ADDRESS, workprefs.netplay_address, sizeof workprefs.netplay_address / sizeof(TCHAR));
++	GetDlgItemText(hDlg, IDC_NETPLAY_PASSWORD, workprefs.netplay_password, sizeof workprefs.netplay_password / sizeof(TCHAR));
++	v = GetDlgItemInt(hDlg, IDC_NETPLAY_PORT, &ok, FALSE);
++	if (ok && v > 0 && v < 65536)
++		workprefs.netplay_port = v;
++	v = GetDlgItemInt(hDlg, IDC_NETPLAY_DELAY, &ok, FALSE);
++	if (ok && v >= 0 && v <= 15)
++		workprefs.netplay_delay = v;
++	workprefs.netplay_swapports = ischecked(hDlg, IDC_NETPLAY_SWAPPORTS);
++	workprefs.netplay_mouse = ischecked(hDlg, IDC_NETPLAY_MOUSE);
++	workprefs.netplay_upnp = ischecked(hDlg, IDC_NETPLAY_UPNP);
++	enable_for_netplaydlg(hDlg);
++}
++
++static INT_PTR CALLBACK NetplayDlgProc(HWND hDlg, UINT msg, WPARAM wParam, LPARAM lParam)
++{
++	static int recursive = 0;
++
++	bool handled;
++	INT_PTR vv = commonproc2(hDlg, msg, wParam, lParam, &handled);
++	if (handled) {
++		return vv;
++	}
++
++	switch (msg)
++	{
++	case WM_INITDIALOG:
++		recursive++;
++		pages[NETPLAY_ID] = hDlg;
++		currentpage = NETPLAY_ID;
++		SendDlgItemMessage(hDlg, IDC_NETPLAY_ADDRESS, EM_LIMITTEXT, sizeof workprefs.netplay_address / sizeof(TCHAR) - 1, 0);
++		SendDlgItemMessage(hDlg, IDC_NETPLAY_PASSWORD, EM_LIMITTEXT, sizeof workprefs.netplay_password / sizeof(TCHAR) - 1, 0);
++		values_to_netplaydlg(hDlg);
++		recursive--;
++		break;
++	case WM_USER:
++		recursive++;
++		values_to_netplaydlg(hDlg);
++		recursive--;
++		return TRUE;
++	case WM_COMMAND:
++		if (recursive > 0)
++			break;
++		if (HIWORD(wParam) != BN_CLICKED && HIWORD(wParam) != EN_CHANGE)
++			break;
++		recursive++;
++		values_from_netplaydlg(hDlg);
++		recursive--;
++		break;
++	}
++	return FALSE;
++}
++
+ static INT_PTR CALLBACK IOPortsDlgProc (HWND hDlg, UINT msg, WPARAM wParam, LPARAM lParam)
+ {
+ 	static int recursive = 0;
+@@ -22817,6 +22915,7 @@ static void createTreeView (HWND hDlg)
+ 	CN (DISPLAY_ID, _T("display"));
+ 	CN (SOUND_ID, _T("sound"));
+ 	CN (GAMEPORTS_ID, _T("gameport"));
++	CN (NETPLAY_ID, _T("netplay"));
+ 	CN (IOPORTS_ID, _T("ioport"));
+ 	CN (INPUT_ID, _T("input"));
+ 	CN (AVIOUTPUT_ID, _T("output"));
+@@ -23622,7 +23721,8 @@ static INT_PTR CALLBACK DialogProc (HWND hDlg, UINT msg, WPARAM wParam, LPARAM l
  				}
  				break;
  			case IDC_RESETAMIGA:
@@ -2401,6 +3718,14 @@ index 8c30a57..4ca79e9 100644
  				SendMessage (hDlg, WM_COMMAND, IDOK, 0);
  				return TRUE;
  			case IDC_QUITEMU:
+@@ -23994,6 +24094,7 @@ static int GetSettings (int all_options, HWND hwnd)
+ 		HARDDISK_ID = init_page (IDD_HARDDISK, IDI_HARDDISK, IDS_HARDDISK, HarddiskDlgProc, HarddiskAccel, _T("gui/harddrives"), 0);
+ #endif
+ 		GAMEPORTS_ID = init_page (IDD_GAMEPORTS, IDI_GAMEPORTS, IDS_GAMEPORTS, GamePortsDlgProc, NULL, _T("gui/gameports"), 0);
++		NETPLAY_ID = init_page (IDD_NETPLAY, IDI_PORTS, IDS_NETPLAY, NetplayDlgProc, NULL, NULL, 0);
+ 		IOPORTS_ID = init_page (IDD_IOPORTS, IDI_PORTS, IDS_IOPORTS, IOPortsDlgProc, NULL, _T("gui/ioports"), 0);
+ 		INPUT_ID = init_page (IDD_INPUT, IDI_INPUT, IDS_INPUT, InputDlgProc, NULL, _T("gui/input"), IDC_INPUTLIST);
+ 		MISC1_ID = init_page (IDD_MISC1, IDI_MISC1, IDS_MISC1, MiscDlgProc1, NULL, _T("gui/misc"), 0);
 diff --git a/od-win32/winuae_msvc15/winuae_msvc.vcxproj b/od-win32/winuae_msvc15/winuae_msvc.vcxproj
 index 26ef58c..642e00d 100644
 --- a/od-win32/winuae_msvc15/winuae_msvc.vcxproj

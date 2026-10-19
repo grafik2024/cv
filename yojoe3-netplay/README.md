@@ -11,8 +11,11 @@ haków), więc działa z każdą grą dla 2 graczy na A500, a nie tylko z Yo! Jo
 | Port Amigi | joystick w porcie 2 | joystick w porcie 1 (mysz) |
 | Dyski gry | ma pliki `*_A.adf`, `*_B.adf` | nie potrzebuje – dostaje od hosta |
 | Uruchamia | `HOST_gra_online.bat` | `DOLACZ_do_gry.bat` |
+| albo w oknie WinUAE (F12) | strona **Netplay** → Host → Start | strona **Netplay** → Join, adres → Start |
 
 Krótka instrukcja dla graczy: [`gra/JAK_GRAC_ONLINE.txt`](gra/JAK_GRAC_ONLINE.txt).
+
+![Cała gra przez netplay: zakończenie, rekordy JOE i NAT wpisane z dwóch klawiatur, nowa gra](zrzuty/cala_gra_koniec_rekordy_nowa_gra.png)
 
 ## Jak to działa
 
@@ -62,17 +65,37 @@ sprzęt. Lewy przycisk myszy hosta nadal działa jako fire w porcie 1.
    fire na „ONE PLAYER” zmienia na „TWO PLAYER” → OK → START.
 
 Stan połączenia widać na pasku tytułu okna WinUAE, np.
-`[Netplay host, delay 3, 84 ms] WinUAE`.
+`[Netplay: waiting for player 2: 203.0.113.7 port 25200 (Esc = cancel)]`,
+a w trakcie gry `[Netplay host, delay 3, 84 ms] WinUAE`. Esc w oknie
+przerywa czekanie na partnera (gra rusza bez netplay).
+
+### Strona „Netplay” w oknie ustawień (każda gra)
+
+W drzewie ustawień WinUAE (grupa *Host*) jest nowa strona **Netplay**:
+tryb (Off / Host / Join), adres hosta, port, hasło, opóźnienie (0 = auto),
+„Player 2 joystick goes to Amiga port 1”, „Mouse in Amiga port 1”,
+„Open the port in the router (UPnP)”, a w polu *Status* stan sesji, adresy
+tego komputera (LAN/VPN) i wynik UPnP z publicznym adresem.
+
+Dowolna gra dla dwóch graczy z dyskietek: obaj wczytują ten sam plik
+`.uae`, host wkłada dyskietki i wybiera *Host*, gracz 2 wybiera *Join*
+i wpisuje adres – obaj klikają *Start*. Jeśli emulacja już działa, netplay
+rusza przy twardym resecie (przycisk *Reset*); tak samo po zakończonej
+sesji można połączyć się ponownie bez zamykania WinUAE.
 
 ### Połączenie przez internet
 
-* **VPN (najprościej):** obaj instalują Radmin VPN, ZeroTier albo Tailscale,
-  dołączają do wspólnej sieci, a gracz 2 wpisuje adres hosta z tej sieci.
-  Nie trzeba nic ustawiać w routerze.
-* **Przekierowanie portu:** host przekierowuje w routerze port **TCP 25200**
-  na swój komputer i pozwala WinUAE na połączenia w zaporze Windows. Gracz 2
-  wpisuje publiczny adres IP hosta (np. z https://ifconfig.me). Inny port:
-  podaj go przy starcie hosta, a gracz 2 wpisuje `adres:port`.
+* **UPnP (automatycznie):** host przy starcie prosi router o przekierowanie
+  portu (SSDP + `AddPortMapping`, dzierżawa 2 h, usuwana po sesji) i pokazuje
+  publiczny adres z routera – gracz 2 wpisuje właśnie ten adres. Opcja
+  `netplay_upnp` / pole na stronie Netplay, domyślnie włączone.
+* **VPN:** obaj instalują Radmin VPN, ZeroTier albo Tailscale, dołączają
+  do wspólnej sieci, a gracz 2 wpisuje adres hosta z tej sieci (host widzi
+  swoje adresy LAN/VPN na pasku tytułu i na stronie Netplay).
+* **Ręczne przekierowanie portu:** host przekierowuje w routerze port
+  **TCP 25200** na swój komputer i pozwala WinUAE na połączenia w zaporze
+  Windows. Inny port: podaj go przy starcie hosta, a gracz 2 wpisuje
+  `adres:port`.
 * IPv6 też działa (`[2001:db8::1]:25200`).
 
 ### Uruchamianie ręczne
@@ -93,21 +116,29 @@ Opcje można też wpisać do pliku `.uae`:
 | `netplay_password` | hasło; klient z innym hasłem jest odrzucany | brak |
 | `netplay_swap_ports` | joystick klienta z portu 2 do portu 1 | `true` |
 | `netplay_mouse` | port 1 emulowany jako mysz (gry na mysz), sterowanie myszą hosta | `false` |
+| `netplay_upnp` | host otwiera port w routerze przez UPnP i pokazuje adres publiczny | `true` |
 | `rndseed` | stałe ziarno losowe – sesje są powtarzalne (testy) | losowe |
-| `netplay_debug_input`, `netplay_debug_log` | skrypt wejścia i log sum kontrolnych co klatkę (testy, patrz `dev/`) | – |
+| `netplay_debug_input`, `netplay_debug_log` | skrypt wejścia (zdarzenia, zrzuty, reset, warp, dyskietki) i log sum kontrolnych co klatkę (testy, patrz `dev/`) | – |
 
 ## Co jest pilnowane w trakcie sesji
 
 * **Reset** (Ctrl+Amiga+Amiga, skróty, przycisk Reset w GUI i na pasku stanu)
-  jest wysyłany do partnera i wykonywany u obu w tej samej klatce.
-* **Zmiana dyskietek** (GUI, pasek stanu, skróty), **wczytywanie stanów**,
-  przewijanie, Action Replay/freeze, wklejanie schowka – zablokowane,
-  bo zmieniłyby tylko jedną Amigę.
+  i **tryb warp** są wysyłane do partnera i wykonywane u obu w tej samej
+  klatce.
+* **Zmiana dyskietek przez hosta** (GUI, pasek stanu, skróty, zmieniacz
+  dysków) jest synchronizowana: host wysyła opis obrazu (CRC, rozmiar),
+  gracz 2 bierze go z pamięci podręcznej albo pobiera w tle (16 KB na
+  klatkę, gra toczy się dalej), a potem obie Amigi zmieniają dysk w tej samej
+  klatce. Gracz 2 nie może zmieniać dyskietek (komunikat „only player 1
+  (host) can change floppies”).
+* **Wczytywanie stanów**, przewijanie, Action Replay/freeze, wklejanie
+  schowka – zablokowane, bo zmieniłyby tylko jedną Amigę.
 * **Zmiana ustawień emulatora w GUI (F12)** u jednego gracza – WinUAE co 5 s
   porównuje konfigurację z tą z początku sesji i ostrzega na ekranie.
 * **Pauza / GUI / przeciągnięcie okna** u jednego gracza – drugi czeka
   („waiting for partner…”) i gra rusza dalej po wznowieniu.
-* **Zerwanie połączenia** – sesja się kończy, każdy gra dalej sam.
+* **Zerwanie połączenia** – sesja się kończy, każdy gra dalej sam. Twardy
+  reset uruchamia netplay od nowa (host czeka, klient łączy się ponownie).
 * Ustawienia, które psują determinizm, są odrzucane przy starcie: CPU
   „Fastest possible”, JIT, wątek CPU, wczytanie stanu przy starcie. Zegar RTC
   jest wyłączany (czytałby czas komputera).
@@ -140,6 +171,10 @@ dwie instancje na jednym komputerze, sterowanie skryptami
 | Inna konfiguracja (`chipmem_size`, cycle-exact) / złe hasło | odrzucone z listą różnic / „Wrong netplay password” |
 | **Windows ↔ Windows**: finalny `winuae64.exe` z GitHub Actions, obie kopie pod Wine 9 (Xvfb, bez karty dźwiękowej), trainer, menu → TWO PLAYER → gra obu graczy | 8 002 klatki, sumy identyczne w każdej klatce, zrzuty host = klient |
 | Windows (Wine) ↔ Linux | połączenie, przesłanie dysków i lockstep działają, ale buildy Windows i Unix emulują inaczej od klatki 96 – rozjazd został wykryty u obu; teraz handshake od razu odrzuca taką sesję: „Different emulator version: host WinUAE 6.1.0 Windows x64, player 2 WinUAE 6.1.0 Unix x64” |
+| **Cała gra** (`dev/testy/cala_gra`): trainer, 2 graczy, HELP co 300 klatek przez wszystkie światy, zakończenie, rekordy „JOE” (klawiatura hosta) i „NAT” (klawiatura klienta), nowa gra | 64 001 klatek (~21 min gry), sumy identyczne w każdej klatce, 27/27 zrzutów identycznych ([zrzut](zrzuty/cala_gra_koniec_rekordy_nowa_gra.png)) |
+| **Zmiana dyskietek** (`dev/testy/dyskietka`): jedna stacja, gra prosi „Insert Disk 2” → host wkłada B (klient go nie ma – 880 KB przesłane w trakcie gry), wysunięcie, A i B ponownie (z pamięci podręcznej klienta); klient próbuje zmienić dysk | 20 002 klatki identyczne, 16/16 zrzutów identycznych, próby klienta odrzucone |
+| **Ponowne połączenie**: sesja 6 900 klatek (gra już trwa), host kończy i robi twardy reset, łączy się nowy klient (świeży proces) | druga sesja identyczna co do klatki z pierwszą (od włączenia) – twardy reset jest równoważny włączeniu Amigi |
+| UPnP z atrapą routera (SSDP + SOAP): przekierowanie, adres publiczny, router tylko ze stałymi dzierżawami (błąd 725), port zajęty przez inny komputer (718), brak routera | przekierowanie dodane i usunięte po sesji / ponowienie z dzierżawą 0 / komunikat bez przejmowania cudzego portu / komunikat po 2,5 s, sesja działa |
 
 Szczegóły i skrypty: [`dev/TESTY.md`](dev/TESTY.md).
 
@@ -149,13 +184,19 @@ Szczegóły i skrypty: [`dev/TESTY.md`](dev/TESTY.md).
   `tonioni/WinUAE@ae186a9c6c5a4a91f370a2927937c0bbcd9f6a2f`
   (`git apply winuae-netplay.patch`). Zawiera:
   * `netplay.cpp`, `include/netplay.h` – protokół, handshake, transfer dysków,
-    synchronizacja klatek, sumy kontrolne;
+    synchronizacja klatek, sumy kontrolne, zmiana dyskietek w trakcie sesji,
+    UPnP (SSDP/SOAP, bez zewnętrznych bibliotek), adresy LAN/VPN;
   * `inputdevice.cpp` – przechwytywanie lokalnego wejścia, wstrzykiwanie na
     początku klatki, jednolite typy portów, blokada akcji AKS, reset przez sieć;
-  * `newcpu.cpp` – połączenie przed pierwszym włączeniem Amigi;
+  * `newcpu.cpp` – połączenie przed włączeniem Amigi i przy twardym resecie;
   * `cfgfile.cpp`, `include/options.h` – opcje `netplay_*`;
-  * `disk.cpp`, `od-win32/win32.cpp`, `od-win32/win32gui.cpp` – blokada zmiany
-    dyskietek, reset przez sieć, status na pasku tytułu;
+  * `disk.cpp`, `include/disk.h` – zmiana dyskietki hosta przez netplay
+    (`netplay_request_disk` → `disk_netplay_change` u obu w tej samej klatce),
+    `DISK_poweron` (mechanika stacji jak po włączeniu);
+  * `od-win32/win32gui.cpp`, `od-win32/resources/*` – strona „Netplay”
+    w oknie ustawień; `od-win32/win32.cpp` – pasek stanu (dyskietki, reset),
+    status na pasku tytułu;
+  * `custom.cpp`, `keybuf.cpp` – warp przełączany u obu, klawisze w pauzie;
   * `od-win32/winuae_msvc15/*.vcxproj*`, `CMakeLists.txt` – nowy plik w projektach;
   * `od-unix/graphics.cpp` – status w tytule okna i poprawka kompilacji portu Unix
     (`set_custom_limits` po zmianie sygnatury w upstream).
@@ -164,7 +205,8 @@ Szczegóły i skrypty: [`dev/TESTY.md`](dev/TESTY.md).
   `winuaeinclibs.zip`, `msbuild ... FullRelease x64`).
 * Linux: [`dev/build-linux.sh`](dev/build-linux.sh) buduje SDL3 i WinUAE z łatką,
   [`dev/nptest.sh`](dev/nptest.sh) uruchamia sesję host + klient,
-  [`dev/latency_proxy.py`](dev/latency_proxy.py) symuluje opóźnienie internetu.
+  [`dev/latency_proxy.py`](dev/latency_proxy.py) symuluje opóźnienie internetu,
+  [`dev/fake_igd.py`](dev/fake_igd.py) udaje router UPnP.
 
 ### Protokół
 
@@ -174,15 +216,28 @@ TCP, wiadomości `[u32 długość][u8 typ][dane]`, liczby big-endian:
 konfiguracja) → `SETUPREPLY` (zgoda albo lista różnic, które dyski wysłać) →
 `DISKDATA` (po 32 KB) → `START` → `READY` → w każdej klatce `FRAME` (numer
 klatki + zdarzenia) i co 50 klatek `HASH`; `BYE`/`REJECT` z powodem.
-Zdarzenia od partnera są sprawdzane (tylko klawiatura, joysticki i mysz,
-nigdy akcje emulatora), rozmiary dysków i wiadomości są ograniczone, nazwy
-plików od hosta są oczyszczane.
+Zmiana dyskietki przez hosta: `DISKOFFER` (id, stacja, CRC, rozmiar, nazwa) →
+`DISKREPLY` (mam / wyślij) → `DISKCHUNK` (8 KB, najwyżej 16 KB na klatkę) →
+`DISKREADY` → zdarzenie specjalne w `FRAME` (stacja, id; 0 = wysunięcie)
+wykonywane u obu w tej samej klatce. Wersja protokołu 2.
+Zdarzenia od partnera są sprawdzane (klawiatura, joysticki, mysz oraz
+reset, warp i zmiana dyskietki – ta tylko od hosta i tylko z obrazem
+potwierdzonym przez klienta; nigdy inne akcje emulatora), rozmiary dysków
+i wiadomości są ograniczone, nazwy plików od hosta są oczyszczane.
+
+Suma kontrolna obejmuje pamięć Chip, Slow, RAM dodawany dla AROS
+(`$A80000`), Fast/Z3 (duże płytki po 1 MB na sprawdzenie), rejestry D0–A7,
+PC, licznik linii i ziarno losowe. Na starcie sesji netplay zeruje to,
+czego twardy reset nie czyści (rejestry CPU, RAM `$A80000`, mechanika
+stacji dyskietek), więc sesja po resecie jest identyczna jak po włączeniu.
 
 ### Ograniczenia
 
 * Dwóch graczy. Obaj muszą mieć tę samą kompilację WinUAE na tej samej
   platformie (Windows z Windows); inna wersja lub platforma jest odrzucana
   przy łączeniu.
-* Sesja zaczyna się od włączenia Amigi; nie da się dołączyć do trwającej gry,
-  a po rozjechaniu się („DESYNC”) trzeba połączyć się od nowa.
-* Gry z dysku twardego/CD nie są przesyłane (tylko dyskietki).
+* Sesja zaczyna się od włączenia Amigi (albo twardego resetu); nie da się
+  dołączyć do trwającej gry, a po rozjechaniu się („DESYNC”) trzeba
+  połączyć się od nowa.
+* Gry z dysku twardego/CD nie są przesyłane (tylko dyskietki); dyskietki
+  w trakcie gry zmienia tylko host.

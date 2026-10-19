@@ -34,7 +34,7 @@ set /p "PASS=Haslo [Enter = bez hasla]: "
 call "%~dp0_sterowanie.bat"
 
 echo.
-echo  Laczenie z %HOST% ... (status jest na pasku tytulu okna WinUAE)
+echo  Laczenie z %HOST% ... (status na pasku tytulu okna WinUAE, Esc = anuluj)
 echo.
 
 start "" "%EXE%" -portable -f "%~dp0YoJoe3_netplay.uae" -s netplay=client -s "netplay_address=%HOST%" -s "netplay_password=%PASS%" -s joyport1=%JOY%

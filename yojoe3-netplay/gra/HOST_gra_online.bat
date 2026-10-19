@@ -47,13 +47,13 @@ echo.
 echo  Twoje adresy w sieci lokalnej (LAN / VPN):
 ipconfig | findstr /i "IPv4"
 echo.
-echo  Przez internet gracz 2 wpisuje Twoj adres PUBLICZNY
-echo  (sprawdzisz go np. na https://ifconfig.me), a Ty musisz
-echo  przekierowac port TCP %PORT% w routerze na ten komputer.
-echo  Prosciej: obaj zainstalujcie Radmin VPN / ZeroTier / Tailscale
-echo  i uzyjcie adresu z tej sieci - wtedy nic nie trzeba ustawiac.
+echo  Przez internet: WinUAE sam poprosi router o otwarcie portu
+echo  TCP %PORT% (UPnP) i pokaze Twoj adres PUBLICZNY na pasku tytulu
+echo  okna - podaj go graczowi 2. Jesli router nie obsluguje UPnP,
+echo  przekieruj port TCP %PORT% recznie albo uzyjcie VPN
+echo  (Radmin VPN / ZeroTier / Tailscale) i adresu z tej sieci.
 echo.
-echo  WinUAE czeka na gracza 2 (status jest na pasku tytulu okna).
+echo  WinUAE czeka na gracza 2 (status na pasku tytulu, Esc = anuluj).
 echo.
 
 start "" "%EXE%" -portable -f "%~dp0YoJoe3_netplay.uae" -s "floppy0=%DISKA%" -s "floppy1=%DISKB%" -s netplay=host -s netplay_port=%PORT% -s "netplay_password=%PASS%" -s joyport1=%JOY%
