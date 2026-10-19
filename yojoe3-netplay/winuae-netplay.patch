@@ -545,10 +545,10 @@ index f6d4bc0..ce2614e 100644
  }
 diff --git a/netplay.cpp b/netplay.cpp
 new file mode 100644
-index 0000000..039d8da
+index 0000000..68fb8a4
 --- /dev/null
 +++ b/netplay.cpp
-@@ -0,0 +1,2805 @@
+@@ -0,0 +1,2823 @@
 +/*
 +* UAE - The Un*x Amiga Emulator
 +*
@@ -1187,32 +1187,48 @@ index 0000000..039d8da
 +	};
 +#ifdef _WIN32
 +	char name[256];
-+	if (!start_sockets() || gethostname(name, sizeof name))
++	if (!start_sockets())
 +		return out;
 +	struct addrinfo hints, *res = NULL;
 +	memset(&hints, 0, sizeof hints);
 +	hints.ai_family = AF_INET;
 +	hints.ai_socktype = SOCK_STREAM;
-+	if (getaddrinfo(name, NULL, &hints, &res) || !res)
-+		return out;
-+	for (struct addrinfo *a = res; a; a = a->ai_next) {
-+		char ip[64];
-+		if (!getnameinfo(a->ai_addr, (int)a->ai_addrlen, ip, sizeof ip, NULL, 0, NI_NUMERICHOST))
-+			add(ip);
++	if (!gethostname(name, sizeof name) && !getaddrinfo(name, NULL, &hints, &res) && res) {
++		for (struct addrinfo *a = res; a; a = a->ai_next) {
++			char ip[64];
++			if (!getnameinfo(a->ai_addr, (int)a->ai_addrlen, ip, sizeof ip, NULL, 0, NI_NUMERICHOST))
++				add(ip);
++		}
++		freeaddrinfo(res);
 +	}
-+	freeaddrinfo(res);
 +#else
 +	struct ifaddrs *ifa = NULL;
-+	if (getifaddrs(&ifa))
-+		return out;
-+	for (struct ifaddrs *a = ifa; a; a = a->ifa_next) {
-+		char ip[64];
-+		if (a->ifa_addr && a->ifa_addr->sa_family == AF_INET &&
-+			!getnameinfo(a->ifa_addr, sizeof(struct sockaddr_in), ip, sizeof ip, NULL, 0, NI_NUMERICHOST))
-+			add(ip);
++	if (!getifaddrs(&ifa)) {
++		for (struct ifaddrs *a = ifa; a; a = a->ifa_next) {
++			char ip[64];
++			if (a->ifa_addr && a->ifa_addr->sa_family == AF_INET &&
++				!getnameinfo(a->ifa_addr, sizeof(struct sockaddr_in), ip, sizeof ip, NULL, 0, NI_NUMERICHOST))
++				add(ip);
++		}
++		freeifaddrs(ifa);
 +	}
-+	freeifaddrs(ifa);
 +#endif
++	// address of the default route (connect() on UDP sends nothing),
++	// found also where the host name does not resolve to LAN addresses
++	np_socket s = socket(AF_INET, SOCK_DGRAM, 0);
++	if (s != np_invalid) {
++		struct sockaddr_in to, me;
++		memset(&to, 0, sizeof to);
++		to.sin_family = AF_INET;
++		to.sin_port = htons(53);
++		inet_pton(AF_INET, "8.8.8.8", &to.sin_addr);
++		socklen_t len = sizeof me;
++		char ip[64];
++		if (connect(s, (struct sockaddr*)&to, sizeof to) == 0 && getsockname(s, (struct sockaddr*)&me, &len) == 0
++			&& inet_ntop(AF_INET, &me.sin_addr, ip, sizeof ip) && strcmp(ip, "0.0.0.0"))
++			add(ip);
++		np_closesocket(s);
++	}
 +	return out;
 +}
 +
@@ -2553,10 +2569,12 @@ index 0000000..039d8da
 +	}
 +	// address for player 2: public one from the router, else LAN/VPN ones
 +	std::string show = !igd.external.empty() ? igd.external : addrs;
++	if (show.empty())
++		_stprintf(tmp, _T("waiting for player 2 on port %d"), port);
++	else
++		_stprintf(tmp, _T("waiting for player 2: %s port %d"), to_tchar(show).c_str(), port);
 +#ifdef _WIN32
-+	_stprintf(tmp, _T("waiting for player 2: %s port %d (Esc = cancel)"), to_tchar(show).c_str(), port);
-+#else
-+	_stprintf(tmp, _T("waiting for player 2: %s port %d"), to_tchar(show).c_str(), port);
++	_tcscat(tmp, _T(" (Esc = cancel)"));
 +#endif
 +	set_status(tmp);
 +
@@ -3465,7 +3483,7 @@ index 12d5889..1da35d1 100644
  #endif
  #endif
 diff --git a/od-win32/resources/winuae.rc b/od-win32/resources/winuae.rc
-index cd8b7d3..5bcca3f 100644
+index cd8b7d3..09014a9 100644
 --- a/od-win32/resources/winuae.rc
 +++ b/od-win32/resources/winuae.rc
 @@ -103,6 +103,37 @@ END
@@ -3476,22 +3494,22 @@ index cd8b7d3..5bcca3f 100644
 +STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
 +FONT 8, "MS Sans Serif", 0, 0, 0x1
 +BEGIN
-+    GROUPBOX        "Netplay: two players, two computers, one Amiga",IDC_STATIC,1,0,393,112
-+    CONTROL         "Off",IDC_NETPLAY_OFF,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,14,170,10
-+    CONTROL         "Host (player 1, waits for player 2)",IDC_NETPLAY_HOST,"Button",BS_AUTORADIOBUTTON,12,28,170,10
-+    CONTROL         "Join (player 2, connects to the host)",IDC_NETPLAY_JOIN,"Button",BS_AUTORADIOBUTTON,12,42,170,10
-+    CONTROL         "Player 2 joystick goes to Amiga port 1",IDC_NETPLAY_SWAPPORTS,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,12,62,170,10
-+    CONTROL         "Mouse in Amiga port 1 (mouse games)",IDC_NETPLAY_MOUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,76,170,10
-+    CONTROL         "Open the port in the router (UPnP)",IDC_NETPLAY_UPNP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,90,170,10
-+    RTEXT           "Host address:",IDC_STATIC,186,14,86,10,SS_CENTERIMAGE
-+    EDITTEXT        IDC_NETPLAY_ADDRESS,276,13,110,12,ES_AUTOHSCROLL
-+    RTEXT           "TCP port:",IDC_STATIC,186,30,86,10,SS_CENTERIMAGE
-+    EDITTEXT        IDC_NETPLAY_PORT,276,29,40,12,ES_AUTOHSCROLL | ES_NUMBER
-+    RTEXT           "Password (optional):",IDC_STATIC,186,46,86,10,SS_CENTERIMAGE
-+    EDITTEXT        IDC_NETPLAY_PASSWORD,276,45,110,12,ES_AUTOHSCROLL
-+    RTEXT           "Input delay (frames):",IDC_STATIC,186,62,86,10,SS_CENTERIMAGE
-+    EDITTEXT        IDC_NETPLAY_DELAY,276,61,24,12,ES_AUTOHSCROLL | ES_NUMBER
-+    LTEXT           "0 = automatic",IDC_STATIC,305,62,80,10,SS_CENTERIMAGE
++    GROUPBOX        "Netplay: two players, two computers, one Amiga",IDC_STATIC,1,6,393,106
++    CONTROL         "Off",IDC_NETPLAY_OFF,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,20,170,10
++    CONTROL         "Host (player 1, waits for player 2)",IDC_NETPLAY_HOST,"Button",BS_AUTORADIOBUTTON,12,34,170,10
++    CONTROL         "Join (player 2, connects to the host)",IDC_NETPLAY_JOIN,"Button",BS_AUTORADIOBUTTON,12,48,170,10
++    CONTROL         "Player 2 joystick goes to Amiga port 1",IDC_NETPLAY_SWAPPORTS,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,12,68,170,10
++    CONTROL         "Mouse in Amiga port 1 (mouse games)",IDC_NETPLAY_MOUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,82,170,10
++    CONTROL         "Open the port in the router (UPnP)",IDC_NETPLAY_UPNP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,96,170,10
++    RTEXT           "Host address:",IDC_STATIC,186,20,86,10,SS_CENTERIMAGE
++    EDITTEXT        IDC_NETPLAY_ADDRESS,276,19,110,12,ES_AUTOHSCROLL
++    RTEXT           "TCP port:",IDC_STATIC,186,36,86,10,SS_CENTERIMAGE
++    EDITTEXT        IDC_NETPLAY_PORT,276,35,40,12,ES_AUTOHSCROLL | ES_NUMBER
++    RTEXT           "Password (optional):",IDC_STATIC,186,52,86,10,SS_CENTERIMAGE
++    EDITTEXT        IDC_NETPLAY_PASSWORD,276,51,110,12,ES_AUTOHSCROLL
++    RTEXT           "Input delay (frames):",IDC_STATIC,186,68,86,10,SS_CENTERIMAGE
++    EDITTEXT        IDC_NETPLAY_DELAY,276,67,24,12,ES_AUTOHSCROLL | ES_NUMBER
++    LTEXT           "0 = automatic",IDC_STATIC,305,68,80,10,SS_CENTERIMAGE
 +    GROUPBOX        "Status",IDC_STATIC,1,116,393,62
 +    LTEXT           "",IDC_NETPLAY_STATUS,10,128,376,44
 +    GROUPBOX        "How to play",IDC_STATIC,1,182,393,128
