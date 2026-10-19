@@ -77,6 +77,8 @@ tryb (Off / Host / Join), adres hosta, port, hasło, opóźnienie (0 = auto),
 „Open the port in the router (UPnP)”, a w polu *Status* stan sesji, adresy
 tego komputera (LAN/VPN) i wynik UPnP z publicznym adresem.
 
+![Strona Netplay w oknie ustawień WinUAE](zrzuty/okno_netplay.png)
+
 Dowolna gra dla dwóch graczy z dyskietek: obaj wczytują ten sam plik
 `.uae`, host wkłada dyskietki i wybiera *Host*, gracz 2 wybiera *Join*
 i wpisuje adres – obaj klikają *Start*. Jeśli emulacja już działa, netplay
@@ -174,6 +176,8 @@ dwie instancje na jednym komputerze, sterowanie skryptami
 | **Cała gra** (`dev/testy/cala_gra`): trainer, 2 graczy, HELP co 300 klatek przez wszystkie światy, zakończenie, rekordy „JOE” (klawiatura hosta) i „NAT” (klawiatura klienta), nowa gra | 64 001 klatek (~21 min gry), sumy identyczne w każdej klatce, 27/27 zrzutów identycznych ([zrzut](zrzuty/cala_gra_koniec_rekordy_nowa_gra.png)) |
 | **Zmiana dyskietek** (`dev/testy/dyskietka`): jedna stacja, gra prosi „Insert Disk 2” → host wkłada B (klient go nie ma – 880 KB przesłane w trakcie gry), wysunięcie, A i B ponownie (z pamięci podręcznej klienta); klient próbuje zmienić dysk | 20 002 klatki identyczne, 16/16 zrzutów identycznych, próby klienta odrzucone |
 | **Ponowne połączenie**: sesja 6 900 klatek (gra już trwa), host kończy i robi twardy reset, łączy się nowy klient (świeży proces) | druga sesja identyczna co do klatki z pierwszą (od włączenia) – twardy reset jest równoważny włączeniu Amigi |
+| **Windows ↔ Windows: zmiana dyskietek** (`winuae64.exe` z GitHub Actions pod Wine, scenariusz jak wyżej; finalny build dodatkowo do klatki 8000) | 20 002 klatki identyczne, 16/16 zrzutów identycznych; finalny build 8 002 klatki identyczne |
+| **Strona Netplay w GUI** (Windows pod Wine): Host → Start, w drugim WinUAE Join + adres → Start | sesja startuje, dyski przesłane; Esc przy czekaniu → „cancelled”, gra rusza bez netplay |
 | UPnP z atrapą routera (SSDP + SOAP): przekierowanie, adres publiczny, router tylko ze stałymi dzierżawami (błąd 725), port zajęty przez inny komputer (718), brak routera | przekierowanie dodane i usunięte po sesji / ponowienie z dzierżawą 0 / komunikat bez przejmowania cudzego portu / komunikat po 2,5 s, sesja działa |
 
 Szczegóły i skrypty: [`dev/TESTY.md`](dev/TESTY.md).
