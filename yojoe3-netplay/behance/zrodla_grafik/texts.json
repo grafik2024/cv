@@ -1,0 +1,504 @@
+{
+ "pl": {
+  "files": [
+   "okladka",
+   "tytul",
+   "edycje",
+   "mapy_7_12",
+   "swiaty_w_grze",
+   "klimat_oryginalu",
+   "jak_dziala",
+   "okno_netplay",
+   "dyskietki",
+   "debugowanie",
+   "testy",
+   "final"
+  ],
+  "cover_kicker": "Mod gry Amiga + mod emulatora WinUAE",
+  "cover_sub": "12 światów i gra online w co-opie",
+  "cover_tags": [
+   "Amiga 500",
+   "Level design",
+   "C++",
+   "Netplay"
+  ],
+  "title_kicker": "O projekcie",
+  "title_h": "Dwa mody w jednym projekcie",
+  "title_lead": "Yo! Joe! (Scipio, 1993) to platformówka dla dwóch graczy: <b>Joe i Nat</b> przechodzą kolejne światy razem, każdy swoim joystickiem. Wzięliśmy oryginał na warsztat w dwóch krokach.",
+  "title_c1h": "Mod gry",
+  "title_c1": "Rozbudowa do 12 światów, nowe mapy, pełne zakończenie.",
+  "title_c2h": "Mod emulatora",
+  "title_c2": "Gra online w co-opie w WinUAE – dwa komputery, jedna Amiga.",
+  "title_cap": "Oryginalny ekran ładowania gry",
+  "ed_kicker": "Mod gry",
+  "ed_h": "Od oryginału do 12 światów",
+  "ed_lead": "Mod powstawał w czterech edycjach. Każda mieści się na dwóch dyskietkach, tak jak oryginał.",
+  "ed_label": "Edycja",
+  "ed_items": [
+   [
+    "Klasyczne światy",
+    "6 światów przebudowanych na oryginalnej grafice."
+   ],
+   [
+    "Nowa grafika",
+    "6 światów z nową grafiką, w tym metro."
+   ],
+   [
+    "Dwanaście światów",
+    "6 klasycznych, potem 6 z nową grafiką i zakończenie."
+   ],
+   [
+    "Dwanaście światów v6",
+    "Światy 7–12 z całkiem nowymi mapami."
+   ]
+  ],
+  "ed_w16": "Światy 1–6: klasyczne, przebudowane",
+  "ed_w712": "Światy 7–12: nowe mapy (wersja 6)",
+  "maps_kicker": "Level design",
+  "maps_h": "Nowe mapy: światy 7–12",
+  "maps_lead": "Budynki z salami różnej wielkości, skrytki, pułapki, schody i zjeżdżalnie – zbudowane z <b>oryginalnych kafli gry</b>, więc nowe poziomy wyglądają jak część oryginału.",
+  "maps_feats": [
+   "Sale",
+   "Skrytki",
+   "Pułapki",
+   "Schody",
+   "Zjeżdżalnie"
+  ],
+  "maps_world": "Świat",
+  "maps_names": [
+   "Zamek na Bagnach",
+   "Kanion Grobowców",
+   "Osada w Koronach Drzew",
+   "Klasztor w Górach",
+   "Metro",
+   "Port Nocą"
+  ],
+  "ig_kicker": "Klimat oryginału",
+  "ig_h": "Jak w grze z epoki",
+  "ig_lead": "Zostało wszystko, co budowało klimat. Całość sprawdzona w emulatorze: <b>wszystkie światy, zakończenie i nowa gra</b>.",
+  "ig_caps": [
+   "Trainer TRSI: życia, energia, broń",
+   "Ekran tytułowy",
+   "Opcje: TWO PLAYER",
+   "Joe i Nat razem w grze",
+   "Rekord sprayem na wagonie metra",
+   "Etap bonusowy w powietrzu"
+  ],
+  "how_kicker": "Mod emulatora · lockstep",
+  "how_h": "Jak działa gra online",
+  "how_lead": "WinUAE nie oferuje gry sieciowej w co-opie, więc ją dopisaliśmy. Obie Amigi liczą tę samą grę – <b>przez sieć idzie tylko sterowanie</b>.",
+  "how_host": "HOST · JOE",
+  "how_host_sub": "joystick → port 2",
+  "how_p2": "GRACZ 2 · NAT",
+  "how_p2_sub": "joystick → port 1",
+  "how_input": "joystick · mysz · klawiatura",
+  "how_input_sub": "kilkanaście bajtów na klatkę",
+  "how_hash": "✓ co sekundę porównanie sumy kontrolnej",
+  "how_frames": "Klatki",
+  "how_arc": "ruch z klatki N – u obu w klatce N + opóźnienie",
+  "how_points": [
+   "Start z identycznego stanu: konfiguracja, Kickstart, dyskietki i ziarno losowości.",
+   "Host sam wysyła dyskietki graczowi 2 i zapamiętuje je na następny raz.",
+   "Opóźnienie z pingu: w LAN 1 klatka (20 ms), przy 90 ms 3 klatki.",
+   "Rozjazd wykrywany od razu dzięki sumie kontrolnej pamięci i procesora."
+  ],
+  "gui_kicker": "Dla gracza",
+  "gui_h": "Strona „Netplay” w WinUAE",
+  "gui_cap": "Nowa strona w ustawieniach WinUAE (wersja Windows)",
+  "gui_items": [
+   [
+    "Host albo Join",
+    "– adres, port, hasło, opóźnienie"
+   ],
+   [
+    "UPnP",
+    "– host sam otwiera port w routerze"
+   ],
+   [
+    "Port 1 dla gracza 2",
+    "– sterowanie ustawiasz jak do gry solo"
+   ],
+   [
+    "Reset i turbo u obu",
+    "– w tej samej klatce"
+   ],
+   [
+    "Pauza",
+    "– jeden się zatrzyma, drugi czeka"
+   ],
+   [
+    "Esc / twardy reset",
+    "– anulowanie i ponowne połączenie"
+   ]
+  ],
+  "gui_title_k": "Pasek tytułu hosta",
+  "gui_title1": "[Netplay: waiting for player 2: 192.0.2.2 port 25200 (Esc = cancel)]",
+  "gui_title2": "[Netplay host, delay 3, 84 ms]",
+  "disk_kicker": "Dyskietki w trakcie gry",
+  "disk_h": "„Insert Disk 2” – przez internet",
+  "disk_lead": "Gra na jednej stacji prosi o drugi dysk. Host wkłada go jak zwykle, a netplay sam dostarcza go graczowi 2 i <b>zmienia u obu w tej samej klatce</b>.",
+  "disk_caps": [
+   "Poziom 1 z dysku A",
+   "Gra prosi o dysk 2",
+   "Bonus wczytany z dysku B – u obu"
+  ],
+  "disk_steps": [
+   [
+    "Host wkłada dysk",
+    "pasek stanu, F12 albo skrót"
+   ],
+   [
+    "Oferta",
+    "CRC, rozmiar i nazwa obrazu"
+   ],
+   [
+    "Gracz 2 sprawdza",
+    "dysk w pamięci podręcznej?"
+   ],
+   [
+    "Pobieranie w tle",
+    "16 KB na klatkę, gra trwa"
+   ],
+   [
+    "Zmiana u obu",
+    "w tej samej klatce"
+   ]
+  ],
+  "dbg_kicker": "Debugowanie",
+  "dbg_h": "Polowanie na rozjazd",
+  "dbg_lead": "Obie Amigi muszą liczyć dokładnie to samo, co do bitu. Po ponownym połączeniu gra rozjeżdżała się od razu – śledziliśmy błąd krok po kroku.",
+  "dbg_steps": [
+   [
+    "Klatka 0",
+    "Rejestry procesora",
+    "Reset zostawia stare wartości – zerujemy je na starcie sesji."
+   ],
+   [
+    "Klatka 150",
+    "Mechanika stacji dysków",
+    "Położenie głowicy i silnik zostają jak były – stacja wraca do stanu „jak po włączeniu”."
+   ],
+   [
+    "Klatka 219",
+    "Jedna liczba w pamięci",
+    "Pamięć dokładana dla systemu AROS nie jest czyszczona przy resecie."
+   ],
+   [
+    "6 900 klatek",
+    "Identycznie",
+    "Sesja po resecie = sesja od włączenia, co do klatki."
+   ]
+  ],
+  "dbg_p2": "GRACZ 2",
+  "dbg_trace_t": "Ślad instrukcji obu Amig, klatka 218→219",
+  "dbg_trace_d": "Spośród kilkunastu tysięcy instrukcji jedna różnica: system wczytuje licznik <b style=\"color:#f0f1ff\">11 zamiast 6</b>. Ta pamięć jest teraz czyszczona i wliczana do sumy kontrolnej.",
+  "dbg_more_t": "Inne znalezione rozjazdy",
+  "dbg_more": [
+   "Obraz dyskietki w wyłączonej stacji – rozjazd w klatce 241",
+   "Wersje Windows i Linux liczą inaczej – łączą się tylko identyczne"
+  ],
+  "test_kicker": "Testy",
+  "test_h": "Sprawdzone klatka po klatce",
+  "test_lead": "Grą sterowały skrypty, a obie Amigi zapisywały sumę kontrolną stanu w każdej klatce.",
+  "test_tiles": [
+   [
+    "64 002",
+    "klatki identyczne",
+    "Cała gra: wszystkie światy, zakończenie, rekordy, nowa gra."
+   ],
+   [
+    "27 / 27",
+    "zrzutów ekranu",
+    "Host i gracz 2 – bit w bit."
+   ],
+   [
+    "20 002",
+    "klatki z dyskietkami",
+    "Jedna stacja, wymiana dysków – Linux i Windows."
+   ],
+   [
+    "3 klatki",
+    "przy 90 ms pingu",
+    "Symulowany internet 40 ms + wahania, gra płynna."
+   ]
+  ],
+  "test_cap_h": "<b>Host</b> · klatka 20&#8239;000",
+  "test_cap_c": "<b>Gracz 2</b> · klatka 20&#8239;000",
+  "test_same": "Dwa komputery, dwa emulatory, ten sam obraz. Do tego testy: ponowne połączenie po resecie, router UPnP, złe hasło, inna konfiguracja, zerwane połączenie.",
+  "fin_kicker": "Finał",
+  "fin_h": "Do końca gry – przez internet",
+  "fin_lead": "Zakończenie, tabela rekordów wpisana z dwóch klawiatur i nowa gra.",
+  "fin_caps": [
+   "Zakończenie i podziękowania",
+   "Rekord Joe: „JOE” z klawiatury hosta",
+   "Rekord Nat: „NAT” z klawiatury gracza 2",
+   "Nowa gra: Joe i Nat znowu w akcji"
+  ],
+  "fin_credits": "Projekt fanowski, niekomercyjny. Oryginał: Yo! Joe! – Scipio, 1993 (Play Byte, Hudson Soft). Trainer: TRSI. Emulator: WinUAE (Toni Wilen i współtwórcy), wbudowany ROM AROS.",
+  "wo_kicker": "Cała gra przez netplay",
+  "wo_h": "Światy w grze",
+  "wo_frame": "Klatka",
+  "wo_lead": "Start kolejnych światów z przejścia całej gry online: <b>Joe na jednym komputerze, Nat na drugim</b>. Od pierwszego poziomu, przez nowe światy i metro, po ostatni świat przed zakończeniem.",
+  "wo_caps": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "metro",
+   "ostatni świat"
+  ]
+ },
+ "en": {
+  "files": [
+   "cover",
+   "title",
+   "editions",
+   "maps_7_12",
+   "worlds_in_game",
+   "original_feel",
+   "how_it_works",
+   "netplay_window",
+   "floppies",
+   "debugging",
+   "tests",
+   "finale"
+  ],
+  "cover_kicker": "Amiga game mod + WinUAE emulator mod",
+  "cover_sub": "12 worlds and online co-op",
+  "cover_tags": [
+   "Amiga 500",
+   "Level design",
+   "C++",
+   "Netplay"
+  ],
+  "title_kicker": "About the project",
+  "title_h": "Two mods in one project",
+  "title_lead": "Yo! Joe! (Scipio, 1993) is a two-player platformer: <b>Joe and Nat</b> fight through the worlds together, each with their own joystick. We took the original apart in two steps.",
+  "title_c1h": "Game mod",
+  "title_c1": "Expanded to 12 worlds, new maps, a full ending.",
+  "title_c2h": "Emulator mod",
+  "title_c2": "Online co-op in WinUAE – two computers, one Amiga.",
+  "title_cap": "Original loading screen of the game",
+  "ed_kicker": "Game mod",
+  "ed_h": "From the original to 12 worlds",
+  "ed_lead": "The mod was built in four editions. Each fits on two floppy disks, just like the original.",
+  "ed_label": "Edition",
+  "ed_items": [
+   [
+    "Classic worlds",
+    "6 worlds rebuilt with the original graphics."
+   ],
+   [
+    "New graphics",
+    "6 worlds with new graphics, including the subway."
+   ],
+   [
+    "Twelve worlds",
+    "6 classic, then 6 new-graphics worlds and the ending."
+   ],
+   [
+    "Twelve worlds v6",
+    "Worlds 7–12 with completely new maps."
+   ]
+  ],
+  "ed_w16": "Worlds 1–6: classic, rebuilt",
+  "ed_w712": "Worlds 7–12: new maps (version 6)",
+  "maps_kicker": "Level design",
+  "maps_h": "New maps: worlds 7–12",
+  "maps_lead": "Buildings with rooms of different sizes, hiding places, traps, stairs and slides – built from the <b>game's original tiles</b>, so the new levels look like part of the original.",
+  "maps_feats": [
+   "Rooms",
+   "Hiding places",
+   "Traps",
+   "Stairs",
+   "Slides"
+  ],
+  "maps_world": "World",
+  "maps_names": [
+   "Swamp Castle",
+   "Tomb Canyon",
+   "Treetop Village",
+   "Mountain Monastery",
+   "Subway",
+   "Night Harbour"
+  ],
+  "ig_kicker": "Original feel",
+  "ig_h": "Like a game from the era",
+  "ig_lead": "Everything that made the atmosphere stayed. Checked in the emulator: <b>all worlds, the ending and a new game</b>.",
+  "ig_caps": [
+   "TRSI trainer: lives, energy, weapons",
+   "Title screen",
+   "Options: TWO PLAYER",
+   "Joe and Nat playing together",
+   "High score sprayed on a subway car",
+   "Bonus stage in the air"
+  ],
+  "how_kicker": "Emulator mod · lockstep",
+  "how_h": "How online play works",
+  "how_lead": "WinUAE has no online co-op mode, so we wrote one. Both Amigas compute the same game – <b>only the controls travel over the network</b>.",
+  "how_host": "HOST · JOE",
+  "how_host_sub": "joystick → port 2",
+  "how_p2": "PLAYER 2 · NAT",
+  "how_p2_sub": "joystick → port 1",
+  "how_input": "joystick · mouse · keyboard",
+  "how_input_sub": "about a dozen bytes per frame",
+  "how_hash": "✓ checksum compared every second",
+  "how_frames": "Frames",
+  "how_arc": "input from frame N – applied by both in frame N + delay",
+  "how_points": [
+   "Identical start: configuration, Kickstart, floppy disks and random seed.",
+   "The host sends the disks to player 2, who keeps them for next time.",
+   "Delay from ping: 1 frame (20 ms) on a LAN, 3 frames at 90 ms.",
+   "Any desync is caught at once by a memory and CPU checksum."
+  ],
+  "gui_kicker": "For players",
+  "gui_h": "The “Netplay” page in WinUAE",
+  "gui_cap": "New page in WinUAE settings (Windows build)",
+  "gui_items": [
+   [
+    "Host or Join",
+    "– address, port, password, delay"
+   ],
+   [
+    "UPnP",
+    "– the host opens the router port by itself"
+   ],
+   [
+    "Port 1 for player 2",
+    "– set up controls as for single player"
+   ],
+   [
+    "Reset and warp for both",
+    "– in the same frame"
+   ],
+   [
+    "Pause",
+    "– one stops, the other waits"
+   ],
+   [
+    "Esc / hard reset",
+    "– cancel and reconnect"
+   ]
+  ],
+  "gui_title_k": "Host window title",
+  "gui_title1": "[Netplay: waiting for player 2: 192.0.2.2 port 25200 (Esc = cancel)]",
+  "gui_title2": "[Netplay host, delay 3, 84 ms]",
+  "disk_kicker": "Floppies mid-game",
+  "disk_h": "“Insert Disk 2” – over the internet",
+  "disk_lead": "On a single drive the game asks for the second disk. The host inserts it as usual, netplay delivers it to player 2 and <b>swaps it on both machines in the same frame</b>.",
+  "disk_caps": [
+   "Level 1 from disk A",
+   "The game asks for disk 2",
+   "Bonus loaded from disk B – on both"
+  ],
+  "disk_steps": [
+   [
+    "Host inserts the disk",
+    "status bar, F12 or hotkey"
+   ],
+   [
+    "Offer",
+    "CRC, size and image name"
+   ],
+   [
+    "Player 2 checks",
+    "is the disk cached?"
+   ],
+   [
+    "Background download",
+    "16 KB per frame, game keeps running"
+   ],
+   [
+    "Swap on both",
+    "in the same frame"
+   ]
+  ],
+  "dbg_kicker": "Debugging",
+  "dbg_h": "Hunting a desync",
+  "dbg_lead": "Both Amigas must compute exactly the same thing, bit for bit. After reconnecting, the game desynced at once – we tracked the bug down step by step.",
+  "dbg_steps": [
+   [
+    "Frame 0",
+    "CPU registers",
+    "A reset keeps old values – we clear them when the session starts."
+   ],
+   [
+    "Frame 150",
+    "Floppy drive mechanics",
+    "Head position and motor stay as they were – the drive returns to its power-on state."
+   ],
+   [
+    "Frame 219",
+    "One number in memory",
+    "Memory added for the AROS system is not cleared by a reset."
+   ],
+   [
+    "6,900 frames",
+    "Identical",
+    "A session after a reset = a session from power-on, frame by frame."
+   ]
+  ],
+  "dbg_p2": "PLAYER2",
+  "dbg_trace_t": "Instruction trace of both Amigas, frame 218→219",
+  "dbg_trace_d": "Among more than ten thousand instructions, one difference: the system loads a counter of <b style=\"color:#f0f1ff\">11 instead of 6</b>. That memory is now cleared and included in the checksum.",
+  "dbg_more_t": "Other desyncs found",
+  "dbg_more": [
+   "A disk image left in a disabled drive – desync at frame 241",
+   "Windows and Linux builds compute differently – only identical builds connect"
+  ],
+  "test_kicker": "Testing",
+  "test_h": "Checked frame by frame",
+  "test_lead": "Scripts played the game while both Amigas logged a state checksum every frame.",
+  "test_tiles": [
+   [
+    "64,002",
+    "identical frames",
+    "The whole game: all worlds, ending, high scores, new game."
+   ],
+   [
+    "27 / 27",
+    "screenshots",
+    "Host and player 2 – bit for bit."
+   ],
+   [
+    "20,002",
+    "frames with floppies",
+    "Single drive, disk swaps – Linux and Windows."
+   ],
+   [
+    "3 frames",
+    "at 90 ms ping",
+    "Simulated internet 40 ms + jitter, smooth play."
+   ]
+  ],
+  "test_cap_h": "<b>Host</b> · frame 20,000",
+  "test_cap_c": "<b>Player 2</b> · frame 20,000",
+  "test_same": "Two computers, two emulators, the same picture. Also tested: reconnecting after a reset, a UPnP router, a wrong password, a different configuration, a dropped connection.",
+  "fin_kicker": "Finale",
+  "fin_h": "To the end of the game – online",
+  "fin_lead": "The ending, a high score table typed on two keyboards, and a new game.",
+  "fin_caps": [
+   "Ending and thanks",
+   "Joe's high score: “JOE” from the host's keyboard",
+   "Nat's high score: “NAT” from player 2's keyboard",
+   "New game: Joe and Nat back in action"
+  ],
+  "fin_credits": "A non-commercial fan project. Original: Yo! Joe! – Scipio, 1993 (Play Byte, Hudson Soft). Trainer: TRSI. Emulator: WinUAE (Toni Wilen and contributors), built-in AROS ROM.",
+  "wo_kicker": "The whole game over netplay",
+  "wo_h": "Worlds in the game",
+  "wo_frame": "Frame",
+  "wo_lead": "Starts of successive worlds from a full online playthrough: <b>Joe on one computer, Nat on the other</b>. From the first level, through the new worlds and the subway, to the last world before the ending.",
+  "wo_caps": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "subway",
+   "last world"
+  ]
+ }
+}
